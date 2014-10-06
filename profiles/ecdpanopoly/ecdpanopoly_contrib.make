@@ -206,14 +206,14 @@ projects[ec_foundation_image_styles][download][type] = "git"
 projects[ec_foundation_image_styles][subdir] = "ecfeature"
 projects[ec_foundation_image_styles][download][url] = "https://github.com/energycircle/ec_foundation_image_styles.git"
 
-; Libraries
-;libraries[superfish][download][type] = "git"
-;libraries[superfish][type] = "library"
-;libraries[superfish][directory_name] = "superfish"
-;libraries[superfish][download][url] = "git://github.com/mehrpadin/Superfish-for-Drupal/archive/master.zip"
-
-
 
 ; Themes
 projects[adaptivetheme][version] = 3.x
 projects[adaptivetheme][type] = theme
+
+; Include DEV tools
+projects[ec_foundation_theme][type] = "theme"
+projects[ec_foundation_theme][download][type] = "git"
+projects[ec_foundation_theme][download][url] = "https://github.com/energycircle/ec_foundation_theme.git"
+
+
