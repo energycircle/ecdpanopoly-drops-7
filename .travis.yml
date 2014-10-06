@@ -8,8 +8,7 @@ env:
 
   - PENV='dev'
   - PEMAIL='thomas@energycircle.com'
-  - RANDPASS=$(cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 |
-    head -n 1 )
+  - RANDPASS=$(cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 |  head -n 1 )
   - secure: HHaqURVDTl38qKhnq6Q8DPz0yJ+Qo7SHMTm1lZNZrZDHZuLb4kfGtA+gBuURKSaERIb8cBTXzduame+2FasHTM47K0BeKIEflJblR2cCr8n15iR1SaGJ11X86a17I1Wo+Iq+sHO3W1mQbNUyfDBbcqQtzMbWCWybdic08gGpYhM=
   - secure: HpD62aklXeVIbL4Xk1YpFbPSdG2YmySjJzs9fOKn+uwl1lQo9sstaAZ+UwWaiKg2O1DNs1/T4q8c64fTWz/l843uEnWTbZHtFkNsLK8s+WmCG2ehxNFa0r8tCdEL18dnnsAR+WidPmFuvXeXY2Eg1ieOC/XCmRBlTHNMhLKDqGI=
   - secure: eozHINJzaKj97p7H9+yPwBeatQS6IjbE405lex/wc9NTXgCSrLWCogz9TMy+qxiQQUjdHlM1vKd1vEh2Zy4MXDi34YDtVhtazRfR5FkPESImLj/ljNwaqmvOOsrFFJra90VHvjgEIviK7tPLYYtX4TUZAqXpWP4tvMNINqeJ9Ks=
