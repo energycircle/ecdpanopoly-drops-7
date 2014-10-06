@@ -1,0 +1,136 @@
+name = ECDPanopoly
+description = Install with EnergyCircle's pre-configured distribution tailored for contractors in the home efficiency industry.
+core = 7.x
+api = 2
+exclusive = 1
+base = panopoly
+
+
+; Drupal Core
+dependencies[] = menu
+dependencies[] = image
+dependencies[] = list
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = search
+;dependencies[] = shortcut
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = dblog
+dependencies[] = update
+
+; Panopoly Foundation
+dependencies[] = panopoly_core
+dependencies[] = panopoly_images
+dependencies[] = panopoly_theme
+dependencies[] = panopoly_magic
+;dependencies[] = panopoly_widgets
+dependencies[] = panopoly_admin
+dependencies[] = panopoly_users
+
+; Panopoly Toolset
+dependencies[] = panopoly_pages
+dependencies[] = panopoly_wysiwyg
+
+; Panopoly Contrib
+dependencies[] = panopoly_config
+dependencies[] = panopoly_seo
+
+; Panopoly Recommended - Admin & UI
+;dependencies[] = navbar
+dependencies[] = breakpoints
+dependencies[] = backports
+dependencies[] = linkit
+;dependencies[] = simplified_menu_admin
+dependencies[] = save_draft
+dependencies[] = module_filter
+dependencies[] = date_popup_authored
+dependencies[] = views_ui
+
+
+; Panopoly Recommended - Other
+dependencies[] = devel
+dependencies[] = uuid
+dependencies[] = apps
+
+
+; Contrib Depends
+dependencies[] = addressfield
+dependencies[] = admin_menu
+dependencies[] = admin_theme
+dependencies[] = adminrole
+;dependencies[] = advanced_help
+dependencies[] = auto_menutitle
+dependencies[] = cer
+dependencies[] = colorbox
+dependencies[] = compact_forms
+dependencies[] = contemplate
+dependencies[] = content_type_extras
+dependencies[] = diff
+dependencies[] = disable_term_node_listings
+dependencies[] = email
+;dependencies[] = entity_dependency
+dependencies[] = entity_rules
+dependencies[] = entity_view_mode
+dependencies[] = entity2text
+dependencies[] = entityform
+dependencies[] = entityform_block
+dependencies[] = entityreference_filter
+dependencies[] = eva
+dependencies[] = field_default_token
+dependencies[] = field_multiple_limit
+dependencies[] = field_validation
+dependencies[] = field_hidden
+dependencies[] = flexslider
+dependencies[] = insert_view
+dependencies[] = jcarousel
+dependencies[] = linkit_target
+dependencies[] = menu_icons
+dependencies[] = metatag
+dependencies[] = module_filter
+dependencies[] = nodequeue
+dependencies[] = panels_mini
+dependencies[] = phone
+dependencies[] = rules
+dependencies[] = superfish
+dependencies[] = token_tweaks
+dependencies[] = uuid_features
+dependencies[] = views_accordion
+;dependencies[] = views_url_path_arguments
+dependencies[] = weight
+dependencies[] = xmlsitemap
+
+;DEVELOPMENT MODS
+;dependencies[] = debut
+dependencies[] = diff
+;dependencies[] = features_extra
+dependencies[] = features_override
+dependencies[] = ftools
+;dependencies[] = meta_dev
+;dependencies[] = metatag_views_overview
+;dependencies[] = microdata
+;dependencies[] = uuid_features
+;dependencies[] = uuid_path
+;dependencies[] = node_export
+;dependencies[] = node_export_features
+dependencies[] = features_roles_permissions
+;dependencies[] = features_orphans
+;dependencies[] = feature_set
+;dependencies[] = migrate
+
+;EC features
+;dependencies[] = ec_foundation_types_democontent
+;dependencies[] = ec_foundation_types
+;dependencies[] = ec_foundation_other
+;dependencies[] = ec_foundation_roles
+;dependencies[] = ec_foundation_views
+;dependencies[] = ec_foundation_image_styles
+
+; Information added by flux423 - updated on 2014-08-7
+version = "7.x-1.0-rc24"
+core = "7.x"
+project = "ECDPanopoly"
+

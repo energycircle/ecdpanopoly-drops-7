@@ -1,0 +1,17 @@
+***************
+*** 569,575 ****
+    foreach ($type_settings as $entity_type => $settings) {
+      if (isset($settings['forms']) && is_array($settings['forms'])) {
+        if (in_array($form_id, $settings['forms']) || (isset($base_form_id) && in_array($base_form_id, $settings['forms']))) {
+-         return array_merge(array('entity_type' => $entity_type), $settings['form_settings']);
+        }
+  
+      }
+--- 569,575 ----
+    foreach ($type_settings as $entity_type => $settings) {
+      if (isset($settings['forms']) && is_array($settings['forms'])) {
+        if (in_array($form_id, $settings['forms']) || (isset($base_form_id) && in_array($base_form_id, $settings['forms']))) {
++         return array_merge(array('entity_type' => $entity_type), $settings['forms']);
+        }
+  
+      }

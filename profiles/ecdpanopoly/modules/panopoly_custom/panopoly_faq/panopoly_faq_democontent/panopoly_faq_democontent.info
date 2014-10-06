@@ -1,0 +1,13 @@
+name = Panopoly FAQ Demo (depreciated)
+description = Demo content for Panopoly FAQ (depreciated)
+core = 7.x
+package = Panopoly Demos
+project = panopoly_faq_democontent
+hidden = 1
+dependencies[] = panopoly_faq
+; Information added by Drupal.org packaging script on 2013-12-21
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "panopoly_faq"
+datestamp = "1387661608"
+

@@ -1,0 +1,13 @@
+diff --git a/entity_rules.module b/entity_rules.module
+index 45e15ff..21aef7b 100644
+--- a/entity_rules.module
++++ b/entity_rules.module
+@@ -569,7 +569,7 @@ function _entity_rules_get_form_entity_type_settings($form_state) {
+   foreach ($type_settings as $entity_type => $settings) {
+     if (isset($settings['forms']) && is_array($settings['forms'])) {
+       if (in_array($form_id, $settings['forms']) || (isset($base_form_id) && in_array($base_form_id, $settings['forms']))) {
+-        return array_merge(array('entity_type' => $entity_type), $settings['form_settings']);
++        return array_merge(array('entity_type' => $entity_type), $settings['forms']);
+       }
+ 
+     }

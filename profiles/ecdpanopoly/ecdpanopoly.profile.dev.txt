@@ -1,0 +1,26 @@
+<?php 
+function ecdpanopoly_install_tasks(&$install_state) {
+  $tasks = array();
+
+  // Add our custom CSS file for the installation process
+  drupal_add_css(drupal_get_path('profile', 'openatrium') . '/openatrium.css');
+
+  $tasks['ecdpanopoly_features_revert_all'] = array(
+    'type' => 'normal',
+  );
+
+function ecdpanopoly_features_revert_all() {
+  drupal_set_time_limit(0);
+  features_revert(array(
+    'oa_core' => array('field_base'),
+    'oa_sections' => array('field_base', 'field_instance'),
+    'oa_users' => array('field_instance'),
+  ));
+  features_revert();
+}
+function ecdpanopoly_form_panopoly_theme_selection_form_alter(&$form, &$form_state, $form_id) {
+  // change the default theme in the selection form
+  unset($form['theme_wrapper']['theme']['#options']['radix']);
+  unset($form['theme_wrapper']['theme']['#options']['radix_starter']);
+  $form['theme_wrapper']['theme']['#default_value'] = 'oa_radix';
+}
