@@ -9,6 +9,12 @@ env:
     # The Pantheon environment to test against.
     - PENV='dev'
 
+    # The user you interact with Pantheon as
+    - PEMAIL='thomas@energycircle.com'
+
+    # A random password for the Drupal site install.
+    - RANDPASS=$(cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1 )
+
     # SECRET/PRIVATE VARIABLES
     #
     # These are created by using the travis command locally to encrypt some values.
@@ -63,6 +69,6 @@ after_failure:
 notifications:
   email:
     recipients:
-      'thomas@energycircle.com'
+      thomas@energycircle.com
     on_success: always
     on_failure: always
