@@ -1,0 +1,89 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the ECDpanopoly installation profile.
+ */
+
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+
+
+function ecdpanopoly_install() {
+ 
+// Enable the administration theme.
+$admin_theme = 'seven';
+db_update('system')
+  ->fields(array('status' => 1))
+  ->condition('type', 'theme')
+  ->condition('name', $admin_theme)
+  ->execute();
+variable_set('admin_theme', $admin_theme);
+variable_set('node_admin_theme', '1');
+
+}
+
+function ecdpanopoly_features_form($form_state, $url) {
+  $form = array();
+  drupal_set_title(st('Choose from available features'));
+   
+  // Ancillary message
+  $form['message'] = array(
+    '#type' => 'item',
+    '#value' => st('The selected features will be enabled after the installation has completed. At any time, you can turn the available features on or off.'),
+  );
+ 
+  $form['content'] = array(
+    '#type' => 'checkbox',
+    '#title' => st('Content types'),
+    '#default_value' => 1,
+    '#description' => st('Some test content types'),
+  );l
+  $form['menu_links'] = array(
+    '#type' => 'checkbox',
+    '#title' => st('Menu'),
+    '#default_value' => 1,
+    '#description' => st('Some test menu'),
+  );
+  $form['views_default'] = array(
+    '#type' => 'checkbox',
+    '#title' => st('View'),
+    '#default_value' => 1,
+    '#description' => st('Some test view'),
+  );
+ 
+  // Returns to installation without its abort.
+  $form['url'] = array(
+    '#type' => 'value',
+    '#value' => $url,
+  );
+   
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => st('Continue'),
+  );
+   
+  return $form;
+}
+
+function ecdpanopoly_features_form_submit(&$form, &$form_state) {
+  // chosen features batch
+  $features = array();
+  foreach ($form_state['values'] as $key => $value) {
+    $features[] = $key;
+  }
+   
+  // forming temporary variable with chosen features.
+  variable_set('myprofile_selected_features', $features);
+   
+  // initiating the next step of installation
+  variable_set('install_task', 'install-myprofile');
+   
+  // returning to the installation page
+  drupal_goto($form_state['values']['url']);
+}

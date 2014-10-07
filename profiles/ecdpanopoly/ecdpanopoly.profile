@@ -108,3 +108,6 @@ function ecdpanopoly_form_apps_profile_apps_select_form_alter(&$form, $form_stat
   // Remove the demo content selection option since this is handled through the Panopoly demo module.
   $form['default_content_fieldset']['#access'] = FALSE;
 }
+ // Disable the 'receive email notifications' check box.
+  $form['update_notifications']['update_status_module']['#default_value'][1] = 0;
+}
