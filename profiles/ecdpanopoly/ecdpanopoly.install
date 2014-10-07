@@ -52,7 +52,7 @@ function filter_requirements($phase) {
   if ($phase == 'install') {
     // We need to be able to create the AT sub-theme, so check folder
     // permissions are sufficient.
-    $theme_name = _ecdpanopoly_profile_site_name();
+    $theme_name = ec_foundation_theme;
     $theme_path = DRUPAL_ROOT . base_path() . 'sites/all/themes/' . $theme_name;
 
     // Check that we have write access to the sub-theme directory.
