@@ -21,9 +21,7 @@ before_install:
   - pear channel-discover pear.drush.org
 
 install:
-	
 - bash scripts/install.sh
-
   - phpenv rehash
 
 before_script: 
@@ -37,8 +35,7 @@ after_success:
 	
 after_failure: 
 	
-notifications:
-	
+notifications:	
   email:
     recipients: thomas@energycircle.com
     on_success: always
