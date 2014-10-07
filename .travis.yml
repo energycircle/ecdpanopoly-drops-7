@@ -20,13 +20,13 @@ before_install:
 install:
 - bash scripts/install.sh
   - phpenv rehash
-before_script: 
+before_script:
 script:
 - bash scripts/run_tests.sh
-after_script: 	
-after_success: 
-after_failure: 	
-notifications:	
+after_script:
+after_success:
+after_failure:
+notifications:
   email:
     recipients: thomas@energycircle.com
     on_success: always
