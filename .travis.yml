@@ -4,7 +4,6 @@ php:
 - '5.4'
 env:
   global:
-
   - PENV='dev'
   - PEMAIL='thomas@energycircle.com'
   - RANDPASS=$(cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1 )
@@ -12,29 +11,21 @@ env:
   - secure: "HpD62aklXeVIbL4Xk1YpFbPSdG2YmySjJzs9fOKn+uwl1lQo9sstaAZ+UwWaiKg2O1DNs1/T4q8c64fTWz/l843uEnWTbZHtFkNsLK8s+WmCG2ehxNFa0r8tCdEL18dnnsAR+WidPmFuvXeXY2Eg1ieOC/XCmRBlTHNMhLKDqGI="
   - secure: "eozHINJzaKj97p7H9+yPwBeatQS6IjbE405lex/wc9NTXgCSrLWCogz9TMy+qxiQQUjdHlM1vKd1vEh2Zy4MXDi34YDtVhtazRfR5FkPESImLj/ljNwaqmvOOsrFFJra90VHvjgEIviK7tPLYYtX4TUZAqXpWP4tvMNINqeJ9Ks="
   - secure: "WHSk0JUamrnk7VR8NueuL81UwrSkzP4PAD13LfW2MC6y94B+eIm5GHr5SKEBLBy8hXlefb+gh3uGvOh/iLvZAcLkGPu+YEoBibkg5ff6LcP1IgXqWy/vqW1n3NSGsu2tpNpmXsXL55UC1nE4jcvc02YDfXdYtaGtEPmQzYKO0VI="
-
 before_install:
 - openssl aes-256-cbc -K $encrypted_dfede703c127_key -iv $encrypted_dfede703c127_iv
   -in travis_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 0600 ~/.ssh/id_rsa
 - composer self-update
   - pear channel-discover pear.drush.org
-
 install:
 - bash scripts/install.sh
   - phpenv rehash
-
 before_script: 
-
 script:
 - bash scripts/run_tests.sh
-
-after_script: 
-	
+after_script: 	
 after_success: 
-	
-after_failure: 
-	
+after_failure: 	
 notifications:	
   email:
     recipients: thomas@energycircle.com
