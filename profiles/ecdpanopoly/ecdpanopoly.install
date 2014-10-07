@@ -43,7 +43,7 @@ function ecdpanopoly_features_form($form_state, $url) {
     '#title' => st('Content types'),
     '#default_value' => 1,
     '#description' => st('Some test content types'),
-  );l
+  );
   $form['menu_links'] = array(
     '#type' => 'checkbox',
     '#title' => st('Menu'),
