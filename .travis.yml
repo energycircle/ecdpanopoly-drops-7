@@ -17,8 +17,11 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_dfede703c127_key -iv $encrypted_dfede703c127_iv
   -in travis_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 0600 ~/.ssh/id_rsa
+- composer self-update
+  - pear channel-discover pear.drush.org
 install:
 - bash scripts/install.sh
+  - phpenv rehash
 before_script: 
 script:
 - bash scripts/run_tests.sh
@@ -30,3 +33,4 @@ notifications:
     recipients: thomas@energycircle.com
     on_success: always
     on_failure: always
+   irc: irc.freenode.net#EnergyCircle
