@@ -19,16 +19,26 @@ before_install:
 - chmod 0600 ~/.ssh/id_rsa
 - composer self-update
   - pear channel-discover pear.drush.org
+
 install:
+	
 - bash scripts/install.sh
+
   - phpenv rehash
+
 before_script: 
+
 script:
 - bash scripts/run_tests.sh
+
 after_script: 
+	
 after_success: 
+	
 after_failure: 
+	
 notifications:
+	
   email:
     recipients: thomas@energycircle.com
     on_success: always
