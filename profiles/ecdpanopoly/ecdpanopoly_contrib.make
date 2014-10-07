@@ -211,7 +211,7 @@ projects[ec_foundation_image_styles][download][url] = "https://github.com/energy
 projects[adaptivetheme][version] = 3.x
 projects[adaptivetheme][type] = theme
 
-; Include DEV tools
+; Include base theme
 projects[ec_foundation_theme][type] = "theme"
 projects[ec_foundation_theme][download][type] = "git"
 projects[ec_foundation_theme][download][url] = "https://github.com/energycircle/ec_foundation_theme.git"

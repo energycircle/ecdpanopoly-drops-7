@@ -6,4 +6,4 @@ base= panopoly
  projects[panopoly][type] = core
  projects[panopoly][download][type] = git
  projects[panopoly][download][url] = https://github.com/energycircle/ecdpanopoly-drops-7.git
- projects[panopoly][version] = master
+ projects[panopoly][version] = development
