@@ -33,4 +33,4 @@ notifications:
     recipients: thomas@energycircle.com
     on_success: always
     on_failure: always
-   irc: irc.freenode.net#EnergyCircle
+  irc: irc.freenode.net#EnergyCircle
