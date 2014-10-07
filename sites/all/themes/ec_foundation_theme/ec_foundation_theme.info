@@ -2,7 +2,7 @@
 ;----------// Theme Information
 
   name        = EC Foundation Theme
-  description = Subtheme of AdaptiveTheme for ECD.
+  description = Subtheme of AdaptiveTheme for EnergyCircle Distro.
   core        = 7.x
   base theme  = adaptivetheme
   release     = 7.x-3.x
