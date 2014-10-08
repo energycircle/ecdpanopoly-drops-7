@@ -53,8 +53,8 @@ dependencies[] = views_ui
 
 ; Panopoly Recommended - Other
 dependencies[] = devel
-dependencies[] = uuid
-dependencies[] = apps
+;dependencies[] = uuid
+;dependencies[] = apps
 
 
 ; Contrib Depends
@@ -96,7 +96,7 @@ dependencies[] = rules
 dependencies[] = superfish
 dependencies[] = title
 dependencies[] = token_tweaks
-dependencies[] = uuid_features
+;dependencies[] = uuid_features
 dependencies[] = views_accordion
 dependencies[] = weight
 dependencies[] = xmlsitemap
