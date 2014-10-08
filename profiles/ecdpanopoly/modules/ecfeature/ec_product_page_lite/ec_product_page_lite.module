@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC Product Page LITE feature.
+ */
+
+include_once 'ec_product_page_lite.features.inc';

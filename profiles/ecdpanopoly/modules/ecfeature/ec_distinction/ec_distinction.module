@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC Distinction feature.
+ */
+
+include_once 'ec_distinction.features.inc';
