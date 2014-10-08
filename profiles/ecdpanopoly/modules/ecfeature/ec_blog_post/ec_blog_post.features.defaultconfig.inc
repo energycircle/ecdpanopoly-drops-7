@@ -1190,16 +1190,6 @@ function ec_blog_post_defaultconfig_field_default_fields() {
 function ec_blog_post_defaultconfig_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer panelizer node blog_post breadcrumbs'.
-  $permissions['administer panelizer node blog_post breadcrumbs'] = array(
-    'name' => 'administer panelizer node blog_post breadcrumbs',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer node blog_post content'.
   $permissions['administer panelizer node blog_post content'] = array(
     'name' => 'administer panelizer node blog_post content',
