@@ -117,6 +117,15 @@ function ec_blog_post_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in blog_categories'.
+  $permissions['delete terms in blog_categories'] = array(
+    'name' => 'delete terms in blog_categories',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit any blog_post content'.
   $permissions['edit any blog_post content'] = array(
     'name' => 'edit any blog_post content',
