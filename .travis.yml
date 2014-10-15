@@ -17,6 +17,7 @@ before_install:
 - chmod 0600 ~/.ssh/id_rsa
 - composer self-update
   - pear channel-discover pear.drush.org
+  - php /home/travis/.phpenv/versions/5.3.26/bin/composer.phar self-update
 install:
 - bash scripts/install.sh
   - phpenv rehash
@@ -28,7 +29,12 @@ after_success:
 after_failure:
 notifications:
   email:
-    recipients: thomas@energycircle.com
+    recipients:
+      - thomas@energycircle.com
     on_success: always
     on_failure: always
-  irc: irc.freenode.net#EnergyCircle
+  irc:
+    channels:
+      - "chat.freenode.net#EnergyCircle"
+    on_success: always
+    on_failure: always
