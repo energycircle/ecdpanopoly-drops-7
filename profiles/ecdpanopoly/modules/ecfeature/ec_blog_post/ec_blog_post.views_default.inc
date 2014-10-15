@@ -46,13 +46,13 @@ function ec_blog_post_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Display date */
   $handler->display->display_options['fields']['field_display_date']['id'] = 'field_display_date';
   $handler->display->display_options['fields']['field_display_date']['table'] = 'field_data_field_display_date';
   $handler->display->display_options['fields']['field_display_date']['field'] = 'field_display_date';
   $handler->display->display_options['fields']['field_display_date']['label'] = '';
   $handler->display->display_options['fields']['field_display_date']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Blog Image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -126,7 +126,7 @@ function ec_blog_post_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Broken/missing handler */
+  /* Field: Content: Blog Image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -266,13 +266,13 @@ function ec_blog_post_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Blog Image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['label'] = '';
   $handler->display->display_options['fields']['field_blog_image']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Display date */
   $handler->display->display_options['fields']['field_display_date']['id'] = 'field_display_date';
   $handler->display->display_options['fields']['field_display_date']['table'] = 'field_data_field_display_date';
   $handler->display->display_options['fields']['field_display_date']['field'] = 'field_display_date';

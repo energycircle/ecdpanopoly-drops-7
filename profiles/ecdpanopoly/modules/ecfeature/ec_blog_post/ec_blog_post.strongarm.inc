@@ -79,6 +79,39 @@ function ec_blog_post_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__blog_post';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'show_this_block' => array(
+        'custom_settings' => TRUE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(
+        'metatags' => array(
+          'weight' => '11',
+        ),
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '10',
+        ),
+        'redirect' => array(
+          'weight' => '9',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '8',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_node__blog_post'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'maxlength_js_blog_post';
   $strongarm->value = '';
   $export['maxlength_js_blog_post'] = $strongarm;
@@ -115,6 +148,13 @@ function ec_blog_post_strongarm() {
     0 => 'status',
   );
   $export['node_options_blog_post'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_blog_post';
+  $strongarm->value = '0';
+  $export['node_preview_blog_post'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
