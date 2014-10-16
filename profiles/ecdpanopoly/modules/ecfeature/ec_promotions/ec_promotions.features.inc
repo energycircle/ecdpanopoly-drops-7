@@ -5,6 +5,30 @@
  */
 
 /**
+ * Implements hook_default_cer().
+ */
+function ec_promotions_default_cer() {
+  $items = array();
+  $items['node:promotion:field_ref_promo_service*node:service:field_ref_service_promo'] = entity_import('cer', '{
+    "identifier" : "node:promotion:field_ref_promo_service*node:service:field_ref_service_promo",
+    "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
+    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
+    "cer_weight" : { "und" : [ { "value" : "0" } ] },
+    "cer_left" : { "und" : [ { "path" : "node:promotion:field_ref_promo_service" } ] },
+    "cer_right" : { "und" : [ { "path" : "node:service:field_ref_service_promo" } ] }
+  }');
+  $items['node:promotion:field_ref_promotion_product*node:product_page:field_ref_prodpage_promotion'] = entity_import('cer', '{
+    "identifier" : "node:promotion:field_ref_promotion_product*node:product_page:field_ref_prodpage_promotion",
+    "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
+    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
+    "cer_weight" : { "und" : [ { "value" : "0" } ] },
+    "cer_left" : { "und" : [ { "path" : "node:promotion:field_ref_promotion_product" } ] },
+    "cer_right" : { "und" : [ { "path" : "node:product_page:field_ref_prodpage_promotion" } ] }
+  }');
+  return $items;
+}
+
+/**
  * Implements hook_ctools_plugin_api().
  */
 function ec_promotions_ctools_plugin_api($module = NULL, $api = NULL) {

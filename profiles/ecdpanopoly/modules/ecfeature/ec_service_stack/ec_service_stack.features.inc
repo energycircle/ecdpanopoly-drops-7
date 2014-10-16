@@ -5,6 +5,46 @@
  */
 
 /**
+ * Implements hook_default_cer().
+ */
+function ec_service_stack_default_cer() {
+  $items = array();
+  $items['node:service_category:field_ref_serv_cat_promo*node:promotion:field_ref_promo_serv_cat'] = entity_import('cer', '{
+    "identifier" : "node:service_category:field_ref_serv_cat_promo*node:promotion:field_ref_promo_serv_cat",
+    "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
+    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
+    "cer_weight" : { "und" : [ { "value" : "0" } ] },
+    "cer_left" : { "und" : [ { "path" : "node:service_category:field_ref_serv_cat_promo" } ] },
+    "cer_right" : { "und" : [ { "path" : "node:promotion:field_ref_promo_serv_cat" } ] }
+  }');
+  $items['node:service_category:field_ref_serv_cat_services*node:service:field_ref_service_serv_cat'] = entity_import('cer', '{
+    "identifier" : "node:service_category:field_ref_serv_cat_services*node:service:field_ref_service_serv_cat",
+    "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
+    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
+    "cer_weight" : { "und" : [ { "value" : "0" } ] },
+    "cer_left" : { "und" : [ { "path" : "node:service_category:field_ref_serv_cat_services" } ] },
+    "cer_right" : { "und" : [ { "path" : "node:service:field_ref_service_serv_cat" } ] }
+  }');
+  $items['node:service_group:field_ref_serv_group_promo*node:promotion:field_ref_promo_serv_group'] = entity_import('cer', '{
+    "identifier" : "node:service_group:field_ref_serv_group_promo*node:promotion:field_ref_promo_serv_group",
+    "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
+    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
+    "cer_weight" : { "und" : [ { "value" : "0" } ] },
+    "cer_left" : { "und" : [ { "path" : "node:service_group:field_ref_serv_group_promo" } ] },
+    "cer_right" : { "und" : [ { "path" : "node:promotion:field_ref_promo_serv_group" } ] }
+  }');
+  $items['node:service_group:field_ref_serv_group_serv_cat*node:service_category:field_ref_serv_cat_serv_group'] = entity_import('cer', '{
+    "identifier" : "node:service_group:field_ref_serv_group_serv_cat*node:service_category:field_ref_serv_cat_serv_group",
+    "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
+    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
+    "cer_weight" : { "und" : [ { "value" : "0" } ] },
+    "cer_left" : { "und" : [ { "path" : "node:service_group:field_ref_serv_group_serv_cat" } ] },
+    "cer_right" : { "und" : [ { "path" : "node:service_category:field_ref_serv_cat_serv_group" } ] }
+  }');
+  return $items;
+}
+
+/**
  * Implements hook_ctools_plugin_api().
  */
 function ec_service_stack_ctools_plugin_api($module = NULL, $api = NULL) {

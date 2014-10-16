@@ -39,6 +39,12 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -93,6 +99,12 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'weight' => 0,
       ),
       'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -154,6 +166,12 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'weight' => 0,
       ),
       'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -222,6 +240,12 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -280,6 +304,12 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'weight' => 0,
       ),
       'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -348,6 +378,12 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -406,6 +442,12 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'weight' => 0,
       ),
       'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

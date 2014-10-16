@@ -16,8 +16,6 @@ function ec_testimonial_flexslider_default_presets() {
   $preset->name = 'testimonials';
   $preset->title = 'testimonials';
   $preset->theme = 'classic';
-  $preset->imagestyle_normal = 's_460';
-  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = '';
   $export['testimonials'] = $preset;
 

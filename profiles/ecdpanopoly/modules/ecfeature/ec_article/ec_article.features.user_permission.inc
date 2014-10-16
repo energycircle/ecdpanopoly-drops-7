@@ -121,6 +121,16 @@ function ec_article_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in article_types'.
+  $permissions['delete terms in article_types'] = array(
+    'name' => 'delete terms in article_types',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit any article content'.
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
@@ -141,6 +151,16 @@ function ec_article_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in article_types'.
+  $permissions['edit terms in article_types'] = array(
+    'name' => 'edit terms in article_types',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
   );
 
   return $permissions;

@@ -96,6 +96,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'type' => 'text_trimmed',
           'weight' => 1,
         ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -187,6 +193,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -268,6 +280,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'weight' => 0,
         ),
         'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -362,6 +380,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'weight' => 0,
         ),
         'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -466,6 +490,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
             'image_style' => 'panopoly_image_quarter',
           ),
           'type' => 'image',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 0,
         ),
         'teaser' => array(
@@ -581,6 +611,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -675,6 +711,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'weight' => 0,
         ),
         'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -786,6 +828,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -892,6 +940,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -993,6 +1047,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'weight' => 0,
         ),
         'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1105,6 +1165,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1200,6 +1266,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1211,6 +1278,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1221,6 +1289,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1230,6 +1299,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1241,6 +1311,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1252,6 +1323,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1261,6 +1333,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
