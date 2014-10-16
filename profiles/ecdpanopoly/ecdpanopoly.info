@@ -104,7 +104,7 @@ dependencies[] = xmlsitemap
 
 ;DEVELOPMENT MODS
 dependencies[] = diff
-dependencies[] = features_override
+;dependencies[] = features_override
 dependencies[] = ftools
 dependencies[] = features_roles_permissions
 
