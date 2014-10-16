@@ -79,6 +79,7 @@ dependencies[] = entityform_block
 dependencies[] = entityreference_filter
 dependencies[] = eva
 dependencies[] = field_default_token
+dependencies[] = imagecache_token
 dependencies[] = field_multiple_limit
 dependencies[] = field_validation
 dependencies[] = field_hidden
