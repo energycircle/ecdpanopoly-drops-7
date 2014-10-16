@@ -45,6 +45,7 @@ function ec_testimonial_user_default_permissions() {
   $permissions['administer panelizer node testimonial defaults'] = array(
     'name' => 'administer panelizer node testimonial defaults',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -76,6 +77,7 @@ function ec_testimonial_user_default_permissions() {
   $permissions['administer panelizer node testimonial settings'] = array(
     'name' => 'administer panelizer node testimonial settings',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
