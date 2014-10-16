@@ -175,6 +175,11 @@ projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_ru
 projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch"
 ;from https://www.drupal.org/node/2201263
 
+projects[defaultconfig][patch][] =
+"https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch"
+;https://www.drupal.org/node/1900574
+
+
 ;EC Features
 projects[ec_foundation_types][type] = "module"
 projects[ec_foundation_types][download][type] = "git"
