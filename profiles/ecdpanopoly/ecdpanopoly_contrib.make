@@ -102,7 +102,7 @@ projects[flexslider][subdir] = eccontrib
 projects[google_analytics][version] = 2.x
 projects[google_analytics][subdir] = eccontrib
 
-projects[globalredirect][version] = 1.x
+projects[globalredirect][version] = 1.5+3-dev
 projects[globalredirect][subdir] = eccontrib
 
 projects[field_hidden][version] = 1.6
