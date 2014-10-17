@@ -79,7 +79,6 @@ dependencies[] = entityform_block
 dependencies[] = entityreference_filter
 dependencies[] = eva
 dependencies[] = field_default_token
-dependencies[] = imagecache_token
 dependencies[] = field_multiple_limit
 dependencies[] = field_validation
 dependencies[] = field_hidden
@@ -104,7 +103,7 @@ dependencies[] = xmlsitemap
 
 ;DEVELOPMENT MODS
 dependencies[] = diff
-;dependencies[] = features_override
+dependencies[] = features_override
 dependencies[] = ftools
 dependencies[] = features_roles_permissions
 
@@ -121,7 +120,7 @@ dependencies[] = ec_panopoly_page_overrides
 
 
 ; Information added by flux423 - updated on 2014-10-7
-version = "7.x-1.1-rc1"
+version = "7.x-1.1-rc2"
 core = "7.x"
 project = "ECDPanopoly"
 

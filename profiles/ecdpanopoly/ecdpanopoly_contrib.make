@@ -21,6 +21,9 @@ projects[auto_menutitle][subdir] = eccontrib
 projects[better_exposed_filters][version] = 3.x
 projects[better_exposed_filters][subdir] = eccontrib
 
+projects[better_formats][version] = 1.x-dev
+projects[better_formats][subdir] = eccontrib
+
 projects[cer][version] = 3.0-alpha7
 projects[cer][subdir] = eccontrib
 
@@ -51,7 +54,7 @@ projects[entity_dependency][subdir] = eccontrib-discontinue
 projects[entityform][version] = 2.x
 projects[entityform][subdir] = eccontrib
 
-projects[entityform_block][version] = 1.x
+projects[entityform_block][version] = 1.1
 projects[entityform_block][subdir] = eccontrib
 
 projects[entity_path][version] = 1.x
@@ -111,6 +114,9 @@ projects[field_validation][subdir] = eccontrib
 projects[insert_view][version] = 2.x
 projects[insert_view][subdir] = eccontrib
 
+projects[imagecache_token][version] = 1.x-dev
+projects[imagecache_token][subdir] = eccontrib
+
 projects[jcarousel][version] = 2.x
 projects[jcarousel][subdir] = eccontrib
 
@@ -129,6 +135,9 @@ projects[path_redirect_import][subdir] = eccontrib
 projects[phone][version] = 1.x-dev
 projects[phone][subdir] = eccontrib
 
+projects[metatag][version] = 1.4
+projects[metatag][subdir] = eccontrib
+
 projects[nodequeue][version] = 2.0-beta1
 projects[nodequeue][subdir] = eccontrib
 
@@ -143,6 +152,9 @@ projects[seo_ui][subdir] = eccontrib
 
 projects[superfish][version] = 1.x-dev
 projects[superfish][subdir] = eccontrib
+
+projects[table_element][version] = 1.0-beta1
+projects[table_element][subdir] = eccontrib
 
 projects[title][version] = 1.x
 projects[title][subdir] = eccontrib
@@ -169,16 +181,21 @@ projects[xmlsitemap][version] = 2.0
 projects[xmlsitemap][subdir] = eccontrib
 
 ;Patches
-projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch"
 ;from https://www.drupal.org/node/2225315
+projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch" 
 
-projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch"
 ;from https://www.drupal.org/node/2201263
+projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch" 
+
+;from
+projects[views][patch][] = "https://www.drupal.org/files/issues/views-asset-diff-2018737-37.patch"
+
+;from https://www.drupal.org/node/2163545
+projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
 
 projects[defaultconfig][patch][] =
 "https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch"
 ;https://www.drupal.org/node/1900574
-
 
 ;EC Features
 projects[ec_foundation_types][type] = "module"
@@ -211,14 +228,18 @@ projects[ec_foundation_image_styles][download][type] = "git"
 projects[ec_foundation_image_styles][subdir] = "ecfeature"
 projects[ec_foundation_image_styles][download][url] = "https://github.com/energycircle/ec_foundation_image_styles.git"
 
+; Libraries
+libraries[superfish][download][type] = "git"
+libraries[superfish][type] = "library"
+libraries[superfish][directory_name] = "superfish"
+libraries[superfish][download][url] = "https://github.com/mehrpadin/Superfish-for-Drupal/archive/1.x.zip"
+
+libraries[flexslider][download][type] = "get"
+libraries[flexslider][type] = "library"
+libraries[flexslider][directory_name] = "flexslider"
+libraries[flexslider][download][url] = "https://api.github.com/repos/woothemes/FlexSlider/zipball/version/2.2.2"
+
 
 ; Themes
 projects[adaptivetheme][version] = 3.x
 projects[adaptivetheme][type] = theme
-
-; Include base theme
-projects[ec_foundation_theme][type] = "theme"
-projects[ec_foundation_theme][download][type] = "git"
-projects[ec_foundation_theme][download][url] = "https://github.com/energycircle/ec_foundation_theme.git"
-
-
