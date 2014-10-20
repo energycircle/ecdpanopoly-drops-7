@@ -323,7 +323,7 @@ function ec_campaign_page_panelizer_defaults() {
     $display->content['new-c79671b3-de3e-48dc-b5e7-75d3c79b5861'] = $pane;
     $display->panels['two_66_33_second'][0] = 'new-c79671b3-de3e-48dc-b5e7-75d3c79b5861';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
+  $display->title_pane = 'new-41947c41-f1f2-4924-922b-447671b372e2';
   $panelizer->display = $display;
   $export['node:campaign_page:default'] = $panelizer;
 

@@ -267,7 +267,7 @@ function ec_staff_panelizer_defaults() {
     $display->content['new-3eec9c23-dedc-42bb-8755-3828cb738dfb'] = $pane;
     $display->panels['two_66_33_first'][5] = 'new-3eec9c23-dedc-42bb-8755-3828cb738dfb';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = '0';
+  $display->title_pane = 'new-3eec9c23-dedc-42bb-8755-3828cb738dfb';
   $panelizer->display = $display;
   $export['node:staff:default:default'] = $panelizer;
 

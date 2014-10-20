@@ -314,7 +314,7 @@ function ec_article_panelizer_defaults() {
     $display->content['new-179ea74a-f401-4a20-8441-6fde6c8d29bb'] = $pane;
     $display->panels['two_66_33_second'][2] = 'new-179ea74a-f401-4a20-8441-6fde6c8d29bb';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = '0';
+  $display->title_pane = 'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998';
   $panelizer->display = $display;
   $export['node:article:default:default'] = $panelizer;
 

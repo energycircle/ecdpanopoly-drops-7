@@ -11,6 +11,11 @@ function ec_promotions_defaultconfig_features() {
   return array(
     'ec_promotions' => array(
       'field_default_fields' => 'field_default_fields',
+      'field_group_info' => 'field_group_info',
+      'panelizer_defaults' => 'panelizer_defaults',
+      'strongarm' => 'strongarm',
+      'user_default_permissions' => 'user_default_permissions',
+      'views_default_views' => 'views_default_views',
     ),
   );
 }
@@ -2083,4 +2088,658 @@ function ec_promotions_defaultconfig_field_default_fields() {
   t('Show this promotion on these product pages.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_field_group_info().
+ */
+function ec_promotions_defaultconfig_field_group_info() {
+  $export = array();
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_cta_form|node|promotion|form';
+  $field_group->group_name = 'group_cta_form';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'promotion';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'CTA Form',
+    'weight' => '7',
+    'children' => array(
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'label' => 'CTA Form',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'closed',
+    ),
+  );
+  $export['group_cta_form|node|promotion|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_show_this_on|node|promotion|form';
+  $field_group->group_name = 'group_show_this_on';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'promotion';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Show This On',
+    'weight' => '8',
+    'children' => array(
+      0 => 'field_ref_promo_serv_group',
+      1 => 'field_ref_promo_serv_cat',
+      2 => 'field_ref_promo_service',
+      3 => 'field_ref_promo_article',
+      4 => 'field_ref_promo_case_study',
+      5 => 'field_ref_promotion_product',
+      6 => 'field_ref_promo_page',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'label' => 'Show This On',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'closed',
+    ),
+  );
+  $export['group_show_this_on|node|promotion|form'] = $field_group;
+
+  return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_panelizer_defaults().
+ */
+function ec_promotions_defaultconfig_panelizer_defaults() {
+  $export = array();
+
+  return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_promotions_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_promotion';
+  $strongarm->value = 'edit-menu';
+  $export['additional_settings__active_tab_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_menutitle_promotion';
+  $strongarm->value = 0;
+  $export['auto_menutitle_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'clear_all_promotion';
+  $strongarm->value = 0;
+  $export['clear_all_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_promotion';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_promotion';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_promotion';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_promotion';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_promotion';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_promotion';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_new_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_promotion';
+  $strongarm->value = 1;
+  $export['content_type_extras_title_hide_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_enabled_promotion';
+  $strongarm->value = 0;
+  $export['date_popup_authored_enabled_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_format_promotion';
+  $strongarm->value = 'm/d/Y - H:i';
+  $export['date_popup_authored_format_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_year_range_promotion';
+  $strongarm->value = '3';
+  $export['date_popup_authored_year_range_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'exclude_node_title_content_type_modes_promotion';
+  $strongarm->value = array(
+    'full' => 'full',
+    'teaser' => 'teaser',
+    'rss' => 'rss',
+    'search_index' => 'search_index',
+    'search_result' => 'search_result',
+    'show_this_block' => 'show_this_block',
+    'featured' => 'featured',
+    'token' => 'token',
+    'nodeform' => 0,
+  );
+  $export['exclude_node_title_content_type_modes_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'exclude_node_title_content_type_value_promotion';
+  $strongarm->value = 'all';
+  $export['exclude_node_title_content_type_value_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_entityform__promotion';
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'redirect' => array(
+          'weight' => '0',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_entityform__promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__promotion';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'show_this_block' => array(
+        'custom_settings' => TRUE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(
+        'metatags' => array(
+          'weight' => '12',
+        ),
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '11',
+        ),
+        'redirect' => array(
+          'weight' => '10',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '9',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_node__promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_label_promotion';
+  $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
+  $export['maxlength_js_label_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_promotion';
+  $strongarm->value = '';
+  $export['maxlength_js_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_promotion';
+  $strongarm->value = array(
+    0 => 'menu-auxiliary-menu',
+    1 => 'main-menu',
+  );
+  $export['menu_options_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_promotion';
+  $strongarm->value = 'menu-auxiliary-menu:0';
+  $export['menu_parent_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_promotion';
+  $strongarm->value = array(
+    0 => 'status',
+  );
+  $export['node_options_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_promotion';
+  $strongarm->value = '0';
+  $export['node_preview_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_promotion';
+  $strongarm->value = 0;
+  $export['node_submitted_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_node_promotion';
+  $strongarm->value = array(
+    'status' => 1,
+    'view modes' => array(
+      'page_manager' => array(
+        'status' => 0,
+        'default' => 1,
+        'choice' => 1,
+      ),
+      'default' => array(
+        'status' => 1,
+        'default' => 1,
+        'choice' => 1,
+      ),
+      'teaser' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'show_this_block' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'featured' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+    ),
+  );
+  $export['panelizer_defaults_node_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_promotion_pattern';
+  $strongarm->value = 'promotion/[node:title]';
+  $export['pathauto_node_promotion_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_continue_promotion';
+  $strongarm->value = 'Save and add fields';
+  $export['save_continue_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sync_translations_promotion';
+  $strongarm->value = '0';
+  $export['sync_translations_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_permissions_promotion';
+  $strongarm->value = array(
+    0 => 'create_roles',
+    1 => 'edit_roles',
+    2 => 'delete_roles',
+  );
+  $export['user_permissions_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_default_promotion';
+  $strongarm->value = '0';
+  $export['weight_default_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_enabled_promotion';
+  $strongarm->value = '1';
+  $export['weight_enabled_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_menu_promotion';
+  $strongarm->value = '0';
+  $export['weight_menu_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_range_promotion';
+  $strongarm->value = '20';
+  $export['weight_range_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_promotion';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.5',
+  );
+  $export['xmlsitemap_settings_node_promotion'] = $strongarm;
+
+  return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_user_default_permissions().
+ */
+function ec_promotions_defaultconfig_user_default_permissions() {
+  $permissions = array();
+
+  // Exported permission: 'administer panelizer node promotion breadcrumbs'.
+  $permissions['administer panelizer node promotion breadcrumbs'] = array(
+    'name' => 'administer panelizer node promotion breadcrumbs',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node promotion content'.
+  $permissions['administer panelizer node promotion content'] = array(
+    'name' => 'administer panelizer node promotion content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node promotion context'.
+  $permissions['administer panelizer node promotion context'] = array(
+    'name' => 'administer panelizer node promotion context',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node promotion defaults'.
+  $permissions['administer panelizer node promotion defaults'] = array(
+    'name' => 'administer panelizer node promotion defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node promotion layout'.
+  $permissions['administer panelizer node promotion layout'] = array(
+    'name' => 'administer panelizer node promotion layout',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node promotion overview'.
+  $permissions['administer panelizer node promotion overview'] = array(
+    'name' => 'administer panelizer node promotion overview',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node promotion settings'.
+  $permissions['administer panelizer node promotion settings'] = array(
+    'name' => 'administer panelizer node promotion settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'create promotion content'.
+  $permissions['create promotion content'] = array(
+    'name' => 'create promotion content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any promotion content'.
+  $permissions['delete any promotion content'] = array(
+    'name' => 'delete any promotion content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own promotion content'.
+  $permissions['delete own promotion content'] = array(
+    'name' => 'delete own promotion content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any promotion content'.
+  $permissions['edit any promotion content'] = array(
+    'name' => 'edit any promotion content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own promotion content'.
+  $permissions['edit own promotion content'] = array(
+    'name' => 'edit own promotion content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  return $permissions;
+}
+
+/**
+ * Implements hook_defaultconfig_views_default_views().
+ */
+function ec_promotions_defaultconfig_views_default_views() {
+  $export = array();
+
+  $view = new view();
+  $view->name = 'promotions';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'promotions';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['path']['element_default_classes'] = FALSE;
+  /* Field: Content: Display Title */
+  $handler->display->display_options['fields']['field_display_title']['id'] = 'field_display_title';
+  $handler->display->display_options['fields']['field_display_title']['table'] = 'field_data_field_display_title';
+  $handler->display->display_options['fields']['field_display_title']['field'] = 'field_display_title';
+  $handler->display->display_options['fields']['field_display_title']['label'] = '';
+  $handler->display->display_options['fields']['field_display_title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_display_title']['alter']['text'] = '<a href="[path]">[field_display_title]</a>';
+  $handler->display->display_options['fields']['field_display_title']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_display_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_display_title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_display_title']['settings'] = array(
+    'title_style' => 'h2',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
+  /* Field: Content: Display subtitle */
+  $handler->display->display_options['fields']['field_display_subtitle']['id'] = 'field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['table'] = 'field_data_field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['field'] = 'field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['label'] = '';
+  $handler->display->display_options['fields']['field_display_subtitle']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_display_subtitle']['element_default_classes'] = FALSE;
+  /* Field: Content: Button Text */
+  $handler->display->display_options['fields']['field_button_text']['id'] = 'field_button_text';
+  $handler->display->display_options['fields']['field_button_text']['table'] = 'field_data_field_button_text';
+  $handler->display->display_options['fields']['field_button_text']['field'] = 'field_button_text';
+  $handler->display->display_options['fields']['field_button_text']['label'] = '';
+  $handler->display->display_options['fields']['field_button_text']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_button_text']['alter']['text'] = '<a class="promo-button" href="[path]">[field_button_text]</a>';
+  $handler->display->display_options['fields']['field_button_text']['element_label_colon'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'promotion' => 'promotion',
+  );
+
+  /* Display: Content pane */
+  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+
+  /* Display: Sidebar two-promo block */
+  $handler = $view->new_display('panel_pane', 'Sidebar two-promo block', 'panel_pane_2');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '2';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $export['promotions'] = $view;
+
+  return $export;
 }

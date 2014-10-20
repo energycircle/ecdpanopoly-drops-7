@@ -54,3 +54,37 @@ function ec_staff_default_entityform_type() {
   }');
   return $items;
 }
+
+/**
+ * Implements hook_node_info().
+ */
+function ec_staff_node_info() {
+  $items = array(
+    'staff' => array(
+      'name' => t('Staff'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Full Name'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function ec_staff_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['staff'] = array(
+    'enabled' => 1,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
+}

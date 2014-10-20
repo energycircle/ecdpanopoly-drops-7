@@ -63,3 +63,37 @@ function ec_campaign_page_default_entityform_type() {
   }');
   return $items;
 }
+
+/**
+ * Implements hook_node_info().
+ */
+function ec_campaign_page_node_info() {
+  $items = array(
+    'campaign_page' => array(
+      'name' => t('Campaign Page'),
+      'base' => 'node_content',
+      'description' => t('Used as a one-off promotion landing page that is combined with a marketing initiative to drive traffic. These pages will have no menu link and excluded from the sitemap.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function ec_campaign_page_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['campaign_page'] = array(
+    'enabled' => 0,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
+}

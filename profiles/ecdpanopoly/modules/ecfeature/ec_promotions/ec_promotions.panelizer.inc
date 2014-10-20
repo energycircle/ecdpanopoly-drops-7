@@ -198,7 +198,7 @@ function ec_promotions_panelizer_defaults() {
     $display->content['new-c673cbde-d304-426e-a76e-8d24ae6c1ff9'] = $pane;
     $display->panels['two_66_33_second'][0] = 'new-c673cbde-d304-426e-a76e-8d24ae6c1ff9';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = '0';
+  $display->title_pane = 'new-cec8e437-cd28-4fc2-a6e3-7b1be437dbce';
   $panelizer->display = $display;
   $export['node:promotion:default:default'] = $panelizer;
 

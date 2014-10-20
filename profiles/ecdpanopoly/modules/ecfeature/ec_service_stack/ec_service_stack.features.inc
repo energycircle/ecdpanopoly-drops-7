@@ -5,30 +5,6 @@
  */
 
 /**
- * Implements hook_default_cer().
- */
-function ec_service_stack_default_cer() {
-  $items = array();
-  $items['node:service:field_ref_service_serv_cat*node:service_category:field_ref_serv_cat_services'] = entity_import('cer', '{
-    "identifier" : "node:service:field_ref_service_serv_cat*node:service_category:field_ref_serv_cat_services",
-    "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
-    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
-    "cer_weight" : { "und" : [ { "value" : "0" } ] },
-    "cer_left" : { "und" : [ { "path" : "node:service:field_ref_service_serv_cat" } ] },
-    "cer_right" : { "und" : [ { "path" : "node:service_category:field_ref_serv_cat_services" } ] }
-  }');
-  $items['node:service_category:field_ref_serv_cat_serv_group*node:service_group:field_ref_serv_group_serv_cat'] = entity_import('cer', '{
-    "identifier" : "node:service_category:field_ref_serv_cat_serv_group*node:service_group:field_ref_serv_group_serv_cat",
-    "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
-    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
-    "cer_weight" : { "und" : [ { "value" : "0" } ] },
-    "cer_left" : { "und" : [ { "path" : "node:service_category:field_ref_serv_cat_serv_group" } ] },
-    "cer_right" : { "und" : [ { "path" : "node:service_group:field_ref_serv_group_serv_cat" } ] }
-  }');
-  return $items;
-}
-
-/**
  * Implements hook_ctools_plugin_api().
  */
 function ec_service_stack_ctools_plugin_api($module = NULL, $api = NULL) {
@@ -92,4 +68,70 @@ function ec_service_stack_default_entityform_type() {
     "paths" : []
   }');
   return $items;
+}
+
+/**
+ * Implements hook_node_info().
+ */
+function ec_service_stack_node_info() {
+  $items = array(
+    'service' => array(
+      'name' => t('Service'),
+      'base' => 'node_content',
+      'description' => t('A single service.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'service_category' => array(
+      'name' => t('Service Category'),
+      'base' => 'node_content',
+      'description' => t('A grouping of services. '),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'service_group' => array(
+      'name' => t('Service Group'),
+      'base' => 'node_content',
+      'description' => t('A group of service categories.  '),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function ec_service_stack_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['service'] = array(
+    'enabled' => 1,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  $settings['service_category'] = array(
+    'enabled' => 1,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  $settings['service_group'] = array(
+    'enabled' => 1,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
 }

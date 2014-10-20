@@ -25,3 +25,37 @@ function ec_slide_ctools_plugin_api($module = NULL, $api = NULL) {
 function ec_slide_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
+
+/**
+ * Implements hook_node_info().
+ */
+function ec_slide_node_info() {
+  $items = array(
+    'slide' => array(
+      'name' => t('Slide'),
+      'base' => 'node_content',
+      'description' => t('A slide to include in the home page slide set or another slide set.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function ec_slide_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['slide'] = array(
+    'enabled' => 1,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
+}

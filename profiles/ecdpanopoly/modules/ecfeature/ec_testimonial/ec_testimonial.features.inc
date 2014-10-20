@@ -31,3 +31,37 @@ function ec_testimonial_ctools_plugin_api($module = NULL, $api = NULL) {
 function ec_testimonial_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
+
+/**
+ * Implements hook_node_info().
+ */
+function ec_testimonial_node_info() {
+  $items = array(
+    'testimonial' => array(
+      'name' => t('Testimonial'),
+      'base' => 'node_content',
+      'description' => t('A customer testimonial, including text, image, and/or video'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function ec_testimonial_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['testimonial'] = array(
+    'enabled' => 1,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
+}
