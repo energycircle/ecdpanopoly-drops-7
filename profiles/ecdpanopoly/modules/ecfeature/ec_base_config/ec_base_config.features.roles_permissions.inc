@@ -20,7 +20,6 @@ function ec_base_config_default_roles_permissions() {
       'access administration pages' => TRUE,
       'access content overview' => TRUE,
       'access contextual links' => TRUE,
-      'access media browser' => TRUE,
       'add media from remote sources' => TRUE,
       'administer entityform types' => TRUE,
       'administer linkit' => TRUE,
@@ -263,7 +262,6 @@ function ec_base_config_default_roles_permissions() {
       'edit terms in 6' => TRUE,
       'flush caches' => TRUE,
       'revert revisions' => TRUE,
-      'switch users' => TRUE,
       'use exclude node title' => TRUE,
       'use ipe with page manager' => TRUE,
       'use manualcrop' => TRUE,
@@ -276,7 +274,6 @@ function ec_base_config_default_roles_permissions() {
       'view own private files' => TRUE,
       'view own unpublished content' => TRUE,
       'view revisions' => TRUE,
-      'view the administration theme' => TRUE,
     ),
   );
 
@@ -290,7 +287,6 @@ function ec_base_config_default_roles_permissions() {
       'access administration pages' => TRUE,
       'access content overview' => TRUE,
       'access contextual links' => TRUE,
-      'access media browser' => TRUE,
       'add media from remote sources' => TRUE,
       'administer menu' => TRUE,
       'administer panelizer node article context' => TRUE,
@@ -423,7 +419,7 @@ function ec_base_config_default_roles_permissions() {
       'delete own testimonial content' => TRUE,
       'delete own video files' => TRUE,
       'delete revisions' => TRUE,
-      'delete terms in 3' => TRUE,
+      'delete terms in 4' => TRUE,
       'download any audio files' => TRUE,
       'download any document files' => TRUE,
       'download any image files' => TRUE,
@@ -481,7 +477,7 @@ function ec_base_config_default_roles_permissions() {
       'edit own staff content' => TRUE,
       'edit own testimonial content' => TRUE,
       'edit own video files' => TRUE,
-      'edit terms in 3' => TRUE,
+      'edit terms in 4' => TRUE,
       'revert revisions' => TRUE,
       'use exclude node title' => TRUE,
       'use ipe with page manager' => TRUE,
@@ -494,7 +490,6 @@ function ec_base_config_default_roles_permissions() {
       'view own private files' => TRUE,
       'view own unpublished content' => TRUE,
       'view revisions' => TRUE,
-      'view the administration theme' => TRUE,
     ),
   );
 

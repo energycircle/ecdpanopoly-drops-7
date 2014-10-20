@@ -171,7 +171,7 @@ function ec_blog_post_panelizer_defaults() {
     $display->content['new-dd10018c-d753-4216-8fb0-b9aa4e519c4d'] = $pane;
     $display->panels['two_66_33_second'][0] = 'new-dd10018c-d753-4216-8fb0-b9aa4e519c4d';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = '0';
+  $display->title_pane = 'new-51b0ebb9-27c4-4fc8-aee6-5ec05832ad97';
   $panelizer->display = $display;
   $export['node:blog_post:default:default'] = $panelizer;
 

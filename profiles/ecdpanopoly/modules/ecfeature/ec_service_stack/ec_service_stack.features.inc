@@ -55,3 +55,41 @@ function ec_service_stack_ctools_plugin_api($module = NULL, $api = NULL) {
 function ec_service_stack_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
+
+/**
+ * Implements hook_default_entityform_type().
+ */
+function ec_service_stack_default_entityform_type() {
+  $items = array();
+  $items['schedule_service'] = entity_import('entityform_type', '{
+    "type" : "schedule_service",
+    "label" : "Schedule Service",
+    "data" : {
+      "draftable" : 0,
+      "draft_redirect_path" : "",
+      "draft_button_text" : "",
+      "draft_save_text" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
+      "submit_button_text" : "ButtonText",
+      "submit_confirm_msg" : "",
+      "your_submissions" : "",
+      "disallow_resubmit_msg" : "",
+      "delete_confirm_msg" : "",
+      "page_title_view" : "",
+      "preview_page" : 0,
+      "submission_page_title" : "\\u003Cnone\\u003E",
+      "submission_text" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
+      "submission_show_submitted" : 0,
+      "submissions_view" : "default",
+      "user_submissions_view" : "default",
+      "form_status" : "ENTITYFORM_OPEN",
+      "roles" : { "1" : "1", "2" : "2", "3" : "3", "5" : "5", "4" : "4" },
+      "resubmit_action" : "new",
+      "redirect_path" : "schedule_service\\/thank_you",
+      "instruction_pre" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
+      "enable_block" : 0
+    },
+    "weight" : "0",
+    "paths" : []
+  }');
+  return $items;
+}

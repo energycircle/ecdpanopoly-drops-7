@@ -12,7 +12,7 @@ function ec_casestudy_default_cer() {
   $items['node:case_study:field_ref_case_study_promo*node:promotion:field_ref_promo_case_study'] = entity_import('cer', '{
     "identifier" : "node:case_study:field_ref_case_study_promo*node:promotion:field_ref_promo_case_study",
     "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
-    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
+    "cer_enabled" : { "und" : [ { "value" : "0" } ] },
     "cer_weight" : { "und" : [ { "value" : "0" } ] },
     "cer_left" : { "und" : [ { "path" : "node:case_study:field_ref_case_study_promo" } ] },
     "cer_right" : { "und" : [ { "path" : "node:promotion:field_ref_promo_case_study" } ] }

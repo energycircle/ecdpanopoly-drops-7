@@ -24,9 +24,10 @@ function ec_base_config_strongarm() {
   $strongarm->value = array(
     'admin_menu.icon' => TRUE,
     'admin_menu.menu' => TRUE,
-    'admin_menu.search' => TRUE,
-    'admin_menu.users' => TRUE,
     'admin_menu.account' => TRUE,
+    'shortcut.links' => FALSE,
+    'admin_menu.search' => FALSE,
+    'admin_menu.users' => FALSE,
   );
   $export['admin_menu_components'] = $strongarm;
 
@@ -36,7 +37,6 @@ function ec_base_config_strongarm() {
   $strongarm->name = 'admin_menu_devel_modules_skip';
   $strongarm->value = array(
     'admin_devel' => 0,
-    'coder' => 0,
     'devel' => 0,
     'devel_node_access' => 0,
     'field_ui' => 0,
@@ -84,21 +84,21 @@ function ec_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme';
-  $strongarm->value = 'adaptivetheme_admin';
+  $strongarm->value = 'seven';
   $export['admin_theme'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme_admin_theme_batch';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['admin_theme_admin_theme_batch'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme_path';
-  $strongarm->value = '';
+  $strongarm->value = 'entityform/*';
   $export['admin_theme_path'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -141,7 +141,7 @@ function ec_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'apps_client_id';
-  $strongarm->value = '671153d97410d3d757.76921523';
+  $strongarm->value = '9238538cc680df52a0.67259162';
   $export['apps_client_id'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -179,6 +179,8 @@ function ec_base_config_strongarm() {
   $strongarm->value = array(
     0 => 'contact',
     1 => 'join_our_team',
+    2 => 'promotion',
+    3 => 'special_promotion',
   );
   $export['entityform_block_types'] = $strongarm;
 

@@ -132,16 +132,15 @@ function ec_base_config_metatag_export_default() {
   // Exported Metatag config instance: user.
   $config['user'] = array(
     'instance' => 'user',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[user:name] | [site:name]',
       ),
-      'og:title' => array(
-        'value' => '[user:name]',
-      ),
       'og:type' => array(
         'value' => 'profile',
+      ),
+      'og:title' => array(
+        'value' => '[user:name]',
       ),
       'og:image' => array(
         'value' => '[user:picture:url]',

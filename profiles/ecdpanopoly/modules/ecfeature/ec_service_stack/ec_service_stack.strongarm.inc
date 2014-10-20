@@ -183,11 +183,33 @@ function ec_service_stack_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_entityform__schedule_service';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => TRUE,
+      ),
+      'email' => array(
+        'custom_settings' => TRUE,
+      ),
+      'confirmation' => array(
+        'custom_settings' => FALSE,
+      ),
+      'download' => array(
+        'custom_settings' => FALSE,
+      ),
+      'table' => array(
+        'custom_settings' => TRUE,
+      ),
+      'review' => array(
+        'custom_settings' => TRUE,
+      ),
+      'token' => array(
+        'custom_settings' => TRUE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '0',
         ),
       ),
       'display' => array(),

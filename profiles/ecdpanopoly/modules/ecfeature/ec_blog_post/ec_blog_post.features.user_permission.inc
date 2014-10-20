@@ -81,6 +81,15 @@ function ec_blog_post_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer taxonomy_term blog_categories defaults'.
+  $permissions['administer panelizer taxonomy_term blog_categories defaults'] = array(
+    'name' => 'administer panelizer taxonomy_term blog_categories defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create blog_post content'.
   $permissions['create blog_post content'] = array(
     'name' => 'create blog_post content',
@@ -119,6 +128,7 @@ function ec_blog_post_user_default_permissions() {
     'name' => 'delete terms in blog_categories',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -151,6 +161,7 @@ function ec_blog_post_user_default_permissions() {
     'name' => 'edit terms in blog_categories',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
