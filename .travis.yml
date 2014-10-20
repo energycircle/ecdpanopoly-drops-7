@@ -30,6 +30,6 @@ after_failure:
 notifications:
   irc:
     channels:
-      - "chat.freenode.net#EnergyCircle"
+      - "chat.freenode.net#EnergyCircle-Dev"
     on_success: always
     on_failure: always
