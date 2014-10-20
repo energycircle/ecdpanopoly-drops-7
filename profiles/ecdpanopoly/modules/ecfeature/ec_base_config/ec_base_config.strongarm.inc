@@ -24,10 +24,9 @@ function ec_base_config_strongarm() {
   $strongarm->value = array(
     'admin_menu.icon' => TRUE,
     'admin_menu.menu' => TRUE,
+    'admin_menu.search' => TRUE,
+    'admin_menu.users' => TRUE,
     'admin_menu.account' => TRUE,
-    'shortcut.links' => FALSE,
-    'admin_menu.search' => FALSE,
-    'admin_menu.users' => FALSE,
   );
   $export['admin_menu_components'] = $strongarm;
 
@@ -37,6 +36,7 @@ function ec_base_config_strongarm() {
   $strongarm->name = 'admin_menu_devel_modules_skip';
   $strongarm->value = array(
     'admin_devel' => 0,
+    'coder' => 0,
     'devel' => 0,
     'devel_node_access' => 0,
     'field_ui' => 0,
@@ -84,21 +84,21 @@ function ec_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme';
-  $strongarm->value = 'seven';
+  $strongarm->value = 'adaptivetheme_admin';
   $export['admin_theme'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme_admin_theme_batch';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['admin_theme_admin_theme_batch'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme_path';
-  $strongarm->value = 'entityform/*';
+  $strongarm->value = '';
   $export['admin_theme_path'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -141,15 +141,8 @@ function ec_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'apps_client_id';
-  $strongarm->value = '9238538cc680df52a0.67259162';
+  $strongarm->value = '671153d97410d3d757.76921523';
   $export['apps_client_id'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'array_filter';
-  $strongarm->value = TRUE;
-  $export['array_filter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -175,56 +168,9 @@ function ec_base_config_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'cache';
-  $strongarm->value = 1;
-  $export['cache'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'cache_lifetime';
-  $strongarm->value = '0';
-  $export['cache_lifetime'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'clean_url';
   $strongarm->value = '1';
   $export['clean_url'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'compact_forms_descriptions';
-  $strongarm->value = 1;
-  $export['compact_forms_descriptions'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'compact_forms_field_size';
-  $strongarm->value = '';
-  $export['compact_forms_field_size'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'compact_forms_ids';
-  $strongarm->value = 'user-login-form
-search-form
-schedule-service-entityform-edit-form
-campaign-form-entityform-edit-form
-contact-entityform-edit-form
-join-our-team-entityform-edit-form';
-  $export['compact_forms_ids'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'compact_forms_stars';
-  $strongarm->value = '1';
-  $export['compact_forms_stars'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -233,8 +179,6 @@ join-our-team-entityform-edit-form';
   $strongarm->value = array(
     0 => 'contact',
     1 => 'join_our_team',
-    2 => 'promotion',
-    3 => 'special_promotion',
   );
   $export['entityform_block_types'] = $strongarm;
 
@@ -250,6 +194,10 @@ join-our-team-entityform-edit-form';
     'taxonomy_term' => array(
       0 => 'taxonomy_term_data',
       1 => 'tid',
+    ),
+    'cer' => array(
+      0 => 'cer_preset',
+      1 => 'pid',
     ),
     'entityform' => array(
       0 => 'entityform',
@@ -309,25 +257,6 @@ join-our-team-entityform-edit-form';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'entity_cache_tables_created';
-  $strongarm->value = '';
-  $export['entity_cache_tables_created'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'entity_rules_types';
-  $strongarm->value = array(
-    0 => 'user',
-    1 => 'node',
-    2 => 'taxonomy_term',
-    3 => 'entityform',
-  );
-  $export['entity_rules_types'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'entity_view_modes';
   $strongarm->value = array(
     'node' => array(
@@ -338,74 +267,6 @@ join-our-team-entityform-edit-form';
     ),
   );
   $export['entity_view_modes'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'media_wysiwyg_wysiwyg_upload_directory';
-  $strongarm->value = '';
-  $export['media_wysiwyg_wysiwyg_upload_directory'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'title_fieldable_panels_pane';
-  $strongarm->value = array(
-    'auto_attach' => array(
-      'title' => 0,
-    ),
-    'hide_label' => array(
-      'page' => 0,
-      'entity' => 0,
-    ),
-  );
-  $export['title_fieldable_panels_pane'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'title_file';
-  $strongarm->value = array(
-    'auto_attach' => array(
-      'filename' => 0,
-    ),
-    'hide_label' => array(
-      'page' => 0,
-      'entity' => 0,
-    ),
-  );
-  $export['title_file'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'title_node';
-  $strongarm->value = array(
-    'auto_attach' => array(
-      'title' => 'title',
-    ),
-    'hide_label' => array(
-      'page' => 0,
-      'entity' => 0,
-    ),
-  );
-  $export['title_node'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'title_taxonomy_term';
-  $strongarm->value = array(
-    'auto_attach' => array(
-      'name' => 'name',
-      'description' => 'description',
-    ),
-    'hide_label' => array(
-      'page' => 0,
-      'entity' => 0,
-    ),
-  );
-  $export['title_taxonomy_term'] = $strongarm;
 
   return $export;
 }

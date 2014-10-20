@@ -104,11 +104,11 @@ function ec_base_config_defaultconfig_metatag_config_default() {
     'title' => array(
       'value' => '[user:name] | [site:name]',
     ),
-    'og:type' => array(
-      'value' => 'profile',
-    ),
     'og:title' => array(
       'value' => '[user:name]',
+    ),
+    'og:type' => array(
+      'value' => 'profile',
     ),
     'og:image' => array(
       'value' => '[user:picture:url]',

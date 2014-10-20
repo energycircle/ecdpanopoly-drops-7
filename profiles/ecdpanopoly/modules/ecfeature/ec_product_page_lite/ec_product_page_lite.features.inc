@@ -5,6 +5,22 @@
  */
 
 /**
+ * Implements hook_default_cer().
+ */
+function ec_product_page_lite_default_cer() {
+  $items = array();
+  $items['node:product_page:field_ref_prodpage_testimonial*node:testimonial:field_ref_testimonial_prodpage'] = entity_import('cer', '{
+    "identifier" : "node:product_page:field_ref_prodpage_testimonial*node:testimonial:field_ref_testimonial_prodpage",
+    "cer_bidirectional" : { "und" : [ { "value" : "1" } ] },
+    "cer_enabled" : { "und" : [ { "value" : "1" } ] },
+    "cer_weight" : { "und" : [ { "value" : "0" } ] },
+    "cer_left" : { "und" : [ { "path" : "node:product_page:field_ref_prodpage_testimonial" } ] },
+    "cer_right" : { "und" : [ { "path" : "node:testimonial:field_ref_testimonial_prodpage" } ] }
+  }');
+  return $items;
+}
+
+/**
  * Implements hook_ctools_plugin_api().
  */
 function ec_product_page_lite_ctools_plugin_api($module = NULL, $api = NULL) {
@@ -27,38 +43,4 @@ function ec_product_page_lite_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function ec_product_page_lite_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
-}
-
-/**
- * Implements hook_node_info().
- */
-function ec_product_page_lite_node_info() {
-  $items = array(
-    'product_page' => array(
-      'name' => t('Product Page'),
-      'base' => 'node_content',
-      'description' => t('A page to display general information about a product.  '),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-  );
-  return $items;
-}
-
-/**
- * Implements hook_weight_features_default_settings().
- */
-function ec_product_page_lite_weight_features_default_settings() {
-  $settings = array();
-
-  $settings['product_page'] = array(
-    'enabled' => 1,
-    'range' => 20,
-    'menu_weight' => 0,
-    'default' => 0,
-    'sync_translations' => 0,
-  );
-
-  return $settings;
 }
