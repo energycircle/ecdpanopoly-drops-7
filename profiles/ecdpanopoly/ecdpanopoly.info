@@ -107,6 +107,7 @@ dependencies[] = features_override
 dependencies[] = ftools
 dependencies[] = features_roles_permissions
 dependencies[] = uuid_features
+dependencies[] = uuid_path
 
 ;EC features
 ;dependencies[] = ec_foundation_types_democontent
