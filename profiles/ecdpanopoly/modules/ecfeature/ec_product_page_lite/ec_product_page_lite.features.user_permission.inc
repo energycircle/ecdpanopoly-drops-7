@@ -15,6 +15,7 @@ function ec_product_page_lite_user_default_permissions() {
     'name' => 'administer panelizer node product_page breadcrumbs',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -24,8 +25,6 @@ function ec_product_page_lite_user_default_permissions() {
   $permissions['administer panelizer node product_page content'] = array(
     'name' => 'administer panelizer node product_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -35,7 +34,6 @@ function ec_product_page_lite_user_default_permissions() {
   $permissions['administer panelizer node product_page context'] = array(
     'name' => 'administer panelizer node product_page context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -54,8 +52,6 @@ function ec_product_page_lite_user_default_permissions() {
   $permissions['administer panelizer node product_page layout'] = array(
     'name' => 'administer panelizer node product_page layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -65,8 +61,6 @@ function ec_product_page_lite_user_default_permissions() {
   $permissions['administer panelizer node product_page overview'] = array(
     'name' => 'administer panelizer node product_page overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -97,7 +91,6 @@ function ec_product_page_lite_user_default_permissions() {
     'name' => 'delete any product_page content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -129,8 +122,6 @@ function ec_product_page_lite_user_default_permissions() {
   $permissions['edit own product_page content'] = array(
     'name' => 'edit own product_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

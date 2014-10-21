@@ -213,7 +213,7 @@ function ec_product_page_lite_panelizer_defaults() {
     $display->content['new-7f6384e2-f861-4a86-bf66-c8f11f9645ff'] = $pane;
     $display->panels['two_66_33_second'][2] = 'new-7f6384e2-f861-4a86-bf66-c8f11f9645ff';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = '0';
+  $display->title_pane = 'new-e434b378-875d-48c6-a8f8-9263eefa3a3b';
   $panelizer->display = $display;
   $export['node:product_page:default:default'] = $panelizer;
 

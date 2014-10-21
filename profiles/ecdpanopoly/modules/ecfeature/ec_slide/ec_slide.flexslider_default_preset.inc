@@ -16,8 +16,6 @@ function ec_slide_flexslider_default_presets() {
   $preset->name = 'home_slides';
   $preset->title = 'Home Slides';
   $preset->theme = 'classic';
-  $preset->imagestyle_normal = 'sc_1280x440';
-  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = '';
   $export['home_slides'] = $preset;
 
@@ -27,8 +25,6 @@ function ec_slide_flexslider_default_presets() {
   $preset->name = 'slideshow_slider';
   $preset->title = 'Slideshow Slider';
   $preset->theme = 'classic';
-  $preset->imagestyle_normal = 'sc_780x390';
-  $preset->imagestyle_thumbnail = 'sc_780x390';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',
@@ -79,8 +75,6 @@ function ec_slide_flexslider_default_presets() {
   $preset->name = 'slideshow_thumbnails';
   $preset->title = 'Slideshow Thumbnails ';
   $preset->theme = 'classic';
-  $preset->imagestyle_normal = 'sc_220x110';
-  $preset->imagestyle_thumbnail = 'sc_220x110';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',

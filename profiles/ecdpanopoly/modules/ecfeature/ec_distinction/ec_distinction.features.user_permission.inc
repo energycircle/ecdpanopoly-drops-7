@@ -14,7 +14,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction breadcrumbs'] = array(
     'name' => 'administer panelizer node distinction breadcrumbs',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -35,7 +34,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction context'] = array(
     'name' => 'administer panelizer node distinction context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -54,8 +52,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction layout'] = array(
     'name' => 'administer panelizer node distinction layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -65,8 +61,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction overview'] = array(
     'name' => 'administer panelizer node distinction overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -106,7 +100,6 @@ function ec_distinction_user_default_permissions() {
     'name' => 'delete any distinction content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -127,7 +120,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['delete terms in distinction_types'] = array(
     'name' => 'delete terms in distinction_types',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -148,8 +140,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit own distinction content'] = array(
     'name' => 'edit own distinction content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -159,7 +149,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit terms in distinction_types'] = array(
     'name' => 'edit terms in distinction_types',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',

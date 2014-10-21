@@ -43,5 +43,23 @@ function ec_product_page_lite_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function ec_product_page_lite_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['product_page'] = array(
+    'enabled' => 1,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
 }

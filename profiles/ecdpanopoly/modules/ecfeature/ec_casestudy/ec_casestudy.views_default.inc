@@ -37,21 +37,12 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_case_study_image']['id'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['table'] = 'field_data_field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['field'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['label'] = '';
   $handler->display->display_options['fields']['field_case_study_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_case_study_image']['settings'] = array(
-    'image_style' => 'sc_220x165',
-    'image_link' => 'content',
-    'field_multiple_limit' => '1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_case_study_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_case_study_image']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -131,21 +122,12 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_case_study_image']['id'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['table'] = 'field_data_field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['field'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['label'] = '';
   $handler->display->display_options['fields']['field_case_study_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_case_study_image']['settings'] = array(
-    'image_style' => 'sc_460x345',
-    'image_link' => 'content',
-    'field_multiple_limit' => '1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_case_study_image']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -341,22 +323,13 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_case_study_image']['id'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['table'] = 'field_data_field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['field'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['label'] = '';
   $handler->display->display_options['fields']['field_case_study_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_case_study_image']['settings'] = array(
-    'image_style' => 'sc_780x585',
-    'image_link' => '',
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_case_study_image']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image']['delta_offset'] = '0';
-  /* Field: image alt text */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_case_study_image_1']['id'] = 'field_case_study_image_1';
   $handler->display->display_options['fields']['field_case_study_image_1']['table'] = 'field_data_field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image_1']['field'] = 'field_case_study_image';
@@ -366,15 +339,6 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['field_case_study_image_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_case_study_image_1']['alter']['text'] = '[field_case_study_image_1-alt]';
   $handler->display->display_options['fields']['field_case_study_image_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image_1']['click_sort_column'] = 'alt';
-  $handler->display->display_options['fields']['field_case_study_image_1']['settings'] = array(
-    'image_style' => '',
-    'image_link' => '',
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_case_study_image_1']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image_1']['delta_offset'] = '0';
 
   /* Display: thumbnails */
   $handler = $view->new_display('panel_pane', 'thumbnails', 'panel_pane_2');
@@ -396,21 +360,12 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_case_study_image']['id'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['table'] = 'field_data_field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['field'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['label'] = '';
   $handler->display->display_options['fields']['field_case_study_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_case_study_image']['settings'] = array(
-    'image_style' => 'sc_220x165',
-    'image_link' => '',
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_case_study_image']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image']['delta_offset'] = '0';
   $export['casestudy_slideshow_carousel'] = $view;
 
   $view = new view();
@@ -446,21 +401,12 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_case_study_image']['id'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['table'] = 'field_data_field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['field'] = 'field_case_study_image';
   $handler->display->display_options['fields']['field_case_study_image']['label'] = '';
   $handler->display->display_options['fields']['field_case_study_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_case_study_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_case_study_image']['settings'] = array(
-    'image_style' => 'sc_620x310',
-    'image_link' => 'content',
-    'field_multiple_limit' => '1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_case_study_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_case_study_image']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
@@ -506,7 +452,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'case_study' => 'case_study',
   );
-  /* Filter criterion: Content: Feature this on the home page (field_feature_on_home) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_feature_on_home_value']['id'] = 'field_feature_on_home_value';
   $handler->display->display_options['filters']['field_feature_on_home_value']['table'] = 'field_data_field_feature_on_home';
   $handler->display->display_options['filters']['field_feature_on_home_value']['field'] = 'field_feature_on_home_value';
@@ -538,7 +484,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'case_study' => 'case_study',
   );
-  /* Filter criterion: Content: Feature this on the home page (field_feature_on_home) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_feature_on_home_value']['id'] = 'field_feature_on_home_value';
   $handler->display->display_options['filters']['field_feature_on_home_value']['table'] = 'field_data_field_feature_on_home';
   $handler->display->display_options['filters']['field_feature_on_home_value']['field'] = 'field_feature_on_home_value';

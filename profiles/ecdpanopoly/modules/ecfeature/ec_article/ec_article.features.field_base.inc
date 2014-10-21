@@ -180,7 +180,7 @@ function ec_article_field_default_field_bases() {
   // Exported field_base: 'field_ref_article_case_study'
   $field_bases['field_ref_article_case_study'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ref_article_case_study',
@@ -203,6 +203,9 @@ function ec_article_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),

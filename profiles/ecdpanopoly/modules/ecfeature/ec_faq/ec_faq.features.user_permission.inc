@@ -14,7 +14,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq breadcrumbs'] = array(
     'name' => 'administer panelizer node faq breadcrumbs',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -25,6 +24,7 @@ function ec_faq_user_default_permissions() {
     'name' => 'administer panelizer node faq content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -34,8 +34,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq context'] = array(
     'name' => 'administer panelizer node faq context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -54,8 +52,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq layout'] = array(
     'name' => 'administer panelizer node faq layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -65,8 +61,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq overview'] = array(
     'name' => 'administer panelizer node faq overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -97,7 +91,6 @@ function ec_faq_user_default_permissions() {
     'name' => 'delete any faq content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -129,8 +122,6 @@ function ec_faq_user_default_permissions() {
   $permissions['edit own faq content'] = array(
     'name' => 'edit own faq content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

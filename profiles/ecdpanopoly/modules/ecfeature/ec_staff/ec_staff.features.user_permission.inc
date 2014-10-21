@@ -14,7 +14,6 @@ function ec_staff_user_default_permissions() {
   $permissions['administer panelizer node staff breadcrumbs'] = array(
     'name' => 'administer panelizer node staff breadcrumbs',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -35,7 +34,6 @@ function ec_staff_user_default_permissions() {
   $permissions['administer panelizer node staff context'] = array(
     'name' => 'administer panelizer node staff context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -54,8 +52,6 @@ function ec_staff_user_default_permissions() {
   $permissions['administer panelizer node staff layout'] = array(
     'name' => 'administer panelizer node staff layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -65,8 +61,6 @@ function ec_staff_user_default_permissions() {
   $permissions['administer panelizer node staff overview'] = array(
     'name' => 'administer panelizer node staff overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -97,7 +91,6 @@ function ec_staff_user_default_permissions() {
     'name' => 'delete any staff content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -129,8 +122,6 @@ function ec_staff_user_default_permissions() {
   $permissions['edit own staff content'] = array(
     'name' => 'edit own staff content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
