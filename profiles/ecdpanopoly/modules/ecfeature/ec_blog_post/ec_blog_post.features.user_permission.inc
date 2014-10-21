@@ -52,6 +52,7 @@ function ec_blog_post_user_default_permissions() {
   $permissions['administer panelizer node blog_post layout'] = array(
     'name' => 'administer panelizer node blog_post layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -109,8 +110,6 @@ function ec_blog_post_user_default_permissions() {
   $permissions['delete own blog_post content'] = array(
     'name' => 'delete own blog_post content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -120,8 +119,6 @@ function ec_blog_post_user_default_permissions() {
   $permissions['delete terms in blog_categories'] = array(
     'name' => 'delete terms in blog_categories',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',

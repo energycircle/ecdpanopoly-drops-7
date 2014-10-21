@@ -33,7 +33,6 @@ function ec_slide_user_default_permissions() {
     'name' => 'administer panelizer node slide content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -61,6 +60,7 @@ function ec_slide_user_default_permissions() {
   $permissions['administer panelizer node slide layout'] = array(
     'name' => 'administer panelizer node slide layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -118,8 +118,6 @@ function ec_slide_user_default_permissions() {
   $permissions['delete own slide content'] = array(
     'name' => 'delete own slide content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

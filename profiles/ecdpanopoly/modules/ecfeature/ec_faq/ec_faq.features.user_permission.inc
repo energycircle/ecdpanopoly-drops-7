@@ -24,7 +24,6 @@ function ec_faq_user_default_permissions() {
     'name' => 'administer panelizer node faq content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -52,6 +51,7 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq layout'] = array(
     'name' => 'administer panelizer node faq layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -100,8 +100,6 @@ function ec_faq_user_default_permissions() {
   $permissions['delete own faq content'] = array(
     'name' => 'delete own faq content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

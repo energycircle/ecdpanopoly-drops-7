@@ -221,14 +221,6 @@ function ec_base_config_strongarm() {
       0 => 'redirect',
       1 => 'rid',
     ),
-    'search_api_server' => array(
-      0 => 'search_api_server',
-      1 => 'id',
-    ),
-    'search_api_index' => array(
-      0 => 'search_api_index',
-      1 => 'id',
-    ),
     'file' => array(
       0 => 'file_managed',
       1 => 'fid',

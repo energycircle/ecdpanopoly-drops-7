@@ -24,7 +24,6 @@ function ec_testimonial_user_default_permissions() {
     'name' => 'administer panelizer node testimonial content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -52,6 +51,7 @@ function ec_testimonial_user_default_permissions() {
   $permissions['administer panelizer node testimonial layout'] = array(
     'name' => 'administer panelizer node testimonial layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -100,8 +100,6 @@ function ec_testimonial_user_default_permissions() {
   $permissions['delete own testimonial content'] = array(
     'name' => 'delete own testimonial content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

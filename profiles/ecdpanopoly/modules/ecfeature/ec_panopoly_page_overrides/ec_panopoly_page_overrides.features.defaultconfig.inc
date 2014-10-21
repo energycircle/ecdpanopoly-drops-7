@@ -1302,6 +1302,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_page layout'] = array(
     'name' => 'administer panelizer node panopoly_page layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
