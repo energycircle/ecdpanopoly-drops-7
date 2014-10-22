@@ -11,7 +11,6 @@ dependencies[] = apps
 dependencies[] = breakpoints
 dependencies[] = cer
 dependencies[] = compact_forms
-dependencies[] = content_type_extras
 dependencies[] = contextual
 dependencies[] = ctools
 dependencies[] = date
