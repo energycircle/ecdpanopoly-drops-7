@@ -35,31 +35,36 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'flexslider';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Display subtitle */
-  $handler->display->display_options['fields']['field_display_subtitle']['id'] = 'field_display_subtitle';
-  $handler->display->display_options['fields']['field_display_subtitle']['table'] = 'field_data_field_display_subtitle';
-  $handler->display->display_options['fields']['field_display_subtitle']['field'] = 'field_display_subtitle';
-  $handler->display->display_options['fields']['field_display_subtitle']['label'] = '';
-  $handler->display->display_options['fields']['field_display_subtitle']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_display_subtitle']['element_default_classes'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   /* Field: Content: Display Title */
   $handler->display->display_options['fields']['field_display_title']['id'] = 'field_display_title';
   $handler->display->display_options['fields']['field_display_title']['table'] = 'field_data_field_display_title';
   $handler->display->display_options['fields']['field_display_title']['field'] = 'field_display_title';
   $handler->display->display_options['fields']['field_display_title']['label'] = '';
   $handler->display->display_options['fields']['field_display_title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_display_title']['element_default_classes'] = FALSE;
+  /* Field: Content: Display subtitle */
+  $handler->display->display_options['fields']['field_display_subtitle']['id'] = 'field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['table'] = 'field_data_field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['field'] = 'field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['label'] = '';
+  $handler->display->display_options['fields']['field_display_subtitle']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_display_subtitle']['type'] = 'text_plain';
   /* Field: Content: Testimonial Image */
   $handler->display->display_options['fields']['field_testimonial_image']['id'] = 'field_testimonial_image';
   $handler->display->display_options['fields']['field_testimonial_image']['table'] = 'field_data_field_testimonial_image';
   $handler->display->display_options['fields']['field_testimonial_image']['field'] = 'field_testimonial_image';
   $handler->display->display_options['fields']['field_testimonial_image']['label'] = '';
   $handler->display->display_options['fields']['field_testimonial_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_testimonial_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_testimonial_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_testimonial_image']['settings'] = array(
     'image_style' => 's_460',
-    'image_link' => 'content',
+    'image_link' => '',
     'field_multiple_limit' => '1',
     'field_multiple_limit_offset' => '0',
   );
@@ -70,21 +75,29 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '300';
+  $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read More';
+  $handler->display->display_options['fields']['body']['alter']['more_link_path'] = '[path]';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '300',
+  );
   /* Field: Content: Testimonial City */
   $handler->display->display_options['fields']['field_testimonial_city']['id'] = 'field_testimonial_city';
   $handler->display->display_options['fields']['field_testimonial_city']['table'] = 'field_data_field_testimonial_city';
   $handler->display->display_options['fields']['field_testimonial_city']['field'] = 'field_testimonial_city';
   $handler->display->display_options['fields']['field_testimonial_city']['label'] = '';
   $handler->display->display_options['fields']['field_testimonial_city']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_testimonial_city']['element_default_classes'] = FALSE;
   /* Field: Content: Service */
   $handler->display->display_options['fields']['field_ref_testimonial_service']['id'] = 'field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['table'] = 'field_data_field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['field'] = 'field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['label'] = 'Services Provided';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['element_label_type'] = 'h2';
+  $handler->display->display_options['fields']['field_ref_testimonial_service']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_ref_testimonial_service']['settings'] = array(
     'link' => 1,
     'field_multiple_limit' => '-1',
@@ -107,14 +120,43 @@ function ec_testimonial_views_default_views() {
     'testimonial' => 'testimonial',
   );
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: Testimonials - Slideshow */
+  $handler = $view->new_display('panel_pane', 'Testimonials - Slideshow', 'panel_pane_1');
+
+  /* Display: Testimonials - Slideshow nid block */
+  $handler = $view->new_display('panel_pane', 'Testimonials - Slideshow nid block', 'panel_pane_2');
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['id'] = 'reverse_field_ref_page_testimonial_node';
+  $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['field'] = 'reverse_field_ref_page_testimonial_node';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_ref_page_testimonial_node';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+
+  /* Display: Testimonials - page */
+  $handler = $view->new_display('panel_pane', 'Testimonials - page', 'panel_pane_3');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'flexslider';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['id'] = 'reverse_field_ref_page_testimonial_node';
+  $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['field'] = 'reverse_field_ref_page_testimonial_node';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $export['testimonials'] = $view;
 
   return $export;
