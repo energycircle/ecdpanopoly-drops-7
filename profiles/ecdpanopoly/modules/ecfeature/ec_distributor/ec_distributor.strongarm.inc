@@ -1,178 +1,157 @@
 <?php
 /**
  * @file
- * ec_casestudy.strongarm.inc
+ * ec_distributor.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function ec_casestudy_strongarm() {
+function ec_distributor_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_case_study';
-  $strongarm->value = 'edit-panelizer';
-  $export['additional_settings__active_tab_case_study'] = $strongarm;
+  $strongarm->name = 'additional_settings__active_tab_distributor';
+  $strongarm->value = 'edit-submission';
+  $export['additional_settings__active_tab_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'auto_menutitle_case_study';
-  $strongarm->value = 1;
-  $export['auto_menutitle_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'clear_all_case_study';
+  $strongarm->name = 'auto_menutitle_distributor';
   $strongarm->value = 0;
-  $export['clear_all_case_study'] = $strongarm;
+  $export['auto_menutitle_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'date_popup_authored_enabled_case_study';
+  $strongarm->name = 'clear_all_distributor';
   $strongarm->value = 0;
-  $export['date_popup_authored_enabled_case_study'] = $strongarm;
+  $export['clear_all_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'date_popup_authored_format_case_study';
+  $strongarm->name = 'date_popup_authored_enabled_distributor';
+  $strongarm->value = 0;
+  $export['date_popup_authored_enabled_distributor'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_format_distributor';
   $strongarm->value = 'm/d/Y - H:i';
-  $export['date_popup_authored_format_case_study'] = $strongarm;
+  $export['date_popup_authored_format_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'date_popup_authored_year_range_case_study';
+  $strongarm->name = 'date_popup_authored_year_range_distributor';
   $strongarm->value = '3';
-  $export['date_popup_authored_year_range_case_study'] = $strongarm;
+  $export['date_popup_authored_year_range_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'exclude_node_title_content_type_modes_case_study';
+  $strongarm->name = 'diff_enable_revisions_page_node_distributor';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_distributor'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_distributor';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_distributor'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_distributor';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_distributor'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__distributor';
   $strongarm->value = array(
-    'full' => 0,
-    'teaser' => 0,
-    'rss' => 0,
-    'search_index' => 0,
-    'search_result' => 0,
-    'show_this_block' => 0,
-    'featured' => 0,
-    'token' => 0,
-    'nodeform' => 0,
-  );
-  $export['exclude_node_title_content_type_modes_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'exclude_node_title_content_type_value_case_study';
-  $strongarm->value = 'none';
-  $export['exclude_node_title_content_type_value_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__case_study';
-  $strongarm->value = array(
-    'view_modes' => array(
-      'show_this_block' => array(
-        'custom_settings' => TRUE,
-      ),
-    ),
+    'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '7',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '6',
+          'weight' => '4',
         ),
         'xmlsitemap' => array(
-          'weight' => '5',
+          'weight' => '3',
         ),
       ),
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__case_study'] = $strongarm;
+  $export['field_bundle_settings_node__distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'maxlength_js_case_study';
-  $strongarm->value = '';
-  $export['maxlength_js_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'maxlength_js_label_case_study';
-  $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
-  $export['maxlength_js_label_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_case_study';
+  $strongarm->name = 'menu_options_distributor';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_case_study'] = $strongarm;
+  $export['menu_options_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_case_study';
+  $strongarm->name = 'menu_parent_distributor';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_case_study'] = $strongarm;
+  $export['menu_parent_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_case_study';
+  $strongarm->name = 'node_options_distributor';
   $strongarm->value = array(
     0 => 'status',
   );
-  $export['node_options_case_study'] = $strongarm;
+  $export['node_options_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_case_study';
-  $strongarm->value = '0';
-  $export['node_preview_case_study'] = $strongarm;
+  $strongarm->name = 'node_preview_distributor';
+  $strongarm->value = '1';
+  $export['node_preview_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_case_study';
+  $strongarm->name = 'node_submitted_distributor';
   $strongarm->value = 0;
-  $export['node_submitted_case_study'] = $strongarm;
+  $export['node_submitted_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_case_study';
+  $strongarm->name = 'panelizer_defaults_node_distributor';
   $strongarm->value = array(
     'status' => 1,
     'view modes' => array(
       'page_manager' => array(
         'status' => 0,
-        'default' => 1,
-        'choice' => 1,
+        'default' => 0,
+        'choice' => 0,
       ),
       'default' => array(
         'status' => 1,
@@ -196,77 +175,66 @@ function ec_casestudy_strongarm() {
       ),
     ),
   );
-  $export['panelizer_defaults_node_case_study'] = $strongarm;
+  $export['panelizer_defaults_node_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_case_study_pattern';
-  $strongarm->value = 'case-study/[node:title]';
-  $export['pathauto_node_case_study_pattern'] = $strongarm;
+  $strongarm->name = 'pathauto_node_distributor_pattern';
+  $strongarm->value = 'distributor/[node:title]';
+  $export['pathauto_node_distributor_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'save_continue_case_study';
+  $strongarm->name = 'save_continue_distributor';
   $strongarm->value = 'Save and add fields';
-  $export['save_continue_case_study'] = $strongarm;
+  $export['save_continue_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'sync_translations_case_study';
+  $strongarm->name = 'sync_translations_distributor';
   $strongarm->value = '0';
-  $export['sync_translations_case_study'] = $strongarm;
+  $export['sync_translations_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'user_permissions_case_study';
-  $strongarm->value = array(
-    0 => 'create_roles',
-    1 => 'edit_roles',
-    2 => 'delete_roles',
-  );
-  $export['user_permissions_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_default_case_study';
+  $strongarm->name = 'weight_default_distributor';
   $strongarm->value = '0';
-  $export['weight_default_case_study'] = $strongarm;
+  $export['weight_default_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'weight_enabled_case_study';
+  $strongarm->name = 'weight_enabled_distributor';
   $strongarm->value = '1';
-  $export['weight_enabled_case_study'] = $strongarm;
+  $export['weight_enabled_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'weight_menu_case_study';
+  $strongarm->name = 'weight_menu_distributor';
   $strongarm->value = '0';
-  $export['weight_menu_case_study'] = $strongarm;
+  $export['weight_menu_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'weight_range_case_study';
+  $strongarm->name = 'weight_range_distributor';
   $strongarm->value = '20';
-  $export['weight_range_case_study'] = $strongarm;
+  $export['weight_range_distributor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'xmlsitemap_settings_node_case_study';
+  $strongarm->name = 'xmlsitemap_settings_node_distributor';
   $strongarm->value = array(
     'status' => '1',
     'priority' => '0.5',
   );
-  $export['xmlsitemap_settings_node_case_study'] = $strongarm;
+  $export['xmlsitemap_settings_node_distributor'] = $strongarm;
 
   return $export;
 }

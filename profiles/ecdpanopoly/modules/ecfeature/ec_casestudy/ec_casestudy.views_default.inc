@@ -200,7 +200,7 @@ function ec_casestudy_views_default_views() {
   /* Display: Case Study - Service group page */
   $handler = $view->new_display('panel_pane', 'Case Study - Service group page', 'panel_pane_3');
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Entity Reference: Referencing entity */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['reverse_field_ref_serv_group_case_study_node']['id'] = 'reverse_field_ref_serv_group_case_study_node';
   $handler->display->display_options['relationships']['reverse_field_ref_serv_group_case_study_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_ref_serv_group_case_study_node']['field'] = 'reverse_field_ref_serv_group_case_study_node';

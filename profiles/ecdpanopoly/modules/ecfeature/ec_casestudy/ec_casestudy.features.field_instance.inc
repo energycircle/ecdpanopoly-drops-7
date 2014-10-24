@@ -311,7 +311,64 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 22,
+    ),
+  );
+
+  // Exported field_instance: 'node-case_study-field_ref_case_study_gallery'
+  $field_instances['node-case_study-field_ref_case_study_gallery'] = array(
+    'bundle' => 'case_study',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 12,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_case_study_gallery',
+    'label' => 'Gallery',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 21,
     ),
   );
 
@@ -437,7 +494,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 23,
     ),
   );
 
@@ -500,7 +557,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 25,
     ),
   );
 
@@ -563,7 +620,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 24,
     ),
   );
 
@@ -626,7 +683,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 26,
     ),
   );
 
@@ -689,7 +746,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 20,
+      'weight' => 27,
     ),
   );
 
@@ -764,6 +821,7 @@ function ec_casestudy_field_default_field_instances() {
   t('Content Page');
   t('Display Title');
   t('Display subtitle');
+  t('Gallery');
   t('Product page');
   t('Promotions');
   t('Promotions shown on this page.');

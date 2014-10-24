@@ -8,11 +8,36 @@
  * Implements hook_ctools_plugin_api().
  */
 function ec_gallery_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
   if ($module == "panelizer" && $api == "panelizer") {
     return array("version" => "1");
   }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
+  }
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function ec_gallery_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
+ * Implements hook_default_roles_permissions_alter().
+ */
+function ec_gallery_default_roles_permissions_alter(&$data) {
+  if (isset($data['EC Platinum admin'])) {
+    $data['EC Platinum admin']['permissions']['administer panelizer node gallery breadcrumbs'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['administer panelizer node gallery context'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['administer panelizer node gallery defaults'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['administer panelizer node gallery overview'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['administer panelizer node gallery settings'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['delete own gallery content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['edit own gallery content'] = TRUE; /* WAS: '' */
   }
 }
 
