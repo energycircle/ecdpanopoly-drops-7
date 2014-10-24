@@ -23,11 +23,9 @@ function ec_article_field_group_info() {
     'label' => 'Shown on This Page',
     'weight' => '7',
     'children' => array(
-      0 => 'field_ref_article_promo',
-      1 => 'field_ref_article_testimonial',
-      2 => 'field_ref_article_blog',
-      3 => 'field_ref_article_product',
-      4 => 'field_ref_article_case_study',
+      0 => 'field_ref_article_case_study',
+      1 => 'field_ref_article_product',
+      2 => 'field_ref_article_testimonial',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

@@ -21,6 +21,7 @@ function ec_article_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Press Release',
@@ -33,6 +34,7 @@ function ec_article_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   return $terms;
 }
