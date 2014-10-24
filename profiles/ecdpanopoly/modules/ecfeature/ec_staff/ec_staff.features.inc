@@ -17,6 +17,13 @@ function ec_staff_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function ec_staff_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_default_entityform_type().
  */
 function ec_staff_default_entityform_type() {
@@ -69,6 +76,7 @@ function ec_staff_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
 

@@ -14,7 +14,7 @@ function ec_staff_user_default_permissions() {
   $permissions['administer panelizer node staff breadcrumbs'] = array(
     'name' => 'administer panelizer node staff breadcrumbs',
     'roles' => array(
-      'administrator' => 'administrator',
+      'EC Platinum admin' => 'EC Platinum admin',
     ),
     'module' => 'panelizer',
   );
@@ -24,7 +24,6 @@ function ec_staff_user_default_permissions() {
     'name' => 'administer panelizer node staff content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -33,7 +32,7 @@ function ec_staff_user_default_permissions() {
   $permissions['administer panelizer node staff context'] = array(
     'name' => 'administer panelizer node staff context',
     'roles' => array(
-      'administrator' => 'administrator',
+      'EC Platinum admin' => 'EC Platinum admin',
     ),
     'module' => 'panelizer',
   );
@@ -42,7 +41,7 @@ function ec_staff_user_default_permissions() {
   $permissions['administer panelizer node staff defaults'] = array(
     'name' => 'administer panelizer node staff defaults',
     'roles' => array(
-      'administrator' => 'administrator',
+      'EC Platinum admin' => 'EC Platinum admin',
     ),
     'module' => 'panelizer',
   );
@@ -52,7 +51,6 @@ function ec_staff_user_default_permissions() {
     'name' => 'administer panelizer node staff layout',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -61,7 +59,7 @@ function ec_staff_user_default_permissions() {
   $permissions['administer panelizer node staff overview'] = array(
     'name' => 'administer panelizer node staff overview',
     'roles' => array(
-      'administrator' => 'administrator',
+      'EC Platinum admin' => 'EC Platinum admin',
     ),
     'module' => 'panelizer',
   );
@@ -70,7 +68,7 @@ function ec_staff_user_default_permissions() {
   $permissions['administer panelizer node staff settings'] = array(
     'name' => 'administer panelizer node staff settings',
     'roles' => array(
-      'administrator' => 'administrator',
+      'EC Platinum admin' => 'EC Platinum admin',
     ),
     'module' => 'panelizer',
   );
@@ -100,6 +98,7 @@ function ec_staff_user_default_permissions() {
   $permissions['delete own staff content'] = array(
     'name' => 'delete own staff content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -120,6 +119,7 @@ function ec_staff_user_default_permissions() {
   $permissions['edit own staff content'] = array(
     'name' => 'edit own staff content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

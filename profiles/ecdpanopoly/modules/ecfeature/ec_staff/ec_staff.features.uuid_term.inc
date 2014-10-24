@@ -11,42 +11,6 @@ function ec_staff_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'Office',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 0,
-    'uuid' => '20527c6e-48ba-4581-a618-aa46b3fdf4c0',
-    'vocabulary_machine_name' => 'departments',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Service',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 0,
-    'uuid' => '34d9c1f3-282d-4d82-8e04-b729717b08bd',
-    'vocabulary_machine_name' => 'departments',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Sales',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 0,
-    'uuid' => '4f72a5b9-c246-4283-af0c-4f35b700234e',
-    'vocabulary_machine_name' => 'departments',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-  );
-  $terms[] = array(
     'name' => 'Sales',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
@@ -57,6 +21,7 @@ function ec_staff_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Service',
@@ -69,6 +34,7 @@ function ec_staff_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Office',
@@ -81,6 +47,7 @@ function ec_staff_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   return $terms;
 }
