@@ -21,6 +21,7 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = dblog
 dependencies[] = update
+dependencies[] = distro_update
 
 ; Panopoly Foundation
 dependencies[] = panopoly_core
