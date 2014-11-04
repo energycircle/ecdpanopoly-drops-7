@@ -1,7 +1,7 @@
 name = EC Product Page Category
 description = Used with Product LTE to extend the 
 core = 7.x
-package = Features
+package = ECFeatures
 version = 7.x-1.0-beta1
 project = ec_product_page_category
 dependencies[] = ec_base_config
