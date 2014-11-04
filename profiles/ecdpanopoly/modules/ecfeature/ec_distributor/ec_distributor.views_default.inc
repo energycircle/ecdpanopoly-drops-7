@@ -31,12 +31,27 @@ function ec_distributor_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
-      'field' => 'field_address_administrative_area',
+      'field' => 'field_address_1',
       'rendered' => 1,
       'rendered_strip' => 0,
     ),
   );
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Field: Address */
+  $handler->display->display_options['fields']['field_address_1']['id'] = 'field_address_1';
+  $handler->display->display_options['fields']['field_address_1']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_1']['field'] = 'field_address';
+  $handler->display->display_options['fields']['field_address_1']['label'] = '';
+  $handler->display->display_options['fields']['field_address_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_address_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_address_1']['click_sort_column'] = 'country';
+  $handler->display->display_options['fields']['field_address_1']['type'] = 'addressfield_components';
+  $handler->display->display_options['fields']['field_address_1']['settings'] = array(
+    'components' => array(
+      'administrative_area_full' => 'administrative_area_full',
+    ),
+    'separator' => '',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -80,6 +95,9 @@ function ec_distributor_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'distributor' => 'distributor',
   );
+
+  /* Display: Distributors by State */
+  $handler = $view->new_display('panel_pane', 'Distributors by State', 'panel_pane_1');
   $export['distributors'] = $view;
 
   return $export;

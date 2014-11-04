@@ -97,21 +97,22 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Body',
-      'required' => FALSE,
+      'label' => 'Features',
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
+        'display_summary' => 1,
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
           'rows' => 20,
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -413,7 +414,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -519,7 +520,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 8,
+        'weight' => 20,
       ),
     ),
   );
@@ -625,7 +626,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 9,
+        'weight' => 21,
       ),
     ),
   );
@@ -731,7 +732,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 14,
+        'weight' => 26,
       ),
     ),
   );
@@ -837,7 +838,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 11,
+        'weight' => 23,
       ),
     ),
   );
@@ -943,7 +944,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 10,
+        'weight' => 22,
       ),
     ),
   );
@@ -1049,7 +1050,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 12,
+        'weight' => 24,
       ),
     ),
   );
@@ -1155,7 +1156,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 13,
+        'weight' => 27,
       ),
     ),
   );
@@ -1163,10 +1164,10 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Article');
-  t('Body');
   t('Case Study');
   t('Display Title');
   t('Display subtitle');
+  t('Features');
   t('Image');
   t('Promotion');
   t('Select the Article pages (News, Press release, or other type of Article content) on which to show this product.');
