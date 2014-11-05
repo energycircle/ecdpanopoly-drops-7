@@ -14,13 +14,13 @@ dependencies[] = number
 dependencies[] = options
 dependencies[] = path
 dependencies[] = taxonomy
-dependencies[] = search
+;dependencies[] = search
 ;dependencies[] = shortcut
 dependencies[] = field
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = dblog
-dependencies[] = update
+;dependencies[] = update
 dependencies[] = distro_update
 
 ; Panopoly Foundation
@@ -115,19 +115,13 @@ dependencies[] = ftools
 
 
 ;EC features
-;dependencies[] = ec_foundation_types_democontent
-;dependencies[] = ec_foundation_types
-;dependencies[] = ec_foundation_other
-;dependencies[] = ec_foundation_roles
-;dependencies[] = ec_foundation_views
 dependencies[] = ec_foundation_image_styles
-
 dependencies[] = ec_base_config
 dependencies[] = ec_panopoly_page_overrides
 
 
-; Information added by flux423 - updated on 2014-10-7
-version = "7.x-1.1-rc2"
+; Information added by flux423 - updated on 2014-11-5
+version = "7.x-1.1-rc3"
 core = "7.x"
 project = "ECDPanopoly"
 
