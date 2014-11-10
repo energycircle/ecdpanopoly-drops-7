@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC Awards feature.
+ */
+
+include_once 'ec_awards.features.inc';
