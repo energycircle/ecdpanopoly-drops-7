@@ -1,7 +1,7 @@
 name = EC Awards
 description = Awards CT and all views and permissions
 core = 7.x
-package = ECFeatures
+package = ECFeatures - Conference
 version = 7.x-1.0-beta5
 project = ec_awards
 dependencies[] = date

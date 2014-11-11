@@ -1,7 +1,7 @@
 name = EC Conference Tracks & Sessions
 description = Conference Tracks & Sessions and Schedule CT and views
 core = 7.x
-package = ECFeatures
+package = ECFeatures - Conference
 version = 7.x-1.0-beta8
 project = ec_conference_tracks_sessions
 dependencies[] = better_exposed_filters
