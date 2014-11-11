@@ -126,11 +126,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'users' => array(
+      'node' => array(
         'columns' => array(
-          'target_id' => 'uid',
+          'target_id' => 'nid',
         ),
-        'table' => 'users',
+        'table' => 'node',
       ),
     ),
     'indexes' => array(
@@ -154,10 +154,12 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
         'sort' => array(
           'type' => 'none',
         ),
-        'target_bundles' => array(),
+        'target_bundles' => array(
+          'contact' => 'contact',
+        ),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'user',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
@@ -473,11 +475,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'users' => array(
+      'node' => array(
         'columns' => array(
-          'target_id' => 'uid',
+          'target_id' => 'nid',
         ),
-        'table' => 'users',
+        'table' => 'node',
       ),
     ),
     'indexes' => array(
@@ -488,21 +490,25 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'views',
+      'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
         ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_1',
-          'view_name' => 'user_list',
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'contact' => 'contact',
         ),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'user',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
@@ -554,11 +560,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'users' => array(
+      'node' => array(
         'columns' => array(
-          'target_id' => 'uid',
+          'target_id' => 'nid',
         ),
-        'table' => 'users',
+        'table' => 'node',
       ),
     ),
     'indexes' => array(
@@ -569,21 +575,25 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'views',
+      'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
         ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_1',
-          'view_name' => 'user_list',
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'contact' => 'contact',
         ),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'user',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
@@ -600,11 +610,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'users' => array(
+      'node' => array(
         'columns' => array(
-          'target_id' => 'uid',
+          'target_id' => 'nid',
         ),
-        'table' => 'users',
+        'table' => 'node',
       ),
     ),
     'indexes' => array(
@@ -615,21 +625,25 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'views',
+      'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
         ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_1',
-          'view_name' => 'user_list',
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'contact' => 'contact',
         ),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'user',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
