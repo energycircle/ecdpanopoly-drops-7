@@ -101,6 +101,7 @@ dependencies[] = title
 dependencies[] = token_tweaks
 ;dependencies[] = uuid_features
 dependencies[] = views_accordion
+dependencies[] = views_data_export
 dependencies[] = weight
 dependencies[] = xmlsitemap
 
