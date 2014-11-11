@@ -75,6 +75,9 @@ projects[entityreference_prepopulate][subdir] = eccontrib
 projects[entity_rules][version] = 1.x-dev
 projects[entity_rules][subdir] = eccontrib
 
+projects[entitycache][version] = 1.2
+projects[entitycache][subdir] = eccontrib
+
 projects[entityform][version] = 2.x
 projects[entityform][subdir] = eccontrib
 
@@ -173,6 +176,9 @@ projects[views_slideshow][subdir] = eccontrib-discontinue
 
 ;projects[views_url_path_arguments][version] = 1.x
 ;projects[views_url_path_arguments][subdir] = eccontrib
+
+projects[views_data_export][version] = 3.0-beta8
+projects[views_data_export][subdir] = eccontrib
 
 projects[weight][version] = 2.x
 projects[weight][subdir] = eccontrib
