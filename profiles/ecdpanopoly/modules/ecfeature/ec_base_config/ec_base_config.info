@@ -1,7 +1,7 @@
 name = EC Base Config
 description = EC Base Config and contributing settings
 core = 7.x
-package = ECFeatures
+package = ECFeatures - Core
 version = 7.x-1.0-beta28
 project = ec_base_config
 dependencies[] = addressfield

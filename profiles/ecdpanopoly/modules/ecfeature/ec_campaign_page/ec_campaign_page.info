@@ -1,7 +1,7 @@
 name = EC Campaign Page
 description = Campaign Page CT with all views and permissions
 core = 7.x
-package = ECFeatures
+package = ECFeatures - Core
 version = 7.x-1.0-beta14
 project = ec_campaign_page
 dependencies[] = ec_base_config
