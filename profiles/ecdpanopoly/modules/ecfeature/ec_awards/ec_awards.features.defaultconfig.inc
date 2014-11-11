@@ -1,43 +1,26 @@
 <?php
 /**
  * @file
- * ec_awards.strongarm.inc
+ * ec_awards.features.defaultconfig.inc
  */
 
 /**
- * Implements hook_strongarm().
+ * Implements hook_defaultconfig_features().
  */
-function ec_awards_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__award';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'metatags' => array(
-          'weight' => '100',
-        ),
-        'title' => array(
-          'weight' => '-5',
-        ),
-        'path' => array(
-          'weight' => '30',
-        ),
-        'redirect' => array(
-          'weight' => '30',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '30',
-        ),
-      ),
-      'display' => array(),
+function ec_awards_defaultconfig_features() {
+  return array(
+    'ec_awards' => array(
+      'strongarm' => 'strongarm',
+      'user_default_permissions' => 'user_default_permissions',
     ),
   );
-  $export['field_bundle_settings_node__award'] = $strongarm;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_awards_defaultconfig_strongarm() {
+  $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -151,4 +134,31 @@ function ec_awards_strongarm() {
   $export['pathauto_taxonomy_term_award_types_pattern'] = $strongarm;
 
   return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_user_default_permissions().
+ */
+function ec_awards_defaultconfig_user_default_permissions() {
+  $permissions = array();
+
+  // Exported permission: 'administer panelizer node award defaults'.
+  $permissions['administer panelizer node award defaults'] = array(
+    'name' => 'administer panelizer node award defaults',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term award_types defaults'.
+  $permissions['administer panelizer taxonomy_term award_types defaults'] = array(
+    'name' => 'administer panelizer taxonomy_term award_types defaults',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+    ),
+    'module' => 'panelizer',
+  );
+
+  return $permissions;
 }

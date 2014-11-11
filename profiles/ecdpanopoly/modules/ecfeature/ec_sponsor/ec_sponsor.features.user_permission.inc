@@ -10,6 +10,24 @@
 function ec_sponsor_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node sponsor defaults'.
+  $permissions['administer panelizer node sponsor defaults'] = array(
+    'name' => 'administer panelizer node sponsor defaults',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term sponsor_types defaults'.
+  $permissions['administer panelizer taxonomy_term sponsor_types defaults'] = array(
+    'name' => 'administer panelizer taxonomy_term sponsor_types defaults',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create sponsor content'.
   $permissions['create sponsor content'] = array(
     'name' => 'create sponsor content',

@@ -24,6 +24,7 @@ features[field_instance][] = node-contact-field_contact_company
 features[field_instance][] = node-contact-field_contact_job_title
 features[field_instance][] = node-contact-field_contact_photo
 features[node][] = contact
+features[user_permission][] = administer panelizer node contact defaults
 features[user_permission][] = create contact content
 features[user_permission][] = delete any contact content
 features[user_permission][] = delete own contact content

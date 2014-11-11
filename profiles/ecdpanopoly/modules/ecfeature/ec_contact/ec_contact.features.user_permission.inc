@@ -10,6 +10,15 @@
 function ec_contact_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node contact defaults'.
+  $permissions['administer panelizer node contact defaults'] = array(
+    'name' => 'administer panelizer node contact defaults',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create contact content'.
   $permissions['create contact content'] = array(
     'name' => 'create contact content',

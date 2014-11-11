@@ -1,48 +1,19 @@
 <?php
 /**
  * @file
- * ec_awards.strongarm.inc
+ * ec_sponsor.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function ec_awards_strongarm() {
+function ec_sponsor_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__award';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'metatags' => array(
-          'weight' => '100',
-        ),
-        'title' => array(
-          'weight' => '-5',
-        ),
-        'path' => array(
-          'weight' => '30',
-        ),
-        'redirect' => array(
-          'weight' => '30',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '30',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_node__award'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_award';
+  $strongarm->name = 'panelizer_defaults_node_sponsor';
   $strongarm->value = array(
     'status' => 0,
     'view modes' => array(
@@ -93,12 +64,12 @@ function ec_awards_strongarm() {
       ),
     ),
   );
-  $export['panelizer_defaults_node_award'] = $strongarm;
+  $export['panelizer_defaults_node_sponsor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_taxonomy_term_award_types';
+  $strongarm->name = 'panelizer_defaults_taxonomy_term_sponsor_types';
   $strongarm->value = array(
     'status' => 0,
     'view modes' => array(
@@ -134,21 +105,21 @@ function ec_awards_strongarm() {
       ),
     ),
   );
-  $export['panelizer_defaults_taxonomy_term_award_types'] = $strongarm;
+  $export['panelizer_defaults_taxonomy_term_sponsor_types'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_award_pattern';
-  $strongarm->value = 'awards/[node:title]';
-  $export['pathauto_node_award_pattern'] = $strongarm;
+  $strongarm->name = 'pathauto_node_sponsor_pattern';
+  $strongarm->value = 'sponsors/[node:title]';
+  $export['pathauto_node_sponsor_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_taxonomy_term_award_types_pattern';
+  $strongarm->name = 'pathauto_taxonomy_term_sponsor_types_pattern';
   $strongarm->value = '';
-  $export['pathauto_taxonomy_term_award_types_pattern'] = $strongarm;
+  $export['pathauto_taxonomy_term_sponsor_types_pattern'] = $strongarm;
 
   return $export;
 }

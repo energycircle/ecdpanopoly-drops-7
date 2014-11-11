@@ -10,6 +10,24 @@
 function ec_awards_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node award defaults'.
+  $permissions['administer panelizer node award defaults'] = array(
+    'name' => 'administer panelizer node award defaults',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer taxonomy_term award_types defaults'.
+  $permissions['administer panelizer taxonomy_term award_types defaults'] = array(
+    'name' => 'administer panelizer taxonomy_term award_types defaults',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create award content'.
   $permissions['create award content'] = array(
     'name' => 'create award content',
