@@ -78,6 +78,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'create product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );
@@ -87,6 +88,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'delete any product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );
@@ -96,6 +98,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'delete own product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );
@@ -105,6 +108,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'edit any product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );
@@ -114,6 +118,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'edit own product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );

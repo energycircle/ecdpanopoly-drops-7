@@ -78,6 +78,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'create distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );
@@ -87,6 +88,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'delete any distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );
@@ -96,6 +98,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'delete own distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );
@@ -105,6 +108,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'edit any distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );
@@ -114,6 +118,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'edit own distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
     ),
     'module' => 'node',
   );
