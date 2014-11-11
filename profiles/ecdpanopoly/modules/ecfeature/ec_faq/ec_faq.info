@@ -1,7 +1,7 @@
 name = EC FAQ
 description = FAQ CT with all the views and permissions
 core = 7.x
-package = ECFeatures - Core
+package = ECFeatures - Core EXT
 version = 7.x-1.0-beta9
 project = ec_faq
 dependencies[] = ctools

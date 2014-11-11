@@ -1,7 +1,7 @@
 name = EC Article
 description = Article CT with all views and permissions
 core = 7.x
-package = ECFeatures - Core
+package = ECFeatures - Core EXT
 version = 7.x-1.0-beta27
 project = ec_article
 dependencies[] = ec_base_config

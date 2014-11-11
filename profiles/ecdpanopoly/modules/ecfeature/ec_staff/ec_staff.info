@@ -1,7 +1,7 @@
 name = EC Staff
 description = Staff CT with all the views and permissions
 core = 7.x
-package = ECFeatures - Core
+package = ECFeatures - Core EXT
 version = 7.x-1.0-beta19
 project = ec_staff
 dependencies[] = ec_base_config

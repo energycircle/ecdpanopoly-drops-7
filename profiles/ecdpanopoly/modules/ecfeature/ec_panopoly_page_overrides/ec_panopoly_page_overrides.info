@@ -1,7 +1,7 @@
 name = EC Panopoly Page Overrides
 description = Content Page CT and Override views and permissions
 core = 7.x
-package = ECFeatures
+package = ECFeatures - Core
 version = 7.x-1.0-beta23
 project = ec_panopoly_page_overrides
 dependencies[] = ec_base_config

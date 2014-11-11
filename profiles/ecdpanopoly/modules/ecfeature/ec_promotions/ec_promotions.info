@@ -1,7 +1,7 @@
 name = EC Promotions
 description = Promotions CT with all the views and permissions
 core = 7.x
-package = ECFeatures - Core
+package = ECFeatures - Core EXT
 version = 7.x-1.0-beta18
 project = ec_promotions
 dependencies[] = ec_base_config

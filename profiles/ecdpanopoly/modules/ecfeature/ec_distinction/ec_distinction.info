@@ -1,7 +1,7 @@
 name = EC Distinction
 description = Distinction CT with all veiws and permissions
 core = 7.x
-package = ECFeatures - Core
+package = ECFeatures - Core EXT
 version = 7.x-1.0-beta10
 project = ec_distinction
 dependencies[] = ec_base_config
