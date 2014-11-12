@@ -27,6 +27,9 @@ projects[diff][subdir] = ec-dev
 projects[features_override][version] = 2.x
 projects[features_override][subdir] = ec-dev
 
+projects[field_tools][version] = 1.0-alpha7
+projects[field_tools][subdir] = ec-dev
+
 projects[ftools][version] = 2.x-dev
 projects[ftools][subdir] = ec-dev
 
