@@ -51,8 +51,7 @@ function ec_awards_field_group_info() {
     'label' => 'Runners-up',
     'weight' => '8',
     'children' => array(
-      0 => 'field_ref_award_run_case_study',
-      1 => 'field_ref_award_run_user',
+      0 => 'field_ref_award_run_user',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -79,10 +78,9 @@ function ec_awards_field_group_info() {
     'label' => 'Winner',
     'weight' => '7',
     'children' => array(
-      0 => 'field_award_win_user_co',
-      1 => 'field_award_winner_description',
-      2 => 'field_ref_award_win_case_study',
-      3 => 'field_ref_award_win_user',
+      0 => 'field_award_winner_description',
+      1 => 'field_ref_award_win_user',
+      2 => 'field_award_user_company',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

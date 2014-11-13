@@ -40,9 +40,7 @@ function ec_awards_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
+      'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 1,
     ),
@@ -366,27 +364,22 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-award-field_award_win_user_co'
-  $field_instances['node-award-field_award_win_user_co'] = array(
+  // Exported field_instance: 'node-award-field_award_user_company'
+  $field_instances['node-award-field_award_user_company'] = array(
     'bundle' => 'award',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the winner\'s company name, if applicable.',
+    'description' => '',
     'display' => array(
-      'compact' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'entityreference',
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
         ),
-        'type' => 'text_default',
+        'type' => 'entityreference_label',
         'weight' => 12,
       ),
       'featured' => array(
@@ -409,29 +402,22 @@ function ec_awards_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_award_win_user_co',
+    'field_name' => 'field_award_user_company',
     'label' => 'User Company',
     'required' => 0,
     'settings' => array(
-      'exclude_cv' => FALSE,
-      'linkit' => array(
-        'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
-      ),
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'text',
+      'module' => 'entityreference',
       'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'text_textfield',
-      'weight' => 12,
+      'type' => 'entityreference_autocomplete',
+      'weight' => 11,
     ),
   );
 
@@ -706,7 +692,7 @@ function ec_awards_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -716,7 +702,6 @@ function ec_awards_field_default_field_instances() {
   t('Award Type');
   t('Body');
   t('Enter text to display adjacent to the winner, such as a thank-you message, quote, or other relevant content.');
-  t('Enter the winner\'s company name, if applicable.');
   t('Enter the year for this award, for sorting/filtering purposes. You can also add a more specific date in the date field, if applicable.');
   t('Nomination Deadline');
   t('Nomination Form');

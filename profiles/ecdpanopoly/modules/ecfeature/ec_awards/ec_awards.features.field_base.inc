@@ -131,37 +131,50 @@ function ec_awards_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_award_win_user_co'
-  $field_bases['field_award_win_user_co'] = array(
+  // Exported field_base: 'field_award_user_company'
+  $field_bases['field_award_user_company'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_award_win_user_co',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
+    'field_name' => 'field_award_user_company',
     'foreign keys' => array(
-      'format' => array(
+      'redhen_org' => array(
         'columns' => array(
-          'format' => 'format',
+          'target_id' => 'org_id',
         ),
-        'table' => 'filter_format',
+        'table' => 'redhen_org',
       ),
     ),
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'entityreference',
     'settings' => array(
-      'max_length' => 255,
-      'profile2_private' => FALSE,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'business' => 'business',
+        ),
+      ),
+      'target_type' => 'redhen_org',
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_award_winner_description'
@@ -241,11 +254,11 @@ function ec_awards_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'node' => array(
+      'redhen_contact_type' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'target_id' => 'contact_type_id',
         ),
-        'table' => 'node',
+        'table' => 'redhen_contact_type',
       ),
     ),
     'indexes' => array(
@@ -269,12 +282,10 @@ function ec_awards_field_default_field_bases() {
         'sort' => array(
           'type' => 'none',
         ),
-        'target_bundles' => array(
-          'contact' => 'contact',
-        ),
+        'target_bundles' => array(),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'node',
+      'target_type' => 'redhen_contact_type',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
@@ -288,11 +299,11 @@ function ec_awards_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_ref_award_win_user',
     'foreign keys' => array(
-      'node' => array(
+      'redhen_contact_type' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'target_id' => 'contact_type_id',
         ),
-        'table' => 'node',
+        'table' => 'redhen_contact_type',
       ),
     ),
     'indexes' => array(
@@ -316,11 +327,9 @@ function ec_awards_field_default_field_bases() {
         'sort' => array(
           'type' => 'none',
         ),
-        'target_bundles' => array(
-          'contact' => 'contact',
-        ),
+        'target_bundles' => array(),
       ),
-      'target_type' => 'node',
+      'target_type' => 'redhen_contact_type',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
@@ -337,11 +346,11 @@ function ec_awards_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'node' => array(
+      'taxonomy_term_data' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'target_id' => 'tid',
         ),
-        'table' => 'node',
+        'table' => 'taxonomy_term_data',
       ),
     ),
     'indexes' => array(
@@ -352,7 +361,7 @@ function ec_awards_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'views',
+      'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
           'field_default_token' => array(
@@ -362,14 +371,15 @@ function ec_awards_field_default_field_bases() {
             'status' => 0,
           ),
         ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_1',
-          'view_name' => 'award_nomination_list',
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'award_types' => 'award_types',
         ),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'node',
+      'target_type' => 'taxonomy_term',
     ),
     'translatable' => 0,
     'type' => 'entityreference',

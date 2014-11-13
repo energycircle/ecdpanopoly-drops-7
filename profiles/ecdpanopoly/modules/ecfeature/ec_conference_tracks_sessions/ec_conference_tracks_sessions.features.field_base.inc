@@ -126,11 +126,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'node' => array(
+      'redhen_contact' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'target_id' => 'contact_id',
         ),
-        'table' => 'node',
+        'table' => 'redhen_contact',
       ),
     ),
     'indexes' => array(
@@ -155,11 +155,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'contact' => 'contact',
+          'individual' => 'individual',
         ),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'node',
+      'target_type' => 'redhen_contact',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
