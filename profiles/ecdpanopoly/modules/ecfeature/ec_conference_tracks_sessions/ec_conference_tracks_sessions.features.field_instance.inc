@@ -159,69 +159,6 @@ function ec_conference_tracks_sessions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-conference_event-field_event_sponsors_ref'
-  $field_instances['node-conference_event-field_event_sponsors_ref'] = array(
-    'bundle' => 'conference_event',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 5,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_event_sponsors_ref',
-    'label' => 'Event Sponsors',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-conference_event-field_event_time'
   $field_instances['node-conference_event-field_event_time'] = array(
     'bundle' => 'conference_event',
@@ -1525,7 +1462,6 @@ function ec_conference_tracks_sessions_field_default_field_instances() {
   t('Enter the room number or location name for this event.');
   t('Enter the room or location description for this event.');
   t('Enter the start and end date/time for this event.');
-  t('Event Sponsors');
   t('Event Time');
   t('Learning Objectives');
   t('Presenters');
