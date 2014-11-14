@@ -28,24 +28,7 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
       ),
     ),
   );
-  $terms[] = array(
-    'name' => 'Bronze',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 4,
-    'uuid' => '1a14437b-a800-435c-af13-6e6a0bd75071',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/bronze',
-        'language' => 'und',
-      ),
-    ),
-  );
+ 
   $terms[] = array(
     'name' => 'ASHI',
     'description' => '',
@@ -98,79 +81,6 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'areas-focus/green-enthusiasts',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Host',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 0,
-    'uuid' => '3d44076d-54df-47e7-b759-d53c0212c06e',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/host',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Gold',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 2,
-    'uuid' => '57b1a06e-2d19-4397-89c9-3a28882b65e3',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/gold',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'AIA',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 0,
-    'uuid' => '6221c565-4fc3-4618-96e4-b2bbdd76c677',
-    'vocabulary_machine_name' => 'ceu_issuers',
-    'field_logo' => array(),
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'ceu-issuers/aia',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Silver',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 3,
-    'uuid' => '6c7431a6-486a-4414-b4b8-ff9d7c690975',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/silver',
         'language' => 'und',
       ),
     ),
@@ -268,24 +178,7 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
       ),
     ),
   );
-  $terms[] = array(
-    'name' => 'Platinum',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 1,
-    'uuid' => 'a017a85e-c0c8-4e40-9342-a98698094006',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/platinum',
-        'language' => 'und',
-      ),
-    ),
-  );
+ 
   $terms[] = array(
     'name' => 'Sustainability Professionals',
     'description' => '',
@@ -414,42 +307,7 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
       ),
     ),
   );
-  $terms[] = array(
-    'name' => 'Promotional Partner',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 0,
-    'uuid' => 'f36c51f2-bdcf-467e-b8bd-ce1b19107833',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/promotional-partner',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Media',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 0,
-    'uuid' => 'f8ff3349-5c0d-4772-8ea5-a61d1ef33191',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/media',
-        'language' => 'und',
-      ),
-    ),
-  );
+ 
   $terms[] = array(
     'name' => 'Design-Build / Green Builders',
     'description' => '',
