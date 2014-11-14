@@ -10,103 +10,6 @@
 function ec_conference_tracks_sessions_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_event_sponsors_ref-field_conf_sponsor'
-  $field_instances['field_collection_item-field_event_sponsors_ref-field_conf_sponsor'] = array(
-    'bundle' => 'field_event_sponsors_ref',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'links' => 1,
-          'view_mode' => 'teaser',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 1,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'links' => 1,
-          'view_mode' => 'teaser',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_conf_sponsor',
-    'label' => 'Sponsors',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 32,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_event_sponsors_ref-field_conf_sponsor_type'
-  $field_instances['field_collection_item-field_event_sponsors_ref-field_conf_sponsor_type'] = array(
-    'bundle' => 'field_event_sponsors_ref',
-    'default_value' => NULL,
-    'default_value_label_token' => 0,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_conf_sponsor_type',
-    'label' => 'Sponsor Type',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 33,
-    ),
-  );
-
   // Exported field_instance: 'node-conference_event-body'
   $field_instances['node-conference_event-body'] = array(
     'bundle' => 'conference_event',
@@ -1634,8 +1537,6 @@ function ec_conference_tracks_sessions_field_default_field_instances() {
   t('Session Documents');
   t('Session Speaker(s)');
   t('Sessions');
-  t('Sponsor Type');
-  t('Sponsors');
   t('Start and end date/time for a session, workshop, demonstration or other event.');
   t('The sessions in this track. Drag and drop to put them in order.');
   t('Track');
