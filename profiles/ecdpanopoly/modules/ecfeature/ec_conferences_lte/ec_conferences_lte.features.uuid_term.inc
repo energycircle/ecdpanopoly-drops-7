@@ -120,15 +120,12 @@ function ec_conferences_lte_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Platinum',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 1,
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
     'uuid' => 'a017a85e-c0c8-4e40-9342-a98698094006',
     'vocabulary_machine_name' => 'sponsor_types',
     'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
     'url_alias' => array(
       0 => array(
         'alias' => 'sponsor-types/platinum',
@@ -156,15 +153,12 @@ function ec_conferences_lte_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Promotional Partner',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
+    'description' => NULL,
+    'format' => NULL,
     'weight' => 0,
     'uuid' => 'f36c51f2-bdcf-467e-b8bd-ce1b19107833',
     'vocabulary_machine_name' => 'sponsor_types',
     'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
     'url_alias' => array(
       0 => array(
         'alias' => 'sponsor-types/promotional-partner',
@@ -174,15 +168,12 @@ function ec_conferences_lte_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Media',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
+    'description' => NULL,
+    'format' => NULL,
     'weight' => 0,
     'uuid' => 'f8ff3349-5c0d-4772-8ea5-a61d1ef33191',
     'vocabulary_machine_name' => 'sponsor_types',
     'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
     'url_alias' => array(
       0 => array(
         'alias' => 'sponsor-types/media',

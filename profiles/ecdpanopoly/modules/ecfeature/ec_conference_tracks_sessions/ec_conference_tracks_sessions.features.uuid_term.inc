@@ -8,7 +8,8 @@
  * Implements hook_uuid_features_default_terms().
  */
 function ec_conference_tracks_sessions_uuid_features_default_terms() {
- 
+  $terms = array();
+
   $terms[] = array(
     'name' => 'ASHI',
     'description' => '',
@@ -47,8 +48,6 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
       ),
     ),
   );
- 
- 
   $terms[] = array(
     'name' => 'AIA',
     'description' => '',
@@ -68,7 +67,6 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
       ),
     ),
   );
- 
   $terms[] = array(
     'name' => 'NATE',
     'description' => '',
@@ -126,7 +124,6 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
       ),
     ),
   );
- 
   $terms[] = array(
     'name' => 'NAHB',
     'description' => '',
@@ -165,6 +162,5 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
       ),
     ),
   );
- 
   return $terms;
 }

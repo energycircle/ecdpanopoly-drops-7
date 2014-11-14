@@ -73,7 +73,14 @@ function ec_conferences_lte_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_conf_exhibitors',
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'redhen_org' => array(
+        'columns' => array(
+          'target_id' => 'org_id',
+        ),
+        'table' => 'redhen_org',
+      ),
+    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
