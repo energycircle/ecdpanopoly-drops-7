@@ -35,17 +35,76 @@ function ec_redhen_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_redhen_org__business';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'grouped_teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'name' => array(
           'weight' => '0',
         ),
         'redirect' => array(
-          'weight' => '7',
+          'weight' => '4',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'name' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'token' => array(
+            'weight' => '1',
+            'visible' => TRUE,
+          ),
+          'grouped_teaser' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+        'redhen_state' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'token' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
+          'grouped_teaser' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+        ),
+        'primary_contact' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'token' => array(
+            'weight' => '3',
+            'visible' => FALSE,
+          ),
+          'grouped_teaser' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_redhen_org__business'] = $strongarm;
@@ -68,7 +127,7 @@ function ec_redhen_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'redhen_contact_connect_users';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['redhen_contact_connect_users'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -110,7 +169,7 @@ function ec_redhen_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'redhen_contact_require_email';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['redhen_contact_require_email'] = $strongarm;
 
   $strongarm = new stdClass();

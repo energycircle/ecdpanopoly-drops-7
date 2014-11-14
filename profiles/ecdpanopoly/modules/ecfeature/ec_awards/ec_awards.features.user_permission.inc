@@ -15,6 +15,7 @@ function ec_awards_user_default_permissions() {
     'name' => 'administer panelizer node award defaults',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -24,6 +25,7 @@ function ec_awards_user_default_permissions() {
     'name' => 'administer panelizer taxonomy_term award_types defaults',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -65,6 +67,7 @@ function ec_awards_user_default_permissions() {
     'name' => 'delete terms in award_types',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -95,6 +98,7 @@ function ec_awards_user_default_permissions() {
     'name' => 'edit terms in award_types',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );

@@ -15,6 +15,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'access redhen',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen',
   );
@@ -24,6 +26,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'access redhen contacts',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_contact',
   );
@@ -33,6 +37,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'access redhen notes',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_note',
   );
@@ -42,6 +48,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'access redhen org revisions',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_org',
   );
@@ -51,6 +59,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'access redhen orgs',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_org',
   );
@@ -60,6 +70,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'administer redhen',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen',
   );
@@ -69,6 +81,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'administer redhen contacts',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_contact',
   );
@@ -78,6 +92,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'administer redhen notes',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_note',
   );
@@ -87,6 +103,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'administer redhen orgs',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_org',
   );
@@ -96,6 +114,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'administer redhen_contact types',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_contact',
   );
@@ -105,6 +125,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'administer redhen_org types',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_org',
   );
@@ -114,6 +136,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'delete redhen contact connections',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_relation',
   );
@@ -123,6 +147,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'delete redhen contact revisions',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_contact',
   );
@@ -132,6 +158,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'delete redhen org connections',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_relation',
   );
@@ -141,6 +169,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'edit own redhen contact',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_contact',
   );
@@ -150,6 +180,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'edit redhen contact connections',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_relation',
   );
@@ -159,6 +191,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'edit redhen contact revisions',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_contact',
   );
@@ -168,6 +202,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'edit redhen org connections',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_relation',
   );
@@ -177,6 +213,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'manage redhen contacts',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_contact',
   );
@@ -186,6 +224,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'manage redhen notes',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_note',
   );
@@ -195,6 +235,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'manage redhen org revisions',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_org',
   );
@@ -204,6 +246,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'manage redhen orgs',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_org',
   );
@@ -213,6 +257,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'view own redhen contact',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_contact',
   );
@@ -222,6 +268,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'view redhen contact connections',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_relation',
   );
@@ -231,6 +279,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'view redhen contact revisions',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_contact',
   );
@@ -240,6 +290,8 @@ function ec_redhen_user_default_permissions() {
     'name' => 'view redhen org connections',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'redhen_relation',
   );

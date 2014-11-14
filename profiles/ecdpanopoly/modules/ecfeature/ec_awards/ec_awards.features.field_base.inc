@@ -138,14 +138,7 @@ function ec_awards_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_award_user_company',
-    'foreign keys' => array(
-      'redhen_org' => array(
-        'columns' => array(
-          'target_id' => 'org_id',
-        ),
-        'table' => 'redhen_org',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -175,6 +168,39 @@ function ec_awards_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_award_win_user_co'
+  $field_bases['field_award_win_user_co'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_award_win_user_co',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_award_winner_description'
@@ -253,14 +279,7 @@ function ec_awards_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'redhen_contact_type' => array(
-        'columns' => array(
-          'target_id' => 'contact_type_id',
-        ),
-        'table' => 'redhen_contact_type',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -298,14 +317,7 @@ function ec_awards_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ref_award_win_user',
-    'foreign keys' => array(
-      'redhen_contact_type' => array(
-        'columns' => array(
-          'target_id' => 'contact_type_id',
-        ),
-        'table' => 'redhen_contact_type',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',

@@ -1,191 +1,173 @@
 <?php
 /**
  * @file
- * ec_conferences_lte.features.uuid_term.inc
+ * ec_redhen.features.uuid_term.inc
  */
 
 /**
  * Implements hook_uuid_features_default_terms().
  */
-function ec_conferences_lte_uuid_features_default_terms() {
+function ec_redhen_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'Regional',
+    'name' => 'President',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 0,
-    'uuid' => '0b89747c-20c3-4e92-8d60-e8a6d9ed5b5f',
-    'vocabulary_machine_name' => 'conferences_types',
+    'uuid' => '36fdccdf-3c79-4fcb-9fb2-e0625b651570',
+    'vocabulary_machine_name' => 'contact_position',
     'metatags' => array(),
     'path' => array(
       'pathauto' => 1,
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'conferences-types/regional',
+        'alias' => 'contact-position/president',
         'language' => 'und',
       ),
     ),
   );
   $terms[] = array(
-    'name' => 'Bronze',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 4,
-    'uuid' => '1a14437b-a800-435c-af13-6e6a0bd75071',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/bronze',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Host',
+    'name' => 'Employee',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 0,
-    'uuid' => '3d44076d-54df-47e7-b759-d53c0212c06e',
-    'vocabulary_machine_name' => 'sponsor_types',
+    'uuid' => '3b9cbf88-7150-4f7a-b950-95ae3c5f0319',
+    'vocabulary_machine_name' => 'contact_position',
     'metatags' => array(),
     'path' => array(
       'pathauto' => 1,
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'sponsor-types/host',
+        'alias' => 'contact-types/employee',
         'language' => 'und',
       ),
     ),
   );
   $terms[] = array(
-    'name' => 'Gold',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 2,
-    'uuid' => '57b1a06e-2d19-4397-89c9-3a28882b65e3',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/gold',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Silver',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 3,
-    'uuid' => '6c7431a6-486a-4414-b4b8-ff9d7c690975',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/silver',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Local',
+    'name' => 'Outgoing Chair',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 0,
-    'uuid' => '755bca13-209f-4291-ac88-56cb9e069d2f',
-    'vocabulary_machine_name' => 'conferences_types',
+    'uuid' => '5023325c-c072-4211-a510-7441209b4552',
+    'vocabulary_machine_name' => 'contact_position',
     'metatags' => array(),
     'path' => array(
       'pathauto' => 1,
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'conferences-types/local',
+        'alias' => 'contact-position/outgoing-chair',
         'language' => 'und',
       ),
     ),
   );
   $terms[] = array(
-    'name' => 'Platinum',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 1,
-    'uuid' => 'a017a85e-c0c8-4e40-9342-a98698094006',
-    'vocabulary_machine_name' => 'sponsor_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'sponsor-types/platinum',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'National',
+    'name' => 'Officer',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 0,
-    'uuid' => 'b20d6614-3ff6-4389-a609-0790ce9caa1e',
-    'vocabulary_machine_name' => 'conferences_types',
+    'uuid' => '54302718-5821-413d-8d0e-57a38fcc4570',
+    'vocabulary_machine_name' => 'contact_position',
     'metatags' => array(),
     'path' => array(
       'pathauto' => 1,
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'conferences-types/national',
+        'alias' => 'contact-types/officer',
         'language' => 'und',
       ),
     ),
   );
   $terms[] = array(
-    'name' => 'Promotional Partner',
+    'name' => 'Board Member',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 0,
-    'uuid' => 'f36c51f2-bdcf-467e-b8bd-ce1b19107833',
-    'vocabulary_machine_name' => 'sponsor_types',
+    'uuid' => '87da4bd9-bcd5-4528-847e-c638d9598f2a',
+    'vocabulary_machine_name' => 'contact_position',
     'metatags' => array(),
     'path' => array(
       'pathauto' => 1,
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'sponsor-types/promotional-partner',
+        'alias' => 'contact-types/board-member',
         'language' => 'und',
       ),
     ),
   );
   $terms[] = array(
-    'name' => 'Media',
+    'name' => 'Incoming Chair',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 0,
-    'uuid' => 'f8ff3349-5c0d-4772-8ea5-a61d1ef33191',
-    'vocabulary_machine_name' => 'sponsor_types',
+    'uuid' => '8e46e337-7c79-4729-8ecf-18e4ca04707d',
+    'vocabulary_machine_name' => 'contact_position',
     'metatags' => array(),
     'path' => array(
       'pathauto' => 1,
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'sponsor-types/media',
+        'alias' => 'contact-position/incoming-chair',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Director',
+    'description' => '',
+    'format' => 'panopoly_wysiwyg_text',
+    'weight' => 0,
+    'uuid' => 'bd903a62-3af5-4892-89ce-e1f0c162c972',
+    'vocabulary_machine_name' => 'contact_position',
+    'metatags' => array(),
+    'path' => array(
+      'pathauto' => 1,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'contact-types/director',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Current Chair',
+    'description' => '',
+    'format' => 'panopoly_wysiwyg_text',
+    'weight' => 0,
+    'uuid' => 'ce103571-9bc9-4e83-a4eb-bb2443a3d9f0',
+    'vocabulary_machine_name' => 'contact_position',
+    'metatags' => array(),
+    'path' => array(
+      'pathauto' => 1,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'contact-position/current-chair',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Board Treasurer',
+    'description' => '',
+    'format' => 'panopoly_wysiwyg_text',
+    'weight' => 0,
+    'uuid' => 'fcd9be1c-97b8-4cad-800a-e5775d20d697',
+    'vocabulary_machine_name' => 'contact_position',
+    'metatags' => array(),
+    'path' => array(
+      'pathauto' => 1,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'contact-position/board-treasurer',
         'language' => 'und',
       ),
     ),

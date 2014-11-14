@@ -15,6 +15,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node conference_event breadcrumbs',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -24,6 +25,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node conference_event content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -33,6 +35,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node conference_event context',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -42,6 +45,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node conference_event defaults',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -51,6 +55,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node conference_event layout',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -60,6 +65,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node conference_event overview',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -69,6 +75,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node conference_event settings',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -78,6 +85,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node conference_schedule defaults',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -87,6 +95,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node session defaults',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -96,6 +105,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'administer panelizer node track defaults',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -106,6 +116,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -116,6 +127,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -126,6 +138,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -136,6 +149,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -145,6 +159,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'delete any conference_event content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -154,6 +169,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'delete any conference_schedule content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -163,6 +179,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'delete any session content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -172,6 +189,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'delete any track content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -181,7 +199,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'delete own conference_event content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -192,6 +210,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -201,7 +220,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'delete own session content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -212,6 +231,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -222,6 +242,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -232,6 +253,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -242,6 +264,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -252,6 +275,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -261,6 +285,8 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'edit own conference_event content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -270,6 +296,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'edit own conference_schedule content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -279,6 +306,8 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'edit own session content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -288,6 +317,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'edit own track content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );

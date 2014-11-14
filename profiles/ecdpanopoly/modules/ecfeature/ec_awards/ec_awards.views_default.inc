@@ -109,7 +109,7 @@ function ec_awards_views_default_views() {
   $handler->display->display_options['fields']['realname']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['realname']['alter']['text'] = '<a href="/user/[uid]/nesea">[realname]</a>';
   $handler->display->display_options['fields']['realname']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: User Company */
   $handler->display->display_options['fields']['field_award_win_user_co']['id'] = 'field_award_win_user_co';
   $handler->display->display_options['fields']['field_award_win_user_co']['table'] = 'field_data_field_award_win_user_co';
   $handler->display->display_options['fields']['field_award_win_user_co']['field'] = 'field_award_win_user_co';

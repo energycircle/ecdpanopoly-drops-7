@@ -23,12 +23,12 @@ function ec_conferences_lte_field_group_info() {
     'label' => 'Conference Information',
     'weight' => '9',
     'children' => array(
-      0 => 'field_event_exhibitors',
-      1 => 'field_event_registration_link',
-      2 => 'field_event_registration_message',
-      3 => 'field_ref_conference_venue',
-      4 => 'field_event_sponsors',
-      5 => 'field_conf_exhibitors',
+      0 => 'field_event_registration_link',
+      1 => 'field_event_registration_message',
+      2 => 'field_ref_conference_venue',
+      3 => 'field_conf_exhibitors',
+      4 => 'field_conf_sponsor',
+      5 => 'field_event_sponsors_ref',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
