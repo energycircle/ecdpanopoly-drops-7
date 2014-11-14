@@ -10,6 +10,62 @@
 function ec_conferences_lte_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_comments'
+  $field_bases['field_comments'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_comments',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_company'
+  $field_bases['field_company'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_company',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_conf_exhibitors'
   $field_bases['field_conf_exhibitors'] = array(
     'active' => 1,
@@ -847,6 +903,49 @@ function ec_conferences_lte_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_what_is_the_primary_focus'
+  $field_bases['field_what_is_the_primary_focus'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_what_is_the_primary_focus',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'Home Performance Contractor' => 'Home Performance Contractor',
+        'Weatherization Contractor' => 'Weatherization Contractor',
+        'Weatherization Agency' => 'Weatherization Agency',
+        'Energy Rater/Auditor' => 'Energy Rater/Auditor',
+        'Government' => 'Government',
+        'Education' => 'Education',
+        'Remodeler' => 'Remodeler',
+        'Utility' => 'Utility',
+        'HVAC' => 'HVAC',
+        'Renewable Energy' => 'Renewable Energy',
+        'Manufacturer' => 'Manufacturer',
+        'Supplier' => 'Supplier',
+        'Trade Association' => 'Trade Association',
+        'Real Estate' => 'Real Estate',
+        'Insulation Contractor' => 'Insulation Contractor',
+        'Program Implementer' => 'Program Implementer',
+        'Software' => 'Software',
+        'Advocacy/Policy' => 'Advocacy/Policy',
+        'Technology' => 'Technology',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   return $field_bases;
