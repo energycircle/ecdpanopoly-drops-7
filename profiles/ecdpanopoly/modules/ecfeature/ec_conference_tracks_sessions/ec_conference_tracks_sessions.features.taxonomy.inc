@@ -25,13 +25,5 @@ function ec_conference_tracks_sessions_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
-    'sponsor_types' => array(
-      'name' => 'Sponsor Types',
-      'machine_name' => 'sponsor_types',
-      'description' => '',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => -5,
-    ),
   );
 }
