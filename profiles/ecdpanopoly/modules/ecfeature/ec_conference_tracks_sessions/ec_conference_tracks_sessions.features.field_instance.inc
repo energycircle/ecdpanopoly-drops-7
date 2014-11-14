@@ -565,64 +565,6 @@ function ec_conference_tracks_sessions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_areas_of_focus'
-  $field_instances['node-session-field_areas_of_focus'] = array(
-    'bundle' => 'session',
-    'default_value' => NULL,
-    'default_value_label_token' => 0,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 8,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'exclude_cv' => 0,
-    'field_name' => 'field_areas_of_focus',
-    'label' => 'Areas of Focus',
-    'required' => 0,
-    'settings' => array(
-      'exclude_cv' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'label_help_description' => '',
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'options_buttons',
-      'weight' => 12,
-    ),
-  );
-
   // Exported field_instance: 'node-session-field_event_location'
   $field_instances['node-session-field_event_location'] = array(
     'bundle' => 'session',
@@ -1453,7 +1395,6 @@ function ec_conference_tracks_sessions_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Areas of Focus');
   t('Body');
   t('CEU Information');
   t('CEU Issuer Logo');

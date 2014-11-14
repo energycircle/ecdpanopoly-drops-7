@@ -125,7 +125,14 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'redhen_contact' => array(
+        'columns' => array(
+          'target_id' => 'contact_id',
+        ),
+        'table' => 'redhen_contact',
+      ),
+    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',

@@ -8,26 +8,6 @@
  * Implements hook_uuid_features_default_terms().
  */
 function ec_conference_tracks_sessions_uuid_features_default_terms() {
-  $terms = array();
-
-  $terms[] = array(
-    'name' => 'Weatherization',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 6,
-    'uuid' => '03cabcd2-1c70-4ed4-9f27-12b62a95cd2f',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/weatherization',
-        'language' => 'und',
-      ),
-    ),
-  );
  
   $terms[] = array(
     'name' => 'ASHI',
@@ -67,24 +47,28 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
       ),
     ),
   );
+ 
+ 
   $terms[] = array(
-    'name' => 'Green Enthusiasts',
+    'name' => 'AIA',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
-    'weight' => 9,
-    'uuid' => '35d661f7-296e-473a-b180-0a60209383ad',
-    'vocabulary_machine_name' => 'areas_of_focus',
+    'weight' => 0,
+    'uuid' => '6221c565-4fc3-4618-96e4-b2bbdd76c677',
+    'vocabulary_machine_name' => 'ceu_issuers',
+    'field_logo' => array(),
     'metatags' => array(),
     'path' => array(
       'pathauto' => 1,
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'areas-focus/green-enthusiasts',
+        'alias' => 'ceu-issuers/aia',
         'language' => 'und',
       ),
     ),
   );
+ 
   $terms[] = array(
     'name' => 'NATE',
     'description' => '',
@@ -124,42 +108,6 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Utilities',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 8,
-    'uuid' => '84f5e1fb-767b-4e6b-9e4a-e98e4f2f8ffb',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/utilities',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Contractors',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 2,
-    'uuid' => '85a5f1e3-70e0-4646-a4ad-12badcfb2445',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/contractors',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
     'name' => 'RESNET',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
@@ -179,78 +127,6 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
     ),
   );
  
-  $terms[] = array(
-    'name' => 'Sustainability Professionals',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 5,
-    'uuid' => 'a6b5e70a-2752-452b-ae33-3e9fe374c724',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/sustainability-professionals',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'HVAC',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 0,
-    'uuid' => 'b26ddf65-2408-4cf0-88a5-de874f8bb076',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/hvac',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Remodelers',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 4,
-    'uuid' => 'b814472b-233e-403b-9d31-d667c300958f',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/remodelers',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Program Managers',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 7,
-    'uuid' => 'c6f521d2-4898-4bf3-b3af-e94c229aecf7',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/program-managers',
-        'language' => 'und',
-      ),
-    ),
-  );
   $terms[] = array(
     'name' => 'NAHB',
     'description' => '',
@@ -289,60 +165,6 @@ function ec_conference_tracks_sessions_uuid_features_default_terms() {
       ),
     ),
   );
-  $terms[] = array(
-    'name' => 'Architects',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 1,
-    'uuid' => 'e3442f2a-4ee4-4f76-b695-e1424141d197',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/architects',
-        'language' => 'und',
-      ),
-    ),
-  );
  
-  $terms[] = array(
-    'name' => 'Design-Build / Green Builders',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 3,
-    'uuid' => 'fa762e22-c25a-4ce6-ba31-f39a11e5674a',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/design-build-green-builders',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Green Educators',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 10,
-    'uuid' => 'ff14615c-2788-41e0-920d-a0229158a248',
-    'vocabulary_machine_name' => 'areas_of_focus',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'areas-focus/green-educators',
-        'language' => 'und',
-      ),
-    ),
-  );
   return $terms;
 }
