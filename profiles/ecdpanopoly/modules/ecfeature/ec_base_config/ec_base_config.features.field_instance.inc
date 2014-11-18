@@ -532,6 +532,264 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'entityform-contact_us-field_address'
+  $field_instances['entityform-contact_us-field_address'] = array(
+    'bundle' => 'contact_us',
+    'default_value' => array(
+      0 => array(
+        'element_key' => 'entityform|contact_us|field_address|und|0',
+        'thoroughfare' => '',
+        'premise' => '',
+        'locality' => '',
+        'administrative_area' => '',
+        'postal_code' => '',
+        'country' => 'US',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_address',
+    'label' => 'Address',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'addressfield',
+      'settings' => array(
+        'available_countries' => array(),
+        'format_handlers' => array(
+          'address' => 'address',
+          'address-hide-country' => 0,
+          'organisation' => 0,
+          'name-full' => 0,
+          'name-oneline' => 0,
+        ),
+      ),
+      'type' => 'addressfield_standard',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-contact_us-field_email'
+  $field_instances['entityform-contact_us-field_email'] = array(
+    'bundle' => 'contact_us',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'email_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_email',
+    'label' => 'Email',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-contact_us-field_first_name'
+  $field_instances['entityform-contact_us-field_first_name'] = array(
+    'bundle' => 'contact_us',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_first_name',
+    'label' => 'First Name',
+    'required' => 1,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-contact_us-field_last_name'
+  $field_instances['entityform-contact_us-field_last_name'] = array(
+    'bundle' => 'contact_us',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_last_name',
+    'label' => 'Last Name',
+    'required' => 1,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-contact_us-field_phone'
+  $field_instances['entityform-contact_us-field_phone'] = array(
+    'bundle' => 'contact_us',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'phone',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'phone',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_phone',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'ca_phone_parentheses' => 1,
+      'ca_phone_separator' => '-',
+      'phone_country_code' => 0,
+      'phone_default_country_code' => 1,
+      'phone_int_max_length' => 15,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'phone',
+      'settings' => array(),
+      'type' => 'phone_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-contact_us-field_question_or_comment'
+  $field_instances['entityform-contact_us-field_question_or_comment'] = array(
+    'bundle' => 'contact_us',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_question_or_comment',
+    'label' => 'Question or Comment',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 8,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');

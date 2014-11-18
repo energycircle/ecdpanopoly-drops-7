@@ -59,6 +59,8 @@ function ec_conference_tracks_sessions_field_group_info() {
       2 => 'field_ref_session_track',
       3 => 'field_session_chairs',
       4 => 'field_session_speakers',
+      5 => 'field_session_format',
+      6 => 'field_session_code',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

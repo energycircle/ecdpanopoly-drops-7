@@ -27,8 +27,8 @@ function ec_conferences_lte_field_group_info() {
       1 => 'field_event_registration_message',
       2 => 'field_ref_conference_venue',
       3 => 'field_conf_exhibitors',
-      4 => 'field_conf_sponsor',
-      5 => 'field_event_sponsors_ref',
+      4 => 'field_event_sponsors_ref',
+      5 => 'field_conference_tracks_ref',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

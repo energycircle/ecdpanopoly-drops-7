@@ -858,6 +858,69 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-conference-field_conference_tracks_ref'
+  $field_instances['node-conference-field_conference_tracks_ref'] = array(
+    'bundle' => 'conference',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 23,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_conference_tracks_ref',
+    'label' => 'Conference Tracks',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-conference-field_conference_type'
   $field_instances['node-conference-field_conference_type'] = array(
     'bundle' => 'conference',
@@ -1119,7 +1182,7 @@ function ec_conferences_lte_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -2227,6 +2290,7 @@ function ec_conferences_lte_field_default_field_instances() {
   t('Comments');
   t('Company');
   t('Conference');
+  t('Conference Tracks');
   t('Conference Type');
   t('Conferences');
   t('Date');

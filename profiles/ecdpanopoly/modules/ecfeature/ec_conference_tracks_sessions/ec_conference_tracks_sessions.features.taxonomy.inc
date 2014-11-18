@@ -25,5 +25,13 @@ function ec_conference_tracks_sessions_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'session_format' => array(
+      'name' => 'Session Format',
+      'machine_name' => 'session_format',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
   );
 }
