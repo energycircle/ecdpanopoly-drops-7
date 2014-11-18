@@ -3,6 +3,9 @@ core = 7.x
 
 
 ; EC CONTRIB MODS
+projects[addthis][version] = 4.0-alpha4
+projects[addthis][subdir] = eccontrib
+
 projects[addressfield][version] = 1.0-beta5
 projects[addressfield][subdir] = eccontrib
 
@@ -87,6 +90,9 @@ projects[eva][subdir] = eccontrib
 projects[exclude_node_title][version] = 1.x
 projects[exclude_node_title][subdir] = eccontrib
 
+projects[field_collection][version] = 1.0-beta8
+projects[field_collection][subdir] = eccontrib
+
 projects[field_formatter_settings][version] = 1.x
 projects[field_formatter_settings][subdir] = eccontrib
 
@@ -117,6 +123,9 @@ projects[field_validation][subdir] = eccontrib
 projects[insert_view][version] = 2.x
 projects[insert_view][subdir] = eccontrib
 
+projects[image_link_formatter][version] = 1.0
+projects[image_link_formatter][subdir] = eccontrib
+
 projects[imagecache_token][version] = 1.x-dev
 projects[imagecache_token][subdir] = eccontrib
 
@@ -144,8 +153,17 @@ projects[metatag][subdir] = eccontrib
 projects[nodequeue][version] = 2.0-beta1
 projects[nodequeue][subdir] = eccontrib
 
+projects[redhen][version] = 1.8
+projects[redhen][subdir] = eccontrib
+
 projects[redirect][version] = 1.0-rc1
 projects[redirect][subdir] = eccontrib
+
+projects[registration][version] = 1.3
+projects[registration][subdir] = eccontrib
+
+projects[relation][version] = 1.0-rc6
+projects[relation][subdir] = eccontrib
 
 projects[rules][version] = 2.x
 projects[rules][subdir] = eccontrib
