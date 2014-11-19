@@ -707,6 +707,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -792,6 +798,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 9,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -883,6 +895,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -966,6 +984,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 11,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1077,6 +1101,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1178,6 +1208,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 10,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1289,6 +1325,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1390,6 +1432,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 3,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1501,6 +1549,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1602,6 +1656,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 4,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1714,6 +1774,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1801,6 +1867,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1916,6 +1988,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2001,6 +2079,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 9,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -2092,6 +2176,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2175,6 +2265,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 14,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -2286,6 +2382,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2387,6 +2489,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 12,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -2498,6 +2606,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2599,6 +2713,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 4,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -2710,6 +2830,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2811,6 +2937,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 3,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -2922,6 +3054,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -3007,11 +3145,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service_category',
-      'default_value' => array(
-        0 => array(
-          'target_id' => 1,
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
@@ -3028,6 +3162,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 10,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -3120,6 +3260,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -3235,6 +3381,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -3325,6 +3477,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -3406,6 +3564,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 7,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -3510,6 +3674,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 5,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -3621,6 +3791,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -3727,6 +3903,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -3828,6 +4010,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 3,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -3942,6 +4130,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -4044,6 +4238,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 4,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -4156,6 +4356,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -4243,6 +4449,12 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',

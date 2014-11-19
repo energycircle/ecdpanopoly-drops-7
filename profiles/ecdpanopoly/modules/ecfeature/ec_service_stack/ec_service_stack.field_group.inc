@@ -23,11 +23,12 @@ function ec_service_stack_field_group_info() {
     'label' => ' Shown on This Page',
     'weight' => '7',
     'children' => array(
-      0 => 'field_ref_serv_cat_promo',
-      1 => 'field_ref_serv_cat_testimonial',
-      2 => 'field_ref_serv_cat_blog',
-      3 => 'field_ref_serv_cat_prodpage',
-      4 => 'field_ref_serv_cat_case_study',
+      0 => 'field_ref_serv_cat_blog',
+      1 => 'field_ref_serv_cat_case_study',
+      2 => 'field_ref_serv_cat_prodpage',
+      3 => 'field_ref_serv_cat_promo',
+      4 => 'field_ref_serv_cat_testimonial',
+      5 => 'field_ref_serv_cat_faq',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -55,11 +56,12 @@ function ec_service_stack_field_group_info() {
     'label' => ' Shown on This Page',
     'weight' => '6',
     'children' => array(
-      0 => 'field_ref_service_promo',
-      1 => 'field_ref_service_testimonial',
-      2 => 'field_ref_service_blog',
-      3 => 'field_ref_service_product',
-      4 => 'field_ref_service_case_study',
+      0 => 'field_ref_service_blog',
+      1 => 'field_ref_service_case_study',
+      2 => 'field_ref_service_product',
+      3 => 'field_ref_service_promo',
+      4 => 'field_ref_service_testimonial',
+      5 => 'field_ref_service_faq',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -88,8 +90,8 @@ function ec_service_stack_field_group_info() {
     'weight' => '6',
     'children' => array(
       0 => 'field_button_text',
-      1 => 'field_ref_to_cta_form',
-      2 => 'field_call_to_action',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -116,9 +118,9 @@ function ec_service_stack_field_group_info() {
     'label' => 'CTA Form',
     'weight' => '4',
     'children' => array(
-      0 => 'field_call_to_action',
-      1 => 'field_ref_to_cta_form',
-      2 => 'field_button_text',
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -145,9 +147,9 @@ function ec_service_stack_field_group_info() {
     'label' => 'CTA Form',
     'weight' => '5',
     'children' => array(
-      0 => 'field_call_to_action',
-      1 => 'field_ref_to_cta_form',
-      2 => 'field_button_text',
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -175,11 +177,12 @@ function ec_service_stack_field_group_info() {
     'label' => 'Shown on This Page',
     'weight' => '5',
     'children' => array(
-      0 => 'field_ref_serv_group_promo',
-      1 => 'field_ref_serv_group_testimonial',
-      2 => 'field_ref_serv_group_blog',
-      3 => 'field_ref_serv_group_prodpage',
-      4 => 'field_ref_serv_group_case_study',
+      0 => 'field_ref_serv_group_blog',
+      1 => 'field_ref_serv_group_case_study',
+      2 => 'field_ref_serv_group_prodpage',
+      3 => 'field_ref_serv_group_promo',
+      4 => 'field_ref_serv_group_testimonial',
+      5 => 'field_ref_serv_group_faq',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

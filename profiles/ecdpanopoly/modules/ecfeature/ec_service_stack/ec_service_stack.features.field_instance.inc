@@ -256,90 +256,6 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-schedule_service-field_map_address'
-  $field_instances['entityform-schedule_service-field_map_address'] = array(
-    'bundle' => 'schedule_service',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'text_default',
-        'weight' => 7,
-      ),
-      'email' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'full' => array(
-        'label' => 'inline',
-        'module' => 'title',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'title_class' => '',
-          'title_link' => '',
-          'title_style' => '',
-        ),
-        'type' => 'title_linked',
-        'weight' => 2,
-      ),
-      'review' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'table' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'token' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'entityform',
-    'field_name' => 'field_map_address',
-    'label' => 'Address',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'entityform-schedule_service-field_name'
   $field_instances['entityform-schedule_service-field_name'] = array(
     'bundle' => 'schedule_service',
@@ -614,6 +530,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -670,6 +592,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 9,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -734,6 +662,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -788,6 +722,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 11,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -856,6 +796,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -919,6 +865,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -957,6 +909,69 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-service-field_ref_service_faq'
+  $field_instances['node-service-field_ref_service_faq'] = array(
+    'bundle' => 'service',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 12,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_service_faq',
+    'label' => 'FAQ',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 16,
+    ),
+  );
+
   // Exported field_instance: 'node-service-field_ref_service_product'
   $field_instances['node-service-field_ref_service_product'] = array(
     'bundle' => 'service',
@@ -977,6 +992,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 6,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1045,6 +1066,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1103,6 +1130,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 2,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1171,6 +1204,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1234,6 +1273,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1291,6 +1336,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 1,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1377,6 +1428,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1433,6 +1490,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 9,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1497,6 +1560,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1551,6 +1620,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 14,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1619,6 +1694,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1682,6 +1763,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1720,6 +1807,69 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-service_category-field_ref_serv_cat_faq'
+  $field_instances['node-service_category-field_ref_serv_cat_faq'] = array(
+    'bundle' => 'service_category',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 15,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_serv_cat_faq',
+    'label' => 'FAQ',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 17,
+    ),
+  );
+
   // Exported field_instance: 'node-service_category-field_ref_serv_cat_prodpage'
   $field_instances['node-service_category-field_ref_serv_cat_prodpage'] = array(
     'bundle' => 'service_category',
@@ -1740,6 +1890,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 7,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1808,6 +1964,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1866,6 +2028,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 2,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1934,6 +2102,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1997,6 +2171,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2038,11 +2218,7 @@ function ec_service_stack_field_default_field_instances() {
   // Exported field_instance: 'node-service_category-field_ref_to_cta_form'
   $field_instances['node-service_category-field_ref_to_cta_form'] = array(
     'bundle' => 'service_category',
-    'default_value' => array(
-      0 => array(
-        'target_id' => 1,
-      ),
-    ),
+    'default_value' => NULL,
     'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
@@ -2059,6 +2235,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 10,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -2121,6 +2303,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 1,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -2207,6 +2395,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2263,6 +2457,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 9,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -2327,6 +2527,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2383,6 +2589,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -2451,6 +2663,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2489,6 +2707,69 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-service_group-field_ref_serv_group_faq'
+  $field_instances['node-service_group-field_ref_serv_group_faq'] = array(
+    'bundle' => 'service_group',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 11,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_serv_group_faq',
+    'label' => 'FAQ',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 24,
+    ),
+  );
+
   // Exported field_instance: 'node-service_group-field_ref_serv_group_prodpage'
   $field_instances['node-service_group-field_ref_serv_group_prodpage'] = array(
     'bundle' => 'service_group',
@@ -2509,6 +2790,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 6,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -2577,6 +2864,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2635,6 +2928,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 2,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -2704,6 +3003,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2762,6 +3067,12 @@ function ec_service_stack_field_default_field_instances() {
         'weight' => 8,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -2829,6 +3140,12 @@ function ec_service_stack_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2883,7 +3200,6 @@ function ec_service_stack_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Address');
   t('Blog');
   t('Body');
   t('Business Name');
@@ -2893,6 +3209,7 @@ function ec_service_stack_field_default_field_instances() {
   t('Case Study');
   t('Display subtitle');
   t('Email');
+  t('FAQ');
   t('I need...');
   t('Name');
   t('Page Tracking');
