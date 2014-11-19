@@ -14,14 +14,14 @@ function ec_faq_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_faq';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_menutitle_faq';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['auto_menutitle_faq'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -30,55 +30,6 @@ function ec_faq_strongarm() {
   $strongarm->name = 'clear_all_faq';
   $strongarm->value = 0;
   $export['clear_all_faq'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_cancel_faq';
-  $strongarm->value = '0';
-  $export['content_type_extras_cancel_faq'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_preview_button_faq';
-  $strongarm->value = 'Preview';
-  $export['content_type_extras_preview_button_faq'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_button_faq';
-  $strongarm->value = 'Save and Edit';
-  $export['content_type_extras_save_and_edit_button_faq'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_faq';
-  $strongarm->value = '0';
-  $export['content_type_extras_save_and_edit_faq'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_new_button_faq';
-  $strongarm->value = 'Save and New';
-  $export['content_type_extras_save_and_new_button_faq'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_new_faq';
-  $strongarm->value = '0';
-  $export['content_type_extras_save_and_new_faq'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_title_hide_faq';
-  $strongarm->value = 0;
-  $export['content_type_extras_title_hide_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -136,7 +87,23 @@ function ec_faq_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'metatags' => array(
+          'weight' => '100',
+        ),
+        'title' => array(
+          'weight' => '-5',
+        ),
+        'path' => array(
+          'weight' => '30',
+        ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '30',
+        ),
+      ),
       'display' => array(),
     ),
   );
@@ -146,9 +113,7 @@ function ec_faq_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_faq';
-  $strongarm->value = array(
-    0 => 'menu-auxiliary-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_faq'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -204,6 +169,11 @@ function ec_faq_strongarm() {
         'choice' => 0,
       ),
       'show_this_block' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'grouped_teaser' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
