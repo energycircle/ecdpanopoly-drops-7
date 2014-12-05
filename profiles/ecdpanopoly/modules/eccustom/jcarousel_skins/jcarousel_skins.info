@@ -1,0 +1,13 @@
+name = jCarousel Skins
+description = Create jQuery-based carousel skins.
+package = User interface
+core = 7.x
+
+files[] = jcarousel_skins.module
+
+; Information added by Drupal.org packaging script on 2014-01-15
+version = "7.x-2.6+2-dev"
+core = "7.x"
+project = "jcarousel_skins"
+datestamp = "1389802106"
+
