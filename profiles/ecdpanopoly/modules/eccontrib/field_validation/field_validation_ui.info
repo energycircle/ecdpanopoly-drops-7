@@ -6,8 +6,8 @@ dependencies[] = field_validation
 dependencies[] = ctools
 
 ; Information added by Drupal.org packaging script on 2014-01-26
-version = "7.x-2.3+8-dev"
+version = "7.x-2.4"
 core = "7.x"
 project = "field_validation"
-datestamp = "1390723117"
+datestamp = "1390724605"
 

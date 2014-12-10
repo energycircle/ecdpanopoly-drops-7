@@ -47,7 +47,19 @@ class entityreference_filter_view_result extends views_handler_filter_in_operato
       return;
     }
     else {
-      // Configuration via View UI time. Don't show value selection widget.
+      // Configuration via View UI time.
+      if ((isset($form['operator']['#type'])) && ($form['operator']['#type'] === '')) {
+        // Views dependent filters module needs option list to configure dependencies.
+        $values = $this->get_value_options();
+        if (empty($values)) {
+          if (isset($form['value'])) {
+            $form['value']['#access'] = FALSE;
+          }
+        }
+        return;
+      }
+
+      // Don't show value selection widget.
       $form['value']['#access'] = FALSE;
     }
 
@@ -166,7 +178,7 @@ class entityreference_filter_view_result extends views_handler_filter_in_operato
 
           if ($first_char === '[') {
             if (drupal_substr($arg, -1, 1) === ']') {
-              if (empty($filters_by_identifier)) {
+              if ((empty($filters_by_identifier)) && (!empty($this->view->filter))) {
                 foreach ($this->view->filter as $filter_handler) {
                   if (empty($filter_handler->options['exposed'])) {
                     continue;

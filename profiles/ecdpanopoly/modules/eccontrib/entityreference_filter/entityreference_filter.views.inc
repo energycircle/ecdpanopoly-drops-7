@@ -20,7 +20,7 @@ function entityreference_filter_views_data_alter(&$data) {
         if ((isset($filter['filter']['table'])) && ($filter['filter']['table'] === 'og_membership')) {
           $filter['filter']['field'] = $field_info['filter']['field'];
         }
-        unset($filter['argument'], $filter['field'], $filter['relationship'], $filter['sort'], $filter['filter']['title']);
+        unset($filter['argument'], $filter['field'], $filter['relationship'], $filter['sort'], $filter['filter']['title'], $filter['aliases']);
         $data[$table_name][$field_name . '_entityreference_filter'] = $filter;
       }
     }
