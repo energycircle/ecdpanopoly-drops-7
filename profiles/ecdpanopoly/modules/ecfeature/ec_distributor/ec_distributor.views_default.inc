@@ -37,6 +37,41 @@ function ec_distributor_views_default_views() {
     ),
   );
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Website */
+  $handler->display->display_options['fields']['field_external_website']['id'] = 'field_external_website';
+  $handler->display->display_options['fields']['field_external_website']['table'] = 'field_data_field_external_website';
+  $handler->display->display_options['fields']['field_external_website']['field'] = 'field_external_website';
+  $handler->display->display_options['fields']['field_external_website']['label'] = '';
+  $handler->display->display_options['fields']['field_external_website']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_external_website']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_external_website']['type'] = 'link_url';
+  /* Field: Content: Contact Name */
+  $handler->display->display_options['fields']['field_distributor_contact_name']['id'] = 'field_distributor_contact_name';
+  $handler->display->display_options['fields']['field_distributor_contact_name']['table'] = 'field_data_field_distributor_contact_name';
+  $handler->display->display_options['fields']['field_distributor_contact_name']['field'] = 'field_distributor_contact_name';
+  $handler->display->display_options['fields']['field_distributor_contact_name']['label'] = '';
+  $handler->display->display_options['fields']['field_distributor_contact_name']['element_label_colon'] = FALSE;
+  /* Field: Field: Email */
+  $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
+  $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['label'] = '';
+  $handler->display->display_options['fields']['field_email']['element_label_colon'] = FALSE;
+  /* Field: Field: Phone */
+  $handler->display->display_options['fields']['field_phone']['id'] = 'field_phone';
+  $handler->display->display_options['fields']['field_phone']['table'] = 'field_data_field_phone';
+  $handler->display->display_options['fields']['field_phone']['field'] = 'field_phone';
+  $handler->display->display_options['fields']['field_phone']['label'] = '';
+  $handler->display->display_options['fields']['field_phone']['element_label_colon'] = FALSE;
   /* Field: Field: Address */
   $handler->display->display_options['fields']['field_address_1']['id'] = 'field_address_1';
   $handler->display->display_options['fields']['field_address_1']['table'] = 'field_data_field_address';
@@ -52,35 +87,14 @@ function ec_distributor_views_default_views() {
     ),
     'separator' => '',
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Field: Address */
-  $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
-  $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
-  $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
-  $handler->display->display_options['fields']['field_address']['label'] = '';
-  $handler->display->display_options['fields']['field_address']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_address']['click_sort_column'] = 'country';
-  $handler->display->display_options['fields']['field_address']['settings'] = array(
-    'use_widget_handlers' => 1,
-    'format_handlers' => array(
-      'address' => 'address',
-    ),
-  );
-  /* Field: Content: Website */
-  $handler->display->display_options['fields']['field_external_website']['id'] = 'field_external_website';
-  $handler->display->display_options['fields']['field_external_website']['table'] = 'field_data_field_external_website';
-  $handler->display->display_options['fields']['field_external_website']['field'] = 'field_external_website';
-  $handler->display->display_options['fields']['field_external_website']['label'] = '';
-  $handler->display->display_options['fields']['field_external_website']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_external_website']['click_sort_column'] = 'url';
+  /* Sort criterion: Field: Address - Administrative area (i.e. State / Province) */
+  $handler->display->display_options['sorts']['field_address_administrative_area']['id'] = 'field_address_administrative_area';
+  $handler->display->display_options['sorts']['field_address_administrative_area']['table'] = 'field_data_field_address';
+  $handler->display->display_options['sorts']['field_address_administrative_area']['field'] = 'field_address_administrative_area';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';

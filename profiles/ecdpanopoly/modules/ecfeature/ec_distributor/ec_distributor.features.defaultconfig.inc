@@ -65,9 +65,15 @@ function ec_distributor_defaultconfig_field_default_fields() {
             'use_widget_handlers' => 1,
           ),
           'type' => 'addressfield_default',
-          'weight' => 2,
+          'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -158,9 +164,15 @@ function ec_distributor_defaultconfig_field_default_fields() {
             'field_multiple_limit_offset' => 0,
           ),
           'type' => 'link_default',
-          'weight' => 1,
+          'weight' => 3,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -184,8 +196,10 @@ function ec_distributor_defaultconfig_field_default_fields() {
       'label' => 'Website',
       'required' => 0,
       'settings' => array(
+        'absolute_url' => 1,
         'attributes' => array(
           'class' => '',
+          'configurable_class' => 0,
           'configurable_title' => 0,
           'rel' => '',
           'target' => '_blank',
@@ -201,7 +215,8 @@ function ec_distributor_defaultconfig_field_default_fields() {
           'profile' => '',
         ),
         'rel_remove' => 'default',
-        'title' => 'optional',
+        'title' => 'none',
+        'title_label_use_field_label' => 0,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
@@ -213,7 +228,7 @@ function ec_distributor_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 2,
+        'weight' => 6,
       ),
     ),
   );
