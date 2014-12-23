@@ -1,7 +1,7 @@
 name = EC Slide
 description = Slide CT with all the views and permissions
 core = 7.x
-package = ECFeatures - Core
+package = ECFeatures - Core EXT
 version = 7.x-1.0-beta12
 project = ec_slide
 dependencies[] = ec_base_config
