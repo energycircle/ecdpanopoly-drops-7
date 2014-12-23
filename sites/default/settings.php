@@ -212,21 +212,7 @@
  *   );
  * @endcode
  */
-$databases = array (
-  'default' => 
-  array (
-    'default' => 
-    array (
-      'database' => 'ecdlocaldev',
-      'username' => 'root',
-      'password' => 'root',
-      'host' => '127.0.0.1',
-      'port' => '',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-);
+$databases = array();
 
 /**
  * Access control for update.php script.
@@ -258,7 +244,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'QK6T0ShM4O0pZh-NwtiT6kFIyc6iUqsu7fZctUx0z9E';
+$drupal_hash_salt = '';
 
 /**
  * Base URL (optional).
