@@ -264,17 +264,12 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Slide image */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_slide_image']['id'] = 'field_slide_image';
   $handler->display->display_options['fields']['field_slide_image']['table'] = 'field_data_field_slide_image';
   $handler->display->display_options['fields']['field_slide_image']['field'] = 'field_slide_image';
   $handler->display->display_options['fields']['field_slide_image']['label'] = '';
   $handler->display->display_options['fields']['field_slide_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_slide_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_slide_image']['settings'] = array(
-    'image_style' => 'sc_780x585',
-    'image_link' => '',
-  );
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';

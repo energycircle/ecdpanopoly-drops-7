@@ -425,6 +425,124 @@ function ec_promotions_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-panopoly_page-field_ref_page_promotions'.
+  $fields['node-panopoly_page-field_ref_page_promotions'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 2,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_page_promotions',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'promotion' => 'promotion',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'panopoly_page',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 10,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_page_promotions',
+      'label' => 'Promotions',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 13,
+      ),
+    ),
+  );
+
   // Exported field: 'node-promotion-body'.
   $fields['node-promotion-body'] = array(
     'field_config' => array(
@@ -475,6 +593,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 14,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'show_this_block' => array(
           'label' => 'above',
@@ -573,6 +697,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'type' => 'title_linked',
           'weight' => 2,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'hidden',
           'settings' => array(),
@@ -658,6 +788,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 6,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'show_this_block' => array(
           'label' => 'above',
@@ -751,6 +887,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 3,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'show_this_block' => array(
           'label' => 'above',
@@ -847,6 +989,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           ),
           'type' => 'text_default',
           'weight' => 1,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'show_this_block' => array(
           'label' => 'hidden',
@@ -947,6 +1095,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'type' => 'text_default',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'hidden',
           'module' => 'title',
@@ -1045,6 +1199,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 11,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'show_this_block' => array(
           'label' => 'hidden',
@@ -1149,6 +1309,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'weight' => 16,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1267,6 +1433,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 9,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1372,6 +1544,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 4,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'show_this_block' => array(
           'label' => 'above',
@@ -1479,6 +1657,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 7,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1584,6 +1768,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 12,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'show_this_block' => array(
           'label' => 'above',
@@ -1691,6 +1881,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 13,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1797,6 +1993,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 10,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1902,6 +2104,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 5,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'show_this_block' => array(
           'label' => 'above',
@@ -2010,6 +2218,12 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 8,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -2072,6 +2286,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
   t('Product');
   t('Promo link text');
   t('Promotion image');
+  t('Promotions');
   t('Select article pages (news, press release, etc.) on which to display this promo.');
   t('Select case study pages on which to display this promo.');
   t('Select the Service pages on which to show this promo.');

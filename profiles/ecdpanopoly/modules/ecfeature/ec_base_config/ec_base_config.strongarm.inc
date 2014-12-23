@@ -220,36 +220,8 @@ function ec_base_config_strongarm() {
       0 => 'fieldable_panels_panes',
       1 => 'fpid',
     ),
-    'field_collection_item' => array(
-      0 => 'field_collection_item',
-      1 => 'item_id',
-    ),
-    'redhen_contact' => array(
-      0 => 'redhen_contact',
-      1 => 'contact_id',
-    ),
-    'redhen_contact_type' => array(
-      0 => 'redhen_contact_type',
-      1 => 'contact_type_id',
-    ),
-    'redhen_note' => array(
-      0 => 'redhen_note',
-      1 => 'note_id',
-    ),
-    'redhen_org' => array(
-      0 => 'redhen_org',
-      1 => 'org_id',
-    ),
-    'redhen_org_type' => array(
-      0 => 'redhen_org_type',
-      1 => 'org_type_id',
-    ),
     'redirect' => array(
       0 => 'redirect',
-      1 => 'rid',
-    ),
-    'relation' => array(
-      0 => 'relation',
       1 => 'rid',
     ),
     'file' => array(
@@ -308,6 +280,13 @@ function ec_base_config_strongarm() {
     ),
   );
   $export['entity_view_modes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_pattern';
+  $strongarm->value = '[node:title]';
+  $export['pathauto_node_pattern'] = $strongarm;
 
   return $export;
 }

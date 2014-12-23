@@ -33,6 +33,12 @@ function ec_testimonial_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -99,6 +105,12 @@ function ec_testimonial_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -153,6 +165,12 @@ function ec_testimonial_field_default_field_instances() {
         'weight' => 1,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -214,6 +232,12 @@ function ec_testimonial_field_default_field_instances() {
         'weight' => 9,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -282,6 +306,12 @@ function ec_testimonial_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -340,6 +370,12 @@ function ec_testimonial_field_default_field_instances() {
         'weight' => 12,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -408,6 +444,12 @@ function ec_testimonial_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -466,6 +508,12 @@ function ec_testimonial_field_default_field_instances() {
         'weight' => 7,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -534,6 +582,12 @@ function ec_testimonial_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -592,6 +646,12 @@ function ec_testimonial_field_default_field_instances() {
         'weight' => 8,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -658,6 +718,12 @@ function ec_testimonial_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -717,6 +783,12 @@ function ec_testimonial_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -803,6 +875,12 @@ function ec_testimonial_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -862,6 +940,12 @@ function ec_testimonial_field_default_field_instances() {
         'weight' => 4,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

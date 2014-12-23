@@ -88,6 +88,7 @@ function ec_promotions_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
 

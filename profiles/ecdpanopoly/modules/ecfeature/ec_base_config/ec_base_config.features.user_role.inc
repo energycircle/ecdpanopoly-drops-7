@@ -22,5 +22,11 @@ function ec_base_config_user_default_roles() {
     'weight' => 4,
   );
 
+  // Exported role: administrator.
+  $roles['administrator'] = array(
+    'name' => 'administrator',
+    'weight' => 2,
+  );
+
   return $roles;
 }

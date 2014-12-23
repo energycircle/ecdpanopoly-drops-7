@@ -300,6 +300,12 @@ function ec_promotions_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 14,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -368,6 +374,12 @@ function ec_promotions_field_default_field_instances() {
         'type' => 'title_linked',
         'weight' => 2,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -426,6 +438,12 @@ function ec_promotions_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 6,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'show_this_block' => array(
         'label' => 'above',
@@ -489,6 +507,12 @@ function ec_promotions_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 3,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'show_this_block' => array(
         'label' => 'above',
@@ -556,6 +580,12 @@ function ec_promotions_field_default_field_instances() {
         ),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'show_this_block' => array(
         'label' => 'hidden',
@@ -627,6 +657,12 @@ function ec_promotions_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'hidden',
         'module' => 'title',
@@ -695,6 +731,12 @@ function ec_promotions_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 11,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'show_this_block' => array(
         'label' => 'hidden',
@@ -775,6 +817,12 @@ function ec_promotions_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'hidden',
         'module' => 'title',
@@ -845,6 +893,12 @@ function ec_promotions_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 9,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -907,6 +961,12 @@ function ec_promotions_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 4,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'show_this_block' => array(
         'label' => 'above',
@@ -971,6 +1031,12 @@ function ec_promotions_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 7,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1033,6 +1099,12 @@ function ec_promotions_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 12,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'show_this_block' => array(
         'label' => 'above',
@@ -1097,6 +1169,12 @@ function ec_promotions_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 13,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1159,6 +1237,12 @@ function ec_promotions_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 10,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'show_this_block' => array(
         'label' => 'above',
@@ -1223,6 +1307,12 @@ function ec_promotions_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 5,
       ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'show_this_block' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1285,6 +1375,12 @@ function ec_promotions_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 8,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'show_this_block' => array(
         'label' => 'above',

@@ -21,6 +21,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Heating',
@@ -33,6 +34,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Air Quality',
@@ -45,6 +47,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Insulation',
@@ -57,6 +60,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Energy Audits',
@@ -69,6 +73,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Home Automation',
@@ -81,6 +86,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Air Conditioning',
@@ -93,6 +99,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Heating Choices',
@@ -105,6 +112,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Conferences and Events',
@@ -117,6 +125,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Air Flow',
@@ -129,6 +138,7 @@ function ec_blog_post_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   return $terms;
 }

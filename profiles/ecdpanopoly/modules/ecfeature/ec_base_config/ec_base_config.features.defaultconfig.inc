@@ -835,6 +835,69 @@ function ec_base_config_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_default_settings';
+  $strongarm->value = array(
+    'title_label' => 'Title',
+    'node_preview' => '0',
+    'content_type_extras_preview_button' => 'Preview',
+    'content_type_extras_save_and_new' => '1',
+    'content_type_extras_save_and_new_button' => 'Save and New',
+    'content_type_extras_save_and_edit' => '0',
+    'content_type_extras_save_and_edit_button' => 'Save and Edit',
+    'content_type_extras_cancel' => '0',
+    'node_options' => array(
+      'status' => 'status',
+      'promote' => 0,
+      'sticky' => 0,
+      'revision' => 0,
+    ),
+    'node_submitted' => 1,
+    'user_permissions' => array(
+      'create_roles' => array(
+        5 => '5',
+        3 => '3',
+        4 => '4',
+        1 => 0,
+        2 => 0,
+      ),
+      'edit_roles' => array(
+        5 => '5',
+        3 => '3',
+        4 => '4',
+        1 => 0,
+        2 => 0,
+      ),
+      'delete_roles' => array(
+        5 => '5',
+        3 => '3',
+        1 => 0,
+        2 => 0,
+        4 => 0,
+      ),
+    ),
+    'content_type_extras_descriptions_required' => 0,
+    'content_type_extras_remove_body' => 0,
+    'content_type_extras_title_hide' => 0,
+    'content_type_extras_title_hide_css' => 0,
+    'content_type_extras_title_hide_front' => 0,
+    'content_type_extras_top_buttons' => array(
+      'manage_fields' => 0,
+      'node_edit' => 0,
+    ),
+    'content_type_extras_excluded_node_forms' => array(
+      0 => '',
+    ),
+    'xmlsitemap_settings' => array(
+      'status' => '1',
+      'priority' => '0.5',
+    ),
+    'content_type_extras__active_tab' => 'edit-configuration',
+  );
+  $export['content_type_extras_default_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'googleanalytics_debug';
   $strongarm->value = 0;
   $export['googleanalytics_debug'] = $strongarm;
@@ -953,6 +1016,41 @@ function ec_base_config_defaultconfig_strongarm() {
   $strongarm->name = 'image_toolkit';
   $strongarm->value = 'gd';
   $export['image_toolkit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panopoly_magic_live_preview';
+  $strongarm->value = '0';
+  $export['panopoly_magic_live_preview'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panopoly_magic_pane_add_preview';
+  $strongarm->value = '2';
+  $export['panopoly_magic_pane_add_preview'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panopoly_magic_show_panels_styles';
+  $strongarm->value = '1';
+  $export['panopoly_magic_show_panels_styles'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panopoly_magic_strip_js_from_preview';
+  $strongarm->value = '1';
+  $export['panopoly_magic_strip_js_from_preview'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'token_tree_recursion_limit';
+  $strongarm->value = '2';
+  $export['token_tree_recursion_limit'] = $strongarm;
 
   return $export;
 }
