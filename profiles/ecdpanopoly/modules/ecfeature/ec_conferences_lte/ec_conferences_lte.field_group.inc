@@ -21,7 +21,7 @@ function ec_conferences_lte_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Conference Information',
-    'weight' => '9',
+    'weight' => '8',
     'children' => array(
       0 => 'field_event_registration_link',
       1 => 'field_event_registration_message',
@@ -29,6 +29,7 @@ function ec_conferences_lte_field_group_info() {
       3 => 'field_conf_exhibitors',
       4 => 'field_event_sponsors_ref',
       5 => 'field_conference_tracks_ref',
+      6 => 'field_conference_documents',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -53,7 +54,7 @@ function ec_conferences_lte_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Detail Pages',
-    'weight' => '11',
+    'weight' => '9',
     'children' => array(
       0 => 'field_ref_conference_details',
     ),
@@ -80,10 +81,13 @@ function ec_conferences_lte_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Special Pages',
-    'weight' => '12',
+    'weight' => '10',
     'children' => array(
       0 => 'field_conference_sessions_page',
       1 => 'field_conference_speakers_page',
+      2 => 'field_conference_ambassador_page',
+      3 => 'field_conference_exhibitors_page',
+      4 => 'field_conference_sponsors_page',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

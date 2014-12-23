@@ -52,22 +52,13 @@ function ec_awards_default_entityform_type() {
       "submissions_view" : "default",
       "user_submissions_view" : "default",
       "form_status" : "ENTITYFORM_OPEN",
-      "roles" : {
-        "2" : "2",
-        "3" : "3",
-        "4" : "4",
-        "5" : "5",
-        "6" : "6",
-        "7" : "7",
-        "1" : 0
-      },
+      "roles" : { "2" : "2", "5" : "5", "3" : "3", "6" : "6", "4" : "4", "1" : 0 },
       "resubmit_action" : "new",
       "redirect_path" : "",
       "instruction_pre" : {
         "value" : "Thanks for putting your thought and your time into nominating someone for a NESEA award.",
         "format" : "plain_text"
       },
-      "current_type" : "award_nomination_form",
       "enable_block" : 1
     },
     "weight" : "0",

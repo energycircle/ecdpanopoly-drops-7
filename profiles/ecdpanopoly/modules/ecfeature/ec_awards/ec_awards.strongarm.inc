@@ -19,6 +19,9 @@ function ec_awards_strongarm() {
       'grouped_teaser' => array(
         'custom_settings' => FALSE,
       ),
+      'image' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

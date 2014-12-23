@@ -64,6 +64,16 @@ function ec_redhen_defaultconfig_field_default_fields() {
           'type' => 'text_default',
           'weight' => 6,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 6,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -93,7 +103,7 @@ function ec_redhen_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 7,
+        'weight' => 9,
       ),
     ),
   );
@@ -134,6 +144,16 @@ function ec_redhen_defaultconfig_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 5,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'module' => 'text',
           'settings' => array(
@@ -222,6 +242,18 @@ function ec_redhen_defaultconfig_field_default_fields() {
           'type' => 'image',
           'weight' => 7,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => 7,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -290,7 +322,7 @@ function ec_redhen_defaultconfig_field_default_fields() {
   $fields['redhen_contact-individual-field_phone'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => -1,
+      'cardinality' => 1,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_phone',
@@ -311,6 +343,16 @@ function ec_redhen_defaultconfig_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
+          'label' => 'above',
+          'module' => 'phone',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'phone',
+          'weight' => 3,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'module' => 'phone',
           'settings' => array(
@@ -399,6 +441,16 @@ function ec_redhen_defaultconfig_field_default_fields() {
           'type' => 'link_default',
           'weight' => 4,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'link_default',
+          'weight' => 4,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -411,6 +463,7 @@ function ec_redhen_defaultconfig_field_default_fields() {
       'label' => 'Website',
       'required' => 0,
       'settings' => array(
+        'absolute_url' => 1,
         'attributes' => array(
           'class' => '',
           'configurable_title' => 0,
@@ -429,6 +482,7 @@ function ec_redhen_defaultconfig_field_default_fields() {
         ),
         'rel_remove' => 'default',
         'title' => 'none',
+        'title_label_use_field_label' => FALSE,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
@@ -440,7 +494,7 @@ function ec_redhen_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -476,6 +530,16 @@ function ec_redhen_defaultconfig_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
+          'label' => 'above',
+          'module' => 'redhen_fields',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'redhen_email_formatter',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'module' => 'redhen_fields',
           'settings' => array(
@@ -711,11 +775,17 @@ function ec_redhen_defaultconfig_field_default_fields() {
           'type' => 'addressfield_default',
           'weight' => 5,
         ),
+        'logo' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 12,
         ),
         'token' => array(
           'label' => 'above',
@@ -803,11 +873,17 @@ function ec_redhen_defaultconfig_field_default_fields() {
           'type' => 'text_default',
           'weight' => 2,
         ),
+        'logo' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 2,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 10,
         ),
         'token' => array(
           'label' => 'above',
@@ -902,10 +978,28 @@ function ec_redhen_defaultconfig_field_default_fields() {
           'type' => 'image',
           'weight' => 3,
         ),
+        'logo' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'image_link' => '',
+            'image_style' => 's_300',
+          ),
+          'type' => 'image',
+          'weight' => 3,
+        ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
+          'label' => 'hidden',
+          'module' => 'image_link_formatter',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'image_link' => 'field_website',
+            'image_style' => 's_220',
+          ),
+          'type' => 'image_link_formatter',
           'weight' => 0,
         ),
         'token' => array(
@@ -973,7 +1067,7 @@ function ec_redhen_defaultconfig_field_default_fields() {
   $fields['redhen_org-business-field_phone'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => -1,
+      'cardinality' => 1,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_phone',
@@ -1013,11 +1107,17 @@ function ec_redhen_defaultconfig_field_default_fields() {
           'type' => 'phone',
           'weight' => 0,
         ),
-        'teaser' => array(
+        'logo' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 11,
         ),
         'token' => array(
           'label' => 'above',
@@ -1108,11 +1208,21 @@ function ec_redhen_defaultconfig_field_default_fields() {
           'type' => 'link_default',
           'weight' => 1,
         ),
+        'logo' => array(
+          'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'link_plain',
+          'weight' => 1,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 9,
         ),
         'token' => array(
           'label' => 'hidden',
@@ -1130,6 +1240,7 @@ function ec_redhen_defaultconfig_field_default_fields() {
       'label' => 'Website',
       'required' => 0,
       'settings' => array(
+        'absolute_url' => 1,
         'attributes' => array(
           'class' => '',
           'configurable_title' => 0,
@@ -1148,6 +1259,7 @@ function ec_redhen_defaultconfig_field_default_fields() {
         ),
         'rel_remove' => 'default',
         'title' => 'none',
+        'title_label_use_field_label' => FALSE,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,

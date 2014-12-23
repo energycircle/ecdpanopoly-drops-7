@@ -115,6 +115,7 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'type' => 'datetime',
   );
 
+
   // Exported field_base: 'field_ref_conf_event_user'
   $field_bases['field_ref_conf_event_user'] = array(
     'active' => 1,
@@ -210,6 +211,52 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
       ),
       'profile2_private' => FALSE,
       'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_ref_session_document'
+  $field_bases['field_ref_session_document'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ref_session_document',
+    'foreign keys' => array(
+      'file_managed' => array(
+        'columns' => array(
+          'target_id' => 'fid',
+        ),
+        'table' => 'file_managed',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'document' => 'document',
+        ),
+      ),
+      'target_type' => 'file',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
@@ -475,11 +522,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'node' => array(
+      'redhen_contact' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'target_id' => 'contact_id',
         ),
-        'table' => 'node',
+        'table' => 'redhen_contact',
       ),
     ),
     'indexes' => array(
@@ -490,7 +537,7 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'base',
+      'handler' => 'views',
       'handler_settings' => array(
         'behaviors' => array(
           'field_default_token' => array(
@@ -500,15 +547,14 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
             'status' => 0,
           ),
         ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'contact' => 'contact',
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_1',
+          'view_name' => 'redhen_contacts',
         ),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'node',
+      'target_type' => 'redhen_contact',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
@@ -541,41 +587,6 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_session_documents'
-  $field_bases['field_session_documents'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_session_documents',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'file',
-    'settings' => array(
-      'display_default' => 0,
-      'display_field' => 1,
-      'profile2_private' => FALSE,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'file',
   );
 
   // Exported field_base: 'field_session_format'
@@ -613,6 +624,51 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_session_keynote'
+  $field_bases['field_session_keynote'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_session_keynote',
+    'foreign keys' => array(
+      'redhen_contact' => array(
+        'columns' => array(
+          'target_id' => 'contact_id',
+        ),
+        'table' => 'redhen_contact',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'views',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_1',
+          'view_name' => 'redhen_contacts',
+        ),
+      ),
+      'target_type' => 'redhen_contact',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_session_learning_objective'
   $field_bases['field_session_learning_objective'] = array(
     'active' => 1,
@@ -640,6 +696,51 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_session_panelist'
+  $field_bases['field_session_panelist'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_session_panelist',
+    'foreign keys' => array(
+      'redhen_contact' => array(
+        'columns' => array(
+          'target_id' => 'contact_id',
+        ),
+        'table' => 'redhen_contact',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'views',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_1',
+          'view_name' => 'redhen_contacts',
+        ),
+      ),
+      'target_type' => 'redhen_contact',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_session_speakers'
   $field_bases['field_session_speakers'] = array(
     'active' => 1,
@@ -651,11 +752,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'node' => array(
+      'redhen_contact' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'target_id' => 'contact_id',
         ),
-        'table' => 'node',
+        'table' => 'redhen_contact',
       ),
     ),
     'indexes' => array(
@@ -666,7 +767,7 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'base',
+      'handler' => 'views',
       'handler_settings' => array(
         'behaviors' => array(
           'field_default_token' => array(
@@ -676,18 +777,46 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
             'status' => 0,
           ),
         ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'contact' => 'contact',
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_1',
+          'view_name' => 'redhen_contacts',
         ),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'node',
+      'target_type' => 'redhen_contact',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_track_abreviation'
+  $field_bases['field_track_abreviation'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_track_abreviation',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_track_chairs'
@@ -701,11 +830,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'node' => array(
+      'redhen_contact' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'target_id' => 'contact_id',
         ),
-        'table' => 'node',
+        'table' => 'redhen_contact',
       ),
     ),
     'indexes' => array(
@@ -716,7 +845,7 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'base',
+      'handler' => 'views',
       'handler_settings' => array(
         'behaviors' => array(
           'field_default_token' => array(
@@ -726,18 +855,33 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
             'status' => 0,
           ),
         ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'contact' => 'contact',
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_1',
+          'view_name' => 'redhen_contacts',
         ),
       ),
       'profile2_private' => FALSE,
-      'target_type' => 'node',
+      'target_type' => 'redhen_contact',
     ),
     'translatable' => 0,
     'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_track_sort_order'
+  $field_bases['field_track_sort_order'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_track_sort_order',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
   );
 
   return $field_bases;

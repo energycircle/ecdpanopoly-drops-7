@@ -19,6 +19,9 @@ function ec_conference_tracks_sessions_strongarm() {
       'grouped_teaser' => array(
         'custom_settings' => TRUE,
       ),
+      'image' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -50,6 +53,9 @@ function ec_conference_tracks_sessions_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'grouped_teaser' => array(
+        'custom_settings' => FALSE,
+      ),
+      'image' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -85,6 +91,9 @@ function ec_conference_tracks_sessions_strongarm() {
       'grouped_teaser' => array(
         'custom_settings' => FALSE,
       ),
+      'image' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -118,9 +127,28 @@ function ec_conference_tracks_sessions_strongarm() {
       'grouped_teaser' => array(
         'custom_settings' => FALSE,
       ),
+      'image' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'metatags' => array(
+          'weight' => '7',
+        ),
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '5',
+        ),
+        'redirect' => array(
+          'weight' => '6',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '4',
+        ),
+      ),
       'display' => array(),
     ),
   );
@@ -323,7 +351,7 @@ function ec_conference_tracks_sessions_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_conference_schedule';
   $strongarm->value = array(
-    'status' => 0,
+    'status' => 1,
     'view modes' => array(
       'page_manager' => array(
         'status' => 0,
@@ -331,8 +359,8 @@ function ec_conference_tracks_sessions_strongarm() {
         'choice' => 0,
       ),
       'default' => array(
-        'status' => 0,
-        'default' => 0,
+        'status' => 1,
+        'default' => 1,
         'choice' => 0,
       ),
       'teaser' => array(
@@ -359,11 +387,11 @@ function ec_conference_tracks_sessions_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_session';
   $strongarm->value = array(
-    'status' => 0,
+    'status' => 1,
     'view modes' => array(
       'page_manager' => array(
-        'status' => 0,
-        'default' => 0,
+        'status' => 1,
+        'default' => 1,
         'choice' => 0,
       ),
       'default' => array(
@@ -401,14 +429,14 @@ function ec_conference_tracks_sessions_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_conference_schedule_pattern';
-  $strongarm->value = 'confernce/schedule/[node:title]';
+  $strongarm->value = 'conference/schedule/[node:title]';
   $export['pathauto_node_conference_schedule_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_session_pattern';
-  $strongarm->value = '[node:field-ref-track-conference]/[node:field_ref_track_session]/[node:title]';
+  $strongarm->value = '[node:field-ref-track-session]/[node:title]';
   $export['pathauto_node_session_pattern'] = $strongarm;
 
   $strongarm = new stdClass();

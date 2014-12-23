@@ -53,7 +53,7 @@ function ec_conferences_lte_default_entityform_type() {
       "resubmit_action" : "new",
       "redirect_path" : "",
       "instruction_pre" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
-      "enable_block" : 0
+      "enable_block" : 1
     },
     "weight" : "0",
     "paths" : []

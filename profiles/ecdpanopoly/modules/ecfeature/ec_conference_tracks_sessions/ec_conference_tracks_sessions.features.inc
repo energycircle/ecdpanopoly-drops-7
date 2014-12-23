@@ -57,7 +57,7 @@ function ec_conference_tracks_sessions_node_info() {
       'base' => 'node_content',
       'description' => t('A conference track, associated with one or more conferences.'),
       'has_title' => '1',
-      'title_label' => t('Track Name'),
+      'title_label' => t('Title'),
       'help' => t('Enter the track name including the track number. Example: "Track 1: Homes"'),
     ),
   );

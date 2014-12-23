@@ -52,7 +52,7 @@ function ec_conference_tracks_sessions_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Session Details',
-    'weight' => '3',
+    'weight' => '2',
     'children' => array(
       0 => 'field_event_location',
       1 => 'field_event_time',
@@ -61,6 +61,9 @@ function ec_conference_tracks_sessions_field_group_info() {
       4 => 'field_session_speakers',
       5 => 'field_session_format',
       6 => 'field_session_code',
+      7 => 'field_session_keynote',
+      8 => 'field_session_panelist',
+      9 => 'field_external_identifier',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -85,13 +88,13 @@ function ec_conference_tracks_sessions_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Session Information',
-    'weight' => '4',
+    'weight' => '3',
     'children' => array(
       0 => 'field_areas_of_focus',
       1 => 'field_session_ceu_information',
       2 => 'field_session_ceus',
-      3 => 'field_session_documents',
-      4 => 'field_session_learning_objective',
+      3 => 'field_session_learning_objective',
+      4 => 'field_ref_session_document',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -116,11 +119,13 @@ function ec_conference_tracks_sessions_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Track Information',
-    'weight' => '5',
+    'weight' => '1',
     'children' => array(
       0 => 'field_ref_track_conference',
       1 => 'field_ref_track_session',
       2 => 'field_track_chairs',
+      3 => 'field_external_identifier',
+      4 => 'field_track_abreviation',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

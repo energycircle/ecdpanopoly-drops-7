@@ -307,6 +307,18 @@ function ec_conferences_lte_field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 1,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'links' => 0,
+          'view_mode' => 'logo',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 1,
+      ),
       'grouped_teaser' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
@@ -314,7 +326,7 @@ function ec_conferences_lte_field_default_field_instances() {
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
           'links' => 1,
-          'view_mode' => 'teaser',
+          'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 1,
@@ -358,7 +370,7 @@ function ec_conferences_lte_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 0,
       ),
-      'grouped_teaser' => array(
+      'full' => array(
         'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(
@@ -366,6 +378,12 @@ function ec_conferences_lte_field_default_field_instances() {
           'field_multiple_limit_offset' => 0,
         ),
         'type' => 'taxonomy_term_reference_plain',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -485,7 +503,7 @@ function ec_conferences_lte_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -552,26 +570,23 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-conference-field_conference_date'
-  $field_instances['node-conference-field_conference_date'] = array(
+  // Exported field_instance: 'node-conference-field_conference_ambassador_page'
+  $field_instances['node-conference-field_conference_ambassador_page'] = array(
     'bundle' => 'conference',
+    'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the start and end day for the conference. ',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'date',
+        'module' => 'entityreference',
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
+          'link' => FALSE,
         ),
-        'type' => 'date_default',
-        'weight' => 1,
+        'type' => 'entityreference_label',
+        'weight' => 24,
       ),
       'featured' => array(
         'label' => 'above',
@@ -583,7 +598,7 @@ function ec_conferences_lte_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'show_this_block' => array(
         'label' => 'above',
@@ -599,31 +614,221 @@ function ec_conferences_lte_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_conference_date',
-    'label' => 'Date',
+    'field_name' => 'field_conference_ambassador_page',
+    'label' => 'Ambassadors Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 25,
+    ),
+  );
+
+  // Exported field_instance: 'node-conference-field_conference_documents'
+  $field_instances['node-conference-field_conference_documents'] = array(
+    'bundle' => 'conference',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 25,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_conference_documents',
+    'label' => 'Conference Documents',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 20,
+    ),
+  );
+
+  // Exported field_instance: 'node-conference-field_conference_end_date'
+  $field_instances['node-conference-field_conference_end_date'] = array(
+    'bundle' => 'conference',
+    'deleted' => 0,
+    'description' => 'Enter the start date and time. Time should be set to at least as late as the latest event. (End time is not displayed, but is used to filter the sessions for this conference.)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 27,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_conference_end_date',
+    'label' => 'Conference End Date',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
-      'exclude_cv' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'date',
       'settings' => array(
-        'display_all_day' => 0,
         'increment' => 15,
-        'input_format' => 'm/d/Y - H:i:s',
+        'input_format' => 'M j Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 1,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-conference-field_conference_exhibitors_page'
+  $field_instances['node-conference-field_conference_exhibitors_page'] = array(
+    'bundle' => 'conference',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select the Conference Detail page that contains exhibitor information for this conference. This will place a link to this page in the conference hero navigation.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 28,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_conference_exhibitors_page',
+    'label' => 'Exhibitors Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 21,
     ),
   );
 
@@ -690,7 +895,7 @@ function ec_conferences_lte_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 24,
     ),
   );
 
@@ -698,7 +903,7 @@ function ec_conferences_lte_field_default_field_instances() {
   $field_instances['node-conference-field_conference_slides'] = array(
     'bundle' => 'conference',
     'deleted' => 0,
-    'description' => 'Enter one or more slide images to appear on the conference main page.',
+    'description' => 'Enter an image that will be used in the homepage slideshow to promote this conference.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -739,7 +944,7 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_conference_slides',
-    'label' => 'Slides',
+    'label' => 'Homepage Slide for this Conference',
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
@@ -789,7 +994,7 @@ function ec_conferences_lte_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -854,7 +1059,143 @@ function ec_conferences_lte_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 23,
+    ),
+  );
+
+  // Exported field_instance: 'node-conference-field_conference_sponsors_page'
+  $field_instances['node-conference-field_conference_sponsors_page'] = array(
+    'bundle' => 'conference',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select the Conference Detail page that contains sponsor information. This will place a link to this page in the conference hero navigation.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 29,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_conference_sponsors_page',
+    'label' => 'Sponsors Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 22,
+    ),
+  );
+
+  // Exported field_instance: 'node-conference-field_conference_start_date'
+  $field_instances['node-conference-field_conference_start_date'] = array(
+    'bundle' => 'conference',
+    'deleted' => 0,
+    'description' => 'Enter the start date and time. Time should be set to at least as early as the earliest event. (Start time is not displayed, but is used to filter the sessions for this conference.)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 26,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_conference_start_date',
+    'label' => 'Conference Start Date',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'M j Y - g:i:sa',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 2,
     ),
   );
 
@@ -976,7 +1317,7 @@ function ec_conferences_lte_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -1027,8 +1368,10 @@ function ec_conferences_lte_field_default_field_instances() {
     'label' => 'External Registration Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => 'register',
+        'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
         'target' => '_blank',
@@ -1044,9 +1387,10 @@ function ec_conferences_lte_field_default_field_instances() {
         'profile' => '',
       ),
       'rel_remove' => 'default',
-      'title' => 'none',
+      'title' => 'value',
+      'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
-      'title_value' => '',
+      'title_value' => 'Register Now!',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
@@ -1190,7 +1534,7 @@ function ec_conferences_lte_field_default_field_instances() {
   $field_instances['node-conference-field_main_image'] = array(
     'bundle' => 'conference',
     'deleted' => 0,
-    'description' => 'Optional. Enter a main image for this conference. This is used for feature blocks, etc.',
+    'description' => 'Enter a main image for this conference, which will display on the conference landing page.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1232,7 +1576,7 @@ function ec_conferences_lte_field_default_field_instances() {
     'entity_type' => 'node',
     'exclude_cv' => 0,
     'field_name' => 'field_main_image',
-    'label' => 'Image',
+    'label' => 'Conference Landing Page Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
@@ -1282,7 +1626,7 @@ function ec_conferences_lte_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -1473,7 +1817,7 @@ function ec_conferences_lte_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'addthis_button_widget',
-      'weight' => 13,
+      'weight' => 11,
     ),
   );
 
@@ -1762,9 +2106,13 @@ function ec_conferences_lte_field_default_field_instances() {
         'weight' => 0,
       ),
       'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -1773,9 +2121,8 @@ function ec_conferences_lte_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
-          'trim_length' => 600,
         ),
-        'type' => 'text_summary_or_trimmed',
+        'type' => 'text_default',
         'weight' => 0,
       ),
     ),
@@ -1828,13 +2175,13 @@ function ec_conferences_lte_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -1896,16 +2243,32 @@ function ec_conferences_lte_field_default_field_instances() {
         'weight' => 0,
       ),
       'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'addressfield',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -1962,13 +2325,13 @@ function ec_conferences_lte_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
@@ -2049,13 +2412,13 @@ function ec_conferences_lte_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -2138,13 +2501,13 @@ function ec_conferences_lte_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -2194,13 +2557,13 @@ function ec_conferences_lte_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'node',
@@ -2255,13 +2618,13 @@ function ec_conferences_lte_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -2286,41 +2649,50 @@ function ec_conferences_lte_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Ambassadors Page');
   t('Body');
   t('Comments');
   t('Company');
   t('Conference');
+  t('Conference Documents');
+  t('Conference End Date');
+  t('Conference Landing Page Image');
+  t('Conference Start Date');
   t('Conference Tracks');
   t('Conference Type');
   t('Conferences');
-  t('Date');
   t('Detail Pages');
   t('Email');
+  t('Enter a main image for this conference, which will display on the conference landing page.');
   t('Enter a message to display below the "Register Now" link in the registration block for this conference (optional).');
-  t('Enter one or more slide images to appear on the conference main page.');
+  t('Enter an image that will be used in the homepage slideshow to promote this conference.');
   t('Enter the full url to the conference registration site page for this event.');
-  t('Enter the start and end day for the conference. ');
+  t('Enter the start date and time. Time should be set to at least as early as the earliest event. (Start time is not displayed, but is used to filter the sessions for this conference.)');
+  t('Enter the start date and time. Time should be set to at least as late as the latest event. (End time is not displayed, but is used to filter the sessions for this conference.)');
   t('Event Registration Message');
   t('Event Sponsors');
   t('Exhibitor Resources');
   t('Exhibitor Utilities Form');
   t('Exhibitors');
+  t('Exhibitors Page');
   t('External Registration Link');
   t('First Name');
   t('Floor Plan');
+  t('Homepage Slide for this Conference');
   t('Image');
   t('Last Name');
   t('Lead Tracking and Retrieval Form');
   t('Lodging & Hotel Information');
-  t('Optional. Enter a main image for this conference. This is used for feature blocks, etc.');
   t('Phone');
+  t('Select the Conference Detail page that contains exhibitor information for this conference. This will place a link to this page in the conference hero navigation.');
+  t('Select the Conference Detail page that contains sponsor information. This will place a link to this page in the conference hero navigation.');
   t('Select the Conference Detail page that contains the full list of speaker. This is used to create the link in the conference page block. If no page is selected here, the "View All Speakers" link in that block won\'t work.');
   t('Sessions Schedule Page');
   t('Share');
-  t('Slides');
   t('Speakers Page');
   t('Sponsor Type');
   t('Sponsors');
+  t('Sponsors Page');
   t('The conference(s) at this venue.');
   t('Venue');
   t('Venue Address');

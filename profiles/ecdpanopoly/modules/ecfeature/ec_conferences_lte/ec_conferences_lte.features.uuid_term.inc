@@ -29,7 +29,7 @@ function ec_conferences_lte_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Bronze',
+    'name' => 'Bronze Sponsor',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 4,
@@ -44,10 +44,14 @@ function ec_conferences_lte_uuid_features_default_terms() {
         'alias' => 'sponsor-types/bronze',
         'language' => 'und',
       ),
+      1 => array(
+        'alias' => 'sponsor-types/bronze-sponsor',
+        'language' => 'und',
+      ),
     ),
   );
   $terms[] = array(
-    'name' => 'Host',
+    'name' => 'Host Sponsor',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 0,
@@ -62,10 +66,14 @@ function ec_conferences_lte_uuid_features_default_terms() {
         'alias' => 'sponsor-types/host',
         'language' => 'und',
       ),
+      1 => array(
+        'alias' => 'sponsor-types/host-sponsor',
+        'language' => 'und',
+      ),
     ),
   );
   $terms[] = array(
-    'name' => 'Gold',
+    'name' => 'Gold Sponsor',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 2,
@@ -80,10 +88,14 @@ function ec_conferences_lte_uuid_features_default_terms() {
         'alias' => 'sponsor-types/gold',
         'language' => 'und',
       ),
+      1 => array(
+        'alias' => 'sponsor-types/gold-sponsor',
+        'language' => 'und',
+      ),
     ),
   );
   $terms[] = array(
-    'name' => 'Silver',
+    'name' => 'Silver Sponsor',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 3,
@@ -98,31 +110,17 @@ function ec_conferences_lte_uuid_features_default_terms() {
         'alias' => 'sponsor-types/silver',
         'language' => 'und',
       ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Local',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
-    'weight' => 0,
-    'uuid' => '755bca13-209f-4291-ac88-56cb9e069d2f',
-    'vocabulary_machine_name' => 'conferences_types',
-    'metatags' => array(),
-    'path' => array(
-      'pathauto' => 1,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'conferences-types/local',
+      1 => array(
+        'alias' => 'sponsor-types/silver-sponsor',
         'language' => 'und',
       ),
     ),
   );
   $terms[] = array(
-    'name' => 'Platinum',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => 0,
+    'name' => 'Platinum Sponsor',
+    'description' => '',
+    'format' => 'panopoly_wysiwyg_text',
+    'weight' => 1,
     'uuid' => 'a017a85e-c0c8-4e40-9342-a98698094006',
     'vocabulary_machine_name' => 'sponsor_types',
     'metatags' => array(),
@@ -132,6 +130,10 @@ function ec_conferences_lte_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'sponsor-types/platinum',
+        'language' => 'und',
+      ),
+      1 => array(
+        'alias' => 'sponsor-types/platinum-sponsor',
         'language' => 'und',
       ),
     ),
@@ -158,7 +160,7 @@ function ec_conferences_lte_uuid_features_default_terms() {
     'name' => 'Promotional Partner',
     'description' => NULL,
     'format' => NULL,
-    'weight' => 0,
+    'weight' => 6,
     'uuid' => 'f36c51f2-bdcf-467e-b8bd-ce1b19107833',
     'vocabulary_machine_name' => 'sponsor_types',
     'metatags' => array(),
@@ -173,10 +175,10 @@ function ec_conferences_lte_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Media',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => 0,
+    'name' => 'Media Sponsor',
+    'description' => '',
+    'format' => 'panopoly_wysiwyg_text',
+    'weight' => 5,
     'uuid' => 'f8ff3349-5c0d-4772-8ea5-a61d1ef33191',
     'vocabulary_machine_name' => 'sponsor_types',
     'metatags' => array(),
@@ -186,6 +188,10 @@ function ec_conferences_lte_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'sponsor-types/media',
+        'language' => 'und',
+      ),
+      1 => array(
+        'alias' => 'sponsor-types/media-sponsor',
         'language' => 'und',
       ),
     ),

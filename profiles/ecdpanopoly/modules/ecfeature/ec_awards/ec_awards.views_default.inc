@@ -27,8 +27,11 @@ function ec_awards_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['disable_sql_rewrite'] = TRUE;
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
@@ -67,56 +70,38 @@ function ec_awards_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Relationship: Broken/missing handler */
-  $handler->display->display_options['relationships']['field_ref_award_win_case_study_target_id']['id'] = 'field_ref_award_win_case_study_target_id';
-  $handler->display->display_options['relationships']['field_ref_award_win_case_study_target_id']['table'] = 'field_data_field_ref_award_win_case_study';
-  $handler->display->display_options['relationships']['field_ref_award_win_case_study_target_id']['field'] = 'field_ref_award_win_case_study_target_id';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_ref_award_win_user_target_id']['id'] = 'field_ref_award_win_user_target_id';
   $handler->display->display_options['relationships']['field_ref_award_win_user_target_id']['table'] = 'field_data_field_ref_award_win_user';
   $handler->display->display_options['relationships']['field_ref_award_win_user_target_id']['field'] = 'field_ref_award_win_user_target_id';
-  /* Field: User: Uid */
-  $handler->display->display_options['fields']['uid']['id'] = 'uid';
-  $handler->display->display_options['fields']['uid']['table'] = 'users';
-  $handler->display->display_options['fields']['uid']['field'] = 'uid';
-  $handler->display->display_options['fields']['uid']['relationship'] = 'field_ref_award_win_user_target_id';
-  $handler->display->display_options['fields']['uid']['label'] = '';
-  $handler->display->display_options['fields']['uid']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['uid']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['uid']['link_to_user'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['fields']['title_1']['table'] = 'node';
-  $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_ref_award_win_case_study_target_id';
-  $handler->display->display_options['fields']['title_1']['label'] = 'Winner';
-  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title_1']['hide_empty'] = TRUE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['realname']['id'] = 'realname';
-  $handler->display->display_options['fields']['realname']['table'] = 'realname';
-  $handler->display->display_options['fields']['realname']['field'] = 'realname';
-  $handler->display->display_options['fields']['realname']['relationship'] = 'field_ref_award_win_user_target_id';
-  $handler->display->display_options['fields']['realname']['label'] = '';
-  $handler->display->display_options['fields']['realname']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['realname']['alter']['text'] = '<a href="/user/[uid]/nesea">[realname]</a>';
-  $handler->display->display_options['fields']['realname']['element_label_colon'] = FALSE;
-  /* Field: Content: User Company */
-  $handler->display->display_options['fields']['field_award_win_user_co']['id'] = 'field_award_win_user_co';
-  $handler->display->display_options['fields']['field_award_win_user_co']['table'] = 'field_data_field_award_win_user_co';
-  $handler->display->display_options['fields']['field_award_win_user_co']['field'] = 'field_award_win_user_co';
-  $handler->display->display_options['fields']['field_award_win_user_co']['label'] = '';
-  $handler->display->display_options['fields']['field_award_win_user_co']['element_type'] = 'p';
-  $handler->display->display_options['fields']['field_award_win_user_co']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_award_win_user_co']['hide_empty'] = TRUE;
+  /* Field: Content: Year */
+  $handler->display->display_options['fields']['field_award_year']['id'] = 'field_award_year';
+  $handler->display->display_options['fields']['field_award_year']['table'] = 'field_data_field_award_year';
+  $handler->display->display_options['fields']['field_award_year']['field'] = 'field_award_year';
+  $handler->display->display_options['fields']['field_award_year']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Contact: Full name */
+  $handler->display->display_options['fields']['full_name']['id'] = 'full_name';
+  $handler->display->display_options['fields']['full_name']['table'] = 'views_entity_redhen_contact';
+  $handler->display->display_options['fields']['full_name']['field'] = 'full_name';
+  $handler->display->display_options['fields']['full_name']['relationship'] = 'field_ref_award_win_user_target_id';
+  $handler->display->display_options['fields']['full_name']['label'] = 'Name';
+  $handler->display->display_options['fields']['full_name']['link_to_entity'] = 0;
+  /* Field: Content: Winner Description */
+  $handler->display->display_options['fields']['field_award_winner_description']['id'] = 'field_award_winner_description';
+  $handler->display->display_options['fields']['field_award_winner_description']['table'] = 'field_data_field_award_winner_description';
+  $handler->display->display_options['fields']['field_award_winner_description']['field'] = 'field_award_winner_description';
+  $handler->display->display_options['fields']['field_award_winner_description']['label'] = 'Description';
+  /* Sort criterion: Content: Year (field_award_year) */
+  $handler->display->display_options['sorts']['field_award_year_value']['id'] = 'field_award_year_value';
+  $handler->display->display_options['sorts']['field_award_year_value']['table'] = 'field_data_field_award_year';
+  $handler->display->display_options['sorts']['field_award_year_value']['field'] = 'field_award_year_value';
+  $handler->display->display_options['sorts']['field_award_year_value']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -136,19 +121,29 @@ function ec_awards_views_default_views() {
   $handler->display->display_options['filters']['field_award_type_tid']['table'] = 'field_data_field_award_type';
   $handler->display->display_options['filters']['field_award_type_tid']['field'] = 'field_award_type_tid';
   $handler->display->display_options['filters']['field_award_type_tid']['value'] = array(
-    34 => '34',
+    44 => '44',
   );
   $handler->display->display_options['filters']['field_award_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_award_type_tid']['vocabulary'] = 'award_types';
   $handler->display->display_options['filters']['field_award_type_tid']['hierarchy'] = 1;
 
-  /* Display: Distinguished Service Award Winners */
-  $handler = $view->new_display('panel_pane', 'Distinguished Service Award Winners', 'panel_pane_1');
+  /* Display: Linda Wigington Leadership Award  */
+  $handler = $view->new_display('panel_pane', 'Linda Wigington Leadership Award ', 'panel_pane_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Linda Wigington Leadership Award';
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
 
-  /* Display: Professional Leadership Award Winners */
-  $handler = $view->new_display('panel_pane', 'Professional Leadership Award Winners', 'panel_pane_2');
+  /* Display: Woman of the Year Award */
+  $handler = $view->new_display('panel_pane', 'Woman of the Year Award', 'panel_pane_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Woman of the Year Award';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -170,7 +165,82 @@ function ec_awards_views_default_views() {
   $handler->display->display_options['filters']['field_award_type_tid']['table'] = 'field_data_field_award_type';
   $handler->display->display_options['filters']['field_award_type_tid']['field'] = 'field_award_type_tid';
   $handler->display->display_options['filters']['field_award_type_tid']['value'] = array(
-    35 => '35',
+    45 => '45',
+  );
+  $handler->display->display_options['filters']['field_award_type_tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['field_award_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_award_type_tid']['vocabulary'] = 'award_types';
+  $handler->display->display_options['filters']['field_award_type_tid']['hierarchy'] = 1;
+
+  /* Display: Annual Award - LW Leadership */
+  $handler = $view->new_display('panel_pane', 'Annual Award - LW Leadership', 'panel_pane_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Linda Wigington Leadership Award';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/aci-conferences-events/annual-awards/linda-wigington-leadership-award">View all the past winners of the Linda Wigington Leadership Award.</a>';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'award' => 'award',
+  );
+  /* Filter criterion: Content: Award Type (field_award_type) */
+  $handler->display->display_options['filters']['field_award_type_tid']['id'] = 'field_award_type_tid';
+  $handler->display->display_options['filters']['field_award_type_tid']['table'] = 'field_data_field_award_type';
+  $handler->display->display_options['filters']['field_award_type_tid']['field'] = 'field_award_type_tid';
+  $handler->display->display_options['filters']['field_award_type_tid']['value'] = array(
+    44 => '44',
+  );
+  $handler->display->display_options['filters']['field_award_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_award_type_tid']['vocabulary'] = 'award_types';
+  $handler->display->display_options['filters']['field_award_type_tid']['hierarchy'] = 1;
+
+  /* Display: Annual Award - Woman of the Year */
+  $handler = $view->new_display('panel_pane', 'Annual Award - Woman of the Year', 'panel_pane_4');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Woman of the Year Award';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/aci-conferences-events/annual-awards/women-of-the-year">View all the past winners of the Women of the Year Award.</a>';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'award' => 'award',
+  );
+  /* Filter criterion: Content: Award Type (field_award_type) */
+  $handler->display->display_options['filters']['field_award_type_tid']['id'] = 'field_award_type_tid';
+  $handler->display->display_options['filters']['field_award_type_tid']['table'] = 'field_data_field_award_type';
+  $handler->display->display_options['filters']['field_award_type_tid']['field'] = 'field_award_type_tid';
+  $handler->display->display_options['filters']['field_award_type_tid']['value'] = array(
+    45 => '45',
   );
   $handler->display->display_options['filters']['field_award_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_award_type_tid']['vocabulary'] = 'award_types';

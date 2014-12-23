@@ -15,14 +15,18 @@ function ec_redhen_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_redhen_contact__individual';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'grouped_teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'name' => array(
           'weight' => '0',
         ),
         'redirect' => array(
-          'weight' => '8',
+          'weight' => '7',
         ),
       ),
       'display' => array(),
@@ -51,6 +55,9 @@ function ec_redhen_strongarm() {
       'grouped_teaser' => array(
         'custom_settings' => TRUE,
       ),
+      'logo' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -58,7 +65,7 @@ function ec_redhen_strongarm() {
           'weight' => '0',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '6',
         ),
       ),
       'display' => array(
@@ -75,6 +82,14 @@ function ec_redhen_strongarm() {
             'weight' => '0',
             'visible' => TRUE,
           ),
+          'teaser' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
+          'logo' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
         ),
         'redhen_state' => array(
           'default' => array(
@@ -86,6 +101,14 @@ function ec_redhen_strongarm() {
             'visible' => FALSE,
           ),
           'grouped_teaser' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '3',
+            'visible' => FALSE,
+          ),
+          'logo' => array(
             'weight' => '0',
             'visible' => FALSE,
           ),
@@ -103,6 +126,14 @@ function ec_redhen_strongarm() {
             'weight' => '0',
             'visible' => TRUE,
           ),
+          'teaser' => array(
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
+          'logo' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
@@ -113,14 +144,14 @@ function ec_redhen_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'redhen_admin_path';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['redhen_admin_path'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'redhen_contact_alter_username';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['redhen_contact_alter_username'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -134,14 +165,14 @@ function ec_redhen_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'redhen_contact_mirror_email';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['redhen_contact_mirror_email'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'redhen_contact_reg';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['redhen_contact_reg'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -155,14 +186,14 @@ function ec_redhen_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'redhen_contact_reg_update';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['redhen_contact_reg_update'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'redhen_contact_reg_update_fields';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['redhen_contact_reg_update_fields'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -176,7 +207,7 @@ function ec_redhen_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'redhen_items_page';
-  $strongarm->value = '10';
+  $strongarm->value = '100';
   $export['redhen_items_page'] = $strongarm;
 
   return $export;

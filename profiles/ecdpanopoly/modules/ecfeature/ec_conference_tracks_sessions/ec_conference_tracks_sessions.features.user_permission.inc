@@ -209,7 +209,6 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'delete own conference_schedule content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -230,7 +229,6 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'delete own track content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -296,6 +294,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'edit own conference_schedule content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -317,6 +316,7 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'name' => 'edit own track content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
