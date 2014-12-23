@@ -70,11 +70,9 @@ dependencies[] = colorbox
 dependencies[] = compact_forms
 dependencies[] = contemplate
 dependencies[] = content_type_extras
-dependencies[] = custom_content_panes
 dependencies[] = diff
 dependencies[] = disable_term_node_listings
 dependencies[] = email
-dependencies[] = entity_cache
 dependencies[] = entity_rules
 dependencies[] = entity_view_mode
 dependencies[] = entity2text
@@ -104,7 +102,6 @@ dependencies[] = phone
 dependencies[] = rules
 dependencies[] = superfish
 dependencies[] = search_api
-dependencies[] = search_views
 dependencies[] = title
 dependencies[] = table_element
 dependencies[] = token_tweaks
@@ -129,8 +126,8 @@ dependencies[] = ec_base_config
 dependencies[] = ec_panopoly_page_overrides
 
 
-; Information added by flux423 - updated on 12-23-2014
-version = "7.x-1.1-rc4"
+; Information added by flux423 - updated on 2014-11-5
+version = "7.x-1.1-rc5"
 core = "7.x"
 project = "ECDPanopoly"
 
