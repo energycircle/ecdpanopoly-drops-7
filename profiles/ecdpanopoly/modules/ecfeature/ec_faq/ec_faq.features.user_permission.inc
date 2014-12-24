@@ -14,7 +14,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq breadcrumbs'] = array(
     'name' => 'administer panelizer node faq breadcrumbs',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -24,7 +23,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq content'] = array(
     'name' => 'administer panelizer node faq content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -34,7 +32,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq context'] = array(
     'name' => 'administer panelizer node faq context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -44,7 +41,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq defaults'] = array(
     'name' => 'administer panelizer node faq defaults',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -54,7 +50,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq layout'] = array(
     'name' => 'administer panelizer node faq layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -64,7 +59,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq overview'] = array(
     'name' => 'administer panelizer node faq overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -74,7 +68,6 @@ function ec_faq_user_default_permissions() {
   $permissions['administer panelizer node faq settings'] = array(
     'name' => 'administer panelizer node faq settings',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
