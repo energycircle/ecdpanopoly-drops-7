@@ -277,6 +277,81 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-panopoly_page-field_ref_page_promotions'
+  $field_instances['node-panopoly_page-field_ref_page_promotions'] = array(
+    'bundle' => 'panopoly_page',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 10,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_page_promotions',
+    'label' => 'Promotions',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'current' => array(
+          'status' => 0,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-promotion-body'
   $field_instances['node-promotion-body'] = array(
     'bundle' => 'promotion',
@@ -1443,6 +1518,7 @@ function ec_promotions_field_default_field_instances() {
   t('Product');
   t('Promo link text');
   t('Promotion image');
+  t('Promotions');
   t('Select article pages (news, press release, etc.) on which to display this promo.');
   t('Select case study pages on which to display this promo.');
   t('Select the Service pages on which to show this promo.');

@@ -11,6 +11,7 @@ function ec_article_defaultconfig_features() {
   return array(
     'ec_article' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -67,6 +68,12 @@ function ec_article_defaultconfig_field_default_fields() {
           'weight' => 0,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -166,6 +173,12 @@ function ec_article_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'module' => 'text',
@@ -255,6 +268,12 @@ function ec_article_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -371,6 +390,12 @@ function ec_article_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'module' => 'link',
@@ -393,6 +418,7 @@ function ec_article_defaultconfig_field_default_fields() {
       'label' => 'Article source',
       'required' => 0,
       'settings' => array(
+        'absolute_url' => 1,
         'attributes' => array(
           'class' => '',
           'configurable_title' => 1,
@@ -410,6 +436,7 @@ function ec_article_defaultconfig_field_default_fields() {
         ),
         'rel_remove' => 'default',
         'title' => 'optional',
+        'title_label_use_field_label' => FALSE,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
@@ -478,6 +505,12 @@ function ec_article_defaultconfig_field_default_fields() {
           'weight' => 2,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -573,6 +606,12 @@ function ec_article_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'module' => 'date',
@@ -619,6 +658,118 @@ function ec_article_defaultconfig_field_default_fields() {
         ),
         'type' => 'date_popup',
         'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-article-field_ref_article_blog'.
+  $fields['node-article-field_ref_article_blog'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_article_blog',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'blog_post' => 'blog_post',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'article',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 8,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_article_blog',
+      'label' => 'Blog',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 13,
       ),
     ),
   );
@@ -688,6 +839,12 @@ function ec_article_defaultconfig_field_default_fields() {
           'weight' => 10,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -802,6 +959,12 @@ function ec_article_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -837,6 +1000,123 @@ function ec_article_defaultconfig_field_default_fields() {
         ),
         'type' => 'entityreference_autocomplete',
         'weight' => 15,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-article-field_ref_article_promo'.
+  $fields['node-article-field_ref_article_promo'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_article_promo',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'promotion' => 'promotion',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'article',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Promotions displayed on this page.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 5,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_article_promo',
+      'label' => 'Promotion',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 16,
       ),
     ),
   );
@@ -908,6 +1188,12 @@ function ec_article_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'module' => 'entityreference',
@@ -958,6 +1244,7 @@ function ec_article_defaultconfig_field_default_fields() {
   t('Article author');
   t('Article image');
   t('Article source');
+  t('Blog');
   t('Body');
   t('Case Study');
   t('Display date');
@@ -965,8 +1252,96 @@ function ec_article_defaultconfig_field_default_fields() {
   t('Enter the url of the source for this article.');
   t('Name of the author of this article, if relevant');
   t('Product');
+  t('Promotion');
+  t('Promotions displayed on this page.');
   t('Testimonial');
   t('Testimonials displayed on this page.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_article_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_author_article';
+  $strongarm->value = FALSE;
+  $export['node_export_reset_author_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_book_mlid_article';
+  $strongarm->value = FALSE;
+  $export['node_export_reset_book_mlid_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_changed_article';
+  $strongarm->value = 1;
+  $export['node_export_reset_changed_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_created_article';
+  $strongarm->value = 1;
+  $export['node_export_reset_created_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_last_comment_timestamp_article';
+  $strongarm->value = 1;
+  $export['node_export_reset_last_comment_timestamp_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_menu_article';
+  $strongarm->value = 1;
+  $export['node_export_reset_menu_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_path_article';
+  $strongarm->value = 1;
+  $export['node_export_reset_path_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_promote_article';
+  $strongarm->value = 0;
+  $export['node_export_reset_promote_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_revision_timestamp_article';
+  $strongarm->value = 1;
+  $export['node_export_reset_revision_timestamp_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_status_article';
+  $strongarm->value = 0;
+  $export['node_export_reset_status_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_export_reset_sticky_article';
+  $strongarm->value = 0;
+  $export['node_export_reset_sticky_article'] = $strongarm;
+
+  return $export;
 }

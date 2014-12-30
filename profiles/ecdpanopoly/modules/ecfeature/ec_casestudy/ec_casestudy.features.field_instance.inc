@@ -891,11 +891,87 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-panopoly_page-field_ref_page_case_study'
+  $field_instances['node-panopoly_page-field_ref_page_case_study'] = array(
+    'bundle' => 'panopoly_page',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => 'Select a case study to display on this page',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 9,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_page_case_study',
+    'label' => 'Case Study',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'current' => array(
+          'status' => 0,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 12,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Article');
   t('Blog');
   t('Body');
+  t('Case Study');
   t('Content Page');
   t('Display Title');
   t('Display subtitle');
@@ -903,6 +979,7 @@ function ec_casestudy_field_default_field_instances() {
   t('Product page');
   t('Promotions');
   t('Promotions shown on this page.');
+  t('Select a case study to display on this page');
   t('Select the blog posts to display on this case study.');
   t('Select the products to show on this case study page.');
   t('Service');

@@ -1672,6 +1672,15 @@ function ec_base_config_user_default_permissions() {
     'module' => 'googleanalytics',
   );
 
+  // Exported permission: 'use PHP to import nodes'.
+  $permissions['use PHP to import nodes'] = array(
+    'name' => 'use PHP to import nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node_export',
+  );
+
   // Exported permission: 'use exclude node title'.
   $permissions['use exclude node title'] = array(
     'name' => 'use exclude node title',

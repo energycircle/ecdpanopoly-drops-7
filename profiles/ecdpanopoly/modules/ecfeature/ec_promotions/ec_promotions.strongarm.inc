@@ -207,6 +207,11 @@ function ec_promotions_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
+      'grouped_teaser' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
       'featured' => array(
         'status' => 0,
         'default' => 0,

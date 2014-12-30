@@ -30,21 +30,6 @@ function ec_casestudy_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_default_roles_permissions_alter().
- */
-function ec_casestudy_default_roles_permissions_alter(&$data) {
-  if (isset($data['EC Platinum admin'])) {
-    $data['EC Platinum admin']['permissions']['administer panelizer node case_study breadcrumbs'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node case_study context'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node case_study defaults'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node case_study overview'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node case_study settings'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['delete own case_study content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['edit own case_study content'] = TRUE; /* WAS: '' */
-  }
-}
-
-/**
  * Implements hook_node_info().
  */
 function ec_casestudy_node_info() {
