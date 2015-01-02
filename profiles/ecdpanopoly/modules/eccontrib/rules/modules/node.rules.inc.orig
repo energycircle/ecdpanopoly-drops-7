@@ -30,13 +30,6 @@ function rules_node_file_info() {
  * Implements hook_rules_event_info() on behalf of the node module.
  */
 function rules_node_event_info() {
-
-  $variables = rules_events_node_variables(t('edited content'), TRUE);
-  // Don't save the node because we're just preparing it for the form. Any
-  // changes made here may be overridden by the user before the form is
-  // submitted.  
-  $variables['node']['skip save'] = TRUE;
-
   $items = array(
     'node_insert' => array(
       'label' => t('After saving new content'),
@@ -44,12 +37,6 @@ function rules_node_event_info() {
       'variables' => rules_events_node_variables(t('created content')),
       'access callback' => 'rules_node_integration_access',
       'class' => 'RulesNodeEventHandler',
-    ),
-    'node_prepare' => array(
-      'label' => t('Before passing content to the add/edit form'),
-      'group' => t('Node'),
-      'variables' => $variables,
-      'access callback' => 'rules_node_integration_access',
     ),
     'node_update' => array(
       'label' => t('After updating existing content'),

@@ -1,0 +1,63 @@
+From c8afeeb66504ef129fc5e238261af4753429e821 Mon Sep 17 00:00:00 2001
+From: Jerenus <jun.zheng@insready.com>
+Date: Sun, 28 Apr 2013 15:33:55 +0800
+Subject: [PATCH] Issue #762450 by Jerenus: Event: Content is going to be
+ edited.
+
+---
+ modules/events.inc     |    7 +++++++
+ modules/node.rules.inc |   13 +++++++++++++
+ 2 files changed, 20 insertions(+)
+
+diff --git a/modules/events.inc b/modules/events.inc
+index a0e3e23..eeb9293 100644
+--- a/modules/events.inc
++++ b/modules/events.inc
+@@ -111,6 +111,13 @@ function rules_entity_delete($entity, $type) {
+ }
+ 
+ /**
++ * Implements hook_node_prepare().
++ */
++function rules_node_prepare($node) {
++  rules_invoke_event('node_prepare', $node);
++}
++
++/**
+  * Implements hook_user_login().
+  */
+ function rules_user_login(&$edit, $account) {
+diff --git a/modules/node.rules.inc b/modules/node.rules.inc
+index 87f8821..b20ca6a 100644
+--- a/modules/node.rules.inc
++++ b/modules/node.rules.inc
+@@ -18,6 +18,13 @@ function rules_node_file_info() {
+  * Implements hook_rules_event_info() on behalf of the node module.
+  */
+ function rules_node_event_info() {
++
++  $variables = rules_events_node_variables(t('edited content'), TRUE);
++  // Don't save the node because we're just preparing it for the form. Any
++  // changes made here may be overridden by the user before the form is
++  // submitted.  
++  $variables['node']['skip save'] = TRUE;
++
+   $items = array(
+     'node_insert' => array(
+       'label' => t('After saving new content'),
+@@ -25,6 +32,12 @@ function rules_node_event_info() {
+       'variables' => rules_events_node_variables(t('created content')),
+       'access callback' => 'rules_node_integration_access',
+     ),
++    'node_prepare' => array(
++      'label' => t('Before passing content to the add/edit form'),
++      'group' => t('Node'),
++      'variables' => $variables,
++      'access callback' => 'rules_node_integration_access',
++    ),
+     'node_update' => array(
+       'label' => t('After updating existing content'),
+       'group' => t('Node'),
+-- 
+1.7.10.4
+
