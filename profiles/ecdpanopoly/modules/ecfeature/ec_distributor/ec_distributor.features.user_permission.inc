@@ -15,7 +15,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'administer panelizer node distributor breadcrumbs',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -25,7 +25,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'administer panelizer node distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -35,7 +35,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'administer panelizer node distributor context',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -45,7 +45,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'administer panelizer node distributor defaults',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -55,7 +55,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'administer panelizer node distributor layout',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -65,7 +65,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'administer panelizer node distributor overview',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -75,7 +75,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'administer panelizer node distributor settings',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -85,7 +85,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'create distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -95,7 +95,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'delete any distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -105,7 +105,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'delete own distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -115,7 +115,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'edit any distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -125,7 +125,7 @@ function ec_distributor_user_default_permissions() {
     'name' => 'edit own distributor content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );

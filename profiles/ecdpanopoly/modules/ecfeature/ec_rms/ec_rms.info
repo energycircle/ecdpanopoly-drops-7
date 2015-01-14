@@ -65,7 +65,6 @@ features[defaultconfig][] = strongarm:clear_all_review_site
 features[defaultconfig][] = strongarm:content_type_extras_cancel_ec_review
 features[defaultconfig][] = strongarm:content_type_extras_cancel_review_site
 features[defaultconfig][] = strongarm:content_type_extras_preview_button_ec_review
-features[defaultconfig][] = strongarm:content_type_extras_preview_button_promotion
 features[defaultconfig][] = strongarm:content_type_extras_preview_button_review_site
 features[defaultconfig][] = strongarm:content_type_extras_save_and_edit_button_ec_review
 features[defaultconfig][] = strongarm:content_type_extras_save_and_edit_button_review_site

@@ -27,6 +27,36 @@ function ec_gallery_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_field_default_field_instances_alter().
+ */
+function ec_gallery_field_default_field_instances_alter(&$data) {
+  if (isset($data['node-gallery-body'])) {
+    $data['node-gallery-body']['display']['grouped_teaser'] = array(
+      'label' => 'above',
+      'settings' => array(),
+      'type' => 'hidden',
+      'weight' => 0,
+    ); /* WAS: '' */
+  }
+  if (isset($data['node-gallery-field_gallery_image'])) {
+    $data['node-gallery-field_gallery_image']['display']['grouped_teaser'] = array(
+      'label' => 'above',
+      'settings' => array(),
+      'type' => 'hidden',
+      'weight' => 0,
+    ); /* WAS: '' */
+  }
+  if (isset($data['node-gallery-field_ref_gallery_case_study'])) {
+    $data['node-gallery-field_ref_gallery_case_study']['display']['grouped_teaser'] = array(
+      'label' => 'above',
+      'settings' => array(),
+      'type' => 'hidden',
+      'weight' => 0,
+    ); /* WAS: '' */
+  }
+}
+
+/**
  * Implements hook_default_roles_permissions_alter().
  */
 function ec_gallery_default_roles_permissions_alter(&$data) {
@@ -36,8 +66,35 @@ function ec_gallery_default_roles_permissions_alter(&$data) {
     $data['EC Platinum admin']['permissions']['administer panelizer node gallery defaults'] = TRUE; /* WAS: '' */
     $data['EC Platinum admin']['permissions']['administer panelizer node gallery overview'] = TRUE; /* WAS: '' */
     $data['EC Platinum admin']['permissions']['administer panelizer node gallery settings'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['delete own gallery content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['edit own gallery content'] = TRUE; /* WAS: '' */
+  }
+}
+
+/**
+ * Implements hook_user_default_permissions_alter().
+ */
+function ec_gallery_user_default_permissions_alter(&$data) {
+  if (isset($data['administer panelizer node gallery breadcrumbs'])) {
+    $data['administer panelizer node gallery breadcrumbs']['roles']['administrator'] = 'administrator'; /* WAS: '' */
+  }
+  if (isset($data['administer panelizer node gallery content'])) {
+    $data['administer panelizer node gallery content']['roles']['administrator'] = 'administrator'; /* WAS: '' */
+    unset($data['administer panelizer node gallery content']['roles']['EC Platinum admin']);
+  }
+  if (isset($data['administer panelizer node gallery context'])) {
+    $data['administer panelizer node gallery context']['roles']['administrator'] = 'administrator'; /* WAS: '' */
+  }
+  if (isset($data['administer panelizer node gallery defaults'])) {
+    $data['administer panelizer node gallery defaults']['roles']['administrator'] = 'administrator'; /* WAS: '' */
+  }
+  if (isset($data['administer panelizer node gallery layout'])) {
+    $data['administer panelizer node gallery layout']['roles']['administrator'] = 'administrator'; /* WAS: '' */
+    unset($data['administer panelizer node gallery layout']['roles']['EC Platinum admin']);
+  }
+  if (isset($data['administer panelizer node gallery overview'])) {
+    $data['administer panelizer node gallery overview']['roles']['administrator'] = 'administrator'; /* WAS: '' */
+  }
+  if (isset($data['administer panelizer node gallery settings'])) {
+    $data['administer panelizer node gallery settings']['roles']['administrator'] = 'administrator'; /* WAS: '' */
   }
 }
 

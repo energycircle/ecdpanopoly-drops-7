@@ -23,7 +23,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction content'] = array(
     'name' => 'administer panelizer node distinction content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -51,7 +50,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction layout'] = array(
     'name' => 'administer panelizer node distinction layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',

@@ -72,6 +72,12 @@ function ec_staff_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -162,6 +168,12 @@ function ec_staff_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -245,6 +257,12 @@ function ec_staff_defaultconfig_field_default_fields() {
           'weight' => 2,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -344,6 +362,12 @@ function ec_staff_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -422,6 +446,12 @@ function ec_staff_defaultconfig_field_default_fields() {
           'weight' => 3,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -526,6 +556,12 @@ function ec_staff_defaultconfig_field_default_fields() {
           'weight' => 4,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',

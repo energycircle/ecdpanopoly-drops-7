@@ -26,6 +26,8 @@ function ec_article_field_group_info() {
       0 => 'field_ref_article_case_study',
       1 => 'field_ref_article_product',
       2 => 'field_ref_article_testimonial',
+      3 => 'field_ref_article_blog',
+      4 => 'field_ref_article_promo',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

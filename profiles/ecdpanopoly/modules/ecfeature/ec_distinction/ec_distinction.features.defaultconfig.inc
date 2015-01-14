@@ -11,6 +11,7 @@ function ec_distinction_defaultconfig_features() {
   return array(
     'ec_distinction' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -67,6 +68,12 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'weight' => 0,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -163,6 +170,12 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -181,6 +194,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
       'label' => 'Content link',
       'required' => 0,
       'settings' => array(
+        'absolute_url' => 1,
         'attributes' => array(
           'class' => '',
           'configurable_title' => 0,
@@ -198,6 +212,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
         ),
         'rel_remove' => 'default',
         'title' => 'optional',
+        'title_label_use_field_label' => FALSE,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
@@ -266,6 +281,12 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -354,6 +375,12 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'show_this_block' => array(
           'label' => 'above',
           'settings' => array(),
@@ -417,4 +444,62 @@ function ec_distinction_defaultconfig_field_default_fields() {
   t('Url of the page to link this item to.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_distinction_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_distinction';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_distinction'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_distinction';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_distinction'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_distinction';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_distinction'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_distinction';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_distinction'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_distinction';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_distinction'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_distinction';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_new_distinction'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_distinction';
+  $strongarm->value = 0;
+  $export['content_type_extras_title_hide_distinction'] = $strongarm;
+
+  return $export;
 }

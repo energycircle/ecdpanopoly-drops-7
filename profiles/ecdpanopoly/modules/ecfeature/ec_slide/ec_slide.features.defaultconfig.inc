@@ -11,6 +11,7 @@ function ec_slide_defaultconfig_features() {
   return array(
     'ec_slide' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -67,6 +68,12 @@ function ec_slide_defaultconfig_field_default_fields() {
           'weight' => 0,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -157,6 +164,12 @@ function ec_slide_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -169,6 +182,7 @@ function ec_slide_defaultconfig_field_default_fields() {
       'label' => 'Content link',
       'required' => 0,
       'settings' => array(
+        'absolute_url' => 1,
         'attributes' => array(
           'class' => 'content-link',
           'configurable_title' => 1,
@@ -186,6 +200,7 @@ function ec_slide_defaultconfig_field_default_fields() {
         ),
         'rel_remove' => 'default',
         'title' => 'optional',
+        'title_label_use_field_label' => FALSE,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
@@ -248,6 +263,12 @@ function ec_slide_defaultconfig_field_default_fields() {
           'weight' => 2,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -330,6 +351,12 @@ function ec_slide_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -419,6 +446,12 @@ function ec_slide_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -477,4 +510,62 @@ function ec_slide_defaultconfig_field_default_fields() {
   t('The main image for the slide.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_slide_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_slide';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_slide';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_slide';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_slide';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_slide';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_slide';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_new_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_slide';
+  $strongarm->value = 1;
+  $export['content_type_extras_title_hide_slide'] = $strongarm;
+
+  return $export;
 }

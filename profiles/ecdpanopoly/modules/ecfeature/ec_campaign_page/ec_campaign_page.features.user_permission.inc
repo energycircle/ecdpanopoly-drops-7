@@ -23,8 +23,6 @@ function ec_campaign_page_user_default_permissions() {
   $permissions['administer panelizer node campaign_page content'] = array(
     'name' => 'administer panelizer node campaign_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -52,7 +50,6 @@ function ec_campaign_page_user_default_permissions() {
   $permissions['administer panelizer node campaign_page layout'] = array(
     'name' => 'administer panelizer node campaign_page layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',

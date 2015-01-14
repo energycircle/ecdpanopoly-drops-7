@@ -15,7 +15,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'administer panelizer node product_category breadcrumbs',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -25,7 +25,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'administer panelizer node product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -35,7 +35,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'administer panelizer node product_category context',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -45,7 +45,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'administer panelizer node product_category defaults',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -55,7 +55,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'administer panelizer node product_category layout',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -65,7 +65,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'administer panelizer node product_category overview',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -75,7 +75,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'administer panelizer node product_category settings',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
   );
@@ -85,7 +85,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'create product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -95,7 +95,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'delete any product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -105,7 +105,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'delete own product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -115,7 +115,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'edit any product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -125,7 +125,7 @@ function ec_product_page_category_user_default_permissions() {
     'name' => 'edit own product_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC SuperAdmin' => 'EC SuperAdmin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
