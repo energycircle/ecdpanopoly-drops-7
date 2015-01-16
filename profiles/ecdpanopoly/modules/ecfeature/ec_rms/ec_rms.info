@@ -1,7 +1,7 @@
 name = EC RMS
 description = Review Management System
 core = 7.x
-package = ECFeatures - SASS
+package = ECFeatures - BETA
 version = 7.x-1.0-beta7
 project = ec_rms
 dependencies[] = auto_nodetitle
