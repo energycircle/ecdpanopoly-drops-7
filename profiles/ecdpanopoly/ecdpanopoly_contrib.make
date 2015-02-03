@@ -221,6 +221,10 @@ projects[defaultconfig][patch][] =
 "https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch"
 ;https://www.drupal.org/node/1900574
 
+projects[views][patch][] = https://www.drupal.org/files/views-fix-destination-link-for-ajax-1036962-29.patch
+;https://www.drupal.org/node/1036962#comment-6665274
+
+
 ;EC Features
 projects[ec_foundation_types][type] = "module"
 projects[ec_foundation_types][download][type] = "git"
