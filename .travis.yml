@@ -33,3 +33,4 @@ notifications:
       - "chat.freenode.net#EnergyCircle-Dev"
     on_success: always
     on_failure: always
+	slack: energycircle:WWOFqIM3SpYIEh3U0nyrNq73
