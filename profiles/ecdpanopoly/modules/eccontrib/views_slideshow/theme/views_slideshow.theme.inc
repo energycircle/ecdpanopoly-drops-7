@@ -355,5 +355,4 @@ function theme_views_slideshow_slide_counter_widget_render($vars) {
  */
 function _views_slideshow_preprocess_views_slideshow_slide_counter(&$vars) {
   $vars['classes_array'][] = 'views_slideshow_slide_counter';
-  $vars['slide_count'] = count($vars['rows']);
 }
