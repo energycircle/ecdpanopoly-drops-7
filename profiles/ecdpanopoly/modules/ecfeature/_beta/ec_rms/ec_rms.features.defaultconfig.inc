@@ -1230,13 +1230,6 @@ function ec_rms_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_preview_button_promotion';
-  $strongarm->value = 'Preview';
-  $export['content_type_extras_preview_button_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_preview_button_review_site';
   $strongarm->value = 'Preview';
   $export['content_type_extras_preview_button_review_site'] = $strongarm;

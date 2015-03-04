@@ -148,13 +148,6 @@ function rules_entity_delete($entity, $type) {
 }
 
 /**
- * Implements hook_node_prepare().
- */
-function rules_node_prepare($node) {
-  rules_invoke_event('node_prepare', $node);
-}
-
-/**
  * Implements hook_user_login().
  */
 function rules_user_login(&$edit, $account) {

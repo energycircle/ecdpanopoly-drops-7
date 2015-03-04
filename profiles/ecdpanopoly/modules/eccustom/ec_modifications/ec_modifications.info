@@ -1,0 +1,14 @@
+name = EC Modifications
+description = Adds custom css and other styles
+package = ECDistro
+core = 7.x
+
+files[] = ec_modifications.module
+files[] = ec_modifications.css
+
+; Information added by Drupal.org packaging script on 2015-01-16
+version = "7.x-2.6+2-dev"
+core = "7.x"
+project = "ec_modifications"
+datestamp = "1389802106"
+

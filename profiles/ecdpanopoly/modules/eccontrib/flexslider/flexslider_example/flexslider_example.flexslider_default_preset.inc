@@ -16,6 +16,8 @@ function flexslider_example_flexslider_default_presets() {
   $preset->name = 'flexslider_carousel_with_min_and_max_ranges';
   $preset->title = 'FlexSlider carousel with min and max ranges';
   $preset->theme = 'classic';
+  $preset->imagestyle_normal = 'flexslider_full';
+  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',
@@ -64,6 +66,8 @@ function flexslider_example_flexslider_default_presets() {
   $preset->name = 'flexslider_default_basic_carousel';
   $preset->title = 'Basic Carousel';
   $preset->theme = 'classic';
+  $preset->imagestyle_normal = 'flexslider_full';
+  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',
@@ -112,6 +116,8 @@ function flexslider_example_flexslider_default_presets() {
   $preset->name = 'flexslider_default_slider_thumbnail_controlnav';
   $preset->title = 'slider w/thumbnail controlnav pattern';
   $preset->theme = 'classic';
+  $preset->imagestyle_normal = 'flexslider_full';
+  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',
@@ -160,6 +166,8 @@ function flexslider_example_flexslider_default_presets() {
   $preset->name = 'flexslider_default_slider_w_thumbnail_slider';
   $preset->title = 'Slider w/thumbnail slider';
   $preset->theme = 'classic';
+  $preset->imagestyle_normal = 'flexslider_full';
+  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',
@@ -208,6 +216,8 @@ function flexslider_example_flexslider_default_presets() {
   $preset->name = 'flexslider_default_thumbnail_captions';
   $preset->title = 'FlexSlider Default Thumbnail Captions';
   $preset->theme = 'classic';
+  $preset->imagestyle_normal = 'flexslider_full';
+  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',
@@ -257,6 +267,8 @@ function flexslider_example_flexslider_default_presets() {
   $preset->name = 'flexslider_default_thumbnail_slider';
   $preset->title = 'Thumbnail Slider';
   $preset->theme = 'classic';
+  $preset->imagestyle_normal = 'flexslider_full';
+  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',

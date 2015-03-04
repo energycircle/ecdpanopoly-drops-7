@@ -16,6 +16,8 @@ function flexslider_flexslider_default_presets() {
   $preset->api_version = 1;
   $preset->name = 'default';
   $preset->title = 'Default';
+  $preset->imagestyle_normal = 'flexslider_full';
+  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $presets['default'] = $preset;
 
   return $presets;

@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_init().
+ */
+function ec_modifications_init() {
+  drupal_add_css(drupal_get_path('module', 'ec_modifications') . '/ec_modifications.css');
+}
+?>
