@@ -77,6 +77,7 @@ dependencies[] = entity_rules
 dependencies[] = entity_view_mode
 dependencies[] = entity2text
 dependencies[] = entityform
+dependencies[] = elements
 dependencies[] = entityform_block
 dependencies[] = entityreference_filter
 dependencies[] = field_default_token
