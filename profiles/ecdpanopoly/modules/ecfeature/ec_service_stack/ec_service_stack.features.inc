@@ -71,16 +71,6 @@ function ec_service_stack_default_entityform_type() {
 }
 
 /**
- * Implements hook_default_roles_permissions_alter().
- */
-function ec_service_stack_default_roles_permissions_alter(&$data) {
-  if (isset($data['EC Platinum editor'])) {
-    $data['EC Platinum editor']['permissions']['delete own service_category content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum editor']['permissions']['edit own service_category content'] = TRUE; /* WAS: '' */
-  }
-}
-
-/**
  * Implements hook_node_info().
  */
 function ec_service_stack_node_info() {

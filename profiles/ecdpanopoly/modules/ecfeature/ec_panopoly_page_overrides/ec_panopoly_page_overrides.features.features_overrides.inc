@@ -66,6 +66,16 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   );
   $overrides["field_instance.node-panopoly_page-field_featured_image.display|teaser|settings|field_multiple_limit"] = -1;
   $overrides["field_instance.node-panopoly_page-field_featured_image.display|teaser|settings|field_multiple_limit_offset"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|module"] = 'media';
+  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|settings|allowed_schemes"] = array(
+    0 => 'private',
+    1 => 'public',
+  );
+  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|settings|allowed_types"] = array(
+    0 => 'image',
+  );
+  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|settings|browser_plugins"] = array();
+  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|type"] = 'media_generic';
   $overrides["field_instance.node-panopoly_page-field_featured_status.display|default|settings|field_multiple_limit"] = -1;
   $overrides["field_instance.node-panopoly_page-field_featured_status.display|default|settings|field_multiple_limit_offset"] = 0;
   $overrides["field_instance.node-panopoly_page-field_featured_status.display|grouped_teaser"] = array(
@@ -82,6 +92,16 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   );
   $overrides["field_instance.taxonomy_term-panopoly_categories-field_featured_image.display|default|settings|field_multiple_limit"] = -1;
   $overrides["field_instance.taxonomy_term-panopoly_categories-field_featured_image.display|default|settings|field_multiple_limit_offset"] = 0;
+  $overrides["field_instance.taxonomy_term-panopoly_categories-field_featured_image.widget|module"] = 'media';
+  $overrides["field_instance.taxonomy_term-panopoly_categories-field_featured_image.widget|settings|allowed_schemes"] = array(
+    0 => 'private',
+    1 => 'public',
+  );
+  $overrides["field_instance.taxonomy_term-panopoly_categories-field_featured_image.widget|settings|allowed_types"] = array(
+    0 => 'image',
+  );
+  $overrides["field_instance.taxonomy_term-panopoly_categories-field_featured_image.widget|settings|browser_plugins"] = array();
+  $overrides["field_instance.taxonomy_term-panopoly_categories-field_featured_image.widget|type"] = 'media_generic';
 
   // Exported overrides for: panelizer_defaults
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-2ed1fba1-1bcb-4d1c-b6ac-d287a6c83f39"] = (object) array(

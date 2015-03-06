@@ -23,8 +23,6 @@ function ec_blog_post_user_default_permissions() {
   $permissions['administer panelizer node blog_post content'] = array(
     'name' => 'administer panelizer node blog_post content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -52,7 +50,6 @@ function ec_blog_post_user_default_permissions() {
   $permissions['administer panelizer node blog_post layout'] = array(
     'name' => 'administer panelizer node blog_post layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',

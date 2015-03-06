@@ -91,6 +91,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['access devel information'] = array(
     'name' => 'access devel information',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'devel',
@@ -194,6 +195,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer apps'] = array(
     'name' => 'administer apps',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'apps',
@@ -203,6 +205,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer breakpoints'] = array(
     'name' => 'administer breakpoints',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'breakpoints',
@@ -222,6 +225,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer content type defaults'] = array(
     'name' => 'administer content type defaults',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'content_type_extras',
@@ -241,6 +245,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer custom content'] = array(
     'name' => 'administer custom content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'ctools_custom_content',
@@ -260,6 +265,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer entity view modes'] = array(
     'name' => 'administer entity view modes',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'entity_view_mode',
@@ -514,6 +520,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -523,8 +530,8 @@ function ec_base_config_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -535,6 +542,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -545,6 +553,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -555,6 +564,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -565,6 +575,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -575,6 +586,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -585,6 +597,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -595,6 +608,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -605,6 +619,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -615,6 +630,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -625,6 +641,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -635,6 +652,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -645,6 +663,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -737,6 +756,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panels',
   );
@@ -755,6 +775,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -826,6 +847,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer templates'] = array(
     'name' => 'administer templates',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'contemplate',
@@ -948,6 +970,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -960,6 +983,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panels',
   );
@@ -1020,8 +1044,8 @@ function ec_base_config_user_default_permissions() {
     'name' => 'create panopoly_page content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1033,6 +1057,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'path',
   );
@@ -1083,6 +1108,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1156,6 +1182,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1340,8 +1367,8 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any panopoly_page content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1374,6 +1401,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'metatag',
   );
@@ -1382,6 +1410,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit node machine name'] = array(
     'name' => 'edit node machine name',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'defaultcontent',
@@ -1435,8 +1464,8 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit own panopoly_page content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1487,6 +1516,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['execute php code'] = array(
     'name' => 'execute php code',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'devel',
@@ -1597,6 +1627,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['override content type title display'] = array(
     'name' => 'override content type title display',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'content_type_extras',
@@ -1647,6 +1678,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -1676,6 +1708,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['use PHP to import nodes'] = array(
     'name' => 'use PHP to import nodes',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node_export',
@@ -1722,6 +1755,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'page_manager',
   );
@@ -1753,6 +1787,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panels',
   );
@@ -1783,8 +1818,8 @@ function ec_base_config_user_default_permissions() {
     'name' => 'use text format panopoly_html_text',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'filter',
   );
@@ -1794,8 +1829,8 @@ function ec_base_config_user_default_permissions() {
     'name' => 'use text format panopoly_wysiwyg_text',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'filter',
   );

@@ -13,17 +13,7 @@ function ec_base_config_field_default_field_instances() {
   // Exported field_instance: 'entityform-contact-field_address'
   $field_instances['entityform-contact-field_address'] = array(
     'bundle' => 'contact',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'entityform|contact|field_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -98,6 +88,7 @@ function ec_base_config_field_default_field_instances() {
         'available_countries' => array(
           'US' => 'US',
         ),
+        'default_country' => NULL,
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
@@ -535,17 +526,7 @@ function ec_base_config_field_default_field_instances() {
   // Exported field_instance: 'entityform-contact_us-field_address'
   $field_instances['entityform-contact_us-field_address'] = array(
     'bundle' => 'contact_us',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'entityform|contact_us|field_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -576,6 +557,7 @@ function ec_base_config_field_default_field_instances() {
       'module' => 'addressfield',
       'settings' => array(
         'available_countries' => array(),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 0,
