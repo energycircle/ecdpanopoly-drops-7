@@ -60,7 +60,7 @@
  /**
   * Helper function: add Help block to default/admin theme Help region.
   */
- function ecdpanopoly_install_help_block() {
+ function _ecdpanopoly_install_help_block() {
    $default_theme = variable_get('theme_default', 'responsive_bartik');
    $admin_theme = variable_get('admin_theme', $default_theme);
 
