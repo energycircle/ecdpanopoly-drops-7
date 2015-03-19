@@ -16,7 +16,6 @@
 	  * Implements hook_install().
 	  */
  function ecdpanopoly_install() {
-    _panopoly_install_help_block();
 	
  // Enable the administration theme.
  $admin_theme = 'seven';
@@ -33,6 +32,13 @@
 
 
 
+
+ /**
+  * Implements hook_install().
+  */
+ function ecdpanopoly_install() {
+   _panopoly_install_help_block();
+ }
 
  /**
   * Enable the Distribution Update Status Manager (distro_update) module.
@@ -54,7 +60,7 @@
  /**
   * Helper function: add Help block to default/admin theme Help region.
   */
- function _ecdpanopoly_install_help_block() {
+ function ecdpanopoly_install_help_block() {
    $default_theme = variable_get('theme_default', 'responsive_bartik');
    $admin_theme = variable_get('admin_theme', $default_theme);
 
@@ -112,7 +118,6 @@
  }
 
 
-
 function ecdpanopoly_features_form($form_state, $url) {
   $form = array();
   drupal_set_title(st('Choose from available features'));
@@ -164,10 +169,10 @@ function ecdpanopoly_features_form_submit(&$form, &$form_state) {
   }
    
   // forming temporary variable with chosen features.
-  variable_set('myprofile_selected_features', $features);
+  variable_set('ecfeatures', $features);
    
   // initiating the next step of installation
-  variable_set('install_task', 'install-myprofile');
+  variable_set('install_task', 'install-ecdpanopoly');
    
   // returning to the installation page
   drupal_goto($form_state['values']['url']);
