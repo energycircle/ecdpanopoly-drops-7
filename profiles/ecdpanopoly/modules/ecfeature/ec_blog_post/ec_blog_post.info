@@ -1,6 +1,8 @@
 name = EC Blog Post
 description = Blog Posts CT with all views and permissions
 core = 7.x
+author = EnergyCircle
+author_url = http://energycircle.com
 package = ECFeatures - Core EXT
 version = 7.x-1.0-beta41
 project = ec_blog_post
@@ -17,6 +19,7 @@ dependencies[] = uuid
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = weight
+;dependencies[] = apps_compatible
 features[ctools][] = cer:default_cer_presets:1
 features[ctools][] = field_group:field_group:1
 features[ctools][] = panelizer:panelizer:1
