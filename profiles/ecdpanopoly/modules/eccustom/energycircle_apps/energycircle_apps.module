@@ -12,7 +12,7 @@ function energycircle_apps_apps_servers_info() {
     'energycircle' => array(
       'title' => 'EnergyCircle Features',
       'description' => "Apps from EnergyCircle",
-      'manifest' => 'http://dev-ec-content.pantheon.io/app/query/',
+      'manifest' => '/profiles/ecdpanopoly/modules/ecfeature',
       'profile' => $profile,
       'profile_version' => isset($info['version']) ? $info['version'] : '7.x-1.x',
       'server_name' => $_SERVER['SERVER_NAME'],
