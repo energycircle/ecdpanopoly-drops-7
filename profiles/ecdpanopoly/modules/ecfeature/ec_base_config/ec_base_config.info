@@ -542,3 +542,5 @@ features_exclude[features_overrides][roles_permissions.EC Platinum editor.permis
 features_exclude[features_overrides][roles_permissions.EC Platinum editor.permissions|edit any distinction content] = roles_permissions.EC Platinum editor.permissions|edit any distinction content
 features_exclude[features_overrides][roles_permissions.EC Platinum editor.permissions|edit any faq content] = roles_permissions.EC Platinum editor.permissions|edit any faq content
 features_exclude[features_overrides][roles_permissions.EC Platinum editor.permissions|edit any testimonial content] = roles_permissions.EC Platinum editor.permissions|edit any testimonial content
+project status url = https://github.com/energycircle/ecdpanopoly-drops-7/tree/master/profiles/ecdpanopoly/modules/ecfeature/ec_base_config
+

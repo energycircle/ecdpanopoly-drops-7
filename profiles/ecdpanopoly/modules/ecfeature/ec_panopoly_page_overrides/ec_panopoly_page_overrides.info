@@ -163,4 +163,4 @@ features_exclude[field_instance][node-blog_post-field_ref_blog_page] = node-blog
 features_exclude[field_instance][node-case_study-field_ref_case_sudy_page] = node-case_study-field_ref_case_sudy_page
 features_exclude[field_instance][node-promotion-field_ref_promo_page] = node-promotion-field_ref_promo_page
 features_exclude[field_instance][node-testimonial-field_ref_testimonial_page] = node-testimonial-field_ref_testimonial_page
-no autodetect = 1
+project status url = https://github.com/energycircle/ecdpanopoly-drops-7/tree/master/profiles/ecdpanopoly/modules/ecfeature/ec_panopoly_page_overrides

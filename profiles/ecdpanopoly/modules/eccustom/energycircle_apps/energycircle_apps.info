@@ -1,5 +1,6 @@
 name = EnergyCircle Apps
 description = Access apps from EC
+package = ECDistro
 
 version = 7.x-1.0-alpha1
 core = 7.x
