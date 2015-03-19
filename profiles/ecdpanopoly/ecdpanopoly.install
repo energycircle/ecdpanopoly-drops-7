@@ -12,21 +12,101 @@
  *
  * @see system_install()
  */
-
-
-function ecdpanopoly_install() {
+	 /**
+	  * Implements hook_install().
+	  */
+ function ecdpanopoly_install() {
+    _panopoly_install_help_block();
+	
+ // Enable the administration theme.
+ $admin_theme = 'seven';
+ db_update('system')
+   ->fields(array('status' => 1))
+   ->condition('type', 'theme')
+   ->condition('name', $admin_theme)
+   ->execute();
+ variable_set('admin_theme', $admin_theme);
+ variable_set('node_admin_theme', '1');
+ $default_theme = variable_get('theme_default', 'ec_foundation');
+ $admin_theme = variable_get('admin_theme', $default_theme);
+ }
  
-// Enable the administration theme.
-$admin_theme = 'seven';
-db_update('system')
-  ->fields(array('status' => 1))
-  ->condition('type', 'theme')
-  ->condition('name', $admin_theme)
-  ->execute();
-variable_set('admin_theme', $admin_theme);
-variable_set('node_admin_theme', '1');
 
+
+
+
+
+ /**
+  * Enable the Distribution Update Status Manager (distro_update) module.
+  */
+ function panopoly_update_7101() {
+   module_enable(array('distro_update'));
+ }
+
+ /**
+  * Enable the core Block module and place the Help block.
+  */
+ function panopoly_update_7102() {
+   if (!module_exists('block')) {
+     module_enable(array('block'));
+   }
+   _panopoly_install_help_block();
+ }
+
+
+  // Add the help block to the main theme help region.
+  $blocks = array(
+    array(
+      'module' => 'system',
+      'delta' => 'help',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'help',
+      'pages' => '',
+      'cache' => -1,
+    ),
+  );
+  // If the admin theme is different than default theme, add the help
+  // block to the admin them help region.
+  if ($admin_theme != $default_theme) {
+    $blocks[] = array(
+      'module' => 'system',
+      'delta' => 'help',
+      'theme' => $admin_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'help',
+      'pages' => '',
+      'cache' => -1,
+    );
+  }
+
+  // Add the blocks if they aren't already placed.
+  foreach ($blocks as $block) {
+    $region = db_select('block', 'b')
+      ->fields('b', array('region'))
+      ->condition('theme', $block['theme'])
+      ->condition('module', $block['module'])
+      ->condition('delta', $block['delta'])
+      ->execute()
+      ->fetchField();
+    if (empty($region) || $region == -1) {
+      db_merge('block')
+        ->key(array(
+          'theme' => $block['theme'],
+          'module' => $block['module'],
+          'delta' => $block['delta'],
+        ))
+        ->fields($block)
+        ->execute();
+    }
+  }
+
+  // Update the menu router information.
+  menu_rebuild();
 }
+
 
 function ecdpanopoly_features_form($form_state, $url) {
   $form = array();
