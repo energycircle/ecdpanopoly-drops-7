@@ -2,14 +2,14 @@ ECDPanopoly  7.x-1.1-rc7
 ---------------------------
 #In progress
 	#ENERGYCIRCLE
-		#update to panopoly 1.18 - Projected 2015-03-07
+		#update to panopoly 1.19 - Projected 2015-03-20
 		#remove contemplate from feature dependency
 		#remove feature setting for using Advanced Panel Plugins (https://www.drupal.org/node/2212695)
 		#Rules UI and Entityform Notifications as dependencies
 		#review menu settings for each content types
 		#Change all image fields to use media field
 		#Add Slide term ref to ct
-		#		
+		#Update Search API modules
 		#Module Updates
 			#Address Field7.x-1.0-beta5 | 7.x-1.0 (Release notes)
 			#Admin role7.x-1.0+1-dev | 7.x-1.0 (Release notes)

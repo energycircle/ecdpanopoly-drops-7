@@ -1,3 +1,8 @@
+Panopoly Images 7.x-1.19, 2015-03-18 ----------------------------- - Relabeled
+  view modes baffles.Panopoly Images 7.x-1.18, 2015-02-26
+-----------------------------
+- Panopoly CSS causes issues with WYSIWYG image because of image style class names.
+
 Panopoly Images 7.x-1.17, 2015-02-18
 -----------------------------
 - HP Fatal error:  [] operator not supported for strings in panopoly_images/panopoly_images.module on line 90.

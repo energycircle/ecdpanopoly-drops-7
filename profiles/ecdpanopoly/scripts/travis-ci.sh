@@ -41,9 +41,11 @@ system_install() {
   # Build the current branch.
   header Building Panopoly from current branch
   cd drupal
-  drush make --yes profiles/ecdpanopoly/drupal-org-core.make --prepare-install
-  drush make --yes profiles/ecdpanopoly/drupal-org.make --no-core --contrib-destination=profiles/panopoly
-  drush dl panopoly_demo-1.x-dev
+  drush make --yes profiles/panopoly/drupal-org-core.make --prepare-install
+  drush make --yes profiles/panopoly/drupal-org.make --no-core --contrib-destination=profiles/panopoly
+  if [[ "$INSTALL_PANOPOLY_DEMO_FROM_APPS" != 1 ]]; then
+    drush dl panopoly_demo-1.x-dev
+  fi
   drush dl diff
   mkdir sites/default/private
   mkdir sites/default/private/files
@@ -51,14 +53,14 @@ system_install() {
 
   # Build Behat dependencies
   header Installing Behat
-  cd profiles/ecdpanopoly/modules/panopoly/panopoly_test/tests
+  cd profiles/panopoly/modules/panopoly/panopoly_test/tests
   composer install --prefer-source --no-interaction
   cd ../../../../../../../
 
   # Verify that all the .make files will work on Drupal.org.
   header Verifying .make file
-  drush verify-makefile drupal/profiles/ecdpanopoly/drupal-org.make
-  find drupal/profiles/ecdpanopoly/modules -name \*.make -print0 | xargs -0 -n1 drush verify-makefile
+  drush verify-makefile drupal/profiles/panopoly/drupal-org.make
+  find drupal/profiles/panopoly/modules -name \*.make -print0 | xargs -0 -n1 drush verify-makefile
 
   # Download an old version to test upgrading from.
   if [[ "$UPGRADE" != none ]]; then
@@ -96,6 +98,18 @@ system_install() {
  
   # Disable sendmail
   echo sendmail_path=`which true` >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+
+  # Enable APC
+  echo "extension=apc.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  echo "apc.shm_size=256M" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+
+  # Increase the MySQL connection timeout on the PHP end.
+  echo "mysql.connect_timeout=3000" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  echo "default_socket_timeout=3000" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+
+  # Increase the MySQL server timetout and packet size.
+  mysql -e "SET GLOBAL wait_timeout = 36000;"
+  mysql -e "SET GLOBAL max_allowed_packet = 33554432;"
 }
 
 # before_tests
@@ -117,10 +131,11 @@ before_tests() {
     cd drupal
   else
     cd panopoly-$UPGRADE
-    drush dl panopoly_demo-$UPGRADE_DEMO_VERSION
+    if [[ "$INSTALL_PANOPOLY_DEMO_FROM_APPS" != 1 ]]; then
+      drush dl panopoly_demo-$UPGRADE_DEMO_VERSION
+    fi
   fi
   drush si panopoly --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="Panopoly" --yes
-  drush dis -y dblog
   drush vset -y file_private_path "sites/default/private/files"
   drush vset -y file_temporary_path "sites/default/private/temp"
 
@@ -130,7 +145,8 @@ before_tests() {
   # If we're an upgrade test, run the upgrade process.
   if [[ "$UPGRADE" != none ]]; then
     header Upgrading to latest version
-    cp -a ../panopoly-$UPGRADE/sites/default/* sites/default/ && drush updb --yes
+    cp -a ../panopoly-$UPGRADE/sites/default/* sites/default/
+    run_test drush updb --yes
     drush cc all
   fi
 
@@ -141,7 +157,7 @@ before_tests() {
   header Starting webserver
   drush runserver --server=builtin 8888 > /dev/null 2>&1 &
   echo $! > /tmp/web-server-pid
-  sleep 3
+  wait_for_port 8888
 
   cd ..
 
@@ -149,7 +165,7 @@ before_tests() {
   header Starting selenium
   java -jar selenium-server-standalone-2.41.0.jar -Dwebdriver.chrome.driver=`pwd`/chromedriver > /dev/null 2>&1 &
   echo $! > /tmp/selenium-server-pid
-  sleep 5
+  wait_for_port 4444
 }
 
 # before_tests
@@ -162,7 +178,7 @@ run_tests() {
   # Make the Travis tests repos agnostic by injecting drupal_root with BEHAT_PARAMS
   export BEHAT_PARAMS="extensions[Drupal\\DrupalExtension\\Extension][drupal][drupal_root]=$BUILD_TOP/drupal"
 
-  cd drupal/profiles/ecdpanopoly/modules/panopoly/panopoly_test/tests
+  cd drupal/profiles/panopoly/modules/panopoly/panopoly_test/tests
 
   # If this isn't an upgrade, we test if any features are overridden.
   if [[ "$UPGRADE" == none ]]; then
@@ -221,6 +237,15 @@ run_command() {
   set -xv
   $@
   set +xv
+}
+
+# Wait for a specific port to respond to connections.
+wait_for_port() {
+  local port=$1
+  while echo | telnet localhost $port 2>&1 | grep -qe 'Connection refused'; do
+    echo "Connection refused on port $port. Waiting 5 seconds..."
+    sleep 5
+  done
 }
 
 ##
