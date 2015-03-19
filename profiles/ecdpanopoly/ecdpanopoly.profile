@@ -35,7 +35,7 @@ function ecdpanopoly_install_tasks(&$install_state) {
   // Add our custom CSS file for the installation process
   drupal_add_css(drupal_get_path('profile', 'ecdpanopoly') . '/install.css');
 
-  // Add the Panopoly app selection to the installation process
+  // Add the ECDPanopoly app selection to the installation process
   $panopoly_server = array(
     'machine name' => 'ecfeatures',
     'default apps' => array('ecfeatures'),

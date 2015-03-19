@@ -1,0 +1,16 @@
+name = EnergyCircle Apps
+description = Access apps from EC
+
+version = 7.x-1.0-alpha1
+core = 7.x
+
+dependencies[] = apps
+
+files[] = energycircle_apps.module
+
+; Information added by drupal.org packaging script on 2012-02-28
+version = "7.x-1.0-rc2"
+core = "7.x"
+project = "energycircle_apps"
+datestamp = "1330440647"
+
