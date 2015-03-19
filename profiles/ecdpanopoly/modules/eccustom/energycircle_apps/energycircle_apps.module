@@ -9,10 +9,10 @@ function energycircle_apps_apps_servers_info() {
   $profile = variable_get('install_profile', 'ecdpanopoly');
   $info =  drupal_parse_info_file(drupal_get_path('profile', $profile) . '/' . $profile . '.info');
   return array(
-    'ecd' => array(
+    'energycircle' => array(
       'title' => 'EnergyCircle Features',
       'description' => "Apps from EnergyCircle",
-      'manifest' => 'http://dev-ec-content.pantheon.io/app/query',
+      'manifest' => 'http://dev-ec-content.pantheon.io/app/query/ecd',
       'profile' => $profile,
       'profile_version' => isset($info['version']) ? $info['version'] : '7.x-1.x',
       'server_name' => $_SERVER['SERVER_NAME'],
@@ -29,7 +29,7 @@ function energycircle_apps_apps_servers_info() {
 function energycircle_apps_init() {
   if ($_GET['q'] == 'admin/apps/energycircle') {
     apps_include('manifest'); 
-    $server = apps_servers('ecd');
+    $server = apps_servers('energycircle');
     // Create args array for substitutions
     $manifest = apps_manifest($server);
     if (isset($manifest['message']) && $manifest['message'] != '') {
