@@ -27,8 +27,6 @@
    ->execute();
  variable_set('admin_theme', $admin_theme);
  variable_set('node_admin_theme', '1');
- $default_theme = variable_get('theme_default', 'ec_foundation');
- $admin_theme = variable_get('admin_theme', $default_theme);
  }
  
 
@@ -53,6 +51,9 @@
    _panopoly_install_help_block();
  }
 
+ function _panopoly_install_help_block() {
+   $default_theme = variable_get('theme_default', 'ec_foundation');
+   $admin_theme = variable_get('admin_theme', $default_theme);
 
   // Add the help block to the main theme help region.
   $blocks = array(
