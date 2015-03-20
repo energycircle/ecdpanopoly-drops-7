@@ -4,6 +4,12 @@ core = 7.x
 package = ECFeatures - Core EXT
 version = 7.x-1.0-beta41
 project = ec_blog_post
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
 dependencies[] = date
 dependencies[] = ec_panopoly_page_overrides
 dependencies[] = entityreference

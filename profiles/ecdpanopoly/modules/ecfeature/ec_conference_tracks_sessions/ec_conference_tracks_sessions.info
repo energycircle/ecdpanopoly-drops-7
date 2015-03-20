@@ -4,6 +4,12 @@ core = 7.x
 package = ECFeatures - Conference
 version = 7.x-1.0-beta19
 project = ec_conference_tracks_sessions
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
 dependencies[] = better_exposed_filters
 dependencies[] = ctools
 dependencies[] = date

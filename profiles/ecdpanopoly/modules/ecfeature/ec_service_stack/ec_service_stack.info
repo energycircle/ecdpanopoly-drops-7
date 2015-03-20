@@ -4,6 +4,13 @@ core = 7.x
 package = ECFeatures - Core EXT
 version = 7.x-1.0-beta20
 project = ec_service_stack
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
+
 dependencies[] = ec_base_config
 dependencies[] = entityreference
 dependencies[] = features

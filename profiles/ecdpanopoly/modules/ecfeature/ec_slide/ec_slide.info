@@ -4,6 +4,13 @@ core = 7.x
 package = ECFeatures - Core EXT
 version = 7.x-1.0-beta14
 project = ec_slide
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
+
 dependencies[] = ec_base_config
 dependencies[] = flexslider_views
 dependencies[] = link

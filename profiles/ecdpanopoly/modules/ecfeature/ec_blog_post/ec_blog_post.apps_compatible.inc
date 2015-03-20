@@ -15,11 +15,11 @@ function ec_blog_post_apps_compatible_info() {
       'administrator' => array(
         'machine name' => 'administrator',
       ),
-      'editor' => array(
-        'machine name' => 'editor',
+      'EC Platinum admin' => array(
+        'machine name' => 'ec_platinum_admin',
       ),
-      'contributor' => array(
-        'machine name' => 'contributor',
+      'EC Platinum editor' => array(
+        'machine name' => 'ec_platinum_editor',
       ),
     ),
   );

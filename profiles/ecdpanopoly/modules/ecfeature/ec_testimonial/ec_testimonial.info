@@ -4,6 +4,13 @@ core = 7.x
 package = ECFeatures - Core EXT
 version = 7.x-1.0-beta21
 project = ec_testimonial
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
+
 dependencies[] = ec_panopoly_page_overrides
 dependencies[] = entityreference
 dependencies[] = field_group
@@ -116,10 +123,7 @@ features[variable][] = weight_range_testimonial
 features[variable][] = xmlsitemap_settings_node_testimonial
 features[views_view][] = testimonials
 features[weight][] = testimonial
-features_exclude[dependencies][ec_promotions] = ec_promotions
-features_exclude[dependencies][ec_casestudy] = ec_casestudy
 features_exclude[dependencies][ctools] = ctools
-features_exclude[dependencies][ec_foundation_types] = ec_foundation_types
 features_exclude[dependencies][flexslider] = flexslider
 features_exclude[dependencies][panelizer] = panelizer
 features_exclude[dependencies][metatag] = metatag

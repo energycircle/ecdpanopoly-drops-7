@@ -4,6 +4,13 @@ core = 7.x
 package = ECFeatures - Conference
 version = 7.x-1.0-beta6
 project = ec_redhen
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
+
 dependencies[] = ec_base_config
 dependencies[] = field_group
 dependencies[] = image_link_formatter

@@ -4,6 +4,13 @@ core = 7.x
 package = ECFeatures - Core EXT
 version = 7.x-1.0-beta16
 project = ec_campaign_page
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
+
 dependencies[] = ec_base_config
 dependencies[] = features
 dependencies[] = field_group
@@ -104,9 +111,7 @@ features[variable][] = xmlsitemap_settings_entityform_campaign_form
 features[variable][] = xmlsitemap_settings_node_campaign_page
 features[views_view][] = campaign_page
 features[weight][] = campaign_page
-features_exclude[dependencies][ec_service_stack] = ec_service_stack
 features_exclude[dependencies][ctools] = ctools
-features_exclude[dependencies][ec_foundation_types] = ec_foundation_types
 features_exclude[dependencies][panelizer] = panelizer
 features_exclude[dependencies][strongarm] = strongarm
 features_exclude[dependencies][email] = email

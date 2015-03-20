@@ -5,3 +5,6 @@
  */
 
 include_once 'ec_service_stack.features.inc';
+ function ec_service_stack_hook_apps_app_info() {
+ 
+  }

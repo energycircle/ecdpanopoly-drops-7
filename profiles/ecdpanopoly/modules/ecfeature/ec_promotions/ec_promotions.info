@@ -4,6 +4,13 @@ core = 7.x
 package = ECFeatures - Core EXT
 version = 7.x-1.0-beta21
 project = ec_promotions
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
+
 dependencies[] = ec_panopoly_page_overrides
 dependencies[] = entityform_notifications
 dependencies[] = entityreference
@@ -144,9 +151,6 @@ features[variable][] = xmlsitemap_settings_node_promotion
 features[views_view][] = promotions
 features[weight][] = promotion
 features_exclude[dependencies][rules] = rules
-features_exclude[dependencies][ec_service_stack] = ec_service_stack
-features_exclude[dependencies][ec_product_page_lite] = ec_product_page_lite
-features_exclude[dependencies][ec_foundation_types] = ec_foundation_types
 features_exclude[dependencies][field_validation] = field_validation
 features_exclude[dependencies][panelizer] = panelizer
 features_exclude[dependencies][date] = date
