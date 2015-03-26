@@ -8,6 +8,7 @@ dependencies[] = addressfield
 dependencies[] = admin_menu
 dependencies[] = admin_theme
 dependencies[] = adminrole
+dependencies[] = administration_development_tools
 dependencies[] = apps
 dependencies[] = breakpoints
 dependencies[] = cer

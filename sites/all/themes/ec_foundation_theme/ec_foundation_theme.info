@@ -19,6 +19,8 @@
   ; Print - uncomment to load basic print styles.
   ; stylesheets[print][] = css/print.css
 
+	scripts[] = script/custom.js
+
 
   ; Internet Explorer Stylesheets
   ;

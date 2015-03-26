@@ -54,7 +54,7 @@ function ec_promotions_default_entityform_type() {
       "preview_page" : 0,
       "submission_page_title" : "Congratulations on claiming this promotion! ",
       "submission_text" : {
-        "value" : "\\u003Cp\\u003EWe\\u0027re excited to hear from you! We\\u0027ll be in touch within 24 hours. For an immediate response or emergency service, please call 732-223-8221\\u003C\\/p\\u003E",
+        "value" : "\\u003Cp\\u003EWe\\u0027re excited to hear from you! We\\u0027ll be in touch within 24 hours. For an immediate response or emergency service, please call us\\u003C\\/p\\u003E",
         "format" : "panopoly_wysiwyg_text"
       },
       "submission_show_submitted" : 0,

@@ -138,6 +138,10 @@ projects[linkit_target][subdir] = eccontrib
 projects[maxlength][version] = 3.x
 projects[maxlength][subdir] = eccontrib
 
+
+projects[module_filter][version] = 2.x-dev
+projects[module_filter][subdir] = eccontrib
+
 projects[menu_icons][version] = 3.x-dev
 projects[menu_icons][subdir] = eccontrib
 

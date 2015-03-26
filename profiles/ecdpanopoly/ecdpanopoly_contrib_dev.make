@@ -5,18 +5,9 @@ core = 7.x
 projects[context_pantheon][version] = 1.0-alpha2
 projects[context_pantheon][subdir] = ec-dev
 
-;projects[Pandarus][version] = 1.x
-;projects[Pandarus][subdir] = ec-dev
-
 ; Include DEV tools
-projects[meta_dev][version] = 1.x
-projects[meta_dev][subdir] = ec-dev
-
 projects[metatag_views_overview][version] = 1.x-dev
 projects[metatag_views_overview][subdir] = ec-dev
-
-;projects[debut][version] = 1.0-rc1
-;projects[debut][subdir] = ec-dev
 
 projects[microdata][version] = 1.x
 projects[microdata][subdir] = ec-dev
@@ -50,9 +41,3 @@ projects[uuid_features][subdir] = ec-dev
 
 ;projects[feature_set][version] = 1.x
 ;projects[feature_set][subdir] = ec-dev
-
-;projects[migrate][version] = 2.x-dev
-;projects[migrate][subdir] = ec-dev
-
-;projects[migrate_d2d][version] = 2.0
-;projects[migrate_d2d][subdir] = ec-dev
