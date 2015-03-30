@@ -22,6 +22,7 @@ dependencies[] = file
 dependencies[] = dblog
 ;dependencies[] = update
 dependencies[] = distro_update
+dependencies[] = energycircle_apps
 
 ; Panopoly Foundation
 dependencies[] = panopoly_core
@@ -53,9 +54,9 @@ dependencies[] = views_ui
 
 
 ; Panopoly Recommended - Other
-dependencies[] = devel
+;dependencies[] = devel
 ;dependencies[] = uuid
-;dependencies[] = apps
+dependencies[] = apps
 ;dependencies[] = apps_compatible
 
 
@@ -74,10 +75,14 @@ dependencies[] = content_type_extras
 dependencies[] = diff
 dependencies[] = disable_term_node_listings
 dependencies[] = email
+dependencies[] = entitycache
 dependencies[] = entity_rules
 dependencies[] = entity_view_mode
 dependencies[] = entity2text
 dependencies[] = entityform
+dependencies[] = entity_view_mode
+dependencies[] = entity2text
+dependencies[] = entityform_notifications
 dependencies[] = elements
 dependencies[] = entityform_block
 dependencies[] = entityreference_filter

@@ -36,9 +36,9 @@ features[variable][] = xmlsitemap_engines_minimum_lifetime
 features[variable][] = xmlsitemap_settings_menu_link_main-menu
 features[variable][] = xmlsitemap_settings_node_panopoly_page
 
-; Information added by Drupal.org packaging script on 2014-10-21
-version = "7.x-1.0-beta1+5-dev"
+; Information added by Drupal.org packaging script on 2014-07-17
+version = "7.x-1.0-beta1"
 core = "7.x"
 project = "panopoly_seo"
-datestamp = "1413872903"
+datestamp = "1405603128"
 

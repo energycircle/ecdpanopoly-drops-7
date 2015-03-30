@@ -216,7 +216,6 @@ function microdata_bundle_type_mapping_form_submit($form, &$form_state) {
     if ($fieldset['is_item'] == TRUE) {
       $mapping['#is_item'] = TRUE;
       $mapping['#itemid_token'] = $fieldset['itemid_settings']['itemid_token'];
-      $mapping['#use_schema_url'] = $fieldset['itemid_settings']['use_schema_url'];
     }
     else {
       $mapping['#is_item'] = FALSE;

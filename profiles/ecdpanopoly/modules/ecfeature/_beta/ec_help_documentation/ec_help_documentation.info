@@ -4,6 +4,12 @@ core = 7.x
 package = ECFeatures - BETA
 version = 7.x-1.0-beta3
 project = ec_help_documentation
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
 dependencies[] = defaultcontent
 dependencies[] = features
 dependencies[] = metatag
@@ -85,3 +91,4 @@ features[variable][] = xmlsitemap_settings_taxonomy_term_help_document_type
 features[views_view][] = ec_help_documentation
 features[weight][] = help_documentation
 mtime = 1421084767
+project status url = https://github.com/energycircle/ec_help_documentation.git

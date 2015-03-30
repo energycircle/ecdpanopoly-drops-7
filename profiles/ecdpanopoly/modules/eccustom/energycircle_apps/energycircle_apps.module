@@ -10,7 +10,7 @@ function energycircle_apps_apps_servers_info() {
   $info =  drupal_parse_info_file(drupal_get_path('profile', $profile) . '/' . $profile . '.info');
   return array(
     'energycircle' => array(
-      'title' => 'EnergyCircle Features',
+      'title' => 'EnergyCircle Apps',
       'description' => "Apps from EnergyCircle",
       'manifest' => '/profiles/ecdpanopoly/modules/ecfeature',
       'profile' => $profile,

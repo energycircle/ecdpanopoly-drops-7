@@ -166,3 +166,4 @@ features_exclude[field_group][group_show_this_on|node|promotion|form] = group_sh
 features_exclude[field_group][group_shown_on_this_page|node|article|form] = group_shown_on_this_page|node|article|form
 features_exclude[field_group][group_shown_on_this_page|node|service_group|form] = group_shown_on_this_page|node|service_group|form
 mtime = 1420733778
+project status url = https://github.com/energycircle/ec_product_page_lite.git

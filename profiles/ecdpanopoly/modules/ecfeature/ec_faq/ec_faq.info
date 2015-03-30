@@ -98,3 +98,4 @@ features_exclude[dependencies][ec_panopoly_page_overrides] = ec_panopoly_page_ov
 features_exclude[features_overrides][field_group.group_shown_on_this_page|node|faq|form.data|children|0] = field_group.group_shown_on_this_page|node|faq|form.data|children|0
 features_exclude[features_overrides][field_group.group_shown_on_this_page|node|faq|form.data|children|2] = field_group.group_shown_on_this_page|node|faq|form.data|children|2
 features_exclude[features_overrides][field_group.group_shown_on_this_page|node|faq|form.data|children|3] = field_group.group_shown_on_this_page|node|faq|form.data|children|3
+project status url = https://github.com/energycircle/ec_faq.git

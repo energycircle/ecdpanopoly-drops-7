@@ -1,5 +1,5 @@
 name = EC Product Page Category
-description = Used with Product LTE to extend the
+description = Used with Product LTE to extend the product grouping
 core = 7.x
 package = ECFeatures - Products
 version = 7.x-1.0-beta6
@@ -149,3 +149,4 @@ features[variable][] = weight_range_product_category
 features[variable][] = xmlsitemap_settings_node_product_category
 features[weight][] = product_category
 mtime = 1420649013
+project status url = https://github.com/energycircle/ec_product_page_category.git

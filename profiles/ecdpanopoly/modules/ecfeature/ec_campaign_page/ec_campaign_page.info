@@ -131,3 +131,4 @@ features_exclude[field_base][field_phone] = field_phone
 features_exclude[field_base][field_business2] = field_business2
 features_exclude[field_base][field_page_tracking] = field_page_tracking
 features_exclude[field_base][field_email] = field_email
+project status url = https://github.com/energycircle/ec_campaign_page.git

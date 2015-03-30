@@ -159,3 +159,4 @@ features[views_view][] = redhen_contacts
 features[views_view][] = redhen_org
 features_exclude[dependencies][ec_sponsor] = ec_sponsor
 mtime = 1418998914
+project status url = https://github.com/energycircle/ec_redhen.git

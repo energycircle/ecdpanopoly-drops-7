@@ -120,4 +120,4 @@ features[variable][] = weight_range_gallery
 features[variable][] = xmlsitemap_settings_node_gallery
 features[views_view][] = gallery_slideshow_carousel
 features[weight][] = gallery
-features_exclude[dependencies][ec_foundation_types] = ec_foundation_types
+project status url = https://github.com/energycircle/ec_gallery.git

@@ -139,3 +139,4 @@ features[views_view][] = distributors
 features[weight][] = distributor
 features_exclude[dependencies][weight] = weight
 mtime = 1420649013
+project status url = https://github.com/energycircle/ec_distributor.git

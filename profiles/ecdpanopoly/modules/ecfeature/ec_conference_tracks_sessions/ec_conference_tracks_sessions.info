@@ -206,3 +206,4 @@ features_exclude[field_instance][field_collection_item-field_event_sponsors_ref-
 features_exclude[field_instance][node-conference_event-field_event_sponsors_ref] = node-conference_event-field_event_sponsors_ref
 features_exclude[taxonomy][sponsor_types] = sponsor_types
 mtime = 1418998914
+project status url = https://github.com/energycircle/ec_conference_tracks_sessions.git

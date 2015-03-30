@@ -419,3 +419,4 @@ features_exclude[field_instance][node-promotion-field_ref_promo_service] = node-
 features_exclude[field_instance][node-testimonial-field_ref_testimonial_serv_cat] = node-testimonial-field_ref_testimonial_serv_cat
 features_exclude[field_instance][node-testimonial-field_ref_testimonial_serv_group] = node-testimonial-field_ref_testimonial_serv_group
 features_exclude[field_instance][node-testimonial-field_ref_testimonial_service] = node-testimonial-field_ref_testimonial_service
+project status url = https://github.com/energycircle/ec_service_stack.git

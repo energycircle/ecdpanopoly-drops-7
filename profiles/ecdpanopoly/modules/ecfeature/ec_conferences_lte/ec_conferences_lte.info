@@ -184,3 +184,4 @@ features_exclude[field_instance][node-conference-field_ref_conference_civievent]
 features_exclude[field_instance][node-conference-field_ref_conference_track] = node-conference-field_ref_conference_track
 features_exclude[field_instance][node-venue-field_ref_venue_layout] = node-venue-field_ref_venue_layout
 mtime = 1418998914
+project status url = https://github.com/energycircle/ec_conferences_lte.git

@@ -4,6 +4,12 @@ core = 7.x
 package = ECFeatures - BETA
 version = 7.x-1.0-beta7
 project = ec_rms
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
 dependencies[] = auto_nodetitle
 dependencies[] = compact_forms
 dependencies[] = defaultcontent
@@ -368,3 +374,4 @@ features_exclude[dependencies][menu] = menu
 features_exclude[dependencies][options] = options
 features_exclude[dependencies][strongarm] = strongarm
 mtime = 1420227023
+project status url = https://github.com/energycircle/ec_rms.git

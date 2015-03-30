@@ -271,7 +271,6 @@ class MicrodataCoreFieldsTestCase extends MicrodataFieldTestCase {
         $this->bundleType => array(
           '#itemtype' => array('http://schema.org/BlogPosting'),
           '#itemid_token' => '[node:url]',
-          '#use_schema_url' => TRUE,
           // Title.
           'title' => array(
             '#itemprop' => array('name'),
@@ -437,10 +436,6 @@ class MicrodataCoreFieldsMarkupTestCase extends MicrodataCoreFieldsTestCase {
     // The body summary is mapped to property 'description'.
     $summary_itemprop = $mapping['body']['summary']['#itemprop'][0];
     $this->assertEqual($body, trim($item->properties[$summary_itemprop][0]), t('Itemprop is placed on body summary.'));
-
-    // The url is mapped to property 'url'.
-    $url_itemprop = 'url';
-    $this->assertEqual('node/' . $node->nid, trim($item->properties[$url_itemprop][0]), t('Schema.org url property is placed.'));
 
   }
 }

@@ -225,32 +225,18 @@ function microdata_entity_info_alter(&$entity_info) {
 /**
  * Implements hook_entity_property_info_alter().
  *
- * The microdata flag is set to TRUE on fields in the field_info hook. That
- * isn't made available through the Entity Property API, so add it to the
- * property info here.
- *
- * Additionally, in order to enable microdata on field properties that are
- * defined in core, we use the alter hook. If Entity API and microdata are
- * pulled into core in Drupal 8, this would not be necessary.
- *
+ * In order to enable microdata on field properties that are defined in core,
+ * we use the alter hook. If Entity API and microdata are pulled into core in
+ * Drupal 8, this would not be necessary.
  */
 function microdata_entity_property_info_alter(&$info) {
-  $field_info_fields = field_info_fields();
-  $field_types = field_info_field_types();
-
-  // Go through all the fields on all the bundles. 
+  // Go through all the fields on all the bundles. If a bundle uses a
+  // text_formatted field, turn microdata on for the value property and the
+  // summary property if there is one.
   foreach ($info as $entity_type => &$entity_info) {
     if (isset($entity_info['bundles'])) {
       foreach ($entity_info['bundles'] as $bundle_name => &$bundle_info) {
         foreach ($bundle_info['properties'] as $field_name => &$field_info) {
-          // Make a field's microdata status avaiable through the property API.
-          $field_type = $field_info_fields[$field_name]['type'];
-          if (!empty($field_types[$field_type]['microdata'])) {
-            $field_info['microdata'] = TRUE;
-          }
-
-          // If a bundle uses a text_formatted field, turn microdata on for the
-          // value property and the summary property if there is one.
           if ($field_info['type'] == 'text_formatted') {
             $field_info['property info']['value']['microdata'] = TRUE;
             if (isset($field_info['property info']['summary'])) {
@@ -292,33 +278,18 @@ function microdata_field_attach_view_alter(&$output, $context) {
     if (!field_info_field($field_name)) {
       continue;
     }
-    // If this is a partial entity and it has no microdata (which can happen
-    // when calling token_replace), then skip.
-    if (!isset($element['#object']->microdata)) {
-      continue;
-    }
 
     // Gather the info about the subject.
     $subject_entity = $element['#object'];
     $subject_entity_type = $element['#entity_type'];
-    $subject_bundle_type = $element['#bundle'];
     $subject_itemrefs = array();
     $field_microdata = $subject_entity->microdata[$field_name];
 
-    // Get the property info to check where microdata should be placed. If
-    // there is no property info, then this field does not have the correct
-    // integration.
-    $entity_properties = entity_get_property_info($subject_entity_type);
-    $bundle_properties = $entity_properties['bundles'][$subject_bundle_type]['properties'];
-    if (!isset($bundle_properties[$field_name])) {
-      continue;
-    }
-
     // If this is a reference field which points to another entity, set up the
     // relationship between the subject and the object.
-    $type = _microdata_get_field_type($bundle_properties[$field_name]['type']);
-    if (microdata_get_value_type($type) == 'item_reference') {
-      $object_entity_type = $type;
+    $field_type_info = field_info_field_types($element['#field_type']);
+    if (microdata_get_value_type($field_type_info) == 'item_reference') {
+      $object_entity_type = $field_type_info['property_type'];
       $wrapper = entity_metadata_wrapper($subject_entity_type, $subject_entity);
       $object_entities = $wrapper->$field_name->value();
       if (isset($object_entities)) {
@@ -384,6 +355,30 @@ function microdata_field_attach_view_alter(&$output, $context) {
 }
 
 /**
+ * Implements hook_node_view().
+ *
+ * This is required to add the title, which is not a real field.
+ */
+function microdata_node_view($node, $view_mode, $langcode) {
+  // Add the title's itemprop. Because we can't be sure that the title will be
+  // nested within the node's HTML element, we use <meta> to place a copy of
+  // the value. Meta tags nested within the body tag are valid in HTML5.
+  if (!empty($node->microdata['title']['#attributes'])) {
+    $field_id = microdata_get_itemref_id();
+    $node->microdata['title']['#attributes']['content'] = $node->title;
+    $node->microdata['title']['#attributes']['id'] = $field_id;
+    $node->content['title_microdata'] = array(
+      '#type' => 'markup',
+      '#markup' => '<meta ' . drupal_attributes($node->microdata['title']['#attributes']) . ' />',
+    );
+
+    $node_attributes = $node->microdata['#attributes'];
+    $node_attributes['itemref'][] = $field_id;
+    microdata_item('node', $node->nid, $node_attributes);
+  }
+}
+
+/**
  * Implements MODULE_preprocess_HOOK().
  *
  * Adds Microdata markup to the field wrapper.
@@ -402,15 +397,14 @@ function microdata_preprocess_field(&$variables) {
   }
 
   foreach ($variables['items'] as $delta => &$item) {
-    // If this is a datetime or URL element, the field formatter must place the
-    // item's property attributes. If this is an item, the itemprop is placed
-    // on the item's meta tag. Otherwise, the itemprop can be placed on the
-    // wrapping div using the item_attributes_array.
+    // If this is a URL element, the field formatter must place the item's
+    // property attributes. If this is an item, the itemprop is placed on the
+    // item's meta tag. Otherwise, the itemprop can be placed on the wrapping
+    // div using the item_attributes_array.
     if (isset($field_mapping['#value_type'])) {
-      $is_datetime = $field_mapping['#value_type'] === 'datetime' ? TRUE : FALSE;
       $is_url = $field_mapping['#value_type'] === 'url' ? TRUE : FALSE;
       $is_item_reference = $field_mapping['#value_type'] === 'item_reference' ? microdata_is_item($element['#entity_type'], $element['#object'], $field_name, $delta) : FALSE;
-      $place_microdata_wrapper = !($is_datetime || $is_url || $is_item_reference);
+      $place_microdata_wrapper = !($is_url || $is_item_reference);
     }
     else {
       $place_microdata_wrapper = TRUE;
@@ -500,89 +494,23 @@ function theme_microdata_image_formatter(&$variables) {
 function microdata_process_page(&$variables) {
   $page = &$variables['page'];
   $items = microdata_item();
-  $titles = array();
-  $schema_urls = array();
-
-  foreach ($items as $entity_type => &$ids) {
-    foreach ($ids as $id => &$attributes) {
-      $entity = entity_load_single($entity_type, $id);
-      // Add the titles' itemprops. Because we can't be sure that the title
-      // will be nested within the entity's HTML element, we use <meta> to
-      // place a copy of the value.
-      if (!empty($entity->microdata['title']) && !empty($entity->microdata['title']['#attributes'])) {
-        // Sometimes the title is actually a 'name' property.
-        $title = isset($entity->title) ? $entity->title : $entity->name;
-        $field_id = microdata_get_itemref_id();
-        $entity->microdata['title']['#attributes']['content'] = $title;
-        $entity->microdata['title']['#attributes']['id'] = $field_id;
-        $titles[$entity_type][] = array('#attributes' => $entity->microdata['title']['#attributes']);
-        $attributes['#attributes']['itemref'][] = $field_id;
-      }
-      // Add the Schema.org URLs.
-      // @todo Remove once Google recognizes itemids #1784580.
-      if (!empty($entity->microdata['microdata_schema_url'])) {
-        $field_id = microdata_get_itemref_id();
-        $entity->microdata['microdata_schema_url']['#attributes']['id'] = $field_id;
-        $schema_urls[$entity_type][] = array('#attributes' => $entity->microdata['microdata_schema_url']['#attributes']);
-        $attributes['#attributes']['itemref'][] = $field_id;
-      }
-    }
-  }
-
-  // Add Schema.org URLs.
-  // @todo Remove this when Google accepts itemid #1784580.
-  $page['content']['microdata_items']['items'] = array(
+  $meta_tags = theme('microdata_item_meta_tags', array('items' => $items));
+  $children['microdata_items'] = $meta_tags;
+  $page['content']['microdata_items'] = array(
     '#type' => 'markup',
-    '#markup' => theme('microdata_item_meta_tags', array('items' => $items, 'html_tag' => 'span')),
-  );
-  $page['content']['microdata_items']['titles'] = array(
-    '#type' => 'markup',
-    '#markup' => theme('microdata_item_meta_tags', array('items' => $titles, 'html_tag' => 'meta')),
-  );
-  $page['content']['microdata_items']['schema_urls'] = array(
-    '#type' => 'markup',
-    '#markup' => theme('microdata_item_meta_tags', array('items' => $schema_urls, 'html_tag' => 'link')),
+    '#markup' => $meta_tags,
   );
 }
 
 /**
  * Theme function to create the HTML for the item meta tags.
- *
- * As this runs once, it has less overhead than theme_html_tag when there is a
- * large number of items on a page. However, it still allows developers to
- * switch to a different html element.
  */
 function theme_microdata_item_meta_tags($variables) {
   $output = '';
   $item_array = $variables['items'];
-  $tag = $variables['html_tag'];
-
-  $void_elements = array(
-    'area',
-    'base',
-    'br',
-    'col',
-    'command',
-    'embed',
-    'hr',
-    'img',
-    'input',
-    'keygen',
-    'link',
-    'meta',
-    'param',
-    'source',
-    'track',
-    'wbr'
-  );
-
   foreach ($item_array as $entity_type => $items) {
     foreach ($items as $id => $item) {
-      $output .= "<$tag" . drupal_attributes($item['#attributes']) . ">";
-      // If the tag is not one of the void elements, then add a closing tag.
-      if (!in_array($tag, $void_elements)) {
-        $output .= "</$tag>";
-      }
+      $output .= '<meta ' . drupal_attributes($item['#attributes']) . ' />';
     }
   }
   return $output;
@@ -789,7 +717,7 @@ function microdata_get_enabled_vocabularies() {
  *   TRUE if this field or property has microdata integration, FALSE otherwise.
  */
 function microdata_enabled($info) {
-  if (!empty($info['microdata'])) {
+  if (isset($info['microdata']) && $info['microdata'] == TRUE) {
     return TRUE;
   }
   return FALSE;
@@ -799,11 +727,9 @@ function microdata_enabled($info) {
  * Translate Entity API property types into microdata property value types. The
  * Entity API data types are documented at http://drupal.org/node/905580.
  */
-function microdata_get_value_type($type = 'no_type') {
+function microdata_get_value_type($field) {
   $microdata_value_types = &drupal_static(__FUNCTION__);
 
-  // Ensure that this has been converted from Entity API's type string.
-  $type = _microdata_get_field_type($type);
   if (!isset($microdata_value_types)) {
     // Set the basic Entity Property API data types.
     $microdata_value_types = array(
@@ -827,7 +753,19 @@ function microdata_get_value_type($type = 'no_type') {
     drupal_alter('microdata_value_types', $microdata_value_types);
   }
 
-  $type = isset($microdata_value_types[$type]) ? $microdata_value_types[$type] : NULL;
+  // Check if this is a property, a field, or a non-field render element and
+  // set the property type accordingly.
+  if (isset($field['property_type'])) {
+    $property_type = $field['property_type'];
+  }
+  else if (isset($field['type'])) {
+    $property_type = $field['type'];
+  }
+  else {
+    $property_type = 'no_type';
+  }
+
+  $type = microdata_enabled($field) && isset($microdata_value_types[$property_type]) ? $microdata_value_types[$property_type] : NULL;
 
   return $type;
 }
@@ -901,13 +839,6 @@ function microdata_mapping_to_attributes($mapping, $entity_type = NULL, $entity 
       $return[$property] = microdata_mapping_to_attributes($mapping[$property]);
     }
   }
-
-  // Google's Rich Snippets requires (for some types) a 'url' itemprop with the
-  // page's URI as the value.
-  // @todo Remove this once Google recognizes itemid #1784580.
-  if (isset($mapping['#use_schema_url'])) {
-    $return['microdata_schema_url'] = _microdata_get_schema_url($entity_type, $entity);
-  }
   // @todo Add a hook_microdata_attributes_attach to allow modules to insert
   // or change attributes. For example, field collection might want to allow
   // a field within the collection to be used as itemid.
@@ -960,33 +891,23 @@ function _microdata_load_mapping($entity_type, $bundle_type, $field = NULL) {
  *   The bundle type.
  */
 function _microdata_prepare_mapping(&$mapping, $entity_type, $bundle_type) {
-  $property_info = entity_get_property_info($entity_type);
-  // We have to check that the $bundle_type property exists here for two
-  // reasons.
-  // - Panels seems to inject a 'panel' bundle type into the node entity array.
-  // - Deleted or otherwise missing file bundles can still show up in the
-  //   $entity['bundles'] array (possibly when using File Entity module).
-  if (isset($property_info['bundles']) && isset($property_info['bundles'][$bundle_type])) {
-    $bundle_properties = $property_info['bundles'][$bundle_type]['properties'];
-  }
-
-  // @todo Figure out if any of this can be refactored using proper Entity API
-  // integration above.
   $fields = field_info_fields();
+  $instances = field_info_instances($entity_type, $bundle_type);
   _microdata_mapping_add_defaults($mapping, $entity_type, $bundle_type, $fields);
 
   foreach ($mapping as $field_name => &$field_mapping) {
     // If this is an attribute value (which start with #) or is a pseudo-field
     // (like title), then continue.
-    if ($field_name[0] === '#' || !isset($bundle_properties[$field_name])) {
+    if ($field_name[0] === '#' || empty($fields[$field_name]['type'])) {
       continue;
     }
-    $field_info = $bundle_properties[$field_name];
 
     // If this field type is registered with the Microdata system, convert the
-    // Entity API property_type to a value type.
-    if (microdata_enabled($field_info)) {
-      $field_mapping['#value_type'] = microdata_get_value_type($bundle_properties[$field_name]['type']);
+    // Entity API property_type to a value type and add the value type to the
+    // mapping.
+    $field_type = field_info_field_types($fields[$field_name]['type']);
+    if (microdata_enabled($field_type)) {
+      $field_mapping['#value_type'] = microdata_get_value_type($field_type);
     }
 
     // Iterate through the properties within the field. If the mapping's key
@@ -994,7 +915,7 @@ function _microdata_prepare_mapping(&$mapping, $entity_type, $bundle_type) {
     $properties = _microdata_get_field_properties($entity_type, $bundle_type, $field_name);
     foreach ($field_mapping as $subfield_name => &$subfield_mapping) {
       if (isset($properties[$subfield_name])) {
-        $subfield_mapping['#value_type'] = microdata_get_value_type($properties[$subfield_name]['type']);
+        $subfield_mapping['#value_type'] = microdata_get_value_type($properties[$subfield_name]);
       }
     }
   }
@@ -1031,10 +952,6 @@ function _microdata_get_field_properties($entity_type, $bundle_type, $field_name
   return array();
 }
 
-function _microdata_get_field_type($type) {
-  return preg_match('/(?<=list\<).*(?=\>)/', $type, $matches) ? $matches[0] : $type;
-}
-
 /**
  * Helper function.
  *
@@ -1065,23 +982,6 @@ function _microdata_mapping_add_defaults(&$mapping, $entity_type, $bundle_type, 
       $subfield_mapping = array_merge($defaults, $subfield_mapping);
     }
   }
-}
-
-/**
- * Helper function.
- *
- * Gets an array of attributes for the Schema URL.
- *
- * @todo Remove this function once Google recognizes itemid.
- */
-function _microdata_get_schema_url($entity_type, $entity) {
-  $entity_uri = entity_uri($entity_type, $entity);
-  return array(
-    '#attributes' => array(
-      'href' => url($entity_uri['path'], $entity_uri['options']),
-      'itemprop' => 'url',
-    ),
-  );
 }
 
 /**

@@ -42,43 +42,24 @@ function microdata_vocabulary_settings_submit($form, &$form_state) {
 
   foreach ($vocabs as $vocab_name) {
     if ($form_state['values'][$vocab_name]) {
+      $enabled_vocabs[$vocab_name] = $vocab_name;
       $cache = cache_get($vocab_name, 'cache_microdata_vocabulary');
       // @todo Add expires.
       if (empty($cache)) {
-        // Ensure that there was some content.
-        if ($data = microdata_update_vocabulary_schema($vocabulary_info[$vocab_name]['import_url'])) {
-          $schema = json_decode($data);
-          cache_set($vocab_name, $schema, 'cache_microdata_vocabulary');
-          $enabled_vocabs[$vocab_name] = $vocab_name;
-          drupal_set_message(t('The %vocab vocabulary has been enabled.', array('%vocab' => $vocabulary_info[$vocab_name]['label'])));
-        }
+        // @todo Move this to new function microdata_update_vocabulary_schema.
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $vocabulary_info[$vocab_name]['import_url']);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        $data = curl_exec($ch);
+        $info = curl_getinfo($ch);
+        curl_close($ch);
+        $schema = json_decode($data);
+        cache_set($vocab_name, $schema, 'cache_microdata_vocabulary');
       }
     }
   }
 
   variable_set('microdata_enabled_vocabularies', $enabled_vocabs);
-}
-
-/**
- * Retrieves schema data from an external source.
- *
- * @param string $import_url
- *   The URL to retrieve data from.
- * @param array $options
- *   An array of request options.
- *   @see drupal_http_request
- *
- * @return
- *   Unserialized schema data on success or NULL otherwise.
- */
-function microdata_update_vocabulary_schema($import_url, array $options = array()) {
-  $request = drupal_http_request($import_url, $options);
-
-  if (($request->code == 200) && !empty($request->data)) {
-    return $request->data;
-  }
-
-  return NULL;
 }
 
 /**
@@ -188,12 +169,6 @@ function microdata_get_bundle_type_mapping_form($mapping, $entity_type, $bundle_
     '#type' => 'textfield',
     '#title' => t('Token to use for itemid'),
     '#default_value' => isset($mapping['#itemid_token']) ? $mapping['#itemid_token'] : $default_token,
-  );
-  $form_element['itemid_settings']['use_schema_url'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Output schema:url'),
-    '#default_value' => isset($mapping['#use_schema_url']) ? $mapping['#use_schema_url'] : FALSE,
-    '#description' => t('This can be helpful for getting Rich Snippets, e.g. for Events. The relative URI of the entity will be used.'),
   );
 
   $form_element['title_itemprop'] = _microdata_get_form_elements('itemprop', 'title', $mapping, t('Itemprop(s) for title field'));
@@ -372,9 +347,9 @@ function theme_microdata_mapping_admin($variables) {
 
   $fields = field_info_instances($entity_type, $bundle_type);
   foreach ($fields as $field_name => $field) {
-    $field_info = $property_info[$field_name];
     $field_mapping = $field_mappings[$field_name]['microdata_mapping'];
-    if (microdata_enabled($field_info)) {
+    $field_info = field_info_field($field_name);
+    if (microdata_enabled(field_info_field_types($field_info['type']))) {
       $rows[] = array(
         'data' => theme('microdata_mapping_admin_overview_row', array('field' => $field, 'microdata_mapping' => $field_mapping)),
       );

@@ -16,7 +16,7 @@ function draggableviews_views_api() {
  * Alter views form to change button label.
  */
 function draggableviews_form_alter(&$form, &$form_state, $form_id) {
-  if (!isset($form['draggableviews']) || empty($form['draggableviews'])) {
+  if (!isset($form['draggableviews'][0]) || empty($form['draggableviews'])) {
     $debug = 1;
     // If form is empty, but this is a view with draggableviews field, we hide
     // Save button. This scenario occurs in case of displaying summary.
@@ -163,7 +163,7 @@ function draggableviews_preprocess_views_view_list(&$vars) {
   // Add JavaScript.
   drupal_add_library('system', 'ui.sortable');
   // Add setting of the row class.
-  $js_setting = array('draggableviews_row_class' => $class);
+  $js_setting['draggableviews_row_class'][] = $class;
   // Add setting whether ajax enabled or not.
   $js_setting['draggableviews_ajax'] = $vars['view']->field['draggableviews']->options['draggableviews']['ajax'];
   drupal_add_js($js_setting, 'setting');
@@ -252,17 +252,6 @@ function draggableviews_contextual_links_view_alter(&$element, $items) {
         }
       }
     }
-  }
-}
-
-/**
- * Implements hook_post_render().
- */
-function draggableviews_views_post_render(&$view, &$output, &$cache) {
-  // Hide "Save" button when there are no results available. We cannot do this
-  // in form_alter hook as view is not yet executed there.
-  if (empty($view->result)) {
-    $output = str_replace('<div class="form-actions form-wrapper" id="edit-actions">', '<div class="form-actions form-wrapper" id="edit-actions" style="display:none">', $output);
   }
 }
 

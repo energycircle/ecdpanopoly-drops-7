@@ -119,3 +119,4 @@ features_exclude[dependencies][views] = views
 features_exclude[field_base][field_display_title] = field_display_title
 features_exclude[field_base][field_display_subtitle] = field_display_subtitle
 features_exclude[field_base][field_content_link] = field_content_link
+project status url = https://github.com/energycircle/ec_slide.git
