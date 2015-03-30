@@ -4,7 +4,7 @@ core = 7.x
 api = 2
 exclusive = 1
 base = panopoly
-
+project status url = https://github.com/energycircle/ecdpanopoly-drops-7.git
 
 ; Drupal Core
 dependencies[] = menu
