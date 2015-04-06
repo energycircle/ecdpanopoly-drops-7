@@ -13,21 +13,27 @@ function ec_help_documentation_user_default_permissions() {
   // Exported permission: 'administer panelizer node help_documentation breadcrumbs'.
   $permissions['administer panelizer node help_documentation breadcrumbs'] = array(
     'name' => 'administer panelizer node help_documentation breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node help_documentation content'.
   $permissions['administer panelizer node help_documentation content'] = array(
     'name' => 'administer panelizer node help_documentation content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node help_documentation context'.
   $permissions['administer panelizer node help_documentation context'] = array(
     'name' => 'administer panelizer node help_documentation context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -43,21 +49,27 @@ function ec_help_documentation_user_default_permissions() {
   // Exported permission: 'administer panelizer node help_documentation layout'.
   $permissions['administer panelizer node help_documentation layout'] = array(
     'name' => 'administer panelizer node help_documentation layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node help_documentation overview'.
   $permissions['administer panelizer node help_documentation overview'] = array(
     'name' => 'administer panelizer node help_documentation overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node help_documentation settings'.
   $permissions['administer panelizer node help_documentation settings'] = array(
     'name' => 'administer panelizer node help_documentation settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -75,6 +87,7 @@ function ec_help_documentation_user_default_permissions() {
     'name' => 'create help_documentation content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -85,6 +98,7 @@ function ec_help_documentation_user_default_permissions() {
     'name' => 'delete any help_documentation content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -95,6 +109,7 @@ function ec_help_documentation_user_default_permissions() {
     'name' => 'delete own help_documentation content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -114,6 +129,7 @@ function ec_help_documentation_user_default_permissions() {
     'name' => 'edit any help_documentation content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -124,6 +140,7 @@ function ec_help_documentation_user_default_permissions() {
     'name' => 'edit own help_documentation content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

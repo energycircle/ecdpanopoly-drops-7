@@ -2,7 +2,7 @@ name = EC Help Documentation
 description = Used to deploy Help Documents to sites in the distribution.
 core = 7.x
 package = ECFeatures - BETA
-version = 7.x-1.0-beta3
+version = 7.x-1.0-beta5
 project = ec_help_documentation
 
 apps[screenshots][] = app/screenshot.png
@@ -11,10 +11,11 @@ apps[author] = Energy Circle
 apps[author_url] = http://www.energycircle.com/
 
 dependencies[] = defaultcontent
-dependencies[] = features
 dependencies[] = metatag
+dependencies[] = page_manager
+dependencies[] = panelizer
 dependencies[] = panopoly_pages
-dependencies[] = views
+dependencies[] = uuid_features
 dependencies[] = views_content
 dependencies[] = weight
 features[content_menu_links][] = management:help-documentation
@@ -29,7 +30,6 @@ features[field_base][] = field_help_documentation_type
 features[field_instance][] = node-help_documentation-body
 features[field_instance][] = node-help_documentation-field_help_documentation_type
 features[menu_custom][] = management
-features[menu_links][] = management_ec-help-documentation:help-documentation
 features[node][] = help_documentation
 features[page_manager_pages][] = ec_help_documentation
 features[panelizer_defaults][] = node:help_documentation:default:default
@@ -49,6 +49,9 @@ features[user_permission][] = delete terms in help_document_type
 features[user_permission][] = edit any help_documentation content
 features[user_permission][] = edit own help_documentation content
 features[user_permission][] = edit terms in help_document_type
+features[uuid_term][] = 58efcb29-269f-4d5e-83f3-a7c6104998bb
+features[uuid_term][] = c8b99511-1fb3-404c-acf9-a560fba65ead
+features[uuid_term][] = d99a1357-5ef1-45c0-8414-20cd7002aafc
 features[variable][] = additional_settings__active_tab_help_documentation
 features[variable][] = auto_menutitle_help_documentation
 features[variable][] = clear_all_help_documentation
@@ -90,5 +93,8 @@ features[variable][] = xmlsitemap_settings_node_help_documentation
 features[variable][] = xmlsitemap_settings_taxonomy_term_help_document_type
 features[views_view][] = ec_help_documentation
 features[weight][] = help_documentation
+<<<<<<< HEAD
+=======
 mtime = 1421084767
 project status url = https://github.com/energycircle/ec_help_documentation.git
+>>>>>>> f129476094df54ec629038e020524779572371dd
