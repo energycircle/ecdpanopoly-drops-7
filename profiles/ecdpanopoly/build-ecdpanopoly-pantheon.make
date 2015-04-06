@@ -9,4 +9,4 @@ projects[drupal][download][branch] = master
 
 ; EDPanopoly
 projects[ecdpanopoly][type] = profile
-projects[ecdpanopoly][version] = 1.1-rc7
+projects[ecdpanopoly][version] = master
