@@ -45,6 +45,7 @@ function ec_help_documentation_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Technical',
@@ -57,6 +58,7 @@ function ec_help_documentation_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Internal',
@@ -69,6 +71,7 @@ function ec_help_documentation_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
+    'url_alias' => array(),
   );
   return $terms;
 }
