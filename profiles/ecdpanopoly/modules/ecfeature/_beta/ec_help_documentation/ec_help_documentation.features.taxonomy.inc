@@ -16,6 +16,7 @@ function ec_help_documentation_taxonomy_default_vocabularies() {
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
+      'uuid' => '0a4cee93-2035-4257-9d4f-51a276d8a793',
     ),
   );
 }

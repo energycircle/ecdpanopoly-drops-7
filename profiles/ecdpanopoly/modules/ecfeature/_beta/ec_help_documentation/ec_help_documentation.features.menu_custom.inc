@@ -16,8 +16,15 @@ function ec_help_documentation_menu_default_menu_custom() {
     'title' => 'Management',
     'description' => 'The <em>Management</em> menu contains links for administrative tasks.',
   );
+  // Exported menu: menu-help-documents.
+  $menus['menu-help-documents'] = array(
+    'menu_name' => 'menu-help-documents',
+    'title' => 'Help Documents',
+    'description' => '',
+  );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Help Documents');
   t('Management');
   t('The <em>Management</em> menu contains links for administrative tasks.');
 
