@@ -282,6 +282,13 @@ function ec_help_documentation_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_help_document_type_pattern';
+  $strongarm->value = 'admin/help-documentation/[term:name]';
+  $export['pathauto_taxonomy_term_help_document_type_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'save_continue_help_documentation';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_help_documentation'] = $strongarm;
@@ -346,7 +353,7 @@ function ec_help_documentation_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_menu_rebuild_help_document_type';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['taxonomy_menu_rebuild_help_document_type'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -374,7 +381,7 @@ function ec_help_documentation_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_menu_vocab_parent_help_document_type';
-  $strongarm->value = '3258';
+  $strongarm->value = '3349';
   $export['taxonomy_menu_vocab_parent_help_document_type'] = $strongarm;
 
   $strongarm = new stdClass();

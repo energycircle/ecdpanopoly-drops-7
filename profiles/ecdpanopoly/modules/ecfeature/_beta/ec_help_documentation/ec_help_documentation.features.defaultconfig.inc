@@ -11,8 +11,7 @@ function ec_help_documentation_defaultconfig_features() {
   return array(
     'ec_help_documentation' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
-      'user_default_permissions' => 'user_default_permissions',
+      'taxonomy_default_vocabularies' => 'taxonomy_default_vocabularies',
     ),
   );
 }
@@ -314,237 +313,18 @@ function ec_help_documentation_defaultconfig_field_default_fields() {
 }
 
 /**
- * Implements hook_defaultconfig_strongarm().
+ * Implements hook_defaultconfig_taxonomy_default_vocabularies().
  */
-function ec_help_documentation_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_author_help_documentation';
-  $strongarm->value = 1;
-  $export['node_export_reset_author_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_book_mlid_help_documentation';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_book_mlid_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_changed_help_documentation';
-  $strongarm->value = 1;
-  $export['node_export_reset_changed_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_created_help_documentation';
-  $strongarm->value = 1;
-  $export['node_export_reset_created_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_last_comment_timestamp_help_documentation';
-  $strongarm->value = 1;
-  $export['node_export_reset_last_comment_timestamp_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_menu_help_documentation';
-  $strongarm->value = 1;
-  $export['node_export_reset_menu_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_path_help_documentation';
-  $strongarm->value = 1;
-  $export['node_export_reset_path_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_promote_help_documentation';
-  $strongarm->value = 0;
-  $export['node_export_reset_promote_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_revision_timestamp_help_documentation';
-  $strongarm->value = 1;
-  $export['node_export_reset_revision_timestamp_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_status_help_documentation';
-  $strongarm->value = 0;
-  $export['node_export_reset_status_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_sticky_help_documentation';
-  $strongarm->value = 0;
-  $export['node_export_reset_sticky_help_documentation'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_display_descendants_help_document_type';
-  $strongarm->value = 0;
-  $export['taxonomy_menu_display_descendants_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_display_num_help_document_type';
-  $strongarm->value = 1;
-  $export['taxonomy_menu_display_num_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_end_all_help_document_type';
-  $strongarm->value = FALSE;
-  $export['taxonomy_menu_end_all_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_expanded_help_document_type';
-  $strongarm->value = 1;
-  $export['taxonomy_menu_expanded_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_flat_help_document_type';
-  $strongarm->value = 0;
-  $export['taxonomy_menu_flat_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_hide_empty_terms_help_document_type';
-  $strongarm->value = 1;
-  $export['taxonomy_menu_hide_empty_terms_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_path_help_document_type';
-  $strongarm->value = 'taxonomy_menu_path_default';
-  $export['taxonomy_menu_path_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_rebuild_help_document_type';
-  $strongarm->value = 0;
-  $export['taxonomy_menu_rebuild_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_sync_help_document_type';
-  $strongarm->value = 1;
-  $export['taxonomy_menu_sync_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_term_item_description_help_document_type';
-  $strongarm->value = 0;
-  $export['taxonomy_menu_term_item_description_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_vocab_menu_help_document_type';
-  $strongarm->value = 'management';
-  $export['taxonomy_menu_vocab_menu_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_vocab_parent_help_document_type';
-  $strongarm->value = '3258';
-  $export['taxonomy_menu_vocab_parent_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_voc_item_description_help_document_type';
-  $strongarm->value = 0;
-  $export['taxonomy_menu_voc_item_description_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_voc_item_help_document_type';
-  $strongarm->value = FALSE;
-  $export['taxonomy_menu_voc_item_help_document_type'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_voc_name_help_document_type';
-  $strongarm->value = FALSE;
-  $export['taxonomy_menu_voc_name_help_document_type'] = $strongarm;
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_help_documentation_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'delete own help_documentation content'.
-  $permissions['delete own help_documentation content'] = array(
-    'name' => 'delete own help_documentation content',
-    'roles' => array(
-      'administrator' => 'administrator',
+function ec_help_documentation_defaultconfig_taxonomy_default_vocabularies() {
+  return array(
+    'help_document_type' => array(
+      'name' => 'Help Document Type',
+      'machine_name' => 'help_document_type',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'uuid' => 'ea07d54c-e04b-4c46-a385-57843cf644bc',
     ),
-    'module' => 'node',
   );
-
-  // Exported permission: 'delete terms in help_document_type'.
-  $permissions['delete terms in help_document_type'] = array(
-    'name' => 'delete terms in help_document_type',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit any help_documentation content'.
-  $permissions['edit any help_documentation content'] = array(
-    'name' => 'edit any help_documentation content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit terms in help_document_type'.
-  $permissions['edit terms in help_document_type'] = array(
-    'name' => 'edit terms in help_document_type',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  return $permissions;
 }
