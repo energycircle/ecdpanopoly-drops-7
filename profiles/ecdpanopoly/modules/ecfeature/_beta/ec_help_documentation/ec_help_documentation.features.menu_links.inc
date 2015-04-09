@@ -10,12 +10,12 @@
 function ec_help_documentation_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: management_help-documentation:admin/help-documentation
-  $menu_links['management_help-documentation:admin/help-documentation'] = array(
+  // Exported menu link: management_ec-help-documentation:help-documentation
+  $menu_links['management_ec-help-documentation:help-documentation'] = array(
     'menu_name' => 'management',
-    'link_path' => 'admin/help-documentation',
-    'router_path' => 'admin/help-documentation',
-    'link_title' => 'Help Documentation',
+    'link_path' => 'help-documentation',
+    'router_path' => 'help-documentation',
+    'link_title' => 'EC Help Documentation',
     'options' => array(
       'attributes' => array(
         'title' => '',
@@ -25,19 +25,19 @@ function ec_help_documentation_menu_default_menu_links() {
         'path' => 'profiles/ecdpanopoly/modules/eccontrib-discontinue/menu_icons/images/default_icon.png',
         'image_style' => 'menu_icon',
       ),
-      'identifier' => 'management_help-documentation:admin/help-documentation',
+      'identifier' => 'management_ec-help-documentation:help-documentation',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => 50,
     'customized' => 1,
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Help Documentation');
+  t('EC Help Documentation');
 
 
   return $menu_links;
