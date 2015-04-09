@@ -8,5 +8,8 @@
  * Implements hook_uuid_default_entities().
  */
 function ec_help_documentation_uuid_default_entities() {
+  $entities = array();
 
+
+  return $entities;
 }
