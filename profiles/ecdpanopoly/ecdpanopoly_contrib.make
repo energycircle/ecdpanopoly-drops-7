@@ -16,7 +16,7 @@ projects[admin_theme][version] = 1.x
 projects[admin_theme][subdir] = eccontrib
 
 projects[advanced_help][version] = 1.x
-projects[advanced_help][subdir] = eccontrib-discontinue
+projects[advanced_help][subdir] = eccontrib
 
 projects[auto_menutitle][version] = 1.x
 projects[auto_menutitle][subdir] = eccontrib
@@ -52,7 +52,7 @@ projects[entity2text][version] = 1.x
 projects[entity2text][subdir] = eccontrib-discontinue
 
 projects[entity_dependency][version] = 1.x
-projects[entity_dependency][subdir] = eccontrib-discontinue
+projects[entity_dependency][subdir] = eccontrib
 
 projects[entityform][version] = 2.x
 projects[entityform][subdir] = eccontrib
@@ -67,7 +67,7 @@ projects[entity_view_mode][version] = 1.x
 projects[entity_view_mode][subdir] = eccontrib
 
 projects[entityreference_current][version] = 1.x
-projects[entityreference_current][subdir] = eccontrib-discontinue
+projects[entityreference_current][subdir] = eccontrib
 
 projects[entityreference_filter][version] = 1.2
 projects[entityreference_filter][subdir] = eccontrib

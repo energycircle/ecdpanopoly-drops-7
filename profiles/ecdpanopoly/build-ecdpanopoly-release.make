@@ -6,4 +6,4 @@ includes[] = drupal-org-core.make
 
 ; EDPanopoly
 projects[ecdpanopoly][type] = profile
-projects[ecdpanopoly][version] = 1.1-rc7
+projects[ecdpanopoly][version] = 1.1-rc8
