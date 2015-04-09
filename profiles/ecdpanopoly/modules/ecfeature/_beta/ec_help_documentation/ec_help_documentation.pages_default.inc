@@ -30,10 +30,10 @@ function ec_help_documentation_default_page_manager_pages() {
     'logic' => 'or',
   );
   $page->menu = array(
-    'type' => 'none',
+    'type' => 'normal',
     'title' => 'EC Help Documentation',
     'name' => 'management',
-    'weight' => '0',
+    'weight' => '50',
     'parent' => array(
       'type' => 'none',
       'title' => '',

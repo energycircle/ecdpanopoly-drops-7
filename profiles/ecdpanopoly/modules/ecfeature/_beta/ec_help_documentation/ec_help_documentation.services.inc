@@ -95,6 +95,19 @@ function ec_help_documentation_default_services_endpoint() {
         ),
       ),
     ),
+    'menu_link' => array(
+      'operations' => array(
+        'retrieve' => array(
+          'enabled' => '1',
+        ),
+        'update' => array(
+          'enabled' => '1',
+        ),
+        'delete' => array(
+          'enabled' => '1',
+        ),
+      ),
+    ),
     'node' => array(
       'operations' => array(
         'retrieve' => array(
@@ -161,9 +174,6 @@ function ec_help_documentation_default_services_endpoint() {
     'taxonomy_vocabulary' => array(
       'operations' => array(
         'retrieve' => array(
-          'enabled' => '1',
-        ),
-        'create' => array(
           'enabled' => '1',
         ),
         'update' => array(

@@ -11,7 +11,7 @@ function ec_help_documentation_defaultconfig_features() {
   return array(
     'ec_help_documentation' => array(
       'field_default_fields' => 'field_default_fields',
-      'taxonomy_default_vocabularies' => 'taxonomy_default_vocabularies',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -313,18 +313,123 @@ function ec_help_documentation_defaultconfig_field_default_fields() {
 }
 
 /**
- * Implements hook_defaultconfig_taxonomy_default_vocabularies().
+ * Implements hook_defaultconfig_strongarm().
  */
-function ec_help_documentation_defaultconfig_taxonomy_default_vocabularies() {
-  return array(
-    'help_document_type' => array(
-      'name' => 'Help Document Type',
-      'machine_name' => 'help_document_type',
-      'description' => '',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => 0,
-      'uuid' => 'ea07d54c-e04b-4c46-a385-57843cf644bc',
-    ),
+function ec_help_documentation_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entity_uuid';
+  $strongarm->value = array(
+    'node' => TRUE,
+    'taxonomy_term' => TRUE,
+    'cer' => 1,
+    'entityform' => 0,
+    'entityform_type' => 1,
+    'entity_rule_setting' => 1,
+    'fieldable_panels_pane' => TRUE,
+    'redirect' => 1,
+    'file' => TRUE,
+    'taxonomy_vocabulary' => 1,
+    'user' => TRUE,
+    'wysiwyg_profile' => 1,
+    'rules_config' => 1,
+    'menu_link' => 1,
   );
+  $export['entity_uuid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_node';
+  $strongarm->value = array(
+    'panopoly_page' => 'panopoly_page',
+    'help_documentation' => 'help_documentation',
+    'product_page' => 'product_page',
+    'pcase' => 'pcase',
+    'panopoly_landing_page' => 0,
+  );
+  $export['uuid_features_entity_node'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_taxonomy_term';
+  $strongarm->value = array(
+    'panopoly_categories' => 'panopoly_categories',
+    'blog_categories' => 'blog_categories',
+    'slide_set' => 'slide_set',
+    'article_types' => 'article_types',
+    'distinction_types' => 'distinction_types',
+    'departments' => 'departments',
+    'help_document_type' => 'help_document_type',
+  );
+  $export['uuid_features_entity_taxonomy_term'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_assets_path';
+  $strongarm->value = '';
+  $export['uuid_features_file_assets_path'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_mode';
+  $strongarm->value = 'inline';
+  $export['uuid_features_file_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_node';
+  $strongarm->value = array(
+    'panopoly_page' => 'panopoly_page',
+    'help_documentation' => 'help_documentation',
+    'product_page' => 'product_page',
+    'pcase' => 'pcase',
+    'panopoly_landing_page' => 0,
+  );
+  $export['uuid_features_file_node'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_supported_fields';
+  $strongarm->value = 'file, image';
+  $export['uuid_features_file_supported_fields'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_taxonomy_term';
+  $strongarm->value = array(
+    'panopoly_categories' => 'panopoly_categories',
+    'blog_categories' => 'blog_categories',
+    'slide_set' => 'slide_set',
+    'article_types' => 'article_types',
+    'distinction_types' => 'distinction_types',
+    'departments' => 'departments',
+    'help_document_type' => 'help_document_type',
+  );
+  $export['uuid_features_file_taxonomy_term'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_vocabulary_terms';
+  $strongarm->value = 1;
+  $export['uuid_features_vocabulary_terms'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_services_support_all_entity_types';
+  $strongarm->value = 1;
+  $export['uuid_services_support_all_entity_types'] = $strongarm;
+
+  return $export;
 }
