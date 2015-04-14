@@ -6,8 +6,8 @@ package = Fields
 files[] = email.migrate.inc
 
 ; Information added by Drupal.org packaging script on 2014-04-10
-version = "7.x-1.3"
+version = "7.x-1.3+0-dev"
 core = "7.x"
 project = "email"
-datestamp = "1397134155"
+datestamp = "1397133865"
 

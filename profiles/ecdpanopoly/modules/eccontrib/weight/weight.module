@@ -563,7 +563,7 @@ function weight_preprocess_views_view_table(&$variables) {
  * Implements hook_apachesolr_index_document_build_node().
  */
 function weight_apachesolr_index_document_build_node(ApacheSolrDocument $document, $node, $env_id) {
-  $document->is_weight = (int) $node->weight_weight;
+  $document->is_weight = isset($node->weight_weight) ? (int) $node->weight_weight : NULL;
 }
 
 /**
@@ -625,7 +625,7 @@ function _weight_set_weight($node) {
     }
   }
 
-  if ($node->nid && $weight) {
+  if ($node->nid && is_numeric($weight)) {
     db_merge('weight_weights')
     ->key(array('entity_id' => $node->nid))
     ->fields(array(
@@ -640,6 +640,11 @@ function _weight_set_weight($node) {
 
     // Reset this node's cache.
     entity_get_controller('node')->resetCache(array($node->nid));
+
+    // Let Search API know the weight has been updated.
+    if (module_exists('search_api')) {
+      search_api_track_item_change('node', array($node->nid));
+    }
   }
 }
 
@@ -739,10 +744,10 @@ function _weight_get_settings($type = NULL) {
  * Get content types that are weight enabled.
  */
 function _weight_get_types() {
-  $types = array();
-  $result = db_query('SELECT type FROM {weight_settings} WHERE weight_enabled=1');
-  foreach ($result as $row) {
-    $types[] = $row->type;
+  // No need to use shared static cache for this.
+  static $types = NULL;
+  if ($types === NULL) {
+    $types = db_query('SELECT type FROM {weight_settings} WHERE weight_enabled=1')->fetchCol();
   }
 
   return $types;

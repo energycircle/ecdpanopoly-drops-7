@@ -28,7 +28,7 @@ class context_condition_pantheon_environment extends context_condition {
       $environment_match = FALSE;
       foreach((array) $context->conditions['pantheon_environment']['values'] as $key => $value) {
         // Local environment has no Pantheon server variable.
-        if (!defined('PANTHEON_ENVIRONMENT')) {
+        if (!defined(PANTHEON_ENVIRONMENT)) {
           if ($key === CONTEXT_PANTHEON_LOCAL_KEY) {
             $environment_match = TRUE;
           }

@@ -71,7 +71,7 @@ function deploy_rules_plan_get_options() {
  * Option callback.
  */
 function deploy_rules_manager_plan_get_options() {
-  return deploy_manager_plan_get_options();
+  return deploy_manager_plan_get_options(array('fetch_only' => FALSE));
 }
 
 /**

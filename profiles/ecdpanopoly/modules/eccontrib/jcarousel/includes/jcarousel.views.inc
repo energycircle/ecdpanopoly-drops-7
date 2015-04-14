@@ -33,7 +33,7 @@ function jcarousel_views_ajax() {
     $display_id = $_REQUEST['view_display_id'];
     $args = isset($_REQUEST['view_args']) && $_REQUEST['view_args'] !== '' ? explode('/', $_REQUEST['view_args']) : array();
     $path = isset($_REQUEST['view_path']) ? $_REQUEST['view_path'] : NULL;
-    $dom_id = isset($_REQUEST['jcarousel_dom_id']) ? intval($_REQUEST['jcarousel_dom_id']) : NULL;
+    $dom_id = isset($_REQUEST['jcarousel_dom_id']) ? $_REQUEST['jcarousel_dom_id'] : NULL;
     $first = isset($_REQUEST['first']) ? intval($_REQUEST['first']) : NULL;
     $last = isset($_REQUEST['last']) ? intval($_REQUEST['last']) : NULL;
     views_include('ajax');
@@ -121,7 +121,7 @@ function jcarousel_views_add($view, $display_id = NULL) {
     'view_base_path' => $view->get_path(),
     'view_display_id' => $display_id,
     'view_name' => $view->name,
-    'jcarousel_dom_id' => isset($view->jcarousel_dom_id) ? $view->jcarousel_dom_id : ++$dom_counter,
+    'jcarousel_dom_id' => isset($view->jcarousel_dom_id) ? $view->jcarousel_dom_id : $view->name . '_' . $display_id . '_' . ++$dom_counter,
   );
 
   foreach ($view->style_plugin->options as $key => $option) {
@@ -143,15 +143,17 @@ function jcarousel_views_add($view, $display_id = NULL) {
   }
 
   // Get the total number of items in this view.
-  $count_query = $view->build_info['count_query']->countQuery();
-  $count = $count_query->execute()->fetchField();
+  if ($view->build_info['count_query']) {
+    $count_query = $view->build_info['count_query']->countQuery();
+    $count = $count_query->execute()->fetchField();
 
-  // Views may already populate total_rows later, but since we've already
-  // generated this value, we might as well make it available.
-  $view->total_rows = $count;
+    // Views may populate total_rows later but since we've already generated
+    // this value we might as well make it available.
+    $view->total_rows = $count;
+  }
 
   // If there is just one item disable the auto-scroll and rotation.
-  if ($count == 1) {
+  if ($view->total_rows == 1) {
     $options['wrap'] = NULL;
     $options['auto'] = 0;
   }
@@ -170,7 +172,7 @@ function jcarousel_views_add($view, $display_id = NULL) {
   // If using AJAX, adjust the view's positioning based on the current page.
   if ($use_ajax) {
     $options['ajax'] = TRUE;
-    $options['size'] = $count;
+    $options['size'] = $view->total_rows;
 
     // Views 2:
     if (isset($view->pager)) {

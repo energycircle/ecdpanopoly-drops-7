@@ -6,9 +6,9 @@ core = 7.x
 ; Argument Handlers
 files[] = views_plugin_argument_validate_url_path.inc
 
-; Information added by Drupal.org packaging script on 2014-08-27
-version = "7.x-1.1"
+; Information added by Drupal.org packaging script on 2014-08-14
+version = "7.x-1.0+1-dev"
 core = "7.x"
 project = "views_url_path_arguments"
-datestamp = "1409150333"
+datestamp = "1408026229"
 
