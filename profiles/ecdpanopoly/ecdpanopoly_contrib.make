@@ -104,6 +104,9 @@ projects[entityreference_filter][version] = 1.2
 projects[entityreference_prepopulate][subdir] = eccontrib
 projects[entityreference_prepopulate][version] = 1.x
 
+projects[entityreference_current][subdir] = eccontrib
+projects[entityreference_current][version] = 1.x
+
 projects[eva][subdir] = eccontrib
 projects[eva][version] = 1.x
 
@@ -127,6 +130,9 @@ projects[field_hidden][version] = 1.6
 
 projects[field_multiple_limit][subdir] = eccontrib
 projects[field_multiple_limit][version] = 1.x
+
+;projects[field_permissions][version] = 1.x
+;projects[field_permissions][subdir] = eccontrib
 
 projects[field_validation][subdir] = eccontrib
 projects[field_validation][version] = 2.x
@@ -289,11 +295,17 @@ projects[ec_modifications][type] = "module"
 projects[ec_modifications][version] = "2.6+2-dev"
 
 
+
 ; Libraries
 libraries[superfish][download][type] = "get"
 libraries[superfish][type] = "library"
 libraries[superfish][directory_name] = "superfish"
 libraries[superfish][download][url] = "https://github.com/mehrpadin/Superfish-for-Drupal/archive/master.zip"
+
+libraries[superfish_hack][download][type] = "git"
+libraries[superfish_hack][type] = "library"
+libraries[superfish_hack][directory_name] = "superfish_hack"
+libraries[superfish_hack][download][url] = "https://github.com/energycircle/superfish_hack.git"
 
 libraries[flexslider][download][type] = "get"
 libraries[flexslider][type] = "library"

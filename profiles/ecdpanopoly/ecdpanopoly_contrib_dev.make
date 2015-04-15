@@ -23,8 +23,8 @@ projects[features_roles_permissions][subdir] = ec-dev
 projects[features_orphans][version] = 1.2
 projects[features_orphans][subdir] = ec-dev
 
-projects[feature_set][version] = 1.x
-projects[feature_set][subdir] = ec-dev
+;projects[feature_set][version] = 1.x
+;projects[feature_set][subdir] = ec-dev
 
 projects[node_export][version] = 3.x
 projects[node_export][subdir] = ec-dev
@@ -36,6 +36,3 @@ projects[field_tools][subdir] = ec-dev
 
 projects[ftools][version] = 2.x-dev
 projects[ftools][subdir] = ec-dev
-
-projects[field_permissions][version] = 1.x
-projects[field_permissions][subdir] = ec-dev

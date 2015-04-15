@@ -34,17 +34,17 @@ system_install() {
 
   # Build Codebase
   mkdir profiles
-  mv panopoly profiles/
+  mv ecdpanopoly profiles/
   mkdir drupal
   mv profiles drupal/
 
   # Build the current branch.
-  header Building Panopoly from current branch
+  header Building ecdpanopoly from current branch
   cd drupal
-  drush make --yes profiles/panopoly/drupal-org-core.make --prepare-install
-  drush make --yes profiles/panopoly/drupal-org.make --no-core --contrib-destination=profiles/panopoly
-  if [[ "$INSTALL_PANOPOLY_DEMO_FROM_APPS" != 1 ]]; then
-    drush dl panopoly_demo-1.x-dev
+  drush make --yes profiles/ecdpanopoly/drupal-org-core.make --prepare-install
+  drush make --yes profiles/ecdpanopoly/drupal-org.make --no-core --contrib-destination=profiles/ecdpanopoly
+  if [[ "$INSTALL_ecdpanopoly_DEMO_FROM_APPS" != 1 ]]; then
+    drush dl ecdpanopoly_demo-1.x-dev
   fi
   drush dl diff
   mkdir sites/default/private
@@ -53,19 +53,19 @@ system_install() {
 
   # Build Behat dependencies
   header Installing Behat
-  cd profiles/panopoly/modules/panopoly/panopoly_test/tests
+  cd profiles/ecdpanopoly/modules/ecdpanopoly/ecdpanopoly_test/tests
   composer install --prefer-source --no-interaction
   cd ../../../../../../../
 
   # Verify that all the .make files will work on Drupal.org.
   header Verifying .make file
-  drush verify-makefile drupal/profiles/panopoly/drupal-org.make
-  find drupal/profiles/panopoly/modules -name \*.make -print0 | xargs -0 -n1 drush verify-makefile
+  drush verify-makefile drupal/profiles/ecdpanopoly/drupal-org.make
+  find drupal/profiles/ecdpanopoly/modules -name \*.make -print0 | xargs -0 -n1 drush verify-makefile
 
   # Download an old version to test upgrading from.
   if [[ "$UPGRADE" != none ]]; then
-    header Downloading Panopoly $UPGRADE
-    drush dl panopoly-$UPGRADE
+    header Downloading ecdpanopoly $UPGRADE
+    drush dl ecdpanopoly-$UPGRADE
   fi
 
   # Setup files
@@ -117,7 +117,7 @@ system_install() {
 # Setup Drupal to run the tests.
 #
 before_tests() {
-  # Hack to get the correct version of Panopoly Demo (there was no 1.0-rc4 or 1.0-rc5)
+  # Hack to get the correct version of ecdpanopoly Demo (there was no 1.0-rc4 or 1.0-rc5)
   UPGRADE_DEMO_VERSION=`echo $UPGRADE | sed -e s/^7.x-//`
   case $UPGRADE_DEMO_VERSION in
     1.0-rc[45])
@@ -130,28 +130,28 @@ before_tests() {
   if [[ "$UPGRADE" == none ]]; then
     cd drupal
   else
-    cd panopoly-$UPGRADE
-    if [[ "$INSTALL_PANOPOLY_DEMO_FROM_APPS" != 1 ]]; then
-      drush dl panopoly_demo-$UPGRADE_DEMO_VERSION
+    cd ecdpanopoly-$UPGRADE
+    if [[ "$INSTALL_ecdpanopoly_DEMO_FROM_APPS" != 1 ]]; then
+      drush dl ecdpanopoly_demo-$UPGRADE_DEMO_VERSION
     fi
   fi
-  drush si panopoly --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="Panopoly" --yes
+  drush si ecdpanopoly --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="ecdpanopoly" --yes
   drush vset -y file_private_path "sites/default/private/files"
   drush vset -y file_temporary_path "sites/default/private/temp"
 
-  # Switch to the Panopoly platform built from Git (if we aren't there already).
+  # Switch to the ecdpanopoly platform built from Git (if we aren't there already).
   cd ../drupal
 
   # If we're an upgrade test, run the upgrade process.
   if [[ "$UPGRADE" != none ]]; then
     header Upgrading to latest version
-    cp -a ../panopoly-$UPGRADE/sites/default/* sites/default/
+    cp -a ../ecdpanopoly-$UPGRADE/sites/default/* sites/default/
     run_test drush updb --yes
     drush cc all
   fi
 
-  # Our tests depend on panopoly_test.
-  drush en -y panopoly_test
+  # Our tests depend on ecdpanopoly_test.
+  drush en -y ecdpanopoly_test
 
   # Run the webserver
   header Starting webserver
@@ -178,7 +178,7 @@ run_tests() {
   # Make the Travis tests repos agnostic by injecting drupal_root with BEHAT_PARAMS
   export BEHAT_PARAMS="extensions[Drupal\\DrupalExtension\\Extension][drupal][drupal_root]=$BUILD_TOP/drupal"
 
-  cd drupal/profiles/panopoly/modules/panopoly/panopoly_test/tests
+  cd drupal/profiles/ecdpanopoly/modules/ecdpanopoly/ecdpanopoly_test/tests
 
   # If this isn't an upgrade, we test if any features are overridden.
   if [[ "$UPGRADE" == none ]]; then

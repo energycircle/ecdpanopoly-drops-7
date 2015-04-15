@@ -7,9 +7,9 @@ files[] = draggableviews_book_views_handler_argument.inc
 
 dependencies[] = draggableviews
 dependencies[] = book
-; Information added by Drupal.org packaging script on 2015-03-05
-version = "7.x-2.1+2-dev"
+; Information added by Drupal.org packaging script on 2015-04-11
+version = "7.x-2.1+3-dev"
 core = "7.x"
 project = "draggableviews"
-datestamp = "1425553389"
+datestamp = "1428713887"
 
