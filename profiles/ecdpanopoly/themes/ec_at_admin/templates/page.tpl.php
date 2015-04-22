@@ -3,9 +3,6 @@
     <div class="container">
       <div id="topbar" class="clearfix">
         <?php print $breadcrumb; ?>
-        <?php if ($datetime_rfc): ?>
-          <time datetime="<?php print $datetime_iso; ?>"><?php print $datetime_rfc; ?></time>
-        <?php endif; ?>
       </div>
     </div>
   </div>
