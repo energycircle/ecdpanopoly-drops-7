@@ -200,7 +200,7 @@ function ec_casestudy_views_default_views() {
   /* Display: Case Study - Service group page */
   $handler = $view->new_display('panel_pane', 'Case Study - Service group page', 'panel_pane_3');
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Broken/missing handler */
+  /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_ref_serv_group_case_study_node']['id'] = 'reverse_field_ref_serv_group_case_study_node';
   $handler->display->display_options['relationships']['reverse_field_ref_serv_group_case_study_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_ref_serv_group_case_study_node']['field'] = 'reverse_field_ref_serv_group_case_study_node';
@@ -264,7 +264,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Slide image */
   $handler->display->display_options['fields']['field_slide_image']['id'] = 'field_slide_image';
   $handler->display->display_options['fields']['field_slide_image']['table'] = 'field_data_field_slide_image';
   $handler->display->display_options['fields']['field_slide_image']['field'] = 'field_slide_image';

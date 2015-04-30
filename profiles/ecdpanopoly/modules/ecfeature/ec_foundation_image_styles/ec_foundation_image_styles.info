@@ -1,8 +1,8 @@
 name = EC-Foundation-Image-Styles
 description = Basic set of imagecache styles
 core = 7.x
-package = ECFeatures - Core
-version = 7.x-1.0-beta3
+package = ECFeatures
+version = 7.x-1.0-beta2
 project = ec_foundation_image_styles
 dependencies[] = image
 features[features_api][] = api:2

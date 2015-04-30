@@ -2,6 +2,22 @@ ECDPanopoly  7.x-1.1-rc7, 2015-3-20
 ---------------------------
 All changes in this release:
 
+
+    Getting ready for the 1.20 release
+    Update Panopoly Pages for Issue #2456635 by candelas, dsnopek: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'rid' cannot be null
+    #2457429 by dsnopek: Intermittent test failures due to Chrome errors
+    Update Panopoly Admin for Issue #2429327 by B-Prod: The alteration of node options may conflict with other forms
+    #2455191: CHANGELOG.txt updates for 1.19 went wrong
+    Start testing upgrades from the 1.19 release.
+    Restored drupal-org.make after the 1.19 release
+
+
+
+
+ECDPanopoly  7.x-1.1-rc7, 2015-3-20
+---------------------------
+All changes in this release:
+
     Update Panopoly Core for Issue #2455073: Update to CTools 1.7 for SA-CONTRIB-2015-079
     #2455061: Update Drupal core to 7.35 for SA-CORE-2015-001
     Update Panopoly Magic and Test for Issue #2443499 by dsnopek: User profile: Unable to chage image field style formatter options because they don't get saved

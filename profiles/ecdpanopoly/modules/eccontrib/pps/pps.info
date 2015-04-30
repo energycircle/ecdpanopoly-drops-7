@@ -5,9 +5,9 @@ package = "Panels"
 dependencies[] = panels
 
 
-; Information added by drupal.org packaging script on 2013-10-05
-version = "7.x-1.0"
+; Information added by drupal.org packaging script on 2013-10-06
+version = "7.x-1.0+0-dev"
 core = "7.x"
 project = "pps"
-datestamp = "1380980683"
+datestamp = "1381055889"
 

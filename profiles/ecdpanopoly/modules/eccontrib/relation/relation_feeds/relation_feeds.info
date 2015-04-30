@@ -4,12 +4,11 @@ core = 7.x
 package = Relation
 files[] = tests/relation.feeds_processor.test
 dependencies[] = relation
-; Feeds integration does not work with alpha8 but that's the latest release
-dependencies[] = feeds (!=7.x-1.0-alpha8)
+dependencies[] = feeds
 
-; Information added by Drupal.org packaging script on 2015-02-11
-version = "7.x-1.0-rc7"
+; Information added by Drupal.org packaging script on 2014-11-09
+version = "7.x-1.0-rc6"
 core = "7.x"
 project = "relation"
-datestamp = "1423640902"
+datestamp = "1415536997"
 

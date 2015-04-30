@@ -7,8 +7,8 @@ configure = admin/config/system/entity-uuid
 dependencies[] = uuid
 
 ; Information added by Drupal.org packaging script on 2014-02-06
-version = "7.x-1.0"
+version = "7.x-1.x-dev"
 core = "7.x"
 project = "entity_uuid"
-datestamp = "1391657306"
+datestamp = "1391657005"
 
