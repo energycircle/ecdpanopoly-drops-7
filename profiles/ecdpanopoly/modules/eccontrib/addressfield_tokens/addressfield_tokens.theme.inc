@@ -1,15 +1,7 @@
 <?php
-// $Id$
-/*
- * Copyright © 2012 New Signature
- *
- * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
- * You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
- * You can contact New Signature by electronic mail at labs@newsignature.com -or- by U.S. Postal Service at 1100 H St. NW, Suite 940, Washington, DC 20005.
- */
 /**
- * @file Provides theme functions for the new addressfield field formatters.
+ * @file
+ * Theme Controllers.
  */
 
 /**
@@ -28,7 +20,7 @@ function theme_addressfield_formatter($vars) {
 /**
  * Implements theme_field();
  * 
- * Themes an address field into "city, state, country"
+ * Themes an address field into "city state, country"
  */
 function theme_addressfield_formatter__citystate($vars) {
   $loc = $vars['address'];
@@ -59,7 +51,7 @@ function theme_addressfield_formatter__citystate($vars) {
 /**
  * Implements theme_field();
  * 
- * Themes an address field into "name, street1, street2, city, state, zip, country"
+ * Themes an address field into "name, street1, street2, city state zip country"
  */
 function theme_addressfield_formatter__linear($vars) {
   $loc = $vars['address'];
@@ -95,4 +87,25 @@ function theme_addressfield_formatter__linear($vars) {
   $output = implode(', ', $out);
   
   return $output;
+}
+
+function theme_addressfield_formatter__components($vars) {
+  $loc = $vars['address'];
+  $components = $vars['components'];
+  $separator = $vars['separator'];
+  
+  $out = array();
+  foreach ($components as $key) {
+    if (!empty($loc[$key])) {
+      $out[$key] = $loc[$key];
+    }
+    elseif ($key == 'country_full' && !empty($loc['country'])) {
+      $out[$key] = _addressfield_tokens_country($loc['country']);
+    }
+    elseif ($key == 'administrative_area_full' && !empty($loc['country']) && !empty($loc['administrative_area'])) {
+      $out[$key] = _addressfield_tokens_state($loc['country'], $loc['administrative_area']);
+    }
+  }
+  
+  return implode($separator, $out);
 }

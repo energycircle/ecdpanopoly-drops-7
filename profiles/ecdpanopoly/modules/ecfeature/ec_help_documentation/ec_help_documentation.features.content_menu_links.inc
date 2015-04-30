@@ -10,12 +10,12 @@
 function ec_help_documentation_content_menu_links_defaults() {
   $menu_links = array();
 
-  // Exported menu link: management:help-documentation
-  $menu_links['management:help-documentation'] = array(
+  // Exported menu link: management:admin/help-documentation
+  $menu_links['management:admin/help-documentation'] = array(
     'menu_name' => 'management',
-    'link_path' => 'help-documentation',
-    'router_path' => 'help-documentation',
-    'link_title' => 'EC Help Documentation',
+    'link_path' => 'admin/help-documentation',
+    'router_path' => 'admin/help-documentation',
+    'link_title' => 'Help Documentation',
     'options' => array(
       'attributes' => array(
         'title' => '',
@@ -31,12 +31,12 @@ function ec_help_documentation_content_menu_links_defaults() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 50,
+    'weight' => -50,
     'customized' => 1,
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('EC Help Documentation');
+  t('Help Documentation');
 
 
   return $menu_links;

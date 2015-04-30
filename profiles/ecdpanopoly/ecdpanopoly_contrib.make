@@ -3,10 +3,8 @@ core = 7.x
 
 
 ; EC CONTRIB MODS
-
-
 projects[addressfield_tokens][subdir] = eccontrib
-projects[addressfield_tokens][version] = 1.0
+projects[addressfield_tokens][version] = 1.5
 
 projects[addressfield][subdir] = eccontrib
 projects[addressfield][version] = 1.0
@@ -225,7 +223,7 @@ projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.x-dev
+projects[services][version] = 3.x
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 1.x-dev
@@ -267,12 +265,13 @@ projects[xmlsitemap][subdir] = eccontrib
 projects[xmlsitemap][version] = 2.0
 
 
-;Patches
-
+;PATCHES
 projects[superfish][patch][2163545]= https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
 projects[drupal][patch][1973278] = http://www.drupal.org/files/issues/image-accommodate_missing_definition-1973278-16.patch
 projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch" 
 projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch"
+projects[compact_forms][patch][] = "https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch"
+
 
 
 ; EC CUSTOM MODS
@@ -294,24 +293,22 @@ projects[ec_modifications][subdir] = "eccustom"
 projects[ec_modifications][type] = "module"
 projects[ec_modifications][version] = "2.6+2-dev"
 
+projects[superfish_hack][download][type] = "git"
+projects[superfish_hack][download][url] = "https://github.com/energycircle/superfish_hack.git"
+projects[superfish_hack][subdir] = "eccustom"
+projects[superfish_hack][type] = "module"
 
-
-; Libraries
+; LIBRARIES
 libraries[superfish][download][type] = "get"
 libraries[superfish][type] = "library"
 libraries[superfish][directory_name] = "superfish"
 libraries[superfish][download][url] = "https://github.com/mehrpadin/Superfish-for-Drupal/archive/master.zip"
-
-libraries[superfish_hack][download][type] = "git"
-libraries[superfish_hack][type] = "library"
-libraries[superfish_hack][directory_name] = "superfish_hack"
-libraries[superfish_hack][download][url] = "https://github.com/energycircle/superfish_hack.git"
 
 libraries[flexslider][download][type] = "get"
 libraries[flexslider][type] = "library"
 libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][download][url] = "https://api.github.com/repos/woothemes/FlexSlider/zipball/version/2.2.2"
 
-; Themes
+; THEMES
 projects[adaptivetheme][version] = 3.x
 projects[adaptivetheme][type] = theme

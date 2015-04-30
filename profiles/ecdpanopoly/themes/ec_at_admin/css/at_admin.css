@@ -1228,7 +1228,7 @@ html.js input.throbbing {
   background-position: 100% -16px;
 }
 div.form-type-textfield {
-  /*position: relative;*/
+  position: relative;
 }
 
 /* Panels layout page TODO: check accessibility regarding width settings */

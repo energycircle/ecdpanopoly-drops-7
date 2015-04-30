@@ -15,7 +15,7 @@ function ec_help_documentation_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'EC Help Documentation';
   $page->admin_description = 'Used for internal documentation';
-  $page->path = 'help-documentation';
+  $page->path = 'admin/help-documentation';
   $page->access = array(
     'plugins' => array(
       0 => array(
@@ -30,10 +30,10 @@ function ec_help_documentation_default_page_manager_pages() {
     'logic' => 'or',
   );
   $page->menu = array(
-    'type' => 'none',
+    'type' => 'normal',
     'title' => 'EC Help Documentation',
     'name' => 'management',
-    'weight' => '0',
+    'weight' => '50',
     'parent' => array(
       'type' => 'none',
       'title' => '',
@@ -79,79 +79,91 @@ function ec_help_documentation_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'EC Help Documentation';
   $display->uuid = 'c8b96c6e-92d1-462c-9aa3-02a95cb718e7';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-e7ef3d77-5c33-42de-b2cc-966f7c620c4d';
-    $pane->panel = 'two_66_33_first';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'uuid:8800c5de-a52d-4eb0-9801-569f9ba3de7e';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_mode' => 'full',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'e7ef3d77-5c33-42de-b2cc-966f7c620c4d';
-    $display->content['new-e7ef3d77-5c33-42de-b2cc-966f7c620c4d'] = $pane;
-    $display->panels['two_66_33_first'][0] = 'new-e7ef3d77-5c33-42de-b2cc-966f7c620c4d';
-    $pane = new stdClass();
-    $pane->pid = 'new-5cc71db6-a019-4a68-bddb-d2a0c1065766';
-    $pane->panel = 'two_66_33_first';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ec_help_documentation-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_settings' => 'fields',
-      'header_type' => 'none',
-      'view_mode' => 'teaser',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '5cc71db6-a019-4a68-bddb-d2a0c1065766';
-    $display->content['new-5cc71db6-a019-4a68-bddb-d2a0c1065766'] = $pane;
-    $display->panels['two_66_33_first'][1] = 'new-5cc71db6-a019-4a68-bddb-d2a0c1065766';
-    $pane = new stdClass();
-    $pane->pid = 'new-b404d566-6d71-4cbb-aab1-ed250fc92d32';
-    $pane->panel = 'two_66_33_second';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ec_help_documentation-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_settings' => 'fields',
-      'header_type' => 'none',
-      'view_mode' => 'teaser',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'b404d566-6d71-4cbb-aab1-ed250fc92d32';
-    $display->content['new-b404d566-6d71-4cbb-aab1-ed250fc92d32'] = $pane;
-    $display->panels['two_66_33_second'][0] = 'new-b404d566-6d71-4cbb-aab1-ed250fc92d32';
-  $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-e7ef3d77-5c33-42de-b2cc-966f7c620c4d';
+  $pane = new stdClass();
+  $pane->pid = 'new-5cc71db6-a019-4a68-bddb-d2a0c1065766';
+  $pane->panel = 'two_66_33_first';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ec_help_documentation-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+    'view_mode' => 'teaser',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '5cc71db6-a019-4a68-bddb-d2a0c1065766';
+  $display->content['new-5cc71db6-a019-4a68-bddb-d2a0c1065766'] = $pane;
+  $display->panels['two_66_33_first'][0] = 'new-5cc71db6-a019-4a68-bddb-d2a0c1065766';
+  $pane = new stdClass();
+  $pane->pid = 'new-57d11cae-c830-4a89-959c-ffcaf43b1cad';
+  $pane->panel = 'two_66_33_second';
+  $pane->type = 'menu_tree';
+  $pane->subtype = 'menu-help-documents';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'menu_name' => 'menu-help-documents',
+    'parent_mlid' => 0,
+    'parent' => 'menu-help-documents:0',
+    'title_link' => 0,
+    'admin_title' => '',
+    'level' => '1',
+    'follow' => 0,
+    'depth' => '0',
+    'expanded' => 0,
+    'sort' => 0,
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '57d11cae-c830-4a89-959c-ffcaf43b1cad';
+  $display->content['new-57d11cae-c830-4a89-959c-ffcaf43b1cad'] = $pane;
+  $display->panels['two_66_33_second'][0] = 'new-57d11cae-c830-4a89-959c-ffcaf43b1cad';
+  $pane = new stdClass();
+  $pane->pid = 'new-b404d566-6d71-4cbb-aab1-ed250fc92d32';
+  $pane->panel = 'two_66_33_second';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ec_help_documentation-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+    'view_mode' => 'teaser',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = 'b404d566-6d71-4cbb-aab1-ed250fc92d32';
+  $display->content['new-b404d566-6d71-4cbb-aab1-ed250fc92d32'] = $pane;
+  $display->panels['two_66_33_second'][1] = 'new-b404d566-6d71-4cbb-aab1-ed250fc92d32';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['ec_help_documentation'] = $page;

@@ -1,0 +1,16 @@
+name = EC Blog Demo Content
+description = Example demo content for the blog content type
+core = 7.x
+package = ECFeatures - Demo
+version = 7.x-1.0-beta1
+project = ec_blog_demo_content
+dependencies[] = ctools
+dependencies[] = ec_blog_post
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = uuid_features
+__drupal_alter_by_ref[][node][blog_post] = blog_post
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = 4164e0fa-76fd-4421-9f76-31c019db75b1
+features[uuid_node][] = 5a493cbb-f8ce-4d67-ad92-f055e9d45bf7

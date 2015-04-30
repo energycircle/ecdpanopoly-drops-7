@@ -55,6 +55,23 @@ function ec_slide_image_styles_alter(&$data) {
 }
 
 /**
+ * Implements hook_user_default_permissions_alter().
+ */
+function ec_slide_user_default_permissions_alter(&$data) {
+  if (isset($data['create slide content'])) {
+    unset($data['create slide content']['roles']['EC Platinum admin']);
+    unset($data['create slide content']['roles']['EC Platinum editor']);
+  }
+  if (isset($data['delete any slide content'])) {
+    unset($data['delete any slide content']['roles']['EC Platinum admin']);
+  }
+  if (isset($data['edit any slide content'])) {
+    unset($data['edit any slide content']['roles']['EC Platinum admin']);
+    unset($data['edit any slide content']['roles']['EC Platinum editor']);
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_slide_node_info() {
