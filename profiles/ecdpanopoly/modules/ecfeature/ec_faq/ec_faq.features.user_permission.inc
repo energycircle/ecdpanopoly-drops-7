@@ -77,8 +77,6 @@ function ec_faq_user_default_permissions() {
   $permissions['create faq content'] = array(
     'name' => 'create faq content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -88,7 +86,6 @@ function ec_faq_user_default_permissions() {
   $permissions['delete any faq content'] = array(
     'name' => 'delete any faq content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -98,7 +95,6 @@ function ec_faq_user_default_permissions() {
   $permissions['delete own faq content'] = array(
     'name' => 'delete own faq content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -108,8 +104,6 @@ function ec_faq_user_default_permissions() {
   $permissions['edit any faq content'] = array(
     'name' => 'edit any faq content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -119,7 +113,6 @@ function ec_faq_user_default_permissions() {
   $permissions['edit own faq content'] = array(
     'name' => 'edit own faq content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

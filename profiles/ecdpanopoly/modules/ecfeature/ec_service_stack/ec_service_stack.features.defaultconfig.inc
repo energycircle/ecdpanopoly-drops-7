@@ -11,7 +11,6 @@ function ec_service_stack_defaultconfig_features() {
   return array(
     'ec_service_stack' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -2027,18 +2026,29 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            0 => 'public',
-            1 => 'private',
+            'private' => 'private',
+            'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
           ),
           'allowed_types' => array(
-            0 => 'image',
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
-          'browser_plugins' => array(),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 'media_default--media_browser_1',
+            'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+            'media_internet' => 'media_internet',
+            'upload' => 'upload',
+            'youtube' => 0,
+          ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 0,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => 0,
+          'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
@@ -2046,8 +2056,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_styles_list' => array(),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
         'weight' => 2,
@@ -3537,18 +3545,29 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            0 => 'public',
-            1 => 'private',
+            'private' => 'private',
+            'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
           ),
           'allowed_types' => array(
-            0 => 'image',
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
-          'browser_plugins' => array(),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 'media_default--media_browser_1',
+            'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+            'media_internet' => 'media_internet',
+            'upload' => 'upload',
+            'youtube' => 0,
+          ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 0,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => 0,
+          'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
@@ -3556,8 +3575,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_styles_list' => array(),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
         'weight' => 2,
@@ -4837,18 +4854,29 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            0 => 'public',
-            1 => 'private',
+            'private' => 'private',
+            'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
           ),
           'allowed_types' => array(
-            0 => 'image',
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
-          'browser_plugins' => array(),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 'media_default--media_browser_1',
+            'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+            'media_internet' => 'media_internet',
+            'upload' => 'upload',
+            'youtube' => 0,
+          ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 0,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => 0,
+          'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
@@ -4856,8 +4884,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_styles_list' => array(),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
         'weight' => 1,
@@ -4907,244 +4933,4 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   t('Testimonials shown on this page');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_service_stack_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_author_service';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_author_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_author_service_category';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_author_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_author_service_group';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_author_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_book_mlid_service';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_book_mlid_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_book_mlid_service_category';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_book_mlid_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_book_mlid_service_group';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_book_mlid_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_changed_service';
-  $strongarm->value = 1;
-  $export['node_export_reset_changed_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_changed_service_category';
-  $strongarm->value = 1;
-  $export['node_export_reset_changed_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_changed_service_group';
-  $strongarm->value = 1;
-  $export['node_export_reset_changed_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_created_service';
-  $strongarm->value = 1;
-  $export['node_export_reset_created_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_created_service_category';
-  $strongarm->value = 1;
-  $export['node_export_reset_created_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_created_service_group';
-  $strongarm->value = 1;
-  $export['node_export_reset_created_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_last_comment_timestamp_service';
-  $strongarm->value = 1;
-  $export['node_export_reset_last_comment_timestamp_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_last_comment_timestamp_service_category';
-  $strongarm->value = 1;
-  $export['node_export_reset_last_comment_timestamp_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_last_comment_timestamp_service_group';
-  $strongarm->value = 1;
-  $export['node_export_reset_last_comment_timestamp_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_menu_service';
-  $strongarm->value = 1;
-  $export['node_export_reset_menu_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_menu_service_category';
-  $strongarm->value = 1;
-  $export['node_export_reset_menu_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_menu_service_group';
-  $strongarm->value = 1;
-  $export['node_export_reset_menu_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_path_service';
-  $strongarm->value = 1;
-  $export['node_export_reset_path_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_path_service_category';
-  $strongarm->value = 1;
-  $export['node_export_reset_path_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_path_service_group';
-  $strongarm->value = 1;
-  $export['node_export_reset_path_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_promote_service';
-  $strongarm->value = 0;
-  $export['node_export_reset_promote_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_promote_service_category';
-  $strongarm->value = 0;
-  $export['node_export_reset_promote_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_promote_service_group';
-  $strongarm->value = 0;
-  $export['node_export_reset_promote_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_revision_timestamp_service';
-  $strongarm->value = 1;
-  $export['node_export_reset_revision_timestamp_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_revision_timestamp_service_category';
-  $strongarm->value = 1;
-  $export['node_export_reset_revision_timestamp_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_revision_timestamp_service_group';
-  $strongarm->value = 1;
-  $export['node_export_reset_revision_timestamp_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_status_service';
-  $strongarm->value = 0;
-  $export['node_export_reset_status_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_status_service_category';
-  $strongarm->value = 0;
-  $export['node_export_reset_status_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_status_service_group';
-  $strongarm->value = 0;
-  $export['node_export_reset_status_service_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_sticky_service';
-  $strongarm->value = 0;
-  $export['node_export_reset_sticky_service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_sticky_service_category';
-  $strongarm->value = 0;
-  $export['node_export_reset_sticky_service_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_sticky_service_group';
-  $strongarm->value = 0;
-  $export['node_export_reset_sticky_service_group'] = $strongarm;
-
-  return $export;
 }

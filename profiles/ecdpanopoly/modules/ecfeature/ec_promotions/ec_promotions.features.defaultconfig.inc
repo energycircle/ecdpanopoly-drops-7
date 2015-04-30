@@ -11,7 +11,6 @@ function ec_promotions_defaultconfig_features() {
   return array(
     'ec_promotions' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -427,7 +426,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
     ),
   );
 
- 
   // Exported field: 'node-promotion-body'.
   $fields['node-promotion-body'] = array(
     'field_config' => array(
@@ -1124,18 +1122,29 @@ function ec_promotions_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            0 => 'public',
-            1 => 'private',
+            'private' => 'private',
+            'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
           ),
           'allowed_types' => array(
-            0 => 'image',
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
-          'browser_plugins' => array(),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 'media_default--media_browser_1',
+            'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+            'media_internet' => 'media_internet',
+            'upload' => 'upload',
+            'youtube' => 0,
+          ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 0,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => 0,
+          'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
@@ -1143,8 +1152,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'manualcrop_styles_list' => array(),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
         'weight' => 5,
@@ -2179,7 +2186,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
   t('Product');
   t('Promo link text');
   t('Promotion image');
-  t('Promotions');
   t('Select article pages (news, press release, etc.) on which to display this promo.');
   t('Select case study pages on which to display this promo.');
   t('Select the Service pages on which to show this promo.');
@@ -2191,139 +2197,4 @@ function ec_promotions_defaultconfig_field_default_fields() {
   t('Show this promotion on these product pages.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_promotions_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_cancel_promotion';
-  $strongarm->value = '0';
-  $export['content_type_extras_cancel_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_preview_button_promotion';
-  $strongarm->value = 'Preview';
-  $export['content_type_extras_preview_button_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_button_promotion';
-  $strongarm->value = 'Save and Edit';
-  $export['content_type_extras_save_and_edit_button_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_promotion';
-  $strongarm->value = '0';
-  $export['content_type_extras_save_and_edit_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_new_button_promotion';
-  $strongarm->value = 'Save and New';
-  $export['content_type_extras_save_and_new_button_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_new_promotion';
-  $strongarm->value = '0';
-  $export['content_type_extras_save_and_new_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_title_hide_promotion';
-  $strongarm->value = 1;
-  $export['content_type_extras_title_hide_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_author_promotion';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_author_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_book_mlid_promotion';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_book_mlid_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_changed_promotion';
-  $strongarm->value = 1;
-  $export['node_export_reset_changed_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_created_promotion';
-  $strongarm->value = 1;
-  $export['node_export_reset_created_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_last_comment_timestamp_promotion';
-  $strongarm->value = 1;
-  $export['node_export_reset_last_comment_timestamp_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_menu_promotion';
-  $strongarm->value = 1;
-  $export['node_export_reset_menu_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_path_promotion';
-  $strongarm->value = 1;
-  $export['node_export_reset_path_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_promote_promotion';
-  $strongarm->value = 0;
-  $export['node_export_reset_promote_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_revision_timestamp_promotion';
-  $strongarm->value = 1;
-  $export['node_export_reset_revision_timestamp_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_status_promotion';
-  $strongarm->value = 0;
-  $export['node_export_reset_status_promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_sticky_promotion';
-  $strongarm->value = 0;
-  $export['node_export_reset_sticky_promotion'] = $strongarm;
-
-  return $export;
 }

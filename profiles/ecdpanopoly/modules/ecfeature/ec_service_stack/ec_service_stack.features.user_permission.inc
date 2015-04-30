@@ -203,8 +203,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['create service content'] = array(
     'name' => 'create service content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -214,8 +212,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['create service_category content'] = array(
     'name' => 'create service_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -225,8 +221,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['create service_group content'] = array(
     'name' => 'create service_group content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -236,8 +230,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['delete any service content'] = array(
     'name' => 'delete any service content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -247,8 +239,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['delete any service_category content'] = array(
     'name' => 'delete any service_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -258,8 +248,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['delete any service_group content'] = array(
     'name' => 'delete any service_group content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -269,7 +257,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['delete own service content'] = array(
     'name' => 'delete own service content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -279,8 +266,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['delete own service_category content'] = array(
     'name' => 'delete own service_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -290,7 +275,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['delete own service_group content'] = array(
     'name' => 'delete own service_group content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -300,8 +284,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['edit any service content'] = array(
     'name' => 'edit any service content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -311,8 +293,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['edit any service_category content'] = array(
     'name' => 'edit any service_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -322,8 +302,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['edit any service_group content'] = array(
     'name' => 'edit any service_group content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -333,7 +311,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['edit own service content'] = array(
     'name' => 'edit own service content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -343,8 +320,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['edit own service_category content'] = array(
     'name' => 'edit own service_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -354,7 +329,6 @@ function ec_service_stack_user_default_permissions() {
   $permissions['edit own service_group content'] = array(
     'name' => 'edit own service_group content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

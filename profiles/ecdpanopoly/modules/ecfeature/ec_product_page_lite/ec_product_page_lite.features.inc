@@ -30,21 +30,6 @@ function ec_product_page_lite_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_default_roles_permissions_alter().
- */
-function ec_product_page_lite_default_roles_permissions_alter(&$data) {
-  if (isset($data['EC Platinum admin'])) {
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page breadcrumbs'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page context'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page defaults'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page layout'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page overview'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['administer panelizer node product_page settings'] = TRUE; /* WAS: '' */
-  }
-}
-
-/**
  * Implements hook_node_info().
  */
 function ec_product_page_lite_node_info() {

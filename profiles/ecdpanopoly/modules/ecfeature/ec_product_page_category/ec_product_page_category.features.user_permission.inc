@@ -84,7 +84,6 @@ function ec_product_page_category_user_default_permissions() {
   $permissions['create product_category content'] = array(
     'name' => 'create product_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -94,7 +93,6 @@ function ec_product_page_category_user_default_permissions() {
   $permissions['delete any product_category content'] = array(
     'name' => 'delete any product_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -104,7 +102,6 @@ function ec_product_page_category_user_default_permissions() {
   $permissions['delete own product_category content'] = array(
     'name' => 'delete own product_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -114,7 +111,6 @@ function ec_product_page_category_user_default_permissions() {
   $permissions['edit any product_category content'] = array(
     'name' => 'edit any product_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -124,7 +120,6 @@ function ec_product_page_category_user_default_permissions() {
   $permissions['edit own product_category content'] = array(
     'name' => 'edit own product_category content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

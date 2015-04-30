@@ -87,16 +87,6 @@ function ec_base_config_user_default_permissions() {
     'module' => 'contextual',
   );
 
-  // Exported permission: 'access devel information'.
-  $permissions['access devel information'] = array(
-    'name' => 'access devel information',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'devel',
-  );
-
   // Exported permission: 'access media browser'.
   $permissions['access media browser'] = array(
     'name' => 'access media browser',
@@ -178,6 +168,26 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: 'administer addthis'.
+  $permissions['administer addthis'] = array(
+    'name' => 'administer addthis',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'addthis',
+  );
+
+  // Exported permission: 'administer advanced addthis'.
+  $permissions['administer advanced addthis'] = array(
+    'name' => 'administer advanced addthis',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'addthis',
   );
 
   // Exported permission: 'administer advanced pane settings'.
@@ -403,6 +413,16 @@ function ec_base_config_user_default_permissions() {
     'module' => 'manualcrop',
   );
 
+  // Exported permission: 'administer masquerade'.
+  $permissions['administer masquerade'] = array(
+    'name' => 'administer masquerade',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'masquerade',
+  );
+
   // Exported permission: 'administer media browser'.
   $permissions['administer media browser'] = array(
     'name' => 'administer media browser',
@@ -510,160 +530,6 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node panopoly_page breadcrumbs'.
-  $permissions['administer panelizer node panopoly_page breadcrumbs'] = array(
-    'name' => 'administer panelizer node panopoly_page breadcrumbs',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node panopoly_page content'.
-  $permissions['administer panelizer node panopoly_page content'] = array(
-    'name' => 'administer panelizer node panopoly_page content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node panopoly_page context'.
-  $permissions['administer panelizer node panopoly_page context'] = array(
-    'name' => 'administer panelizer node panopoly_page context',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node panopoly_page defaults'.
-  $permissions['administer panelizer node panopoly_page defaults'] = array(
-    'name' => 'administer panelizer node panopoly_page defaults',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node panopoly_page layout'.
-  $permissions['administer panelizer node panopoly_page layout'] = array(
-    'name' => 'administer panelizer node panopoly_page layout',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node panopoly_page overview'.
-  $permissions['administer panelizer node panopoly_page overview'] = array(
-    'name' => 'administer panelizer node panopoly_page overview',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node panopoly_page settings'.
-  $permissions['administer panelizer node panopoly_page settings'] = array(
-    'name' => 'administer panelizer node panopoly_page settings',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories breadcrumbs'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories breadcrumbs'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories breadcrumbs',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories content'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories content'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories context'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories context'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories context',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories defaults'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories defaults'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories defaults',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories layout'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories layout'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories layout',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories overview'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories overview'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories overview',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories settings'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories settings'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories settings',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1512,16 +1378,6 @@ function ec_base_config_user_default_permissions() {
     'module' => 'exclude_node_title',
   );
 
-  // Exported permission: 'execute php code'.
-  $permissions['execute php code'] = array(
-    'name' => 'execute php code',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'devel',
-  );
-
   // Exported permission: 'execute unlink files'.
   $permissions['execute unlink files'] = array(
     'name' => 'execute unlink files',
@@ -1530,6 +1386,26 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'ftools',
+  );
+
+  // Exported permission: 'export nodes'.
+  $permissions['export nodes'] = array(
+    'name' => 'export nodes',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node_export',
+  );
+
+  // Exported permission: 'export own nodes'.
+  $permissions['export own nodes'] = array(
+    'name' => 'export own nodes',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node_export',
   );
 
   // Exported permission: 'export tablefield'.
@@ -1601,6 +1477,36 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'nodequeue',
+  );
+
+  // Exported permission: 'masquerade as admin'.
+  $permissions['masquerade as admin'] = array(
+    'name' => 'masquerade as admin',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'masquerade',
+  );
+
+  // Exported permission: 'masquerade as any user'.
+  $permissions['masquerade as any user'] = array(
+    'name' => 'masquerade as any user',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'masquerade',
+  );
+
+  // Exported permission: 'masquerade as user'.
+  $permissions['masquerade as user'] = array(
+    'name' => 'masquerade as user',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'masquerade',
   );
 
   // Exported permission: 'notify of path changes'.
@@ -1684,16 +1590,6 @@ function ec_base_config_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'switch users'.
-  $permissions['switch users'] = array(
-    'name' => 'switch users',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'devel',
-  );
-
   // Exported permission: 'use PHP for tracking visibility'.
   $permissions['use PHP for tracking visibility'] = array(
     'name' => 'use PHP for tracking visibility',
@@ -1712,6 +1608,16 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node_export',
+  );
+
+  // Exported permission: 'use ctools import'.
+  $permissions['use ctools import'] = array(
+    'name' => 'use ctools import',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'ctools',
   );
 
   // Exported permission: 'use exclude node title'.

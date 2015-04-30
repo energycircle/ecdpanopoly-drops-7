@@ -77,8 +77,6 @@ function ec_campaign_page_user_default_permissions() {
   $permissions['create campaign_page content'] = array(
     'name' => 'create campaign_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -88,7 +86,6 @@ function ec_campaign_page_user_default_permissions() {
   $permissions['delete any campaign_page content'] = array(
     'name' => 'delete any campaign_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -107,8 +104,6 @@ function ec_campaign_page_user_default_permissions() {
   $permissions['edit any campaign_page content'] = array(
     'name' => 'edit any campaign_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

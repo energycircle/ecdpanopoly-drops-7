@@ -95,8 +95,6 @@ function ec_slide_user_default_permissions() {
   $permissions['create slide content'] = array(
     'name' => 'create slide content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -106,7 +104,6 @@ function ec_slide_user_default_permissions() {
   $permissions['delete any slide content'] = array(
     'name' => 'delete any slide content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -134,8 +131,6 @@ function ec_slide_user_default_permissions() {
   $permissions['edit any slide content'] = array(
     'name' => 'edit any slide content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

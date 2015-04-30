@@ -62,6 +62,7 @@ dependencies[] = apps
 
 ; Contrib Depends
 dependencies[] = addressfield
+dependencies[] = addressfield_tokens
 dependencies[] = admin_menu
 dependencies[] = admin_theme
 dependencies[] = adminrole

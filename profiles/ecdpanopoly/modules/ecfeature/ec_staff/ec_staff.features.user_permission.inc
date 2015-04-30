@@ -77,8 +77,6 @@ function ec_staff_user_default_permissions() {
   $permissions['create staff content'] = array(
     'name' => 'create staff content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -88,7 +86,6 @@ function ec_staff_user_default_permissions() {
   $permissions['delete any staff content'] = array(
     'name' => 'delete any staff content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -98,7 +95,6 @@ function ec_staff_user_default_permissions() {
   $permissions['delete own staff content'] = array(
     'name' => 'delete own staff content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -108,8 +104,6 @@ function ec_staff_user_default_permissions() {
   $permissions['edit any staff content'] = array(
     'name' => 'edit any staff content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -119,7 +113,6 @@ function ec_staff_user_default_permissions() {
   $permissions['edit own staff content'] = array(
     'name' => 'edit own staff content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

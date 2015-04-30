@@ -86,8 +86,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['create distinction content'] = array(
     'name' => 'create distinction content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -97,7 +95,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['delete any distinction content'] = array(
     'name' => 'delete any distinction content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -125,8 +122,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit any distinction content'] = array(
     'name' => 'edit any distinction content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -145,8 +140,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit terms in distinction_types'] = array(
     'name' => 'edit terms in distinction_types',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',

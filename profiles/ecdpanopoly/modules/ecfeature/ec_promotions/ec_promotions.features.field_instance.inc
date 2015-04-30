@@ -278,7 +278,6 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
- 
   // Exported field_instance: 'node-promotion-body'
   $field_instances['node-promotion-body'] = array(
     'bundle' => 'promotion',
@@ -773,18 +772,29 @@ function ec_promotions_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
-          0 => 'public',
-          1 => 'private',
+          'private' => 'private',
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
         ),
         'allowed_types' => array(
-          0 => 'image',
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
         ),
-        'browser_plugins' => array(),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+          'media_internet' => 'media_internet',
+          'upload' => 'upload',
+          'youtube' => 0,
+        ),
         'manualcrop_crop_info' => 1,
         'manualcrop_default_crop_area' => 1,
         'manualcrop_enable' => 0,
         'manualcrop_inline_crop' => 0,
-        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_crop' => FALSE,
         'manualcrop_instant_preview' => 1,
         'manualcrop_keyboard' => 1,
         'manualcrop_maximize_default_crop_area' => 0,
@@ -792,8 +802,6 @@ function ec_promotions_field_default_field_instances() {
         'manualcrop_styles_list' => array(),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
       'weight' => 5,
@@ -1453,7 +1461,6 @@ function ec_promotions_field_default_field_instances() {
   t('Product');
   t('Promo link text');
   t('Promotion image');
-  t('Promotions');
   t('Select article pages (news, press release, etc.) on which to display this promo.');
   t('Select case study pages on which to display this promo.');
   t('Select the Service pages on which to show this promo.');

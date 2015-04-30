@@ -27,6 +27,34 @@ function ec_slide_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_flexslider_default_presets_alter().
+ */
+function ec_slide_flexslider_default_presets_alter(&$data) {
+  if (isset($data['default'])) {
+    unset($data['default']->export_type);
+    unset($data['default']->type);
+  }
+}
+
+/**
+ * Implements hook_image_styles_alter().
+ */
+function ec_slide_image_styles_alter(&$data) {
+  if (isset($data['flexslider_full'])) {
+
+  if (!isset($data['flexslider_full']['storage']) || $data['flexslider_full']['storage'] == IMAGE_STORAGE_DEFAULT) {
+    $data['flexslider_full']['label'] = 'flexslider_full';
+  }
+  }
+  if (isset($data['flexslider_thumbnail'])) {
+
+  if (!isset($data['flexslider_thumbnail']['storage']) || $data['flexslider_thumbnail']['storage'] == IMAGE_STORAGE_DEFAULT) {
+    $data['flexslider_thumbnail']['label'] = 'flexslider_thumbnail';
+  }
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_slide_node_info() {
