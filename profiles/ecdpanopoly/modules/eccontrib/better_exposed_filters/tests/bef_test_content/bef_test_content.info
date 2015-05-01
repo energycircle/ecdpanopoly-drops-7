@@ -42,9 +42,9 @@ features_exclude[field][node-bef_test-field_price] = node-bef_test-field_price
 features_exclude[field][node-bef_test-field_date] = node-bef_test-field_date
 hidden = 1
 
-; Information added by Drupal.org packaging script on 2015-04-30
-version = "7.x-3.2+3-dev"
+; Information added by Drupal.org packaging script on 2015-05-01
+version = "7.x-3.2+9-dev"
 core = "7.x"
 project = "better_exposed_filters"
-datestamp = "1430398084"
+datestamp = "1430494985"
 

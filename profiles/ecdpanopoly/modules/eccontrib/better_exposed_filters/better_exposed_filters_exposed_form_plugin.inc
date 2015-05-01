@@ -918,10 +918,9 @@ Title Desc|Z -> A</pre> Leave the replacement value blank to remove an option al
      * Handle exposed pager elements.
      */
     if (isset($settings['pager'])) {
-      $show_apply = TRUE;
-
       switch ($settings['pager']['bef_format']) {
         case 'bef':
+          $show_apply = TRUE;
           $form['items_per_page']['#type'] = 'radios';
           if (empty($form['items_per_page']['#process'])) {
             $form['items_per_page']['#process'] = array();
@@ -1173,12 +1172,24 @@ Title Desc|Z -> A</pre> Leave the replacement value blank to remove an option al
             if (isset($form[$filter_id]['value'])) {
               $format = $form[$filter_id]['value']['#date_format'];
               $form[$filter_id]['value']['#attributes']['class'][] = 'bef-datepicker';
+
+              // This element renders via Drupal's FormAPI so we can use
+              // #description instead of passing the description along to BEF's
+              // theme functions.
+              if (!empty($form[$filter_id]['#bef_description'])) {
+                $form[$filter_id]['#description'] = $form[$filter_id]['#bef_description'];
+              }
             }
             else {
               // Both min and max share the same format.
               $format = $form[$filter_id]['min']['#date_format'];
               $form[$filter_id]['min']['#attributes']['class'][] = 'bef-datepicker';
               $form[$filter_id]['max']['#attributes']['class'][] = 'bef-datepicker';
+
+              // Description goes with the second field for in-between filters.
+              if (!empty($form[$filter_id]['#bef_description'])) {
+                $form[$filter_id]['max']['#description'] = $form[$filter_id]['#bef_description'];
+              }
             }
             $bef_js['datepicker_options']['dateformat'] = str_replace(array_keys($convert), array_values($convert), $format);
           }
@@ -1192,14 +1203,27 @@ Title Desc|Z -> A</pre> Leave the replacement value blank to remove an option al
              */
             $fields = array('min', 'max', 'value');
             if (count(array_intersect($fields, array_keys($form[$filter_id])))) {
+              $final = '';
               foreach ($fields as $field) {
                 if (isset($form[$filter_id][$field])) {
                   $form[$filter_id][$field]['#attributes']['class'][] = 'bef-datepicker';
+                  $final = $field;
                 }
+              }
+              // Description goes with the second field for in-between filters.
+              if (!empty($form[$filter_id]['#bef_description'])) {
+                $form[$filter_id][$final]['#description'] = $form[$filter_id]['#bef_description'];
               }
             }
             else {
               $form[$filter_id]['#attributes']['class'][] = 'bef-datepicker';
+
+              // This element renders via Drupal's FormAPI so we can use
+              // #description instead of passing the description along to BEF's
+              // theme functions.
+              if (!empty($form[$filter_id]['#bef_description'])) {
+                $form[$filter_id]['#description'] = $form[$filter_id]['#bef_description'];
+              }
             }
           }
           break;
@@ -1472,8 +1496,14 @@ Title Desc|Z -> A</pre> Leave the replacement value blank to remove an option al
     }
 
     // If our form has no visible filters, hide the submit button.
-    $form['submit']['#access'] = $show_apply;
-    $form['reset']['#access'] = $show_apply;
+    if (!$show_apply) {
+      if (isset($form['submit'])) {
+        $form['submit']['#attributes']['class'][] = 'element-hidden';
+      }
+      if (isset($form['reset'])) {
+        $form['reset']['#attributes']['class'][] = 'element-hidden';
+      }
+    }
 
     // Add Javascript as needed.
     if ($bef_add_js) {
