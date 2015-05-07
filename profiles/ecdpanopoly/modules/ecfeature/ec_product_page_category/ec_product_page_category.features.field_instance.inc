@@ -341,7 +341,8 @@ function ec_product_page_category_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_category-field_product_category_image'
+  // Exported field_instance:
+  // 'node-product_category-field_product_category_image'
   $field_instances['node-product_category-field_product_category_image'] = array(
     'bundle' => 'product_category',
     'deleted' => 0,
@@ -440,7 +441,8 @@ function ec_product_page_category_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_category-field_ref_prodcat_case_study'
+  // Exported field_instance:
+  // 'node-product_category-field_ref_prodcat_case_study'
   $field_instances['node-product_category-field_ref_prodcat_case_study'] = array(
     'bundle' => 'product_category',
     'default_value' => NULL,
@@ -629,7 +631,8 @@ function ec_product_page_category_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_category-field_ref_prodcat_testimonial'
+  // Exported field_instance:
+  // 'node-product_category-field_ref_prodcat_testimonial'
   $field_instances['node-product_category-field_ref_prodcat_testimonial'] = array(
     'bundle' => 'product_category',
     'default_value' => NULL,
