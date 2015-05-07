@@ -11,6 +11,7 @@ dependencies[] = metatag
 dependencies[] = panopoly_pages
 dependencies[] = views_content
 dependencies[] = weight
+dependencies[] = draggableviews
 apps[screenshots][] = app/screenshot.png
 apps[logo] = app/logo.png
 apps[author] = Energy Circle
