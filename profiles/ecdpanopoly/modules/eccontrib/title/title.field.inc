@@ -97,7 +97,7 @@ function title_field_formatter_settings_summary($field, $instance, $view_mode) {
  */
 function title_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
   $settings = $display['settings'];
-  $output = isset($items[0]) ? $items[0]['safe_value'] : '';
+  $output = isset($items[0]) ? $items[0]['value'] : '';
   $element = array();
 
   if (!empty($output)) {
