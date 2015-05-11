@@ -53,10 +53,12 @@ function defaultconfig_features_export_render($module, $data, $export = NULL) {
   $functions = array();
   $types[$module] = array();
   foreach ($data as $name) {
-    list($type, $configurable) = explode(':', $name);
-    if (!isset($data[$type])) {
-      $items[$type][$configurable] = $configurable;
-      $types[$module][$type] = $type;
+    if (strpos($name, ':') !== FALSE) {
+      list($type, $configurable) = explode(':', $name);
+      if (!isset($data[$type])) {
+        $items[$type][$configurable] = $configurable;
+        $types[$module][$type] = $type;
+      }
     }
   }
   $types_code = features_var_export($types, '  ');
