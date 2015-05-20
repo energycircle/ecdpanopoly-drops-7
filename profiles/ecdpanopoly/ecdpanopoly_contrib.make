@@ -58,7 +58,7 @@ projects[deploy][subdir] = eccontrib
 projects[deploy][version] = 2.x-dev
 
 projects[disable_term_node_listings][subdir] = eccontrib
-projects[disable_term_node_listings][version] = 1.x
+projects[disable_term_node_listings][version] = 1.2
 
 projects[draggableviews][subdir] = eccontrib
 projects[draggableviews][version] = 2.x
@@ -200,6 +200,9 @@ projects[phone][version] = 1.x-dev
 
 projects[pps][subdir] = eccontrib
 projects[pps][version] = 1.x
+
+projects[pantheon_api][subdir] = eccontri
+projects[pantheon_api][version] = 1.x
 
 projects[redhen][subdir] = eccontrib
 projects[redhen][version] = 1.8
