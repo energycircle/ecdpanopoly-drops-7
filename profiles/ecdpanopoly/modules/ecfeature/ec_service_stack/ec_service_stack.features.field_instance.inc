@@ -752,18 +752,17 @@ function ec_service_stack_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'size' => 60,
       ),
       'type' => 'text_textfield',
@@ -1658,18 +1657,17 @@ function ec_service_stack_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'size' => 60,
       ),
       'type' => 'text_textfield',
@@ -1746,7 +1744,8 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_ref_serv_cat_case_study'
+  // Exported field_instance:
+  // 'node-service_category-field_ref_serv_cat_case_study'
   $field_instances['node-service_category-field_ref_serv_cat_case_study'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -1878,7 +1877,8 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_ref_serv_cat_prodpage'
+  // Exported field_instance:
+  // 'node-service_category-field_ref_serv_cat_prodpage'
   $field_instances['node-service_category-field_ref_serv_cat_prodpage'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2016,7 +2016,8 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_ref_serv_cat_serv_group'
+  // Exported field_instance:
+  // 'node-service_category-field_ref_serv_cat_serv_group'
   $field_instances['node-service_category-field_ref_serv_cat_serv_group'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2085,7 +2086,8 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_ref_serv_cat_services'
+  // Exported field_instance:
+  // 'node-service_category-field_ref_serv_cat_services'
   $field_instances['node-service_category-field_ref_serv_cat_services'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2154,7 +2156,8 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_ref_serv_cat_testimonial'
+  // Exported field_instance:
+  // 'node-service_category-field_ref_serv_cat_testimonial'
   $field_instances['node-service_category-field_ref_serv_cat_testimonial'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2292,7 +2295,8 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_service_category_image'
+  // Exported field_instance:
+  // 'node-service_category-field_service_category_image'
   $field_instances['node-service_category-field_service_category_image'] = array(
     'bundle' => 'service_category',
     'deleted' => 0,
@@ -2654,7 +2658,8 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_ref_serv_group_case_study'
+  // Exported field_instance:
+  // 'node-service_group-field_ref_serv_group_case_study'
   $field_instances['node-service_group-field_ref_serv_group_case_study'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,
@@ -2994,7 +2999,8 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_ref_serv_group_testimonial'
+  // Exported field_instance:
+  // 'node-service_group-field_ref_serv_group_testimonial'
   $field_instances['node-service_group-field_ref_serv_group_testimonial'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,

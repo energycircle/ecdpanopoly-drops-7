@@ -58,76 +58,17 @@ function ec_service_stack_default_entityform_type() {
       "submissions_view" : "default",
       "user_submissions_view" : "default",
       "form_status" : "ENTITYFORM_OPEN",
-      "roles" : { "1" : "1", "2" : "2", "3" : "3", "5" : "5", "4" : "4" },
+      "roles" : { "1" : "1", "2" : "2", "5" : "5", "3" : "3", "4" : "4" },
       "resubmit_action" : "new",
-      "redirect_path" : "schedule_service\\/thank_you",
+      "redirect_path" : "",
       "instruction_pre" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
       "enable_block" : 0
     },
     "weight" : "0",
+    "metatags" : [],
     "paths" : []
   }');
   return $items;
-}
-
-/**
- * Implements hook_user_default_permissions_alter().
- */
-function ec_service_stack_user_default_permissions_alter(&$data) {
-  if (isset($data['create service content'])) {
-    unset($data['create service content']['roles']['EC Platinum admin']);
-    unset($data['create service content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['create service_category content'])) {
-    unset($data['create service_category content']['roles']['EC Platinum admin']);
-    unset($data['create service_category content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['create service_group content'])) {
-    unset($data['create service_group content']['roles']['EC Platinum admin']);
-    unset($data['create service_group content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['delete any service content'])) {
-    unset($data['delete any service content']['roles']['EC Platinum admin']);
-    unset($data['delete any service content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['delete any service_category content'])) {
-    unset($data['delete any service_category content']['roles']['EC Platinum admin']);
-    unset($data['delete any service_category content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['delete any service_group content'])) {
-    unset($data['delete any service_group content']['roles']['EC Platinum admin']);
-    unset($data['delete any service_group content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['delete own service content'])) {
-    unset($data['delete own service content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['delete own service_category content'])) {
-    unset($data['delete own service_category content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['delete own service_group content'])) {
-    unset($data['delete own service_group content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['edit any service content'])) {
-    unset($data['edit any service content']['roles']['EC Platinum admin']);
-    unset($data['edit any service content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['edit any service_category content'])) {
-    unset($data['edit any service_category content']['roles']['EC Platinum admin']);
-    unset($data['edit any service_category content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['edit any service_group content'])) {
-    unset($data['edit any service_group content']['roles']['EC Platinum admin']);
-    unset($data['edit any service_group content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['edit own service content'])) {
-    unset($data['edit own service content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['edit own service_category content'])) {
-    unset($data['edit own service_category content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['edit own service_group content'])) {
-    unset($data['edit own service_group content']['roles']['EC Platinum admin']);
-  }
 }
 
 /**

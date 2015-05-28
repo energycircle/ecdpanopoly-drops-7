@@ -18,9 +18,9 @@ files[] = handlers/draggableviews_hierarchy_handler_native.inc
 
 dependencies[] = entity
 
-; Information added by Drupal.org packaging script on 2015-04-11
-version = "7.x-2.1+3-dev"
+; Information added by Drupal.org packaging script on 2015-05-27
+version = "7.x-2.1+6-dev"
 core = "7.x"
 project = "draggableviews"
-datestamp = "1428713887"
+datestamp = "1432749489"
 

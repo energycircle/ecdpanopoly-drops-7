@@ -201,9 +201,6 @@ projects[phone][version] = 1.x-dev
 projects[pps][subdir] = eccontrib
 projects[pps][version] = 1.x
 
-projects[pantheon_api][subdir] = eccontri
-projects[pantheon_api][version] = 1.x
-
 projects[redhen][subdir] = eccontrib
 projects[redhen][version] = 1.8
 
@@ -230,6 +227,9 @@ projects[services][version] = 3.x
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 1.x-dev
+
+projects[sendgrid_integration][subdir] = eccontrib
+projects[sendgrid_integration][version] = 1.0-alpha2
 
 projects[table_element][subdir] = eccontrib
 projects[table_element][version] = 1.0-beta1
@@ -270,7 +270,6 @@ projects[xmlsitemap][version] = 2.0
 
 ;PATCHES
 projects[superfish][patch][2163545]= https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
-projects[drupal][patch][1973278] = http://www.drupal.org/files/issues/image-accommodate_missing_definition-1973278-16.patch
 projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch" 
 projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch"
 projects[compact_forms][patch][] = "https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch"

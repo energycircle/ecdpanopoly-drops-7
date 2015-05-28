@@ -12,14 +12,8 @@ function ec_distributor_features_override_default_overrides() {
   $overrides = array();
 
   // Exported overrides for: field_instance
-  $overrides["field_instance.node-distributor-field_address.widget|settings|default_country"] = '';
 
   // Exported overrides for: user_permission
-  $overrides["user_permission.create distributor content.roles|EC Platinum admin"]["DELETED"] = TRUE;
-  $overrides["user_permission.delete any distributor content.roles|EC Platinum admin"]["DELETED"] = TRUE;
-  $overrides["user_permission.delete own distributor content.roles|EC Platinum admin"]["DELETED"] = TRUE;
-  $overrides["user_permission.edit any distributor content.roles|EC Platinum admin"]["DELETED"] = TRUE;
-  $overrides["user_permission.edit own distributor content.roles|EC Platinum admin"]["DELETED"] = TRUE;
 
  return $overrides;
 }

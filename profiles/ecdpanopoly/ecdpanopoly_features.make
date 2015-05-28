@@ -125,7 +125,7 @@ projects[ec_promotions][type] = "module"
 projects[ec_promotions][version] = "1.0-beta21"
 
 projects[ec_redhen][download][type] = "git"
-projects[ec_redhen][download][url] = "https://github.com/energycircle/ec_promotions.git"
+projects[ec_redhen][download][url] = "https://github.com/energycircle/ec_redhen.git"
 projects[ec_redhen][subdir] = "ecfeature"
 projects[ec_redhen][type] = "module"
 projects[ec_redhen][version] = "1.0-beta6"

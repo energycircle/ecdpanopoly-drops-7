@@ -59,7 +59,7 @@ function ec_blog_post_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Field: Content: Blog Image */
+  /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -138,7 +138,7 @@ function ec_blog_post_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Blog Image */
+  /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -283,7 +283,7 @@ function ec_blog_post_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Blog Image */
+  /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';

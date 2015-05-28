@@ -1441,7 +1441,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1451,7 +1450,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1461,7 +1459,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page context',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1471,7 +1468,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page defaults',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1481,7 +1477,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page layout',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1491,7 +1486,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page overview',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1501,7 +1495,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page settings',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
