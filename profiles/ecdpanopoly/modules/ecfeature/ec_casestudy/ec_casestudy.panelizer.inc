@@ -341,7 +341,7 @@ function ec_casestudy_panelizer_defaults() {
   $display->content['new-9ae886c7-fd0a-431c-adfa-1358ed3c0db4'] = $pane;
   $display->panels['two_66_33_second'][3] = 'new-9ae886c7-fd0a-431c-adfa-1358ed3c0db4';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = '0';
+  $display->title_pane = 'new-b84ebfba-7d4c-40cb-b4dc-488daad43ae6';
   $panelizer->display = $display;
   $export['node:case_study:default:default'] = $panelizer;
 

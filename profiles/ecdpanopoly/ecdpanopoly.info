@@ -64,7 +64,7 @@ dependencies[] = addressfield
 dependencies[] = addressfield_tokens
 dependencies[] = admin_menu
 dependencies[] = admin_theme
-dependencies[] = adminrole
+;dependencies[] = adminrole
 dependencies[] = addthis
 dependencies[] = auto_menutitle
 dependencies[] = cer
@@ -116,7 +116,7 @@ dependencies[] = xmlsitemap
 ;DEVELOPMENT MODS
 dependencies[] = diff
 dependencies[] = features_override
-dependencies[] = ftools
+;dependencies[] = ftools
 dependencies[] = features_roles_permissions
 dependencies[] = uuid_features
 dependencies[] = uuid_path
