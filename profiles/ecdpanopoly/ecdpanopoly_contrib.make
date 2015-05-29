@@ -7,7 +7,7 @@ projects[addressfield_tokens][subdir] = eccontrib
 projects[addressfield_tokens][version] = 1.5
 
 projects[addressfield][subdir] = eccontrib
-projects[addressfield][version] = 1.0
+projects[addressfield][version] = 1.1
 
 projects[addthis][subdir] = eccontrib
 projects[addthis][version] = 4.0-alpha4
