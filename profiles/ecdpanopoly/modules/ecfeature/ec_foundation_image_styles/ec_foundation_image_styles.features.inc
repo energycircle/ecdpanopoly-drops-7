@@ -384,5 +384,30 @@ function ec_foundation_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: ss_200x100.
+  $styles['ss_200x100'] = array(
+    'label' => 'ss_200x100',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 200,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+      2 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '',
+          'height' => 100,
+          'upscale' => 0,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   return $styles;
 }

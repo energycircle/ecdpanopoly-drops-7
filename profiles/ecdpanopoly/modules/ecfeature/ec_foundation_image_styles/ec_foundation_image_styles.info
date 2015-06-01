@@ -30,4 +30,5 @@ features[image][] = sc_780x390
 features[image][] = sc_780x585
 features[image][] = sc_940x470
 features[image][] = sc_940x705
+features[image][] = ss_200x100
 project status url = https://github.com/energycircle/ec_foundation_image_styles
