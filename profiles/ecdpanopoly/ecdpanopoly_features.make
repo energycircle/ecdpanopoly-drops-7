@@ -64,6 +64,12 @@ projects[ec_conferences_lte][subdir] = "ecfeature"
 projects[ec_conferences_lte][type] = "module"
 projects[ec_conferences_lte][version] = "1.0-beta17"
 
+projects[ec_development][download][type] = "git"
+projects[ec_development][download][url] = "https://github.com/energycircle/ec_development.git
+projects[ec_development][subdir] = "ecfeature"
+projects[ec_development][type] = "module"
+projects[ec_development][version] = "1.0-beta2"
+
 projects[ec_distinction][download][type] = "git"
 projects[ec_distinction][download][url] = "https://github.com/energycircle/ec_distinction.git"
 projects[ec_distinction][subdir] = "ecfeature"
@@ -98,7 +104,7 @@ projects[ec_help_documentation][download][type] = "git"
 projects[ec_help_documentation][download][url] = "https://github.com/energycircle/ec_help_documentation.git"
 projects[ec_help_documentation][subdir] = "ecfeature"
 projects[ec_help_documentation][type] = "module"
-projects[ec_help_documentation][version] = "1.0-beta3"
+projects[ec_help_documentation][version] = "1.0-beta15"
 
 projects[ec_panopoly_page_overrides][download][type] = "git"
 projects[ec_panopoly_page_overrides][download][url] = "https://github.com/energycircle/ec_panopoly_page_overrides.git"

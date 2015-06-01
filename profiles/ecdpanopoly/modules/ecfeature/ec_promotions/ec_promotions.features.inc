@@ -76,6 +76,16 @@ function ec_promotions_default_entityform_type() {
 }
 
 /**
+ * Implements hook_default_rules_configuration_alter().
+ */
+function ec_promotions_default_rules_configuration_alter(&$data) {
+  if (isset($data['entityform_notifications_promotion_form_notification'])) {
+    $data['entityform_notifications_promotion_form_notification'][0] = Array; /* WAS: '' */
+    $data['entityform_notifications_promotion_form_notification'][1] = Array; /* WAS: '' */
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_promotions_node_info() {
