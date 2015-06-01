@@ -31,6 +31,24 @@ function ec_slide_views_api($module = NULL, $api = NULL) {
  */
 function ec_slide_flexslider_default_presets_alter(&$data) {
   if (isset($data['default'])) {
+    $data['default']->options['animationLoop'] = 1; /* WAS: TRUE */
+    $data['default']->options['controlNav'] = 0; /* WAS: 1 */
+    $data['default']->options['directionNav'] = 1; /* WAS: TRUE */
+    $data['default']->options['keyboard'] = 1; /* WAS: TRUE */
+    $data['default']->options['mousewheel'] = 0; /* WAS: FALSE */
+    $data['default']->options['multipleKeyboard'] = 0; /* WAS: FALSE */
+    $data['default']->options['pauseOnAction'] = 1; /* WAS: TRUE */
+    $data['default']->options['pauseOnHover'] = 0; /* WAS: FALSE */
+    $data['default']->options['pausePlay'] = 0; /* WAS: FALSE */
+    $data['default']->options['randomize'] = 0; /* WAS: FALSE */
+    $data['default']->options['reverse'] = 0; /* WAS: FALSE */
+    $data['default']->options['slideshow'] = 1; /* WAS: TRUE */
+    $data['default']->options['smoothHeight'] = 0; /* WAS: FALSE */
+    $data['default']->options['thumbCaptions'] = 0; /* WAS: FALSE */
+    $data['default']->options['thumbCaptionsBoth'] = 0; /* WAS: FALSE */
+    $data['default']->options['touch'] = 1; /* WAS: TRUE */
+    $data['default']->options['useCSS'] = 1; /* WAS: TRUE */
+    $data['default']->options['video'] = 0; /* WAS: FALSE */
     unset($data['default']->export_type);
     unset($data['default']->type);
   }
@@ -51,23 +69,6 @@ function ec_slide_image_styles_alter(&$data) {
   if (!isset($data['flexslider_thumbnail']['storage']) || $data['flexslider_thumbnail']['storage'] == IMAGE_STORAGE_DEFAULT) {
     $data['flexslider_thumbnail']['label'] = 'flexslider_thumbnail';
   }
-  }
-}
-
-/**
- * Implements hook_user_default_permissions_alter().
- */
-function ec_slide_user_default_permissions_alter(&$data) {
-  if (isset($data['create slide content'])) {
-    unset($data['create slide content']['roles']['EC Platinum admin']);
-    unset($data['create slide content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['delete any slide content'])) {
-    unset($data['delete any slide content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['edit any slide content'])) {
-    unset($data['edit any slide content']['roles']['EC Platinum admin']);
-    unset($data['edit any slide content']['roles']['EC Platinum editor']);
   }
 }
 

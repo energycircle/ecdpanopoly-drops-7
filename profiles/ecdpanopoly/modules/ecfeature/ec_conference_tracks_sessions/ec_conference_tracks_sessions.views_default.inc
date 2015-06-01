@@ -30,7 +30,11 @@ function ec_conference_tracks_sessions_views_default_views() {
     3 => '3',
     4 => '4',
   );
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -341,7 +345,11 @@ function ec_conference_tracks_sessions_views_default_views() {
     3 => '3',
     4 => '4',
   );
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -522,7 +530,7 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = 'Track';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Track Abreviation */
+  /* Field: Content: Track Abbreviation */
   $handler->display->display_options['fields']['field_track_abreviation']['id'] = 'field_track_abreviation';
   $handler->display->display_options['fields']['field_track_abreviation']['table'] = 'field_data_field_track_abreviation';
   $handler->display->display_options['fields']['field_track_abreviation']['field'] = 'field_track_abreviation';
@@ -565,7 +573,11 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['title'] = 'Featured Session';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
@@ -688,7 +700,11 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '60';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'better_exposed_filters';
   $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Go';
@@ -939,6 +955,15 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['fields']['field_track_chairs']['id'] = 'field_track_chairs';
   $handler->display->display_options['fields']['field_track_chairs']['table'] = 'field_data_field_track_chairs';
   $handler->display->display_options['fields']['field_track_chairs']['field'] = 'field_track_chairs';
+  /* Sort criterion: Content: Event Time -  start date (field_event_time) */
+  $handler->display->display_options['sorts']['field_event_time_value']['id'] = 'field_event_time_value';
+  $handler->display->display_options['sorts']['field_event_time_value']['table'] = 'field_data_field_event_time';
+  $handler->display->display_options['sorts']['field_event_time_value']['field'] = 'field_event_time_value';
+  /* Sort criterion: Content: Conference (field_ref_schedule_conference) */
+  $handler->display->display_options['sorts']['field_ref_schedule_conference_target_id']['id'] = 'field_ref_schedule_conference_target_id';
+  $handler->display->display_options['sorts']['field_ref_schedule_conference_target_id']['table'] = 'field_data_field_ref_schedule_conference';
+  $handler->display->display_options['sorts']['field_ref_schedule_conference_target_id']['field'] = 'field_ref_schedule_conference_target_id';
+  $handler->display->display_options['sorts']['field_ref_schedule_conference_target_id']['relationship'] = 'reverse_field_ref_schedule_conference_node';
   /* Sort criterion: Content: Sort Order (field_track_sort_order) */
   $handler->display->display_options['sorts']['field_track_sort_order_value']['id'] = 'field_track_sort_order_value';
   $handler->display->display_options['sorts']['field_track_sort_order_value']['table'] = 'field_data_field_track_sort_order';
@@ -1384,7 +1409,7 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['fields']['field_session_speakers']['field'] = 'field_session_speakers';
   $handler->display->display_options['fields']['field_session_speakers']['alter']['text'] = '<a href="/user/[field_session_speakers-target_id]/presenter">[field_session_speakers] </a>';
   $handler->display->display_options['fields']['field_session_speakers']['settings'] = array(
-    'link' => 0,
+    'link' => 1,
     'field_multiple_limit' => '-1',
     'field_multiple_limit_offset' => '0',
   );
@@ -1715,7 +1740,7 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['fields']['field_session_speakers']['field'] = 'field_session_speakers';
   $handler->display->display_options['fields']['field_session_speakers']['alter']['text'] = '<a href="/user/[field_session_speakers-target_id]/presenter">[field_session_speakers] </a>';
   $handler->display->display_options['fields']['field_session_speakers']['settings'] = array(
-    'link' => 0,
+    'link' => 1,
     'field_multiple_limit' => '-1',
     'field_multiple_limit_offset' => '0',
   );
@@ -2196,7 +2221,11 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -2410,6 +2439,10 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['sorts']['field_event_time_value']['id'] = 'field_event_time_value';
   $handler->display->display_options['sorts']['field_event_time_value']['table'] = 'field_data_field_event_time';
   $handler->display->display_options['sorts']['field_event_time_value']['field'] = 'field_event_time_value';
+  /* Sort criterion: Content: Conference (field_ref_schedule_conference) */
+  $handler->display->display_options['sorts']['field_ref_schedule_conference_target_id']['id'] = 'field_ref_schedule_conference_target_id';
+  $handler->display->display_options['sorts']['field_ref_schedule_conference_target_id']['table'] = 'field_data_field_ref_schedule_conference';
+  $handler->display->display_options['sorts']['field_ref_schedule_conference_target_id']['field'] = 'field_ref_schedule_conference_target_id';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -3102,7 +3135,11 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '518400';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -3158,7 +3195,11 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '518400';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -3303,7 +3344,11 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -3488,7 +3533,11 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['access']['role'] = array(
     5 => '5',
   );
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -3530,16 +3579,6 @@ function ec_conference_tracks_sessions_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_session_documents']['id'] = 'field_session_documents';
-  $handler->display->display_options['fields']['field_session_documents']['table'] = 'field_data_field_session_documents';
-  $handler->display->display_options['fields']['field_session_documents']['field'] = 'field_session_documents';
-  $handler->display->display_options['fields']['field_session_documents']['label'] = 'Session Documents - DO NOT USE';
-  /* Sort criterion: Broken/missing handler */
-  $handler->display->display_options['sorts']['field_session_documents_fid']['id'] = 'field_session_documents_fid';
-  $handler->display->display_options['sorts']['field_session_documents_fid']['table'] = 'field_data_field_session_documents';
-  $handler->display->display_options['sorts']['field_session_documents_fid']['field'] = 'field_session_documents_fid';
-  $handler->display->display_options['sorts']['field_session_documents_fid']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -3581,7 +3620,11 @@ function ec_conference_tracks_sessions_views_default_views() {
     3 => '3',
     4 => '4',
   );
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
