@@ -43,20 +43,21 @@ function ec_staff_default_entityform_type() {
       "delete_confirm_msg" : "",
       "page_title_view" : "",
       "preview_page" : 0,
-      "submission_page_title" : "Thanks for contacting Tom Rostron Heating and Air Conditioning!",
+      "submission_page_title" : "Thanks for contacting",
       "submission_text" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
       "submission_show_submitted" : 0,
       "submissions_view" : "default",
       "user_submissions_view" : "default",
       "form_status" : "ENTITYFORM_OPEN",
-      "roles" : { "1" : "1", "2" : "2", "3" : "3", "5" : "5", "4" : "4" },
+      "roles" : { "1" : "1", "2" : "2", "5" : "5", "3" : "3", "4" : "4" },
       "resubmit_action" : "new",
-      "redirect_path" : "join_our_team\\/thank-you",
+      "redirect_path" : "",
       "instruction_pre" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
       "current_type" : "join_our_team",
       "enable_block" : 1
     },
     "weight" : "0",
+    "metatags" : [],
     "paths" : []
   }');
   return $items;
