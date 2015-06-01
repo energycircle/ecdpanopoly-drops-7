@@ -622,6 +622,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panels',
   );
@@ -848,6 +849,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panels',
   );
@@ -870,6 +872,16 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'tablefield',
+  );
+
+  // Exported permission: 'create fieldable fieldable_panels_pane'.
+  $permissions['create fieldable fieldable_panels_pane'] = array(
+    'name' => 'create fieldable fieldable_panels_pane',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'create files'.
@@ -899,6 +911,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -910,6 +923,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'path',
   );
@@ -960,6 +974,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -972,6 +987,16 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete fieldable fieldable_panels_pane'.
+  $permissions['delete fieldable fieldable_panels_pane'] = array(
+    'name' => 'delete fieldable fieldable_panels_pane',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete own audio files'.
@@ -1023,6 +1048,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1208,6 +1234,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1223,6 +1250,16 @@ function ec_base_config_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit fieldable fieldable_panels_pane'.
+  $permissions['edit fieldable fieldable_panels_pane'] = array(
+    'name' => 'edit fieldable fieldable_panels_pane',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
   // Exported permission: 'edit meta tags'.
   $permissions['edit meta tags'] = array(
     'name' => 'edit meta tags',
@@ -1230,6 +1267,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'metatag',
   );
@@ -1293,6 +1331,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1622,6 +1661,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'page_manager',
   );
@@ -1653,6 +1693,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panels',
   );
@@ -1684,6 +1725,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'filter',
   );
@@ -1694,6 +1736,7 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'filter',
   );

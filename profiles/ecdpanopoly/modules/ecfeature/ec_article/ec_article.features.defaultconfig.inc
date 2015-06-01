@@ -300,7 +300,7 @@ function ec_article_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_article_image',
-      'label' => 'Featured Image',
+      'label' => 'Article image',
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
@@ -318,29 +318,18 @@ function ec_article_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 'private',
-            'public' => 'public',
-            'vimeo' => 0,
-            'youtube' => 0,
+            0 => 'public',
+            1 => 'private',
           ),
           'allowed_types' => array(
-            'audio' => 0,
-            'document' => 0,
-            'image' => 'image',
-            'video' => 0,
+            0 => 'image',
           ),
-          'browser_plugins' => array(
-            'media_default--media_browser_1' => 'media_default--media_browser_1',
-            'media_default--media_browser_my_files' => 0,
-            'media_internet' => 'media_internet',
-            'upload' => 'upload',
-            'youtube' => 0,
-          ),
+          'browser_plugins' => array(),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 0,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => FALSE,
+          'manualcrop_instant_crop' => 0,
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
@@ -348,6 +337,8 @@ function ec_article_defaultconfig_field_default_fields() {
           'manualcrop_styles_list' => array(),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
         'weight' => 4,
@@ -1259,6 +1250,7 @@ function ec_article_defaultconfig_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Article Type');
   t('Article author');
+  t('Article image');
   t('Article source');
   t('Blog');
   t('Body');
@@ -1266,7 +1258,6 @@ function ec_article_defaultconfig_field_default_fields() {
   t('Display date');
   t('Enter the public-facing date for this item, such as an article\'s publication date or a blog post\'s publication date.');
   t('Enter the url of the source for this article.');
-  t('Featured Image');
   t('Name of the author of this article, if relevant');
   t('Product');
   t('Promotion');

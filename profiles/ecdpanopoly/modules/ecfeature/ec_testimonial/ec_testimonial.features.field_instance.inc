@@ -281,8 +281,7 @@ function ec_testimonial_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'node-testimonial-field_ref_testimonial_case_study'
+  // Exported field_instance: 'node-testimonial-field_ref_testimonial_case_study'
   $field_instances['node-testimonial-field_ref_testimonial_case_study'] = array(
     'bundle' => 'testimonial',
     'default_value' => NULL,
@@ -558,8 +557,7 @@ function ec_testimonial_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'node-testimonial-field_ref_testimonial_serv_group'
+  // Exported field_instance: 'node-testimonial-field_ref_testimonial_serv_group'
   $field_instances['node-testimonial-field_ref_testimonial_serv_group'] = array(
     'bundle' => 'testimonial',
     'default_value' => NULL,

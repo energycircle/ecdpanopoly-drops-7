@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC Promotions Demo Content feature.
+ */
+
+include_once 'ec_promotions_demo_content.features.inc';

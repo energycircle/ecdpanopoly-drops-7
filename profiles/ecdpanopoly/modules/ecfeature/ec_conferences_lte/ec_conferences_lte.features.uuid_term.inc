@@ -48,14 +48,6 @@ function ec_conferences_lte_uuid_features_default_terms() {
         'alias' => 'sponsor-types/bronze-sponsor',
         'language' => 'und',
       ),
-      2 => array(
-        'alias' => 'sponsor-types/bronze-sponsors',
-        'language' => 'und',
-      ),
-      3 => array(
-        'alias' => 'sponsor-types/bronze-sponsor',
-        'language' => 'und',
-      ),
     ),
   );
   $terms[] = array(
@@ -81,7 +73,7 @@ function ec_conferences_lte_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Gold Sponsors',
+    'name' => 'Gold Sponsor',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 2,
@@ -98,18 +90,6 @@ function ec_conferences_lte_uuid_features_default_terms() {
       ),
       1 => array(
         'alias' => 'sponsor-types/gold-sponsor',
-        'language' => 'und',
-      ),
-      2 => array(
-        'alias' => 'sponsor-types/gold-sponsors',
-        'language' => 'und',
-      ),
-      3 => array(
-        'alias' => 'sponsor-types/gold-sponsor',
-        'language' => 'und',
-      ),
-      4 => array(
-        'alias' => 'sponsor-types/gold-sponsors',
         'language' => 'und',
       ),
     ),
@@ -134,18 +114,10 @@ function ec_conferences_lte_uuid_features_default_terms() {
         'alias' => 'sponsor-types/silver-sponsor',
         'language' => 'und',
       ),
-      2 => array(
-        'alias' => 'sponsor-types/silver-sponsors',
-        'language' => 'und',
-      ),
-      3 => array(
-        'alias' => 'sponsor-types/silver-sponsor',
-        'language' => 'und',
-      ),
     ),
   );
   $terms[] = array(
-    'name' => 'Platinum Sponsors',
+    'name' => 'Platinum Sponsor',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 1,
@@ -162,26 +134,6 @@ function ec_conferences_lte_uuid_features_default_terms() {
       ),
       1 => array(
         'alias' => 'sponsor-types/platinum-sponsor',
-        'language' => 'und',
-      ),
-      2 => array(
-        'alias' => 'sponsor-types/platinum-sponsors',
-        'language' => 'und',
-      ),
-      3 => array(
-        'alias' => 'sponsor-types/platinum-sponsor',
-        'language' => 'und',
-      ),
-      4 => array(
-        'alias' => 'sponsor-types/platinum-sponsors',
-        'language' => 'und',
-      ),
-      5 => array(
-        'alias' => 'sponsor-types/platinum-sponsor',
-        'language' => 'und',
-      ),
-      6 => array(
-        'alias' => 'sponsor-types/platinum-sponsors',
         'language' => 'und',
       ),
     ),
@@ -206,8 +158,8 @@ function ec_conferences_lte_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Promotional Partner',
-    'description' => '',
-    'format' => 'panopoly_wysiwyg_text',
+    'description' => NULL,
+    'format' => NULL,
     'weight' => 6,
     'uuid' => 'f36c51f2-bdcf-467e-b8bd-ce1b19107833',
     'vocabulary_machine_name' => 'sponsor_types',
@@ -217,14 +169,6 @@ function ec_conferences_lte_uuid_features_default_terms() {
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'sponsor-types/promotional-partner',
-        'language' => 'und',
-      ),
-      1 => array(
-        'alias' => 'sponsor-types/promotional-partners',
-        'language' => 'und',
-      ),
-      2 => array(
         'alias' => 'sponsor-types/promotional-partner',
         'language' => 'und',
       ),
@@ -247,14 +191,6 @@ function ec_conferences_lte_uuid_features_default_terms() {
         'language' => 'und',
       ),
       1 => array(
-        'alias' => 'sponsor-types/media-sponsor',
-        'language' => 'und',
-      ),
-      2 => array(
-        'alias' => 'sponsor-types/media-sponsors',
-        'language' => 'und',
-      ),
-      3 => array(
         'alias' => 'sponsor-types/media-sponsor',
         'language' => 'und',
       ),

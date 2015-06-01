@@ -30,6 +30,29 @@ function ec_blog_post_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_user_default_permissions_alter().
+ */
+function ec_blog_post_user_default_permissions_alter(&$data) {
+  if (isset($data['create blog_post content'])) {
+    unset($data['create blog_post content']['roles']['EC Platinum admin']);
+    unset($data['create blog_post content']['roles']['EC Platinum editor']);
+  }
+  if (isset($data['delete any blog_post content'])) {
+    unset($data['delete any blog_post content']['roles']['EC Platinum admin']);
+  }
+  if (isset($data['delete terms in blog_categories'])) {
+    unset($data['delete terms in blog_categories']['roles']['EC Platinum admin']);
+  }
+  if (isset($data['edit any blog_post content'])) {
+    unset($data['edit any blog_post content']['roles']['EC Platinum admin']);
+    unset($data['edit any blog_post content']['roles']['EC Platinum editor']);
+  }
+  if (isset($data['edit terms in blog_categories'])) {
+    unset($data['edit terms in blog_categories']['roles']['EC Platinum admin']);
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_blog_post_node_info() {

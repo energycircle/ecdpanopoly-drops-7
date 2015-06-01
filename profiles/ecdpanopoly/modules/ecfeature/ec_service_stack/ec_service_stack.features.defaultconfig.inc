@@ -1014,17 +1014,18 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'linkit' => array(
-          'button_text' => 'Search',
           'enable' => 0,
-          'profile' => '',
+          'insert_plugin' => '',
         ),
-        'text_processing' => 0,
+        'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => 60,
         ),
         'type' => 'text_textfield',
@@ -2411,17 +2412,18 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'linkit' => array(
-          'button_text' => 'Search',
           'enable' => 0,
-          'profile' => '',
+          'insert_plugin' => '',
         ),
-        'text_processing' => 0,
+        'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => 60,
         ),
         'type' => 'text_textfield',

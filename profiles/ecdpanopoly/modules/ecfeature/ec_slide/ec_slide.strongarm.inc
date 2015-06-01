@@ -96,19 +96,19 @@ function ec_slide_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '10',
+          'weight' => '9',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
-        ),
-        'redirect' => array(
           'weight' => '7',
         ),
-        'xmlsitemap' => array(
+        'redirect' => array(
           'weight' => '6',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '5',
         ),
       ),
       'display' => array(),

@@ -22,27 +22,6 @@ function ec_conference_tracks_sessions_strongarm() {
       'image' => array(
         'custom_settings' => FALSE,
       ),
-      'teaser' => array(
-        'custom_settings' => TRUE,
-      ),
-      'show_this_block' => array(
-        'custom_settings' => TRUE,
-      ),
-      'featured' => array(
-        'custom_settings' => TRUE,
-      ),
-      'full' => array(
-        'custom_settings' => FALSE,
-      ),
-      'rss' => array(
-        'custom_settings' => FALSE,
-      ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
-      'field_readonly' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(

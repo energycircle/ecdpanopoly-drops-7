@@ -115,6 +115,7 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'type' => 'datetime',
   );
 
+
   // Exported field_base: 'field_ref_conf_event_user'
   $field_bases['field_ref_conf_event_user'] = array(
     'active' => 1,
@@ -141,7 +142,7 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'views',
+      'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
           'field_default_token' => array(
@@ -151,10 +152,11 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
             'status' => 0,
           ),
         ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_1',
-          'view_name' => 'redhen_contacts',
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'individual' => 'individual',
         ),
       ),
       'profile2_private' => FALSE,
@@ -795,9 +797,6 @@ function ec_conference_tracks_sessions_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_track_abreviation',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
