@@ -75,8 +75,8 @@ function ec_service_stack_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: Sidebar CTA Form */
+  $handler = $view->new_display('panel_pane', 'Sidebar CTA Form', 'panel_pane_1');
   $handler->display->display_options['pane_category']['weight'] = '0';
   $export['service_request'] = $view;
 

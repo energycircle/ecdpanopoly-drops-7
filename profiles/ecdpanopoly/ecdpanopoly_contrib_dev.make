@@ -17,7 +17,7 @@ projects[features_extra][subdir] = ec-dev
 projects[uuid_features][version] = 1.x
 projects[uuid_features][subdir] = ec-dev
 
-projects[features_roles_permissions][version] = 1.x
+projects[features_roles_permissions][version] = 1.2
 projects[features_roles_permissions][subdir] = ec-dev
 
 projects[features_orphans][version] = 1.2

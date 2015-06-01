@@ -1,1 +1,2 @@
-# ec_promotions
+# ec_redhen
+Redhen module and config

@@ -182,20 +182,6 @@ function ec_base_config_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'distro_update_allow_status_update';
-  $strongarm->value = 1;
-  $export['distro_update_allow_status_update'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'distro_update_hide_children';
-  $strongarm->value = 1;
-  $export['distro_update_hide_children'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'entityform_block_types';
   $strongarm->value = array(
     0 => 'contact',
@@ -244,14 +230,6 @@ function ec_base_config_strongarm() {
     'redirect' => array(
       0 => 'redirect',
       1 => 'rid',
-    ),
-    'search_api_server' => array(
-      0 => 'search_api_server',
-      1 => 'id',
-    ),
-    'search_api_index' => array(
-      0 => 'search_api_index',
-      1 => 'id',
     ),
     'file' => array(
       0 => 'file_managed',

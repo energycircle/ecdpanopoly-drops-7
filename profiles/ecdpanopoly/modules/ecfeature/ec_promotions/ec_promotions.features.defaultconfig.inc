@@ -1257,118 +1257,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-promotion-field_ref_promo_article'.
-  $fields['node-promotion-field_ref_promo_article'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_promo_article',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'article' => 'article',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'promotion',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Select article pages (news, press release, etc.) on which to display this promo.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 9,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 9,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 11,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_promo_article',
-      'label' => 'Article',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 21,
-      ),
-    ),
-  );
-
   // Exported field: 'node-promotion-field_ref_promo_case_study'.
   $fields['node-promotion-field_ref_promo_case_study'] = array(
     'field_config' => array(
@@ -2157,7 +2045,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
-  t('Article');
   t('Body');
   t('Business Name');
   t('Button Text');
@@ -2177,7 +2064,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
   t('Product');
   t('Promo link text');
   t('Promotion image');
-  t('Select article pages (news, press release, etc.) on which to display this promo.');
   t('Select case study pages on which to display this promo.');
   t('Select the Service pages on which to show this promo.');
   t('Select the service category pages on which to show this promo.');

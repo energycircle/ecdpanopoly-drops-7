@@ -7,7 +7,7 @@ projects[addressfield_tokens][subdir] = eccontrib
 projects[addressfield_tokens][version] = 1.5
 
 projects[addressfield][subdir] = eccontrib
-projects[addressfield][version] = 1.0
+projects[addressfield][version] = 1.1
 
 projects[addthis][subdir] = eccontrib
 projects[addthis][version] = 4.0-alpha4
@@ -46,7 +46,7 @@ projects[contemplate][subdir] = eccontrib
 projects[contemplate][version] = 1.x
 
 projects[content_type_extras][subdir] = eccontrib
-projects[content_type_extras][version] = 1.8
+projects[content_type_extras][version] = 1.10
 
 projects[context][subdir] = eccontrib
 projects[context][version] = 3.x
@@ -58,7 +58,7 @@ projects[deploy][subdir] = eccontrib
 projects[deploy][version] = 2.x-dev
 
 projects[disable_term_node_listings][subdir] = eccontrib
-projects[disable_term_node_listings][version] = 1.x
+projects[disable_term_node_listings][version] = 1.2
 
 projects[draggableviews][subdir] = eccontrib
 projects[draggableviews][version] = 2.x
@@ -91,13 +91,13 @@ projects[entitycache][subdir] = eccontrib
 projects[entitycache][version] = 1.2
 
 projects[entityform_block][subdir] = eccontrib
-projects[entityform_block][version] = 1.1
+projects[entityform_block][version] = 1.3
 
 projects[entityform][subdir] = eccontrib
 projects[entityform][version] = 2.x
 
 projects[entityreference_filter][subdir] = eccontrib
-projects[entityreference_filter][version] = 1.2
+projects[entityreference_filter][version] = 1.5
 
 projects[entityreference_prepopulate][subdir] = eccontrib
 projects[entityreference_prepopulate][version] = 1.x
@@ -124,7 +124,7 @@ projects[field_formatter_settings][subdir] = eccontrib
 projects[field_formatter_settings][version] = 1.x
 
 projects[field_hidden][subdir] = eccontrib
-projects[field_hidden][version] = 1.6
+projects[field_hidden][version] = 1.7
 
 projects[field_multiple_limit][subdir] = eccontrib
 projects[field_multiple_limit][version] = 1.x
@@ -214,7 +214,7 @@ projects[relation][subdir] = eccontrib
 projects[relation][version] = 1.0-rc6
 
 projects[rules][subdir] = eccontrib
-projects[rules][version] = 2.x
+projects[rules][version] = 2.9
 
 projects[schemaorg][subdir] = eccontrib
 projects[schemaorg][version] = 1.x
@@ -227,6 +227,9 @@ projects[services][version] = 3.x
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 1.x-dev
+
+projects[sendgrid_integration][subdir] = eccontrib
+projects[sendgrid_integration][version] = 1.0-alpha2
 
 projects[table_element][subdir] = eccontrib
 projects[table_element][version] = 1.0-beta1
@@ -244,7 +247,7 @@ projects[total_control][subdir] = eccontrib
 projects[total_control][version] = 2.x
 
 projects[variable][subdir] = eccontrib
-projects[variable][version] = 2.x
+projects[variable][version] = 2.5
 
 projects[views_accordion][subdir] = eccontrib
 projects[views_accordion][version] = 1.x
@@ -259,7 +262,7 @@ projects[views_url_path_arguments][subdir] = eccontrib
 projects[views_url_path_arguments][version] = 1.x
 
 projects[weight][subdir] = eccontrib
-projects[weight][version] = 2.x
+projects[weight][version] = 2.5
 
 projects[xmlsitemap][subdir] = eccontrib
 projects[xmlsitemap][version] = 2.0
@@ -267,7 +270,6 @@ projects[xmlsitemap][version] = 2.0
 
 ;PATCHES
 projects[superfish][patch][2163545]= https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
-projects[drupal][patch][1973278] = http://www.drupal.org/files/issues/image-accommodate_missing_definition-1973278-16.patch
 projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch" 
 projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch"
 projects[compact_forms][patch][] = "https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch"

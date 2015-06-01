@@ -24,36 +24,6 @@ function ec_distributor_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_field_default_field_instances_alter().
- */
-function ec_distributor_field_default_field_instances_alter(&$data) {
-  if (isset($data['node-distributor-field_address'])) {
-    $data['node-distributor-field_address']['widget']['settings']['default_country'] = ''; /* WAS: '' */
-  }
-}
-
-/**
- * Implements hook_user_default_permissions_alter().
- */
-function ec_distributor_user_default_permissions_alter(&$data) {
-  if (isset($data['create distributor content'])) {
-    unset($data['create distributor content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['delete any distributor content'])) {
-    unset($data['delete any distributor content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['delete own distributor content'])) {
-    unset($data['delete own distributor content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['edit any distributor content'])) {
-    unset($data['edit any distributor content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['edit own distributor content'])) {
-    unset($data['edit own distributor content']['roles']['EC Platinum admin']);
-  }
-}
-
-/**
  * Implements hook_node_info().
  */
 function ec_distributor_node_info() {
