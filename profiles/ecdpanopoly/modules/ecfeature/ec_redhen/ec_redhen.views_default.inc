@@ -30,119 +30,30 @@ function ec_redhen_views_default_views() {
     3 => '3',
     4 => '4',
   );
-  $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '60';
-  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '3600';
-  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'views_bulk_operations' => 'views_bulk_operations',
-    'contact_id' => 'contact_id',
-    'first_name' => 'first_name',
-    'middle_name' => 'middle_name',
-    'last_name' => 'last_name',
     'redhen_contact_email' => 'redhen_contact_email',
-    'field_phone' => 'field_phone',
-    'label' => 'label',
-    'field_contact_job_title' => 'field_contact_job_title',
-    'field_contact_credentials' => 'field_contact_credentials',
-    'field_contact_bio' => 'field_contact_bio',
-    'field_contact_events_attended' => 'field_contact_events_attended',
-    'updated' => 'updated',
+    'field_contact_address_name_line' => 'field_contact_address_name_line',
   );
-  $handler->display->display_options['style_options']['default'] = 'updated';
+  $handler->display->display_options['style_options']['default'] = 'field_contact_address_name_line';
   $handler->display->display_options['style_options']['info'] = array(
-    'views_bulk_operations' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 1,
-    ),
-    'contact_id' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 1,
-    ),
-    'first_name' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 1,
-    ),
-    'middle_name' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 1,
-    ),
-    'last_name' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 1,
-    ),
     'redhen_contact_email' => array(
       'align' => '',
       'separator' => '',
-      'empty_column' => 1,
+      'empty_column' => 0,
     ),
-    'field_phone' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 1,
-    ),
-    'label' => array(
+    'field_contact_address_name_line' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
-      'empty_column' => 1,
-    ),
-    'field_contact_job_title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_contact_credentials' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_contact_bio' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_contact_events_attended' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'updated' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
       'empty_column' => 0,
     ),
   );
-  $handler->display->display_options['style_options']['sticky'] = TRUE;
   /* Field: Contact: Contact ID */
   $handler->display->display_options['fields']['contact_id']['id'] = 'contact_id';
   $handler->display->display_options['fields']['contact_id']['table'] = 'redhen_contact';
@@ -374,11 +285,6 @@ function ec_redhen_views_default_views() {
 
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
-  $handler->display->display_options['path'] = 'admin/edit/redhen/contacts/export';
-  $handler->display->display_options['segment_size'] = '100';
 
   /* Display: Page - email */
   $handler = $view->new_display('page', 'Page - email', 'page_1');
@@ -418,166 +324,6 @@ function ec_redhen_views_default_views() {
   $handler->display->display_options['sorts']['redhen_contact_email_default']['field'] = 'redhen_contact_email_default';
   $handler->display->display_options['sorts']['redhen_contact_email_default']['order'] = 'DESC';
   $handler->display->display_options['path'] = 'admin/edit/redhen/contacts/email';
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_2');
-  $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Contact: Relation: Personal connection (redhen_contact → relation) */
-  $handler->display->display_options['relationships']['relation_base_left_redhen_connection']['id'] = 'relation_base_left_redhen_connection';
-  $handler->display->display_options['relationships']['relation_base_left_redhen_connection']['table'] = 'redhen_contact';
-  $handler->display->display_options['relationships']['relation_base_left_redhen_connection']['field'] = 'relation_base_left_redhen_connection';
-  /* Relationship: Contact: Relation: Personal connection (redhen_contact ↔ redhen_contact) */
-  $handler->display->display_options['relationships']['relation_redhen_connection_redhen_contact']['id'] = 'relation_redhen_connection_redhen_contact';
-  $handler->display->display_options['relationships']['relation_redhen_connection_redhen_contact']['table'] = 'redhen_contact';
-  $handler->display->display_options['relationships']['relation_redhen_connection_redhen_contact']['field'] = 'relation_redhen_connection_redhen_contact';
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Bulk operations: Contact */
-  $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
-  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'redhen_contact';
-  $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
-    'action::views_bulk_operations_delete_item' => array(
-      'selected' => 1,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_delete_revision' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_script_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_modify_action' => array(
-      'selected' => 1,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'show_all_tokens' => 1,
-        'display_values' => array(
-          '_all_' => '_all_',
-        ),
-      ),
-    ),
-    'action::views_bulk_operations_argument_selector_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'url' => '',
-      ),
-    ),
-    'action::system_send_email_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::redhen_fields_email_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::panelizer_set_status_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-  );
-  /* Field: Contact: Contact ID */
-  $handler->display->display_options['fields']['contact_id']['id'] = 'contact_id';
-  $handler->display->display_options['fields']['contact_id']['table'] = 'redhen_contact';
-  $handler->display->display_options['fields']['contact_id']['field'] = 'contact_id';
-  /* Field: Contact: First name */
-  $handler->display->display_options['fields']['first_name']['id'] = 'first_name';
-  $handler->display->display_options['fields']['first_name']['table'] = 'redhen_contact';
-  $handler->display->display_options['fields']['first_name']['field'] = 'first_name';
-  /* Field: Contact: Middle Name */
-  $handler->display->display_options['fields']['middle_name']['id'] = 'middle_name';
-  $handler->display->display_options['fields']['middle_name']['table'] = 'redhen_contact';
-  $handler->display->display_options['fields']['middle_name']['field'] = 'middle_name';
-  $handler->display->display_options['fields']['middle_name']['exclude'] = TRUE;
-  /* Field: Contact: Last name */
-  $handler->display->display_options['fields']['last_name']['id'] = 'last_name';
-  $handler->display->display_options['fields']['last_name']['table'] = 'redhen_contact';
-  $handler->display->display_options['fields']['last_name']['field'] = 'last_name';
-  /* Field: Contact: Email */
-  $handler->display->display_options['fields']['redhen_contact_email']['id'] = 'redhen_contact_email';
-  $handler->display->display_options['fields']['redhen_contact_email']['table'] = 'field_data_redhen_contact_email';
-  $handler->display->display_options['fields']['redhen_contact_email']['field'] = 'redhen_contact_email';
-  $handler->display->display_options['fields']['redhen_contact_email']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['redhen_contact_email']['type'] = 'editable';
-  $handler->display->display_options['fields']['redhen_contact_email']['settings'] = array(
-    'click_to_edit' => 0,
-    'empty_text' => '',
-    'fallback_format' => 'redhen_email_formatter',
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['redhen_contact_email']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['redhen_contact_email']['separator'] = '|';
-  /* Field: Field: Phone */
-  $handler->display->display_options['fields']['field_phone']['id'] = 'field_phone';
-  $handler->display->display_options['fields']['field_phone']['table'] = 'field_data_field_phone';
-  $handler->display->display_options['fields']['field_phone']['field'] = 'field_phone';
-  $handler->display->display_options['fields']['field_phone']['settings'] = array(
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_phone']['delta_offset'] = '0';
-  /* Field: Field: Job Title */
-  $handler->display->display_options['fields']['field_contact_job_title']['id'] = 'field_contact_job_title';
-  $handler->display->display_options['fields']['field_contact_job_title']['table'] = 'field_data_field_contact_job_title';
-  $handler->display->display_options['fields']['field_contact_job_title']['field'] = 'field_contact_job_title';
-  /* Field: Contact: Credentials */
-  $handler->display->display_options['fields']['field_contact_credentials']['id'] = 'field_contact_credentials';
-  $handler->display->display_options['fields']['field_contact_credentials']['table'] = 'field_data_field_contact_credentials';
-  $handler->display->display_options['fields']['field_contact_credentials']['field'] = 'field_contact_credentials';
-  $handler->display->display_options['fields']['field_contact_credentials']['exclude'] = TRUE;
-  /* Field: Field: Contact Bio */
-  $handler->display->display_options['fields']['field_contact_bio']['id'] = 'field_contact_bio';
-  $handler->display->display_options['fields']['field_contact_bio']['table'] = 'field_data_field_contact_bio';
-  $handler->display->display_options['fields']['field_contact_bio']['field'] = 'field_contact_bio';
-  $handler->display->display_options['fields']['field_contact_bio']['exclude'] = TRUE;
-  /* Field: Contact: Events Attended */
-  $handler->display->display_options['fields']['field_contact_events_attended']['id'] = 'field_contact_events_attended';
-  $handler->display->display_options['fields']['field_contact_events_attended']['table'] = 'field_data_field_contact_events_attended';
-  $handler->display->display_options['fields']['field_contact_events_attended']['field'] = 'field_contact_events_attended';
-  $handler->display->display_options['fields']['field_contact_events_attended']['settings'] = array(
-    'link' => 0,
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_contact_events_attended']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_contact_events_attended']['separator'] = '|';
-  /* Field: Contact: Updated */
-  $handler->display->display_options['fields']['updated']['id'] = 'updated';
-  $handler->display->display_options['fields']['updated']['table'] = 'redhen_contact';
-  $handler->display->display_options['fields']['updated']['field'] = 'updated';
-  $handler->display->display_options['fields']['updated']['date_format'] = 'raw time ago';
-  $handler->display->display_options['fields']['updated']['second_date_format'] = 'panopoly_time';
-  $handler->display->display_options['path'] = 'admin/edit/redhen/contacts';
   $export['admin_redhen_contacts'] = $view;
 
   $view = new view();
@@ -593,7 +339,6 @@ function ec_redhen_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'ADMIN RedHen ORG';
-  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
@@ -601,55 +346,11 @@ function ec_redhen_views_default_views() {
     3 => '3',
     4 => '4',
   );
-  $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '60';
-  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '3600';
-  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['columns'] = array(
-    'views_bulk_operations' => 'views_bulk_operations',
-    'org_id' => 'org_id',
-    'label' => 'label',
-    'full_name' => 'full_name',
-    'nothing' => 'nothing',
-  );
-  $handler->display->display_options['style_options']['default'] = '-1';
-  $handler->display->display_options['style_options']['info'] = array(
-    'views_bulk_operations' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'org_id' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'label' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'full_name' => array(
-      'align' => '',
-      'separator' => ', ',
-      'empty_column' => 0,
-    ),
-    'nothing' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-  );
   /* Field: Organization: Organization ID */
   $handler->display->display_options['fields']['org_id']['id'] = 'org_id';
   $handler->display->display_options['fields']['org_id']['table'] = 'redhen_org';
@@ -701,7 +402,6 @@ function ec_redhen_views_default_views() {
     'field_multiple_limit_offset' => '0',
   );
   $handler->display->display_options['fields']['field_sponsored_events']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_sponsored_events']['multi_type'] = 'ul';
   $handler->display->display_options['fields']['field_sponsored_events']['separator'] = '|';
   /* Field: Organization: Exhibitors At */
   $handler->display->display_options['fields']['field_exhibitors_at']['id'] = 'field_exhibitors_at';
@@ -713,7 +413,6 @@ function ec_redhen_views_default_views() {
     'field_multiple_limit_offset' => '0',
   );
   $handler->display->display_options['fields']['field_exhibitors_at']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_exhibitors_at']['multi_type'] = 'ul';
   $handler->display->display_options['fields']['field_exhibitors_at']['separator'] = '|';
   /* Field: Organization: Partner */
   $handler->display->display_options['fields']['field_partner']['id'] = 'field_partner';
@@ -730,139 +429,9 @@ function ec_redhen_views_default_views() {
   $handler->display->display_options['sorts']['org_id']['table'] = 'redhen_org';
   $handler->display->display_options['sorts']['org_id']['field'] = 'org_id';
 
-  /* Display: Page - admin */
-  $handler = $view->new_display('page', 'Page - admin', 'page');
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'admin/edit/redhen/org';
-
-  /* Display: Page - org rel */
-  $handler = $view->new_display('page', 'Page - org rel', 'page_1');
-  $handler->display->display_options['defaults']['group_by'] = FALSE;
-  $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Organization: Relation: Affiliated with (redhen_org → redhen_contact) */
-  $handler->display->display_options['relationships']['relation_redhen_affiliation_redhen_contact']['id'] = 'relation_redhen_affiliation_redhen_contact';
-  $handler->display->display_options['relationships']['relation_redhen_affiliation_redhen_contact']['table'] = 'redhen_org';
-  $handler->display->display_options['relationships']['relation_redhen_affiliation_redhen_contact']['field'] = 'relation_redhen_affiliation_redhen_contact';
-  $handler->display->display_options['relationships']['relation_redhen_affiliation_redhen_contact']['r_index'] = '1';
-  $handler->display->display_options['relationships']['relation_redhen_affiliation_redhen_contact']['entity_deduplication_left'] = 1;
-  $handler->display->display_options['relationships']['relation_redhen_affiliation_redhen_contact']['entity_deduplication_right'] = 1;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Bulk operations: Organization */
-  $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
-  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'redhen_org';
-  $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
-    'action::views_bulk_operations_delete_item' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_delete_revision' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_script_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_modify_action' => array(
-      'selected' => 1,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'show_all_tokens' => 1,
-        'display_values' => array(
-          '_all_' => '_all_',
-        ),
-      ),
-    ),
-    'action::views_bulk_operations_argument_selector_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'url' => '',
-      ),
-    ),
-    'action::system_send_email_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::redhen_fields_email_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::panelizer_set_status_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-  );
-  /* Field: Organization: Organization ID */
-  $handler->display->display_options['fields']['org_id']['id'] = 'org_id';
-  $handler->display->display_options['fields']['org_id']['table'] = 'redhen_org';
-  $handler->display->display_options['fields']['org_id']['field'] = 'org_id';
-  $handler->display->display_options['fields']['org_id']['label'] = '';
-  $handler->display->display_options['fields']['org_id']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['org_id']['element_label_colon'] = FALSE;
-  /* Field: Organization: Organization Name */
-  $handler->display->display_options['fields']['label']['id'] = 'label';
-  $handler->display->display_options['fields']['label']['table'] = 'redhen_org';
-  $handler->display->display_options['fields']['label']['field'] = 'label';
-  /* Field: Contact: Full name */
-  $handler->display->display_options['fields']['full_name']['id'] = 'full_name';
-  $handler->display->display_options['fields']['full_name']['table'] = 'views_entity_redhen_contact';
-  $handler->display->display_options['fields']['full_name']['field'] = 'full_name';
-  $handler->display->display_options['fields']['full_name']['relationship'] = 'relation_redhen_affiliation_redhen_contact';
-  $handler->display->display_options['fields']['full_name']['link_to_entity'] = 1;
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = 'Add Relationship';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/redhen/org/[org_id]/connections/add">Add</a>';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Organization: Organization Name */
-  $handler->display->display_options['sorts']['label']['id'] = 'label';
-  $handler->display->display_options['sorts']['label']['table'] = 'redhen_org';
-  $handler->display->display_options['sorts']['label']['field'] = 'label';
-  $handler->display->display_options['sorts']['label']['expose']['label'] = 'Organization Name';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Organization: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'redhen_org';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'business' => 'business',
-  );
-  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['label'] = 'Type';
-  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
-  $handler->display->display_options['path'] = 'admin/edit/redhen/org/rel';
   $export['admin_redhen_org'] = $view;
 
   $view = new view();
@@ -885,11 +454,7 @@ function ec_redhen_views_default_views() {
     3 => '3',
     4 => '4',
   );
-  $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '60';
-  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '3600';
-  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -935,14 +500,6 @@ function ec_redhen_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Field: Contact: Contact ID */
-  $handler->display->display_options['fields']['contact_id_1']['id'] = 'contact_id_1';
-  $handler->display->display_options['fields']['contact_id_1']['table'] = 'redhen_contact';
-  $handler->display->display_options['fields']['contact_id_1']['field'] = 'contact_id';
-  $handler->display->display_options['fields']['contact_id_1']['label'] = '';
-  $handler->display->display_options['fields']['contact_id_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['contact_id_1']['alter']['text'] = '<a href="/redhen/contact/[contact_id_1]">View</a>';
-  $handler->display->display_options['fields']['contact_id_1']['element_label_colon'] = FALSE;
   /* Field: Contact: First name */
   $handler->display->display_options['fields']['first_name']['id'] = 'first_name';
   $handler->display->display_options['fields']['first_name']['table'] = 'redhen_contact';
@@ -964,7 +521,6 @@ function ec_redhen_views_default_views() {
   $handler->display->display_options['fields']['contact_id']['label'] = 'Edit';
   $handler->display->display_options['fields']['contact_id']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['contact_id']['alter']['text'] = '<a href="/redhen/contact/[contact_id]/view/edit?">Edit</a>';
-  $handler->display->display_options['fields']['contact_id']['separator'] = '';
   /* Filter criterion: Contact: First name */
   $handler->display->display_options['filters']['first_name']['id'] = 'first_name';
   $handler->display->display_options['filters']['first_name']['table'] = 'redhen_contact';
@@ -1032,11 +588,7 @@ function ec_redhen_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
-  $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '60';
-  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '3600';
-  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -1111,11 +663,7 @@ function ec_redhen_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
-  $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '60';
-  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '3600';
-  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';

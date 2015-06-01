@@ -15,7 +15,7 @@ function ec_redhen_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => -4,
+      'weight' => 0,
     ),
     'note_type' => array(
       'name' => 'Note type',

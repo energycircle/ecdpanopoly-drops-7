@@ -2,14 +2,19 @@ name = EC Conference Tracks & Sessions
 description = Conference Tracks & Sessions and Schedule CT and views
 core = 7.x
 package = ECFeatures - Conference
-version = 7.x-1.0-beta20
+version = 7.x-1.0-beta19
 project = ec_conference_tracks_sessions
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
 dependencies[] = better_exposed_filters
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = ec_base_config
 dependencies[] = ec_conferences_lte
-dependencies[] = ec_redhen
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = field_collection
@@ -200,3 +205,5 @@ features_exclude[field_instance][field_collection_item-field_event_sponsors_ref-
 features_exclude[field_instance][field_collection_item-field_event_sponsors_ref-field_conf_sponsor_type] = field_collection_item-field_event_sponsors_ref-field_conf_sponsor_type
 features_exclude[field_instance][node-conference_event-field_event_sponsors_ref] = node-conference_event-field_event_sponsors_ref
 features_exclude[taxonomy][sponsor_types] = sponsor_types
+mtime = 1418998914
+project status url = https://github.com/energycircle/ec_conference_tracks_sessions.git

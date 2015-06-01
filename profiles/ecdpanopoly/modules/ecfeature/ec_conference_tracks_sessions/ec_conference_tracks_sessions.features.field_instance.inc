@@ -260,7 +260,7 @@ function ec_conference_tracks_sessions_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
-          'link' => 1,
+          'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 3,
@@ -1713,7 +1713,7 @@ function ec_conference_tracks_sessions_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_track_abreviation',
-    'label' => 'Track Abbreviation',
+    'label' => 'Track Abreviation',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -1952,7 +1952,7 @@ function ec_conference_tracks_sessions_field_default_field_instances() {
   t('Start and end date/time for a session, workshop, demonstration or other event.');
   t('The sessions in this track. Drag and drop to put them in order.');
   t('Track');
-  t('Track Abbreviation');
+  t('Track Abreviation');
   t('Track Chair(s)');
 
   return $field_instances;

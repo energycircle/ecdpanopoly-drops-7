@@ -121,7 +121,6 @@ function ec_redhen_field_group_info() {
       0 => 'field_exhibitors_at',
       1 => 'field_sponsored_events',
       2 => 'field_partner',
-      3 => 'field_nesp_supporter',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

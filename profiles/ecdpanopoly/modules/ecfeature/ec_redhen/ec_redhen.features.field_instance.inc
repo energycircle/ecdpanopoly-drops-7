@@ -1516,65 +1516,6 @@ function ec_redhen_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'redhen_org-business-field_nesp_supporter'
-  $field_instances['redhen_org-business-field_nesp_supporter'] = array(
-    'bundle' => 'business',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'default_value_label_token' => 0,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'list_default',
-        'weight' => 12,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'logo' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_nesp_supporter',
-    'label' => 'NESP Supporter',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 14,
-    ),
-  );
-
   // Exported field_instance: 'redhen_org-business-field_partner'
   $field_instances['redhen_org-business-field_partner'] = array(
     'bundle' => 'business',
@@ -2185,7 +2126,6 @@ function ec_redhen_field_default_field_instances() {
   t('Job Title');
   t('Logo');
   t('Message');
-  t('NESP Supporter');
   t('Note Type');
   t('Organization Role');
   t('Partner');
