@@ -8,7 +8,6 @@ dependencies[] = addressfield
 dependencies[] = addthis
 dependencies[] = admin_menu
 dependencies[] = admin_theme
-dependencies[] = apps
 dependencies[] = breakpoints
 dependencies[] = cer
 dependencies[] = compact_forms
