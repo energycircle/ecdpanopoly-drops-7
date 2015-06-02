@@ -389,7 +389,7 @@ function _panopoly_wysiwyg_process_caption_filter($text, $filter, $format, $lang
   $text = '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><body>' . $text . '</body>';
 
   $doc = new DOMDocument();
-  @$doc->loadHTML($text);
+  $doc->loadHTML($text);
   $xpath = new DOMXpath($doc);
 
   // We need this crazy XPath query because a simple [@class=caption] will not

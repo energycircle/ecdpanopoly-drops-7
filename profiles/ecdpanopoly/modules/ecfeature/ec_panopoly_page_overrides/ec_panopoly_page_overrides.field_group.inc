@@ -23,9 +23,9 @@ function ec_panopoly_page_overrides_field_group_info() {
     'label' => 'CTA Form',
     'weight' => '5',
     'children' => array(
-      0 => 'field_ref_to_cta_form',
-      1 => 'field_button_text',
-      2 => 'field_call_to_action',
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -56,6 +56,7 @@ function ec_panopoly_page_overrides_field_group_info() {
       1 => 'field_ref_page_case_study',
       2 => 'field_ref_page_promotions',
       3 => 'field_ref_page_testimonial',
+      4 => 'field_ref_page_faq',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

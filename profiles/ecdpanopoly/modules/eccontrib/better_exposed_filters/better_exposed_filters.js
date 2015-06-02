@@ -89,7 +89,12 @@
       // Check for and initialize datepickers
       var befSettings = Drupal.settings.better_exposed_filters;
       if (befSettings && befSettings.datepicker && befSettings.datepicker_options && $.fn.datepicker) {
-        var opt = befSettings.datepicker_options.dateformat ? {dateFormat: befSettings.datepicker_options.dateformat} : {};
+        var opt = [];
+        $.each(befSettings.datepicker_options, function(key, val) {
+          if (key && val) {
+            opt[key] = JSON.parse(val);
+          }
+        });
         $('.bef-datepicker').datepicker(opt);
       }
 
@@ -99,11 +104,22 @@
   Drupal.behaviors.betterExposedFiltersAllNoneNested = {
     attach:function (context, settings) {
       $('.form-checkboxes.bef-select-all-none-nested li').has('ul').once('bef-all-none-nested', function () {
-        $(this)
+        var $this = $(this);
+
+        // Prevent CTools autosubmit from firing until we've finished checking
+        // all the checkboxes.
+        var submitFunc = $this.parents('form').submit;
+        $this.parents('form').submit = null;
+
+        $this
           // To respect term depth, check/uncheck child term checkboxes.
           .find('input.form-checkboxes:first')
           .click(function() {
             $(this).parents('li:first').find('ul input.form-checkboxes').attr('checked', $(this).attr('checked'));
+
+            // Now we can trigger the autosubmit
+            $this.parents('form').submit = submitFunc;
+            $this.parents('form').trigger('submit');
           })
           .end()
           // When a child term is checked or unchecked, set the parent term's
@@ -134,7 +150,7 @@
           // If the filter is placed in a secondary fieldset, we may not have
           // the usual wrapper element.
           if (!$filter.length) {
-            containing_parent = "#" + sliderOptions.viewId + " .bef-secondary-options";
+            containing_parent = "#" + sliderOptions.viewId + " .bef-slider-wrapper";
             $filter = $(containing_parent);
           }
 

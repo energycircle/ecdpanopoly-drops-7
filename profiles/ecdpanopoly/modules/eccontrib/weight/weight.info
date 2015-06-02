@@ -7,8 +7,8 @@ files[] = views/weight_handler_filter_weight_enabled.inc
 files[] = weight.migrate.inc
 
 ; Information added by Drupal.org packaging script on 2015-04-29
-version = "7.x-2.4+12-dev"
+version = "7.x-2.5"
 core = "7.x"
 project = "weight"
-datestamp = "1430341393"
+datestamp = "1430342647"
 

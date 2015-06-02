@@ -7,9 +7,9 @@ dependencies[] = views
 files[] = better_exposed_filters_exposed_form_plugin.inc
 files[] = tests/better_exposed_filters.test
 
-; Information added by Drupal.org packaging script on 2015-05-01
-version = "7.x-3.2+9-dev"
+; Information added by Drupal.org packaging script on 2015-05-21
+version = "7.x-3.2+28-dev"
 core = "7.x"
 project = "better_exposed_filters"
-datestamp = "1430494985"
+datestamp = "1432199611"
 

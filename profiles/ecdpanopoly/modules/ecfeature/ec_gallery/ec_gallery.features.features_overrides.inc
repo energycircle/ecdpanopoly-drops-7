@@ -12,13 +12,6 @@ function ec_gallery_features_override_default_overrides() {
   $overrides = array();
 
   // Exported overrides for: user_permission
-  $overrides["user_permission.create gallery content.roles|EC Platinum admin"]["DELETED"] = TRUE;
-  $overrides["user_permission.create gallery content.roles|EC Platinum editor"]["DELETED"] = TRUE;
-  $overrides["user_permission.delete any gallery content.roles|EC Platinum admin"]["DELETED"] = TRUE;
-  $overrides["user_permission.delete own gallery content.roles|EC Platinum admin"]["DELETED"] = TRUE;
-  $overrides["user_permission.edit any gallery content.roles|EC Platinum admin"]["DELETED"] = TRUE;
-  $overrides["user_permission.edit any gallery content.roles|EC Platinum editor"]["DELETED"] = TRUE;
-  $overrides["user_permission.edit own gallery content.roles|EC Platinum admin"]["DELETED"] = TRUE;
 
  return $overrides;
 }

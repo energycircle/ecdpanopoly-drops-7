@@ -27,29 +27,6 @@ function ec_gallery_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_user_default_permissions_alter().
- */
-function ec_gallery_user_default_permissions_alter(&$data) {
-  if (isset($data['create gallery content'])) {
-    unset($data['create gallery content']['roles']['EC Platinum admin']);
-    unset($data['create gallery content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['delete any gallery content'])) {
-    unset($data['delete any gallery content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['delete own gallery content'])) {
-    unset($data['delete own gallery content']['roles']['EC Platinum admin']);
-  }
-  if (isset($data['edit any gallery content'])) {
-    unset($data['edit any gallery content']['roles']['EC Platinum admin']);
-    unset($data['edit any gallery content']['roles']['EC Platinum editor']);
-  }
-  if (isset($data['edit own gallery content'])) {
-    unset($data['edit own gallery content']['roles']['EC Platinum admin']);
-  }
-}
-
-/**
  * Implements hook_node_info().
  */
 function ec_gallery_node_info() {
