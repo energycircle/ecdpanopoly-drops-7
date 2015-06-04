@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the EC Panopoly Page Overrides feature.
- */
-
-include_once 'ec_panopoly_page_overrides.features.inc';

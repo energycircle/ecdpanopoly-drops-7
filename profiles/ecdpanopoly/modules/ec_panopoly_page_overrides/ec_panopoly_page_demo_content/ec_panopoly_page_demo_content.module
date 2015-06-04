@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the EC Panopoly Page Demo Content feature.
- */
-
-include_once 'ec_panopoly_page_demo_content.features.inc';

@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the EC Staff Demo Content feature.
- */
-
-include_once 'ec_staff_demo_content.features.inc';
