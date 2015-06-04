@@ -38,6 +38,7 @@ dependencies[] = filter
 dependencies[] = ftools
 dependencies[] = googleanalytics
 dependencies[] = image
+dependencies[] = imagecache_token
 dependencies[] = link
 dependencies[] = linkit
 dependencies[] = linkit_target

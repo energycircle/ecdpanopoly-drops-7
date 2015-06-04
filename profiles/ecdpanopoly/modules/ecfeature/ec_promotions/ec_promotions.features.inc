@@ -75,6 +75,7 @@ function ec_promotions_default_entityform_type() {
   return $items;
 }
 
+
 /**
  * Implements hook_node_info().
  */

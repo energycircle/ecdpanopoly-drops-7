@@ -1,7 +1,7 @@
 name = EC Promotions Demo Content
 description = Demo content
 core = 7.x
-package = Features
+package = ECFeatures - Demo
 version = 7.x-1.0-beta1
 project = ec_promotions_demo_content
 dependencies[] = ctools
