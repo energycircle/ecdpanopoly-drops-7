@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC Base Content feature.
+ */
+
+include_once 'ec_base_content.features.inc';

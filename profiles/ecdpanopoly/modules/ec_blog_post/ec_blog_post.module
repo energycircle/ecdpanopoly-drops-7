@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file
+ * Code for the EC Blog Post feature.
+ */
+
+include_once 'ec_blog_post.features.inc';
+
+function ec_blog_post_hook_apps_app_info() {
+ 
+ }

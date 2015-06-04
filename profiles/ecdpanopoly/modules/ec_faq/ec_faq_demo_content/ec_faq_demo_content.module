@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC FAQ Demo Content feature.
+ */
+
+include_once 'ec_faq_demo_content.features.inc';

@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file
+ * Code for the EC Conference Tracks & Sessions feature.
+ */
+
+include_once 'ec_conference_tracks_sessions.features.inc';
+
+ function ec_conference_tracks_sessions_hook_apps_app_info() {
+ 
+  }

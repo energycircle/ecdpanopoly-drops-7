@@ -11,12 +11,11 @@ includes[] = ecdpanopoly_contrib.make
 ; Theme
 includes[] = ecdpanopoly_theme.make
 
-; Features
-includes[] = ecdpanopoly_features.make
-
-
 ; Drupal DEV Contrib Mods
 includes[] = ecdpanopoly_contrib_dev.make
+
+; Features
+includes[] = ecdpanopoly_features.make
 
 ; Include drush commands
 ;drush_install_commands.sh

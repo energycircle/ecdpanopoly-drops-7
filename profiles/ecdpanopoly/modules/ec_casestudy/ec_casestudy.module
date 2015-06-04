@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file
+ * Code for the EC CaseStudy feature.
+ */
+
+include_once 'ec_casestudy.features.inc';
+
+ function ec_casestudy_hook_apps_app_info() {
+ 
+  }

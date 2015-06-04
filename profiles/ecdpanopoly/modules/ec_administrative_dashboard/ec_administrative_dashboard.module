@@ -1,0 +1,10 @@
+<?php
+/**
+ * @file
+ * Code for the EC Administrative Dashboard feature.
+ */
+
+include_once 'ec_administrative_dashboard.features.inc';
+ function ec_administrative_dashboard_hook_apps_app_info() {
+ 
+  }

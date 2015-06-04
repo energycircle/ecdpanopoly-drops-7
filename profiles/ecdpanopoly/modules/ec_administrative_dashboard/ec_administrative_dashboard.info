@@ -1,0 +1,30 @@
+name = EC Administrative Dashboard
+description = Used to add a content dashboard to the site.
+core = 7.x
+package = ECFeatures - BETA
+version = 7.x-1.0-beta2
+project = ec_administrative_dashboard
+
+apps[screenshots][] = app/screenshot.png
+apps[logo] = app/logo.png
+apps[author] = Energy Circle
+apps[author_url] = http://www.energycircle.com/
+
+
+dependencies[] = ctools
+dependencies[] = defaultconfig
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = total_control
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[user_permission][] = administer total control
+features[user_permission][] = have total control
+features[variable][] = total_control_auto_pages
+features[variable][] = total_control_auto_panels
+features[variable][] = total_control_login_redirect
+features[variable][] = total_control_role_pages
+features[variable][] = total_control_role_panels
+features[variable][] = total_control_type_pages
+features[variable][] = total_control_type_panels
+project status url = https://github.com/energycircle/ec_administrative_dashboard.git

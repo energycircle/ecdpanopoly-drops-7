@@ -1,0 +1,10 @@
+<?php
+/**
+ * @file
+ * Code for the EC Gallery feature.
+ */
+
+include_once 'ec_gallery.features.inc';
+ function ec_gallery_hook_apps_app_info() {
+ 
+  }

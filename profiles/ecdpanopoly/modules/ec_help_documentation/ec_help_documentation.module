@@ -1,0 +1,10 @@
+<?php
+/**
+ * @file
+ * Code for the EC Help Documentation feature.
+ */
+
+include_once 'ec_help_documentation.features.inc';
+ function ec_help_documentation_hook_apps_app_info() {
+ 
+  }

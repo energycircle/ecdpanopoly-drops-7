@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC Conferences LTE feature.
+ */
+
+include_once 'ec_conferences_lte.features.inc';
