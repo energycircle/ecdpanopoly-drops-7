@@ -48,7 +48,7 @@ projects[ec_casestudy][download][type] = get
 projects[ec_casestudy][download][url] = https://github.com/energycircle/ec_casestudy.git
 projects[ec_casestudy][subdir] = ecfeature
 projects[ec_casestudy][type] = module
-projects[ec_casestudy][version] = 1.0-beta8
+projects[ec_casestudy][version] = 1.0-beta9
 
 projects[ec_conference_tracks_sessions][download][type] = get
 projects[ec_conference_tracks_sessions][download][url] = https://github.com/energycircle/ec_conference_tracks_sessions.git
