@@ -1,7 +1,12 @@
-Fieldable Panels Panes 7.x-1.x-dev, xxxx-xx-xx
-----------------------------------------------
+Fieldable Panels Panes 7.x-1.6, 2015-05-29
+------------------------------------------
 #2427275 by DamienMcKenna: Fixed line_entity_form integration.
 #2463965 by dsnopek: PHP notice when FPP is hidden via visibility rules.
+#2457995 by B-Prod: Fixed compatibility with the Title module.
+#1985894 by DamienMcKenna, tanc: Return FALSE in load function if no entities.
+#2493749 by dsnopek: FPP title always shown as link, even if not requested!
+#2483335 by dsnopek: Improved label in File Entity file usage report.
+#2483335 by DamienMcKenna: Made default labels less technical.
 
 
 Fieldable Panels Panes 7.x-1.6-beta1, 2015-02-02
