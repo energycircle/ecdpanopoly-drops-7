@@ -55,7 +55,7 @@ projects[deploy_services_client][subdir] = eccontrib
 projects[deploy_services_client][version] = 1.x-dev
 
 projects[deploy][subdir] = eccontrib
-projects[deploy][version] = 2.x-dev
+projects[deploy][version] = 2.0-alpha3
 
 projects[disable_term_node_listings][subdir] = eccontrib
 projects[disable_term_node_listings][version] = 1.2
@@ -67,10 +67,10 @@ projects[elements][subdir] = eccontrib
 projects[elements][version] = 1.x
 
 projects[email][subdir] = eccontrib
-projects[email][version] = 1.x
+projects[email][version] = 1.3
 
 projects[entity_dependency][subdir] = eccontrib
-projects[entity_dependency][version] = 1.x
+projects[entity_dependency][version] = 1.0-alpha2
 
 projects[entity_path][subdir] = eccontrib
 projects[entity_path][version] = 1.x
@@ -79,7 +79,7 @@ projects[entity_rules][subdir] = eccontrib
 projects[entity_rules][version] = 1.x-dev
 
 projects[entity_uuid][subdir] = eccontrib
-projects[entity_uuid][version] = 1.x
+projects[entity_uuid][version] = 1.0
 
 projects[entity_view_mode][subdir] = eccontrib
 projects[entity_view_mode][version] = 1.x
@@ -109,7 +109,7 @@ projects[eva][subdir] = eccontrib
 projects[eva][version] = 1.x
 
 projects[exclude_node_title][subdir] = eccontrib
-projects[exclude_node_title][version] = 1.x
+projects[exclude_node_title][version] = 1.7
 
 projects[feeds][subdir] = eccontrib
 projects[feeds][version] = 2.x
@@ -133,7 +133,7 @@ projects[field_multiple_limit][version] = 1.x
 ;projects[field_permissions][subdir] = eccontrib
 
 projects[field_validation][subdir] = eccontrib
-projects[field_validation][version] = 2.x
+projects[field_validation][version] = 2.5
 
 projects[flexslider][subdir] = eccontrib
 projects[flexslider][version] = 2.x-dev
@@ -190,7 +190,7 @@ projects[node_authlink][subdir] = eccontrib
 projects[node_authlink][version] = 1.1
 
 projects[nodequeue][subdir] = eccontrib
-projects[nodequeue][version] = 2.0-beta1
+projects[nodequeue][version] = 2.0
 
 projects[path_redirect_import][subdir] = eccontrib
 projects[path_redirect_import][version] = 1.x
@@ -223,13 +223,16 @@ projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.x
+projects[services][version] = 3.12
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 1.x-dev
 
 projects[sendgrid_integration][subdir] = eccontrib
 projects[sendgrid_integration][version] = 1.0-alpha2
+
+projects[smtp][subdir] = eccontrib
+projects[smtp][version] = 1.2
 
 projects[table_element][subdir] = eccontrib
 projects[table_element][version] = 1.0-beta1

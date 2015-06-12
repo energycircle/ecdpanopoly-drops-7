@@ -55,7 +55,7 @@ function exclude_node_title_preprocess_overlay(&$vars) {
  * Implements hook_preprocess_page().
  */
 function exclude_node_title_preprocess_page(&$vars) {
-  if (!user_access('use exclude node title') || (arg(0) == 'node' && arg(1) == 'add')) {
+  if (!user_access('use exclude node title')) {
     return;
   }
 
