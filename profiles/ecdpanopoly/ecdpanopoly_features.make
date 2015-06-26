@@ -24,7 +24,7 @@ projects[ec_base_config][download][type] = git
 projects[ec_base_config][download][url] = https://github.com/energycircle/ec_base_config.git
 projects[ec_base_config][type] = module
 projects[ec_base_config][subdir] = ecfeature
-projects[ec_base_config][version] = 1.0-beta3
+projects[ec_base_config][version] = 1.0-beta4
 
 projects[ec_base_content][download][type] = git
 projects[ec_base_content][download][url] = https://github.com/energycircle/ec_base_content.git
@@ -48,7 +48,7 @@ projects[ec_casestudy][download][type] = git
 projects[ec_casestudy][download][url] = https://github.com/energycircle/ec_casestudy.git
 projects[ec_casestudy][subdir] = ecfeature
 projects[ec_casestudy][type] = module
-projects[ec_casestudy][version] = 7.x-1.0
+projects[ec_casestudy][version] = 1.1
 
 projects[ec_conference_tracks_sessions][download][type] = git
 projects[ec_conference_tracks_sessions][download][url] = https://github.com/energycircle/ec_conference_tracks_sessions.git
@@ -114,7 +114,7 @@ projects[ec_panopoly_page_overrides][download][type] = git
 projects[ec_panopoly_page_overrides][download][url] = https://github.com/energycircle/ec_panopoly_page_overrides.git
 projects[ec_panopoly_page_overrides][subdir] = ecfeature
 projects[ec_panopoly_page_overrides][type] = module
-projects[ec_panopoly_page_overrides][version] = 1.0-beta10
+projects[ec_panopoly_page_overrides][version] = 1.0-beta1
 
 projects[ec_product_page_category][download][type] = git
 projects[ec_product_page_category][download][url] = https://github.com/energycircle/ec_product_page_category.git
@@ -132,7 +132,7 @@ projects[ec_promotions][download][type] = git
 projects[ec_promotions][download][url] = https://github.com/energycircle/ec_promotions.git
 projects[ec_promotions][subdir] = ecfeature
 projects[ec_promotions][type] = module
-projects[ec_promotions][version] = 1.0-beta5
+projects[ec_promotions][version] = 1.0-beta8
 
 projects[ec_redhen][download][type] = git
 projects[ec_redhen][download][url] = https://github.com/energycircle/ec_redhen.git

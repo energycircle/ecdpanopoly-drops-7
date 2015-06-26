@@ -2,8 +2,8 @@ api = 2
 core = 7.x
 
 ; Pantheon DEVELOPMENT
-projects[context_pantheon][version] = 1.0-alpha2
-projects[context_pantheon][subdir] = ec-dev
+;projects[context_pantheon][version] = 1.x
+;projects[context_pantheon][subdir] = ec-dev
 
 ; Include DEV tools
 
