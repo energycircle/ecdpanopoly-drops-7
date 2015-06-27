@@ -8,7 +8,7 @@ core = 7.x
 ; Include DEV tools
 
 ; Feature Tools
-projects[diff][version] = 3.x
+projects[diff][version] = 3.2
 projects[diff][subdir] = ec-dev
 
 projects[features_extra][version] = 1.0-beta1

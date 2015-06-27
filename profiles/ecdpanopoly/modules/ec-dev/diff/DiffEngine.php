@@ -215,17 +215,11 @@ class _DiffEngine {
       // Find deletes & adds.
       $delete = array();
       while ($xi < $n_from && $this->xchanged[$xi]) {
-        $_fl = $from_lines[$xi++];
-        if (strlen($_fl)) {
-          $delete[] = $_fl;
-        }
+        $delete[] = $from_lines[$xi++];
       }
       $add = array();
       while ($yi < $n_to && $this->ychanged[$yi]) {
-        $_tl = $to_lines[$yi++];
-        if (strlen($_tl)) {
-          $add[] = $_tl;
-        }
+        $add[] = $to_lines[$yi++];
       }
       if ($delete && $add) {
         $edits[] = new _DiffOp_Change($delete, $add);

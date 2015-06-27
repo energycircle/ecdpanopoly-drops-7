@@ -14,10 +14,10 @@
  * powerful way to easily modify the output of any template variable.
  *
  * Preprocess and Process Functions SEE: http://drupal.org/node/254940#variables-processor
- * 1. Rename each function and instance of "at_client" to match
+ * 1. Rename each function and instance of "ec_foundation_theme" to match
  *    your subthemes name, e.g. if your theme name is "footheme" then the function
  *    name will be "footheme_preprocess_hook". Tip - you can search/replace
- *    on "at_client".
+ *    on "ec_foundation_theme".
  * 2. Uncomment the required function to use.
  */
 
@@ -26,7 +26,7 @@
  * Preprocess variables for the html template.
  */
 /* -- Delete this line to enable.
-function at_client_preprocess_html(&$vars) {
+function ec_foundation_theme_preprocess_html(&$vars) {
   global $theme_key;
 
   // Two examples of adding custom classes to the body.
@@ -45,7 +45,7 @@ function at_client_preprocess_html(&$vars) {
  * Process variables for the html template.
  */
 /* -- Delete this line if you want to use this function
-function at_client_process_html(&$vars) {
+function ec_foundation_theme_process_html(&$vars) {
 }
 // */
 
@@ -54,11 +54,11 @@ function at_client_process_html(&$vars) {
  * Override or insert variables for the page templates.
  */
 
-function at_client_preprocess_page(&$vars) {
+function ec_foundation_theme_preprocess_page(&$vars) {
    $node = &$variables['node'];
 
 }
-function at_client_process_page(&$vars) {
+function ec_foundation_theme_process_page(&$vars) {
 }
 // */
 
@@ -67,9 +67,9 @@ function at_client_process_page(&$vars) {
  * Override or insert variables into the node templates.
  */
 /* -- Delete this line if you want to use these functions
-function at_client_preprocess_node(&$vars) {
+function ec_foundation_theme_preprocess_node(&$vars) {
 }
-function at_client_process_node(&$vars) {
+function ec_foundation_theme_process_node(&$vars) {
 }
 // */
 
@@ -78,9 +78,9 @@ function at_client_process_node(&$vars) {
  * Override or insert variables into the comment templates.
  */
 /* -- Delete this line if you want to use these functions
-function at_client_preprocess_comment(&$vars) {
+function ec_foundation_theme_preprocess_comment(&$vars) {
 }
-function at_client_process_comment(&$vars) {
+function ec_foundation_theme_process_comment(&$vars) {
 }
 // */
 
@@ -89,9 +89,9 @@ function at_client_process_comment(&$vars) {
  * Override or insert variables into the block templates.
  */
 /* -- Delete this line if you want to use these functions
-function at_client_preprocess_block(&$vars) {
+function ec_foundation_theme_preprocess_block(&$vars) {
 }
-function at_client_process_block(&$vars) {
+function ec_foundation_theme_process_block(&$vars) {
 }
 // */
 
@@ -102,7 +102,7 @@ function at_client_process_block(&$vars) {
   
   /* -- Delete this line if you want to use these functions
   
- function at_client_form_alter(&$form, &$form_state, $form_id){
+ function ec_foundation_theme_form_alter(&$form, &$form_state, $form_id){
 	 
  $buttonLabel = array(
      'field_button_text',

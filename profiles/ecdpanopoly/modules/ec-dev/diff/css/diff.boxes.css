@@ -122,7 +122,3 @@ td.diff-prevlink {
 td.diff-nextlink {
   text-align: right;
 }
-
-table.diff-revisions tr.revision-published td {
-  background-color: #aaffaa;
-}

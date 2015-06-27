@@ -4,7 +4,6 @@ core = 7.x
 ; Drupal Contrib Mods
 includes[] = panopoly.make
 
-
 ; Drupal Contrib Mods
 includes[] = ecdpanopoly_contrib.make
 

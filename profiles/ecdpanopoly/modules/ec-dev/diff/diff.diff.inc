@@ -52,13 +52,11 @@ function diff_entity_diff($old_entity, $new_entity, $context) {
  *   - old_entity: The older entity.
  *   - new_entity: The newer entity.
  *   - view_mode: The view mode to use. Defaults to FALSE.
- * @param string $default_langcode
- *   (optional) Language code to force comparison in.
  *
  * @return array
  *   An associative array of values keyed by the field name and delta value.
  */
-function diff_entity_fields_diff($old_entity, $new_entity, $context, $default_langcode = NULL) {
+function diff_entity_fields_diff($old_entity, $new_entity, $context) {
   $result = array();
 
   $entity_type = $context['entity_type'];
@@ -100,7 +98,7 @@ function diff_entity_fields_diff($old_entity, $new_entity, $context, $default_la
 
     // We provide a loose check on the field access.
     if (field_access('view', $field, $entity_type) || field_access('edit', $field, $entity_type)) {
-      $langcode = $default_langcode ? $default_langcode : field_language($entity_type, $new_entity, $field_name);
+      $langcode = field_language($entity_type, $new_entity, $field_name);
 
       $field_context['language'] = $langcode;
       $field_context['field'] = $field;

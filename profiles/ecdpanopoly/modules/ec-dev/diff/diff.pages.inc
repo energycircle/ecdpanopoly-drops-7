@@ -10,9 +10,6 @@
  */
 function diff_latest($node) {
   $revisions = node_revision_list($node);
-  if (count($revisions) < 2 || !diff_node_revision_access($node, 'view')) {
-    drupal_goto('node/' . $node->nid);
-  }
   $new = array_shift($revisions);
   $old = array_shift($revisions);
   drupal_goto("node/{$node->nid}/revisions/view/{$old->vid}/{$new->vid}");
@@ -164,7 +161,7 @@ function diff_diffs_show($node, $old_vid, $new_vid, $state = NULL) {
 
   $default_state = variable_get('diff_default_state_node', 'raw');
   if (empty($state)) {
-    $state = $default_state;
+  	$state = $default_state;
   }
   $state = str_replace('-', '_', $state);
   if (!array_key_exists($state, diff_available_states())) {
@@ -294,33 +291,33 @@ function diff_diffs_show($node, $old_vid, $new_vid, $state = NULL) {
 }
 
 /**
- * Creates an array of rows which represent the difference between two entities.
+ * Creates an array of rows which represent the difference between nodes.
  *
- * @param object $left_entity
- *   Entity for comparison which will be displayed on the left side.
- * @param object $right_entity
- *   Entity for comparison which will be displayed on the right side.
- * @param array $context
- *   The context used to render the diff.
+ * @param object $old_node
+ *   Node for comparison which will be displayed on the left side.
+ * @param object $new_node
+ *   Node for comparison which will be displayed on the right side.
+ * @param boolean $state
+ *   The state to render for the diff.
  */
-function diff_entity_body_rows($entity_type, $left_entity, $right_entity, $context = array()) {
+function _diff_body_rows($old_node, $new_node, $state = 'raw') {
   // This is an unique index only, so no need for drupal_static().
   static $table_row_counter = 0;
 
   if ($theme = variable_get('diff_theme', 'default')) {
     drupal_add_css(drupal_get_path('module', 'diff') . "/css/diff.{$theme}.css");
   }
+  module_load_include('inc', 'diff', 'includes/node');
 
   $rows = array();
   $any_visible_change = FALSE;
-  $context += array(
-    'entity_type' => $entity_type,
-    'states' => array('raw'),
+  $context = array(
+    'entity_type' => 'node',
+    'states' => array($state),
     'view_mode' => 'diff_standard',
   );
-  $state = current($context['states']);
 
-  $entity_diffs = diff_compare_entities($left_entity, $right_entity, $context);
+  $node_diffs = diff_compare_entities($old_node, $new_node, $context);
 
   // Track line numbers between multiple diffs.
   $line_stats = array(
@@ -329,19 +326,19 @@ function diff_entity_body_rows($entity_type, $left_entity, $right_entity, $conte
   );
 
   // Render diffs for each.
-  foreach ($entity_diffs as $entity_diff) {
-    $show_header = !empty($entity_diff['#name']);
+  foreach ($node_diffs as $node_diff) {
+    $show_header = !empty($node_diff['#name']);
     // These are field level settings.
-    if ($show_header && isset($entity_diff['#settings']['show_header'])) {
-      $show_header = $show_header && $entity_diff['#settings']['show_header'];
+    if ($show_header && isset($node_diff['#settings']['show_header'])) {
+      $show_header = $show_header && $node_diff['#settings']['show_header'];
     }
 
     // Line counting and line header options.
-    if (empty($entity_diff['#settings']['line_counter'])) {
+    if (empty($node_diff['#settings']['line_counter'])) {
       $line_counter = FALSE;
     }
     else {
-      $line_counter = $entity_diff['#settings']['line_counter'];
+      $line_counter = $node_diff['#settings']['line_counter'];
     }
     // Every call to 'line' resets the counters.
     if ($line_counter) {
@@ -357,8 +354,8 @@ function diff_entity_body_rows($entity_type, $left_entity, $right_entity, $conte
       $line_stats_ref = NULL;
     }
 
-    list($left, $right) = diff_extract_state($entity_diff, $state);
-    if ($entity_diff_rows = diff_get_rows($left, $right, $line_counter && $line_counter != 'hidden', $line_stats_ref)) {
+    list($old, $new) = diff_extract_state($node_diff, $state);
+    if ($node_diff_rows = diff_get_rows($old, $new, $line_counter && $line_counter != 'hidden', $line_stats_ref)) {
       if ($line_counter && $line_counter != 'line') {
         $line_stats['offset']['x'] += $line_stats_ref['counter']['x'];
         $line_stats['offset']['y'] += $line_stats_ref['counter']['y'];
@@ -366,7 +363,7 @@ function diff_entity_body_rows($entity_type, $left_entity, $right_entity, $conte
       if ($show_header) {
         $rows['diff-header-' . $table_row_counter++] = array(
           array(
-            'data' => t('Changes to %name', array('%name' => $entity_diff['#name'])),
+            'data' => t('Changes to %name', array('%name' => $node_diff['#name'])),
             'class' => 'diff-section-title',
             'colspan' => 4,
           ),
@@ -374,7 +371,7 @@ function diff_entity_body_rows($entity_type, $left_entity, $right_entity, $conte
       }
       // To avoid passing counter to the Diff engine, index rows manually here
       // to allow modules to interact with the table. i.e. no array_merge().
-      foreach ($entity_diff_rows as $row) {
+      foreach ($node_diff_rows as $row) {
         $rows['diff-row-' . $table_row_counter++] = $row;
       }
       $any_visible_change = TRUE;
@@ -388,26 +385,17 @@ function diff_entity_body_rows($entity_type, $left_entity, $right_entity, $conte
         'colspan' => 4,
       ),
     );
+    // @todo: revise this.
+    // Needed to keep safari happy.
+    $rows['diff-empty-' . $table_row_counter++] = array(
+      array('data' => ''),
+      array('data' => ''),
+      array('data' => ''),
+      array('data' => ''),
+    );
   }
-  return $rows;
-}
 
-/**
- * Creates an array of rows which represent the difference between nodes.
- *
- * @param object $old_node
- *   Node for comparison which will be displayed on the left side.
- * @param object $new_node
- *   Node for comparison which will be displayed on the right side.
- * @param boolean $state
- *   The state to render for the diff.
- */
-function _diff_body_rows($old_node, $new_node, $state = 'raw') {
-  $context = array(
-    'states' => array($state),
-    'view_mode' => 'diff_standard',
-  );
-  return diff_entity_body_rows('node', $old_node, $new_node, $context);
+  return $rows;
 }
 
 /**
@@ -521,26 +509,20 @@ function diff_markdown_state(&$diff, $state) {
   }
 
   if (!isset($plain_old) && isset($old)) {
-    $diff['#states'][$state . '_plain']['#old'] = _diff_apply_markdown($markdown, $old);
+    if (is_array($old)) {
+      $diff['#states'][$state . '_plain']['#old'] = $markdown ? array_map($markdown, $old) : $old;
+    }
+    else {
+      $diff['#states'][$state . '_plain']['#old'] = $markdown ? $markdown($old) : $old;
+    }
   }
   if (!isset($plain_new) && isset($new)) {
-    $diff['#states'][$state . '_plain']['#new'] = _diff_apply_markdown($markdown, $new);
-  }
-}
-
-function _diff_apply_markdown($markdown, $items) {
-  if (!$markdown) {
-    return $items;
-  }
-  if (is_array($items)) {
-    $items = array_map($markdown, $items);
-    foreach($items as &$item) {
-      $item = trim($item, "\n");
+    if (is_array($new)) {
+      $diff['#states'][$state . '_plain']['#new'] = $markdown ? array_map($markdown, $new) : $new;
     }
-    return $items;
-  }
-  else {
-    return trim($markdown($items), "\n");
+    else {
+      $diff['#states'][$state . '_plain']['#new'] = $markdown ? $markdown($new) : $new;
+    }
   }
 }
 

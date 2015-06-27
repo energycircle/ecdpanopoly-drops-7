@@ -49,13 +49,13 @@ function theme_diff_node_revisions($vars) {
           'class' => array('revision-current'),
         );
         $row[] = array(
-          'data' => '<strong>' . t('This is the published revision.') . '</strong>',
+          'data' => t('current revision'),
           'class' => array('revision-current'),
           'colspan' => '2',
         );
         $rows[] = array(
           'data' => $row,
-          'class' => array('revision-published diff-revision'),
+          'class' => array('error diff-revision'),
         );
       }
     }
@@ -64,7 +64,7 @@ function theme_diff_node_revisions($vars) {
     'header' => $header,
     'rows' => $rows,
     'sticky' => FALSE,
-    'attributes' => array('class' => array('diff-revisions')),
+    'attributes' => array('class' => 'diff-revisions'),
   ));
 
   $output .= drupal_render_children($form);

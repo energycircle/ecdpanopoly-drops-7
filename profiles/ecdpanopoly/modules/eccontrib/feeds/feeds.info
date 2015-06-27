@@ -51,6 +51,7 @@ files[] = tests/feeds_parser_syndication.test
 files[] = tests/feeds_processor_node.test
 files[] = tests/feeds_processor_term.test
 files[] = tests/feeds_processor_user.test
+files[] = tests/feeds_push.test
 files[] = tests/feeds_scheduler.test
 files[] = tests/feeds_mapper_link.test
 files[] = tests/feeds_mapper_summary.test
@@ -67,9 +68,9 @@ files[] = views/feeds_views_handler_field_source.inc
 files[] = views/feeds_views_handler_filter_severity.inc
 files[] = views/feeds_views_plugin_argument_validate_feed_nid.inc
 
-; Information added by Drupal.org packaging script on 2015-06-15
-version = "7.x-2.0-alpha8+93-dev"
+; Information added by Drupal.org packaging script on 2015-06-25
+version = "7.x-2.0-alpha8+106-dev"
 core = "7.x"
 project = "feeds"
-datestamp = "1434410590"
+datestamp = "1435197493"
 

@@ -110,7 +110,11 @@
     <?php endif; ?>
     <div id="header-top-wrapper">
 					<div id="utility" class="container clearfix">
-						<?php print $search_box ?>
+						
+						<?php if($search_box): ?>
+							<?php print $search_box ?>
+						<?php endif; ?>
+						
                         <div id="navwrap">
 					  	<?php $menu = menu_navigation_links('menu-auxiliary-menu'); print theme('links__menu_auxiliary_menu', array('links' => $menu)); ?>
 						</div>

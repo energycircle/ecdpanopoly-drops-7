@@ -11,7 +11,7 @@
  * @param $form_state: A keyed array containing the current state of the form.
  */
 /* -- Delete this line to enable.
-function at_client_form_system_theme_settings_alter(&$form, &$form_state)  {
+function ec_foundation_theme_form_system_theme_settings_alter(&$form, &$form_state)  {
   // Your knarly custom theme settings go here...
 }
 // */
