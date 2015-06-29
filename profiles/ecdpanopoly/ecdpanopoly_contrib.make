@@ -10,7 +10,7 @@ projects[addressfield][subdir] = eccontrib
 projects[addressfield][version] = 1.1
 
 projects[addthis][subdir] = eccontrib
-projects[addthis][version] = 4.0-alpha4
+projects[addthis][version] = 4.0-alpha6
 
 projects[admin_theme][subdir] = eccontrib
 projects[admin_theme][version] = 1.x
@@ -37,7 +37,7 @@ projects[cer][subdir] = eccontrib
 projects[cer][version] = 3.x
 
 projects[colorbox][subdir] = eccontrib
-projects[colorbox][version] = 2.x
+projects[colorbox][version] = 2.9
 
 projects[compact_forms][subdir] = eccontrib
 projects[compact_forms][version] = 1.x
@@ -109,10 +109,13 @@ projects[eva][subdir] = eccontrib
 projects[eva][version] = 1.x
 
 projects[exclude_node_title][subdir] = eccontrib
-projects[exclude_node_title][version] = 1.7
+projects[exclude_node_title][version] = 1.9
 
 projects[feeds][subdir] = eccontrib
 projects[feeds][version] = 2.x
+
+projects[feeds_tamper][subdir] = eccontrib
+projects[feeds_tamper][version] = 1.1
 
 projects[field_collection][subdir] = eccontrib
 projects[field_collection][version] = 1.0-beta8
@@ -133,7 +136,7 @@ projects[field_multiple_limit][version] = 1.x
 ;projects[field_permissions][subdir] = eccontrib
 
 projects[field_validation][subdir] = eccontrib
-projects[field_validation][version] = 2.5
+projects[field_validation][version] = 2.6
 
 projects[flexslider][subdir] = eccontrib
 projects[flexslider][version] = 2.x-dev
@@ -145,7 +148,7 @@ projects[google_analytics][subdir] = eccontrib
 projects[google_analytics][version] = 2.x
 
 projects[hierarchical_select][subdir] = eccontrib
-projects[hierarchical_select][version] = 3.x
+projects[hierarchical_select][version] = 3.0-beta2
 
 projects[image_link_formatter][subdir] = eccontrib
 projects[image_link_formatter][version] = 1.0
@@ -202,7 +205,7 @@ projects[pps][subdir] = eccontrib
 projects[pps][version] = 1.x
 
 projects[redhen][subdir] = eccontrib
-projects[redhen][version] = 1.8
+projects[redhen][version] = 1.9
 
 projects[redirect][subdir] = eccontrib
 projects[redirect][version] = 1.0-rc1
@@ -211,7 +214,7 @@ projects[registration][subdir] = eccontrib
 projects[registration][version] = 1.3
 
 projects[relation][subdir] = eccontrib
-projects[relation][version] = 1.0-rc6
+projects[relation][version] = 1.0-rc7
 
 projects[rules][subdir] = eccontrib
 projects[rules][version] = 2.9
@@ -262,7 +265,7 @@ projects[views_slideshow][subdir] = eccontrib
 projects[views_slideshow][version] = 3.x
 
 projects[views_url_path_arguments][subdir] = eccontrib
-projects[views_url_path_arguments][version] = 1.x
+projects[views_url_path_arguments][version] = 1.1
 
 projects[weight][subdir] = eccontrib
 projects[weight][version] = 2.5

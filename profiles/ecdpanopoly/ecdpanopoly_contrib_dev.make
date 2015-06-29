@@ -31,7 +31,7 @@ projects[node_export][subdir] = ec-dev
 
 
 ; Field Tools
-projects[field_tools][version] = 1.0-alpha7
+projects[field_tools][version] = 1.0-alpha8
 projects[field_tools][subdir] = ec-dev
 
 projects[ftools][version] = 2.x-dev
