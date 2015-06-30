@@ -19,7 +19,7 @@ projects[adminrole][subdir] = eccontrib
 projects[adminrole][version] = 1.x
 
 projects[advanced_help][subdir] = eccontrib
-projects[advanced_help][version] = 1.x
+projects[advanced_help][version] = 1.3
 
 projects[auto_menutitle][subdir] = eccontrib
 projects[auto_menutitle][version] = 1.x
@@ -211,7 +211,7 @@ projects[redirect][subdir] = eccontrib
 projects[redirect][version] = 1.0-rc1
 
 projects[registration][subdir] = eccontrib
-projects[registration][version] = 1.3
+projects[registration][version] = 1.4
 
 projects[relation][subdir] = eccontrib
 projects[relation][version] = 1.0-rc7
