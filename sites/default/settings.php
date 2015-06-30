@@ -213,6 +213,19 @@
  * @endcode
  */
 $databases = array();
+// Local development configuration.
+if (!defined('PANTHEON_ENVIRONMENT')) {
+  // Database.
+  $databases['default']['default'] = array(
+    'database' => 'ec-distro',
+    'username' => 'root',
+    'password' => 'root',
+    'host' => 'localhost',
+    'driver' => 'mysql',
+    'port' => 3306,
+    'prefix' => '',
+  );
+}
 
 /**
  * Access control for update.php script.
