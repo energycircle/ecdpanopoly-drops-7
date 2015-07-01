@@ -14,13 +14,10 @@ dependencies[] = number
 dependencies[] = options
 dependencies[] = path
 dependencies[] = taxonomy
-;dependencies[] = search
-;dependencies[] = shortcut
 dependencies[] = field
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = dblog
-;dependencies[] = update
 dependencies[] = energycircle_apps
 
 ; Panopoly Foundation
@@ -28,7 +25,6 @@ dependencies[] = panopoly_core
 dependencies[] = panopoly_images
 dependencies[] = panopoly_theme
 dependencies[] = panopoly_magic
-;dependencies[] = panopoly_widgets
 dependencies[] = panopoly_admin
 dependencies[] = panopoly_users
 
@@ -41,11 +37,9 @@ dependencies[] = panopoly_config
 dependencies[] = panopoly_seo
 
 ; Panopoly Recommended - Admin & UI
-;dependencies[] = navbar
 dependencies[] = breakpoints
 dependencies[] = backports
 dependencies[] = linkit
-;dependencies[] = simplified_menu_admin
 dependencies[] = save_draft
 dependencies[] = module_filter
 dependencies[] = date_popup_authored
@@ -53,10 +47,7 @@ dependencies[] = views_ui
 
 
 ; Panopoly Recommended - Other
-;dependencies[] = devel
-;dependencies[] = uuid
 dependencies[] = apps
-;dependencies[] = apps_compatible
 
 
 ; Contrib Depends
@@ -64,7 +55,6 @@ dependencies[] = addressfield
 dependencies[] = addressfield_tokens
 dependencies[] = admin_menu
 dependencies[] = admin_theme
-;dependencies[] = adminrole
 dependencies[] = addthis
 dependencies[] = auto_menutitle
 dependencies[] = cer
@@ -116,7 +106,6 @@ dependencies[] = xmlsitemap
 ;DEVELOPMENT MODS
 dependencies[] = diff
 dependencies[] = features_override
-;dependencies[] = ftools
 dependencies[] = features_roles_permissions
 dependencies[] = uuid_features
 dependencies[] = uuid_path
