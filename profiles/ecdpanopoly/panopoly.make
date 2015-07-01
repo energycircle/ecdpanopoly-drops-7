@@ -59,6 +59,9 @@ projects[views][subdir] = contrib
 projects[views][patch][1615438] = https://www.drupal.org/files/search_multiple_terms-1615438-30.patch
 projects[views][subdir] = contrib
 
+projects[menu_block][patch][2499733] = https://www.drupal.org/files/issues/menu_block-check-depth_relative--2499733-1.patch
+projects[menu_block][subdir] = contrib
+
 ; disabled patch
 ;projects[views][patch][2018737] = https://www.drupal.org/files/issues/views-asset-diff-2018737-37.patch
 ;projects[views][subdir] = contrib

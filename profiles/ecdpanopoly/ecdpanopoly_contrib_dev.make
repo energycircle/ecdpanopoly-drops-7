@@ -26,7 +26,7 @@ projects[features_orphans][subdir] = ec-dev
 ;projects[feature_set][version] = 1.x
 ;projects[feature_set][subdir] = ec-dev
 
-projects[node_export][version] = 3.x
+projects[node_export][version] = 3.x-dev
 projects[node_export][subdir] = ec-dev
 
 

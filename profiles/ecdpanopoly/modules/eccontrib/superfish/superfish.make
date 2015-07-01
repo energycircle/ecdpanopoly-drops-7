@@ -1,8 +1,6 @@
-api = 2
 core = 7.x
+api = 2
 
-; Libraries
 libraries[superfish][directory_name] = superfish
-libraries[superfish][download][type] = file
-libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/archive/master.zip
-libraries[superfish][type] = libraries
+libraries[superfish][download][type] = get
+libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/zipball/master

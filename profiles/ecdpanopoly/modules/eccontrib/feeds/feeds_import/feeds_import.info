@@ -10,9 +10,9 @@ features[feeds_importer][] = node
 features[feeds_importer][] = user
 files[] = feeds_import.test
 
-; Information added by Drupal.org packaging script on 2015-06-25
-version = "7.x-2.0-alpha8+106-dev"
+; Information added by Drupal.org packaging script on 2015-06-30
+version = "7.x-2.0-alpha8+108-dev"
 core = "7.x"
 project = "feeds"
-datestamp = "1435197493"
+datestamp = "1435695784"
 
