@@ -12,7 +12,7 @@ projects[ec_article][download][type] = git
 projects[ec_article][download][url] = https://github.com/energycircle/ec_article.git
 projects[ec_article][type] = module
 projects[ec_article][subdir] = ecfeature
-projects[ec_article][version] = 1.0-beta3
+projects[ec_article][version] = 1.0-beta4
 
 projects[ec_awards][download][type] = git
 projects[ec_awards][download][url] = https://github.com/energycircle/ec_awards.git
@@ -24,7 +24,7 @@ projects[ec_base_config][download][type] = git
 projects[ec_base_config][download][url] = https://github.com/energycircle/ec_base_config.git
 projects[ec_base_config][type] = module
 projects[ec_base_config][subdir] = ecfeature
-projects[ec_base_config][version] = 1.0-beta4
+projects[ec_base_config][version] = 1.0-beta5
 
 projects[ec_base_content][download][type] = git
 projects[ec_base_content][download][url] = https://github.com/energycircle/ec_base_content.git
@@ -36,7 +36,7 @@ projects[ec_blog_post][download][type] = git
 projects[ec_blog_post][download][url] = https://github.com/energycircle/ec_blog_post.git
 projects[ec_blog_post][subdir] = ecfeature
 projects[ec_blog_post][type] = module
-projects[ec_blog_post][version] = 1.0-beta6
+projects[ec_blog_post][version] = 1.0-beta7
 
 projects[ec_campaign_page][download][type] = git
 projects[ec_campaign_page][download][url] = https://github.com/energycircle/ec_campaign_page.git
@@ -48,7 +48,13 @@ projects[ec_casestudy][download][type] = git
 projects[ec_casestudy][download][url] = https://github.com/energycircle/ec_casestudy.git
 projects[ec_casestudy][subdir] = ecfeature
 projects[ec_casestudy][type] = module
-projects[ec_casestudy][version] = 1.1
+projects[ec_casestudy][version] = 1.2
+
+projects[ec_cleaner][download][type] = git
+projects[ec_cleaner][download][url] = https://github.com/energycircle/ec_cleaner.git
+projects[ec_cleaner][subdir] = ecfeature
+projects[ec_cleaner][type] = module
+projects[ec_cleaner][version] =  1.0-beta2
 
 projects[ec_conference_tracks_sessions][download][type] = git
 projects[ec_conference_tracks_sessions][download][url] = https://github.com/energycircle/ec_conference_tracks_sessions.git
@@ -72,7 +78,7 @@ projects[ec_distinction][download][type] = git
 projects[ec_distinction][download][url] = https://github.com/energycircle/ec_distinction.git
 projects[ec_distinction][subdir] = ecfeature
 projects[ec_distinction][type] = module
-projects[ec_distinction][version] = 1.0-beta5
+projects[ec_distinction][version] = 1.0-beta6
 
 projects[ec_distributor][download][type] = git
 projects[ec_distributor][download][url] = https://github.com/energycircle/ec_distributor.git
@@ -90,7 +96,7 @@ projects[ec_financing_option][download][type] = git
 projects[ec_financing_option][download][url] = https://github.com/energycircle/ec_financing_option.git
 projects[ec_financing_option][subdir] = ecfeature
 projects[ec_financing_option][type] = module
-projects[ec_financing_option][version] = 1.0-beta1
+projects[ec_financing_option][version] = 1.0-beta2
 
 projects[ec_foundation_image_styles][download][type] = git
 projects[ec_foundation_image_styles][download][url] = https://github.com/energycircle/ec_foundation_image_styles.git
@@ -114,7 +120,7 @@ projects[ec_panopoly_page_overrides][download][type] = git
 projects[ec_panopoly_page_overrides][download][url] = https://github.com/energycircle/ec_panopoly_page_overrides.git
 projects[ec_panopoly_page_overrides][subdir] = ecfeature
 projects[ec_panopoly_page_overrides][type] = module
-projects[ec_panopoly_page_overrides][version] = 1.0-beta1
+projects[ec_panopoly_page_overrides][version] = 1.1
 
 projects[ec_product_page_category][download][type] = git
 projects[ec_product_page_category][download][url] = https://github.com/energycircle/ec_product_page_category.git
@@ -132,7 +138,7 @@ projects[ec_promotions][download][type] = git
 projects[ec_promotions][download][url] = https://github.com/energycircle/ec_promotions.git
 projects[ec_promotions][subdir] = ecfeature
 projects[ec_promotions][type] = module
-projects[ec_promotions][version] = 1.0-beta8
+projects[ec_promotions][version] = 1.0-beta9
 
 projects[ec_redhen][download][type] = git
 projects[ec_redhen][download][url] = https://github.com/energycircle/ec_redhen.git
@@ -150,13 +156,13 @@ projects[ec_service_stack][download][type] = git
 projects[ec_service_stack][download][url] = https://github.com/energycircle/ec_service_stack.git
 projects[ec_service_stack][subdir] = ecfeature
 projects[ec_service_stack][type] = module
-projects[ec_service_stack][version] = 1.0-beta2
+projects[ec_service_stack][version] = 1.0-beta3
 
 projects[ec_slide][download][type] = git
 projects[ec_slide][download][url] = https://github.com/energycircle/ec_slide.git
 projects[ec_slide][subdir] = ecfeature
 projects[ec_slide][type] = module
-projects[ec_slide][version] = 1.0-beta3
+projects[ec_slide][version] = 1.0-beta7
 
 projects[ec_staff][download][type] = git
 projects[ec_staff][download][url] = https://github.com/energycircle/ec_staff.git
@@ -168,5 +174,5 @@ projects[ec_testimonial][download][type] = git
 projects[ec_testimonial][download][url] = https://github.com/energycircle/ec_testimonial.git
 projects[ec_testimonial][subdir] = ecfeature
 projects[ec_testimonial][type] = module
-projects[ec_testimonial][version] = 1.0-beta4
+projects[ec_testimonial][version] = 1.0-beta5
 

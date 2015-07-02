@@ -1441,7 +1441,7 @@ function ec_panopoly_page_overrides_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_panopoly_page';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_panopoly_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1464,83 +1464,6 @@ function ec_panopoly_page_overrides_defaultconfig_strongarm() {
   $strongarm->name = 'diff_view_mode_preview_node_panopoly_page';
   $strongarm->value = 'full';
   $export['diff_view_mode_preview_node_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_author_panopoly_page';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_author_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_book_mlid_panopoly_page';
-  $strongarm->value = FALSE;
-  $export['node_export_reset_book_mlid_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_changed_panopoly_page';
-  $strongarm->value = 1;
-  $export['node_export_reset_changed_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_created_panopoly_page';
-  $strongarm->value = 1;
-  $export['node_export_reset_created_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_last_comment_timestamp_panopoly_page';
-  $strongarm->value = 1;
-  $export['node_export_reset_last_comment_timestamp_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_menu_panopoly_page';
-  $strongarm->value = 1;
-  $export['node_export_reset_menu_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_path_panopoly_page';
-  $strongarm->value = 1;
-  $export['node_export_reset_path_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_promote_panopoly_page';
-  $strongarm->value = 0;
-  $export['node_export_reset_promote_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_revision_timestamp_panopoly_page';
-  $strongarm->value = 1;
-  $export['node_export_reset_revision_timestamp_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_status_panopoly_page';
-  $strongarm->value = 0;
-  $export['node_export_reset_status_panopoly_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_export_reset_sticky_panopoly_page';
-  $strongarm->value = 0;
-  $export['node_export_reset_sticky_panopoly_page'] = $strongarm;
 
   return $export;
 }

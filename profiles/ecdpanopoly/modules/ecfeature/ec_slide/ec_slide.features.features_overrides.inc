@@ -37,7 +37,5 @@ function ec_slide_features_override_default_overrides() {
   $overrides["image.flexslider_full.label"] = 'flexslider_full';
   $overrides["image.flexslider_thumbnail.label"] = 'flexslider_thumbnail';
 
-  // Exported overrides for: user_permission
-
  return $overrides;
 }
