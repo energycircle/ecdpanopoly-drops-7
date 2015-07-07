@@ -11,7 +11,6 @@ dependencies[] = ec_faq
 dependencies[] = ec_panopoly_page_overrides
 dependencies[] = ec_service_stack
 dependencies[] = node_export_features
-dependencies[] = node_export_features
 dependencies[] = strongarm
 dependencies[] = uuid_features
 __drupal_alter_by_ref[][node][faq] = faq

@@ -111,7 +111,7 @@
     <div id="header-top-wrapper">
 					<div id="utility" class="container clearfix">
 						
-						<?php if($search_box): ?>
+						<?php if (isset($page['search_box'])): ?>
 							<?php print $search_box ?>
 						<?php endif; ?>
 						

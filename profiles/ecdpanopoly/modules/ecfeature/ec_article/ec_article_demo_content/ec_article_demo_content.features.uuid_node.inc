@@ -21,11 +21,11 @@ function ec_article_demo_content_uuid_features_default_content() {
   'vuuid' => '648d2aab-28d0-4071-8b1d-1cb47b3468bf',
   'type' => 'article',
   'language' => 'und',
-  'created' => 1414102841,
+  'created' => 1436282419,
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '1ccb35b8-9f68-4f7a-a74f-1398779ff248',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -98,7 +98,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'page_manager' => array(
       'entity_type' => 'node',
       'entity_id' => 15,
-      'revision_id' => 15,
+      'revision_id' => 57,
       'name' => 'node:panopoly_page:default',
       'no_blocks' => 0,
       'css_id' => 'page-page',
@@ -299,7 +299,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'default' => array(
       'entity_type' => 'node',
       'entity_id' => 15,
-      'revision_id' => 15,
+      'revision_id' => 57,
       'name' => 'node:article:default:default',
       'no_blocks' => 0,
       'css_id' => '',
@@ -616,7 +616,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'teaser' => array(
       'entity_type' => 'node',
       'entity_id' => 15,
-      'revision_id' => 15,
+      'revision_id' => 57,
       'name' => 'node:panopoly_page:default:teaser',
       'no_blocks' => 0,
       'css_id' => '',
@@ -752,7 +752,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'featured' => array(
       'entity_type' => 'node',
       'entity_id' => 15,
-      'revision_id' => 15,
+      'revision_id' => 57,
       'name' => 'node:panopoly_page:default:featured',
       'no_blocks' => 0,
       'css_id' => '',
@@ -918,7 +918,7 @@ function ec_article_demo_content_uuid_features_default_content() {
   'data' => NULL,
   'weight_weight' => 0,
   'pathauto_perform_alias' => FALSE,
-  'date' => '2014-10-23 18:20:41 -0400',
+  'date' => '2015-07-07 11:20:19 -0400',
 );
   $nodes[] = array(
   'uid' => 0,
@@ -931,11 +931,11 @@ function ec_article_demo_content_uuid_features_default_content() {
   'vuuid' => '416e8dce-0667-44b8-aff8-804f8594b488',
   'type' => 'article',
   'language' => 'und',
-  'created' => 1414103032,
+  'created' => 1436282419,
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '3efce21e-0297-453d-b94c-7fa3a480aa60',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -1006,23 +1006,21 @@ function ec_article_demo_content_uuid_features_default_content() {
   ),
   'panelizer' => array(
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
+      'entity_type' => 'node',
+      'entity_id' => 16,
+      'revision_id' => 58,
       'name' => 'node:article:default:default',
-      'title' => 'Default',
-      'panelizer_type' => 'node',
-      'panelizer_key' => 'article',
-      'no_blocks' => FALSE,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
       'pipeline' => 'standard',
       'contexts' => array(),
       'relationships' => array(),
-      'access' => array(),
+      'did' => 0,
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 1,
       'extra' => array(),
       'display' => array(
         'args' => array(),
@@ -1323,12 +1321,6 @@ function ec_article_demo_content_uuid_features_default_content() {
         'hide_title' => 1,
         'title_pane' => 'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998',
       ),
-      'export_module' => 'ec_article',
-      'type' => 'Overridden',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'machine_name' => FALSE,
@@ -1337,7 +1329,7 @@ function ec_article_demo_content_uuid_features_default_content() {
   'data' => NULL,
   'weight_weight' => 0,
   'pathauto_perform_alias' => FALSE,
-  'date' => '2014-10-23 18:23:52 -0400',
+  'date' => '2015-07-07 11:20:19 -0400',
 );
   $nodes[] = array(
   'uid' => 0,
@@ -1350,11 +1342,11 @@ function ec_article_demo_content_uuid_features_default_content() {
   'vuuid' => 'a2ac0a31-1d62-4545-8874-cd7034799098',
   'type' => 'article',
   'language' => 'und',
-  'created' => 1414102901,
+  'created' => 1436282419,
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '4ac2ee7a-14e7-499e-8d40-f6cde5965e98',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -1427,7 +1419,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'page_manager' => array(
       'entity_type' => 'node',
       'entity_id' => 17,
-      'revision_id' => 17,
+      'revision_id' => 59,
       'name' => 'node:article:default',
       'no_blocks' => 0,
       'css_id' => 'page-page',
@@ -1445,7 +1437,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'default' => array(
       'entity_type' => 'node',
       'entity_id' => 17,
-      'revision_id' => 17,
+      'revision_id' => 59,
       'name' => 'node:article:default:default',
       'no_blocks' => 0,
       'css_id' => '',
@@ -1762,7 +1754,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'teaser' => array(
       'entity_type' => 'node',
       'entity_id' => 17,
-      'revision_id' => 17,
+      'revision_id' => 59,
       'name' => 'node:panopoly_page:default:teaser',
       'no_blocks' => 0,
       'css_id' => '',
@@ -1898,7 +1890,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'featured' => array(
       'entity_type' => 'node',
       'entity_id' => 17,
-      'revision_id' => 17,
+      'revision_id' => 59,
       'name' => 'node:panopoly_page:default:featured',
       'no_blocks' => 0,
       'css_id' => '',
@@ -2064,7 +2056,7 @@ function ec_article_demo_content_uuid_features_default_content() {
   'data' => NULL,
   'weight_weight' => 0,
   'pathauto_perform_alias' => FALSE,
-  'date' => '2014-10-23 18:21:41 -0400',
+  'date' => '2015-07-07 11:20:19 -0400',
 );
   $nodes[] = array(
   'uid' => 0,
@@ -2077,11 +2069,11 @@ function ec_article_demo_content_uuid_features_default_content() {
   'vuuid' => '11aa8836-34aa-4340-83a9-2f336290471f',
   'type' => 'article',
   'language' => 'und',
-  'created' => 1414102969,
+  'created' => 1436282419,
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'c185bc44-074b-450c-8c9d-a925ebee91d7',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -2154,7 +2146,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'page_manager' => array(
       'entity_type' => 'node',
       'entity_id' => 18,
-      'revision_id' => 18,
+      'revision_id' => 60,
       'name' => 'node:panopoly_page:default',
       'no_blocks' => 0,
       'css_id' => 'page-page',
@@ -2355,7 +2347,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'default' => array(
       'entity_type' => 'node',
       'entity_id' => 18,
-      'revision_id' => 18,
+      'revision_id' => 60,
       'name' => 'node:article:default:default',
       'no_blocks' => 0,
       'css_id' => '',
@@ -2672,7 +2664,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'teaser' => array(
       'entity_type' => 'node',
       'entity_id' => 18,
-      'revision_id' => 18,
+      'revision_id' => 60,
       'name' => 'node:panopoly_page:default:teaser',
       'no_blocks' => 0,
       'css_id' => '',
@@ -2808,7 +2800,7 @@ function ec_article_demo_content_uuid_features_default_content() {
     'featured' => array(
       'entity_type' => 'node',
       'entity_id' => 18,
-      'revision_id' => 18,
+      'revision_id' => 60,
       'name' => 'node:panopoly_page:default:featured',
       'no_blocks' => 0,
       'css_id' => '',
@@ -2974,7 +2966,7 @@ function ec_article_demo_content_uuid_features_default_content() {
   'data' => NULL,
   'weight_weight' => 0,
   'pathauto_perform_alias' => FALSE,
-  'date' => '2014-10-23 18:22:49 -0400',
+  'date' => '2015-07-07 11:20:19 -0400',
 );
   return $nodes;
 }
