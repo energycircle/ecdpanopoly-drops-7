@@ -25,7 +25,7 @@ function ec_blog_demo_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '4164e0fa-76fd-4421-9f76-31c019db75b1',
-  'revision_uid' => 0,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
@@ -310,7 +310,7 @@ function ec_blog_demo_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '5a493cbb-f8ce-4d67-ad92-f055e9d45bf7',
-  'revision_uid' => 0,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(

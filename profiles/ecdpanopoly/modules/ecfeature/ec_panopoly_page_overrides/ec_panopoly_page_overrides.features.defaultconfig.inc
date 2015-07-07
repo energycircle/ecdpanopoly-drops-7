@@ -854,7 +854,7 @@ function ec_panopoly_page_overrides_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_panopoly_page';
-  $strongarm->value = 'edit-menu';
+  $strongarm->value = 'edit-panelizer';
   $export['additional_settings__active_tab_panopoly_page'] = $strongarm;
 
   return $export;
