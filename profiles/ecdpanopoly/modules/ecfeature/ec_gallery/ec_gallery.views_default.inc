@@ -12,10 +12,10 @@ function ec_gallery_views_default_views() {
 
   $view = new view();
   $view->name = 'gallery_slideshow_carousel';
-  $view->description = 'Used as a template for add thumbnail sliders. Make sure to clone and edit.';
+  $view->description = 'Case Study page Gallery slideshow with thumbnail navigation';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Gallery Slideshow Carousel';
+  $view->human_name = 'Case Study Gallery Slideshow';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -30,6 +30,10 @@ function ec_gallery_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'flexslider';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_ref_case_study_gallery_node']['id'] = 'reverse_field_ref_case_study_gallery_node';
+  $handler->display->display_options['relationships']['reverse_field_ref_case_study_gallery_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_ref_case_study_gallery_node']['field'] = 'reverse_field_ref_case_study_gallery_node';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -48,6 +52,16 @@ function ec_gallery_views_default_views() {
     'image_style' => 'sc_780x585',
     'image_link' => '',
   );
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_ref_case_study_gallery_node';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -68,7 +82,6 @@ function ec_gallery_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'flexslider';
   $handler->display->display_options['style_options']['optionset'] = 'slideshow_slider';
-  $handler->display->display_options['style_options']['captionfield'] = 'title';
   $handler->display->display_options['style_options']['id'] = 'flexslider-slider';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
@@ -124,6 +137,8 @@ function ec_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_gallery_image']['id'] = 'field_gallery_image';
   $handler->display->display_options['fields']['field_gallery_image']['table'] = 'field_data_field_gallery_image';
   $handler->display->display_options['fields']['field_gallery_image']['field'] = 'field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['label'] = '';
+  $handler->display->display_options['fields']['field_gallery_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_gallery_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_gallery_image']['settings'] = array(
     'image_style' => 'sc_220x110',

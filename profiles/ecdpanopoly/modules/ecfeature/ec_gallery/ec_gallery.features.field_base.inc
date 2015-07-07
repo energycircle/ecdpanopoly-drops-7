@@ -32,13 +32,13 @@ function ec_gallery_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_ref_gallery_case_study'
-  $field_bases['field_ref_gallery_case_study'] = array(
+  // Exported field_base: 'field_ref_case_study_gallery'
+  $field_bases['field_ref_case_study_gallery'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_gallery_case_study',
+    'field_name' => 'field_ref_case_study_gallery',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -61,7 +61,7 @@ function ec_gallery_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'case_study' => 'case_study',
+          'gallery' => 'gallery',
         ),
       ),
       'target_type' => 'node',

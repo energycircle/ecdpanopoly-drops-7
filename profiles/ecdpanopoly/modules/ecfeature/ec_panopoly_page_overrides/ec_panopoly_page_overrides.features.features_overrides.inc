@@ -13,8 +13,6 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
 
   // Exported overrides for: panelizer_defaults
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-74f82699-93ba-4b15-8bcf-e3bfa1894d40|panel"] = 'two_66_33_first';
-  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-96fb1bf5-7ac2-4566-9dae-876a363c71c9|panel"] = 'two_66_33_first';
-  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d|panel"] = 'two_66_33_first';
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-b92fd697-8377-4b5e-87cc-d81df0e7e61d"] = (object) array(
       'pid' => 'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d',
       'panel' => 'two_66_33_second',
@@ -57,29 +55,35 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|two_66_33_first"] = array(
     0 => 'new-e0d93093-20b4-42cd-bf23-6f2f487240a6',
     1 => 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40',
-    2 => 'new-96fb1bf5-7ac2-4566-9dae-876a363c71c9',
-    3 => 'new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d',
+    2 => 'new-79745fa9-4e30-40d3-9520-96ab5370483f',
   );
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|two_66_33_second"] = array(
     0 => 'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d',
-    1 => 'new-79745fa9-4e30-40d3-9520-96ab5370483f',
+    1 => 'new-e4656993-f289-4768-88fd-c144eb23b740',
   );
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|layout"] = 'two_50';
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panel_settings|style_settings|two_50_bottom"] = NULL;
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panel_settings|style_settings|two_50_first"] = NULL;
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panel_settings|style_settings|two_50_second"] = NULL;
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panel_settings|style_settings|two_50_top"] = NULL;
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|contentmain"]["DELETED"] = TRUE;
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_50_bottom"] = array(
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.contexts|0"] = array(
+    'identifier' => 'Content',
+    'keyword' => 'node',
+    'name' => 'entity:node',
+    'entity_id' => 1,
+    'id' => 1,
+  );
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|layout"] = 'two_66_33';
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_50_bottom"]["DELETED"] = TRUE;
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_50_first"]["DELETED"] = TRUE;
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_50_second"]["DELETED"] = TRUE;
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_50_top"]["DELETED"] = TRUE;
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_66_33_bottom"] = array(
     0 => 'new-5c743585-bddf-4030-8bb7-6b0a4c8aa30a',
   );
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_50_first"] = array(
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_66_33_first"] = array(
     0 => 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40',
   );
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_50_second"] = array(
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_66_33_second"] = array(
     0 => 'new-5b909cec-42bd-45ab-97ce-0f4755482d24',
+    1 => 'new-d7129c9f-b32a-4a86-a80e-891e37e2897e',
   );
-  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_50_top"] = array(
+  $overrides["panelizer_defaults.node:panopoly_page:home_default.display|panels|two_66_33_top"] = array(
     0 => 'new-e0d93093-20b4-42cd-bf23-6f2f487240a6',
   );
 
