@@ -624,442 +624,6 @@ function ec_product_page_category_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product_category-field_ref_prodcat_case_study'.
-  $fields['node-product_category-field_ref_prodcat_case_study'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_prodcat_case_study',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'field_default_token' => array(
-              'status' => TRUE,
-            ),
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'case_study' => 'case_study',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product_category',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => 'Select case studies to display on this product category page.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 5,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 7,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_prodcat_case_study',
-      'label' => 'Case Studies',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 11,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product_category-field_ref_prodcat_faq'.
-  $fields['node-product_category-field_ref_prodcat_faq'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_prodcat_faq',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'field_default_token' => array(
-              'status' => TRUE,
-            ),
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'faq' => 'faq',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product_category',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => 'Select FAQ to display on this product category page.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 6,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 6,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_prodcat_faq',
-      'label' => 'FAQ',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 12,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product_category-field_ref_prodcat_product'.
-  $fields['node-product_category-field_ref_prodcat_product'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_prodcat_product',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'field_default_token' => array(
-              'status' => TRUE,
-            ),
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'product_page' => 'product_page',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product_category',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => 'Select the products in this product category.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 3,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 8,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_prodcat_product',
-      'label' => 'Products',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 4,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product_category-field_ref_prodcat_testimonial'.
-  $fields['node-product_category-field_ref_prodcat_testimonial'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_prodcat_testimonial',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'field_default_token' => array(
-              'status' => TRUE,
-            ),
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'testimonial' => 'testimonial',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product_category',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => 'Select testimonials to display on this product category page.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 4,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 9,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_prodcat_testimonial',
-      'label' => 'Testimonials',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 13,
-      ),
-    ),
-  );
-
   // Exported field: 'node-product_category-field_ref_to_cta_form'.
   $fields['node-product_category-field_ref_to_cta_form'] = array(
     'field_config' => array(
@@ -1167,23 +731,126 @@ function ec_product_page_category_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-product_page-field_ref_product_prodcat'.
+  $fields['node-product_page-field_ref_product_prodcat'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_product_prodcat',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'product_category' => 'product_category',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Select the category/categories this product is in.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 11,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_product_prodcat',
+      'label' => 'Product Category',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 3,
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Button Text');
   t('CTA form');
   t('Call to Action');
-  t('Case Studies');
   t('Display Title');
   t('Display subtitle');
-  t('FAQ');
+  t('Product Category');
   t('Product Category Image');
-  t('Products');
-  t('Select FAQ to display on this product category page.');
-  t('Select case studies to display on this product category page.');
-  t('Select testimonials to display on this product category page.');
-  t('Select the products in this product category.');
-  t('Testimonials');
+  t('Select the category/categories this product is in.');
 
   return $fields;
 }

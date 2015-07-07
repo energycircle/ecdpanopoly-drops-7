@@ -34,6 +34,55 @@ function ec_faq_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_faq';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_faq';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_faq';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_faq';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_faq';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_faq';
+  $strongarm->value = '1';
+  $export['content_type_extras_save_and_new_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_faq';
+  $strongarm->value = 0;
+  $export['content_type_extras_title_hide_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'date_popup_authored_enabled_faq';
   $strongarm->value = 0;
   $export['date_popup_authored_enabled_faq'] = $strongarm;
@@ -246,6 +295,16 @@ function ec_faq_strongarm() {
   $strongarm->name = 'weight_range_faq';
   $strongarm->value = '20';
   $export['weight_range_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_faq';
+  $strongarm->value = array(
+    'status' => '0',
+    'priority' => '0.5',
+  );
+  $export['xmlsitemap_settings_node_faq'] = $strongarm;
 
   return $export;
 }

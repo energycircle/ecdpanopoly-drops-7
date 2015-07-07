@@ -21,6 +21,465 @@ function ec_promotions_defaultconfig_features() {
 function ec_promotions_defaultconfig_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'node-article-field_ref_article_promo'.
+  $fields['node-article-field_ref_article_promo'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_article_promo',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'promotion' => 'promotion',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'article',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Promotions displayed on this page.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 5,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_article_promo',
+      'label' => 'Promotion',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 18,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-case_study-field_ref_case_study_promo'.
+  $fields['node-case_study-field_ref_case_study_promo'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_case_study_promo',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'promotion' => 'promotion',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'case_study',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Promotions shown on this page.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 1,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_case_study_promo',
+      'label' => 'Promotions',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 23,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-panopoly_page-field_ref_page_promotions'.
+  $fields['node-panopoly_page-field_ref_page_promotions'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 2,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_page_promotions',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'promotion' => 'promotion',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'panopoly_page',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 10,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_page_promotions',
+      'label' => 'Promotions',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 13,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-product_page-field_ref_prodpage_promotion'.
+  $fields['node-product_page-field_ref_prodpage_promotion'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_prodpage_promotion',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'promotion' => 'promotion',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product_page',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Select the promotions to display on this product page.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 10,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 15,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_prodpage_promotion',
+      'label' => 'Promotion',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 26,
+      ),
+    ),
+  );
+
   // Exported field: 'node-promotion-body'.
   $fields['node-promotion-body'] = array(
     'field_config' => array(
@@ -853,678 +1312,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-promotion-field_ref_promo_case_study'.
-  $fields['node-promotion-field_ref_promo_case_study'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_promo_case_study',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'case_study' => 'case_study',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'promotion',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Select case study pages on which to display this promo.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 10,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 4,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 12,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_promo_case_study',
-      'label' => 'Case Study',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 22,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-promotion-field_ref_promo_page'.
-  $fields['node-promotion-field_ref_promo_page'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_promo_page',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'panopoly_page' => 'panopoly_page',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'promotion',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 15,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 7,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 6,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_promo_page',
-      'label' => 'Content Page',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 23,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-promotion-field_ref_promo_serv_cat'.
-  $fields['node-promotion-field_ref_promo_serv_cat'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_promo_serv_cat',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'service_category' => 'service_category',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'promotion',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Select the service category pages on which to show this promo.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 7,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 12,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 10,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_promo_serv_cat',
-      'label' => 'Service Category',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 26,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-promotion-field_ref_promo_serv_group'.
-  $fields['node-promotion-field_ref_promo_serv_group'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_promo_serv_group',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'service_group' => 'service_group',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'promotion',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Select the service group pages on which to display this promo',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 6,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 13,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 14,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_promo_serv_group',
-      'label' => 'Service Group',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 25,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-promotion-field_ref_promo_service'.
-  $fields['node-promotion-field_ref_promo_service'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_promo_service',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'service' => 'service',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'promotion',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Select the Service pages on which to show this promo.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 8,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 10,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 9,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_promo_service',
-      'label' => 'Service',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 27,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-promotion-field_ref_promotion_product'.
-  $fields['node-promotion-field_ref_promotion_product'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_promotion_product',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'product_page' => 'product_page',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'promotion',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Show this promotion on these product pages.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 12,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 5,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 8,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_promotion_product',
-      'label' => 'Product',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 24,
-      ),
-    ),
-  );
-
   // Exported field: 'node-promotion-field_ref_to_cta_form'.
   $fields['node-promotion-field_ref_to_cta_form'] = array(
     'field_config' => array(
@@ -1638,30 +1425,361 @@ function ec_promotions_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-service-field_ref_service_promo'.
+  $fields['node-service-field_ref_service_promo'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_service_promo',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'promotion' => 'promotion',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'service',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Promotions displayed on this page.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 3,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_service_promo',
+      'label' => 'Promotion',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 14,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-service_category-field_ref_serv_cat_promo'.
+  $fields['node-service_category-field_ref_serv_cat_promo'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_serv_cat_promo',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'promotion' => 'promotion',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'service_category',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Promotions displayed on this page.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 4,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_serv_cat_promo',
+      'label' => 'Promotion',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 15,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-service_group-field_ref_serv_group_promo'.
+  $fields['node-service_group-field_ref_serv_group_promo'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_serv_group_promo',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'promotion' => 'promotion',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'service_group',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Promotions displayed on this page',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 3,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_serv_group_promo',
+      'label' => 'Promotion',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 22,
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Button Text');
   t('CTA form');
   t('Call to Action');
-  t('Case Study');
-  t('Content Page');
   t('Display Start-End');
   t('Display Title');
   t('Display subtitle');
   t('Enter the dates on which to start and end the display of this promotion in feature blocks.');
   t('Enter the text for the CTA form submit button');
-  t('Product');
   t('Promo link text');
+  t('Promotion');
   t('Promotion image');
-  t('Select case study pages on which to display this promo.');
-  t('Select the Service pages on which to show this promo.');
-  t('Select the service category pages on which to show this promo.');
-  t('Select the service group pages on which to display this promo');
-  t('Service');
-  t('Service Category');
-  t('Service Group');
-  t('Show this promotion on these product pages.');
+  t('Promotions');
+  t('Promotions displayed on this page');
+  t('Promotions displayed on this page.');
+  t('Promotions shown on this page.');
+  t('Select the promotions to display on this product page.');
 
   return $fields;
 }

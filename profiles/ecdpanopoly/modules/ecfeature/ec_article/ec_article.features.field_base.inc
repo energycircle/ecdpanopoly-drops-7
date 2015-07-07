@@ -109,13 +109,13 @@ function ec_article_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_ref_article_blog'
-  $field_bases['field_ref_article_blog'] = array(
+  // Exported field_base: 'field_ref_blog_article'
+  $field_bases['field_ref_blog_article'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_article_blog',
+    'field_name' => 'field_ref_blog_article',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -135,7 +135,7 @@ function ec_article_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'blog_post' => 'blog_post',
+          'article' => 'article',
         ),
       ),
       'target_type' => 'node',
@@ -144,13 +144,13 @@ function ec_article_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_article_case_study'
-  $field_bases['field_ref_article_case_study'] = array(
+  // Exported field_base: 'field_ref_case_study_article'
+  $field_bases['field_ref_case_study_article'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_article_case_study',
+    'field_name' => 'field_ref_case_study_article',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -162,9 +162,6 @@ function ec_article_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
-          'field_default_token' => array(
-            'status' => TRUE,
-          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -173,7 +170,7 @@ function ec_article_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'case_study' => 'case_study',
+          'article' => 'article',
         ),
       ),
       'target_type' => 'node',
@@ -182,13 +179,13 @@ function ec_article_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_article_product'
-  $field_bases['field_ref_article_product'] = array(
+  // Exported field_base: 'field_ref_promo_article'
+  $field_bases['field_ref_promo_article'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_article_product',
+    'field_name' => 'field_ref_promo_article',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -200,9 +197,6 @@ function ec_article_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
-          'field_default_token' => array(
-            'status' => TRUE,
-          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -211,7 +205,7 @@ function ec_article_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'product_page' => 'product_page',
+          'article' => 'article',
         ),
       ),
       'target_type' => 'node',
@@ -220,13 +214,13 @@ function ec_article_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_article_promo'
-  $field_bases['field_ref_article_promo'] = array(
+  // Exported field_base: 'field_ref_testimonial_article'
+  $field_bases['field_ref_testimonial_article'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_article_promo',
+    'field_name' => 'field_ref_testimonial_article',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -246,42 +240,7 @@ function ec_article_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'promotion' => 'promotion',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_ref_article_testimonial'
-  $field_bases['field_ref_article_testimonial'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ref_article_testimonial',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'testimonial' => 'testimonial',
+          'article' => 'article',
         ),
       ),
       'target_type' => 'node',

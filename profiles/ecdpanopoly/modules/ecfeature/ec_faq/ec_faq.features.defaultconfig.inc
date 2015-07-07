@@ -117,14 +117,14 @@ function ec_faq_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-faq-field_ref_faq_content_page'.
-  $fields['node-faq-field_ref_faq_content_page'] = array(
+  // Exported field: 'node-panopoly_page-field_ref_page_faq'.
+  $fields['node-panopoly_page-field_ref_page_faq'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_faq_content_page',
+      'field_name' => 'field_ref_page_faq',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -155,7 +155,7 @@ function ec_faq_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'panopoly_page' => 'panopoly_page',
+            'faq' => 'faq',
           ),
         ),
         'target_type' => 'node',
@@ -164,7 +164,7 @@ function ec_faq_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'faq',
+      'bundle' => 'panopoly_page',
       'default_value' => NULL,
       'deleted' => 0,
       'description' => '',
@@ -178,7 +178,7 @@ function ec_faq_defaultconfig_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 4,
+          'weight' => 12,
         ),
         'featured' => array(
           'label' => 'above',
@@ -206,8 +206,8 @@ function ec_faq_defaultconfig_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_faq_content_page',
-      'label' => 'Content Page',
+      'field_name' => 'field_ref_page_faq',
+      'label' => 'FAQ',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -221,19 +221,19 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 104,
+        'weight' => 15,
       ),
     ),
   );
 
-  // Exported field: 'node-faq-field_ref_faq_serv'.
-  $fields['node-faq-field_ref_faq_serv'] = array(
+  // Exported field: 'node-product_category-field_ref_prodcat_faq'.
+  $fields['node-product_category-field_ref_prodcat_faq'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_faq_serv',
+      'field_name' => 'field_ref_prodcat_faq',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -264,7 +264,7 @@ function ec_faq_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'service' => 'service',
+            'faq' => 'faq',
           ),
         ),
         'target_type' => 'node',
@@ -273,10 +273,10 @@ function ec_faq_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'faq',
+      'bundle' => 'product_category',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Select FAQ to display on this product category page.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -287,7 +287,7 @@ function ec_faq_defaultconfig_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 3,
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'above',
@@ -311,12 +311,12 @@ function ec_faq_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 6,
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_faq_serv',
-      'label' => 'Service',
+      'field_name' => 'field_ref_prodcat_faq',
+      'label' => 'FAQ',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -330,19 +330,19 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 103,
+        'weight' => 12,
       ),
     ),
   );
 
-  // Exported field: 'node-faq-field_ref_faq_servcat'.
-  $fields['node-faq-field_ref_faq_servcat'] = array(
+  // Exported field: 'node-product_page-field_ref_prodpage_faq'.
+  $fields['node-product_page-field_ref_prodpage_faq'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_faq_servcat',
+      'field_name' => 'field_ref_prodpage_faq',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -373,7 +373,7 @@ function ec_faq_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'service_category' => 'service_category',
+            'faq' => 'faq',
           ),
         ),
         'target_type' => 'node',
@@ -382,7 +382,7 @@ function ec_faq_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'faq',
+      'bundle' => 'product_page',
       'default_value' => NULL,
       'deleted' => 0,
       'description' => '',
@@ -396,7 +396,7 @@ function ec_faq_defaultconfig_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 2,
+          'weight' => 15,
         ),
         'featured' => array(
           'label' => 'above',
@@ -420,12 +420,12 @@ function ec_faq_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 6,
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_faq_servcat',
-      'label' => 'Service Category',
+      'field_name' => 'field_ref_prodpage_faq',
+      'label' => 'FAQ',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -439,19 +439,19 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 102,
+        'weight' => 25,
       ),
     ),
   );
 
-  // Exported field: 'node-faq-field_ref_faq_servgroup'.
-  $fields['node-faq-field_ref_faq_servgroup'] = array(
+  // Exported field: 'node-service-field_ref_service_faq'.
+  $fields['node-service-field_ref_service_faq'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_faq_servgroup',
+      'field_name' => 'field_ref_service_faq',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -482,7 +482,7 @@ function ec_faq_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'service_group' => 'service_group',
+            'faq' => 'faq',
           ),
         ),
         'target_type' => 'node',
@@ -491,7 +491,7 @@ function ec_faq_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'faq',
+      'bundle' => 'service',
       'default_value' => NULL,
       'deleted' => 0,
       'description' => '',
@@ -505,7 +505,7 @@ function ec_faq_defaultconfig_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 1,
+          'weight' => 12,
         ),
         'featured' => array(
           'label' => 'above',
@@ -533,8 +533,8 @@ function ec_faq_defaultconfig_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_faq_servgroup',
-      'label' => 'Service Group',
+      'field_name' => 'field_ref_service_faq',
+      'label' => 'FAQ',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -548,7 +548,225 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 101,
+        'weight' => 16,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-service_category-field_ref_serv_cat_faq'.
+  $fields['node-service_category-field_ref_serv_cat_faq'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_serv_cat_faq',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'faq' => 'faq',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'service_category',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 15,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_serv_cat_faq',
+      'label' => 'FAQ',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 17,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-service_group-field_ref_serv_group_faq'.
+  $fields['node-service_group-field_ref_serv_group_faq'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_serv_group_faq',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'faq' => 'faq',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'service_group',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 11,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_serv_group_faq',
+      'label' => 'FAQ',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 24,
       ),
     ),
   );
@@ -556,10 +774,8 @@ function ec_faq_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Content Page');
-  t('Service');
-  t('Service Category');
-  t('Service Group');
+  t('FAQ');
+  t('Select FAQ to display on this product category page.');
 
   return $fields;
 }

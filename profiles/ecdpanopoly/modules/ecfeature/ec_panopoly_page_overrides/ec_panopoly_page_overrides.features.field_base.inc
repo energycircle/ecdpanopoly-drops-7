@@ -10,21 +10,13 @@
 function ec_panopoly_page_overrides_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ref_page_blog'
-  $field_bases['field_ref_page_blog'] = array(
+  // Exported field_base: 'field_ref_faq_content_page'
+  $field_bases['field_ref_faq_content_page'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_page_blog',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
+    'field_name' => 'field_ref_faq_content_page',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -36,6 +28,9 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -44,7 +39,7 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'blog_post' => 'blog_post',
+          'panopoly_page' => 'panopoly_page',
         ),
       ),
       'target_type' => 'node',
@@ -53,21 +48,13 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_page_case_study'
-  $field_bases['field_ref_page_case_study'] = array(
+  // Exported field_base: 'field_ref_promo_page'
+  $field_bases['field_ref_promo_page'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_page_case_study',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
+    'field_name' => 'field_ref_promo_page',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -87,7 +74,7 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'case_study' => 'case_study',
+          'panopoly_page' => 'panopoly_page',
         ),
       ),
       'target_type' => 'node',
@@ -96,21 +83,13 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_page_promotions'
-  $field_bases['field_ref_page_promotions'] = array(
+  // Exported field_base: 'field_ref_testimonial_page'
+  $field_bases['field_ref_testimonial_page'] = array(
     'active' => 1,
-    'cardinality' => 2,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_page_promotions',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
+    'field_name' => 'field_ref_testimonial_page',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -130,50 +109,7 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'promotion' => 'promotion',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_ref_page_testimonial'
-  $field_bases['field_ref_page_testimonial'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ref_page_testimonial',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'testimonial' => 'testimonial',
+          'panopoly_page' => 'panopoly_page',
         ),
       ),
       'target_type' => 'node',

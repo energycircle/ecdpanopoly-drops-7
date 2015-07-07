@@ -140,7 +140,7 @@ function ec_product_page_lite_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_export_reset_author_product_page';
-  $strongarm->value = FALSE;
+  $strongarm->value = 0;
   $export['node_export_reset_author_product_page'] = $strongarm;
 
   $strongarm = new stdClass();

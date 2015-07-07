@@ -11,8 +11,8 @@ function ec_article_demo_content_node_export_features_default() {
   $node_export = array(
   'code_string' => 'array(
   (object) array(
-      \'vid\' => \'67\',
-      \'uid\' => \'3\',
+      \'vid\' => \'15\',
+      \'uid\' => \'0\',
       \'title\' => \'Test Newsletter 1\',
       \'log\' => \'\',
       \'status\' => \'1\',
@@ -20,23 +20,23 @@ function ec_article_demo_content_node_export_features_default() {
       \'promote\' => \'0\',
       \'sticky\' => \'0\',
       \'vuuid\' => \'648d2aab-28d0-4071-8b1d-1cb47b3468bf\',
-      \'nid\' => \'67\',
+      \'nid\' => \'15\',
       \'type\' => \'article\',
       \'language\' => \'und\',
       \'created\' => \'1414102841\',
-      \'changed\' => \'1414102841\',
+      \'changed\' => \'1435854623\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'1ccb35b8-9f68-4f7a-a74f-1398779ff248\',
-      \'revision_timestamp\' => \'1414102841\',
-      \'revision_uid\' => \'3\',
+      \'revision_timestamp\' => \'1435854623\',
+      \'revision_uid\' => \'1\',
       \'body\' => array(
         \'und\' => array(
           array(
             \'value\' => \'<p>This is the placeholder text for this page. Please replace this text with real copy.</p>\',
             \'summary\' => \'\',
             \'format\' => \'panopoly_wysiwyg_text\',
-            \'safe_value\' => "<p>This is the placeholder text for this page. Please replace this text with real copy.</p>\\n",
+            \'safe_value\' => \'<p>This is the placeholder text for this page. Please replace this text with real copy.</p>\',
             \'safe_summary\' => \'\',
           ),
         ),
@@ -52,7 +52,7 @@ function ec_article_demo_content_node_export_features_default() {
             \'filemime\' => \'image/jpeg\',
             \'filesize\' => \'73140\',
             \'status\' => \'1\',
-            \'timestamp\' => \'1414102841\',
+            \'timestamp\' => \'1435854623\',
             \'type\' => \'image\',
             \'uuid\' => \'a53835d7-e2a1-4bb3-862a-6e0f6573bb66\',
             \'field_file_image_alt_text\' => array(),
@@ -74,7 +74,7 @@ function ec_article_demo_content_node_export_features_default() {
       \'field_article_type\' => array(
         \'und\' => array(
           array(
-            \'tid\' => \'1\',
+            \'tid\' => \'11\',
           ),
         ),
       ),
@@ -88,37 +88,306 @@ function ec_article_demo_content_node_export_features_default() {
           ),
         ),
       ),
+      \'field_ref_article_case_study\' => array(),
+      \'field_ref_article_product\' => array(),
+      \'field_ref_article_testimonial\' => array(),
+      \'field_ref_article_blog\' => array(),
       \'field_ref_article_promo\' => array(),
       \'metatags\' => array(),
       \'path\' => array(
-        \'pid\' => \'70\',
-        \'source\' => \'node/67\',
+        \'pid\' => \'58\',
+        \'source\' => \'node/15\',
         \'alias\' => \'article/test-newsletter-1\',
         \'language\' => \'und\',
       ),
       \'panelizer\' => array(
         \'page_manager\' => (object) array(
             \'entity_type\' => \'node\',
-            \'entity_id\' => \'67\',
-            \'revision_id\' => \'67\',
-            \'name\' => \'node:article:default\',
+            \'entity_id\' => \'15\',
+            \'revision_id\' => \'15\',
+            \'name\' => \'node:panopoly_page:default\',
             \'no_blocks\' => \'0\',
-            \'css_id\' => \'\',
-            \'css\' => NULL,
-            \'pipeline\' => \'standard\',
-            \'contexts\' => NULL,
-            \'relationships\' => NULL,
+            \'css_id\' => \'page-page\',
+            \'css\' => \'\',
+            \'pipeline\' => \'ipe\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
             \'did\' => \'0\',
             \'view_mode\' => \'page_manager\',
             \'css_class\' => \'\',
             \'title_element\' => \'H2\',
             \'link_to_entity\' => \'1\',
-            \'extra\' => NULL,
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                )),
+                \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                )),
+                \'new-f3bf9c22-9b22-41d2-a57e-110951093871\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'f3bf9c22-9b22-41d2-a57e-110951093871\',
+                )),
+                \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_categories\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'inline\',
+                    \'formatter\' => \'taxonomy_term_reference_link\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                )),
+                \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                   \'panel\' => \'sidebar\',
+                   \'type\' => \'menu_tree\',
+                   \'subtype\' => \'main-menu\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'menu_name\' => \'main-menu\',
+                    \'parent_mlid\' => \'main-menu:0\',
+                    \'title_link\' => 0,
+                    \'admin_title\' => \'\',
+                    \'level\' => \'2\',
+                    \'follow\' => 0,
+                    \'depth\' => 0,
+                    \'expanded\' => 1,
+                    \'sort\' => 0,
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                  1 => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                  2 => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                  3 => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                ),
+                \'sidebar\' => 
+                array (
+                  0 => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_bryant\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'sidebar\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+            )),
           ),
         \'default\' => (object) array(
             \'entity_type\' => \'node\',
-            \'entity_id\' => \'67\',
-            \'revision_id\' => \'67\',
+            \'entity_id\' => \'15\',
+            \'revision_id\' => \'15\',
             \'name\' => \'node:article:default:default\',
             \'no_blocks\' => \'0\',
             \'css_id\' => \'\',
@@ -138,62 +407,13 @@ function ec_article_demo_content_node_export_features_default() {
               ),
                \'content\' => 
               array (
-                60 => 
+                \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'60\',
-                   \'did\' => \'11\',
-                   \'panel\' => \'two_66_33_first\',
-                   \'type\' => \'entity_field\',
-                   \'subtype\' => \'node:field_article_image\',
-                   \'shown\' => \'1\',
-                   \'access\' => 
-                  array (
-                  ),
-                   \'configuration\' => 
-                  array (
-                    \'label\' => \'hidden\',
-                    \'formatter\' => \'image\',
-                    \'delta_limit\' => 0,
-                    \'delta_offset\' => \'0\',
-                    \'delta_reversed\' => false,
-                    \'formatter_settings\' => 
-                    array (
-                      \'image_style\' => \'sc_460x230\',
-                      \'image_link\' => \'\',
-                      \'field_multiple_limit\' => -1,
-                      \'field_multiple_limit_offset\' => 0,
-                    ),
-                    \'context\' => \'panelizer\',
-                    \'override_title\' => 0,
-                    \'override_title_text\' => \'\',
-                  ),
-                   \'cache\' => 
-                  array (
-                  ),
-                   \'style\' => 
-                  array (
-                    \'settings\' => NULL,
-                  ),
-                   \'css\' => 
-                  array (
-                  ),
-                   \'extras\' => 
-                  array (
-                  ),
-                   \'position\' => \'0\',
-                   \'locks\' => 
-                  array (
-                  ),
-                   \'uuid\' => \'fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
-                )),
-                61 => 
-                stdClass::__set_state(array(
-                   \'pid\' => \'61\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_display_date\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -231,20 +451,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'1\',
+                   \'position\' => 0,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
                 )),
-                62 => 
+                \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'62\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_article_author\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -277,20 +496,66 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'2\',
+                   \'position\' => 1,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'71d6548e-7dea-44d2-85da-6522a6f72bd5\',
                 )),
-                63 => 
+                \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'63\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_article_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_style\' => \'sc_460x230\',
+                      \'image_link\' => \'\',
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                )),
+                \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:body\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -321,20 +586,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'3\',
+                   \'position\' => 3,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
                 )),
-                64 => 
+                \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'64\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_article_source\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -367,65 +631,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'4\',
+                   \'position\' => 4,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'9fb8740b-980b-4914-91b5-5daca474f7d9\',
                 )),
-                65 => 
+                \'new-4422fd08-749a-4717-bf82-bb6642306f9d\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'65\',
-                   \'did\' => \'11\',
-                   \'panel\' => \'two_66_33_second\',
-                   \'type\' => \'menu_tree\',
-                   \'subtype\' => \'menu-auxiliary-menu\',
-                   \'shown\' => \'1\',
-                   \'access\' => 
-                  array (
-                  ),
-                   \'configuration\' => 
-                  array (
-                    \'menu_name\' => \'menu-auxiliary-menu\',
-                    \'parent_mlid\' => 0,
-                    \'parent\' => \'menu-auxiliary-menu:0\',
-                    \'title_link\' => 0,
-                    \'admin_title\' => \'\',
-                    \'level\' => \'2\',
-                    \'follow\' => 0,
-                    \'depth\' => \'0\',
-                    \'expanded\' => 0,
-                    \'sort\' => 0,
-                    \'override_title\' => 1,
-                    \'override_title_text\' => \'\',
-                  ),
-                   \'cache\' => 
-                  array (
-                  ),
-                   \'style\' => 
-                  array (
-                    \'settings\' => NULL,
-                  ),
-                   \'css\' => 
-                  array (
-                  ),
-                   \'extras\' => 
-                  array (
-                  ),
-                   \'position\' => \'0\',
-                   \'locks\' => 
-                  array (
-                  ),
-                   \'uuid\' => \'8fe5694d-7cf0-4f90-8d2f-9a90261f3672\',
-                )),
-                66 => 
-                stdClass::__set_state(array(
-                   \'pid\' => \'66\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-4422fd08-749a-4717-bf82-bb6642306f9d\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_promo\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -461,20 +679,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'1\',
+                   \'position\' => 0,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'4422fd08-749a-4717-bf82-bb6642306f9d\',
                 )),
-                67 => 
+                \'new-64238565-3e44-408e-ba42-672dd0c33612\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'67\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-64238565-3e44-408e-ba42-672dd0c33612\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_blog\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -509,20 +726,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'2\',
+                   \'position\' => 1,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'64238565-3e44-408e-ba42-672dd0c33612\',
                 )),
-                68 => 
+                \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'68\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_testimonial\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -558,7 +774,7 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'3\',
+                   \'position\' => 2,
                    \'locks\' => 
                   array (
                   ),
@@ -569,18 +785,17 @@ function ec_article_demo_content_node_export_features_default() {
               array (
                 \'two_66_33_first\' => 
                 array (
-                  0 => \'60\',
-                  1 => \'61\',
-                  2 => \'62\',
-                  3 => \'63\',
-                  4 => \'64\',
+                  0 => \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
+                  1 => \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\',
+                  2 => \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                  3 => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
+                  4 => \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\',
                 ),
                 \'two_66_33_second\' => 
                 array (
-                  0 => \'65\',
-                  1 => \'66\',
-                  2 => \'67\',
-                  3 => \'68\',
+                  0 => \'new-4422fd08-749a-4717-bf82-bb6642306f9d\',
+                  1 => \'new-64238565-3e44-408e-ba42-672dd0c33612\',
+                  2 => \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\',
                 ),
               ),
                \'incoming_content\' => NULL,
@@ -588,7 +803,7 @@ function ec_article_demo_content_node_export_features_default() {
                \'context\' => 
               array (
               ),
-               \'did\' => \'11\',
+               \'did\' => \'new-db7980d7-e91c-4212-afed-87dfc118f603\',
                \'renderer\' => \'standard\',
                \'layout\' => \'two_66_33\',
                \'layout_settings\' => 
@@ -609,76 +824,440 @@ function ec_article_demo_content_node_export_features_default() {
               array (
               ),
                \'title\' => \'%node:title\',
-               \'hide_title\' => \'1\',
-               \'title_pane\' => \'63\',
                \'uuid\' => \'db7980d7-e91c-4212-afed-87dfc118f603\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
+            )),
+          ),
+        \'teaser\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'15\',
+            \'revision_id\' => \'15\',
+            \'name\' => \'node:panopoly_page:default:teaser\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'teaser\',
+            \'css_class\' => \'page-teaser\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_quarter\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                )),
+                \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'600\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                )),
+                \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'teaser\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                  1 => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                  2 => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+        \'featured\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'15\',
+            \'revision_id\' => \'15\',
+            \'name\' => \'node:panopoly_page:default:featured\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'featured\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-af46907d-aa25-43db-995b-b38f9174221e\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'af46907d-aa25-43db-995b-b38f9174221e\',
+                )),
+                \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_title\',
+                   \'subtype\' => \'node_title\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'link\' => 1,
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                )),
+                \'new-a71dc705-b195-439c-b47b-980d8c7fa155\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'a71dc705-b195-439c-b47b-980d8c7fa155\',
+                )),
+                \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                  1 => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                  2 => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                  3 => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-5b7d08f9-c351-427e-8015-14433221537b\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'5b7d08f9-c351-427e-8015-14433221537b\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'0\',
             )),
           ),
       ),
       \'machine_name\' => FALSE,
-      \'name\' => \'emily\',
+      \'name\' => \'\',
       \'picture\' => \'0\',
-      \'data\' => \'b:0;\',
+      \'data\' => NULL,
       \'weight_weight\' => \'0\',
-      \'menu\' => array(
-        \'link_title\' => \'Test Newsletter 1\',
-        \'mlid\' => 0,
-        \'plid\' => \'1528\',
-        \'menu_name\' => \'menu-auxiliary-menu\',
-        \'weight\' => \'0\',
-        \'options\' => array(),
-        \'module\' => \'menu\',
-        \'expanded\' => \'0\',
-        \'hidden\' => \'0\',
-        \'has_children\' => \'0\',
-        \'customized\' => 0,
-        \'parent_depth_limit\' => 8,
-        \'description\' => \'\',
-        \'enabled\' => 1,
-      ),
+      \'menu\' => NULL,
       \'node_export_drupal_version\' => \'7\',
-      \'node_export_dependency\' => array(
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'uid\',
-          \'module\' => \'image\',
-          \'field_name\' => \'field_article_image\',
-          \'langcode\' => \'und\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-        array(
-          \'type\' => \'taxonomy_term\',
-          \'id\' => \'1\',
-          \'delta\' => 0,
-          \'property\' => \'tid\',
-          \'module\' => \'taxonomy\',
-          \'field_name\' => \'field_article_type\',
-          \'langcode\' => \'und\',
-          \'uuid\' => \'a40cea4b-201f-4166-ae2b-aa10500db955\',
-        ),
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'uid\',
-          \'module\' => \'node\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'revision_uid\',
-          \'module\' => \'node\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-      ),
     ),
   (object) array(
-      \'vid\' => \'70\',
-      \'uid\' => \'3\',
+      \'vid\' => \'16\',
+      \'uid\' => \'0\',
       \'title\' => \'Test Press Article 2\',
       \'log\' => \'\',
       \'status\' => \'1\',
@@ -686,23 +1265,23 @@ function ec_article_demo_content_node_export_features_default() {
       \'promote\' => \'0\',
       \'sticky\' => \'0\',
       \'vuuid\' => \'416e8dce-0667-44b8-aff8-804f8594b488\',
-      \'nid\' => \'70\',
+      \'nid\' => \'16\',
       \'type\' => \'article\',
       \'language\' => \'und\',
       \'created\' => \'1414103032\',
-      \'changed\' => \'1414103032\',
+      \'changed\' => \'1435854623\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'3efce21e-0297-453d-b94c-7fa3a480aa60\',
-      \'revision_timestamp\' => \'1414103032\',
-      \'revision_uid\' => \'3\',
+      \'revision_timestamp\' => \'1435854623\',
+      \'revision_uid\' => \'1\',
       \'body\' => array(
         \'und\' => array(
           array(
             \'value\' => \'<p><span>This is the placeholder text for this page. Please replace this text with real copy.</span></p>\',
             \'summary\' => \'\',
             \'format\' => \'panopoly_wysiwyg_text\',
-            \'safe_value\' => "<p><span>This is the placeholder text for this page. Please replace this text with real copy.</span></p>\\n",
+            \'safe_value\' => \'<p><span>This is the placeholder text for this page. Please replace this text with real copy.</span></p>\',
             \'safe_summary\' => \'\',
           ),
         ),
@@ -718,7 +1297,7 @@ function ec_article_demo_content_node_export_features_default() {
             \'filemime\' => \'image/jpeg\',
             \'filesize\' => \'73140\',
             \'status\' => \'1\',
-            \'timestamp\' => \'1414103032\',
+            \'timestamp\' => \'1435854623\',
             \'type\' => \'image\',
             \'uuid\' => \'d6dfe885-459b-4b24-8800-43ce0cf479b2\',
             \'field_file_image_alt_text\' => array(),
@@ -740,7 +1319,7 @@ function ec_article_demo_content_node_export_features_default() {
       \'field_article_type\' => array(
         \'und\' => array(
           array(
-            \'tid\' => \'2\',
+            \'tid\' => \'12\',
           ),
         ),
       ),
@@ -754,49 +1333,37 @@ function ec_article_demo_content_node_export_features_default() {
           ),
         ),
       ),
+      \'field_ref_article_case_study\' => array(),
+      \'field_ref_article_product\' => array(),
+      \'field_ref_article_testimonial\' => array(),
+      \'field_ref_article_blog\' => array(),
       \'field_ref_article_promo\' => array(),
       \'metatags\' => array(),
       \'path\' => array(
-        \'pid\' => \'73\',
-        \'source\' => \'node/70\',
+        \'pid\' => \'60\',
+        \'source\' => \'node/16\',
         \'alias\' => \'article/test-press-article-2\',
         \'language\' => \'und\',
       ),
       \'panelizer\' => array(
-        \'page_manager\' => (object) array(
-            \'entity_type\' => \'node\',
-            \'entity_id\' => \'70\',
-            \'revision_id\' => \'70\',
-            \'name\' => \'node:article:default\',
-            \'no_blocks\' => \'0\',
-            \'css_id\' => \'\',
-            \'css\' => NULL,
-            \'pipeline\' => \'standard\',
-            \'contexts\' => NULL,
-            \'relationships\' => NULL,
-            \'did\' => \'0\',
-            \'view_mode\' => \'page_manager\',
-            \'css_class\' => \'\',
-            \'title_element\' => \'H2\',
-            \'link_to_entity\' => \'1\',
-            \'extra\' => NULL,
-          ),
         \'default\' => (object) array(
-            \'entity_type\' => \'node\',
-            \'entity_id\' => \'70\',
-            \'revision_id\' => \'70\',
+            \'disabled\' => FALSE,
+            \'api_version\' => 1,
             \'name\' => \'node:article:default:default\',
-            \'no_blocks\' => \'0\',
+            \'title\' => \'Default\',
+            \'panelizer_type\' => \'node\',
+            \'panelizer_key\' => \'article\',
+            \'no_blocks\' => FALSE,
             \'css_id\' => \'\',
             \'css\' => \'\',
             \'pipeline\' => \'standard\',
             \'contexts\' => array(),
             \'relationships\' => array(),
-            \'did\' => \'0\',
+            \'access\' => array(),
             \'view_mode\' => \'default\',
             \'css_class\' => \'\',
             \'title_element\' => \'H2\',
-            \'link_to_entity\' => \'1\',
+            \'link_to_entity\' => TRUE,
             \'extra\' => array(),
             \'display\' => panels_display::__set_state(array(
                \'args\' => 
@@ -804,62 +1371,13 @@ function ec_article_demo_content_node_export_features_default() {
               ),
                \'content\' => 
               array (
-                60 => 
+                \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'60\',
-                   \'did\' => \'11\',
-                   \'panel\' => \'two_66_33_first\',
-                   \'type\' => \'entity_field\',
-                   \'subtype\' => \'node:field_article_image\',
-                   \'shown\' => \'1\',
-                   \'access\' => 
-                  array (
-                  ),
-                   \'configuration\' => 
-                  array (
-                    \'label\' => \'hidden\',
-                    \'formatter\' => \'image\',
-                    \'delta_limit\' => 0,
-                    \'delta_offset\' => \'0\',
-                    \'delta_reversed\' => false,
-                    \'formatter_settings\' => 
-                    array (
-                      \'image_style\' => \'sc_460x230\',
-                      \'image_link\' => \'\',
-                      \'field_multiple_limit\' => -1,
-                      \'field_multiple_limit_offset\' => 0,
-                    ),
-                    \'context\' => \'panelizer\',
-                    \'override_title\' => 0,
-                    \'override_title_text\' => \'\',
-                  ),
-                   \'cache\' => 
-                  array (
-                  ),
-                   \'style\' => 
-                  array (
-                    \'settings\' => NULL,
-                  ),
-                   \'css\' => 
-                  array (
-                  ),
-                   \'extras\' => 
-                  array (
-                  ),
-                   \'position\' => \'0\',
-                   \'locks\' => 
-                  array (
-                  ),
-                   \'uuid\' => \'fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
-                )),
-                61 => 
-                stdClass::__set_state(array(
-                   \'pid\' => \'61\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_display_date\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -897,20 +1415,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'1\',
+                   \'position\' => 0,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
                 )),
-                62 => 
+                \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'62\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_article_author\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -943,20 +1460,66 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'2\',
+                   \'position\' => 1,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'71d6548e-7dea-44d2-85da-6522a6f72bd5\',
                 )),
-                63 => 
+                \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'63\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_article_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_style\' => \'sc_460x230\',
+                      \'image_link\' => \'\',
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                )),
+                \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:body\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -987,20 +1550,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'3\',
+                   \'position\' => 3,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
                 )),
-                64 => 
+                \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'64\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_article_source\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1033,65 +1595,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'4\',
+                   \'position\' => 4,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'9fb8740b-980b-4914-91b5-5daca474f7d9\',
                 )),
-                65 => 
+                \'new-4422fd08-749a-4717-bf82-bb6642306f9d\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'65\',
-                   \'did\' => \'11\',
-                   \'panel\' => \'two_66_33_second\',
-                   \'type\' => \'menu_tree\',
-                   \'subtype\' => \'menu-auxiliary-menu\',
-                   \'shown\' => \'1\',
-                   \'access\' => 
-                  array (
-                  ),
-                   \'configuration\' => 
-                  array (
-                    \'menu_name\' => \'menu-auxiliary-menu\',
-                    \'parent_mlid\' => 0,
-                    \'parent\' => \'menu-auxiliary-menu:0\',
-                    \'title_link\' => 0,
-                    \'admin_title\' => \'\',
-                    \'level\' => \'2\',
-                    \'follow\' => 0,
-                    \'depth\' => \'0\',
-                    \'expanded\' => 0,
-                    \'sort\' => 0,
-                    \'override_title\' => 1,
-                    \'override_title_text\' => \'\',
-                  ),
-                   \'cache\' => 
-                  array (
-                  ),
-                   \'style\' => 
-                  array (
-                    \'settings\' => NULL,
-                  ),
-                   \'css\' => 
-                  array (
-                  ),
-                   \'extras\' => 
-                  array (
-                  ),
-                   \'position\' => \'0\',
-                   \'locks\' => 
-                  array (
-                  ),
-                   \'uuid\' => \'8fe5694d-7cf0-4f90-8d2f-9a90261f3672\',
-                )),
-                66 => 
-                stdClass::__set_state(array(
-                   \'pid\' => \'66\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-4422fd08-749a-4717-bf82-bb6642306f9d\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_promo\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1127,20 +1643,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'1\',
+                   \'position\' => 0,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'4422fd08-749a-4717-bf82-bb6642306f9d\',
                 )),
-                67 => 
+                \'new-64238565-3e44-408e-ba42-672dd0c33612\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'67\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-64238565-3e44-408e-ba42-672dd0c33612\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_blog\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1175,20 +1690,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'2\',
+                   \'position\' => 1,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'64238565-3e44-408e-ba42-672dd0c33612\',
                 )),
-                68 => 
+                \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'68\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_testimonial\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1224,7 +1738,7 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'3\',
+                   \'position\' => 2,
                    \'locks\' => 
                   array (
                   ),
@@ -1235,18 +1749,17 @@ function ec_article_demo_content_node_export_features_default() {
               array (
                 \'two_66_33_first\' => 
                 array (
-                  0 => \'60\',
-                  1 => \'61\',
-                  2 => \'62\',
-                  3 => \'63\',
-                  4 => \'64\',
+                  0 => \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
+                  1 => \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\',
+                  2 => \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                  3 => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
+                  4 => \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\',
                 ),
                 \'two_66_33_second\' => 
                 array (
-                  0 => \'65\',
-                  1 => \'66\',
-                  2 => \'67\',
-                  3 => \'68\',
+                  0 => \'new-4422fd08-749a-4717-bf82-bb6642306f9d\',
+                  1 => \'new-64238565-3e44-408e-ba42-672dd0c33612\',
+                  2 => \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\',
                 ),
               ),
                \'incoming_content\' => NULL,
@@ -1254,7 +1767,7 @@ function ec_article_demo_content_node_export_features_default() {
                \'context\' => 
               array (
               ),
-               \'did\' => \'11\',
+               \'did\' => \'new-db7980d7-e91c-4212-afed-87dfc118f603\',
                \'renderer\' => \'standard\',
                \'layout\' => \'two_66_33\',
                \'layout_settings\' => 
@@ -1275,76 +1788,29 @@ function ec_article_demo_content_node_export_features_default() {
               array (
               ),
                \'title\' => \'%node:title\',
-               \'hide_title\' => \'1\',
-               \'title_pane\' => \'63\',
                \'uuid\' => \'db7980d7-e91c-4212-afed-87dfc118f603\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
             )),
+            \'export_module\' => \'ec_article\',
+            \'type\' => \'Overridden\',
+            \'export_type\' => 2,
+            \'in_code_only\' => TRUE,
+            \'table\' => \'panelizer_defaults\',
+            \'did\' => NULL,
           ),
       ),
       \'machine_name\' => FALSE,
-      \'name\' => \'emily\',
+      \'name\' => \'\',
       \'picture\' => \'0\',
-      \'data\' => \'b:0;\',
+      \'data\' => NULL,
       \'weight_weight\' => \'0\',
-      \'menu\' => array(
-        \'link_title\' => \'Test Press Article 1\',
-        \'mlid\' => 0,
-        \'plid\' => \'1529\',
-        \'menu_name\' => \'menu-auxiliary-menu\',
-        \'weight\' => \'0\',
-        \'options\' => array(),
-        \'module\' => \'menu\',
-        \'expanded\' => \'0\',
-        \'hidden\' => \'0\',
-        \'has_children\' => \'0\',
-        \'customized\' => 0,
-        \'parent_depth_limit\' => 8,
-        \'description\' => \'\',
-        \'enabled\' => 1,
-      ),
+      \'menu\' => NULL,
       \'node_export_drupal_version\' => \'7\',
-      \'node_export_dependency\' => array(
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'uid\',
-          \'module\' => \'image\',
-          \'field_name\' => \'field_article_image\',
-          \'langcode\' => \'und\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-        array(
-          \'type\' => \'taxonomy_term\',
-          \'id\' => \'2\',
-          \'delta\' => 0,
-          \'property\' => \'tid\',
-          \'module\' => \'taxonomy\',
-          \'field_name\' => \'field_article_type\',
-          \'langcode\' => \'und\',
-          \'uuid\' => \'b7920a33-fc7a-415d-9563-2e3eb3d4f76e\',
-        ),
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'uid\',
-          \'module\' => \'node\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'revision_uid\',
-          \'module\' => \'node\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-      ),
     ),
   (object) array(
-      \'vid\' => \'68\',
-      \'uid\' => \'3\',
+      \'vid\' => \'17\',
+      \'uid\' => \'0\',
       \'title\' => \'Test Newsletter 2\',
       \'log\' => \'\',
       \'status\' => \'1\',
@@ -1352,23 +1818,23 @@ function ec_article_demo_content_node_export_features_default() {
       \'promote\' => \'0\',
       \'sticky\' => \'0\',
       \'vuuid\' => \'a2ac0a31-1d62-4545-8874-cd7034799098\',
-      \'nid\' => \'68\',
+      \'nid\' => \'17\',
       \'type\' => \'article\',
       \'language\' => \'und\',
       \'created\' => \'1414102901\',
-      \'changed\' => \'1414102901\',
+      \'changed\' => \'1435854623\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'4ac2ee7a-14e7-499e-8d40-f6cde5965e98\',
-      \'revision_timestamp\' => \'1414102901\',
-      \'revision_uid\' => \'3\',
+      \'revision_timestamp\' => \'1435854623\',
+      \'revision_uid\' => \'1\',
       \'body\' => array(
         \'und\' => array(
           array(
             \'value\' => \'<p><span>This is the placeholder text for this page. Please replace this text with real copy.</span></p>\',
             \'summary\' => \'\',
             \'format\' => \'panopoly_wysiwyg_text\',
-            \'safe_value\' => "<p><span>This is the placeholder text for this page. Please replace this text with real copy.</span></p>\\n",
+            \'safe_value\' => \'<p><span>This is the placeholder text for this page. Please replace this text with real copy.</span></p>\',
             \'safe_summary\' => \'\',
           ),
         ),
@@ -1384,7 +1850,7 @@ function ec_article_demo_content_node_export_features_default() {
             \'filemime\' => \'image/jpeg\',
             \'filesize\' => \'73140\',
             \'status\' => \'1\',
-            \'timestamp\' => \'1414102901\',
+            \'timestamp\' => \'1435854623\',
             \'type\' => \'image\',
             \'uuid\' => \'9d4f8e5d-feef-44a2-9834-ef3960ff69ac\',
             \'field_file_image_alt_text\' => array(),
@@ -1406,7 +1872,7 @@ function ec_article_demo_content_node_export_features_default() {
       \'field_article_type\' => array(
         \'und\' => array(
           array(
-            \'tid\' => \'1\',
+            \'tid\' => \'11\',
           ),
         ),
       ),
@@ -1420,37 +1886,41 @@ function ec_article_demo_content_node_export_features_default() {
           ),
         ),
       ),
+      \'field_ref_article_case_study\' => array(),
+      \'field_ref_article_product\' => array(),
+      \'field_ref_article_testimonial\' => array(),
+      \'field_ref_article_blog\' => array(),
       \'field_ref_article_promo\' => array(),
       \'metatags\' => array(),
       \'path\' => array(
-        \'pid\' => \'71\',
-        \'source\' => \'node/68\',
+        \'pid\' => \'62\',
+        \'source\' => \'node/17\',
         \'alias\' => \'article/test-newsletter-2\',
         \'language\' => \'und\',
       ),
       \'panelizer\' => array(
         \'page_manager\' => (object) array(
             \'entity_type\' => \'node\',
-            \'entity_id\' => \'68\',
-            \'revision_id\' => \'68\',
+            \'entity_id\' => \'17\',
+            \'revision_id\' => \'17\',
             \'name\' => \'node:article:default\',
             \'no_blocks\' => \'0\',
-            \'css_id\' => \'\',
-            \'css\' => NULL,
-            \'pipeline\' => \'standard\',
-            \'contexts\' => NULL,
-            \'relationships\' => NULL,
+            \'css_id\' => \'page-page\',
+            \'css\' => \'\',
+            \'pipeline\' => \'ipe\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
             \'did\' => \'0\',
             \'view_mode\' => \'page_manager\',
             \'css_class\' => \'\',
             \'title_element\' => \'H2\',
             \'link_to_entity\' => \'1\',
-            \'extra\' => NULL,
+            \'extra\' => \'\',
           ),
         \'default\' => (object) array(
             \'entity_type\' => \'node\',
-            \'entity_id\' => \'68\',
-            \'revision_id\' => \'68\',
+            \'entity_id\' => \'17\',
+            \'revision_id\' => \'17\',
             \'name\' => \'node:article:default:default\',
             \'no_blocks\' => \'0\',
             \'css_id\' => \'\',
@@ -1470,62 +1940,13 @@ function ec_article_demo_content_node_export_features_default() {
               ),
                \'content\' => 
               array (
-                60 => 
+                \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'60\',
-                   \'did\' => \'11\',
-                   \'panel\' => \'two_66_33_first\',
-                   \'type\' => \'entity_field\',
-                   \'subtype\' => \'node:field_article_image\',
-                   \'shown\' => \'1\',
-                   \'access\' => 
-                  array (
-                  ),
-                   \'configuration\' => 
-                  array (
-                    \'label\' => \'hidden\',
-                    \'formatter\' => \'image\',
-                    \'delta_limit\' => 0,
-                    \'delta_offset\' => \'0\',
-                    \'delta_reversed\' => false,
-                    \'formatter_settings\' => 
-                    array (
-                      \'image_style\' => \'sc_460x230\',
-                      \'image_link\' => \'\',
-                      \'field_multiple_limit\' => -1,
-                      \'field_multiple_limit_offset\' => 0,
-                    ),
-                    \'context\' => \'panelizer\',
-                    \'override_title\' => 0,
-                    \'override_title_text\' => \'\',
-                  ),
-                   \'cache\' => 
-                  array (
-                  ),
-                   \'style\' => 
-                  array (
-                    \'settings\' => NULL,
-                  ),
-                   \'css\' => 
-                  array (
-                  ),
-                   \'extras\' => 
-                  array (
-                  ),
-                   \'position\' => \'0\',
-                   \'locks\' => 
-                  array (
-                  ),
-                   \'uuid\' => \'fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
-                )),
-                61 => 
-                stdClass::__set_state(array(
-                   \'pid\' => \'61\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_display_date\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1563,20 +1984,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'1\',
+                   \'position\' => 0,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
                 )),
-                62 => 
+                \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'62\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_article_author\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1609,20 +2029,66 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'2\',
+                   \'position\' => 1,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'71d6548e-7dea-44d2-85da-6522a6f72bd5\',
                 )),
-                63 => 
+                \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'63\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_article_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_style\' => \'sc_460x230\',
+                      \'image_link\' => \'\',
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                )),
+                \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:body\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1653,20 +2119,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'3\',
+                   \'position\' => 3,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
                 )),
-                64 => 
+                \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'64\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_article_source\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1699,65 +2164,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'4\',
+                   \'position\' => 4,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'9fb8740b-980b-4914-91b5-5daca474f7d9\',
                 )),
-                65 => 
+                \'new-4422fd08-749a-4717-bf82-bb6642306f9d\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'65\',
-                   \'did\' => \'11\',
-                   \'panel\' => \'two_66_33_second\',
-                   \'type\' => \'menu_tree\',
-                   \'subtype\' => \'menu-auxiliary-menu\',
-                   \'shown\' => \'1\',
-                   \'access\' => 
-                  array (
-                  ),
-                   \'configuration\' => 
-                  array (
-                    \'menu_name\' => \'menu-auxiliary-menu\',
-                    \'parent_mlid\' => 0,
-                    \'parent\' => \'menu-auxiliary-menu:0\',
-                    \'title_link\' => 0,
-                    \'admin_title\' => \'\',
-                    \'level\' => \'2\',
-                    \'follow\' => 0,
-                    \'depth\' => \'0\',
-                    \'expanded\' => 0,
-                    \'sort\' => 0,
-                    \'override_title\' => 1,
-                    \'override_title_text\' => \'\',
-                  ),
-                   \'cache\' => 
-                  array (
-                  ),
-                   \'style\' => 
-                  array (
-                    \'settings\' => NULL,
-                  ),
-                   \'css\' => 
-                  array (
-                  ),
-                   \'extras\' => 
-                  array (
-                  ),
-                   \'position\' => \'0\',
-                   \'locks\' => 
-                  array (
-                  ),
-                   \'uuid\' => \'8fe5694d-7cf0-4f90-8d2f-9a90261f3672\',
-                )),
-                66 => 
-                stdClass::__set_state(array(
-                   \'pid\' => \'66\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-4422fd08-749a-4717-bf82-bb6642306f9d\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_promo\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1793,20 +2212,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'1\',
+                   \'position\' => 0,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'4422fd08-749a-4717-bf82-bb6642306f9d\',
                 )),
-                67 => 
+                \'new-64238565-3e44-408e-ba42-672dd0c33612\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'67\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-64238565-3e44-408e-ba42-672dd0c33612\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_blog\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1841,20 +2259,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'2\',
+                   \'position\' => 1,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'64238565-3e44-408e-ba42-672dd0c33612\',
                 )),
-                68 => 
+                \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'68\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_testimonial\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -1890,7 +2307,7 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'3\',
+                   \'position\' => 2,
                    \'locks\' => 
                   array (
                   ),
@@ -1901,18 +2318,17 @@ function ec_article_demo_content_node_export_features_default() {
               array (
                 \'two_66_33_first\' => 
                 array (
-                  0 => \'60\',
-                  1 => \'61\',
-                  2 => \'62\',
-                  3 => \'63\',
-                  4 => \'64\',
+                  0 => \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
+                  1 => \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\',
+                  2 => \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                  3 => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
+                  4 => \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\',
                 ),
                 \'two_66_33_second\' => 
                 array (
-                  0 => \'65\',
-                  1 => \'66\',
-                  2 => \'67\',
-                  3 => \'68\',
+                  0 => \'new-4422fd08-749a-4717-bf82-bb6642306f9d\',
+                  1 => \'new-64238565-3e44-408e-ba42-672dd0c33612\',
+                  2 => \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\',
                 ),
               ),
                \'incoming_content\' => NULL,
@@ -1920,7 +2336,7 @@ function ec_article_demo_content_node_export_features_default() {
                \'context\' => 
               array (
               ),
-               \'did\' => \'11\',
+               \'did\' => \'new-db7980d7-e91c-4212-afed-87dfc118f603\',
                \'renderer\' => \'standard\',
                \'layout\' => \'two_66_33\',
                \'layout_settings\' => 
@@ -1941,76 +2357,440 @@ function ec_article_demo_content_node_export_features_default() {
               array (
               ),
                \'title\' => \'%node:title\',
-               \'hide_title\' => \'1\',
-               \'title_pane\' => \'63\',
                \'uuid\' => \'db7980d7-e91c-4212-afed-87dfc118f603\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
+            )),
+          ),
+        \'teaser\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'17\',
+            \'revision_id\' => \'17\',
+            \'name\' => \'node:panopoly_page:default:teaser\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'teaser\',
+            \'css_class\' => \'page-teaser\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_quarter\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                )),
+                \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'600\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                )),
+                \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'teaser\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                  1 => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                  2 => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+        \'featured\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'17\',
+            \'revision_id\' => \'17\',
+            \'name\' => \'node:panopoly_page:default:featured\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'featured\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-af46907d-aa25-43db-995b-b38f9174221e\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'af46907d-aa25-43db-995b-b38f9174221e\',
+                )),
+                \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_title\',
+                   \'subtype\' => \'node_title\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'link\' => 1,
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                )),
+                \'new-a71dc705-b195-439c-b47b-980d8c7fa155\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'a71dc705-b195-439c-b47b-980d8c7fa155\',
+                )),
+                \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                  1 => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                  2 => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                  3 => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-5b7d08f9-c351-427e-8015-14433221537b\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'5b7d08f9-c351-427e-8015-14433221537b\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'0\',
             )),
           ),
       ),
       \'machine_name\' => FALSE,
-      \'name\' => \'emily\',
+      \'name\' => \'\',
       \'picture\' => \'0\',
-      \'data\' => \'b:0;\',
+      \'data\' => NULL,
       \'weight_weight\' => \'0\',
-      \'menu\' => array(
-        \'link_title\' => \'Test Newsletter 2\',
-        \'mlid\' => 0,
-        \'plid\' => \'1528\',
-        \'menu_name\' => \'menu-auxiliary-menu\',
-        \'weight\' => \'0\',
-        \'options\' => array(),
-        \'module\' => \'menu\',
-        \'expanded\' => \'0\',
-        \'hidden\' => \'0\',
-        \'has_children\' => \'0\',
-        \'customized\' => 0,
-        \'parent_depth_limit\' => 8,
-        \'description\' => \'\',
-        \'enabled\' => 1,
-      ),
+      \'menu\' => NULL,
       \'node_export_drupal_version\' => \'7\',
-      \'node_export_dependency\' => array(
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'uid\',
-          \'module\' => \'image\',
-          \'field_name\' => \'field_article_image\',
-          \'langcode\' => \'und\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-        array(
-          \'type\' => \'taxonomy_term\',
-          \'id\' => \'1\',
-          \'delta\' => 0,
-          \'property\' => \'tid\',
-          \'module\' => \'taxonomy\',
-          \'field_name\' => \'field_article_type\',
-          \'langcode\' => \'und\',
-          \'uuid\' => \'a40cea4b-201f-4166-ae2b-aa10500db955\',
-        ),
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'uid\',
-          \'module\' => \'node\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'revision_uid\',
-          \'module\' => \'node\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-      ),
     ),
   (object) array(
-      \'vid\' => \'69\',
-      \'uid\' => \'3\',
+      \'vid\' => \'18\',
+      \'uid\' => \'0\',
       \'title\' => \'Test Press Article 1\',
       \'log\' => \'\',
       \'status\' => \'1\',
@@ -2018,23 +2798,23 @@ function ec_article_demo_content_node_export_features_default() {
       \'promote\' => \'0\',
       \'sticky\' => \'0\',
       \'vuuid\' => \'11aa8836-34aa-4340-83a9-2f336290471f\',
-      \'nid\' => \'69\',
+      \'nid\' => \'18\',
       \'type\' => \'article\',
       \'language\' => \'und\',
       \'created\' => \'1414102969\',
-      \'changed\' => \'1414102969\',
+      \'changed\' => \'1435854623\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'c185bc44-074b-450c-8c9d-a925ebee91d7\',
-      \'revision_timestamp\' => \'1414102969\',
-      \'revision_uid\' => \'3\',
+      \'revision_timestamp\' => \'1435854623\',
+      \'revision_uid\' => \'1\',
       \'body\' => array(
         \'und\' => array(
           array(
             \'value\' => \'<p><span>This is the placeholder text for this page. Please replace this text with real copy.</span></p>\',
             \'summary\' => \'\',
             \'format\' => \'panopoly_wysiwyg_text\',
-            \'safe_value\' => "<p><span>This is the placeholder text for this page. Please replace this text with real copy.</span></p>\\n",
+            \'safe_value\' => \'<p><span>This is the placeholder text for this page. Please replace this text with real copy.</span></p>\',
             \'safe_summary\' => \'\',
           ),
         ),
@@ -2050,7 +2830,7 @@ function ec_article_demo_content_node_export_features_default() {
             \'filemime\' => \'image/jpeg\',
             \'filesize\' => \'73140\',
             \'status\' => \'1\',
-            \'timestamp\' => \'1414102969\',
+            \'timestamp\' => \'1435854623\',
             \'type\' => \'image\',
             \'uuid\' => \'219d0267-b7ab-4a1d-9052-c74f6e5d96eb\',
             \'field_file_image_alt_text\' => array(),
@@ -2072,7 +2852,7 @@ function ec_article_demo_content_node_export_features_default() {
       \'field_article_type\' => array(
         \'und\' => array(
           array(
-            \'tid\' => \'2\',
+            \'tid\' => \'12\',
           ),
         ),
       ),
@@ -2086,37 +2866,306 @@ function ec_article_demo_content_node_export_features_default() {
           ),
         ),
       ),
+      \'field_ref_article_case_study\' => array(),
+      \'field_ref_article_product\' => array(),
+      \'field_ref_article_testimonial\' => array(),
+      \'field_ref_article_blog\' => array(),
       \'field_ref_article_promo\' => array(),
       \'metatags\' => array(),
       \'path\' => array(
-        \'pid\' => \'72\',
-        \'source\' => \'node/69\',
+        \'pid\' => \'64\',
+        \'source\' => \'node/18\',
         \'alias\' => \'article/test-press-article-1\',
         \'language\' => \'und\',
       ),
       \'panelizer\' => array(
         \'page_manager\' => (object) array(
             \'entity_type\' => \'node\',
-            \'entity_id\' => \'69\',
-            \'revision_id\' => \'69\',
-            \'name\' => \'node:article:default\',
+            \'entity_id\' => \'18\',
+            \'revision_id\' => \'18\',
+            \'name\' => \'node:panopoly_page:default\',
             \'no_blocks\' => \'0\',
-            \'css_id\' => \'\',
-            \'css\' => NULL,
-            \'pipeline\' => \'standard\',
-            \'contexts\' => NULL,
-            \'relationships\' => NULL,
+            \'css_id\' => \'page-page\',
+            \'css\' => \'\',
+            \'pipeline\' => \'ipe\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
             \'did\' => \'0\',
             \'view_mode\' => \'page_manager\',
             \'css_class\' => \'\',
             \'title_element\' => \'H2\',
             \'link_to_entity\' => \'1\',
-            \'extra\' => NULL,
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                )),
+                \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                )),
+                \'new-f3bf9c22-9b22-41d2-a57e-110951093871\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'f3bf9c22-9b22-41d2-a57e-110951093871\',
+                )),
+                \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_categories\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'inline\',
+                    \'formatter\' => \'taxonomy_term_reference_link\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                )),
+                \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                   \'panel\' => \'sidebar\',
+                   \'type\' => \'menu_tree\',
+                   \'subtype\' => \'main-menu\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'menu_name\' => \'main-menu\',
+                    \'parent_mlid\' => \'main-menu:0\',
+                    \'title_link\' => 0,
+                    \'admin_title\' => \'\',
+                    \'level\' => \'2\',
+                    \'follow\' => 0,
+                    \'depth\' => 0,
+                    \'expanded\' => 1,
+                    \'sort\' => 0,
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                  1 => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                  2 => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                  3 => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                ),
+                \'sidebar\' => 
+                array (
+                  0 => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_bryant\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'sidebar\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+            )),
           ),
         \'default\' => (object) array(
             \'entity_type\' => \'node\',
-            \'entity_id\' => \'69\',
-            \'revision_id\' => \'69\',
+            \'entity_id\' => \'18\',
+            \'revision_id\' => \'18\',
             \'name\' => \'node:article:default:default\',
             \'no_blocks\' => \'0\',
             \'css_id\' => \'\',
@@ -2136,62 +3185,13 @@ function ec_article_demo_content_node_export_features_default() {
               ),
                \'content\' => 
               array (
-                60 => 
+                \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'60\',
-                   \'did\' => \'11\',
-                   \'panel\' => \'two_66_33_first\',
-                   \'type\' => \'entity_field\',
-                   \'subtype\' => \'node:field_article_image\',
-                   \'shown\' => \'1\',
-                   \'access\' => 
-                  array (
-                  ),
-                   \'configuration\' => 
-                  array (
-                    \'label\' => \'hidden\',
-                    \'formatter\' => \'image\',
-                    \'delta_limit\' => 0,
-                    \'delta_offset\' => \'0\',
-                    \'delta_reversed\' => false,
-                    \'formatter_settings\' => 
-                    array (
-                      \'image_style\' => \'sc_460x230\',
-                      \'image_link\' => \'\',
-                      \'field_multiple_limit\' => -1,
-                      \'field_multiple_limit_offset\' => 0,
-                    ),
-                    \'context\' => \'panelizer\',
-                    \'override_title\' => 0,
-                    \'override_title_text\' => \'\',
-                  ),
-                   \'cache\' => 
-                  array (
-                  ),
-                   \'style\' => 
-                  array (
-                    \'settings\' => NULL,
-                  ),
-                   \'css\' => 
-                  array (
-                  ),
-                   \'extras\' => 
-                  array (
-                  ),
-                   \'position\' => \'0\',
-                   \'locks\' => 
-                  array (
-                  ),
-                   \'uuid\' => \'fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
-                )),
-                61 => 
-                stdClass::__set_state(array(
-                   \'pid\' => \'61\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_display_date\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -2229,20 +3229,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'1\',
+                   \'position\' => 0,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
                 )),
-                62 => 
+                \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'62\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_article_author\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -2275,20 +3274,66 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'2\',
+                   \'position\' => 1,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'71d6548e-7dea-44d2-85da-6522a6f72bd5\',
                 )),
-                63 => 
+                \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'63\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_article_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_style\' => \'sc_460x230\',
+                      \'image_link\' => \'\',
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                )),
+                \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:body\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -2319,20 +3364,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'3\',
+                   \'position\' => 3,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
                 )),
-                64 => 
+                \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'64\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\',
                    \'panel\' => \'two_66_33_first\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_article_source\',
-                   \'shown\' => \'1\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -2365,65 +3409,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'4\',
+                   \'position\' => 4,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'9fb8740b-980b-4914-91b5-5daca474f7d9\',
                 )),
-                65 => 
+                \'new-4422fd08-749a-4717-bf82-bb6642306f9d\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'65\',
-                   \'did\' => \'11\',
-                   \'panel\' => \'two_66_33_second\',
-                   \'type\' => \'menu_tree\',
-                   \'subtype\' => \'menu-auxiliary-menu\',
-                   \'shown\' => \'1\',
-                   \'access\' => 
-                  array (
-                  ),
-                   \'configuration\' => 
-                  array (
-                    \'menu_name\' => \'menu-auxiliary-menu\',
-                    \'parent_mlid\' => 0,
-                    \'parent\' => \'menu-auxiliary-menu:0\',
-                    \'title_link\' => 0,
-                    \'admin_title\' => \'\',
-                    \'level\' => \'2\',
-                    \'follow\' => 0,
-                    \'depth\' => \'0\',
-                    \'expanded\' => 0,
-                    \'sort\' => 0,
-                    \'override_title\' => 1,
-                    \'override_title_text\' => \'\',
-                  ),
-                   \'cache\' => 
-                  array (
-                  ),
-                   \'style\' => 
-                  array (
-                    \'settings\' => NULL,
-                  ),
-                   \'css\' => 
-                  array (
-                  ),
-                   \'extras\' => 
-                  array (
-                  ),
-                   \'position\' => \'0\',
-                   \'locks\' => 
-                  array (
-                  ),
-                   \'uuid\' => \'8fe5694d-7cf0-4f90-8d2f-9a90261f3672\',
-                )),
-                66 => 
-                stdClass::__set_state(array(
-                   \'pid\' => \'66\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-4422fd08-749a-4717-bf82-bb6642306f9d\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_promo\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -2459,20 +3457,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'1\',
+                   \'position\' => 0,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'4422fd08-749a-4717-bf82-bb6642306f9d\',
                 )),
-                67 => 
+                \'new-64238565-3e44-408e-ba42-672dd0c33612\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'67\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-64238565-3e44-408e-ba42-672dd0c33612\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_blog\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -2507,20 +3504,19 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'2\',
+                   \'position\' => 1,
                    \'locks\' => 
                   array (
                   ),
                    \'uuid\' => \'64238565-3e44-408e-ba42-672dd0c33612\',
                 )),
-                68 => 
+                \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\' => 
                 stdClass::__set_state(array(
-                   \'pid\' => \'68\',
-                   \'did\' => \'11\',
+                   \'pid\' => \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\',
                    \'panel\' => \'two_66_33_second\',
                    \'type\' => \'entity_field\',
                    \'subtype\' => \'node:field_ref_article_testimonial\',
-                   \'shown\' => \'0\',
+                   \'shown\' => true,
                    \'access\' => 
                   array (
                   ),
@@ -2556,7 +3552,7 @@ function ec_article_demo_content_node_export_features_default() {
                    \'extras\' => 
                   array (
                   ),
-                   \'position\' => \'3\',
+                   \'position\' => 2,
                    \'locks\' => 
                   array (
                   ),
@@ -2567,18 +3563,17 @@ function ec_article_demo_content_node_export_features_default() {
               array (
                 \'two_66_33_first\' => 
                 array (
-                  0 => \'60\',
-                  1 => \'61\',
-                  2 => \'62\',
-                  3 => \'63\',
-                  4 => \'64\',
+                  0 => \'new-6ab20c99-b53b-4cfe-b1f5-229d0df1a2d3\',
+                  1 => \'new-71d6548e-7dea-44d2-85da-6522a6f72bd5\',
+                  2 => \'new-fb766eaf-df62-44a2-ae1e-7d3db8d4db0e\',
+                  3 => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
+                  4 => \'new-9fb8740b-980b-4914-91b5-5daca474f7d9\',
                 ),
                 \'two_66_33_second\' => 
                 array (
-                  0 => \'65\',
-                  1 => \'66\',
-                  2 => \'67\',
-                  3 => \'68\',
+                  0 => \'new-4422fd08-749a-4717-bf82-bb6642306f9d\',
+                  1 => \'new-64238565-3e44-408e-ba42-672dd0c33612\',
+                  2 => \'new-179ea74a-f401-4a20-8441-6fde6c8d29bb\',
                 ),
               ),
                \'incoming_content\' => NULL,
@@ -2586,7 +3581,7 @@ function ec_article_demo_content_node_export_features_default() {
                \'context\' => 
               array (
               ),
-               \'did\' => \'11\',
+               \'did\' => \'new-db7980d7-e91c-4212-afed-87dfc118f603\',
                \'renderer\' => \'standard\',
                \'layout\' => \'two_66_33\',
                \'layout_settings\' => 
@@ -2607,72 +3602,451 @@ function ec_article_demo_content_node_export_features_default() {
               array (
               ),
                \'title\' => \'%node:title\',
-               \'hide_title\' => \'1\',
-               \'title_pane\' => \'63\',
                \'uuid\' => \'db7980d7-e91c-4212-afed-87dfc118f603\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998\',
+            )),
+          ),
+        \'teaser\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'18\',
+            \'revision_id\' => \'18\',
+            \'name\' => \'node:panopoly_page:default:teaser\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'teaser\',
+            \'css_class\' => \'page-teaser\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_quarter\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                )),
+                \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'600\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                )),
+                \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'teaser\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                  1 => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                  2 => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+        \'featured\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'18\',
+            \'revision_id\' => \'18\',
+            \'name\' => \'node:panopoly_page:default:featured\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'featured\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-af46907d-aa25-43db-995b-b38f9174221e\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'af46907d-aa25-43db-995b-b38f9174221e\',
+                )),
+                \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_title\',
+                   \'subtype\' => \'node_title\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'link\' => 1,
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                )),
+                \'new-a71dc705-b195-439c-b47b-980d8c7fa155\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'a71dc705-b195-439c-b47b-980d8c7fa155\',
+                )),
+                \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                  1 => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                  2 => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                  3 => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-5b7d08f9-c351-427e-8015-14433221537b\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'5b7d08f9-c351-427e-8015-14433221537b\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'0\',
             )),
           ),
       ),
       \'machine_name\' => FALSE,
-      \'name\' => \'emily\',
+      \'name\' => \'\',
       \'picture\' => \'0\',
-      \'data\' => \'b:0;\',
+      \'data\' => NULL,
       \'weight_weight\' => \'0\',
       \'menu\' => array(
-        \'link_title\' => \'Test Press Article 1\',
+        \'link_title\' => \'Heating & Cooling\',
         \'mlid\' => 0,
-        \'plid\' => \'1529\',
-        \'menu_name\' => \'menu-auxiliary-menu\',
+        \'plid\' => \'2306\',
+        \'menu_name\' => \'main-menu\',
         \'weight\' => \'0\',
         \'options\' => array(),
         \'module\' => \'menu\',
         \'expanded\' => \'0\',
         \'hidden\' => \'0\',
-        \'has_children\' => \'0\',
+        \'has_children\' => \'1\',
         \'customized\' => 0,
         \'parent_depth_limit\' => 8,
         \'description\' => \'\',
         \'enabled\' => 1,
       ),
       \'node_export_drupal_version\' => \'7\',
-      \'node_export_dependency\' => array(
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'uid\',
-          \'module\' => \'image\',
-          \'field_name\' => \'field_article_image\',
-          \'langcode\' => \'und\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-        array(
-          \'type\' => \'taxonomy_term\',
-          \'id\' => \'2\',
-          \'delta\' => 0,
-          \'property\' => \'tid\',
-          \'module\' => \'taxonomy\',
-          \'field_name\' => \'field_article_type\',
-          \'langcode\' => \'und\',
-          \'uuid\' => \'b7920a33-fc7a-415d-9563-2e3eb3d4f76e\',
-        ),
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'uid\',
-          \'module\' => \'node\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-        array(
-          \'type\' => \'user\',
-          \'id\' => \'3\',
-          \'delta\' => 0,
-          \'property\' => \'revision_uid\',
-          \'module\' => \'node\',
-          \'uuid\' => \'ebfaffa9-d1a8-43d2-bfe0-8fe8be1c7b63\',
-        ),
-      ),
     ),
 )',
 );

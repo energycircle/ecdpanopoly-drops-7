@@ -11,6 +11,7 @@ function ec_gallery_defaultconfig_features() {
   return array(
     'ec_gallery' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -20,6 +21,115 @@ function ec_gallery_defaultconfig_features() {
  */
 function ec_gallery_defaultconfig_field_default_fields() {
   $fields = array();
+
+  // Exported field: 'node-case_study-field_ref_case_study_gallery'.
+  $fields['node-case_study-field_ref_case_study_gallery'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_case_study_gallery',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'gallery' => 'gallery',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'case_study',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 12,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_case_study_gallery',
+      'label' => 'Gallery',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 21,
+      ),
+    ),
+  );
 
   // Exported field: 'node-gallery-body'.
   $fields['node-gallery-body'] = array(
@@ -237,121 +347,70 @@ function ec_gallery_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-gallery-field_ref_gallery_case_study'.
-  $fields['node-gallery-field_ref_gallery_case_study'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_gallery_case_study',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'field_default_token' => array(
-              'status' => TRUE,
-            ),
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'case_study' => 'case_study',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'gallery',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 2,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_gallery_case_study',
-      'label' => 'Case Study',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 8,
-      ),
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Case Study');
+  t('Gallery');
   t('Gallery_image');
   t('Upload each image to be included in the gallery.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_gallery_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_gallery';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_gallery';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_gallery';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_gallery';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_gallery';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_gallery';
+  $strongarm->value = '1';
+  $export['content_type_extras_save_and_new_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_gallery';
+  $strongarm->value = 0;
+  $export['content_type_extras_title_hide_gallery'] = $strongarm;
+
+  return $export;
 }

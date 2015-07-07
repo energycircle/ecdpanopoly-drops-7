@@ -680,14 +680,14 @@ function ec_article_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-field_ref_article_blog'.
-  $fields['node-article-field_ref_article_blog'] = array(
+  // Exported field: 'node-blog_post-field_ref_blog_article'.
+  $fields['node-blog_post-field_ref_blog_article'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_article_blog',
+      'field_name' => 'field_ref_blog_article',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -715,7 +715,7 @@ function ec_article_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'blog_post' => 'blog_post',
+            'article' => 'article',
           ),
         ),
         'target_type' => 'node',
@@ -724,7 +724,119 @@ function ec_article_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'article',
+      'bundle' => 'blog_post',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 8,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_blog_article',
+      'label' => 'Article',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 11,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-case_study-field_ref_case_study_article'.
+  $fields['node-case_study-field_ref_case_study_article'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_case_study_article',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'article' => 'article',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'case_study',
       'default_value' => NULL,
       'default_value_function' => '',
       'deleted' => 0,
@@ -767,123 +879,8 @@ function ec_article_defaultconfig_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_article_blog',
-      'label' => 'Blog',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 17,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-article-field_ref_article_case_study'.
-  $fields['node-article-field_ref_article_case_study'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_article_case_study',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'field_default_token' => array(
-              'status' => TRUE,
-            ),
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'case_study' => 'case_study',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'article',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 10,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_article_case_study',
-      'label' => 'Case Study',
+      'field_name' => 'field_ref_case_study_article',
+      'label' => 'Article',
       'required' => 0,
       'settings' => array(
         'behaviors' => array(
@@ -907,14 +904,14 @@ function ec_article_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-field_ref_article_product'.
-  $fields['node-article-field_ref_article_product'] = array(
+  // Exported field: 'node-product_page-field_ref_prodpage_article'.
+  $fields['node-product_page-field_ref_prodpage_article'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_article_product',
+      'field_name' => 'field_ref_prodpage_article',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -934,9 +931,6 @@ function ec_article_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
-            'field_default_token' => array(
-              'status' => TRUE,
-            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -945,7 +939,7 @@ function ec_article_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'product_page' => 'product_page',
+            'article' => 'article',
           ),
         ),
         'target_type' => 'node',
@@ -954,11 +948,235 @@ function ec_article_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'article',
+      'bundle' => 'product_page',
       'default_value' => NULL,
       'default_value_function' => '',
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Select the Article pages (News, Press release, or other type of Article content) on which to show this product.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 2,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 8,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 12,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_prodpage_article',
+      'label' => 'Article',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 20,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-promotion-field_ref_promo_article'.
+  $fields['node-promotion-field_ref_promo_article'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_promo_article',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'article' => 'article',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'promotion',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Select article pages (news, press release, etc.) on which to display this promo.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 9,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 9,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 11,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_promo_article',
+      'label' => 'Article',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 21,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-testimonial-field_ref_testimonial_article'.
+  $fields['node-testimonial-field_ref_testimonial_article'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_testimonial_article',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'article' => 'article',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'testimonial',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Selected article pages on which to show this testimonial.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -987,7 +1205,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 8,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -997,8 +1215,8 @@ function ec_article_defaultconfig_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_article_product',
-      'label' => 'Product',
+      'field_name' => 'field_ref_testimonial_article',
+      'label' => 'Article',
       'required' => 0,
       'settings' => array(
         'behaviors' => array(
@@ -1017,263 +1235,26 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 15,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-article-field_ref_article_promo'.
-  $fields['node-article-field_ref_article_promo'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_article_promo',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'promotion' => 'promotion',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'article',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Promotions displayed on this page.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 5,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 5,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_article_promo',
-      'label' => 'Promotion',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 18,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-article-field_ref_article_testimonial'.
-  $fields['node-article-field_ref_article_testimonial'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_article_testimonial',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'testimonial' => 'testimonial',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'article',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Testimonials displayed on this page.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 6,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 6,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_article_testimonial',
-      'label' => 'Testimonial',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 16,
+        'weight' => 22,
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Article');
   t('Article Type');
   t('Article author');
   t('Article source');
-  t('Blog');
   t('Body');
-  t('Case Study');
   t('Display date');
   t('Enter the public-facing date for this item, such as an article\'s publication date or a blog post\'s publication date.');
   t('Enter the url of the source for this article.');
   t('Featured Image');
   t('Name of the author of this article, if relevant');
-  t('Product');
-  t('Promotion');
-  t('Promotions displayed on this page.');
-  t('Testimonial');
-  t('Testimonials displayed on this page.');
+  t('Select article pages (news, press release, etc.) on which to display this promo.');
+  t('Select the Article pages (News, Press release, or other type of Article content) on which to show this product.');
+  t('Selected article pages on which to show this testimonial.');
 
   return $fields;
 }

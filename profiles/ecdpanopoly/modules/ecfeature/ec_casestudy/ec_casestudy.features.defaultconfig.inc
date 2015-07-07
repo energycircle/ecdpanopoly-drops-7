@@ -21,6 +21,233 @@ function ec_casestudy_defaultconfig_features() {
 function ec_casestudy_defaultconfig_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'node-article-field_ref_article_case_study'.
+  $fields['node-article-field_ref_article_case_study'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_article_case_study',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'case_study' => 'case_study',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'article',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 10,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_article_case_study',
+      'label' => 'Case Study',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 14,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-blog_post-field_ref_blog_case_study'.
+  $fields['node-blog_post-field_ref_blog_case_study'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_blog_case_study',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'case_study' => 'case_study',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'blog_post',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Show this blog post on these case studies.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 6,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 7,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_blog_case_study',
+      'label' => 'Case Study',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 12,
+      ),
+    ),
+  );
+
   // Exported field: 'node-case_study-body'.
   $fields['node-case_study-body'] = array(
     'field_config' => array(
@@ -305,14 +532,14 @@ function ec_casestudy_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-case_study-field_ref_case_study_article'.
-  $fields['node-case_study-field_ref_case_study_article'] = array(
+  // Exported field: 'node-gallery-field_ref_gallery_case_study'.
+  $fields['node-gallery-field_ref_gallery_case_study'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => -1,
+      'cardinality' => 1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_case_study_article',
+      'field_name' => 'field_ref_gallery_case_study',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -332,6 +559,9 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -340,7 +570,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'article' => 'article',
+            'case_study' => 'case_study',
           ),
         ),
         'target_type' => 'node',
@@ -349,9 +579,8 @@ function ec_casestudy_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'case_study',
+      'bundle' => 'gallery',
       'default_value' => NULL,
-      'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -364,7 +593,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 8,
+          'weight' => 2,
         ),
         'featured' => array(
           'label' => 'above',
@@ -392,15 +621,10 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_case_study_article',
-      'label' => 'Article',
+      'field_name' => 'field_ref_gallery_case_study',
+      'label' => 'Case Study',
       'required' => 0,
       'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -412,19 +636,19 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 14,
+        'weight' => 8,
       ),
     ),
   );
 
-  // Exported field: 'node-case_study-field_ref_case_study_blog'.
-  $fields['node-case_study-field_ref_case_study_blog'] = array(
+  // Exported field: 'node-panopoly_page-field_ref_page_case_study'.
+  $fields['node-panopoly_page-field_ref_page_case_study'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => -1,
+      'cardinality' => 1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_case_study_blog',
+      'field_name' => 'field_ref_page_case_study',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -452,7 +676,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'blog_post' => 'blog_post',
+            'case_study' => 'case_study',
           ),
         ),
         'target_type' => 'node',
@@ -461,11 +685,131 @@ function ec_casestudy_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'case_study',
+      'bundle' => 'panopoly_page',
       'default_value' => NULL,
       'default_value_function' => '',
       'deleted' => 0,
-      'description' => 'Select the blog posts to display on this case study.',
+      'description' => 'Select a case study to display on this page',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 9,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_page_case_study',
+      'label' => 'Case Study',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 12,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-product_category-field_ref_prodcat_case_study'.
+  $fields['node-product_category-field_ref_prodcat_case_study'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_prodcat_case_study',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'case_study' => 'case_study',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product_category',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Select case studies to display on this product category page.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -500,12 +844,231 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
+          'weight' => 7,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_prodcat_case_study',
+      'label' => 'Case Studies',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 11,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-product_page-field_ref_prodpage_case_study'.
+  $fields['node-product_page-field_ref_prodpage_case_study'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_prodpage_case_study',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'case_study' => 'case_study',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product_page',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Show this product on these case study pages.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 3,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 9,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 14,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_prodpage_case_study',
+      'label' => 'Case Study',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 21,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-promotion-field_ref_promo_case_study'.
+  $fields['node-promotion-field_ref_promo_case_study'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_promo_case_study',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'case_study' => 'case_study',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'promotion',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Select case study pages on which to display this promo.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 10,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 12,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_case_study_blog',
-      'label' => 'Blog',
+      'field_name' => 'field_ref_promo_case_study',
+      'label' => 'Case Study',
       'required' => 0,
       'settings' => array(
         'behaviors' => array(
@@ -529,123 +1092,14 @@ function ec_casestudy_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-case_study-field_ref_case_study_gallery'.
-  $fields['node-case_study-field_ref_case_study_gallery'] = array(
+  // Exported field: 'node-service-field_ref_service_case_study'.
+  $fields['node-service-field_ref_service_case_study'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => 1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_case_study_gallery',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'field_default_token' => array(
-              'status' => TRUE,
-            ),
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'gallery' => 'gallery',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'case_study',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 12,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_case_study_gallery',
-      'label' => 'Gallery',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 21,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-case_study-field_ref_case_study_prodpage'.
-  $fields['node-case_study-field_ref_case_study_prodpage'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_case_study_prodpage',
+      'field_name' => 'field_ref_service_case_study',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -673,7 +1127,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'product_page' => 'product_page',
+            'case_study' => 'case_study',
           ),
         ),
         'target_type' => 'node',
@@ -682,231 +1136,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'case_study',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Select the products to show on this case study page.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 6,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_case_study_prodpage',
-      'label' => 'Product page',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 16,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-case_study-field_ref_case_study_promo'.
-  $fields['node-case_study-field_ref_case_study_promo'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_case_study_promo',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'promotion' => 'promotion',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'case_study',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Promotions shown on this page.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 1,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_case_study_promo',
-      'label' => 'Promotions',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 23,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-case_study-field_ref_case_study_serv_cat'.
-  $fields['node-case_study-field_ref_case_study_serv_cat'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_case_study_serv_cat',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'service_category' => 'service_category',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'case_study',
+      'bundle' => 'service',
       'default_value' => NULL,
       'default_value_function' => '',
       'deleted' => 0,
@@ -949,8 +1179,8 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_case_study_serv_cat',
-      'label' => 'Service Category',
+      'field_name' => 'field_ref_service_case_study',
+      'label' => 'Case Study',
       'required' => 0,
       'settings' => array(
         'behaviors' => array(
@@ -969,19 +1199,19 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 25,
+        'weight' => 12,
       ),
     ),
   );
 
-  // Exported field: 'node-case_study-field_ref_case_study_serv_group'.
-  $fields['node-case_study-field_ref_case_study_serv_group'] = array(
+  // Exported field: 'node-service_category-field_ref_serv_cat_case_study'.
+  $fields['node-service_category-field_ref_serv_cat_case_study'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => -1,
+      'cardinality' => 1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_ref_case_study_serv_group',
+      'field_name' => 'field_ref_serv_cat_case_study',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -1009,7 +1239,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'service_group' => 'service_group',
+            'case_study' => 'case_study',
           ),
         ),
         'target_type' => 'node',
@@ -1018,7 +1248,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'case_study',
+      'bundle' => 'service_category',
       'default_value' => NULL,
       'default_value_function' => '',
       'deleted' => 0,
@@ -1033,26 +1263,250 @@ function ec_casestudy_defaultconfig_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
+          'weight' => 12,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_serv_cat_case_study',
+      'label' => 'Case Study',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 13,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-service_group-field_ref_serv_group_case_study'.
+  $fields['node-service_group-field_ref_serv_group_case_study'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_serv_group_case_study',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'case_study' => 'case_study',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'service_group',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 10,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_serv_group_case_study',
+      'label' => 'Case Study',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 20,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-testimonial-field_ref_testimonial_case_study'.
+  $fields['node-testimonial-field_ref_testimonial_case_study'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_testimonial_case_study',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'case_study' => 'case_study',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'testimonial',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Select the case study pages on which to display this testimonial.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 10,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 9,
         ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -1061,8 +1515,8 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ref_case_study_serv_group',
-      'label' => 'Service Group',
+      'field_name' => 'field_ref_testimonial_case_study',
+      'label' => 'Case Study',
       'required' => 0,
       'settings' => array(
         'behaviors' => array(
@@ -1081,366 +1535,24 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 24,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-case_study-field_ref_case_study_service'.
-  $fields['node-case_study-field_ref_case_study_service'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_case_study_service',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'service' => 'service',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'case_study',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 11,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_case_study_service',
-      'label' => 'Service',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 26,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-case_study-field_ref_case_study_testimonial'.
-  $fields['node-case_study-field_ref_case_study_testimonial'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_case_study_testimonial',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'testimonial' => 'testimonial',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'case_study',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => 'Testimonials shown on this page.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 2,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_case_study_testimonial',
-      'label' => 'Testimonial',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 27,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-case_study-field_ref_case_sudy_page'.
-  $fields['node-case_study-field_ref_case_sudy_page'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_ref_case_sudy_page',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'panopoly_page' => 'panopoly_page',
-          ),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'case_study',
-      'default_value' => NULL,
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 7,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_ref_case_sudy_page',
-      'label' => 'Content Page',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'current' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 15,
+        'weight' => 23,
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Article');
-  t('Blog');
   t('Body');
-  t('Content Page');
+  t('Case Studies');
+  t('Case Study');
   t('Display Title');
   t('Display subtitle');
-  t('Gallery');
-  t('Product page');
-  t('Promotions');
-  t('Promotions shown on this page.');
-  t('Select the blog posts to display on this case study.');
-  t('Select the products to show on this case study page.');
-  t('Service');
-  t('Service Category');
-  t('Service Group');
-  t('Testimonial');
-  t('Testimonials shown on this page.');
+  t('Select a case study to display on this page');
+  t('Select case studies to display on this product category page.');
+  t('Select case study pages on which to display this promo.');
+  t('Select the case study pages on which to display this testimonial.');
+  t('Show this blog post on these case studies.');
+  t('Show this product on these case study pages.');
 
   return $fields;
 }

@@ -10,6 +10,41 @@
 function ec_testimonial_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_ref_article_testimonial'
+  $field_bases['field_ref_article_testimonial'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ref_article_testimonial',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'testimonial' => 'testimonial',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_ref_page_testimonial'
   $field_bases['field_ref_page_testimonial'] = array(
     'active' => 1,
@@ -45,13 +80,13 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_article'
-  $field_bases['field_ref_testimonial_article'] = array(
+  // Exported field_base: 'field_ref_prodcat_testimonial'
+  $field_bases['field_ref_prodcat_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_testimonial_article',
+    'field_name' => 'field_ref_prodcat_testimonial',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -63,6 +98,9 @@ function ec_testimonial_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -71,7 +109,7 @@ function ec_testimonial_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'article' => 'article',
+          'testimonial' => 'testimonial',
         ),
       ),
       'target_type' => 'node',
@@ -80,13 +118,13 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_case_study'
-  $field_bases['field_ref_testimonial_case_study'] = array(
+  // Exported field_base: 'field_ref_prodpage_testimonial'
+  $field_bases['field_ref_prodpage_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_testimonial_case_study',
+    'field_name' => 'field_ref_prodpage_testimonial',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -106,7 +144,7 @@ function ec_testimonial_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'case_study' => 'case_study',
+          'testimonial' => 'testimonial',
         ),
       ),
       'target_type' => 'node',
@@ -115,13 +153,13 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_page'
-  $field_bases['field_ref_testimonial_page'] = array(
+  // Exported field_base: 'field_ref_serv_cat_testimonial'
+  $field_bases['field_ref_serv_cat_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_testimonial_page',
+    'field_name' => 'field_ref_serv_cat_testimonial',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -141,7 +179,7 @@ function ec_testimonial_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'panopoly_page' => 'panopoly_page',
+          'testimonial' => 'testimonial',
         ),
       ),
       'target_type' => 'node',
@@ -150,13 +188,13 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_prodpage'
-  $field_bases['field_ref_testimonial_prodpage'] = array(
+  // Exported field_base: 'field_ref_serv_group_testimonial'
+  $field_bases['field_ref_serv_group_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_testimonial_prodpage',
+    'field_name' => 'field_ref_serv_group_testimonial',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -176,7 +214,7 @@ function ec_testimonial_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'product_page' => 'product_page',
+          'testimonial' => 'testimonial',
         ),
       ),
       'target_type' => 'node',
@@ -185,13 +223,13 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_serv_cat'
-  $field_bases['field_ref_testimonial_serv_cat'] = array(
+  // Exported field_base: 'field_ref_service_testimonial'
+  $field_bases['field_ref_service_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_testimonial_serv_cat',
+    'field_name' => 'field_ref_service_testimonial',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -211,77 +249,7 @@ function ec_testimonial_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'service_category' => 'service_category',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_ref_testimonial_serv_group'
-  $field_bases['field_ref_testimonial_serv_group'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ref_testimonial_serv_group',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'service_group' => 'service_group',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_ref_testimonial_service'
-  $field_bases['field_ref_testimonial_service'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ref_testimonial_service',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'service' => 'service',
+          'testimonial' => 'testimonial',
         ),
       ),
       'target_type' => 'node',

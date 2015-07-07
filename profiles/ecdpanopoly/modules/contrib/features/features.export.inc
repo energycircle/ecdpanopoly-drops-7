@@ -745,7 +745,21 @@ function features_get_normal($component, $module_name, $reset = FALSE) {
       $default_hook = features_get_default_hooks($component);
       if ($module && $default_hook && isset($module->info['features'][$component]) && features_hook($component, 'features_export_render')) {
         $code = features_invoke($component, 'features_export_render', $module_name, $module->info['features'][$component], NULL);
-        $cache[$module_name][$component] = isset($code[$default_hook]) ? eval($code[$default_hook]) : FALSE;
+        
+        if (isset($code[$default_hook])) {
+          $eval_return = eval($code[$default_hook]);
+          // eval returns FALSE on syntax errors but FALSE could also be a valid return value.
+          // We log the possibility of an error.
+          if (FALSE === $eval_return) {
+            watchdog('features', 'Evaluated code in module %module_name with component %component returned FALSE. Possible syntax error.', array('%module_name' => $module_name, '%component' => $component), WATCHDOG_WARNING);
+          }
+          
+          $cache[$module_name][$component] = $eval_return;
+          
+        }
+        else {
+          $cache[$module_name][$component] = FALSE;
+        }
       }
     }
 
@@ -1027,7 +1041,7 @@ function features_sanitize(&$array, $component = NULL, $remove_empty = TRUE) {
  */
 function _features_sanitize(&$array, $remove_empty = TRUE) {
   if (is_object($array)) {
-    $array = (array) $array;
+    $array = get_object_vars($array);
   }
   if (is_array($array)) {
     $is_assoc = _features_is_assoc($array);

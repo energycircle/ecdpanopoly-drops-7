@@ -108,6 +108,117 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
+  // Exported field_base: 'field_ref_article_product'
+  $field_bases['field_ref_article_product'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ref_article_product',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'product_page' => 'product_page',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_ref_case_study_prodpage'
+  $field_bases['field_ref_case_study_prodpage'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ref_case_study_prodpage',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'product_page' => 'product_page',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_ref_prodcat_product'
+  $field_bases['field_ref_prodcat_product'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ref_prodcat_product',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'product_page' => 'product_page',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_ref_prodpage_article'
   $field_bases['field_ref_prodpage_article'] = array(
     'active' => 1,
@@ -143,13 +254,13 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_case_study'
-  $field_bases['field_ref_prodpage_case_study'] = array(
+  // Exported field_base: 'field_ref_promotion_product'
+  $field_bases['field_ref_promotion_product'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_prodpage_case_study',
+    'field_name' => 'field_ref_promotion_product',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -169,7 +280,7 @@ function ec_product_page_lite_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'case_study' => 'case_study',
+          'product_page' => 'product_page',
         ),
       ),
       'target_type' => 'node',
@@ -178,13 +289,13 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_faq'
-  $field_bases['field_ref_prodpage_faq'] = array(
+  // Exported field_base: 'field_ref_serv_cat_prodpage'
+  $field_bases['field_ref_serv_cat_prodpage'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_prodpage_faq',
+    'field_name' => 'field_ref_serv_cat_prodpage',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -196,9 +307,6 @@ function ec_product_page_lite_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
-          'field_default_token' => array(
-            'status' => TRUE,
-          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -207,7 +315,7 @@ function ec_product_page_lite_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'faq' => 'faq',
+          'product_page' => 'product_page',
         ),
       ),
       'target_type' => 'node',
@@ -216,13 +324,13 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_promotion'
-  $field_bases['field_ref_prodpage_promotion'] = array(
+  // Exported field_base: 'field_ref_serv_group_prodpage'
+  $field_bases['field_ref_serv_group_prodpage'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_prodpage_promotion',
+    'field_name' => 'field_ref_serv_group_prodpage',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -242,7 +350,7 @@ function ec_product_page_lite_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'promotion' => 'promotion',
+          'product_page' => 'product_page',
         ),
       ),
       'target_type' => 'node',
@@ -251,13 +359,13 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_serv_cat'
-  $field_bases['field_ref_prodpage_serv_cat'] = array(
+  // Exported field_base: 'field_ref_service_product'
+  $field_bases['field_ref_service_product'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_prodpage_serv_cat',
+    'field_name' => 'field_ref_service_product',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -277,7 +385,7 @@ function ec_product_page_lite_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'service_category' => 'service_category',
+          'product_page' => 'product_page',
         ),
       ),
       'target_type' => 'node',
@@ -286,13 +394,13 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_serv_group'
-  $field_bases['field_ref_prodpage_serv_group'] = array(
+  // Exported field_base: 'field_ref_testimonial_prodpage'
+  $field_bases['field_ref_testimonial_prodpage'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_prodpage_serv_group',
+    'field_name' => 'field_ref_testimonial_prodpage',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -312,115 +420,7 @@ function ec_product_page_lite_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'service_group' => 'service_group',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_ref_prodpage_service'
-  $field_bases['field_ref_prodpage_service'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ref_prodpage_service',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'service' => 'service',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_ref_prodpage_testimonial'
-  $field_bases['field_ref_prodpage_testimonial'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ref_prodpage_testimonial',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'testimonial' => 'testimonial',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_ref_product_prodcat'
-  $field_bases['field_ref_product_prodcat'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ref_product_prodcat',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'field_default_token' => array(
-            'status' => TRUE,
-          ),
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'product_category' => 'product_category',
+          'product_page' => 'product_page',
         ),
       ),
       'target_type' => 'node',
