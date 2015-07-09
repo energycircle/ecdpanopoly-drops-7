@@ -8,11 +8,11 @@ core = 7.x
 ; Include DEV tools
 
 ; Feature Tools
-#projects[diff][version] = 3.2
-#projects[diff][subdir] = ec-dev
+projects[diff][version] = 3.2
+projects[diff][subdir] = ec-dev
 
-#projects[features_extra][version] = 1.0-beta1
-#projects[features_extra][subdir] = ec-dev
+projects[features_extra][version] = 1.0-beta1
+projects[features_extra][subdir] = ec-dev
 
 projects[uuid_features][version] = 1.0-alpha4
 projects[uuid_features][subdir] = ec-dev
@@ -29,6 +29,10 @@ projects[features_orphans][subdir] = ec-dev
 projects[node_export][version] = 3.x-dev
 projects[node_export][subdir] = ec-dev
 
+projects[features_disable_modules][version] = 1.x
+projects[features_disable_modules][subdir] = ec-dev
+projects[features_disable_modules][download][url] = "http://git.drupal.org/sandbox/imre.horjan/2265801.git"
+projects[features_disable_modules][type] = "module"
 
 ; Field Tools
 projects[field_tools][version] = 1.0-alpha8
