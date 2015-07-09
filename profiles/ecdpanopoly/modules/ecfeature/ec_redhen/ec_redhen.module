@@ -5,6 +5,3 @@
  */
 
 include_once 'ec_redhen.features.inc';
- function ec_redhen_hook_apps_app_info() {
- 
-  }

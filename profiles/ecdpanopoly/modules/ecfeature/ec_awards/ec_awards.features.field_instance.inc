@@ -10,7 +10,8 @@
 function ec_awards_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'entityform-award_nomination_form-field_ref_nomination_award'
+  // Exported field_instance:
+  // 'entityform-award_nomination_form-field_ref_nomination_award'
   $field_instances['entityform-award_nomination_form-field_ref_nomination_award'] = array(
     'bundle' => 'award_nomination_form',
     'default_value' => NULL,
@@ -46,7 +47,8 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-award_nomination_form-field_supporting_text'
+  // Exported field_instance:
+  // 'entityform-award_nomination_form-field_supporting_text'
   $field_instances['entityform-award_nomination_form-field_supporting_text'] = array(
     'bundle' => 'award_nomination_form',
     'default_value' => NULL,

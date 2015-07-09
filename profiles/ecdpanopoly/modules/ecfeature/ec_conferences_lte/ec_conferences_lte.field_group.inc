@@ -30,6 +30,7 @@ function ec_conferences_lte_field_group_info() {
       4 => 'field_event_sponsors_ref',
       5 => 'field_conference_tracks_ref',
       6 => 'field_conference_documents',
+      7 => 'field_ref_conference_banner',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -104,58 +105,33 @@ function ec_conferences_lte_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_teaser_block_content|node|conference_details|form';
-  $field_group->group_name = 'group_teaser_block_content';
+  $field_group->identifier = 'group_event_details|node|conference_event|form';
+  $field_group->group_name = 'group_event_details';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'conference_details';
+  $field_group->bundle = 'conference_event';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Teaser Block Content',
-    'weight' => '4',
-    'children' => array(
-      0 => 'field_conf_detail_teaser_content',
-      1 => 'field_conf_detail_page_type',
-    ),
-    'format_type' => 'fieldset',
-    'format_settings' => array(
-      'formatter' => 'collapsible',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-teaser-block-content field-group-fieldset',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_teaser_block_content|node|conference_details|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_venue_info|node|venue|form';
-  $field_group->group_name = 'group_venue_info';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'venue';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Venue Information',
+    'label' => 'Event Details',
     'weight' => '3',
     'children' => array(
-      0 => 'field_ref_venue_layout',
-      1 => 'field_venue_address',
+      0 => 'field_event_location',
+      1 => 'field_event_time',
+      2 => 'field_ref_conf_event_user',
+      3 => 'field_rev_conf_event_conference',
+      4 => 'field_event_sponsors_ref',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
       'instance_settings' => array(
         'description' => '',
-        'classes' => 'group-venue-info field-group-tab',
+        'classes' => 'group-event-details field-group-tab',
         'required_fields' => 1,
       ),
     ),
   );
-  $export['group_venue_info|node|venue|form'] = $field_group;
+  $export['group_event_details|node|conference_event|form'] = $field_group;
 
   return $export;
 }

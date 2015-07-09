@@ -15,7 +15,7 @@ function ec_conference_tracks_sessions_taxonomy_default_vocabularies() {
       'description' => 'Tags for sessions and other types of events',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 0,
+      'weight' => -9,
     ),
     'ceu_issuers' => array(
       'name' => 'CEU Issuers',
@@ -23,7 +23,7 @@ function ec_conference_tracks_sessions_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 0,
+      'weight' => -6,
     ),
     'session_format' => array(
       'name' => 'Session Format',
@@ -31,7 +31,7 @@ function ec_conference_tracks_sessions_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 0,
+      'weight' => 1,
     ),
   );
 }

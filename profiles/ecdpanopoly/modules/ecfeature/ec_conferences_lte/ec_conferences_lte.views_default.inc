@@ -30,7 +30,11 @@ function ec_conferences_lte_views_default_views() {
     3 => '3',
     4 => '4',
   );
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -202,209 +206,6 @@ function ec_conferences_lte_views_default_views() {
   $export['admin_conference'] = $view;
 
   $view = new view();
-  $view->name = 'conference_detail_page';
-  $view->description = 'Select a conference detail page to show in teaser format in a pane';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Conference Detail Page Pane';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '0';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'node';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'conference_details' => 'conference_details',
-  );
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Page Title';
-  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
-  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-    6 => 0,
-    7 => 0,
-  );
-  $handler->display->display_options['filters']['title']['expose']['autocomplete_filter'] = 1;
-  $handler->display->display_options['filters']['title']['expose']['autocomplete_items'] = '10';
-  $handler->display->display_options['filters']['title']['expose']['autocomplete_min_chars'] = '0';
-  $handler->display->display_options['filters']['title']['expose']['autocomplete_field'] = 'title';
-  $handler->display->display_options['filters']['title']['expose']['autocomplete_raw_suggestion'] = 1;
-  $handler->display->display_options['filters']['title']['expose']['autocomplete_raw_dropdown'] = 1;
-  $handler->display->display_options['filters']['title']['expose']['autocomplete_dependent'] = 0;
-
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
-  $handler->display->display_options['allow']['use_pager'] = 0;
-  $handler->display->display_options['allow']['items_per_page'] = 0;
-  $handler->display->display_options['allow']['offset'] = 0;
-  $handler->display->display_options['allow']['link_to_view'] = 0;
-  $handler->display->display_options['allow']['more_link'] = 0;
-  $handler->display->display_options['allow']['path_override'] = 0;
-  $handler->display->display_options['allow']['title_override'] = 0;
-  $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
-  $handler->display->display_options['allow']['fields_override'] = 0;
-  $export['conference_detail_page'] = $view;
-
-  $view = new view();
-  $view->name = 'conference_detail_teasers';
-  $view->description = 'Conference landing page teaser blocks for conference detail pages.';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Conference - Detail Teasers';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Travel & Accommodations';
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_ref_details_conference_target_id']['id'] = 'field_ref_details_conference_target_id';
-  $handler->display->display_options['relationships']['field_ref_details_conference_target_id']['table'] = 'field_data_field_ref_details_conference';
-  $handler->display->display_options['relationships']['field_ref_details_conference_target_id']['field'] = 'field_ref_details_conference_target_id';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_conf_detail_teaser_content']['id'] = 'field_conf_detail_teaser_content';
-  $handler->display->display_options['fields']['field_conf_detail_teaser_content']['table'] = 'field_data_field_conf_detail_teaser_content';
-  $handler->display->display_options['fields']['field_conf_detail_teaser_content']['field'] = 'field_conf_detail_teaser_content';
-  $handler->display->display_options['fields']['field_conf_detail_teaser_content']['label'] = '';
-  $handler->display->display_options['fields']['field_conf_detail_teaser_content']['element_label_colon'] = FALSE;
-  /* Field: Content: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'View Details';
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Nid */
-  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['table'] = 'node';
-  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['relationship'] = 'field_ref_details_conference_target_id';
-  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'conference_details' => 'conference_details',
-  );
-  /* Filter criterion: Content: Has taxonomy term */
-  $handler->display->display_options['filters']['tid']['id'] = 'tid';
-  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
-  $handler->display->display_options['filters']['tid']['field'] = 'tid';
-  $handler->display->display_options['filters']['tid']['value'] = array(
-    0 => '42',
-  );
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'conference_detail_page_types';
-
-  /* Display: Travel */
-  $handler = $view->new_display('panel_pane', 'Travel', 'panel_pane_1');
-
-  /* Display: Attend */
-  $handler = $view->new_display('panel_pane', 'Attend', 'panel_pane_2');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Who Should Attend?';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'conference_details' => 'conference_details',
-  );
-  /* Filter criterion: Content: Has taxonomy term */
-  $handler->display->display_options['filters']['tid']['id'] = 'tid';
-  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
-  $handler->display->display_options['filters']['tid']['field'] = 'tid';
-  $handler->display->display_options['filters']['tid']['value'] = array(
-    0 => '43',
-  );
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'conference_detail_page_types';
-  $export['conference_detail_teasers'] = $view;
-
-  $view = new view();
   $view->name = 'conference_documents';
   $view->description = 'Display a list of conference documents (File entities) on conference detail pages.';
   $view->tag = 'default';
@@ -418,7 +219,11 @@ function ec_conferences_lte_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '518400';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -488,7 +293,11 @@ function ec_conferences_lte_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '518400';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -572,7 +381,11 @@ function ec_conferences_lte_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -695,7 +508,7 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['filters']['field_conference_end_date_value']['table'] = 'field_data_field_conference_end_date';
   $handler->display->display_options['filters']['field_conference_end_date_value']['field'] = 'field_conference_end_date_value';
   $handler->display->display_options['filters']['field_conference_end_date_value']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now -1 day';
+  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now';
   $handler->display->display_options['allow']['use_pager'] = 0;
   $handler->display->display_options['allow']['items_per_page'] = 0;
   $handler->display->display_options['allow']['offset'] = 0;
@@ -705,6 +518,8 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['allow']['title_override'] = 'title_override';
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
+  $handler->display->display_options['link_to_view'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '0';
 
   /* Display: Upcoming Exhibitor Opportunities */
   $handler = $view->new_display('panel_pane', 'Upcoming Exhibitor Opportunities', 'panel_pane_2');
@@ -801,7 +616,7 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['filters']['field_conference_end_date_value']['table'] = 'field_data_field_conference_end_date';
   $handler->display->display_options['filters']['field_conference_end_date_value']['field'] = 'field_conference_end_date_value';
   $handler->display->display_options['filters']['field_conference_end_date_value']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now -1 day';
+  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now';
   $export['conference_home_upcomming_events'] = $view;
 
   $view = new view();
@@ -818,7 +633,11 @@ function ec_conferences_lte_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -1040,7 +859,11 @@ function ec_conferences_lte_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -1086,6 +909,11 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['sorts']['field_conference_type_tid']['table'] = 'field_data_field_conference_type';
   $handler->display->display_options['sorts']['field_conference_type_tid']['field'] = 'field_conference_type_tid';
   $handler->display->display_options['sorts']['field_conference_type_tid']['order'] = 'DESC';
+  /* Sort criterion: Content: Conference Start Date (field_conference_start_date) */
+  $handler->display->display_options['sorts']['field_conference_start_date_value']['id'] = 'field_conference_start_date_value';
+  $handler->display->display_options['sorts']['field_conference_start_date_value']['table'] = 'field_data_field_conference_start_date';
+  $handler->display->display_options['sorts']['field_conference_start_date_value']['field'] = 'field_conference_start_date_value';
+  $handler->display->display_options['sorts']['field_conference_start_date_value']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -1126,7 +954,11 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -1619,7 +1451,11 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['title'] = 'Exhibitors';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -1638,10 +1474,10 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['fields']['label']['label'] = '';
   $handler->display->display_options['fields']['label']['element_type'] = 'div';
   $handler->display->display_options['fields']['label']['element_label_colon'] = FALSE;
-  /* Sort criterion: Organization: Organization Name */
-  $handler->display->display_options['sorts']['label']['id'] = 'label';
-  $handler->display->display_options['sorts']['label']['table'] = 'redhen_org';
-  $handler->display->display_options['sorts']['label']['field'] = 'label';
+  /* Sort criterion: Organization: Sort Order (field_sort_order) */
+  $handler->display->display_options['sorts']['field_sort_order_value']['id'] = 'field_sort_order_value';
+  $handler->display->display_options['sorts']['field_sort_order_value']['table'] = 'field_data_field_sort_order';
+  $handler->display->display_options['sorts']['field_sort_order_value']['field'] = 'field_sort_order_value';
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
@@ -1682,13 +1518,6 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Organization Revisions: Organization Name */
-  $handler->display->display_options['fields']['label']['id'] = 'label';
-  $handler->display->display_options['fields']['label']['table'] = 'redhen_org_revision';
-  $handler->display->display_options['fields']['label']['field'] = 'label';
-  $handler->display->display_options['fields']['label']['label'] = 'Exhibitor';
-  $handler->display->display_options['fields']['label']['element_type'] = 'div';
-  $handler->display->display_options['fields']['label']['element_label_colon'] = FALSE;
   /* Field: Field: Website */
   $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
   $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
@@ -1698,6 +1527,19 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['fields']['field_website']['alter']['text'] = '<a href="[field_website-url]" target="_blank">[field_website-url]</a>';
   $handler->display->display_options['fields']['field_website']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_website']['type'] = 'link_plain';
+  /* Field: Content: Exhibitors */
+  $handler->display->display_options['fields']['field_conf_exhibitors']['id'] = 'field_conf_exhibitors';
+  $handler->display->display_options['fields']['field_conf_exhibitors']['table'] = 'field_data_field_conf_exhibitors';
+  $handler->display->display_options['fields']['field_conf_exhibitors']['field'] = 'field_conf_exhibitors';
+  $handler->display->display_options['fields']['field_conf_exhibitors']['relationship'] = 'reverse_field_conf_exhibitors_node';
+  $handler->display->display_options['fields']['field_conf_exhibitors']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_conf_exhibitors']['settings'] = array(
+    'link' => 0,
+    'field_multiple_limit' => '1',
+    'field_multiple_limit_offset' => '0',
+  );
+  $handler->display->display_options['fields']['field_conf_exhibitors']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_conf_exhibitors']['delta_offset'] = '0';
 
   /* Display: Exhibitors List with Website */
   $handler = $view->new_display('panel_pane', 'Exhibitors List with Website', 'panel_pane_2');
@@ -1787,7 +1629,11 @@ function ec_conferences_lte_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['query']['options']['pure_distinct'] = TRUE;
@@ -1891,7 +1737,11 @@ function ec_conferences_lte_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['query']['options']['pure_distinct'] = TRUE;
@@ -1992,13 +1842,13 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['filters']['name_1']['id'] = 'name_1';
   $handler->display->display_options['filters']['name_1']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['name_1']['field'] = 'name';
-  $handler->display->display_options['filters']['name_1']['value'] = 'Platinum Sponsor';
+  $handler->display->display_options['filters']['name_1']['value'] = 'Platinum Sponsors';
   $handler->display->display_options['filters']['name_1']['group'] = 2;
   /* Filter criterion: Taxonomy term: Name */
   $handler->display->display_options['filters']['name_2']['id'] = 'name_2';
   $handler->display->display_options['filters']['name_2']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['name_2']['field'] = 'name';
-  $handler->display->display_options['filters']['name_2']['value'] = 'Gold Sponsor';
+  $handler->display->display_options['filters']['name_2']['value'] = 'Gold Sponsors';
   $handler->display->display_options['filters']['name_2']['group'] = 2;
 
   /* Display: Sponsors - Host/Gold/Platinum - Slides */
@@ -2105,7 +1955,11 @@ function ec_conferences_lte_views_default_views() {
     3 => '3',
     4 => '4',
   );
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -2335,7 +2189,11 @@ function ec_conferences_lte_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '60';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -2413,7 +2271,7 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['filters']['field_conference_end_date_value']['table'] = 'field_data_field_conference_end_date';
   $handler->display->display_options['filters']['field_conference_end_date_value']['field'] = 'field_conference_end_date_value';
   $handler->display->display_options['filters']['field_conference_end_date_value']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now -1 day';
+  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now';
 
   /* Display: Upcoming National Conferences */
   $handler = $view->new_display('panel_pane', 'Upcoming National Conferences', 'panel_pane_1');
@@ -2597,7 +2455,7 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['filters']['field_conference_end_date_value']['table'] = 'field_data_field_conference_end_date';
   $handler->display->display_options['filters']['field_conference_end_date_value']['field'] = 'field_conference_end_date_value';
   $handler->display->display_options['filters']['field_conference_end_date_value']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now -1 day';
+  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now';
 
   /* Display: Featured on Home Page */
   $handler = $view->new_display('panel_pane', 'Featured on Home Page', 'panel_pane_3');
@@ -2606,6 +2464,15 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['disable_sql_rewrite'] = TRUE;
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'flexslider';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_ref_conference_venue_target_id']['id'] = 'field_ref_conference_venue_target_id';
@@ -2720,7 +2587,7 @@ function ec_conferences_lte_views_default_views() {
   $handler->display->display_options['filters']['field_conference_end_date_value']['table'] = 'field_data_field_conference_end_date';
   $handler->display->display_options['filters']['field_conference_end_date_value']['field'] = 'field_conference_end_date_value';
   $handler->display->display_options['filters']['field_conference_end_date_value']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now -1 day';
+  $handler->display->display_options['filters']['field_conference_end_date_value']['default_date'] = 'now';
   $export['upcoming_conferences_teasers'] = $view;
 
   $view = new view();
@@ -2737,7 +2604,11 @@ function ec_conferences_lte_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';

@@ -15,7 +15,7 @@ function ec_conferences_lte_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 0,
+      'weight' => -5,
     ),
     'sponsor_types' => array(
       'name' => 'Sponsor Types',
@@ -23,7 +23,7 @@ function ec_conferences_lte_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => -5,
+      'weight' => -10,
     ),
   );
 }

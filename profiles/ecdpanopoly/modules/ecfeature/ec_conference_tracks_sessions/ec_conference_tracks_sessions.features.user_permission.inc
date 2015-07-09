@@ -110,6 +110,28 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'create conference content'.
+  $permissions['create conference content'] = array(
+    'name' => 'create conference content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create conference_details content'.
+  $permissions['create conference_details content'] = array(
+    'name' => 'create conference_details content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create conference_event content'.
   $permissions['create conference_event content'] = array(
     'name' => 'create conference_event content',
@@ -154,6 +176,26 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any conference content'.
+  $permissions['delete any conference content'] = array(
+    'name' => 'delete any conference content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any conference_details content'.
+  $permissions['delete any conference_details content'] = array(
+    'name' => 'delete any conference_details content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any conference_event content'.
   $permissions['delete any conference_event content'] = array(
     'name' => 'delete any conference_event content',
@@ -187,6 +229,26 @@ function ec_conference_tracks_sessions_user_default_permissions() {
   // Exported permission: 'delete any track content'.
   $permissions['delete any track content'] = array(
     'name' => 'delete any track content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own conference content'.
+  $permissions['delete own conference content'] = array(
+    'name' => 'delete own conference content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own conference_details content'.
+  $permissions['delete own conference_details content'] = array(
+    'name' => 'delete own conference_details content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
@@ -234,6 +296,38 @@ function ec_conference_tracks_sessions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in conferences_types'.
+  $permissions['delete terms in conferences_types'] = array(
+    'name' => 'delete terms in conferences_types',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit any conference content'.
+  $permissions['edit any conference content'] = array(
+    'name' => 'edit any conference content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any conference_details content'.
+  $permissions['edit any conference_details content'] = array(
+    'name' => 'edit any conference_details content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any conference_event content'.
   $permissions['edit any conference_event content'] = array(
     'name' => 'edit any conference_event content',
@@ -270,6 +364,28 @@ function ec_conference_tracks_sessions_user_default_permissions() {
   // Exported permission: 'edit any track content'.
   $permissions['edit any track content'] = array(
     'name' => 'edit any track content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own conference content'.
+  $permissions['edit own conference content'] = array(
+    'name' => 'edit own conference content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own conference_details content'.
+  $permissions['edit own conference_details content'] = array(
+    'name' => 'edit own conference_details content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
@@ -320,6 +436,16 @@ function ec_conference_tracks_sessions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in conferences_types'.
+  $permissions['edit terms in conferences_types'] = array(
+    'name' => 'edit terms in conferences_types',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
   );
 
   return $permissions;

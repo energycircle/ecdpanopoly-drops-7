@@ -62,6 +62,7 @@ function ec_awards_default_entityform_type() {
       "enable_block" : 1
     },
     "weight" : "0",
+    "metatags" : [],
     "paths" : { "submit" : {
         "source" : "eform\\/submit\\/award-nomination-form",
         "alias" : "award\\/nomination-form",

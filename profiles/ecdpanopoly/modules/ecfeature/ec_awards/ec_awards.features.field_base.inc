@@ -20,7 +20,6 @@ function ec_awards_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -53,14 +52,6 @@ function ec_awards_field_default_field_bases() {
     'field_name' => 'field_award_nomination_form',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'entityform_type' => array(
-        'columns' => array(
-          'target_id' => 'id',
-        ),
-        'table' => 'entityform_type',
-      ),
     ),
     'indexes' => array(
       'target_id' => array(
@@ -102,14 +93,6 @@ function ec_awards_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -138,14 +121,6 @@ function ec_awards_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_award_user_company',
-    'foreign keys' => array(
-      'redhen_org' => array(
-        'columns' => array(
-          'target_id' => 'org_id',
-        ),
-        'table' => 'redhen_org',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -186,14 +161,6 @@ function ec_awards_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -218,7 +185,6 @@ function ec_awards_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 0,
     ),
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -249,14 +215,6 @@ function ec_awards_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ref_award_win_user',
-    'foreign keys' => array(
-      'redhen_contact' => array(
-        'columns' => array(
-          'target_id' => 'contact_id',
-        ),
-        'table' => 'redhen_contact',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -296,14 +254,6 @@ function ec_awards_field_default_field_bases() {
     'field_name' => 'field_ref_nomination_award',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'taxonomy_term_data' => array(
-        'columns' => array(
-          'target_id' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
     ),
     'indexes' => array(
       'target_id' => array(
@@ -346,14 +296,6 @@ function ec_awards_field_default_field_bases() {
     'field_name' => 'field_supporting_text',
     'field_permissions' => array(
       'type' => 0,
-    ),
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
     ),
     'indexes' => array(
       'format' => array(

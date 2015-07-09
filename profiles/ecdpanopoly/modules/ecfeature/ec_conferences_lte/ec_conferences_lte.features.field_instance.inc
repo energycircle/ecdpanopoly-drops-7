@@ -10,7 +10,8 @@
 function ec_conferences_lte_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'entityform-sponsor_information_inquiry-field_comments'
+  // Exported field_instance:
+  // 'entityform-sponsor_information_inquiry-field_comments'
   $field_instances['entityform-sponsor_information_inquiry-field_comments'] = array(
     'bundle' => 'sponsor_information_inquiry',
     'default_value' => NULL,
@@ -52,7 +53,8 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-sponsor_information_inquiry-field_company'
+  // Exported field_instance:
+  // 'entityform-sponsor_information_inquiry-field_company'
   $field_instances['entityform-sponsor_information_inquiry-field_company'] = array(
     'bundle' => 'sponsor_information_inquiry',
     'default_value' => NULL,
@@ -94,7 +96,8 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-sponsor_information_inquiry-field_email'
+  // Exported field_instance:
+  // 'entityform-sponsor_information_inquiry-field_email'
   $field_instances['entityform-sponsor_information_inquiry-field_email'] = array(
     'bundle' => 'sponsor_information_inquiry',
     'default_value' => NULL,
@@ -130,7 +133,8 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-sponsor_information_inquiry-field_first_name'
+  // Exported field_instance:
+  // 'entityform-sponsor_information_inquiry-field_first_name'
   $field_instances['entityform-sponsor_information_inquiry-field_first_name'] = array(
     'bundle' => 'sponsor_information_inquiry',
     'default_value' => NULL,
@@ -172,7 +176,8 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-sponsor_information_inquiry-field_last_name'
+  // Exported field_instance:
+  // 'entityform-sponsor_information_inquiry-field_last_name'
   $field_instances['entityform-sponsor_information_inquiry-field_last_name'] = array(
     'bundle' => 'sponsor_information_inquiry',
     'default_value' => NULL,
@@ -214,7 +219,8 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-sponsor_information_inquiry-field_phone'
+  // Exported field_instance:
+  // 'entityform-sponsor_information_inquiry-field_phone'
   $field_instances['entityform-sponsor_information_inquiry-field_phone'] = array(
     'bundle' => 'sponsor_information_inquiry',
     'default_value' => NULL,
@@ -253,7 +259,8 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-sponsor_information_inquiry-field_what_is_the_primary_focus'
+  // Exported field_instance:
+  // 'entityform-sponsor_information_inquiry-field_what_is_the_primary_focus'
   $field_instances['entityform-sponsor_information_inquiry-field_what_is_the_primary_focus'] = array(
     'bundle' => 'sponsor_information_inquiry',
     'default_value' => NULL,
@@ -288,7 +295,8 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_event_sponsors_ref-field_conf_sponsor'
+  // Exported field_instance:
+  // 'field_collection_item-field_event_sponsors_ref-field_conf_sponsor'
   $field_instances['field_collection_item-field_event_sponsors_ref-field_conf_sponsor'] = array(
     'bundle' => 'field_event_sponsors_ref',
     'default_value' => NULL,
@@ -352,7 +360,8 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_event_sponsors_ref-field_conf_sponsor_type'
+  // Exported field_instance:
+  // 'field_collection_item-field_event_sponsors_ref-field_conf_sponsor_type'
   $field_instances['field_collection_item-field_event_sponsors_ref-field_conf_sponsor_type'] = array(
     'bundle' => 'field_event_sponsors_ref',
     'default_value' => NULL,
@@ -692,7 +701,7 @@ function ec_conferences_lte_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 20,
+      'weight' => 8,
     ),
   );
 
@@ -1961,7 +1970,8 @@ function ec_conferences_lte_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-conference_details-field_ref_details_conference'
+  // Exported field_instance:
+  // 'node-conference_details-field_ref_details_conference'
   $field_instances['node-conference_details-field_ref_details_conference'] = array(
     'bundle' => 'conference_details',
     'default_value' => NULL,
@@ -2208,17 +2218,7 @@ function ec_conferences_lte_field_default_field_instances() {
   // Exported field_instance: 'node-venue-field_venue_address'
   $field_instances['node-venue-field_venue_address'] = array(
     'bundle' => 'venue',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'node|venue|field_venue_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -2286,6 +2286,7 @@ function ec_conferences_lte_field_default_field_instances() {
         'available_countries' => array(
           'US' => 'US',
         ),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
