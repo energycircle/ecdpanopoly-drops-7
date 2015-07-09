@@ -34,7 +34,7 @@ dependencies[] = panopoly_wysiwyg
 
 ; Panopoly Contrib
 dependencies[] = panopoly_config
-dependencies[] = panopoly_seo
+#dependencies[] = panopoly_seo
 
 ; Panopoly Recommended - Admin & UI
 dependencies[] = breakpoints
@@ -55,13 +55,11 @@ dependencies[] = addressfield
 dependencies[] = addressfield_tokens
 dependencies[] = admin_menu
 dependencies[] = admin_theme
-dependencies[] = addthis
 dependencies[] = auto_menutitle
 dependencies[] = cer
 dependencies[] = colorbox
 dependencies[] = compact_forms
 dependencies[] = content_type_extras
-dependencies[] = diff
 dependencies[] = disable_term_node_listings
 dependencies[] = email
 dependencies[] = entitycache
@@ -104,7 +102,7 @@ dependencies[] = weight
 dependencies[] = xmlsitemap
 
 ;DEVELOPMENT MODS
-dependencies[] = diff
+#dependencies[] = diff
 dependencies[] = features_override
 dependencies[] = features_roles_permissions
 dependencies[] = uuid_features
