@@ -9,8 +9,6 @@ dependencies[] = features_disable_modules
 #custom
 features[disable_modules][] = admin_devel
 features[disable_modules][] = apps
-features[disable_modules][] = defaultconfig
-features[disable_modules][] = defaultcontent
 features[disable_modules][] = devel
 features[disable_modules][] = diff
 features[disable_modules][] = distro_update
@@ -20,7 +18,6 @@ features[disable_modules][] = features_orphans
 features[disable_modules][] = node_export_dependency
 features[disable_modules][] = node_export
 features[disable_modules][] = update
-
 features[disable_modules][] = ctools_ajax_sample
 features[disable_modules][] = ctools_plugin_example
 features[disable_modules][] = date_migrate_example
@@ -72,4 +69,4 @@ features[disable_modules][] = simpletest
 features[disable_modules][] = uuid_services_example
 features[disable_modules][] = variable_example
 features[features_api][] = api:2
-project status url = ttps://github.com/energycircle/ec_cleaner.git
+project status url = https://github.com/energycircle/ec_cleaner.git

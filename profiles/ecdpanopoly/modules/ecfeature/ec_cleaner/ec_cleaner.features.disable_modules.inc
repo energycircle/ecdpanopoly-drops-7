@@ -11,8 +11,6 @@ function ec_cleaner_disable_modules_defaults() {
   $disable_modules = array();
   $disable_modules['admin_devel'] = 'admin_devel';
   $disable_modules['apps'] = 'apps';
-  $disable_modules['defaultconfig'] = 'defaultconfig';
-  $disable_modules['defaultcontent'] = 'defaultcontent';
   $disable_modules['devel'] = 'devel';
   $disable_modules['diff'] = 'diff';
   $disable_modules['distro_update'] = 'distro_update';
