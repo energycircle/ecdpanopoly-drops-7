@@ -1,78 +1,53 @@
-ECDPanopoly  7.x-1.1-rc7.1, 2015-3-20
+ECDPanopoly  7.x-1.1-rc10, 2015-8-1
 ---------------------------
 All changes in this release:
-    Update Panopoly Core for Issue #2480383: Update Views to version 3.11 for SA-CONTRIB-2015-103
-    Update Panopoly Test for Issue #2236815 by segovia94, dsnopek: Set human-readable names for all of Panopoly's image styles
-    Update Panopoly Images for Issue #2236815 by segovia94, dsnopek: Set human-readable names for all of Panopoly's image styles
-    Update Panopoly Core, Admin, Pages and Test for Issue #2477319: Clean up instances of deprecated layouts
-    Update Panopoly WYSIWYG for Issue #2473365 by dsnopek: WYSIWYG format shouldn't use "Convert line breaks into HTML" filter
-    Update Panopoly Core for Issue #1962642 by Sheldon Rampton: Undefined index: default_filename in defaultconfig_defaultconfig_components() (line 418
-    Update Panopoly Core for Issue #2468989 by hanoii: Include views patch to fix destination query string on ajax calls from views
-    Update Panopoly Test for Issue #2476723 by dsnopek: Remove 'Radix' from the label of each of the layouts
-    Update Panopoly Theme for Issue #2476723 by dsnopek: Remove 'Radix' from the label of each of the layouts
-    Update Panopoly Images and Test for Issue #2476227 by dsnopek: Page full of variables after changing layout
-    Update Panopoly WYSIWYG for Issue #2476543 by dsnopek: tag getting added to the WYSIWYG output
-    Fix type-o in scripts/create_test_branch.py: panopoly_wyiswyg => panopoly_wysiwyg
-    Update Panopoly Core for Issue #2444361 by mglaman: Update token module to version 1.6
-    Update Panopoly WYSIWYG for Issue #2451691 by mglaman: Update TinyMCE library to 3.5.11
-    Update Panopoly Core for Issue #2472693: Make theming FPPs sane
-    Update Panopoly Test for Issue #2471995 by hefox: menu_rebuild removed, but not variable that tracked if had been done
-    Update Panopoly Core and profile for Issue #2468273 by dsnopek: Update to Drupal 7.36
-    Update Panopoly Core, Images, Widgets, Admin, Pages, Search and Test for Issue #2446165: Update Features module to version 2.5
-    The create_test_branch.py script should skip all but one upgrade test by default.
-    Update Panopoly Images for Issue #2468445 by RobLoach, dsnopek: Panopoly Images targets img elements
-    Revert "Update Panopoly Images for Issue #2468445 by RobLoach, dsnopek: Panopoly Images targets img elements"
-    Update Panoploy WYSIWYG for Issue #2460217 by mcrittenden: LinkIt is broken when changing to WYSIWYG editor after save
-    Update Panopoly Magic for Issue #2261061 by segovia94, dsnopek, hernani: Allow panopoly magic to affect other forms
-    Update Panopoly Images and WYSIWYG for Issue #2287805 by ergophobe, dsnopek, cornifex, mglaman: Caption filter does not work with Quarter Size image format - or with floated captions
-    Update Panopoly WYSIWYG for Issue #2456919 by ergophobe: Caption filter not properly converting singe quotes to entities
-    Update Panopoly Widgets for Issue #2463395 by dsnopek: Content Item widget initial preview is confusing
-    Update Panopoly Magic for Issue #2463389 by dsnopek: PHP notice when adding Image pane as an editor
-    Update Panopoly Admin for Issue #2461077 by dshields, dsnopek: Hiding the Body field label breaks the summary toggle
-    Update Panopoly Core for Issue #2455789: Errors when viewing pages with fieldable panels panes with visibility rules
-    Update Panopoly Widgets for Issue #2459229 by dsnopek: Document names in the Media "Library" overflow outside of their boxes
-    Update Panopoly Widgets for Issue #2459195 by dsnopek: "File name" filter in Media "Library" loses focus after each keystroke
-    Update Panopoly Widgets for Issue #2458747 by dsnopek: Media browser tabs give little indication that a tab is selected
-    Start testing upgrades from the 1.20 release.
-    Restored drupal-org.make after the 1.20 release
-
-ECDPanopoly  7.x-1.1-rc7, 2015-3-20
----------------------------
-All changes in this release:
-
-    Update Panopoly Core for Issue #2455073: Update to CTools 1.7 for SA-CONTRIB-2015-079
-    #2455061: Update Drupal core to 7.35 for SA-CORE-2015-001
-    Update Panopoly Magic and Test for Issue #2443499 by dsnopek: User profile: Unable to chage image field style formatter options because they don't get saved
-    Update Panopoly Admin for Issue #2424017 by B-Prod: Malformed (and useless) string context causes errors with new versions of CTools
-    Update Panopoly Test for Issue #2453837 by dsnopek: Authenticated users should have full permission to all test content types
-    Update Panopoly Search and Test for Issue #2423841 by dsnopek: "Top search phrases" report not showing any data
-    Update Panopoly Widgets for Issue #2432625 by dsnopek: panopoly_widgets makes it hard/impossible to implement responsive tables strategy for the whole site
-    Update Panopoly Image for Issue #2449357 by dsnopek: Relabeled view modes baffles
-    Update Panopoly Pages and Test for Issue #2293947 by caschbre, dsnopek, mglaman: Make "Landing Page" into node + Panelizer (rather than a Page Manager page)
-    Update Panopoly WYSIWYG for Issue #2449495 by dsnopek: livepreview.feature is super slow
-    Update Panopoly Users for Issue #2447591 by bwood: Perform coding style fixes on panopoly_users
-    Update Panopoly Core for Issue #2448757: Features exports including Panels stuff (*.pages_default.inc, *.panelizer.inc, etc) use incorrect indentation
-    Update Panopoly Admin for Issue #2444359 by caschbre: Update admin_views to version 1.4
-    Update Panopoly Admin for Issue #2396241 by brandy.brown, dsnopek: Hide field labels in a more accessible way
-    Update Panopoly Widgets for Issue #2446219 by mglaman: Media Vimeo patch to fix improper Exception handling
-    Update Panopoly Admin for Issue #2152111 by brandy.brown, dsnopek: Removal of description from Featured image
-    Update Panopoly Magic, Core and Test for Issue #2398347 by dsnopek, mglaman: Panopoly Magic abuses FPP revisions
-    Update Panopoly Test and Magic for Issue #2447839 by dsnopek: Audit Behat code for slowness and optimize
-    Update Panopoly Test for Issue #2447475 by dsnopek: YouTube test fails on Chrome 41
-    Update Panopoly Magic for Issue #2443031 by joegraduate: Panopoly Magic update generates warning when FPP not installed
-    Update Panopoly Admin for Issue #2430617 by hanoii: states.js doesn't work properly with jquery 1.7 (jquery_update 2.3)
-    Update Panopoly Core for Issue #2420281 by dsnopek: Administration menu: errors when enabling it
-    Update Panopoly Admin for Issue #2412321: Update admin_menu to 3.0-rc5
-    Update Panopoly Admin for Issue #2272179: Update 'module_filter' module to version 7.x-2.0 (1.8 unsupported)
-    #2442813: Installing last release fails to pull in panopoly_demo on Travsi-CI
-    Update Panopoly Magic and Test for Issue #2317467 by dsnopek: Allow live preview to work with WYSIWYG
-    #2231631 by dsnopek: Tests randomly fail with "MySQL server has gone away" (take 4)
-    Start testing upgrades from the 1.18 release.
-    Restored drupal-org.make after the 1.18 release
-
-
-ECDPanopoly  7.x-1.1-rc6, 2015-2-25
----------------------------
-- Upgrade panopoly to 1.17
-- Drupal 7.34, 2014-11-19
-	- Fixed security issues (multiple vulnerabilities). See SA-CORE-2014-006.
+	
+	Patch panopoly_images if patch isn't committed by next distro update
+	build separate drush dev script to run after install
+	Suggest new content type for Financing Option
+	Permissions tuning
+	Notice: Undefined variable: search_box in include
+	update Module Versions
+	Patch or revert lnkit module
+	Remove dots from hero slides view
+	Remove dots from testimonials slider view
+	changed the Display Title field into a plain text 
+	"Schedule Service" entityform redirect path
+	"Join Our Team" entityform submission page
+	Change Service Request view name
+	Remove setting for  Advanced Panel Plugins
+	[Duplicate] remove contemplate from feature dependency
+	Check menu settings for content types in DISTRO
+	Change all image fields to use media field
+	Review METATAGS module version
+	Base Feature - review token tweeks
+	Casestudy Image Field
+	Rewrap Product/ Product Cat Features
+	Rewrap Conf stack feature
+	Take away client permission to delete content - only unpublish
+	Review permissions for editor and admin roles. 
+	Css fix for firefox
+	Add blog article ref field to content page content type
+	Address field update to rc1
+	UUID features
+	DONE in RC7
+	feature up app config settings
+	Upgrade linking target to 7.x-3.x-dev
+	patch panopoly magic
+	"Promotion" entityform submission page
+	Add dev version of module filter to distro
+	Review views patch
+	Apps config from Open Outreach
+	remove jQuery update from eccontrib
+	SMTP Mod - SendGrid Integration
+	Set Country for Contact form Address field
+	clean url on install not working
+	Turn on Global / custom panel panes in distro
+	Add term ref to Slide ct
+	Change to Promotions view
+	Case study CT - duplicate titles
+	Panelizer settings for case study CT
+	content page CT set to wrong layout in Distro
+	Menu option clean-up for content types
+	Change to Testimonials views in distro
+	Shut Off Update/ Distribution Update Status Manager

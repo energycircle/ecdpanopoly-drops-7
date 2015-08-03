@@ -30,3 +30,10 @@ function panopoly_seo_update_7001() {
     'xmlsitemap_taxonomy'
   ));
 }
+
+/**
+ * Enable site verification Metatag submodule.
+ */
+function panopoly_seo_update_7002() {
+  module_enable(array('metatag_verification'));
+}

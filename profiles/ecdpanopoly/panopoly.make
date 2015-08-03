@@ -38,7 +38,7 @@ projects[panopoly_search][subdir] = panopoly
 projects[panopoly_config][version] = 1.x-dev
 projects[panopoly_config][subdir] = panopoly_custom
 
-projects[panopoly_seo][version] = 1.0-beta1
+projects[panopoly_seo][version] = 1.0-beta3
 projects[panopoly_seo][subdir] = panopoly_custom
 
 

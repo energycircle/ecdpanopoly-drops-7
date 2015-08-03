@@ -103,7 +103,7 @@ projects[entityreference_prepopulate][subdir] = eccontrib
 projects[entityreference_prepopulate][version] = 1.x
 
 projects[entityreference_current][subdir] = eccontrib
-projects[entityreference_current][version] = 1.x
+projects[entityreference_current][version] = 1.0-alpha2
 
 projects[eva][subdir] = eccontrib
 projects[eva][version] = 1.x
@@ -181,7 +181,7 @@ projects[menu_icons][subdir] = eccontrib
 projects[menu_icons][version] = 3.x-dev
 
 projects[metatag][subdir] = eccontrib
-projects[metatag][version] = 1.4
+projects[metatag][version] = 1.7
 
 projects[mimemail][subdir] = eccontrib
 projects[mimemail][version] = 1.x
@@ -208,7 +208,7 @@ projects[redhen][subdir] = eccontrib
 projects[redhen][version] = 1.9
 
 projects[redirect][subdir] = eccontrib
-projects[redirect][version] = 1.0-rc1
+projects[redirect][version] = 1.0-rc3
 
 projects[registration][subdir] = eccontrib
 projects[registration][version] = 1.4
@@ -271,7 +271,7 @@ projects[weight][subdir] = eccontrib
 projects[weight][version] = 2.5
 
 projects[xmlsitemap][subdir] = eccontrib
-projects[xmlsitemap][version] = 2.0
+projects[xmlsitemap][version] = 2.2
 
 
 ;PATCHES
