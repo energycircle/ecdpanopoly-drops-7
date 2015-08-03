@@ -1,0 +1,40 @@
+<?php
+/**
+ * @file
+ * This module extends features to allow automated disabling of unnecessary or 
+ * conflicting modules.
+ */
+
+/**
+ * Implements hook_features_api().
+ */
+function features_disable_modules_features_api() {
+  return array(
+    'disable_modules' => array(
+      'name' => 'Disable Modules',
+      'default_hook' => 'disable_modules_defaults',
+      'default_file' => FEATURES_DEFAULTS_INCLUDED,
+      'feature_source' => TRUE,
+      'duplicates' => FEATURES_DUPLICATES_ALLOWED,
+      'file' => drupal_get_path('module', 'features_disable_modules') . '/disable_modules.features.inc',
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_flush_caches().
+ * 
+ * Disabling modules on clear cache.
+ */
+function features_disable_modules_flush_caches() {
+  if (variable_get('features_rebuild_on_flush', TRUE)) {
+    // Don't flush the modules cache during installation, for performance
+    // reasons.
+    if (variable_get('install_task') == 'done') {
+      module_load_include('inc', 'features', 'features.export');
+      features_invoke('disable_modules', 'features_rebuild');
+    }
+  }
+  return array();
+}

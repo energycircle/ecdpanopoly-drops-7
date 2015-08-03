@@ -43,6 +43,8 @@ function field_formatter_settings_get_instance_display_settings($entity_type, $f
 
 /**
  * Implements hook_form_FORM_ID_alter().
+ *
+ * @see field_ui_display_overview_form()
  */
 function field_formatter_settings_form_field_ui_display_overview_form_alter(&$form, &$form_state) {
   $entity_type = $form['#entity_type'];
@@ -96,7 +98,7 @@ function field_formatter_settings_form_field_ui_display_overview_form_alter(&$fo
     if ($form_state['formatter_settings_edit'] == $name) {
       $settings_form = isset($table[$name]['format']['settings_edit_form']['settings']) ? $table[$name]['format']['settings_edit_form']['settings'] : array();
 
-      // Allow other modules to alter the formater settings form.
+      // Allow other modules to alter the formatter settings form.
       $context = array(
         'module' => $formatter['module'],
         'formatter' => $formatter,

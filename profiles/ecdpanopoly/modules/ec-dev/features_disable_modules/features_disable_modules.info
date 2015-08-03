@@ -1,0 +1,12 @@
+name = Features Disable Modules
+description = This module extends features to allow automated disabling of unnecessary or conflicting modules.
+core = 7.x
+package = Features
+
+
+; Information added by drush on 2015-08-03
+version = "7.x-1.0-alpha1+9-dev"
+core = "7.x"
+project = "features_disable_modules"
+datestamp = "1438610238"
+

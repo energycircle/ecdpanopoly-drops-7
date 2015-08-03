@@ -12,6 +12,7 @@ apps[author_url] = http://www.energycircle.com/
 
 dependencies[] = auto_nodetitle
 dependencies[] = compact_forms
+dependencies[] = computed_field 
 dependencies[] = defaultcontent
 dependencies[] = draggableviews
 dependencies[] = email
