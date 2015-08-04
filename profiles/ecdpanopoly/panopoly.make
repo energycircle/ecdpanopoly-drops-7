@@ -50,8 +50,6 @@ projects[panopoly_test][subdir] = panopoly
 projects[defaultconfig][patch][1900574] = https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
 projects[defaultconfig][subdir] = contrib
 
-projects[defaultconfig][patch][1912512] = https://www.drupal.org/files/defaultconfig-remove-notice-1912512.patch
-projects[defaultconfig][subdir] = contrib
 
 projects[views][patch][1036962] = https://www.drupal.org/files/views-fix-destination-link-for-ajax-1036962-29.patch
 projects[views][subdir] = contrib
@@ -67,5 +65,8 @@ projects[features][subdir] = contrib
 
 
 ; disabled patch
-;projects[views][patch][2018737] = https://www.drupal.org/files/issues/views-asset-diff-2018737-37.patch
-;projects[views][subdir] = contrib
+#projects[views][patch][2018737] = https://www.drupal.org/files/issues/views-asset-diff-2018737-37.patch
+#projects[views][subdir] = contrib
+
+#projects[defaultconfig][patch][1912512] = https://www.drupal.org/files/defaultconfig-remove-notice-1912512.patch
+#projects[defaultconfig][subdir] = contrib
