@@ -8,7 +8,7 @@ dependencies[] = ctools
 dependencies[] = list
 dependencies[] = entity
 dependencies[] = field_object
-dependencies[] = elements
+dependencies[] = table_element
 
 files[] = includes/CerEndPointIterator.inc
 files[] = includes/CerEntityContainerInterface.inc
@@ -28,11 +28,9 @@ files[] = includes/fields/node_reference.inc
 files[] = includes/fields/taxonomy_term_reference.inc
 files[] = includes/fields/user_reference.inc
 
-files[] = tests/CerBasicTestCase.test
-
-; Information added by Drupal.org packaging script on 2015-07-13
-version = "7.x-3.0-alpha7+20-dev"
+; Information added by Drupal.org packaging script on 2014-08-13
+version = "7.x-3.0-alpha7"
 core = "7.x"
 project = "cer"
-datestamp = "1436790843"
+datestamp = "1407974153"
 

@@ -102,7 +102,7 @@ projects[ec_foundation_image_styles][download][type] = git
 projects[ec_foundation_image_styles][download][url] = https://github.com/energycircle/ec_foundation_image_styles.git
 projects[ec_foundation_image_styles][subdir] = ecfeature
 projects[ec_foundation_image_styles][type] = module
-projects[ec_foundation_image_styles][version] = 1.0-beta7
+projects[ec_foundation_image_styles][version] = 1.1
 
 projects[ec_gallery][download][type] = git
 projects[ec_gallery][download][url] = https://github.com/energycircle/ec_gallery.git

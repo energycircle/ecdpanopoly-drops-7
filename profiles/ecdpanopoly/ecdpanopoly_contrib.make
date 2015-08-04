@@ -34,7 +34,7 @@ projects[better_formats][subdir] = eccontrib
 projects[better_formats][version] = 1.x-dev
 
 projects[cer][subdir] = eccontrib
-projects[cer][version] = 3.x
+projects[cer][version] = 3.0-alpha7
 
 projects[colorbox][subdir] = eccontrib
 projects[colorbox][version] = 2.9
