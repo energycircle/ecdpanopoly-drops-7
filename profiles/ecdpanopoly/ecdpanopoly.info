@@ -35,7 +35,7 @@ dependencies[] = panopoly_wysiwyg
 
 ; Panopoly Contrib
 dependencies[] = panopoly_config
-#dependencies[] = panopoly_seo
+dependencies[] = panopoly_seo
 
 ; Panopoly Recommended - Admin & UI
 dependencies[] = breakpoints
@@ -88,6 +88,7 @@ dependencies[] = jcarousel_skins
 dependencies[] = linkit_target
 dependencies[] = masquerade
 dependencies[] = metatag
+dependencies[] = metatag_google_plus
 dependencies[] = module_filter
 dependencies[] = nodequeue
 dependencies[] = panels_mini
