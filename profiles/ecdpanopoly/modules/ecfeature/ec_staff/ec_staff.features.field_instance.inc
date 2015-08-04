@@ -13,17 +13,7 @@ function ec_staff_field_default_field_instances() {
   // Exported field_instance: 'entityform-join_our_team-field_address'
   $field_instances['entityform-join_our_team-field_address'] = array(
     'bundle' => 'join_our_team',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'entityform|join_our_team|field_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -56,15 +46,17 @@ function ec_staff_field_default_field_instances() {
         'available_countries' => array(
           'US' => 'US',
         ),
-        'default_country' => '',
+        'default_country' => 'US',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
+          'address-hide-postal-code' => 0,
+          'address-hide-street' => 0,
           'organisation' => 0,
           'name-full' => 0,
           'name-oneline' => 0,
+          'address-optional' => 0,
         ),
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'addressfield_standard',
       'weight' => 3,

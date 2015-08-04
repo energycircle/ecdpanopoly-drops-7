@@ -57,7 +57,6 @@ function ec_staff_default_entityform_type() {
       "enable_block" : 1
     },
     "weight" : "0",
-    "metatags" : [],
     "paths" : []
   }');
   return $items;
