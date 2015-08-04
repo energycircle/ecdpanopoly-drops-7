@@ -86,6 +86,8 @@ function ec_distinction_user_default_permissions() {
   $permissions['create distinction content'] = array(
     'name' => 'create distinction content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -104,6 +106,7 @@ function ec_distinction_user_default_permissions() {
   $permissions['delete own distinction content'] = array(
     'name' => 'delete own distinction content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -113,6 +116,7 @@ function ec_distinction_user_default_permissions() {
   $permissions['delete terms in distinction_types'] = array(
     'name' => 'delete terms in distinction_types',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -122,6 +126,8 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit any distinction content'] = array(
     'name' => 'edit any distinction content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -131,6 +137,8 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit own distinction content'] = array(
     'name' => 'edit own distinction content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -140,6 +148,7 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit terms in distinction_types'] = array(
     'name' => 'edit terms in distinction_types',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',

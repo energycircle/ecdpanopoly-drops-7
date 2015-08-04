@@ -126,6 +126,7 @@ function ec_blog_post_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Blog';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'time';
@@ -200,8 +201,114 @@ function ec_blog_post_views_default_views() {
     'blog_post' => 'blog_post',
   );
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: Blog List */
+  $handler = $view->new_display('panel_pane', 'Blog List', 'panel_pane_1');
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Latest Blog Posts */
+  $handler = $view->new_display('panel_pane', 'Latest Blog Posts', 'panel_pane_2');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '2';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Featured Image */
+  $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['label'] = '';
+  $handler->display->display_options['fields']['field_blog_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
+    'image_style' => 's_300',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read more';
+  $handler->display->display_options['fields']['body']['alter']['more_link_path'] = '[path]';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['html'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '200',
+  );
+
+  /* Display: Latest Blog Post */
+  $handler = $view->new_display('panel_pane', 'Latest Blog Post', 'panel_pane_3');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Featured Image */
+  $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['label'] = '';
+  $handler->display->display_options['fields']['field_blog_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
+    'image_style' => 's_300',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read more';
+  $handler->display->display_options['fields']['body']['alter']['more_link_path'] = '[path]';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['html'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '200',
+  );
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $export['blog_listing'] = $view;
 
   $view = new view();

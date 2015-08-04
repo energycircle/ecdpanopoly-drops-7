@@ -13,70 +13,49 @@ function ec_product_page_lite_user_default_permissions() {
   // Exported permission: 'administer panelizer node product_page breadcrumbs'.
   $permissions['administer panelizer node product_page breadcrumbs'] = array(
     'name' => 'administer panelizer node product_page breadcrumbs',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node product_page content'.
   $permissions['administer panelizer node product_page content'] = array(
     'name' => 'administer panelizer node product_page content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node product_page context'.
   $permissions['administer panelizer node product_page context'] = array(
     'name' => 'administer panelizer node product_page context',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node product_page defaults'.
   $permissions['administer panelizer node product_page defaults'] = array(
     'name' => 'administer panelizer node product_page defaults',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node product_page layout'.
   $permissions['administer panelizer node product_page layout'] = array(
     'name' => 'administer panelizer node product_page layout',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node product_page overview'.
   $permissions['administer panelizer node product_page overview'] = array(
     'name' => 'administer panelizer node product_page overview',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node product_page settings'.
   $permissions['administer panelizer node product_page settings'] = array(
     'name' => 'administer panelizer node product_page settings',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 

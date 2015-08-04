@@ -59,9 +59,7 @@ function ec_gallery_views_default_views() {
   $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_ref_case_study_gallery_node';
   $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';

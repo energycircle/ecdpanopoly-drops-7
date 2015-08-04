@@ -66,43 +66,17 @@ function ec_panopoly_page_overrides_panelizer_defaults_override_alter(&$data) {
     $data['node:panopoly_page:default:default']->display->panel_settings['style_settings']['two_66_33_first'] = NULL; /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->panel_settings['style_settings']['two_66_33_second'] = NULL; /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->panel_settings['style_settings']['two_66_33_top'] = NULL; /* WAS: '' */
+    $data['node:panopoly_page:default:default']->display->panels['contentmain'][0] = 'new-96fb1bf5-7ac2-4566-9dae-876a363c71c9'; /* WAS: 'new-e0d93093-20b4-42cd-bf23-6f2f487240a6' */
+    $data['node:panopoly_page:default:default']->display->panels['contentmain'][1] = 'new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d'; /* WAS: 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40' */
     $data['node:panopoly_page:default:default']->display->panels['two_66_33_first'] = array(
       0 => 'new-e0d93093-20b4-42cd-bf23-6f2f487240a6',
       1 => 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40',
-      2 => 'new-79745fa9-4e30-40d3-9520-96ab5370483f',
     ); /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->panels['two_66_33_second'] = array(
       0 => 'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d',
-      1 => 'new-e4656993-f289-4768-88fd-c144eb23b740',
     ); /* WAS: '' */
-    unset($data['node:panopoly_page:default:default']->display->panels['contentmain']);
-  }
-  if (isset($data['node:panopoly_page:home_default'])) {
-    $data['node:panopoly_page:home_default']->contexts[0] = array(
-      'identifier' => 'Content',
-      'keyword' => 'node',
-      'name' => 'entity:node',
-      'entity_id' => 1,
-      'id' => 1,
-    ); /* WAS: '' */
-    $data['node:panopoly_page:home_default']->display->layout = 'two_66_33'; /* WAS: 'two_50' */
-    $data['node:panopoly_page:home_default']->display->panels['two_66_33_bottom'] = array(
-      0 => 'new-5c743585-bddf-4030-8bb7-6b0a4c8aa30a',
-    ); /* WAS: '' */
-    $data['node:panopoly_page:home_default']->display->panels['two_66_33_first'] = array(
-      0 => 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40',
-    ); /* WAS: '' */
-    $data['node:panopoly_page:home_default']->display->panels['two_66_33_second'] = array(
-      0 => 'new-5b909cec-42bd-45ab-97ce-0f4755482d24',
-      1 => 'new-d7129c9f-b32a-4a86-a80e-891e37e2897e',
-    ); /* WAS: '' */
-    $data['node:panopoly_page:home_default']->display->panels['two_66_33_top'] = array(
-      0 => 'new-e0d93093-20b4-42cd-bf23-6f2f487240a6',
-    ); /* WAS: '' */
-    unset($data['node:panopoly_page:home_default']->display->panels['two_50_bottom']);
-    unset($data['node:panopoly_page:home_default']->display->panels['two_50_first']);
-    unset($data['node:panopoly_page:home_default']->display->panels['two_50_second']);
-    unset($data['node:panopoly_page:home_default']->display->panels['two_50_top']);
+    unset($data['node:panopoly_page:default:default']->display->panels['contentmain'][2]);
+    unset($data['node:panopoly_page:default:default']->display->panels['contentmain'][3]);
   }
 }
 

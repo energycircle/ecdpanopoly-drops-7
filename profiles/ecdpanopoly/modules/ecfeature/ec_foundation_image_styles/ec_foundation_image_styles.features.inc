@@ -369,6 +369,25 @@ function ec_foundation_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: sc_940x470_mc.
+  $styles['sc_940x470_mc'] = array(
+    'label' => 'sc_940x470_mc',
+    'effects' => array(
+      1 => array(
+        'name' => 'manualcrop_crop_and_scale',
+        'data' => array(
+          'width' => 940,
+          'height' => 470,
+          'upscale' => 0,
+          'respectminimum' => 0,
+          'onlyscaleifcrop' => 1,
+          'style_name' => 'sc_940x470_mc',
+        ),
+        'weight' => 0,
+      ),
+    ),
+  );
+
   // Exported image style: sc_940x705.
   $styles['sc_940x705'] = array(
     'label' => 'sc_940x705',

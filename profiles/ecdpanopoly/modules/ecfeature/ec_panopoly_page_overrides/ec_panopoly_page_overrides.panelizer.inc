@@ -26,7 +26,7 @@ function ec_panopoly_page_overrides_panelizer_defaults() {
       'identifier' => 'Content',
       'keyword' => 'node',
       'name' => 'entity:node',
-      'entity_id' => '1',
+      'entity_id' => 1,
       'id' => 1,
     ),
   );

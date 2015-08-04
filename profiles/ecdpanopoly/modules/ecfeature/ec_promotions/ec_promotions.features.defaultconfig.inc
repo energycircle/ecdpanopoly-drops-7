@@ -11,6 +11,7 @@ function ec_promotions_defaultconfig_features() {
   return array(
     'ec_promotions' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -1782,4 +1783,20 @@ function ec_promotions_defaultconfig_field_default_fields() {
   t('Select the promotions to display on this product page.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_promotions_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__promotion';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__promotion'] = $strongarm;
+
+  return $export;
 }

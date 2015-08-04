@@ -77,6 +77,8 @@ function ec_testimonial_user_default_permissions() {
   $permissions['create testimonial content'] = array(
     'name' => 'create testimonial content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -95,6 +97,7 @@ function ec_testimonial_user_default_permissions() {
   $permissions['delete own testimonial content'] = array(
     'name' => 'delete own testimonial content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -104,6 +107,8 @@ function ec_testimonial_user_default_permissions() {
   $permissions['edit any testimonial content'] = array(
     'name' => 'edit any testimonial content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -113,6 +118,8 @@ function ec_testimonial_user_default_permissions() {
   $permissions['edit own testimonial content'] = array(
     'name' => 'edit own testimonial content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

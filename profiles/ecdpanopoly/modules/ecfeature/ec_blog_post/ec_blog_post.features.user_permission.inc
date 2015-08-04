@@ -86,6 +86,8 @@ function ec_blog_post_user_default_permissions() {
   $permissions['create blog_post content'] = array(
     'name' => 'create blog_post content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -104,6 +106,7 @@ function ec_blog_post_user_default_permissions() {
   $permissions['delete own blog_post content'] = array(
     'name' => 'delete own blog_post content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -113,6 +116,7 @@ function ec_blog_post_user_default_permissions() {
   $permissions['delete terms in blog_categories'] = array(
     'name' => 'delete terms in blog_categories',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -122,6 +126,8 @@ function ec_blog_post_user_default_permissions() {
   $permissions['edit any blog_post content'] = array(
     'name' => 'edit any blog_post content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -131,6 +137,8 @@ function ec_blog_post_user_default_permissions() {
   $permissions['edit own blog_post content'] = array(
     'name' => 'edit own blog_post content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -140,6 +148,7 @@ function ec_blog_post_user_default_permissions() {
   $permissions['edit terms in blog_categories'] = array(
     'name' => 'edit terms in blog_categories',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',

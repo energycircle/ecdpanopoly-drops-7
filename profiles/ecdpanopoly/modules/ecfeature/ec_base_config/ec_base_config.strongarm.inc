@@ -84,14 +84,14 @@ function ec_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme';
-  $strongarm->value = 'seven';
+  $strongarm->value = 'ec_at_admin';
   $export['admin_theme'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme_admin_theme_batch';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['admin_theme_admin_theme_batch'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -230,6 +230,14 @@ function ec_base_config_strongarm() {
     'redirect' => array(
       0 => 'redirect',
       1 => 'rid',
+    ),
+    'search_api_server' => array(
+      0 => 'search_api_server',
+      1 => 'id',
+    ),
+    'search_api_index' => array(
+      0 => 'search_api_index',
+      1 => 'id',
     ),
     'file' => array(
       0 => 'file_managed',

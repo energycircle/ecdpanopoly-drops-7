@@ -23,6 +23,7 @@ function ec_administrative_dashboard_user_default_permissions() {
   $permissions['have total control'] = array(
     'name' => 'have total control',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'total_control',

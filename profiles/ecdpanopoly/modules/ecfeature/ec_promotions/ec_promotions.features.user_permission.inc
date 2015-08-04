@@ -77,6 +77,8 @@ function ec_promotions_user_default_permissions() {
   $permissions['create promotion content'] = array(
     'name' => 'create promotion content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -95,6 +97,7 @@ function ec_promotions_user_default_permissions() {
   $permissions['delete own promotion content'] = array(
     'name' => 'delete own promotion content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -104,6 +107,8 @@ function ec_promotions_user_default_permissions() {
   $permissions['edit any promotion content'] = array(
     'name' => 'edit any promotion content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -113,6 +118,8 @@ function ec_promotions_user_default_permissions() {
   $permissions['edit own promotion content'] = array(
     'name' => 'edit own promotion content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

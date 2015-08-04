@@ -55,3 +55,17 @@ Disallow: /?q=user/password/
 Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
+
+# JS/CSS
+Allow: /core/*.css
+Allow: /core/*.js
+Allow: /misc/*.js
+Allow: /misc/*.css
+Allow: /modules/*.js
+Allow: /modules/*.css
+Allow: /libraries/*.js
+Allow: /libraries/*.css
+Allow: /profiles/*.js
+Allow: /profiles/*.css
+Allow: /themes/*.js
+Allow: /themes/*.css

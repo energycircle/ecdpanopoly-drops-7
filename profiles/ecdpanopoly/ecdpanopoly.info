@@ -18,6 +18,7 @@ dependencies[] = field
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = dblog
+dependencies[] = search
 dependencies[] = energycircle_apps
 
 ; Panopoly Foundation

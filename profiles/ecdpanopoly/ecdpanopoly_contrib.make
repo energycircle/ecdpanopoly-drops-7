@@ -279,7 +279,7 @@ projects[superfish][patch][2163545]= https://drupal.org/files/issues/superfish-d
 projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch" 
 projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch"
 projects[compact_forms][patch][] = "https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch"
-
+projects[cer][patch][] = "https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch"
 
 
 ; EC CUSTOM MODS

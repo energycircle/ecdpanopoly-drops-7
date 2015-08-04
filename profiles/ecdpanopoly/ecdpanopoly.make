@@ -18,3 +18,6 @@ includes[] = ecdpanopoly_features.make
 
 ; Include drush commands
 ;drush_install_commands.sh
+
+
+projects[drupal][patch][2364343-20] = https://www.drupal.org/files/issues/2364343-20.robots.txt.patch
