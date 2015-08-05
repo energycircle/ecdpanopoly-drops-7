@@ -129,7 +129,7 @@ function ec_article_panelizer_defaults() {
     'delta_offset' => '0',
     'delta_reversed' => FALSE,
     'formatter_settings' => array(
-      'image_style' => 'sc_460x230',
+      'image_style' => 'sc_940x470_mc',
       'image_link' => '',
       'field_multiple_limit' => -1,
       'field_multiple_limit_offset' => 0,
@@ -137,6 +137,7 @@ function ec_article_panelizer_defaults() {
     'context' => 'panelizer',
     'override_title' => 0,
     'override_title_text' => '',
+    'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -314,7 +315,7 @@ function ec_article_panelizer_defaults() {
   $display->content['new-179ea74a-f401-4a20-8441-6fde6c8d29bb'] = $pane;
   $display->panels['two_66_33_second'][2] = 'new-179ea74a-f401-4a20-8441-6fde6c8d29bb';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-4c95fbc1-06d5-4581-ad35-7c0de6a24998';
+  $display->title_pane = '0';
   $panelizer->display = $display;
   $export['node:article:default:default'] = $panelizer;
 

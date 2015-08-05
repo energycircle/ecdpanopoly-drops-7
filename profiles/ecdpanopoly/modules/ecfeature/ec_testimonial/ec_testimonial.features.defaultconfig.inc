@@ -11,7 +11,6 @@ function ec_testimonial_defaultconfig_features() {
   return array(
     'ec_testimonial' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -1411,18 +1410,28 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            0 => 'public',
-            1 => 'private',
+            'private' => 'private',
+            'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
           ),
           'allowed_types' => array(
-            0 => 'image',
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
-          'browser_plugins' => array(),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 'media_default--media_browser_1',
+            'media_default--media_browser_my_files' => 0,
+            'media_internet' => 'media_internet',
+            'upload' => 'upload',
+          ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 0,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => 0,
+          'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
@@ -1430,8 +1439,6 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_styles_list' => array(),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
         'weight' => 5,
@@ -1642,7 +1649,6 @@ function ec_testimonial_defaultconfig_field_default_fields() {
             'media_default--media_browser_my_files' => 0,
             'media_internet' => 'media_internet',
             'upload' => 0,
-            'youtube' => 'youtube',
           ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
@@ -1656,7 +1662,6 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_styles_list' => array(),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
-          'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
         'weight' => 6,
@@ -1683,20 +1688,4 @@ function ec_testimonial_defaultconfig_field_default_fields() {
   t('Video');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_testimonial_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__testimonial';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__testimonial'] = $strongarm;
-
-  return $export;
 }

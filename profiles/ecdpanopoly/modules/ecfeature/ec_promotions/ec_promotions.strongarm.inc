@@ -192,13 +192,6 @@ function ec_promotions_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__promotion';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_promotion';
   $strongarm->value = array(
     0 => 'status',

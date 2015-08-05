@@ -9,16 +9,6 @@
  */
 function ec_cleaner_disable_modules_defaults() {
   $disable_modules = array();
-  $disable_modules['admin_devel'] = 'admin_devel';
-  $disable_modules['apps'] = 'apps';
-  $disable_modules['devel'] = 'devel';
-  $disable_modules['diff'] = 'diff';
-  $disable_modules['distro_update'] = 'distro_update';
-  $disable_modules['ec_modifications'] = 'ec_modifications';
-  $disable_modules['energycircle_apps'] = 'energycircle_apps';
-  $disable_modules['features_orphans'] = 'features_orphans';
-  $disable_modules['node_export_dependency'] = 'node_export_dependency';
-  $disable_modules['update'] = 'update';
   $disable_modules['ctools_ajax_sample'] = 'ctools_ajax_sample';
   $disable_modules['ctools_plugin_example'] = 'ctools_plugin_example';
   $disable_modules['date_migrate_example'] = 'date_migrate_example';
@@ -30,14 +20,18 @@ function ec_cleaner_disable_modules_defaults() {
   $disable_modules['deploy_services'] = 'deploy_services';
   $disable_modules['deploy_services_client'] = 'deploy_services_client';
   $disable_modules['deploy_ui'] = 'deploy_ui';
+  $disable_modules['devel'] = 'devel';
   $disable_modules['devel_generate'] = 'devel_generate';
   $disable_modules['devel_node_access'] = 'devel_node_access';
+  $disable_modules['diff'] = 'diff';
+  $disable_modules['distro_update'] = 'distro_update';
   $disable_modules['ec_article_demo_content'] = 'ec_article_demo_content';
   $disable_modules['ec_blog_demo_content'] = 'ec_blog_demo_content';
   $disable_modules['ec_casestudy_demo_content'] = 'ec_casestudy_demo_content';
   $disable_modules['ec_development'] = 'ec_development';
   $disable_modules['ec_distinction_demo_content'] = 'ec_distinction_demo_content';
   $disable_modules['ec_faq_demo_content'] = 'ec_faq_demo_content';
+  $disable_modules['ec_modifications'] = 'ec_modifications';
   $disable_modules['ec_panopoly_page_demo_content'] = 'ec_panopoly_page_demo_content';
   $disable_modules['ec_promotions_demo_content'] = 'ec_promotions_demo_content';
   $disable_modules['ec_services_demo_content'] = 'ec_services_demo_content';
@@ -45,9 +39,8 @@ function ec_cleaner_disable_modules_defaults() {
   $disable_modules['ec_staff_demo_content'] = 'ec_staff_demo_content';
   $disable_modules['ec_testimonials_demo_content'] = 'ec_testimonials_demo_content';
   $disable_modules['entityreference_behavior_example'] = 'entityreference_behavior_example';
-  $disable_modules['features_builder'] = 'features_builder';
-  $disable_modules['features_builder_default'] = 'features_builder_default';
   $disable_modules['features_extra_test'] = 'features_extra_test';
+  $disable_modules['features_orphans'] = 'features_orphans';
   $disable_modules['field_tools'] = 'field_tools';
   $disable_modules['field_tools_taxonomy'] = 'field_tools_taxonomy';
   $disable_modules['flexslider_example'] = 'flexslider_example';
@@ -61,6 +54,7 @@ function ec_cleaner_disable_modules_defaults() {
   $disable_modules['migrate_extras_profile2'] = 'migrate_extras_profile2';
   $disable_modules['mimemail_example'] = 'mimemail_example';
   $disable_modules['node_export'] = 'node_export';
+  $disable_modules['node_export_dependency'] = 'node_export_dependency';
   $disable_modules['node_export_feeds'] = 'node_export_feeds';
   $disable_modules['node_export_relation'] = 'node_export_relation';
   $disable_modules['rdf'] = 'rdf';

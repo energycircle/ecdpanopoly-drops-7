@@ -73,7 +73,7 @@ function ec_faq_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 1,
     ),
   );
 

@@ -11,6 +11,7 @@ function ec_product_page_category_defaultconfig_features() {
   return array(
     'ec_product_page_category' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -853,4 +854,20 @@ function ec_product_page_category_defaultconfig_field_default_fields() {
   t('Select the category/categories this product is in.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_product_page_category_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__product_category';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__product_category'] = $strongarm;
+
+  return $export;
 }

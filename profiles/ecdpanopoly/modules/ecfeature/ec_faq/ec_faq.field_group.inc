@@ -21,12 +21,12 @@ function ec_faq_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Show This On',
-    'weight' => '103',
+    'weight' => '3',
     'children' => array(
-      0 => 'field_ref_faq_serv',
-      1 => 'field_ref_faq_servcat',
-      2 => 'field_ref_faq_servgroup',
-      3 => 'field_ref_faq_content_page',
+      0 => 'field_ref_faq_content_page',
+      1 => 'field_ref_faq_serv',
+      2 => 'field_ref_faq_servcat',
+      3 => 'field_ref_faq_servgroup',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

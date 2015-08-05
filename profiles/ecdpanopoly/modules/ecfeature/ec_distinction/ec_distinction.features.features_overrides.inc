@@ -12,45 +12,24 @@ function ec_distinction_features_override_default_overrides() {
   $overrides = array();
 
   // Exported overrides for: field_instance
-  $overrides["field_instance.node-distinction-body.display|grouped_teaser"] = array(
-    'label' => 'above',
-    'settings' => array(),
-    'type' => 'hidden',
-    'weight' => 0,
-  );
-  $overrides["field_instance.node-distinction-field_content_link.display|grouped_teaser"] = array(
-    'label' => 'above',
-    'settings' => array(),
-    'type' => 'hidden',
-    'weight' => 0,
-  );
-  $overrides["field_instance.node-distinction-field_content_link.settings|absolute_url"] = 1;
-  $overrides["field_instance.node-distinction-field_content_link.settings|title_label_use_field_label"] = FALSE;
-  $overrides["field_instance.node-distinction-field_distinction_type.display|grouped_teaser"] = array(
-    'label' => 'above',
-    'settings' => array(),
-    'type' => 'hidden',
-    'weight' => 0,
-  );
-  $overrides["field_instance.node-distinction-field_logo.display|grouped_teaser"] = array(
-    'label' => 'above',
-    'settings' => array(),
-    'type' => 'hidden',
-    'weight' => 0,
-  );
-
-  // Exported overrides for: user_permission
-  $overrides["user_permission.administer panelizer node distinction content.roles|EC Platinum admin"]["DELETED"] = TRUE;
-  $overrides["user_permission.administer panelizer node distinction layout.roles|EC Platinum admin"]["DELETED"] = TRUE;
-
-  // Exported overrides for: variable
-  $overrides["variable.content_type_extras_cancel_distinction.content_type_extras_cancel_distinction"]["DELETED"] = TRUE;
-  $overrides["variable.content_type_extras_preview_button_distinction.content_type_extras_preview_button_distinction"]["DELETED"] = TRUE;
-  $overrides["variable.content_type_extras_save_and_edit_button_distinction.content_type_extras_save_and_edit_button_distinction"]["DELETED"] = TRUE;
-  $overrides["variable.content_type_extras_save_and_edit_distinction.content_type_extras_save_and_edit_distinction"]["DELETED"] = TRUE;
-  $overrides["variable.content_type_extras_save_and_new_button_distinction.content_type_extras_save_and_new_button_distinction"]["DELETED"] = TRUE;
-  $overrides["variable.content_type_extras_save_and_new_distinction.content_type_extras_save_and_new_distinction"]["DELETED"] = TRUE;
-  $overrides["variable.content_type_extras_title_hide_distinction.content_type_extras_title_hide_distinction"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_schemes|0"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_schemes|1"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_schemes|private"] = 'private';
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_schemes|public"] = 'public';
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_schemes|vimeo"] = 0;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_schemes|youtube"] = 0;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_types|0"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_types|audio"] = 0;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_types|document"] = 0;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_types|image"] = 'image';
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|allowed_types|video"] = 0;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|browser_plugins|media_default--media_browser_1"] = 'media_default--media_browser_1';
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|browser_plugins|media_default--media_browser_my_files"] = 0;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|browser_plugins|media_internet"] = 0;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|browser_plugins|upload"] = 'upload';
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|manualcrop_instant_crop"] = FALSE;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|preview_image_style"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-distinction-field_logo.widget|settings|progress_indicator"]["DELETED"] = TRUE;
 
  return $overrides;
 }

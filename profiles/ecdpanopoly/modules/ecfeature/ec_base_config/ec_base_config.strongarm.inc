@@ -259,10 +259,6 @@ function ec_base_config_strongarm() {
       0 => 'rules_config',
       1 => 'id',
     ),
-    'menu_link' => array(
-      0 => 'menu_links',
-      1 => 'mlid',
-    ),
   );
   $export['entityreference:base-tables'] = $strongarm;
 

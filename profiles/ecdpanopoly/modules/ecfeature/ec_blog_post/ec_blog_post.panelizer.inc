@@ -60,7 +60,7 @@ function ec_blog_post_panelizer_defaults() {
     'delta_offset' => '0',
     'delta_reversed' => FALSE,
     'formatter_settings' => array(
-      'image_style' => 'sc_460x230',
+      'image_style' => 'sc_940x470_mc',
       'image_link' => '',
       'field_multiple_limit' => -1,
       'field_multiple_limit_offset' => 0,
@@ -68,6 +68,7 @@ function ec_blog_post_panelizer_defaults() {
     'context' => 'panelizer',
     'override_title' => 1,
     'override_title_text' => '',
+    'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(

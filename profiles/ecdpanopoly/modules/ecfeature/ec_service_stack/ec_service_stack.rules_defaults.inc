@@ -154,10 +154,10 @@ function ec_service_stack_default_rules_configuration() {
       ],
       "DO" : [
         { "mail" : {
-            "to" : "ryan@energycircle.com",
+            "to" : "emily@energycircle.com",
             "subject" : "Someone filled out the form and check Maintenance",
-            "message" : "HEre is the body",
-            "from" : "info@tomrostron.com",
+            "message" : "Here is the body",
+            "from" : "info@EnergyCircle.com",
             "language" : [ "" ]
           }
         }
