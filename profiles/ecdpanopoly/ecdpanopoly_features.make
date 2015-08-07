@@ -168,7 +168,7 @@ projects[ec_staff][download][type] = git
 projects[ec_staff][download][url] = https://github.com/energycircle/ec_staff.git
 projects[ec_staff][subdir] = ecfeature
 projects[ec_staff][type] = module
-projects[ec_staff][version] = 1.1
+projects[ec_staff][version] = 1.2
 
 projects[ec_testimonial][download][type] = git
 projects[ec_testimonial][download][url] = https://github.com/energycircle/ec_testimonial.git
