@@ -24,6 +24,27 @@ function ec_distributor_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_user_default_permissions_alter().
+ */
+function ec_distributor_user_default_permissions_alter(&$data) {
+  if (isset($data['create distributor content'])) {
+    $data['create distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+  }
+  if (isset($data['delete any distributor content'])) {
+    $data['delete any distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+  }
+  if (isset($data['delete own distributor content'])) {
+    $data['delete own distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+  }
+  if (isset($data['edit any distributor content'])) {
+    $data['edit any distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+  }
+  if (isset($data['edit own distributor content'])) {
+    $data['edit own distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_distributor_node_info() {

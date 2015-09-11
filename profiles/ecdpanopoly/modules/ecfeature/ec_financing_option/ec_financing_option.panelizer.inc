@@ -206,7 +206,7 @@ function ec_financing_option_panelizer_defaults() {
   $display->content['new-19dcdd26-2175-4e55-a58b-54edc2722695'] = $pane;
   $display->panels['two_66_33_second'][0] = 'new-19dcdd26-2175-4e55-a58b-54edc2722695';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-ab63e1c0-7593-422d-a483-30512702d106';
+  $display->title_pane = '0';
   $panelizer->display = $display;
   $export['node:financing_option:default:default'] = $panelizer;
 

@@ -17,7 +17,6 @@ function ec_awards_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '274b5604-babb-4a15-9bce-ce513a233266',
     'vocabulary_machine_name' => 'award_types',
-    'metatags' => array(),
     'path' => array(
       'pathauto' => 1,
     ),
@@ -35,7 +34,6 @@ function ec_awards_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '48a8a55a-9606-4e71-9521-17a984de5621',
     'vocabulary_machine_name' => 'award_types',
-    'metatags' => array(),
     'path' => array(
       'pathauto' => 1,
     ),

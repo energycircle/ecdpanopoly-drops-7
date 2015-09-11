@@ -14,6 +14,7 @@ function ec_article_user_default_permissions() {
   $permissions['administer panelizer node article breadcrumbs'] = array(
     'name' => 'administer panelizer node article breadcrumbs',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -23,6 +24,7 @@ function ec_article_user_default_permissions() {
   $permissions['administer panelizer node article content'] = array(
     'name' => 'administer panelizer node article content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -32,6 +34,7 @@ function ec_article_user_default_permissions() {
   $permissions['administer panelizer node article context'] = array(
     'name' => 'administer panelizer node article context',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -41,6 +44,7 @@ function ec_article_user_default_permissions() {
   $permissions['administer panelizer node article defaults'] = array(
     'name' => 'administer panelizer node article defaults',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -50,6 +54,7 @@ function ec_article_user_default_permissions() {
   $permissions['administer panelizer node article layout'] = array(
     'name' => 'administer panelizer node article layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -59,6 +64,7 @@ function ec_article_user_default_permissions() {
   $permissions['administer panelizer node article overview'] = array(
     'name' => 'administer panelizer node article overview',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -68,6 +74,7 @@ function ec_article_user_default_permissions() {
   $permissions['administer panelizer node article settings'] = array(
     'name' => 'administer panelizer node article settings',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -77,6 +84,7 @@ function ec_article_user_default_permissions() {
   $permissions['administer panelizer taxonomy_term article_types defaults'] = array(
     'name' => 'administer panelizer taxonomy_term article_types defaults',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -97,6 +105,7 @@ function ec_article_user_default_permissions() {
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

@@ -9,7 +9,1106 @@
  */
 function ec_promotions_demo_content_node_export_features_default() {
   $node_export = array(
-  'code_string' => '[{"vid":"72","uid":"0","title":"Buy a Lennox Hi-Efficiency System \\u0026 Save","log":"","status":"1","comment":"0","promote":"0","sticky":"0","vuuid":"55e9ba2e-6111-4094-8032-70d0c31e12ff","nid":"44","type":"promotion","language":"und","created":"1436283072","changed":"1436283072","tnid":"0","translate":"0","uuid":"892ed678-40c5-460e-b49e-bc4c2d481c32","revision_timestamp":"1436283072","revision_uid":"1","body":{"und":[{"value":"\\u003Ch1 style=\\u0022text-align: center;\\u0022\\u003E\\u003Cspan style=\\u0022color: #0000ff;\\u0022\\u003E\\u003Cstrong\\u003ESAVE NOW! On a new Lennox home comfort system.\\u003C\\/strong\\u003E\\u003C\\/span\\u003E\\u003C\\/h1\\u003E\\u003Cp style=\\u0022text-align: center;\\u0022\\u003E\\u003Cstrong style=\\u0022font-size: 13.0080003738403px; line-height: 1.538em; background-color: transparent;\\u0022\\u003E\\u003Cspan style=\\u0022color: #1fa229;\\u0022\\u003E48 Month, No Interest Financing*\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align: center;\\u0022\\u003E\\u003Cspan style=\\u0022text-decoration: underline;\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color: #1fa229; text-decoration: underline;\\u0022\\u003EOR\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align: center;\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color: #1fa229;\\u0022\\u003ELennox Rebates up to $1,700**\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align: center;\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color: #1fa229;\\u0022\\u003EPlus Utility Rebates up to $1,000\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align: center;\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color: #1fa229;\\u0022\\u003EFree 10 Year Parts and Labor Warranty on Selected Equipment\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align: center;\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color: #1fa229;\\u0022\\u003ETOTAL VALUE UP TO $3,245\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align: center;\\u0022\\u003EPurchase a Lennox high efficiency Home Comfort System and that\\u0027s what you can save. \\u0026nbsp;Oh. and don\\u0027t forget to add the money you save every month on lower utility bills. \\u0026nbsp;There\\u0027s never been a better time to buy.\\u003C\\/p\\u003E\\u003Cp\\u003E\\u003Cspan style=\\u0022color: #1fa229;\\u0022\\u003ECall us today at 609-799-3434.\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Cp\\u003E\\u003Cspan style=\\u0022color: #1fa229;\\u0022\\u003E*Subject to credit approval.\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Cp\\u003E\\u003Cspan style=\\u0022color: #1fa229;\\u0022\\u003E**OR Special\\u0026nbsp;Financing.\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Cp\\u003E\\u003C\\/p\\u003E\\u003Ch2\\u003E\\u003C\\/h2\\u003E","summary":"","format":"panopoly_wysiwyg_text","safe_value":"\\u003Ch1 style=\\u0022text-align:center\\u0022\\u003E\\u003Cspan style=\\u0022color:#0000ff\\u0022\\u003E\\u003Cstrong\\u003ESAVE NOW! On a new Lennox home comfort system.\\u003C\\/strong\\u003E\\u003C\\/span\\u003E\\u003C\\/h1\\u003E\\u003Cp style=\\u0022text-align:center\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color:#1fa229\\u0022\\u003E48 Month, No Interest Financing*\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align:center\\u0022\\u003E\\u003Cspan style=\\u0022text-decoration:underline\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color:#1fa229; text-decoration:underline\\u0022\\u003EOR\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align:center\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color:#1fa229\\u0022\\u003ELennox Rebates up to $1,700**\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align:center\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color:#1fa229\\u0022\\u003EPlus Utility Rebates up to $1,000\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align:center\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color:#1fa229\\u0022\\u003EFree 10 Year Parts and Labor Warranty on Selected Equipment\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align:center\\u0022\\u003E\\u003Cstrong\\u003E\\u003Cspan style=\\u0022color:#1fa229\\u0022\\u003ETOTAL VALUE UP TO $3,245\\u003C\\/span\\u003E\\u003C\\/strong\\u003E\\u003C\\/p\\u003E\\u003Cp style=\\u0022text-align:center\\u0022\\u003EPurchase a Lennox high efficiency Home Comfort System and that\\u0027s what you can save. \\u00a0Oh. and don\\u0027t forget to add the money you save every month on lower utility bills. \\u00a0There\\u0027s never been a better time to buy.\\u003C\\/p\\u003E\\u003Cp\\u003E\\u003Cspan style=\\u0022color:#1fa229\\u0022\\u003ECall us today at 609-799-3434.\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Cp\\u003E\\u003Cspan style=\\u0022color:#1fa229\\u0022\\u003E*Subject to credit approval.\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Cp\\u003E\\u003Cspan style=\\u0022color:#1fa229\\u0022\\u003E**OR Special\\u00a0Financing.\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Cp\\u003E\\u003C\\/p\\u003E\\u003Ch2\\u003E\\u003C\\/h2\\u003E","safe_summary":""}]},"field_button_text":[],"field_call_to_action":{"und":[{"value":"\\u003Cp\\u003EBuy a Lennox Hi-Efficiency System \\u0026amp; Save\\u003C\\/p\\u003E\\u003Ch1\\u003E\\u003Cspan\\u003E(609) 799-3434\\u003C\\/span\\u003E\\u003C\\/h1\\u003E","format":"panopoly_wysiwyg_text","safe_value":"\\u003Cp\\u003EBuy a Lennox Hi-Efficiency System \\u0026amp; Save\\u003C\\/p\\u003E\\u003Ch1\\u003E\\u003Cspan\\u003E(609) 799-3434\\u003C\\/span\\u003E\\u003C\\/h1\\u003E"}]},"field_display_startend":{"und":[{"value":"2014-12-29 17:45:00","value2":"2015-06-27 16:45:00","timezone":"America\\/New_York","timezone_db":"UTC","date_type":"datetime"}]},"field_display_subtitle":[],"field_display_title":{"und":[{"value":"Buy a Lennox Hi-Efficiency System \\u0026 Save","format":null,"safe_value":"Buy a Lennox Hi-Efficiency System \\u0026amp; Save"}]},"field_promotion_image":[],"field_promotion_link_text":{"und":[{"value":"Learn More","format":null,"safe_value":"Learn More"}]},"field_ref_promo_article":[],"field_ref_promo_case_study":[],"field_ref_promo_page":[],"field_ref_promo_serv_cat":[],"field_ref_promo_serv_group":[],"field_ref_promo_service":[],"field_ref_promotion_product":[],"field_ref_to_cta_form":{"und":[{"target_id":"2"}]},"metatags":{"und":{"title":{"value":"Lennox High Efficiency Special | Princeton Air | Lawrenceville NJ"}}},"path":{"pid":"87","source":"node\\/44","alias":"promotion\\/buy-lennox-hi-efficiency-system-save","language":"und"},"panelizer":{"default":{"entity_type":"node","entity_id":"44","revision_id":"72","name":"node:promotion:default:default","no_blocks":"0","css_id":"","css":"","pipeline":"standard","contexts":[],"relationships":[],"did":"0","view_mode":"default","css_class":"","title_element":"H2","link_to_entity":"1","extra":[],"display":{"args":[],"content":{"new-f46528d4-cc1b-4cec-b7eb-820a2329c48d":{"pid":"new-f46528d4-cc1b-4cec-b7eb-820a2329c48d","panel":"center","type":"entity_field","subtype":"node:body","shown":true,"access":[],"configuration":{"label":"hidden","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"f46528d4-cc1b-4cec-b7eb-820a2329c48d","#node_export_object":"1"},"new-293a10f9-566c-4313-84d4-9eb1d9a2129f":{"pid":"new-293a10f9-566c-4313-84d4-9eb1d9a2129f","panel":"center","type":"entity_field","subtype":"node:field_display_title","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"293a10f9-566c-4313-84d4-9eb1d9a2129f","#node_export_object":"1"},"new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1":{"pid":"new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1","panel":"center","type":"entity_field","subtype":"node:field_display_subtitle","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"4ef52184-b3e7-4bd5-9a78-f78eff423ce1","#node_export_object":"1"},"new-ae030306-af74-4095-89e0-84f39c2f9624":{"pid":"new-ae030306-af74-4095-89e0-84f39c2f9624","panel":"center","type":"entity_field","subtype":"node:field_button_text","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"ae030306-af74-4095-89e0-84f39c2f9624","#node_export_object":"1"},"new-2e0df6a1-3953-45b7-9e5e-11f88619bec6":{"pid":"new-2e0df6a1-3953-45b7-9e5e-11f88619bec6","panel":"center","type":"entity_field","subtype":"node:field_promotion_image","shown":true,"access":[],"configuration":{"label":"above","formatter":"image","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"image_link":"","image_style":""},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"2e0df6a1-3953-45b7-9e5e-11f88619bec6","#node_export_object":"1"},"new-e198bc9d-b846-4953-8f95-8afab9e9b976":{"pid":"new-e198bc9d-b846-4953-8f95-8afab9e9b976","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_serv_group","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"e198bc9d-b846-4953-8f95-8afab9e9b976","#node_export_object":"1"},"new-d6c63325-1850-4611-b501-c97d6dc68afb":{"pid":"new-d6c63325-1850-4611-b501-c97d6dc68afb","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_serv_cat","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"d6c63325-1850-4611-b501-c97d6dc68afb","#node_export_object":"1"},"new-94bb1f89-f73a-4901-ac7a-0d0ef47f73af":{"pid":"new-94bb1f89-f73a-4901-ac7a-0d0ef47f73af","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_service","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"94bb1f89-f73a-4901-ac7a-0d0ef47f73af","#node_export_object":"1"},"new-d4b6806d-c58d-4deb-a58f-e686d122b9c6":{"pid":"new-d4b6806d-c58d-4deb-a58f-e686d122b9c6","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_article","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"d4b6806d-c58d-4deb-a58f-e686d122b9c6","#node_export_object":"1"},"new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae":{"pid":"new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_case_study","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"d0aaf404-8c38-4f01-ade9-ebd2e75d9aae","#node_export_object":"1"},"new-5ff0e224-f540-4414-9404-10245556dba9":{"pid":"new-5ff0e224-f540-4414-9404-10245556dba9","panel":"center","type":"entity_field","subtype":"node:field_display_startend","shown":true,"access":[],"configuration":{"label":"above","formatter":"date_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"format_type":"long","fromto":"both","multiple_from":"","multiple_number":"","multiple_to":"","show_remaining_days":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"5ff0e224-f540-4414-9404-10245556dba9","#node_export_object":"1"},"new-f9d99927-5258-4486-b3bb-2643d502c2f6":{"pid":"new-f9d99927-5258-4486-b3bb-2643d502c2f6","panel":"center","type":"entity_field","subtype":"node:field_ref_promotion_product","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"f9d99927-5258-4486-b3bb-2643d502c2f6","#node_export_object":"1"},"new-eb4272c5-f175-405f-8d36-9d670d9c2627":{"pid":"new-eb4272c5-f175-405f-8d36-9d670d9c2627","panel":"center","type":"entity_field","subtype":"node:field_call_to_action","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"eb4272c5-f175-405f-8d36-9d670d9c2627","#node_export_object":"1"},"new-b8646677-0bf4-47ad-aabf-30bbd16ee603":{"pid":"new-b8646677-0bf4-47ad-aabf-30bbd16ee603","panel":"center","type":"entity_field","subtype":"node:field_ref_to_cta_form","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"b8646677-0bf4-47ad-aabf-30bbd16ee603","#node_export_object":"1"},"new-52df7eee-2b6f-4af5-a2e6-cdd2ed185583":{"pid":"new-52df7eee-2b6f-4af5-a2e6-cdd2ed185583","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_page","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"52df7eee-2b6f-4af5-a2e6-cdd2ed185583","#node_export_object":"1"},"new-07e60e42-6819-4e33-ad27-63ae667bcc6d":{"pid":"new-07e60e42-6819-4e33-ad27-63ae667bcc6d","panel":"center","type":"entity_field","subtype":"node:field_promotion_link_text","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"07e60e42-6819-4e33-ad27-63ae667bcc6d","#node_export_object":"1"},"new-cbd618ff-8446-49cb-a1a4-d8effe1c22e3":{"pid":"new-cbd618ff-8446-49cb-a1a4-d8effe1c22e3","panel":"center","type":"node_links","subtype":"node_links","shown":true,"access":[],"configuration":{"override_title":false,"override_title_text":"","build_mode":"default","identifier":"","link":true,"context":"panelizer"},"cache":[],"style":[],"css":{"css_class":"link-wrapper"},"extras":[],"position":0,"locks":[],"uuid":"cbd618ff-8446-49cb-a1a4-d8effe1c22e3","#node_export_object":"1"}},"panels":{"center":["new-f46528d4-cc1b-4cec-b7eb-820a2329c48d","new-293a10f9-566c-4313-84d4-9eb1d9a2129f","new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1","new-ae030306-af74-4095-89e0-84f39c2f9624","new-2e0df6a1-3953-45b7-9e5e-11f88619bec6","new-e198bc9d-b846-4953-8f95-8afab9e9b976","new-d6c63325-1850-4611-b501-c97d6dc68afb","new-94bb1f89-f73a-4901-ac7a-0d0ef47f73af","new-d4b6806d-c58d-4deb-a58f-e686d122b9c6","new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae","new-5ff0e224-f540-4414-9404-10245556dba9","new-f9d99927-5258-4486-b3bb-2643d502c2f6","new-eb4272c5-f175-405f-8d36-9d670d9c2627","new-b8646677-0bf4-47ad-aabf-30bbd16ee603","new-52df7eee-2b6f-4af5-a2e6-cdd2ed185583","new-07e60e42-6819-4e33-ad27-63ae667bcc6d","new-cbd618ff-8446-49cb-a1a4-d8effe1c22e3"]},"incoming_content":null,"css_id":null,"context":[],"did":"new-76d2898c-437c-4922-8a9c-8ed623d7c870","renderer":"standard","layout":"flexible","layout_settings":[],"panel_settings":[],"cache":[],"title":"%node:title","uuid":"76d2898c-437c-4922-8a9c-8ed623d7c870","hide_title":0,"title_pane":"new-cbd618ff-8446-49cb-a1a4-d8effe1c22e3","#node_export_object":"1"},"#node_export_object":"1"}},"machine_name":false,"name":"","picture":"0","data":null,"weight_weight":"-20","menu":null,"node_export_drupal_version":"7","#node_export_object":"1"},{"vid":"73","uid":"0","title":"Say Hello to Lower Utility Bills","log":"","status":"1","comment":"0","promote":"0","sticky":"0","vuuid":"d85ce4dd-e306-4ccd-8b9f-1233a3afb266","nid":"45","type":"promotion","language":"und","created":"1436283072","changed":"1436283072","tnid":"0","translate":"0","uuid":"a0dd2bdd-9082-402f-8974-6438eac04459","revision_timestamp":"1436283072","revision_uid":"1","body":{"und":[{"value":"\\u003Cp\\u003EIncludes:\\u003C\\/p\\u003E\\u003Cul\\u003E\\u003Cli\\u003ECheck thermostat adjustments and settings\\u003C\\/li\\u003E\\u003Cli\\u003EClean and adjust all safety devices\\u003C\\/li\\u003E\\u003Cli\\u003EInspect pilot flame or ignition system\\u003C\\/li\\u003E\\u003Cli\\u003EInspect burners and adjust as required\\u003C\\/li\\u003E\\u003Cli\\u003EInspect blower and motor, Lubricate as required\\u003C\\/li\\u003E\\u003Cli\\u003EClean or replace standard air filters\\u003C\\/li\\u003E\\u003Cli\\u003ECheck flue, draft device\\u003C\\/li\\u003E\\u003Cli\\u003ECheck blower and blower compartment for cleanliness\\u003C\\/li\\u003E\\u003Cli\\u003ECheck complete furnace cycle, including fan control\\u003C\\/li\\u003E\\u003Cli\\u003EInspections for toxic carbon monoxide\\u003C\\/li\\u003E\\u003Cli\\u003ECheck and tighten all electrical connections\\u003C\\/li\\u003E\\u003Cli\\u003ECheck cleanliness of ductwork\\u003C\\/li\\u003E\\u003C\\/ul\\u003E","summary":"","format":"panopoly_wysiwyg_text","safe_value":"\\u003Cp\\u003EIncludes:\\u003C\\/p\\u003E\\u003Cul\\u003E\\u003Cli\\u003ECheck thermostat adjustments and settings\\u003C\\/li\\u003E\\u003Cli\\u003EClean and adjust all safety devices\\u003C\\/li\\u003E\\u003Cli\\u003EInspect pilot flame or ignition system\\u003C\\/li\\u003E\\u003Cli\\u003EInspect burners and adjust as required\\u003C\\/li\\u003E\\u003Cli\\u003EInspect blower and motor, Lubricate as required\\u003C\\/li\\u003E\\u003Cli\\u003EClean or replace standard air filters\\u003C\\/li\\u003E\\u003Cli\\u003ECheck flue, draft device\\u003C\\/li\\u003E\\u003Cli\\u003ECheck blower and blower compartment for cleanliness\\u003C\\/li\\u003E\\u003Cli\\u003ECheck complete furnace cycle, including fan control\\u003C\\/li\\u003E\\u003Cli\\u003EInspections for toxic carbon monoxide\\u003C\\/li\\u003E\\u003Cli\\u003ECheck and tighten all electrical connections\\u003C\\/li\\u003E\\u003Cli\\u003ECheck cleanliness of ductwork\\u003C\\/li\\u003E\\u003C\\/ul\\u003E","safe_summary":""}]},"field_button_text":[],"field_call_to_action":{"und":[{"value":"\\u003Cp\\u003E\\u003Cspan data-mce-mark=\\u00221\\u0022\\u003ESay Hello to Lower Utility Bills Today\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Ch1\\u003E\\u003Cspan\\u003E(609) 799-3434\\u003C\\/span\\u003E\\u003C\\/h1\\u003E","format":"panopoly_wysiwyg_text","safe_value":"\\u003Cp\\u003E\\u003Cspan\\u003ESay Hello to Lower Utility Bills Today\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003Ch1\\u003E\\u003Cspan\\u003E(609) 799-3434\\u003C\\/span\\u003E\\u003C\\/h1\\u003E"}]},"field_display_startend":{"und":[{"value":"2014-12-29 17:45:00","value2":"2015-06-27 16:45:00","timezone":"America\\/New_York","timezone_db":"UTC","date_type":"datetime"}]},"field_display_subtitle":{"und":[{"value":"Precision 12 point gas furnace tune-up \\u0026 adjustment","format":null,"safe_value":"Precision 12 point gas furnace tune-up \\u0026amp; adjustment"}]},"field_display_title":{"und":[{"value":"Say Hello to Lower Utility Bills","format":null,"safe_value":"Say Hello to Lower Utility Bills"}]},"field_promotion_image":[],"field_promotion_link_text":{"und":[{"value":"Learn More","format":null,"safe_value":"Learn More"}]},"field_ref_promo_article":[],"field_ref_promo_case_study":[],"field_ref_promo_page":[],"field_ref_promo_serv_cat":[],"field_ref_promo_serv_group":[],"field_ref_promo_service":[],"field_ref_promotion_product":[],"field_ref_to_cta_form":{"und":[{"target_id":"2"}]},"metatags":{"und":{"title":{"value":"Lower Utility Bills | Princeton Air | Yardley PA \\u0026 Robbinsville NJ"}}},"path":{"pid":"88","source":"node\\/45","alias":"promotion\\/say-hello-lower-utility-bills","language":"und"},"panelizer":{"default":{"entity_type":"node","entity_id":"45","revision_id":"73","name":"node:promotion:default:default","no_blocks":"0","css_id":"","css":"","pipeline":"standard","contexts":[],"relationships":[],"did":"0","view_mode":"default","css_class":"","title_element":"H2","link_to_entity":"1","extra":[],"display":{"args":[],"content":{"new-f46528d4-cc1b-4cec-b7eb-820a2329c48d":{"pid":"new-f46528d4-cc1b-4cec-b7eb-820a2329c48d","panel":"center","type":"entity_field","subtype":"node:body","shown":true,"access":[],"configuration":{"label":"hidden","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"f46528d4-cc1b-4cec-b7eb-820a2329c48d","#node_export_object":"1"},"new-293a10f9-566c-4313-84d4-9eb1d9a2129f":{"pid":"new-293a10f9-566c-4313-84d4-9eb1d9a2129f","panel":"center","type":"entity_field","subtype":"node:field_display_title","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"293a10f9-566c-4313-84d4-9eb1d9a2129f","#node_export_object":"1"},"new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1":{"pid":"new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1","panel":"center","type":"entity_field","subtype":"node:field_display_subtitle","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"4ef52184-b3e7-4bd5-9a78-f78eff423ce1","#node_export_object":"1"},"new-ae030306-af74-4095-89e0-84f39c2f9624":{"pid":"new-ae030306-af74-4095-89e0-84f39c2f9624","panel":"center","type":"entity_field","subtype":"node:field_button_text","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"ae030306-af74-4095-89e0-84f39c2f9624","#node_export_object":"1"},"new-2e0df6a1-3953-45b7-9e5e-11f88619bec6":{"pid":"new-2e0df6a1-3953-45b7-9e5e-11f88619bec6","panel":"center","type":"entity_field","subtype":"node:field_promotion_image","shown":true,"access":[],"configuration":{"label":"above","formatter":"image","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"image_link":"","image_style":""},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"2e0df6a1-3953-45b7-9e5e-11f88619bec6","#node_export_object":"1"},"new-e198bc9d-b846-4953-8f95-8afab9e9b976":{"pid":"new-e198bc9d-b846-4953-8f95-8afab9e9b976","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_serv_group","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"e198bc9d-b846-4953-8f95-8afab9e9b976","#node_export_object":"1"},"new-d6c63325-1850-4611-b501-c97d6dc68afb":{"pid":"new-d6c63325-1850-4611-b501-c97d6dc68afb","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_serv_cat","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"d6c63325-1850-4611-b501-c97d6dc68afb","#node_export_object":"1"},"new-94bb1f89-f73a-4901-ac7a-0d0ef47f73af":{"pid":"new-94bb1f89-f73a-4901-ac7a-0d0ef47f73af","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_service","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"94bb1f89-f73a-4901-ac7a-0d0ef47f73af","#node_export_object":"1"},"new-d4b6806d-c58d-4deb-a58f-e686d122b9c6":{"pid":"new-d4b6806d-c58d-4deb-a58f-e686d122b9c6","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_article","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"d4b6806d-c58d-4deb-a58f-e686d122b9c6","#node_export_object":"1"},"new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae":{"pid":"new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_case_study","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"d0aaf404-8c38-4f01-ade9-ebd2e75d9aae","#node_export_object":"1"},"new-5ff0e224-f540-4414-9404-10245556dba9":{"pid":"new-5ff0e224-f540-4414-9404-10245556dba9","panel":"center","type":"entity_field","subtype":"node:field_display_startend","shown":true,"access":[],"configuration":{"label":"above","formatter":"date_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"format_type":"long","fromto":"both","multiple_from":"","multiple_number":"","multiple_to":"","show_remaining_days":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"5ff0e224-f540-4414-9404-10245556dba9","#node_export_object":"1"},"new-f9d99927-5258-4486-b3bb-2643d502c2f6":{"pid":"new-f9d99927-5258-4486-b3bb-2643d502c2f6","panel":"center","type":"entity_field","subtype":"node:field_ref_promotion_product","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"f9d99927-5258-4486-b3bb-2643d502c2f6","#node_export_object":"1"},"new-eb4272c5-f175-405f-8d36-9d670d9c2627":{"pid":"new-eb4272c5-f175-405f-8d36-9d670d9c2627","panel":"center","type":"entity_field","subtype":"node:field_call_to_action","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"eb4272c5-f175-405f-8d36-9d670d9c2627","#node_export_object":"1"},"new-b8646677-0bf4-47ad-aabf-30bbd16ee603":{"pid":"new-b8646677-0bf4-47ad-aabf-30bbd16ee603","panel":"center","type":"entity_field","subtype":"node:field_ref_to_cta_form","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"b8646677-0bf4-47ad-aabf-30bbd16ee603","#node_export_object":"1"},"new-52df7eee-2b6f-4af5-a2e6-cdd2ed185583":{"pid":"new-52df7eee-2b6f-4af5-a2e6-cdd2ed185583","panel":"center","type":"entity_field","subtype":"node:field_ref_promo_page","shown":true,"access":[],"configuration":{"label":"above","formatter":"entityreference_label","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0,"link":false},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"52df7eee-2b6f-4af5-a2e6-cdd2ed185583","#node_export_object":"1"},"new-07e60e42-6819-4e33-ad27-63ae667bcc6d":{"pid":"new-07e60e42-6819-4e33-ad27-63ae667bcc6d","panel":"center","type":"entity_field","subtype":"node:field_promotion_link_text","shown":true,"access":[],"configuration":{"label":"above","formatter":"text_default","delta_limit":0,"delta_offset":"0","delta_reversed":false,"formatter_settings":{"field_multiple_limit":-1,"field_multiple_limit_offset":0},"context":"panelizer"},"cache":[],"style":[],"css":[],"extras":[],"position":0,"locks":[],"uuid":"07e60e42-6819-4e33-ad27-63ae667bcc6d","#node_export_object":"1"},"new-cbd618ff-8446-49cb-a1a4-d8effe1c22e3":{"pid":"new-cbd618ff-8446-49cb-a1a4-d8effe1c22e3","panel":"center","type":"node_links","subtype":"node_links","shown":true,"access":[],"configuration":{"override_title":false,"override_title_text":"","build_mode":"default","identifier":"","link":true,"context":"panelizer"},"cache":[],"style":[],"css":{"css_class":"link-wrapper"},"extras":[],"position":0,"locks":[],"uuid":"cbd618ff-8446-49cb-a1a4-d8effe1c22e3","#node_export_object":"1"}},"panels":{"center":["new-f46528d4-cc1b-4cec-b7eb-820a2329c48d","new-293a10f9-566c-4313-84d4-9eb1d9a2129f","new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1","new-ae030306-af74-4095-89e0-84f39c2f9624","new-2e0df6a1-3953-45b7-9e5e-11f88619bec6","new-e198bc9d-b846-4953-8f95-8afab9e9b976","new-d6c63325-1850-4611-b501-c97d6dc68afb","new-94bb1f89-f73a-4901-ac7a-0d0ef47f73af","new-d4b6806d-c58d-4deb-a58f-e686d122b9c6","new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae","new-5ff0e224-f540-4414-9404-10245556dba9","new-f9d99927-5258-4486-b3bb-2643d502c2f6","new-eb4272c5-f175-405f-8d36-9d670d9c2627","new-b8646677-0bf4-47ad-aabf-30bbd16ee603","new-52df7eee-2b6f-4af5-a2e6-cdd2ed185583","new-07e60e42-6819-4e33-ad27-63ae667bcc6d","new-cbd618ff-8446-49cb-a1a4-d8effe1c22e3"]},"incoming_content":null,"css_id":null,"context":[],"did":"new-76d2898c-437c-4922-8a9c-8ed623d7c870","renderer":"standard","layout":"flexible","layout_settings":[],"panel_settings":[],"cache":[],"title":"%node:title","uuid":"76d2898c-437c-4922-8a9c-8ed623d7c870","hide_title":0,"title_pane":"new-cbd618ff-8446-49cb-a1a4-d8effe1c22e3","#node_export_object":"1"},"#node_export_object":"1"}},"machine_name":false,"name":"","picture":"0","data":null,"weight_weight":"-20","pathauto_perform_alias":false,"menu":null,"node_export_drupal_version":"7","#node_export_object":"1"}]',
+  'code_string' => 'array(
+  (object) array(
+      \'vid\' => \'142\',
+      \'uid\' => \'0\',
+      \'title\' => \'Buy a Lennox Hi-Efficiency System & Save\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'0\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'55e9ba2e-6111-4094-8032-70d0c31e12ff\',
+      \'nid\' => \'112\',
+      \'type\' => \'promotion\',
+      \'language\' => \'und\',
+      \'created\' => \'1441379618\',
+      \'changed\' => \'1441379618\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'892ed678-40c5-460e-b49e-bc4c2d481c32\',
+      \'revision_timestamp\' => \'1441379618\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "<h1 style=\\"text-align: center;\\"><span style=\\"color: #0000ff;\\"><strong>SAVE NOW! On a new Lennox home comfort system.</strong></span></h1><p style=\\"text-align: center;\\"><strong style=\\"font-size: 13.0080003738403px; line-height: 1.538em; background-color: transparent;\\"><span style=\\"color: #1fa229;\\">48 Month, No Interest Financing*</span></strong></p><p style=\\"text-align: center;\\"><span style=\\"text-decoration: underline;\\"><strong><span style=\\"color: #1fa229; text-decoration: underline;\\">OR</span></strong></span></p><p style=\\"text-align: center;\\"><strong><span style=\\"color: #1fa229;\\">Lennox Rebates up to $1,700**</span></strong></p><p style=\\"text-align: center;\\"><strong><span style=\\"color: #1fa229;\\">Plus Utility Rebates up to $1,000</span></strong></p><p style=\\"text-align: center;\\"><strong><span style=\\"color: #1fa229;\\">Free 10 Year Parts and Labor Warranty on Selected Equipment</span></strong></p><p style=\\"text-align: center;\\"><strong><span style=\\"color: #1fa229;\\">TOTAL VALUE UP TO $3,245</span></strong></p><p style=\\"text-align: center;\\">Purchase a Lennox high efficiency Home Comfort System and that\'s what you can save. &nbsp;Oh. and don\'t forget to add the money you save every month on lower utility bills. &nbsp;There\'s never been a better time to buy.</p><p><span style=\\"color: #1fa229;\\">Call us today at 609-799-3434.</span></p><p><span style=\\"color: #1fa229;\\">*Subject to credit approval.</span></p><p><span style=\\"color: #1fa229;\\">**OR Special&nbsp;Financing.</span></p><p></p><h2></h2>",
+            \'summary\' => \'\',
+            \'format\' => \'panopoly_wysiwyg_text\',
+            \'safe_value\' => "<h1 style=\\"text-align:center\\"><span style=\\"color:#0000ff\\"><strong>SAVE NOW! On a new Lennox home comfort system.</strong></span></h1><p style=\\"text-align:center\\"><strong><span style=\\"color:#1fa229\\">48 Month, No Interest Financing*</span></strong></p><p style=\\"text-align:center\\"><span style=\\"text-decoration:underline\\"><strong><span style=\\"color:#1fa229; text-decoration:underline\\">OR</span></strong></span></p><p style=\\"text-align:center\\"><strong><span style=\\"color:#1fa229\\">Lennox Rebates up to $1,700**</span></strong></p><p style=\\"text-align:center\\"><strong><span style=\\"color:#1fa229\\">Plus Utility Rebates up to $1,000</span></strong></p><p style=\\"text-align:center\\"><strong><span style=\\"color:#1fa229\\">Free 10 Year Parts and Labor Warranty on Selected Equipment</span></strong></p><p style=\\"text-align:center\\"><strong><span style=\\"color:#1fa229\\">TOTAL VALUE UP TO $3,245</span></strong></p><p style=\\"text-align:center\\">Purchase a Lennox high efficiency Home Comfort System and that\'s what you can save.  Oh. and don\'t forget to add the money you save every month on lower utility bills.  There\'s never been a better time to buy.</p><p><span style=\\"color:#1fa229\\">Call us today at 609-799-3434.</span></p><p><span style=\\"color:#1fa229\\">*Subject to credit approval.</span></p><p><span style=\\"color:#1fa229\\">**OR Special Financing.</span></p><p></p><h2></h2>",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_button_text\' => array(),
+      \'field_call_to_action\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'<p>Buy a Lennox Hi-Efficiency System &amp; Save</p><h1><span>(609) 799-3434</span></h1>\',
+            \'format\' => \'panopoly_wysiwyg_text\',
+            \'safe_value\' => \'<p>Buy a Lennox Hi-Efficiency System &amp; Save</p><h1><span>(609) 799-3434</span></h1>\',
+          ),
+        ),
+      ),
+      \'field_display_startend\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'2014-12-29 17:45:00\',
+            \'value2\' => \'2015-06-27 16:45:00\',
+            \'timezone\' => \'America/New_York\',
+            \'timezone_db\' => \'UTC\',
+            \'date_type\' => \'datetime\',
+          ),
+        ),
+      ),
+      \'field_display_subtitle\' => array(),
+      \'field_display_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Buy a Lennox Hi-Efficiency System & Save\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Buy a Lennox Hi-Efficiency System &amp; Save\',
+          ),
+        ),
+      ),
+      \'field_promotion_image\' => array(),
+      \'field_promotion_link_text\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Learn More\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Learn More\',
+          ),
+        ),
+      ),
+      \'field_ref_promo_article\' => array(),
+      \'field_ref_promo_case_study\' => array(),
+      \'field_ref_promo_page\' => array(),
+      \'field_ref_promo_serv_cat\' => array(),
+      \'field_ref_promo_serv_group\' => array(),
+      \'field_ref_promo_service\' => array(),
+      \'field_ref_promotion_product\' => array(),
+      \'field_ref_to_cta_form\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'2\',
+          ),
+        ),
+      ),
+      \'metatags\' => array(
+        \'und\' => array(
+          \'title\' => array(
+            \'value\' => \'Lennox High Efficiency Special | Princeton Air | Lawrenceville NJ\',
+          ),
+        ),
+      ),
+      \'path\' => array(
+        \'pid\' => \'192\',
+        \'source\' => \'node/112\',
+        \'alias\' => \'promotion/buy-lennox-hi-efficiency-system-save\',
+        \'language\' => \'und\',
+      ),
+      \'panelizer\' => array(
+        \'default\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'112\',
+            \'revision_id\' => \'142\',
+            \'name\' => \'node:promotion:default:default\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'default\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => array(),
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-2e0df6a1-3953-45b7-9e5e-11f88619bec6\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-2e0df6a1-3953-45b7-9e5e-11f88619bec6\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_promotion_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'image_link\' => \'\',
+                      \'image_style\' => \'sc_780x585\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'2e0df6a1-3953-45b7-9e5e-11f88619bec6\',
+                )),
+                \'new-293a10f9-566c-4313-84d4-9eb1d9a2129f\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-293a10f9-566c-4313-84d4-9eb1d9a2129f\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_display_title\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'title_linked\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'title_style\' => \'h2\',
+                      \'title_link\' => \'\',
+                      \'title_class\' => \'title\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'293a10f9-566c-4313-84d4-9eb1d9a2129f\',
+                )),
+                \'new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_display_subtitle\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'title_linked\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'title_style\' => \'h3\',
+                      \'title_link\' => \'\',
+                      \'title_class\' => \'sub-title\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'4ef52184-b3e7-4bd5-9a78-f78eff423ce1\',
+                )),
+                \'new-f46528d4-cc1b-4cec-b7eb-820a2329c48d\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-f46528d4-cc1b-4cec-b7eb-820a2329c48d\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                    ),
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'f46528d4-cc1b-4cec-b7eb-820a2329c48d\',
+                )),
+                \'new-87e6d985-b80c-4782-9181-b1854eeae406\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-87e6d985-b80c-4782-9181-b1854eeae406\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'views_panes\',
+                   \'subtype\' => \'service_request-panel_pane_1\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'view_settings\' => \'fields\',
+                    \'header_type\' => \'none\',
+                    \'view_mode\' => \'full\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'87e6d985-b80c-4782-9181-b1854eeae406\',
+                )),
+                \'new-5ff0e224-f540-4414-9404-10245556dba9\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-5ff0e224-f540-4414-9404-10245556dba9\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_display_startend\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'date_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'format_type\' => \'long\',
+                      \'fromto\' => \'both\',
+                      \'multiple_from\' => \'\',
+                      \'multiple_number\' => \'\',
+                      \'multiple_to\' => \'\',
+                      \'show_remaining_days\' => 1,
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'Promotion Day\\\'s Left\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'5ff0e224-f540-4414-9404-10245556dba9\',
+                )),
+                \'new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_ref_promo_case_study\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'above\',
+                    \'formatter\' => \'entityreference_label\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'link\' => false,
+                    ),
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'d0aaf404-8c38-4f01-ade9-ebd2e75d9aae\',
+                )),
+                \'new-f9d99927-5258-4486-b3bb-2643d502c2f6\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-f9d99927-5258-4486-b3bb-2643d502c2f6\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_ref_promotion_product\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'above\',
+                    \'formatter\' => \'entityreference_label\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'link\' => false,
+                    ),
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'f9d99927-5258-4486-b3bb-2643d502c2f6\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'two_66_33_first\' => 
+                array (
+                  0 => \'new-2e0df6a1-3953-45b7-9e5e-11f88619bec6\',
+                  1 => \'new-293a10f9-566c-4313-84d4-9eb1d9a2129f\',
+                  2 => \'new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1\',
+                  3 => \'new-f46528d4-cc1b-4cec-b7eb-820a2329c48d\',
+                ),
+                \'two_66_33_second\' => 
+                array (
+                  0 => \'new-87e6d985-b80c-4782-9181-b1854eeae406\',
+                  1 => \'new-5ff0e224-f540-4414-9404-10245556dba9\',
+                  2 => \'new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae\',
+                  3 => \'new-f9d99927-5258-4486-b3bb-2643d502c2f6\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-76d2898c-437c-4922-8a9c-8ed623d7c870\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'two_66_33\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'two_66_33_top\' => NULL,
+                  \'two_66_33_first\' => NULL,
+                  \'two_66_33_second\' => NULL,
+                  \'two_66_33_bottom\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'\',
+               \'uuid\' => \'76d2898c-437c-4922-8a9c-8ed623d7c870\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+      ),
+      \'machine_name\' => FALSE,
+      \'name\' => \'\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'weight_weight\' => \'-20\',
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'143\',
+      \'uid\' => \'0\',
+      \'title\' => \'Say Hello to Lower Utility Bills\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'0\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'d85ce4dd-e306-4ccd-8b9f-1233a3afb266\',
+      \'nid\' => \'113\',
+      \'type\' => \'promotion\',
+      \'language\' => \'und\',
+      \'created\' => \'1441379618\',
+      \'changed\' => \'1441379618\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'a0dd2bdd-9082-402f-8974-6438eac04459\',
+      \'revision_timestamp\' => \'1441379618\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'<p>Includes:</p><ul><li>Check thermostat adjustments and settings</li><li>Clean and adjust all safety devices</li><li>Inspect pilot flame or ignition system</li><li>Inspect burners and adjust as required</li><li>Inspect blower and motor, Lubricate as required</li><li>Clean or replace standard air filters</li><li>Check flue, draft device</li><li>Check blower and blower compartment for cleanliness</li><li>Check complete furnace cycle, including fan control</li><li>Inspections for toxic carbon monoxide</li><li>Check and tighten all electrical connections</li><li>Check cleanliness of ductwork</li></ul>\',
+            \'summary\' => \'\',
+            \'format\' => \'panopoly_wysiwyg_text\',
+            \'safe_value\' => \'<p>Includes:</p><ul><li>Check thermostat adjustments and settings</li><li>Clean and adjust all safety devices</li><li>Inspect pilot flame or ignition system</li><li>Inspect burners and adjust as required</li><li>Inspect blower and motor, Lubricate as required</li><li>Clean or replace standard air filters</li><li>Check flue, draft device</li><li>Check blower and blower compartment for cleanliness</li><li>Check complete furnace cycle, including fan control</li><li>Inspections for toxic carbon monoxide</li><li>Check and tighten all electrical connections</li><li>Check cleanliness of ductwork</li></ul>\',
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_button_text\' => array(),
+      \'field_call_to_action\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'<p><span data-mce-mark="1">Say Hello to Lower Utility Bills Today</span></p><h1><span>(609) 799-3434</span></h1>\',
+            \'format\' => \'panopoly_wysiwyg_text\',
+            \'safe_value\' => \'<p><span>Say Hello to Lower Utility Bills Today</span></p><h1><span>(609) 799-3434</span></h1>\',
+          ),
+        ),
+      ),
+      \'field_display_startend\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'2014-12-29 17:45:00\',
+            \'value2\' => \'2015-06-27 16:45:00\',
+            \'timezone\' => \'America/New_York\',
+            \'timezone_db\' => \'UTC\',
+            \'date_type\' => \'datetime\',
+          ),
+        ),
+      ),
+      \'field_display_subtitle\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Precision 12 point gas furnace tune-up & adjustment\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Precision 12 point gas furnace tune-up &amp; adjustment\',
+          ),
+        ),
+      ),
+      \'field_display_title\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Say Hello to Lower Utility Bills\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Say Hello to Lower Utility Bills\',
+          ),
+        ),
+      ),
+      \'field_promotion_image\' => array(),
+      \'field_promotion_link_text\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'Learn More\',
+            \'format\' => NULL,
+            \'safe_value\' => \'Learn More\',
+          ),
+        ),
+      ),
+      \'field_ref_promo_article\' => array(),
+      \'field_ref_promo_case_study\' => array(),
+      \'field_ref_promo_page\' => array(),
+      \'field_ref_promo_serv_cat\' => array(),
+      \'field_ref_promo_serv_group\' => array(),
+      \'field_ref_promo_service\' => array(),
+      \'field_ref_promotion_product\' => array(),
+      \'field_ref_to_cta_form\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'2\',
+          ),
+        ),
+      ),
+      \'metatags\' => array(
+        \'und\' => array(
+          \'title\' => array(
+            \'value\' => \'Lower Utility Bills | Princeton Air | Yardley PA & Robbinsville NJ\',
+          ),
+        ),
+      ),
+      \'path\' => array(
+        \'pid\' => \'193\',
+        \'source\' => \'node/113\',
+        \'alias\' => \'promotion/say-hello-lower-utility-bills\',
+        \'language\' => \'und\',
+      ),
+      \'panelizer\' => array(
+        \'default\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'113\',
+            \'revision_id\' => \'143\',
+            \'name\' => \'node:promotion:default:default\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'default\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => array(),
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-2e0df6a1-3953-45b7-9e5e-11f88619bec6\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-2e0df6a1-3953-45b7-9e5e-11f88619bec6\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_promotion_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'image_link\' => \'\',
+                      \'image_style\' => \'sc_780x585\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'2e0df6a1-3953-45b7-9e5e-11f88619bec6\',
+                )),
+                \'new-293a10f9-566c-4313-84d4-9eb1d9a2129f\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-293a10f9-566c-4313-84d4-9eb1d9a2129f\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_display_title\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'title_linked\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'title_style\' => \'h2\',
+                      \'title_link\' => \'\',
+                      \'title_class\' => \'title\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'293a10f9-566c-4313-84d4-9eb1d9a2129f\',
+                )),
+                \'new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_display_subtitle\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'title_linked\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'title_style\' => \'h3\',
+                      \'title_link\' => \'\',
+                      \'title_class\' => \'sub-title\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'4ef52184-b3e7-4bd5-9a78-f78eff423ce1\',
+                )),
+                \'new-f46528d4-cc1b-4cec-b7eb-820a2329c48d\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-f46528d4-cc1b-4cec-b7eb-820a2329c48d\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                    ),
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'f46528d4-cc1b-4cec-b7eb-820a2329c48d\',
+                )),
+                \'new-87e6d985-b80c-4782-9181-b1854eeae406\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-87e6d985-b80c-4782-9181-b1854eeae406\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'views_panes\',
+                   \'subtype\' => \'service_request-panel_pane_1\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'view_settings\' => \'fields\',
+                    \'header_type\' => \'none\',
+                    \'view_mode\' => \'full\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'87e6d985-b80c-4782-9181-b1854eeae406\',
+                )),
+                \'new-5ff0e224-f540-4414-9404-10245556dba9\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-5ff0e224-f540-4414-9404-10245556dba9\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_display_startend\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'date_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'format_type\' => \'long\',
+                      \'fromto\' => \'both\',
+                      \'multiple_from\' => \'\',
+                      \'multiple_number\' => \'\',
+                      \'multiple_to\' => \'\',
+                      \'show_remaining_days\' => 1,
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'Promotion Day\\\'s Left\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'5ff0e224-f540-4414-9404-10245556dba9\',
+                )),
+                \'new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_ref_promo_case_study\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'above\',
+                    \'formatter\' => \'entityreference_label\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'link\' => false,
+                    ),
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'d0aaf404-8c38-4f01-ade9-ebd2e75d9aae\',
+                )),
+                \'new-f9d99927-5258-4486-b3bb-2643d502c2f6\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-f9d99927-5258-4486-b3bb-2643d502c2f6\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_ref_promotion_product\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'above\',
+                    \'formatter\' => \'entityreference_label\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'field_multiple_limit\' => -1,
+                      \'field_multiple_limit_offset\' => 0,
+                      \'link\' => false,
+                    ),
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'f9d99927-5258-4486-b3bb-2643d502c2f6\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'two_66_33_first\' => 
+                array (
+                  0 => \'new-2e0df6a1-3953-45b7-9e5e-11f88619bec6\',
+                  1 => \'new-293a10f9-566c-4313-84d4-9eb1d9a2129f\',
+                  2 => \'new-4ef52184-b3e7-4bd5-9a78-f78eff423ce1\',
+                  3 => \'new-f46528d4-cc1b-4cec-b7eb-820a2329c48d\',
+                ),
+                \'two_66_33_second\' => 
+                array (
+                  0 => \'new-87e6d985-b80c-4782-9181-b1854eeae406\',
+                  1 => \'new-5ff0e224-f540-4414-9404-10245556dba9\',
+                  2 => \'new-d0aaf404-8c38-4f01-ade9-ebd2e75d9aae\',
+                  3 => \'new-f9d99927-5258-4486-b3bb-2643d502c2f6\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-76d2898c-437c-4922-8a9c-8ed623d7c870\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'two_66_33\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'two_66_33_top\' => NULL,
+                  \'two_66_33_first\' => NULL,
+                  \'two_66_33_second\' => NULL,
+                  \'two_66_33_bottom\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'\',
+               \'uuid\' => \'76d2898c-437c-4922-8a9c-8ed623d7c870\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+      ),
+      \'machine_name\' => FALSE,
+      \'name\' => \'\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'weight_weight\' => \'-20\',
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+)',
 );
   return $node_export;
 }

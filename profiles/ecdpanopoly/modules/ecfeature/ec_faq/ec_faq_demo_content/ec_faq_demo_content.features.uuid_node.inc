@@ -56,15 +56,14 @@ function ec_faq_demo_content_uuid_features_default_content() {
     ),
   ),
   'field_ref_faq_content_page' => array(),
-  'metatags' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
   'panelizer' => array(
     'default' => array(
       'entity_type' => 'node',
-      'entity_id' => 38,
-      'revision_id' => 68,
+      'entity_id' => 18,
+      'revision_id' => 138,
       'name' => 'node:faq:default:default',
       'no_blocks' => 0,
       'css_id' => '',
@@ -219,15 +218,14 @@ function ec_faq_demo_content_uuid_features_default_content() {
     ),
   ),
   'field_ref_faq_content_page' => array(),
-  'metatags' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
   'panelizer' => array(
     'default' => array(
       'entity_type' => 'node',
-      'entity_id' => 39,
-      'revision_id' => 69,
+      'entity_id' => 19,
+      'revision_id' => 139,
       'name' => 'node:faq:default:default',
       'no_blocks' => 0,
       'css_id' => '',
@@ -382,15 +380,14 @@ function ec_faq_demo_content_uuid_features_default_content() {
     ),
   ),
   'field_ref_faq_content_page' => array(),
-  'metatags' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
   'panelizer' => array(
     'default' => array(
       'entity_type' => 'node',
-      'entity_id' => 40,
-      'revision_id' => 70,
+      'entity_id' => 111,
+      'revision_id' => 140,
       'name' => 'node:faq:default:default',
       'no_blocks' => 0,
       'css_id' => '',
@@ -548,15 +545,14 @@ function ec_faq_demo_content_uuid_features_default_content() {
     ),
   ),
   'field_ref_faq_content_page' => array(),
-  'metatags' => array(),
   'path' => array(
     'pathauto' => 1,
   ),
   'panelizer' => array(
     'default' => array(
       'entity_type' => 'node',
-      'entity_id' => 41,
-      'revision_id' => 71,
+      'entity_id' => 21,
+      'revision_id' => 141,
       'name' => 'node:faq:default:default',
       'no_blocks' => 0,
       'css_id' => '',

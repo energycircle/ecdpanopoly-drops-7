@@ -246,7 +246,7 @@ function ec_development_content_menu_links_defaults() {
     'link_title' => 'Devel settings',
     'options' => array(
       'attributes' => array(
-        'title' => 'Helper functions, pages, and blocks to assist Drupal developers. The devel blocks can be managed via the <a href="/ec/ec-distro/admin/structure/block">block administration</a> page.',
+        'title' => 'Helper functions, pages, and blocks to assist Drupal developers. The devel blocks can be managed via the <a href="/admin/structure/block">block administration</a> page.',
       ),
     ),
     'module' => 'system',

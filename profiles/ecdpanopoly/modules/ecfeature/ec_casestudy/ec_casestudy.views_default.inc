@@ -30,6 +30,10 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_ref_case_study_gallery_target_id']['id'] = 'field_ref_case_study_gallery_target_id';
+  $handler->display->display_options['relationships']['field_ref_case_study_gallery_target_id']['table'] = 'field_data_field_ref_case_study_gallery';
+  $handler->display->display_options['relationships']['field_ref_case_study_gallery_target_id']['field'] = 'field_ref_case_study_gallery_target_id';
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
@@ -37,12 +41,25 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_case_study_image']['id'] = 'field_case_study_image';
-  $handler->display->display_options['fields']['field_case_study_image']['table'] = 'field_data_field_case_study_image';
-  $handler->display->display_options['fields']['field_case_study_image']['field'] = 'field_case_study_image';
-  $handler->display->display_options['fields']['field_case_study_image']['label'] = '';
-  $handler->display->display_options['fields']['field_case_study_image']['element_label_colon'] = FALSE;
+  /* Field: Content: Gallery_image */
+  $handler->display->display_options['fields']['field_gallery_image']['id'] = 'field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['table'] = 'field_data_field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['field'] = 'field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['relationship'] = 'field_ref_case_study_gallery_target_id';
+  $handler->display->display_options['fields']['field_gallery_image']['label'] = '';
+  $handler->display->display_options['fields']['field_gallery_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_gallery_image']['alter']['text'] = '<a href="[path]">[field_gallery_image]</a>';
+  $handler->display->display_options['fields']['field_gallery_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_gallery_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_gallery_image']['settings'] = array(
+    'image_style' => 'sc_300x225',
+    'image_link' => '',
+    'field_multiple_limit' => '1',
+    'field_multiple_limit_offset' => '0',
+  );
+  $handler->display->display_options['fields']['field_gallery_image']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_gallery_image']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_gallery_image']['separator'] = '';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -84,9 +101,66 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'case_study' => 'case_study',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
 
   /* Display: Case Studies - All */
   $handler = $view->new_display('panel_pane', 'Case Studies - All', 'panel_pane_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Gallery_image */
+  $handler->display->display_options['fields']['field_gallery_image']['id'] = 'field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['table'] = 'field_data_field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['field'] = 'field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['relationship'] = 'field_ref_case_study_gallery_target_id';
+  $handler->display->display_options['fields']['field_gallery_image']['label'] = '';
+  $handler->display->display_options['fields']['field_gallery_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_gallery_image']['alter']['text'] = '<a href="[path]">[field_gallery_image]</a>';
+  $handler->display->display_options['fields']['field_gallery_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_gallery_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_gallery_image']['settings'] = array(
+    'image_style' => 'sc_300x225',
+    'image_link' => '',
+    'field_multiple_limit' => '1',
+    'field_multiple_limit_offset' => '0',
+  );
+  $handler->display->display_options['fields']['field_gallery_image']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_gallery_image']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_gallery_image']['separator'] = '';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Display subtitle */
+  $handler->display->display_options['fields']['field_display_subtitle']['id'] = 'field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['table'] = 'field_data_field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['field'] = 'field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['label'] = '';
+  $handler->display->display_options['fields']['field_display_subtitle']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '300';
+  $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read More';
+  $handler->display->display_options['fields']['body']['alter']['more_link_path'] = '[path]';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '300',
+  );
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['case_studies_list'] = $view;
 
   $view = new view();
@@ -122,12 +196,6 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_case_study_image']['id'] = 'field_case_study_image';
-  $handler->display->display_options['fields']['field_case_study_image']['table'] = 'field_data_field_case_study_image';
-  $handler->display->display_options['fields']['field_case_study_image']['field'] = 'field_case_study_image';
-  $handler->display->display_options['fields']['field_case_study_image']['label'] = '';
-  $handler->display->display_options['fields']['field_case_study_image']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -180,11 +248,66 @@ function ec_casestudy_views_default_views() {
 
   /* Display: Case Study - Service category page */
   $handler = $view->new_display('panel_pane', 'Case Study - Service category page', 'panel_pane_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_ref_case_study_serv_cat_target_id']['id'] = 'field_ref_case_study_serv_cat_target_id';
   $handler->display->display_options['relationships']['field_ref_case_study_serv_cat_target_id']['table'] = 'field_data_field_ref_case_study_serv_cat';
   $handler->display->display_options['relationships']['field_ref_case_study_serv_cat_target_id']['field'] = 'field_ref_case_study_serv_cat_target_id';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_ref_case_study_gallery_target_id']['id'] = 'field_ref_case_study_gallery_target_id';
+  $handler->display->display_options['relationships']['field_ref_case_study_gallery_target_id']['table'] = 'field_data_field_ref_case_study_gallery';
+  $handler->display->display_options['relationships']['field_ref_case_study_gallery_target_id']['field'] = 'field_ref_case_study_gallery_target_id';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Gallery_image */
+  $handler->display->display_options['fields']['field_gallery_image']['id'] = 'field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['table'] = 'field_data_field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['field'] = 'field_gallery_image';
+  $handler->display->display_options['fields']['field_gallery_image']['relationship'] = 'field_ref_case_study_gallery_target_id';
+  $handler->display->display_options['fields']['field_gallery_image']['label'] = '';
+  $handler->display->display_options['fields']['field_gallery_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_gallery_image']['alter']['text'] = '<h4 class="block-title">Case Study</h4>
+<a href="[path]">[field_gallery_image]</a>';
+  $handler->display->display_options['fields']['field_gallery_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_gallery_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_gallery_image']['settings'] = array(
+    'image_style' => 'sc_300x225',
+    'image_link' => '',
+    'field_multiple_limit' => '1',
+    'field_multiple_limit_offset' => '0',
+  );
+  $handler->display->display_options['fields']['field_gallery_image']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_gallery_image']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_gallery_image']['separator'] = '';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '150';
+  $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read More';
+  $handler->display->display_options['fields']['body']['alter']['more_link_path'] = '[path]';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';

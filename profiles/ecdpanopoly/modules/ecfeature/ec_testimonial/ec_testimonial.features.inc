@@ -33,6 +33,16 @@ function ec_testimonial_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_field_default_field_instances_alter().
+ */
+function ec_testimonial_field_default_field_instances_alter(&$data) {
+  if (isset($data['node-testimonial-field_video'])) {
+    $data['node-testimonial-field_video']['widget']['settings']['browser_plugins']['media_internet'] = 0; /* WAS: 'media_internet' */
+    unset($data['node-testimonial-field_video']['widget']['settings']['allowed_schemes']['private']);
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_testimonial_node_info() {

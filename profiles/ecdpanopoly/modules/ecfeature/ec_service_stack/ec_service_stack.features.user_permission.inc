@@ -14,6 +14,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service breadcrumbs'] = array(
     'name' => 'administer panelizer node service breadcrumbs',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -23,6 +24,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service content'] = array(
     'name' => 'administer panelizer node service content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -32,6 +34,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service context'] = array(
     'name' => 'administer panelizer node service context',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -41,6 +44,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service defaults'] = array(
     'name' => 'administer panelizer node service defaults',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -50,6 +54,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service layout'] = array(
     'name' => 'administer panelizer node service layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -59,6 +64,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service overview'] = array(
     'name' => 'administer panelizer node service overview',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -68,6 +74,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service settings'] = array(
     'name' => 'administer panelizer node service settings',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -77,6 +84,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_category breadcrumbs'] = array(
     'name' => 'administer panelizer node service_category breadcrumbs',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -86,6 +94,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_category content'] = array(
     'name' => 'administer panelizer node service_category content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -95,6 +104,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_category context'] = array(
     'name' => 'administer panelizer node service_category context',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -104,6 +114,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_category defaults'] = array(
     'name' => 'administer panelizer node service_category defaults',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -113,6 +124,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_category layout'] = array(
     'name' => 'administer panelizer node service_category layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -122,6 +134,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_category overview'] = array(
     'name' => 'administer panelizer node service_category overview',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -131,6 +144,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_category settings'] = array(
     'name' => 'administer panelizer node service_category settings',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -140,6 +154,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_group breadcrumbs'] = array(
     'name' => 'administer panelizer node service_group breadcrumbs',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -149,6 +164,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_group content'] = array(
     'name' => 'administer panelizer node service_group content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -158,6 +174,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_group context'] = array(
     'name' => 'administer panelizer node service_group context',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -167,6 +184,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_group defaults'] = array(
     'name' => 'administer panelizer node service_group defaults',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -176,6 +194,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_group layout'] = array(
     'name' => 'administer panelizer node service_group layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -185,6 +204,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_group overview'] = array(
     'name' => 'administer panelizer node service_group overview',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -194,6 +214,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['administer panelizer node service_group settings'] = array(
     'name' => 'administer panelizer node service_group settings',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -236,6 +257,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['delete any service content'] = array(
     'name' => 'delete any service content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -245,6 +267,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['delete any service_category content'] = array(
     'name' => 'delete any service_category content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -254,6 +277,7 @@ function ec_service_stack_user_default_permissions() {
   $permissions['delete any service_group content'] = array(
     'name' => 'delete any service_group content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

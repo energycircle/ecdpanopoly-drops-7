@@ -14,6 +14,7 @@ function ec_promotions_user_default_permissions() {
   $permissions['administer panelizer node promotion breadcrumbs'] = array(
     'name' => 'administer panelizer node promotion breadcrumbs',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -23,6 +24,7 @@ function ec_promotions_user_default_permissions() {
   $permissions['administer panelizer node promotion content'] = array(
     'name' => 'administer panelizer node promotion content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -32,6 +34,7 @@ function ec_promotions_user_default_permissions() {
   $permissions['administer panelizer node promotion context'] = array(
     'name' => 'administer panelizer node promotion context',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -41,6 +44,7 @@ function ec_promotions_user_default_permissions() {
   $permissions['administer panelizer node promotion defaults'] = array(
     'name' => 'administer panelizer node promotion defaults',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -50,6 +54,7 @@ function ec_promotions_user_default_permissions() {
   $permissions['administer panelizer node promotion layout'] = array(
     'name' => 'administer panelizer node promotion layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -59,6 +64,7 @@ function ec_promotions_user_default_permissions() {
   $permissions['administer panelizer node promotion overview'] = array(
     'name' => 'administer panelizer node promotion overview',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -68,6 +74,7 @@ function ec_promotions_user_default_permissions() {
   $permissions['administer panelizer node promotion settings'] = array(
     'name' => 'administer panelizer node promotion settings',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -88,6 +95,7 @@ function ec_promotions_user_default_permissions() {
   $permissions['delete any promotion content'] = array(
     'name' => 'delete any promotion content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

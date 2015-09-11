@@ -1468,7 +1468,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 'private',
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -1481,7 +1480,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           ),
           'browser_plugins' => array(
             'media_default--media_browser_1' => 'media_default--media_browser_1',
-            'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+            'media_default--media_browser_my_files' => 0,
             'media_internet' => 0,
             'upload' => 'upload',
           ),
@@ -2320,7 +2319,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 'private',
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -2334,7 +2332,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'browser_plugins' => array(
             'media_default--media_browser_1' => 'media_default--media_browser_1',
             'media_default--media_browser_my_files' => 0,
-            'media_internet' => 'media_internet',
+            'media_internet' => 0,
             'upload' => 'upload',
           ),
           'manualcrop_crop_info' => 1,
@@ -2963,7 +2961,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 'private',
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -2977,7 +2974,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'browser_plugins' => array(
             'media_default--media_browser_1' => 'media_default--media_browser_1',
             'media_default--media_browser_my_files' => 0,
-            'media_internet' => 'media_internet',
+            'media_internet' => 0,
             'upload' => 'upload',
           ),
           'manualcrop_crop_info' => 1,

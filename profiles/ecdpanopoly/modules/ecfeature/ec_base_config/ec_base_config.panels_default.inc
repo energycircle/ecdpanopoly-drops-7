@@ -44,7 +44,7 @@ function ec_base_config_default_panels_mini() {
   $display->panels = array();
   $pane = new stdClass();
   $pane->pid = 'new-75e62c7b-1a71-4633-89c3-c91c6fc2a3a5';
-  $pane->panel = 'two_50_first';
+  $pane->panel = 'two_50_bottom';
   $pane->type = 'menu_tree';
   $pane->subtype = 'main-menu';
   $pane->shown = TRUE;
@@ -73,10 +73,10 @@ function ec_base_config_default_panels_mini() {
   $pane->locks = array();
   $pane->uuid = '75e62c7b-1a71-4633-89c3-c91c6fc2a3a5';
   $display->content['new-75e62c7b-1a71-4633-89c3-c91c6fc2a3a5'] = $pane;
-  $display->panels['two_50_first'][0] = 'new-75e62c7b-1a71-4633-89c3-c91c6fc2a3a5';
+  $display->panels['two_50_bottom'][0] = 'new-75e62c7b-1a71-4633-89c3-c91c6fc2a3a5';
   $pane = new stdClass();
   $pane->pid = 'new-aa35bdc7-4725-4670-b757-6bc754e595cb';
-  $pane->panel = 'two_50_second';
+  $pane->panel = 'two_50_bottom';
   $pane->type = 'menu_tree';
   $pane->subtype = 'menu-auxiliary-menu';
   $pane->shown = TRUE;
@@ -101,11 +101,11 @@ function ec_base_config_default_panels_mini() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 0;
+  $pane->position = 1;
   $pane->locks = array();
   $pane->uuid = 'aa35bdc7-4725-4670-b757-6bc754e595cb';
   $display->content['new-aa35bdc7-4725-4670-b757-6bc754e595cb'] = $pane;
-  $display->panels['two_50_second'][0] = 'new-aa35bdc7-4725-4670-b757-6bc754e595cb';
+  $display->panels['two_50_bottom'][1] = 'new-aa35bdc7-4725-4670-b757-6bc754e595cb';
   $pane = new stdClass();
   $pane->pid = 'new-990d30bc-4ac2-44ee-82b1-cd9d6b7a936a';
   $pane->panel = 'two_50_top';
