@@ -63,6 +63,8 @@ projects[menu_block][subdir] = contrib
 projects[features][patch][2799733] = https://www.drupal.org/files/issues/2138331-eval-log.patch
 projects[features][subdir] = contrib
 
+projects[entity][patch][2112755-25] = https://www.drupal.org/files/issues/entity-label-2112755-25.patch
+projects[entity][subdir] = contrib
 
 ; disabled patch
 #projects[views][patch][2018737] = https://www.drupal.org/files/issues/views-asset-diff-2018737-37.patch
