@@ -9,8 +9,8 @@ projects[addressfield_tokens][version] = 1.5
 projects[addressfield][subdir] = eccontrib
 projects[addressfield][version] = 1.1
 
-projects[addthis][subdir] = eccontrib
-projects[addthis][version] = 4.0-alpha6
+#projects[addthis][subdir] = eccontrib
+#projects[addthis][version] = 4.0-alpha6
 
 projects[admin_theme][subdir] = eccontrib
 projects[admin_theme][version] = 1.x
@@ -111,11 +111,11 @@ projects[eva][version] = 1.x
 projects[exclude_node_title][subdir] = eccontrib
 projects[exclude_node_title][version] = 1.9
 
-projects[feeds][subdir] = eccontrib
-projects[feeds][version] = 2.x
+#projects[feeds][subdir] = eccontrib
+#projects[feeds][version] = 2.x
 
-projects[feeds_tamper][subdir] = eccontrib
-projects[feeds_tamper][version] = 1.1
+#projects[feeds_tamper][subdir] = eccontrib
+#projects[feeds_tamper][version] = 1.1
 
 projects[field_collection][subdir] = eccontrib
 projects[field_collection][version] = 1.0-beta8
@@ -177,8 +177,8 @@ projects[masquerade][version] = "1.0-rc7"
 projects[maxlength][subdir] = eccontrib
 projects[maxlength][version] = 3.x
 
-projects[menu_icons][subdir] = eccontrib
-projects[menu_icons][version] = 3.x-dev
+#projects[menu_icons][subdir] = eccontrib
+#projects[menu_icons][version] = 3.x-dev
 
 projects[metatag][subdir] = eccontrib
 projects[metatag][version] = 1.7
@@ -204,17 +204,20 @@ projects[phone][version] = 1.x-dev
 projects[pps][subdir] = eccontrib
 projects[pps][version] = 1.x
 
-projects[redhen][subdir] = eccontrib
-projects[redhen][version] = 1.9
+#projects[redhen][subdir] = eccontrib
+#projects[redhen][version] = 1.9
 
 projects[redirect][subdir] = eccontrib
 projects[redirect][version] = 1.0-rc3
 
-projects[registration][subdir] = eccontrib
-projects[registration][version] = 1.4
+#projects[registration][subdir] = eccontrib
+#projects[registration][version] = 1.4
 
-projects[relation][subdir] = eccontrib
-projects[relation][version] = 1.0-rc7
+#projects[relation][subdir] = eccontrib
+#projects[relation][version] = 1.0-rc7
+
+projects[role_delegation][subdir] = eccontrib
+projects[role_delegation][version] = 1.1
 
 projects[rules][subdir] = eccontrib
 projects[rules][version] = 2.9

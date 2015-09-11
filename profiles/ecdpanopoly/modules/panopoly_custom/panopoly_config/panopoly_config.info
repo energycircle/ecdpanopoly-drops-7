@@ -7,9 +7,9 @@ project = panopoly_config
 dependencies[] = variable
 features[features_api][] = api:2
 
-; Information added by Drupal.org packaging script on 2014-04-21
+; Information added by Drupal.org packaging script on 2015-08-26
 version = "7.x-1.x-dev"
 core = "7.x"
 project = "panopoly_config"
-datestamp = "1398124428"
+datestamp = "1440616989"
 

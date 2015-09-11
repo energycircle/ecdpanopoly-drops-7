@@ -185,10 +185,8 @@ function ec_base_config_strongarm() {
   $strongarm->name = 'entityform_block_types';
   $strongarm->value = array(
     0 => 'contact',
-    1 => 'join_our_team',
     2 => 'promotion',
     3 => 'special_promotion',
-    4 => 'contact_us',
     5 => 'give',
     6 => 'subscribe',
   );
@@ -231,14 +229,6 @@ function ec_base_config_strongarm() {
       0 => 'redirect',
       1 => 'rid',
     ),
-    'search_api_server' => array(
-      0 => 'search_api_server',
-      1 => 'id',
-    ),
-    'search_api_index' => array(
-      0 => 'search_api_index',
-      1 => 'id',
-    ),
     'file' => array(
       0 => 'file_managed',
       1 => 'fid',
@@ -258,6 +248,10 @@ function ec_base_config_strongarm() {
     'rules_config' => array(
       0 => 'rules_config',
       1 => 'id',
+    ),
+    'menu_link' => array(
+      0 => 'menu_links',
+      1 => 'mlid',
     ),
   );
   $export['entityreference:base-tables'] = $strongarm;

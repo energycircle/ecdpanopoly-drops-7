@@ -65,3 +65,12 @@ function ec_base_config_default_entityform_type() {
   }');
   return $items;
 }
+
+/**
+ * Implements hook_strongarm_alter().
+ */
+function ec_base_config_strongarm_alter(&$data) {
+  if (isset($data['media_wysiwyg_wysiwyg_browser_plugins'])) {
+    unset($data['media_wysiwyg_wysiwyg_browser_plugins']->value[2]);
+  }
+}

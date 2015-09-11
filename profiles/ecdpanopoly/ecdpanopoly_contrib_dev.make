@@ -29,6 +29,9 @@ projects[features_disable_modules][subdir] = ec-dev
 projects[features_disable_modules][download][url] = "http://git.drupal.org/sandbox/imre.horjan/2265801.git"
 projects[features_disable_modules][type] = "module"
 
+projects[permissions_export][version] = 1.0-rc3
+projects[permissions_export][subdir] = ec-dev
+
 ; Field Tools
 projects[field_tools][version] = 1.0-alpha8
 projects[field_tools][subdir] = ec-dev

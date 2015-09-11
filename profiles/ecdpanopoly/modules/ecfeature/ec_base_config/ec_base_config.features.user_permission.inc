@@ -47,6 +47,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['access all views'] = array(
     'name' => 'access all views',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'views',
@@ -436,6 +437,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer module filter'] = array(
     'name' => 'administer module filter',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'module_filter',
@@ -495,6 +497,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer'] = array(
     'name' => 'administer panelizer',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -504,6 +507,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user breadcrumbs'] = array(
     'name' => 'administer panelizer user user breadcrumbs',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -513,6 +517,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user content'] = array(
     'name' => 'administer panelizer user user content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -522,6 +527,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user context'] = array(
     'name' => 'administer panelizer user user context',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -531,6 +537,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user defaults'] = array(
     'name' => 'administer panelizer user user defaults',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -540,6 +547,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user layout'] = array(
     'name' => 'administer panelizer user user layout',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -549,6 +557,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user overview'] = array(
     'name' => 'administer panelizer user user overview',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -558,6 +567,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user settings'] = array(
     'name' => 'administer panelizer user user settings',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -701,6 +711,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer uuid'] = array(
     'name' => 'administer uuid',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'uuid',
@@ -762,6 +773,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -781,6 +793,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -801,6 +814,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -905,6 +919,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['delete any panopoly_page content'] = array(
     'name' => 'delete any panopoly_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1291,6 +1306,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['execute unlink files'] = array(
     'name' => 'execute unlink files',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'ftools',
@@ -1473,6 +1489,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'user',

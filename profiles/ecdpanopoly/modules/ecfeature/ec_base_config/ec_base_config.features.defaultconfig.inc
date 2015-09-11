@@ -763,6 +763,15 @@ function ec_base_config_defaultconfig_metatag_config_default() {
     'description' => array(
       'value' => '[node:summary]',
     ),
+    'author' => array(
+      'value' => '[node:author:field_google_url]',
+    ),
+    'og:title' => array(
+      'value' => '[node:title]',
+    ),
+    'og:description' => array(
+      'value' => '[node:summary]',
+    ),
   );
   $export['node'] = $config;
 
@@ -814,38 +823,6 @@ function ec_base_config_defaultconfig_metatag_config_default() {
  */
 function ec_base_config_defaultconfig_strongarm() {
   $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'compact_forms_descriptions';
-  $strongarm->value = 1;
-  $export['compact_forms_descriptions'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'compact_forms_field_size';
-  $strongarm->value = '';
-  $export['compact_forms_field_size'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'compact_forms_ids';
-  $strongarm->value = 'user-login-form
-search-form
-schedule-service-entityform-edit-form
-promotion-entityform-edit-form
-contact-us-entityform-edit-form';
-  $export['compact_forms_ids'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'compact_forms_stars';
-  $strongarm->value = '1';
-  $export['compact_forms_stars'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
