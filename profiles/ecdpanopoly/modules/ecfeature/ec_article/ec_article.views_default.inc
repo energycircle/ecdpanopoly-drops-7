@@ -31,6 +31,13 @@ function ec_article_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -69,7 +76,15 @@ function ec_article_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '300';
+  $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read More';
+  $handler->display->display_options['fields']['body']['alter']['more_link_path'] = '[path]';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '300',
+  );
   /* Field: Content: Article source */
   $handler->display->display_options['fields']['field_article_source']['id'] = 'field_article_source';
   $handler->display->display_options['fields']['field_article_source']['table'] = 'field_data_field_article_source';
@@ -81,6 +96,7 @@ function ec_article_views_default_views() {
   $handler->display->display_options['fields']['field_article_type']['id'] = 'field_article_type';
   $handler->display->display_options['fields']['field_article_type']['table'] = 'field_data_field_article_type';
   $handler->display->display_options['fields']['field_article_type']['field'] = 'field_article_type';
+  $handler->display->display_options['fields']['field_article_type']['exclude'] = TRUE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -105,8 +121,8 @@ function ec_article_views_default_views() {
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    1 => '1',
-    2 => '2',
+    11 => '11',
+    12 => '12',
   );
   $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
@@ -119,7 +135,6 @@ function ec_article_views_default_views() {
     1 => 0,
     5 => 0,
     3 => 0,
-    6 => 0,
     4 => 0,
   );
   $handler->display->display_options['filters']['tid']['type'] = 'select';

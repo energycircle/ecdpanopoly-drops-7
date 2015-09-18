@@ -62,45 +62,35 @@ function ec_product_page_lite_user_default_permissions() {
   // Exported permission: 'create product_page content'.
   $permissions['create product_page content'] = array(
     'name' => 'create product_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any product_page content'.
   $permissions['delete any product_page content'] = array(
     'name' => 'delete any product_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own product_page content'.
   $permissions['delete own product_page content'] = array(
     'name' => 'delete own product_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any product_page content'.
   $permissions['edit any product_page content'] = array(
     'name' => 'edit any product_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own product_page content'.
   $permissions['edit own product_page content'] = array(
     'name' => 'edit own product_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 

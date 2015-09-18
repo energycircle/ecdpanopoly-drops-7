@@ -261,6 +261,9 @@ projects[variable][version] = 2.5
 projects[views_accordion][subdir] = eccontrib
 projects[views_accordion][version] = 1.x
 
+projects[video_filter][subdir] = eccontrib
+projects[video_filter][version] = 3.x-dev
+
 projects[views_data_export][subdir] = eccontrib
 projects[views_data_export][version] = 3.0-beta8
 

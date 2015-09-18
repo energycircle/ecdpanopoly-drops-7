@@ -47,7 +47,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['access all views'] = array(
     'name' => 'access all views',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'views',
@@ -58,9 +57,9 @@ function ec_base_config_user_default_permissions() {
     'name' => 'access content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -102,7 +101,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['access rules debug'] = array(
     'name' => 'access rules debug',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'rules',
@@ -143,8 +141,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'media_internet',
@@ -154,7 +150,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer Compact Forms'] = array(
     'name' => 'administer Compact Forms',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'compact_forms',
@@ -164,7 +159,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'system',
@@ -185,7 +179,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer breakpoints'] = array(
     'name' => 'administer breakpoints',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'breakpoints',
@@ -195,7 +188,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer cer settings'] = array(
     'name' => 'administer cer settings',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'cer',
@@ -205,7 +197,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer content type defaults'] = array(
     'name' => 'administer content type defaults',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'content_type_extras',
@@ -215,7 +206,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -235,7 +225,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer default config'] = array(
     'name' => 'administer default config',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'defaultconfig',
@@ -245,7 +234,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer entity view modes'] = array(
     'name' => 'administer entity view modes',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'entity_view_mode',
@@ -266,7 +254,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer exclude node title'] = array(
     'name' => 'administer exclude node title',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'exclude_node_title',
@@ -276,7 +263,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer facets'] = array(
     'name' => 'administer facets',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'facetapi',
@@ -286,7 +272,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer features'] = array(
     'name' => 'administer features',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'features',
@@ -296,7 +281,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer fieldable panels panes'] = array(
     'name' => 'administer fieldable panels panes',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'fieldable_panels_panes',
@@ -306,7 +290,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer fieldgroups'] = array(
     'name' => 'administer fieldgroups',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'field_group',
@@ -316,7 +299,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer file types'] = array(
     'name' => 'administer file types',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -326,7 +308,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer files'] = array(
     'name' => 'administer files',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -336,7 +317,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
@@ -346,7 +326,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer google analytics'] = array(
     'name' => 'administer google analytics',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'googleanalytics',
@@ -356,7 +335,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'image',
@@ -366,7 +344,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer linkit'] = array(
     'name' => 'administer linkit',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'linkit',
@@ -376,7 +353,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer manualcrop settings'] = array(
     'name' => 'administer manualcrop settings',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'manualcrop',
@@ -386,7 +362,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer masquerade'] = array(
     'name' => 'administer masquerade',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
@@ -396,7 +371,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer media browser'] = array(
     'name' => 'administer media browser',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'media',
@@ -407,7 +381,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'menu',
@@ -417,7 +390,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer meta tags'] = array(
     'name' => 'administer meta tags',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'metatag',
@@ -427,7 +399,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer mini panels'] = array(
     'name' => 'administer mini panels',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panels_mini',
@@ -437,7 +408,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer module filter'] = array(
     'name' => 'administer module filter',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'module_filter',
@@ -447,7 +417,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'system',
@@ -457,7 +426,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer nodequeue'] = array(
     'name' => 'administer nodequeue',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'nodequeue',
@@ -467,7 +435,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -477,7 +444,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer page manager'] = array(
     'name' => 'administer page manager',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'page_manager',
@@ -487,7 +453,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer pane access'] = array(
     'name' => 'administer pane access',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
@@ -497,7 +462,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer'] = array(
     'name' => 'administer panelizer',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -507,7 +471,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user breadcrumbs'] = array(
     'name' => 'administer panelizer user user breadcrumbs',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -517,7 +480,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user content'] = array(
     'name' => 'administer panelizer user user content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -527,7 +489,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user context'] = array(
     'name' => 'administer panelizer user user context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -537,7 +498,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user defaults'] = array(
     'name' => 'administer panelizer user user defaults',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -547,7 +507,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user layout'] = array(
     'name' => 'administer panelizer user user layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -557,7 +516,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user overview'] = array(
     'name' => 'administer panelizer user user overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -567,7 +525,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panelizer user user settings'] = array(
     'name' => 'administer panelizer user user settings',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -577,7 +534,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panels layouts'] = array(
     'name' => 'administer panels layouts',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
@@ -587,8 +543,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer panels styles'] = array(
     'name' => 'administer panels styles',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
@@ -598,7 +552,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'pathauto',
@@ -608,7 +561,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -629,7 +581,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer rules'] = array(
     'name' => 'administer rules',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'rules',
@@ -639,7 +590,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'system',
@@ -649,7 +599,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'system',
@@ -659,7 +608,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer superfish'] = array(
     'name' => 'administer superfish',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'superfish',
@@ -669,8 +617,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -680,7 +626,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'system',
@@ -690,8 +635,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'path',
@@ -711,7 +654,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer uuid'] = array(
     'name' => 'administer uuid',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'uuid',
@@ -721,7 +663,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer views'] = array(
     'name' => 'administer views',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'views',
@@ -731,8 +672,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer xmlsitemap'] = array(
     'name' => 'administer xmlsitemap',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'xmlsitemap',
@@ -763,7 +702,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['bypass file access'] = array(
     'name' => 'bypass file access',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -773,7 +711,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -783,7 +720,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['bypass rules access'] = array(
     'name' => 'bypass rules access',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'rules',
@@ -793,7 +729,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -824,7 +759,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['configure tablefield'] = array(
     'name' => 'configure tablefield',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'tablefield',
@@ -838,7 +772,6 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -847,7 +780,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['create mini panels'] = array(
     'name' => 'create mini panels',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panels_mini',
@@ -919,7 +851,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['delete any panopoly_page content'] = array(
     'name' => 'delete any panopoly_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -940,7 +871,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'delete own audio files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -951,7 +881,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'delete own document files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -972,7 +901,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'delete own image files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -993,7 +921,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'delete own video files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -1004,7 +931,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1014,7 +940,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['delete terms in panopoly_categories'] = array(
     'name' => 'delete terms in panopoly_categories',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -1025,7 +950,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'display drupal links',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'admin_menu',
@@ -1124,7 +1048,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any audio files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -1135,7 +1058,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any document files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -1146,7 +1068,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any entityform',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'entityform',
@@ -1157,7 +1078,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any image files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -1179,7 +1099,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any video files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -1190,7 +1109,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit meta tags',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'metatag',
@@ -1275,7 +1193,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit terms in panopoly_categories'] = array(
     'name' => 'edit terms in panopoly_categories',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -1285,8 +1202,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['exclude any node title'] = array(
     'name' => 'exclude any node title',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'exclude_node_title',
@@ -1296,7 +1211,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['exclude own node title'] = array(
     'name' => 'exclude own node title',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'exclude_node_title',
@@ -1306,7 +1220,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['execute unlink files'] = array(
     'name' => 'execute unlink files',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'ftools',
@@ -1326,7 +1239,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['field hidden administer'] = array(
     'name' => 'field hidden administer',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'field_hidden',
@@ -1337,7 +1249,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'flush caches',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'admin_menu',
@@ -1347,7 +1258,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['generate features'] = array(
     'name' => 'generate features',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'features',
@@ -1357,7 +1267,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['manage features'] = array(
     'name' => 'manage features',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'features',
@@ -1367,7 +1276,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['manipulate all queues'] = array(
     'name' => 'manipulate all queues',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'nodequeue',
@@ -1377,7 +1285,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['manipulate queues'] = array(
     'name' => 'manipulate queues',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'nodequeue',
@@ -1387,7 +1294,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['masquerade as admin'] = array(
     'name' => 'masquerade as admin',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
@@ -1417,7 +1323,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['notify of path changes'] = array(
     'name' => 'notify of path changes',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'pathauto',
@@ -1427,7 +1332,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['opt-in or out of tracking'] = array(
     'name' => 'opt-in or out of tracking',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'googleanalytics',
@@ -1437,7 +1341,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['override content type title display'] = array(
     'name' => 'override content type title display',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'content_type_extras',
@@ -1447,7 +1350,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['rebuild tablefield'] = array(
     'name' => 'rebuild tablefield',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'tablefield',
@@ -1457,7 +1359,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['rename features'] = array(
     'name' => 'rename features',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'features',
@@ -1489,7 +1390,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -1499,7 +1399,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use PHP for tracking visibility'] = array(
     'name' => 'use PHP for tracking visibility',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'googleanalytics',
@@ -1509,7 +1408,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use ctools import'] = array(
     'name' => 'use ctools import',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'ctools',
@@ -1519,8 +1417,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use exclude node title'] = array(
     'name' => 'use exclude node title',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'exclude_node_title',
@@ -1563,7 +1459,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use panels caching features'] = array(
     'name' => 'use panels caching features',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
@@ -1594,7 +1489,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use panels locks'] = array(
     'name' => 'use panels locks',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
@@ -1652,7 +1546,6 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -1673,9 +1566,9 @@ function ec_base_config_user_default_permissions() {
     'name' => 'view own files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -1717,7 +1610,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'view private files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',

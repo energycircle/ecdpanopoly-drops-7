@@ -17,9 +17,7 @@ function ec_panopoly_page_demo_content_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Careers',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'menu_icon' => array(
         'enable' => 0,
         'path' => 'profiles/ecdpanopoly/modules/eccontrib/menu_icons/images/default_icon.png',

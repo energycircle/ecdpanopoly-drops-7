@@ -10,91 +10,57 @@
 function ec_services_demo_content_content_menu_links_defaults() {
   $menu_links = array();
 
-  // Exported menu link: main-menu:node/18
-  $menu_links['main-menu:node/18'] = array(
+  // Exported menu link: main-menu:node/116
+  $menu_links['main-menu:node/116'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/18',
+    'link_path' => 'node/116',
     'router_path' => 'node/%',
-    'link_title' => 'Heating & Cooling',
+    'link_title' => 'Heating',
     'options' => array(),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
+    'weight' => -50,
+    'customized' => 1,
   );
-  // Exported menu link: main-menu:node/19
-  $menu_links['main-menu:node/19'] = array(
+  // Exported menu link: main-menu:node/117
+  $menu_links['main-menu:node/117'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/19',
+    'link_path' => 'node/117',
     'router_path' => 'node/%',
-    'link_title' => 'Ventilation',
+    'link_title' => 'Home Performance',
     'options' => array(),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
+    'weight' => -45,
+    'customized' => 1,
   );
-  // Exported menu link: main-menu:node/20
-  $menu_links['main-menu:node/20'] = array(
+  // Exported menu link: main-menu:node/119
+  $menu_links['main-menu:node/119'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/20',
+    'link_path' => 'node/119',
     'router_path' => 'node/%',
     'link_title' => 'Air Conditioning',
     'options' => array(),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
-  );
-  // Exported menu link: main-menu_commercial-services:node/34
-  $menu_links['main-menu_commercial-services:node/34'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/34',
-    'router_path' => 'node/%',
-    'link_title' => 'Insulation',
-    'options' => array(
-      'identifier' => 'main-menu_commercial-services:node/34',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -49,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_duct-cleaning:node/40
-  $menu_links['main-menu_duct-cleaning:node/40'] = array(
+  // Exported menu link: main-menu:node/120
+  $menu_links['main-menu:node/120'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/40',
+    'link_path' => 'node/120',
     'router_path' => 'node/%',
-    'link_title' => 'Duct Cleaning',
-    'options' => array(
-      'identifier' => 'main-menu_duct-cleaning:node/40',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
-  );
-  // Exported menu link: main-menu_furnace-installation--repair:node/40
-  $menu_links['main-menu_furnace-installation--repair:node/40'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/40',
-    'router_path' => 'node/%',
-    'link_title' => 'Furnace Installation & Repair',
+    'link_title' => 'Ventilation Systems/Duct Design',
     'options' => array(),
     'module' => 'menu',
     'hidden' => 0,
@@ -103,14 +69,14 @@ function ec_services_demo_content_content_menu_links_defaults() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 0,
-    'parent_path' => 'node/18',
+    'parent_path' => 'node/116',
   );
-  // Exported menu link: main-menu_generator-installation--repair:node/41
-  $menu_links['main-menu_generator-installation--repair:node/41'] = array(
+  // Exported menu link: main-menu:node/121
+  $menu_links['main-menu:node/121'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/41',
+    'link_path' => 'node/121',
     'router_path' => 'node/%',
-    'link_title' => 'Generator Installation & Repair',
+    'link_title' => 'Indoor Air',
     'options' => array(),
     'module' => 'menu',
     'hidden' => 0,
@@ -119,16 +85,15 @@ function ec_services_demo_content_content_menu_links_defaults() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 0,
+    'parent_path' => 'node/116',
   );
-  // Exported menu link: main-menu_humidifier-installation--repair:node/41
-  $menu_links['main-menu_humidifier-installation--repair:node/41'] = array(
+  // Exported menu link: main-menu:node/122
+  $menu_links['main-menu:node/122'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/41',
+    'link_path' => 'node/122',
     'router_path' => 'node/%',
-    'link_title' => 'Humidifier Installation & Repair',
-    'options' => array(
-      'identifier' => 'main-menu_humidifier-installation--repair:node/41',
-    ),
+    'link_title' => 'Mini-Split Heat Pumps',
+    'options' => array(),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
@@ -136,17 +101,186 @@ function ec_services_demo_content_content_menu_links_defaults() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 0,
+    'parent_path' => 'node/116',
+  );
+  // Exported menu link: main-menu:node/125
+  $menu_links['main-menu:node/125'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/125',
+    'router_path' => 'node/%',
+    'link_title' => 'Home Zoning',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/119',
+  );
+  // Exported menu link: main-menu:node/126
+  $menu_links['main-menu:node/126'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/126',
+    'router_path' => 'node/%',
+    'link_title' => 'Mini-Splits',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/119',
+  );
+  // Exported menu link: main-menu:node/127
+  $menu_links['main-menu:node/127'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/127',
+    'router_path' => 'node/%',
+    'link_title' => 'Geothermal',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/116',
+  );
+  // Exported menu link: main-menu:node/128
+  $menu_links['main-menu:node/128'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/128',
+    'router_path' => 'node/%',
+    'link_title' => 'Furnaces',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/116',
+  );
+  // Exported menu link: main-menu:node/129
+  $menu_links['main-menu:node/129'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/129',
+    'router_path' => 'node/%',
+    'link_title' => 'Insulation',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/117',
+  );
+  // Exported menu link: main-menu:node/130
+  $menu_links['main-menu:node/130'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/130',
+    'router_path' => 'node/%',
+    'link_title' => 'Energy Audits',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/117',
+  );
+  // Exported menu link: main-menu:node/131
+  $menu_links['main-menu:node/131'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/131',
+    'router_path' => 'node/%',
+    'link_title' => 'Central Air Conditioning',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/119',
+  );
+  // Exported menu link: main-menu:node/133
+  $menu_links['main-menu:node/133'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/133',
+    'router_path' => 'node/%',
+    'link_title' => 'Air Sealing',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/117',
+  );
+  // Exported menu link: main-menu:node/134
+  $menu_links['main-menu:node/134'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/134',
+    'router_path' => 'node/%',
+    'link_title' => 'Tankless Water Heaters',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/116',
+  );
+  // Exported menu link: main-menu:node/135
+  $menu_links['main-menu:node/135'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/135',
+    'router_path' => 'node/%',
+    'link_title' => 'High-Efficiency Tank Water Heaters',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'node/117',
   );
   // Translatables
   // Included for use with string extractors like potx.
   t('Air Conditioning');
-  t('Duct Cleaning');
-  t('Furnace Installation & Repair');
-  t('Generator Installation & Repair');
-  t('Heating & Cooling');
-  t('Humidifier Installation & Repair');
+  t('Air Sealing');
+  t('Central Air Conditioning');
+  t('Energy Audits');
+  t('Furnaces');
+  t('Geothermal');
+  t('Heating');
+  t('High-Efficiency Tank Water Heaters');
+  t('Home Performance');
+  t('Home Zoning');
+  t('Indoor Air');
   t('Insulation');
-  t('Ventilation');
+  t('Mini-Split Heat Pumps');
+  t('Mini-Splits');
+  t('Tankless Water Heaters');
+  t('Ventilation Systems/Duct Design');
 
 
   return $menu_links;

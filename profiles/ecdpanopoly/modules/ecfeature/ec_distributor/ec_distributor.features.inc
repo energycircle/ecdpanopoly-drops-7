@@ -28,19 +28,24 @@ function ec_distributor_views_api($module = NULL, $api = NULL) {
  */
 function ec_distributor_user_default_permissions_alter(&$data) {
   if (isset($data['create distributor content'])) {
-    $data['create distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+    unset($data['create distributor content']['roles']['EC Platinum admin']);
+    unset($data['create distributor content']['roles']['administrator']);
   }
   if (isset($data['delete any distributor content'])) {
-    $data['delete any distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+    unset($data['delete any distributor content']['roles']['EC Platinum admin']);
+    unset($data['delete any distributor content']['roles']['administrator']);
   }
   if (isset($data['delete own distributor content'])) {
-    $data['delete own distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+    unset($data['delete own distributor content']['roles']['EC Platinum admin']);
+    unset($data['delete own distributor content']['roles']['administrator']);
   }
   if (isset($data['edit any distributor content'])) {
-    $data['edit any distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+    unset($data['edit any distributor content']['roles']['EC Platinum admin']);
+    unset($data['edit any distributor content']['roles']['administrator']);
   }
   if (isset($data['edit own distributor content'])) {
-    $data['edit own distributor content']['roles']['EC Platinum admin'] = 'EC Platinum admin'; /* WAS: '' */
+    unset($data['edit own distributor content']['roles']['EC Platinum admin']);
+    unset($data['edit own distributor content']['roles']['administrator']);
   }
 }
 

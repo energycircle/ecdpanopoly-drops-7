@@ -89,8 +89,5 @@ function ec_base_config_features_override_default_overrides() {
   $overrides["linkit_profiles.content_editors.data|search_plugins|entity:search_api_server"]["DELETED"] = TRUE;
   $overrides["linkit_profiles.content_editors.data|text_formats|iframe"] = 0;
 
-  // Exported overrides for: variable
-  $overrides["variable.media_wysiwyg_wysiwyg_browser_plugins.value|2"]["DELETED"] = TRUE;
-
  return $overrides;
 }

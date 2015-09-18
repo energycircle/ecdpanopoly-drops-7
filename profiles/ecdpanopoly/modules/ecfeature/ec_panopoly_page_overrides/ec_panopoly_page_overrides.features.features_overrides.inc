@@ -54,7 +54,10 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panel_settings|style_settings|two_66_33_first"] = NULL;
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panel_settings|style_settings|two_66_33_second"] = NULL;
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panel_settings|style_settings|two_66_33_top"] = NULL;
-  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|contentmain"]["DELETED"] = TRUE;
+  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|contentmain|0"] = 'new-96fb1bf5-7ac2-4566-9dae-876a363c71c9';
+  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|contentmain|1"] = 'new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d';
+  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|contentmain|2"]["DELETED"] = TRUE;
+  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|contentmain|3"]["DELETED"] = TRUE;
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|two_66_33_first"] = array(
     0 => 'new-e0d93093-20b4-42cd-bf23-6f2f487240a6',
     1 => 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40',

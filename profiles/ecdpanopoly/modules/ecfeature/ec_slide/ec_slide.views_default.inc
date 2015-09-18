@@ -44,6 +44,21 @@ function ec_slide_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Display subtitle */
+  $handler->display->display_options['fields']['field_display_subtitle']['id'] = 'field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['table'] = 'field_data_field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['field'] = 'field_display_subtitle';
+  $handler->display->display_options['fields']['field_display_subtitle']['label'] = '';
+  $handler->display->display_options['fields']['field_display_subtitle']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_display_subtitle']['element_label_colon'] = FALSE;
+  /* Field: Content: Content link */
+  $handler->display->display_options['fields']['field_content_link']['id'] = 'field_content_link';
+  $handler->display->display_options['fields']['field_content_link']['table'] = 'field_data_field_content_link';
+  $handler->display->display_options['fields']['field_content_link']['field'] = 'field_content_link';
+  $handler->display->display_options['fields']['field_content_link']['label'] = '';
+  $handler->display->display_options['fields']['field_content_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_content_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_content_link']['click_sort_column'] = 'url';
   /* Field: Content: Slide image */
   $handler->display->display_options['fields']['field_slide_image']['id'] = 'field_slide_image';
   $handler->display->display_options['fields']['field_slide_image']['table'] = 'field_data_field_slide_image';
@@ -60,14 +75,15 @@ function ec_slide_views_default_views() {
   $handler->display->display_options['fields']['field_display_title']['table'] = 'field_data_field_display_title';
   $handler->display->display_options['fields']['field_display_title']['field'] = 'field_display_title';
   $handler->display->display_options['fields']['field_display_title']['label'] = '';
+  $handler->display->display_options['fields']['field_display_title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_display_title']['alter']['text'] = '<div class="slide-caption">
+<div class="display-title">[field_display_title]</div>
+<div class="display-subtitle">[field_display_subtitle]</div>
+<div class="link">[field_content_link]</div>
+</div>';
+  $handler->display->display_options['fields']['field_display_title']['element_class'] = 'slide-caption-wrapper';
   $handler->display->display_options['fields']['field_display_title']['element_label_colon'] = FALSE;
-  /* Field: Content: Content link */
-  $handler->display->display_options['fields']['field_content_link']['id'] = 'field_content_link';
-  $handler->display->display_options['fields']['field_content_link']['table'] = 'field_data_field_content_link';
-  $handler->display->display_options['fields']['field_content_link']['field'] = 'field_content_link';
-  $handler->display->display_options['fields']['field_content_link']['label'] = '';
-  $handler->display->display_options['fields']['field_content_link']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_content_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_display_title']['element_default_classes'] = FALSE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -83,8 +99,8 @@ function ec_slide_views_default_views() {
     'slide' => 'slide',
   );
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: home page slides */
+  $handler = $view->new_display('panel_pane', 'home page slides', 'panel_pane_1');
   $export['slides_home'] = $view;
 
   $view = new view();

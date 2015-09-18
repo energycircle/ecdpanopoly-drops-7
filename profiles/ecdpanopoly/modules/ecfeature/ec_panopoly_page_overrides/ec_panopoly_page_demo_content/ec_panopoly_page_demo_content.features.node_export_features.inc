@@ -1,0 +1,3166 @@
+<?php
+/**
+ * @file
+ * ec_panopoly_page_demo_content.features.node_export_features.inc
+ */
+
+/**
+ * Implements hook_node_export_features_default().
+ */
+function ec_panopoly_page_demo_content_node_export_features_default() {
+  $node_export = array(
+  'code_string' => 'array(
+  (object) array(
+      \'vid\' => \'30\',
+      \'uid\' => \'0\',
+      \'title\' => \'Demo-Service Area\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'0\',
+      \'promote\' => \'1\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'31bccc48-d5b3-407b-9154-5c295a99c048\',
+      \'nid\' => \'30\',
+      \'type\' => \'panopoly_page\',
+      \'language\' => \'und\',
+      \'created\' => \'1414097529\',
+      \'changed\' => \'1442258654\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'90e62ed6-9ce4-4ca1-bb56-1c06eca6f0be\',
+      \'revision_timestamp\' => \'1442258654\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'<p><span><span>While we primarily offer services to Mercer, Middlesex and Somerset counties in New Jersey and Bucks County in PA, our top-tier products & services are often in demand beyond our normal coverage area. To find out if our offerings are available in your area, please contact us via telephone at (609)-799-3434 or email at info@princetonair.com.</span></span></p><iframe src="https://mapsengine.google.com/map/embed?mid=zh03t1HVfEO0.kFhUov8aa3gM" width="640" height="480"></iframe>\',
+            \'summary\' => \'\',
+            \'format\' => \'iframe\',
+            \'safe_value\' => \'<p><span><span>While we primarily offer services to Mercer, Middlesex and Somerset counties in New Jersey and Bucks County in PA, our top-tier products & services are often in demand beyond our normal coverage area. To find out if our offerings are available in your area, please contact us via telephone at (609)-799-3434 or email at info@princetonair.com.</span></span></p><iframe src="https://mapsengine.google.com/map/embed?mid=zh03t1HVfEO0.kFhUov8aa3gM" width="640" height="480"></iframe>\',
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_featured_categories\' => array(),
+      \'field_featured_image\' => array(),
+      \'field_featured_status\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'0\',
+          ),
+        ),
+      ),
+      \'field_button_text\' => array(),
+      \'field_call_to_action\' => array(),
+      \'field_ref_page_blog\' => array(),
+      \'field_ref_page_case_study\' => array(),
+      \'field_ref_page_promotions\' => array(),
+      \'field_ref_page_testimonial\' => array(),
+      \'field_ref_to_cta_form\' => array(),
+      \'field_ref_page_faq\' => array(),
+      \'metatags\' => array(
+        \'und\' => array(
+          \'title\' => array(
+            \'value\' => \'Service Area | Princeton Air | Central NJ & Southeastern PA\',
+          ),
+        ),
+      ),
+      \'path\' => array(
+        \'pid\' => \'283\',
+        \'source\' => \'node/30\',
+        \'alias\' => \'demo-service-area\',
+        \'language\' => \'und\',
+      ),
+      \'panelizer\' => array(
+        \'page_manager\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'30\',
+            \'revision_id\' => \'30\',
+            \'name\' => \'node:panopoly_page:default\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'page-page\',
+            \'css\' => \'\',
+            \'pipeline\' => \'ipe\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'page_manager\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                )),
+                \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                )),
+                \'new-f3bf9c22-9b22-41d2-a57e-110951093871\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'f3bf9c22-9b22-41d2-a57e-110951093871\',
+                )),
+                \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_categories\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'inline\',
+                    \'formatter\' => \'taxonomy_term_reference_link\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                )),
+                \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                   \'panel\' => \'sidebar\',
+                   \'type\' => \'menu_tree\',
+                   \'subtype\' => \'main-menu\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'menu_name\' => \'main-menu\',
+                    \'parent_mlid\' => \'0\',
+                    \'title_link\' => 0,
+                    \'admin_title\' => \'\',
+                    \'level\' => \'2\',
+                    \'follow\' => 0,
+                    \'depth\' => 0,
+                    \'expanded\' => 1,
+                    \'sort\' => 0,
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                  1 => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                  2 => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                  3 => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                ),
+                \'sidebar\' => 
+                array (
+                  0 => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_bryant\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'sidebar\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+            )),
+          ),
+        \'default\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'30\',
+            \'revision_id\' => \'30\',
+            \'name\' => \'node:panopoly_page:default:default\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'default\',
+            \'css_class\' => \'page-default\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-e0d93093-20b4-42cd-bf23-6f2f487240a6\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-e0d93093-20b4-42cd-bf23-6f2f487240a6\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_style\' => \'sc_940x470_mc\',
+                      \'image_link\' => \'\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'e0d93093-20b4-42cd-bf23-6f2f487240a6\',
+                )),
+                \'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'74f82699-93ba-4b15-8bcf-e3bfa1894d40\',
+                )),
+                \'new-96fb1bf5-7ac2-4566-9dae-876a363c71c9\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-96fb1bf5-7ac2-4566-9dae-876a363c71c9\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'default\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'96fb1bf5-7ac2-4566-9dae-876a363c71c9\',
+                )),
+                \'new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_categories\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'inline\',
+                    \'formatter\' => \'taxonomy_term_reference_link\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d\',
+                )),
+                \'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'menu_tree\',
+                   \'subtype\' => \'main-menu\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'menu_name\' => \'main-menu\',
+                    \'parent_mlid\' => 0,
+                    \'parent\' => \'main-menu:0\',
+                    \'title_link\' => 1,
+                    \'admin_title\' => \'\',
+                    \'level\' => 2,
+                    \'follow\' => 0,
+                    \'depth\' => 0,
+                    \'expanded\' => 0,
+                    \'sort\' => 0,
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                    \'depth_relative\' => 0,
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'b92fd697-8377-4b5e-87cc-d81df0e7e61d\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'two_66_33_first\' => 
+                array (
+                  0 => \'new-e0d93093-20b4-42cd-bf23-6f2f487240a6\',
+                  1 => \'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40\',
+                ),
+                \'two_66_33_second\' => 
+                array (
+                  0 => \'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-10c9e351-f69c-4629-b191-77b8b01f4f1c\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'two_66_33\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'sidebar\' => NULL,
+                  \'contentmain\' => NULL,
+                  \'two_66_33_bottom\' => NULL,
+                  \'two_66_33_first\' => NULL,
+                  \'two_66_33_second\' => NULL,
+                  \'two_66_33_top\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'10c9e351-f69c-4629-b191-77b8b01f4f1c\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+        \'teaser\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'30\',
+            \'revision_id\' => \'30\',
+            \'name\' => \'node:panopoly_page:default:teaser\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'teaser\',
+            \'css_class\' => \'page-teaser\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_quarter\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                )),
+                \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'600\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                )),
+                \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'teaser\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                  1 => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                  2 => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+        \'featured\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'30\',
+            \'revision_id\' => \'30\',
+            \'name\' => \'node:panopoly_page:default:featured\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'featured\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-af46907d-aa25-43db-995b-b38f9174221e\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'af46907d-aa25-43db-995b-b38f9174221e\',
+                )),
+                \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_title\',
+                   \'subtype\' => \'node_title\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'link\' => 1,
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                )),
+                \'new-a71dc705-b195-439c-b47b-980d8c7fa155\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'a71dc705-b195-439c-b47b-980d8c7fa155\',
+                )),
+                \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                  1 => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                  2 => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                  3 => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-5b7d08f9-c351-427e-8015-14433221537b\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'5b7d08f9-c351-427e-8015-14433221537b\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+      ),
+      \'machine_name\' => FALSE,
+      \'name\' => \'\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'32\',
+      \'uid\' => \'0\',
+      \'title\' => \'Demo-FAQ\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'0\',
+      \'promote\' => \'1\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'c68b8cfb-427f-4308-b092-3720b0da8f40\',
+      \'nid\' => \'32\',
+      \'type\' => \'panopoly_page\',
+      \'language\' => \'und\',
+      \'created\' => \'1422978252\',
+      \'changed\' => \'1442255990\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'a6ae8e10-dd87-4ea6-bdd1-4c30a3610185\',
+      \'revision_timestamp\' => \'1442255990\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'<p>Use this page to learn useful information about Princeton Air and our services.</p>\',
+            \'summary\' => \'\',
+            \'format\' => \'panopoly_wysiwyg_text\',
+            \'safe_value\' => \'<p>Use this page to learn useful information about Princeton Air and our services.</p>\',
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_featured_categories\' => array(),
+      \'field_featured_image\' => array(),
+      \'field_featured_status\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'0\',
+          ),
+        ),
+      ),
+      \'field_button_text\' => array(),
+      \'field_call_to_action\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'<p>This is the content for this page. Please replace this content with text of your own. This text is only here as a placeholder.</p>\',
+            \'format\' => \'panopoly_wysiwyg_text\',
+            \'safe_value\' => \'<p>This is the content for this page. Please replace this content with text of your own. This text is only here as a placeholder.</p>\',
+          ),
+        ),
+      ),
+      \'field_ref_page_blog\' => array(),
+      \'field_ref_page_case_study\' => array(),
+      \'field_ref_page_promotions\' => array(),
+      \'field_ref_page_testimonial\' => array(),
+      \'field_ref_to_cta_form\' => array(),
+      \'field_ref_page_faq\' => array(),
+      \'path\' => array(
+        \'pid\' => \'198\',
+        \'source\' => \'node/32\',
+        \'alias\' => \'faq\',
+        \'language\' => \'und\',
+      ),
+      \'panelizer\' => array(
+        \'page_manager\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'32\',
+            \'revision_id\' => \'32\',
+            \'name\' => \'node:panopoly_page:default\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'page-page\',
+            \'css\' => \'\',
+            \'pipeline\' => \'ipe\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'page_manager\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                )),
+                \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                )),
+                \'new-f3bf9c22-9b22-41d2-a57e-110951093871\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'f3bf9c22-9b22-41d2-a57e-110951093871\',
+                )),
+                \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_categories\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'inline\',
+                    \'formatter\' => \'taxonomy_term_reference_link\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                )),
+                \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                   \'panel\' => \'sidebar\',
+                   \'type\' => \'menu_tree\',
+                   \'subtype\' => \'main-menu\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'menu_name\' => \'main-menu\',
+                    \'parent_mlid\' => \'0\',
+                    \'title_link\' => 0,
+                    \'admin_title\' => \'\',
+                    \'level\' => \'2\',
+                    \'follow\' => 0,
+                    \'depth\' => 0,
+                    \'expanded\' => 1,
+                    \'sort\' => 0,
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                  1 => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                  2 => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                  3 => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                ),
+                \'sidebar\' => 
+                array (
+                  0 => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_bryant\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'sidebar\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+            )),
+          ),
+        \'default\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'32\',
+            \'revision_id\' => \'32\',
+            \'name\' => \'node:panopoly_page:default:default\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'default\',
+            \'css_class\' => \'page-default\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-e0d93093-20b4-42cd-bf23-6f2f487240a6\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-e0d93093-20b4-42cd-bf23-6f2f487240a6\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_style\' => \'sc_940x470_mc\',
+                      \'image_link\' => \'\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'e0d93093-20b4-42cd-bf23-6f2f487240a6\',
+                )),
+                \'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'74f82699-93ba-4b15-8bcf-e3bfa1894d40\',
+                )),
+                \'new-96fb1bf5-7ac2-4566-9dae-876a363c71c9\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-96fb1bf5-7ac2-4566-9dae-876a363c71c9\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'default\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'96fb1bf5-7ac2-4566-9dae-876a363c71c9\',
+                )),
+                \'new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_categories\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'inline\',
+                    \'formatter\' => \'taxonomy_term_reference_link\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d\',
+                )),
+                \'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'menu_tree\',
+                   \'subtype\' => \'main-menu\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'menu_name\' => \'main-menu\',
+                    \'parent_mlid\' => 0,
+                    \'parent\' => \'main-menu:0\',
+                    \'title_link\' => 1,
+                    \'admin_title\' => \'\',
+                    \'level\' => 2,
+                    \'follow\' => 0,
+                    \'depth\' => 0,
+                    \'expanded\' => 0,
+                    \'sort\' => 0,
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                    \'depth_relative\' => 0,
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'b92fd697-8377-4b5e-87cc-d81df0e7e61d\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'two_66_33_first\' => 
+                array (
+                  0 => \'new-e0d93093-20b4-42cd-bf23-6f2f487240a6\',
+                  1 => \'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40\',
+                ),
+                \'two_66_33_second\' => 
+                array (
+                  0 => \'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-10c9e351-f69c-4629-b191-77b8b01f4f1c\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'two_66_33\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'sidebar\' => NULL,
+                  \'contentmain\' => NULL,
+                  \'two_66_33_bottom\' => NULL,
+                  \'two_66_33_first\' => NULL,
+                  \'two_66_33_second\' => NULL,
+                  \'two_66_33_top\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'10c9e351-f69c-4629-b191-77b8b01f4f1c\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+        \'teaser\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'32\',
+            \'revision_id\' => \'32\',
+            \'name\' => \'node:panopoly_page:default:teaser\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'teaser\',
+            \'css_class\' => \'page-teaser\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_quarter\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                )),
+                \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'600\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                )),
+                \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'teaser\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                  1 => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                  2 => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+        \'featured\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'32\',
+            \'revision_id\' => \'32\',
+            \'name\' => \'node:panopoly_page:default:featured\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'featured\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-af46907d-aa25-43db-995b-b38f9174221e\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'af46907d-aa25-43db-995b-b38f9174221e\',
+                )),
+                \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_title\',
+                   \'subtype\' => \'node_title\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'link\' => 1,
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                )),
+                \'new-a71dc705-b195-439c-b47b-980d8c7fa155\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'a71dc705-b195-439c-b47b-980d8c7fa155\',
+                )),
+                \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                  1 => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                  2 => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                  3 => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-5b7d08f9-c351-427e-8015-14433221537b\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'5b7d08f9-c351-427e-8015-14433221537b\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+      ),
+      \'machine_name\' => FALSE,
+      \'name\' => \'\',
+      \'picture\' => \'0\',
+      \'data\' => NULL,
+      \'menu\' => array(
+        \'link_title\' => "FAQ\'s",
+        \'mlid\' => 0,
+        \'plid\' => \'0\',
+        \'menu_name\' => \'menu-auxiliary-menu\',
+        \'weight\' => \'0\',
+        \'options\' => array(),
+        \'module\' => \'menu\',
+        \'expanded\' => \'0\',
+        \'hidden\' => \'0\',
+        \'has_children\' => \'0\',
+        \'customized\' => 0,
+        \'parent_depth_limit\' => 8,
+        \'description\' => \'\',
+        \'enabled\' => 1,
+      ),
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'155\',
+      \'uid\' => \'1\',
+      \'title\' => \'Demo-Financing\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'0\',
+      \'promote\' => \'1\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'ced0cbcd-61c2-45f0-9906-1af2d5f1fe94\',
+      \'nid\' => \'136\',
+      \'type\' => \'panopoly_page\',
+      \'language\' => \'und\',
+      \'created\' => \'1442252939\',
+      \'changed\' => \'1442254040\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'e4df3333-900b-4bb9-9c28-71602d02b215\',
+      \'revision_timestamp\' => \'1442254040\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'<p>This is the content for this page. Please replace this content with text of your own. This text is only here as a placeholder.</p>\',
+            \'summary\' => \'\',
+            \'format\' => \'panopoly_wysiwyg_text\',
+            \'safe_value\' => \'<p>This is the content for this page. Please replace this content with text of your own. This text is only here as a placeholder.</p>\',
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_featured_categories\' => array(),
+      \'field_featured_image\' => array(),
+      \'field_featured_status\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'0\',
+          ),
+        ),
+      ),
+      \'field_button_text\' => array(),
+      \'field_call_to_action\' => array(),
+      \'field_ref_page_blog\' => array(),
+      \'field_ref_page_case_study\' => array(),
+      \'field_ref_page_promotions\' => array(),
+      \'field_ref_page_testimonial\' => array(),
+      \'field_ref_to_cta_form\' => array(),
+      \'field_ref_page_faq\' => array(),
+      \'path\' => array(
+        \'pid\' => \'228\',
+        \'source\' => \'node/136\',
+        \'alias\' => \'financing\',
+        \'language\' => \'und\',
+      ),
+      \'panelizer\' => array(
+        \'page_manager\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'136\',
+            \'revision_id\' => \'155\',
+            \'name\' => \'node:panopoly_page:default\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'page-page\',
+            \'css\' => \'\',
+            \'pipeline\' => \'ipe\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'page_manager\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                )),
+                \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                )),
+                \'new-f3bf9c22-9b22-41d2-a57e-110951093871\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'f3bf9c22-9b22-41d2-a57e-110951093871\',
+                )),
+                \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_categories\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'inline\',
+                    \'formatter\' => \'taxonomy_term_reference_link\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                )),
+                \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                   \'panel\' => \'sidebar\',
+                   \'type\' => \'menu_tree\',
+                   \'subtype\' => \'main-menu\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'menu_name\' => \'main-menu\',
+                    \'parent_mlid\' => \'0\',
+                    \'title_link\' => 0,
+                    \'admin_title\' => \'\',
+                    \'level\' => \'2\',
+                    \'follow\' => 0,
+                    \'depth\' => 0,
+                    \'expanded\' => 1,
+                    \'sort\' => 0,
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+                  1 => \'new-59cafe99-f0a0-4a3a-a13f-8f108d69d18b\',
+                  2 => \'new-f3bf9c22-9b22-41d2-a57e-110951093871\',
+                  3 => \'new-0a2c7b96-5f45-4e85-8e00-88fee50f4f71\',
+                ),
+                \'sidebar\' => 
+                array (
+                  0 => \'new-c755a7a9-2c4c-4f7e-a0f7-fc3a3c87ddd1\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_bryant\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'sidebar\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'16346c80-6fcf-4cee-bf7a-9c0173fc2916\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1\',
+            )),
+          ),
+        \'default\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'136\',
+            \'revision_id\' => \'155\',
+            \'name\' => NULL,
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'6\',
+            \'view_mode\' => \'default\',
+            \'css_class\' => \'page-default\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                32 => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'32\',
+                   \'did\' => \'6\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => \'1\',
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_style\' => \'sc_940x470_mc\',
+                      \'image_link\' => \'\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => \'0\',
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'e0d93093-20b4-42cd-bf23-6f2f487240a6\',
+                )),
+                33 => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'33\',
+                   \'did\' => \'6\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => \'1\',
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_default\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => \'1\',
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'74f82699-93ba-4b15-8bcf-e3bfa1894d40\',
+                )),
+                34 => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'34\',
+                   \'did\' => \'6\',
+                   \'panel\' => \'two_66_33_first\',
+                   \'type\' => \'views_panes\',
+                   \'subtype\' => \'financing_options-panel_pane_1\',
+                   \'shown\' => \'1\',
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'view_settings\' => \'fields\',
+                    \'header_type\' => \'none\',
+                    \'view_mode\' => \'teaser\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => \'2\',
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1d036651-e73f-459e-9993-9f5442f586fc\',
+                )),
+                35 => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'35\',
+                   \'did\' => \'6\',
+                   \'panel\' => \'two_66_33_second\',
+                   \'type\' => \'menu_tree\',
+                   \'subtype\' => \'main-menu\',
+                   \'shown\' => \'1\',
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'menu_name\' => \'main-menu\',
+                    \'parent_mlid\' => 0,
+                    \'parent\' => \'main-menu:0\',
+                    \'title_link\' => 1,
+                    \'admin_title\' => \'\',
+                    \'level\' => 2,
+                    \'follow\' => 0,
+                    \'depth\' => 0,
+                    \'expanded\' => 0,
+                    \'sort\' => 0,
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                    \'override_title_heading\' => \'h2\',
+                    \'depth_relative\' => 0,
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => \'0\',
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'b92fd697-8377-4b5e-87cc-d81df0e7e61d\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'two_66_33_first\' => 
+                array (
+                  0 => \'32\',
+                  1 => \'33\',
+                  2 => \'34\',
+                ),
+                \'two_66_33_second\' => 
+                array (
+                  0 => \'35\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'6\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'two_66_33\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'sidebar\' => NULL,
+                  \'contentmain\' => NULL,
+                  \'two_66_33_bottom\' => NULL,
+                  \'two_66_33_first\' => NULL,
+                  \'two_66_33_second\' => NULL,
+                  \'two_66_33_top\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'hide_title\' => \'1\',
+               \'title_pane\' => \'0\',
+               \'uuid\' => \'10c9e351-f69c-4629-b191-77b8b01f4f1c\',
+            )),
+          ),
+        \'teaser\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'136\',
+            \'revision_id\' => \'155\',
+            \'name\' => \'node:panopoly_page:default:teaser\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'teaser\',
+            \'css_class\' => \'page-teaser\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_quarter\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                )),
+                \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'600\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                )),
+                \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'teaser\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-873d60d8-f80e-41c1-b89d-86ad219285e8\',
+                  1 => \'new-9363564d-7f96-4fa2-a1a5-5b0f5f60ce68\',
+                  2 => \'new-e7b29d80-ad23-4c5d-85fd-13f7a038e3d8\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'f76cbd0c-d182-4bd2-96f2-f1759b4e69d8\',
+               \'hide_title\' => 0,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+        \'featured\' => (object) array(
+            \'entity_type\' => \'node\',
+            \'entity_id\' => \'136\',
+            \'revision_id\' => \'155\',
+            \'name\' => \'node:panopoly_page:default:featured\',
+            \'no_blocks\' => \'0\',
+            \'css_id\' => \'\',
+            \'css\' => \'\',
+            \'pipeline\' => \'standard\',
+            \'contexts\' => array(),
+            \'relationships\' => array(),
+            \'did\' => \'0\',
+            \'view_mode\' => \'featured\',
+            \'css_class\' => \'\',
+            \'title_element\' => \'H2\',
+            \'link_to_entity\' => \'1\',
+            \'extra\' => \'\',
+            \'display\' => panels_display::__set_state(array(
+               \'args\' => 
+              array (
+              ),
+               \'content\' => 
+              array (
+                \'new-af46907d-aa25-43db-995b-b38f9174221e\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:field_featured_image\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'image\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'image_link\' => \'content\',
+                      \'image_style\' => \'panopoly_image_half\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 0,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'af46907d-aa25-43db-995b-b38f9174221e\',
+                )),
+                \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_title\',
+                   \'subtype\' => \'node_title\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'link\' => 1,
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 1,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 1,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                )),
+                \'new-a71dc705-b195-439c-b47b-980d8c7fa155\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'entity_field\',
+                   \'subtype\' => \'node:body\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'label\' => \'hidden\',
+                    \'formatter\' => \'text_summary_or_trimmed\',
+                    \'delta_limit\' => 0,
+                    \'delta_offset\' => \'0\',
+                    \'delta_reversed\' => false,
+                    \'formatter_settings\' => 
+                    array (
+                      \'trim_length\' => \'250\',
+                    ),
+                    \'context\' => \'panelizer\',
+                    \'override_title\' => 0,
+                    \'override_title_text\' => \'\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 2,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'a71dc705-b195-439c-b47b-980d8c7fa155\',
+                )),
+                \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\' => 
+                stdClass::__set_state(array(
+                   \'pid\' => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                   \'panel\' => \'contentmain\',
+                   \'type\' => \'node_links\',
+                   \'subtype\' => \'node_links\',
+                   \'shown\' => true,
+                   \'access\' => 
+                  array (
+                  ),
+                   \'configuration\' => 
+                  array (
+                    \'override_title\' => false,
+                    \'override_title_text\' => \'\',
+                    \'build_mode\' => \'featured\',
+                    \'identifier\' => \'\',
+                    \'link\' => true,
+                    \'context\' => \'panelizer\',
+                  ),
+                   \'cache\' => 
+                  array (
+                  ),
+                   \'style\' => 
+                  array (
+                    \'settings\' => NULL,
+                  ),
+                   \'css\' => 
+                  array (
+                    \'css_class\' => \'link-wrapper\',
+                  ),
+                   \'extras\' => 
+                  array (
+                  ),
+                   \'position\' => 3,
+                   \'locks\' => 
+                  array (
+                  ),
+                   \'uuid\' => \'1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                )),
+              ),
+               \'panels\' => 
+              array (
+                \'contentmain\' => 
+                array (
+                  0 => \'new-af46907d-aa25-43db-995b-b38f9174221e\',
+                  1 => \'new-1ee1b165-ebd0-4115-ad5e-49df79509f82\',
+                  2 => \'new-a71dc705-b195-439c-b47b-980d8c7fa155\',
+                  3 => \'new-1d6308c6-817d-4465-ac63-fa7acca627aa\',
+                ),
+              ),
+               \'incoming_content\' => NULL,
+               \'css_id\' => NULL,
+               \'context\' => 
+              array (
+              ),
+               \'did\' => \'new-5b7d08f9-c351-427e-8015-14433221537b\',
+               \'renderer\' => \'standard\',
+               \'layout\' => \'radix_boxton\',
+               \'layout_settings\' => 
+              array (
+              ),
+               \'panel_settings\' => 
+              array (
+                \'style_settings\' => 
+                array (
+                  \'default\' => NULL,
+                  \'column1\' => NULL,
+                  \'column2\' => NULL,
+                  \'contentmain\' => NULL,
+                ),
+              ),
+               \'cache\' => 
+              array (
+              ),
+               \'title\' => \'%node:title\',
+               \'uuid\' => \'5b7d08f9-c351-427e-8015-14433221537b\',
+               \'hide_title\' => 1,
+               \'title_pane\' => \'0\',
+            )),
+          ),
+      ),
+      \'machine_name\' => FALSE,
+      \'name\' => \'admin\',
+      \'picture\' => \'0\',
+      \'data\' => \'b:0;\',
+      \'menu\' => array(
+        \'link_title\' => \'Financing\',
+        \'mlid\' => 0,
+        \'plid\' => \'0\',
+        \'menu_name\' => \'menu-auxiliary-menu\',
+        \'weight\' => \'0\',
+        \'options\' => array(),
+        \'module\' => \'menu\',
+        \'expanded\' => \'0\',
+        \'hidden\' => \'0\',
+        \'has_children\' => \'1\',
+        \'customized\' => 0,
+        \'parent_depth_limit\' => 8,
+        \'description\' => \'\',
+        \'enabled\' => 1,
+      ),
+      \'node_export_drupal_version\' => \'7\',
+    ),
+)',
+);
+  return $node_export;
+}

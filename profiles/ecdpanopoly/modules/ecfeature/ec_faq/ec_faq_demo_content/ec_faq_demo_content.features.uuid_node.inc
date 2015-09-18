@@ -11,8 +11,146 @@ function ec_faq_demo_content_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
+  'uid' => 1,
+  'title' => 'Demo-Can I make specific requests for future features?',
+  'log' => '',
+  'status' => 1,
+  'comment' => 0,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '3e05c468-b97b-4ffc-a590-ef7031b14ffa',
+  'type' => 'faq',
+  'language' => 'und',
+  'created' => 1442256141,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '035b0b12-e5cf-47d2-9a91-88b493919db1',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p><span>Energy Circle PRO is a flexible platform, and we\'re continually adding new features.&nbsp; In many cases, we have found that with a little help, our platform is flexible enough to allow you to get a feature you want without waiting a long time. &nbsp;So ask, by all means, and we\'ll see if we can figure out a solution.&nbsp; Our plan for future enhancements is guided by our customers\' requests.&nbsp; We\'re not a custom website design and development company, so we may not be able to offer every feature every customer wants. &nbsp;But we take great pains to develop software that follows the most current web software standards.</span></p>',
+        'summary' => '',
+        'format' => 'panopoly_wysiwyg_text',
+        'safe_value' => '<p><span>Energy Circle PRO is a flexible platform, and we\'re continually adding new features.  In many cases, we have found that with a little help, our platform is flexible enough to allow you to get a feature you want without waiting a long time.  So ask, by all means, and we\'ll see if we can figure out a solution.  Our plan for future enhancements is guided by our customers\' requests.  We\'re not a custom website design and development company, so we may not be able to offer every feature every customer wants.  But we take great pains to develop software that follows the most current web software standards.</span></p>',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_ref_faq_serv' => array(),
+  'field_ref_faq_servcat' => array(),
+  'field_ref_faq_servgroup' => array(),
+  'field_ref_faq_content_page' => array(),
+  'path' => array(
+    'pathauto' => 1,
+  ),
+  'panelizer' => array(
+    'default' => array(
+      'entity_type' => 'node',
+      'entity_id' => 142,
+      'revision_id' => 161,
+      'name' => 'node:faq:default:default',
+      'no_blocks' => 0,
+      'css_id' => '',
+      'css' => '',
+      'pipeline' => 'standard',
+      'contexts' => array(),
+      'relationships' => array(),
+      'did' => 0,
+      'view_mode' => 'default',
+      'css_class' => '',
+      'title_element' => 'H2',
+      'link_to_entity' => 1,
+      'extra' => array(),
+      'display' => array(
+        'args' => array(),
+        'content' => array(
+          'new-46d877ad-93e0-4815-ad2d-508137fb9df3' => array(
+            'pid' => 'new-46d877ad-93e0-4815-ad2d-508137fb9df3',
+            'panel' => 'center',
+            'type' => 'entity_field',
+            'subtype' => 'node:body',
+            'shown' => TRUE,
+            'access' => array(),
+            'configuration' => array(
+              'label' => 'hidden',
+              'formatter' => 'text_default',
+              'delta_limit' => 0,
+              'delta_offset' => 0,
+              'delta_reversed' => FALSE,
+              'formatter_settings' => array(
+                'field_multiple_limit' => -1,
+                'field_multiple_limit_offset' => 0,
+              ),
+              'context' => 'panelizer',
+            ),
+            'cache' => array(),
+            'style' => array(),
+            'css' => array(),
+            'extras' => array(),
+            'position' => 0,
+            'locks' => array(),
+            'uuid' => '46d877ad-93e0-4815-ad2d-508137fb9df3',
+          ),
+          'new-3369f28e-0efd-4c42-af69-cc9f90c84660' => array(
+            'pid' => 'new-3369f28e-0efd-4c42-af69-cc9f90c84660',
+            'panel' => 'center',
+            'type' => 'node_links',
+            'subtype' => 'node_links',
+            'shown' => TRUE,
+            'access' => array(),
+            'configuration' => array(
+              'override_title' => FALSE,
+              'override_title_text' => '',
+              'build_mode' => 'default',
+              'identifier' => '',
+              'link' => TRUE,
+              'context' => 'panelizer',
+            ),
+            'cache' => array(),
+            'style' => array(),
+            'css' => array(
+              'css_class' => 'link-wrapper',
+            ),
+            'extras' => array(),
+            'position' => 0,
+            'locks' => array(),
+            'uuid' => '3369f28e-0efd-4c42-af69-cc9f90c84660',
+          ),
+        ),
+        'panels' => array(
+          'center' => array(
+            0 => 'new-46d877ad-93e0-4815-ad2d-508137fb9df3',
+            1 => 'new-3369f28e-0efd-4c42-af69-cc9f90c84660',
+          ),
+        ),
+        'incoming_content' => NULL,
+        'css_id' => NULL,
+        'context' => array(),
+        'did' => 'new-dbc690d0-c6be-427a-be5b-1edba00b007d',
+        'renderer' => 'standard',
+        'layout' => 'flexible',
+        'layout_settings' => array(),
+        'panel_settings' => array(),
+        'cache' => array(),
+        'title' => '%node:title',
+        'uuid' => 'dbc690d0-c6be-427a-be5b-1edba00b007d',
+        'hide_title' => 0,
+        'title_pane' => 'new-3369f28e-0efd-4c42-af69-cc9f90c84660',
+      ),
+    ),
+  ),
+  'machine_name' => FALSE,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'b:0;',
+  'weight_weight' => 0,
+  'pathauto_perform_alias' => FALSE,
+  'date' => '2015-09-14 14:42:21 -0400',
+);
+  $nodes[] = array(
   'uid' => 0,
-  'title' => 'How do I know if it is more cost-efficient to repair my old air conditioning system or replace it?',
+  'title' => 'Demo-How do I know if it is more cost-efficient to repair my old air conditioning system or replace it?',
   'log' => '',
   'status' => 1,
   'comment' => 0,
@@ -38,23 +176,8 @@ function ec_faq_demo_content_uuid_features_default_content() {
     ),
   ),
   'field_ref_faq_serv' => array(),
-  'field_ref_faq_servcat' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 23,
-      ),
-    ),
-  ),
-  'field_ref_faq_servgroup' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 22,
-      ),
-      1 => array(
-        'target_id' => 33,
-      ),
-    ),
-  ),
+  'field_ref_faq_servcat' => array(),
+  'field_ref_faq_servgroup' => array(),
   'field_ref_faq_content_page' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -63,7 +186,7 @@ function ec_faq_demo_content_uuid_features_default_content() {
     'default' => array(
       'entity_type' => 'node',
       'entity_id' => 18,
-      'revision_id' => 138,
+      'revision_id' => 120,
       'name' => 'node:faq:default:default',
       'no_blocks' => 0,
       'css_id' => '',
@@ -165,7 +288,7 @@ function ec_faq_demo_content_uuid_features_default_content() {
 );
   $nodes[] = array(
   'uid' => 0,
-  'title' => 'I hear a lot of talk about high-efficiency heating systems. How do you determine a heating system’s efficiency?',
+  'title' => 'Demo-I hear a lot of talk about high-efficiency heating systems. How do you determine a heating system’s efficiency?',
   'log' => '',
   'status' => 1,
   'comment' => 0,
@@ -190,33 +313,9 @@ function ec_faq_demo_content_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_ref_faq_serv' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 27,
-      ),
-    ),
-  ),
-  'field_ref_faq_servcat' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 23,
-      ),
-      1 => array(
-        'target_id' => 47,
-      ),
-    ),
-  ),
-  'field_ref_faq_servgroup' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 22,
-      ),
-      1 => array(
-        'target_id' => 33,
-      ),
-    ),
-  ),
+  'field_ref_faq_serv' => array(),
+  'field_ref_faq_servcat' => array(),
+  'field_ref_faq_servgroup' => array(),
   'field_ref_faq_content_page' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -225,7 +324,7 @@ function ec_faq_demo_content_uuid_features_default_content() {
     'default' => array(
       'entity_type' => 'node',
       'entity_id' => 19,
-      'revision_id' => 139,
+      'revision_id' => 121,
       'name' => 'node:faq:default:default',
       'no_blocks' => 0,
       'css_id' => '',
@@ -327,7 +426,7 @@ function ec_faq_demo_content_uuid_features_default_content() {
 );
   $nodes[] = array(
   'uid' => 0,
-  'title' => 'What does SEER stand for?',
+  'title' => 'Demo-What does SEER stand for?',
   'log' => '',
   'status' => 1,
   'comment' => 0,
@@ -352,33 +451,9 @@ function ec_faq_demo_content_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_ref_faq_serv' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 27,
-      ),
-    ),
-  ),
-  'field_ref_faq_servcat' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 23,
-      ),
-      1 => array(
-        'target_id' => 44,
-      ),
-    ),
-  ),
-  'field_ref_faq_servgroup' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 22,
-      ),
-      1 => array(
-        'target_id' => 33,
-      ),
-    ),
-  ),
+  'field_ref_faq_serv' => array(),
+  'field_ref_faq_servcat' => array(),
+  'field_ref_faq_servgroup' => array(),
   'field_ref_faq_content_page' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -387,7 +462,7 @@ function ec_faq_demo_content_uuid_features_default_content() {
     'default' => array(
       'entity_type' => 'node',
       'entity_id' => 111,
-      'revision_id' => 140,
+      'revision_id' => 122,
       'name' => 'node:faq:default:default',
       'no_blocks' => 0,
       'css_id' => '',
@@ -489,7 +564,7 @@ function ec_faq_demo_content_uuid_features_default_content() {
 );
   $nodes[] = array(
   'uid' => 0,
-  'title' => 'How do I know what size system to install?',
+  'title' => 'Demo-How do I know what size system to install?',
   'log' => '',
   'status' => 1,
   'comment' => 0,
@@ -514,36 +589,9 @@ function ec_faq_demo_content_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_ref_faq_serv' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 27,
-      ),
-    ),
-  ),
-  'field_ref_faq_servcat' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 23,
-      ),
-      1 => array(
-        'target_id' => 44,
-      ),
-      2 => array(
-        'target_id' => 47,
-      ),
-    ),
-  ),
-  'field_ref_faq_servgroup' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 22,
-      ),
-      1 => array(
-        'target_id' => 33,
-      ),
-    ),
-  ),
+  'field_ref_faq_serv' => array(),
+  'field_ref_faq_servcat' => array(),
+  'field_ref_faq_servgroup' => array(),
   'field_ref_faq_content_page' => array(),
   'path' => array(
     'pathauto' => 1,
@@ -552,7 +600,7 @@ function ec_faq_demo_content_uuid_features_default_content() {
     'default' => array(
       'entity_type' => 'node',
       'entity_id' => 21,
-      'revision_id' => 141,
+      'revision_id' => 123,
       'name' => 'node:faq:default:default',
       'no_blocks' => 0,
       'css_id' => '',

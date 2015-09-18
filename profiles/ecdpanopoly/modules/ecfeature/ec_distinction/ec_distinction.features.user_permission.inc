@@ -14,7 +14,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction breadcrumbs'] = array(
     'name' => 'administer panelizer node distinction breadcrumbs',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -24,7 +23,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction content'] = array(
     'name' => 'administer panelizer node distinction content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -34,7 +32,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction context'] = array(
     'name' => 'administer panelizer node distinction context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -44,7 +41,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction defaults'] = array(
     'name' => 'administer panelizer node distinction defaults',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -54,7 +50,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction layout'] = array(
     'name' => 'administer panelizer node distinction layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -64,7 +59,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction overview'] = array(
     'name' => 'administer panelizer node distinction overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -74,7 +68,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer node distinction settings'] = array(
     'name' => 'administer panelizer node distinction settings',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -84,7 +77,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['administer panelizer taxonomy_term distinction_types defaults'] = array(
     'name' => 'administer panelizer taxonomy_term distinction_types defaults',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -105,7 +97,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['delete any distinction content'] = array(
     'name' => 'delete any distinction content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -125,7 +116,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['delete terms in distinction_types'] = array(
     'name' => 'delete terms in distinction_types',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -157,7 +147,6 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit terms in distinction_types'] = array(
     'name' => 'edit terms in distinction_types',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',

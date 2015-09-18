@@ -85,9 +85,9 @@ function ecdpanopoly_form_install_configure_form_alter(&$form, $form_state) {
   $form['server_settings']['date_default_timezone']['#default_value'] = 'America/New_York'; // Eastcoast ROCKS!
 
   // Define a default email address if we can guess a valid one
-  if (valid_email_address('thomas@energycircle.com')) {
-    $form['site_information']['site_mail']['#default_value'] = 'thomas@energycircle.com';
-    $form['admin_account']['account']['mail']['#default_value'] = 'tscola@energycircle.com';
+  if (valid_email_address('digital@energycircle.com')) {
+    $form['site_information']['site_mail']['#default_value'] = 'digital@energycircle.com';
+    $form['admin_account']['account']['mail']['#default_value'] = 'digital@energycircle.com';
   }
 }
 

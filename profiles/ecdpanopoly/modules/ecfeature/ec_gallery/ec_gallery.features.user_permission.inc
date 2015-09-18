@@ -14,7 +14,6 @@ function ec_gallery_user_default_permissions() {
   $permissions['administer panelizer node gallery breadcrumbs'] = array(
     'name' => 'administer panelizer node gallery breadcrumbs',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -24,7 +23,6 @@ function ec_gallery_user_default_permissions() {
   $permissions['administer panelizer node gallery content'] = array(
     'name' => 'administer panelizer node gallery content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -34,7 +32,6 @@ function ec_gallery_user_default_permissions() {
   $permissions['administer panelizer node gallery context'] = array(
     'name' => 'administer panelizer node gallery context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -44,7 +41,6 @@ function ec_gallery_user_default_permissions() {
   $permissions['administer panelizer node gallery defaults'] = array(
     'name' => 'administer panelizer node gallery defaults',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -54,7 +50,6 @@ function ec_gallery_user_default_permissions() {
   $permissions['administer panelizer node gallery layout'] = array(
     'name' => 'administer panelizer node gallery layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -64,7 +59,6 @@ function ec_gallery_user_default_permissions() {
   $permissions['administer panelizer node gallery overview'] = array(
     'name' => 'administer panelizer node gallery overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -74,7 +68,6 @@ function ec_gallery_user_default_permissions() {
   $permissions['administer panelizer node gallery settings'] = array(
     'name' => 'administer panelizer node gallery settings',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -95,7 +88,6 @@ function ec_gallery_user_default_permissions() {
   $permissions['delete any gallery content'] = array(
     'name' => 'delete any gallery content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

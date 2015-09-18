@@ -558,30 +558,13 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'media',
+        'module' => 'image',
         'settings' => array(
-          'allowed_schemes' => array(
-            'public' => 'public',
-            'vimeo' => 0,
-            'youtube' => 0,
-          ),
-          'allowed_types' => array(
-            'audio' => 0,
-            'document' => 0,
-            'image' => 'image',
-            'video' => 0,
-          ),
-          'browser_plugins' => array(
-            'media_default--media_browser_1' => 'media_default--media_browser_1',
-            'media_default--media_browser_my_files' => 0,
-            'media_internet' => 0,
-            'upload' => 'upload',
-          ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 1,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => FALSE,
+          'manualcrop_instant_crop' => 0,
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 1,
@@ -591,8 +574,10 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           ),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
+          'preview_image_style' => 'panopoly_image_full',
+          'progress_indicator' => 'throbber',
         ),
-        'type' => 'media_generic',
+        'type' => 'image_image',
         'weight' => 1,
       ),
     ),
@@ -836,7 +821,7 @@ function ec_panopoly_page_overrides_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_panopoly_page';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_panopoly_page'] = $strongarm;
 
   return $export;
@@ -852,7 +837,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_landing_page breadcrumbs'] = array(
     'name' => 'administer panelizer node panopoly_landing_page breadcrumbs',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -862,7 +846,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_landing_page content'] = array(
     'name' => 'administer panelizer node panopoly_landing_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -872,7 +855,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_landing_page context'] = array(
     'name' => 'administer panelizer node panopoly_landing_page context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -882,7 +864,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_landing_page defaults'] = array(
     'name' => 'administer panelizer node panopoly_landing_page defaults',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -892,7 +873,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_landing_page layout'] = array(
     'name' => 'administer panelizer node panopoly_landing_page layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -902,7 +882,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_landing_page overview'] = array(
     'name' => 'administer panelizer node panopoly_landing_page overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -912,7 +891,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_landing_page settings'] = array(
     'name' => 'administer panelizer node panopoly_landing_page settings',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -922,7 +900,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_page breadcrumbs'] = array(
     'name' => 'administer panelizer node panopoly_page breadcrumbs',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -932,7 +909,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_page content'] = array(
     'name' => 'administer panelizer node panopoly_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -942,7 +918,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_page context'] = array(
     'name' => 'administer panelizer node panopoly_page context',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -952,7 +927,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_page defaults'] = array(
     'name' => 'administer panelizer node panopoly_page defaults',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -962,7 +936,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_page layout'] = array(
     'name' => 'administer panelizer node panopoly_page layout',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -972,7 +945,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_page overview'] = array(
     'name' => 'administer panelizer node panopoly_page overview',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -982,7 +954,6 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer node panopoly_page settings'] = array(
     'name' => 'administer panelizer node panopoly_page settings',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',

@@ -158,12 +158,3 @@ function ec_base_config_default_linkit_profiles_alter(&$data) {
     unset($data['content_editors']->data['search_plugins']['entity:search_api_server']);
   }
 }
-
-/**
- * Implements hook_strongarm_alter().
- */
-function ec_base_config_strongarm_alter(&$data) {
-  if (isset($data['media_wysiwyg_wysiwyg_browser_plugins'])) {
-    unset($data['media_wysiwyg_wysiwyg_browser_plugins']->value[2]);
-  }
-}
