@@ -290,7 +290,7 @@ projects[entity_rules][patch][] = https://www.drupal.org/files/issues/entity_rul
 projects[compact_forms][patch][] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
 projects[cer][patch][] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
 projects[metatag][patch][0] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
-projects[metatag][patch][1] = patches/character_count_on_fields-1918738-9-ec.patch
+projects[metatag][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/master/patches/character_count_on_fields-1918738-9-ec.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
