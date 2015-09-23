@@ -1,22 +1,13 @@
-diff --git a/metatag.metatag.inc b/metatag.metatag.inc
-index f88271a..94c0417 100644
---- a/metatag.metatag.inc
-+++ b/metatag.metatag.inc
-@@ -166,6 +166,15 @@ function metatag_metatag_info() {
-     ),
-   );
- 
-+  // When the maxlength module is enabled, add a limit to the description and
-+  // abstract metatag.
-+  if (module_exists('maxlength')) {
-+    $info['tags']['title']['form']['#maxlength_js_limit'] = 35;
-+    $info['tags']['title']['form']['#maxlength_js'] = TRUE;
-+    $info['tags']['description']['form']['#maxlength_js_limit'] = 150;
-+    $info['tags']['description']['form']['#maxlength_js'] = TRUE;
-+    $info['tags']['abstract']['form']['#maxlength_js_limit'] = 150;
-+    $info['tags']['abstract']['form']['#maxlength_js'] = TRUE;
-+  }
-+
-   $info['tags']['keywords'] = array(
-     'label' => t('Keywords'),
-     'description' => t("A comma-separated list of keywords about the page. This meta tag is <em>not</em> supported by most search engines."),
+diff --git a/profiles/ecdpanopoly/modules/eccontrib/metatag/metatag.metatag.inc b/profiles/ecdpanopoly/modules/eccontrib/metatag/metatag.metatag.inc
+index 57d82f6..ac8a229 100644
+--- a/profiles/ecdpanopoly/modules/eccontrib/metatag/metatag.metatag.inc
++++ b/profiles/ecdpanopoly/modules/eccontrib/metatag/metatag.metatag.inc
+@@ -174,6 +174,8 @@ function metatag_metatag_info() {
+   // When the maxlength module is enabled, add a limit to the description and
+   // abstract metatag.
+   if (module_exists('maxlength')) {
++	$info['tags']['title']['form']['#maxlength_js_limit'] = 35;
++	$info['tags']['title']['form']['#maxlength_js'] = TRUE;
+     $info['tags']['description']['form']['#maxlength_js_limit'] = 150;
+     $info['tags']['description']['form']['#maxlength_js'] = TRUE;
+     $info['tags']['abstract']['form']['#maxlength_js_limit'] = 150;
