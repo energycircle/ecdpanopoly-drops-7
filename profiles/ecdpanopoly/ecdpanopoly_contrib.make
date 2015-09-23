@@ -172,7 +172,7 @@ projects[mailsystem][subdir] = eccontrib
 projects[mailsystem][version] = 2.34
 
 projects[masquerade][subdir] = eccontrib
-projects[masquerade][version] = "1.0-rc7"
+projects[masquerade][version] = 1.0-rc7
 
 projects[maxlength][subdir] = eccontrib
 projects[maxlength][version] = 3.x
@@ -191,6 +191,9 @@ projects[module_filter][version] = 2.x-dev
 
 projects[node_authlink][subdir] = eccontrib
 projects[node_authlink][version] = 1.1
+
+projects[node_clone][subdir] = eccontrib
+projects[node_clone][version] = 1.0-rc2
 
 projects[nodequeue][subdir] = eccontrib
 projects[nodequeue][version] = 2.0
@@ -282,46 +285,46 @@ projects[xmlsitemap][version] = 2.2
 
 ;PATCHES
 projects[superfish][patch][2163545]= https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
-projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch" 
-projects[entity_rules][patch][] = "https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch"
-projects[compact_forms][patch][] = "https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch"
-projects[cer][patch][] = "https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch"
-
+projects[entity_rules][patch][] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch 
+projects[entity_rules][patch][] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
+projects[compact_forms][patch][] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
+projects[cer][patch][] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
+projects[metatag][patch][] = patches/character_count_on_fields-1918738-9-ec.patch
 
 ; EC CUSTOM MODS
-projects[energycircle_apps][download][type] = "git"
-projects[energycircle_apps][download][url] = "https://github.com/energycircle/energycircle_apps.git"
-projects[energycircle_apps][subdir] = "eccustom"
-projects[energycircle_apps][type] = "module"
-projects[energycircle_apps][version] = "1.0-rc2"
+projects[energycircle_apps][download][type] = git
+projects[energycircle_apps][download][url] = https://github.com/energycircle/energycircle_apps.git
+projects[energycircle_apps][subdir] = eccustom
+projects[energycircle_apps][type] = module
+projects[energycircle_apps][version] = 1.0-rc2
 
-projects[jcarousel_skins][download][type] = "git"
-projects[jcarousel_skins][download][url] = "https://github.com/energycircle/jcarousel_skins.git"
-projects[jcarousel_skins][subdir] = "eccustom"
-projects[jcarousel_skins][type] = "module"
-projects[jcarousel_skins][version] = "2.6+2-dev"
+projects[jcarousel_skins][download][type] = git
+projects[jcarousel_skins][download][url] = https://github.com/energycircle/jcarousel_skins.git
+projects[jcarousel_skins][subdir] = eccustom
+projects[jcarousel_skins][type] = module
+projects[jcarousel_skins][version] = 2.6+2-dev
 
-projects[ec_modifications][download][type] = "git"
-projects[ec_modifications][download][url] = "https://github.com/energycircle/ec_modifications.git"
-projects[ec_modifications][subdir] = "eccustom"
-projects[ec_modifications][type] = "module"
-projects[ec_modifications][version] = "2.6+2-dev"
+projects[ec_modifications][download][type] = git
+projects[ec_modifications][download][url] = https://github.com/energycircle/ec_modifications.git
+projects[ec_modifications][subdir] = eccustom
+projects[ec_modifications][type] = module
+projects[ec_modifications][version] = 2.6+2-dev
 
-projects[superfish_hack][download][type] = "git"
-projects[superfish_hack][download][url] = "https://github.com/energycircle/superfish_hack.git"
-projects[superfish_hack][subdir] = "eccustom"
-projects[superfish_hack][type] = "module"
+projects[superfish_hack][download][type] = git
+projects[superfish_hack][download][url] = https://github.com/energycircle/superfish_hack.git
+projects[superfish_hack][subdir] = eccustom
+projects[superfish_hack][type] = module
 
 ; LIBRARIES
-libraries[superfish][download][type] = "get"
-libraries[superfish][type] = "library"
-libraries[superfish][directory_name] = "superfish"
-libraries[superfish][download][url] = "https://github.com/mehrpadin/Superfish-for-Drupal/archive/master.zip"
+libraries[superfish][download][type] = get
+libraries[superfish][type] = library
+libraries[superfish][directory_name] = superfish
+libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/archive/master.zip
 
-libraries[flexslider][download][type] = "get"
-libraries[flexslider][type] = "library"
-libraries[flexslider][directory_name] = "flexslider"
-libraries[flexslider][download][url] = "https://api.github.com/repos/woothemes/FlexSlider/zipball/version/2.2.2"
+libraries[flexslider][download][type] = get
+libraries[flexslider][type] = library
+libraries[flexslider][directory_name] = flexslider
+libraries[flexslider][download][url] = https://api.github.com/repos/woothemes/FlexSlider/zipball/version/2.2.2
 
 ; THEMES
 projects[adaptivetheme][version] = 3.x
