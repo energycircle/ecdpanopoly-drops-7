@@ -285,12 +285,14 @@ projects[xmlsitemap][version] = 2.2
 
 ;PATCHES
 projects[superfish][patch][2163545]= https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
-projects[entity_rules][patch][] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch 
-projects[entity_rules][patch][] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
-projects[compact_forms][patch][] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
+projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch 
+projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
+projects[compact_forms][patch] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
 projects[cer][patch][] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
 projects[metatag][patch][0] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
 projects[metatag][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/master/patches/character_count_on_fields-1918738-9-ec.patch
+projects[maxlength][patch] =https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
+
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
