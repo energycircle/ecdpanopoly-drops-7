@@ -86,6 +86,12 @@ projects[ec_distributor][subdir] = ecfeature
 projects[ec_distributor][type] = module
 projects[ec_distributor][version] = 1.x
 
+projects[ec_external_video][download][type] = git
+projects[ec_external_video][download][url] = https://github.com/energycircle/ec_external_video.git
+projects[ec_external_video][subdir] = ecfeature
+projects[ec_external_video][type] = module
+projects[ec_external_video][version] = 1.x
+
 projects[ec_faq][download][type] = git
 projects[ec_faq][download][url] = https://github.com/energycircle/ec_faq.git
 projects[ec_faq][subdir] = ecfeature
