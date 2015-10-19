@@ -10,7 +10,7 @@
 function ec_blog_post_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_blog_category'
+  // Exported field_base: 'field_blog_category'.
   $field_bases['field_blog_category'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -37,7 +37,7 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_blog_image'
+  // Exported field_base: 'field_blog_image'.
   $field_bases['field_blog_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -59,7 +59,7 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_ref_article_blog'
+  // Exported field_base: 'field_ref_article_blog'.
   $field_bases['field_ref_article_blog'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -94,7 +94,7 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_blog_page'
+  // Exported field_base: 'field_ref_blog_page'.
   $field_bases['field_ref_blog_page'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -129,7 +129,7 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_study_blog'
+  // Exported field_base: 'field_ref_case_study_blog'.
   $field_bases['field_ref_case_study_blog'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -164,7 +164,7 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_page_blog'
+  // Exported field_base: 'field_ref_page_blog'.
   $field_bases['field_ref_page_blog'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -199,7 +199,7 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_cat_blog'
+  // Exported field_base: 'field_ref_serv_cat_blog'.
   $field_bases['field_ref_serv_cat_blog'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -234,7 +234,7 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_group_blog'
+  // Exported field_base: 'field_ref_serv_group_blog'.
   $field_bases['field_ref_serv_group_blog'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -269,7 +269,7 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_service_blog'
+  // Exported field_base: 'field_ref_service_blog'.
   $field_bases['field_ref_service_blog'] = array(
     'active' => 1,
     'cardinality' => -1,

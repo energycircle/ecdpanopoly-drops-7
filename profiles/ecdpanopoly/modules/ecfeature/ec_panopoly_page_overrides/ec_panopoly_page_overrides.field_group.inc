@@ -21,7 +21,7 @@ function ec_panopoly_page_overrides_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'CTA Form',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_button_text',
       1 => 'field_call_to_action',
@@ -50,7 +50,7 @@ function ec_panopoly_page_overrides_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Shown on This Page',
-    'weight' => '6',
+    'weight' => '8',
     'children' => array(
       0 => 'field_ref_page_blog',
       1 => 'field_ref_page_case_study',

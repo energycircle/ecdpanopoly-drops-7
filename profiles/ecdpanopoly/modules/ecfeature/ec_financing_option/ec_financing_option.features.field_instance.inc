@@ -10,7 +10,7 @@
 function ec_financing_option_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-financing_option-body'
+  // Exported field_instance: 'node-financing_option-body'.
   $field_instances['node-financing_option-body'] = array(
     'bundle' => 'financing_option',
     'default_value' => NULL,
@@ -77,7 +77,145 @@ function ec_financing_option_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-financing_option-field_financing_forms'
+  // Exported field_instance: 'node-financing_option-field_button_text'.
+  $field_instances['node-financing_option-field_button_text'] = array(
+    'bundle' => 'financing_option',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_button_text',
+    'label' => 'Button Text',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-financing_option-field_call_to_action'.
+  $field_instances['node-financing_option-field_call_to_action'] = array(
+    'bundle' => 'financing_option',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_call_to_action',
+    'label' => 'Call to Action',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-financing_option-field_financing_forms'.
   $field_instances['node-financing_option-field_financing_forms'] = array(
     'bundle' => 'financing_option',
     'deleted' => 0,
@@ -140,7 +278,7 @@ function ec_financing_option_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-financing_option-field_financing_link'
+  // Exported field_instance: 'node-financing_option-field_financing_link'.
   $field_instances['node-financing_option-field_financing_link'] = array(
     'bundle' => 'financing_option',
     'default_value' => NULL,
@@ -223,7 +361,7 @@ function ec_financing_option_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-financing_option-field_financing_logo'
+  // Exported field_instance: 'node-financing_option-field_financing_logo'.
   $field_instances['node-financing_option-field_financing_logo'] = array(
     'bundle' => 'financing_option',
     'deleted' => 0,
@@ -322,9 +460,75 @@ function ec_financing_option_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-financing_option-field_ref_to_cta_form'.
+  $field_instances['node-financing_option-field_ref_to_cta_form'] = array(
+    'bundle' => 'financing_option',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 6,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_to_cta_form',
+    'label' => 'CTA form',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 11,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Button Text');
+  t('CTA form');
+  t('Call to Action');
   t('Enter a full url to a third-party web page. Enter the link text in the link\'s title field, such as "Visit ABC Company."');
   t('Forms');
   t('Link');

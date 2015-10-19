@@ -23,11 +23,40 @@ function ec_panopoly_page_overrides_ctools_plugin_api($module = NULL, $api = NUL
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function ec_panopoly_page_overrides_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_panelizer_defaults_override_alter().
  */
 function ec_panopoly_page_overrides_panelizer_defaults_override_alter(&$data) {
   if (isset($data['node:panopoly_page:default:default'])) {
     $data['node:panopoly_page:default:default']->display->content['new-74f82699-93ba-4b15-8bcf-e3bfa1894d40']->panel = 'two_66_33_first'; /* WAS: 'contentmain' */
+    $data['node:panopoly_page:default:default']->display->content['new-ab6d95ae-008b-48ab-84b4-0b3c475b7fa4'] = (object) array(
+          'pid' => 'new-ab6d95ae-008b-48ab-84b4-0b3c475b7fa4',
+          'panel' => 'two_66_33_first',
+          'type' => 'views_panes',
+          'subtype' => 'hero_image_or_video-panel_pane_1',
+          'shown' => TRUE,
+          'access' => array(),
+          'configuration' => array(
+            'view_settings' => 'fields',
+            'header_type' => 'none',
+            'view_mode' => 'teaser',
+          ),
+          'cache' => array(),
+          'style' => array(
+            'settings' => NULL,
+          ),
+          'css' => array(),
+          'extras' => array(),
+          'position' => 0,
+          'locks' => array(),
+          'uuid' => 'ab6d95ae-008b-48ab-84b4-0b3c475b7fa4',
+        ); /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->content['new-b92fd697-8377-4b5e-87cc-d81df0e7e61d'] = (object) array(
           'pid' => 'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d',
           'panel' => 'two_66_33_second',
@@ -61,25 +90,20 @@ function ec_panopoly_page_overrides_panelizer_defaults_override_alter(&$data) {
           'locks' => array(),
           'uuid' => 'b92fd697-8377-4b5e-87cc-d81df0e7e61d',
         ); /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-e0d93093-20b4-42cd-bf23-6f2f487240a6']->configuration['formatter_settings']['image_style'] = 'sc_940x470_mc'; /* WAS: 'panopoly_image_half' */
-    $data['node:panopoly_page:default:default']->display->content['new-e0d93093-20b4-42cd-bf23-6f2f487240a6']->configuration['override_title_heading'] = 'h2'; /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->content['new-e0d93093-20b4-42cd-bf23-6f2f487240a6']->panel = 'two_66_33_first'; /* WAS: 'contentmain' */
     $data['node:panopoly_page:default:default']->display->layout = 'two_66_33'; /* WAS: 'radix_boxton' */
     $data['node:panopoly_page:default:default']->display->panel_settings['style_settings']['two_66_33_bottom'] = NULL; /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->panel_settings['style_settings']['two_66_33_first'] = NULL; /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->panel_settings['style_settings']['two_66_33_second'] = NULL; /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->panel_settings['style_settings']['two_66_33_top'] = NULL; /* WAS: '' */
-    $data['node:panopoly_page:default:default']->display->panels['contentmain'][0] = 'new-96fb1bf5-7ac2-4566-9dae-876a363c71c9'; /* WAS: 'new-e0d93093-20b4-42cd-bf23-6f2f487240a6' */
-    $data['node:panopoly_page:default:default']->display->panels['contentmain'][1] = 'new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d'; /* WAS: 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40' */
     $data['node:panopoly_page:default:default']->display->panels['two_66_33_first'] = array(
-      0 => 'new-e0d93093-20b4-42cd-bf23-6f2f487240a6',
+      0 => 'new-ab6d95ae-008b-48ab-84b4-0b3c475b7fa4',
       1 => 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40',
     ); /* WAS: '' */
     $data['node:panopoly_page:default:default']->display->panels['two_66_33_second'] = array(
       0 => 'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d',
     ); /* WAS: '' */
-    unset($data['node:panopoly_page:default:default']->display->panels['contentmain'][2]);
-    unset($data['node:panopoly_page:default:default']->display->panels['contentmain'][3]);
+    unset($data['node:panopoly_page:default:default']->display->content['new-e0d93093-20b4-42cd-bf23-6f2f487240a6']);
+    unset($data['node:panopoly_page:default:default']->display->panels['contentmain']);
   }
 }
 

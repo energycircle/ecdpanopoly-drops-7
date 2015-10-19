@@ -10,7 +10,7 @@
 function ec_faq_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-faq-body'
+  // Exported field_instance: 'node-faq-body'.
   $field_instances['node-faq-body'] = array(
     'bundle' => 'faq',
     'default_value' => NULL,
@@ -77,7 +77,7 @@ function ec_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-faq-field_ref_faq_content_page'
+  // Exported field_instance: 'node-faq-field_ref_faq_content_page'.
   $field_instances['node-faq-field_ref_faq_content_page'] = array(
     'bundle' => 'faq',
     'default_value' => NULL,
@@ -140,7 +140,7 @@ function ec_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-panopoly_page-field_ref_page_faq'
+  // Exported field_instance: 'node-panopoly_page-field_ref_page_faq'.
   $field_instances['node-panopoly_page-field_ref_page_faq'] = array(
     'bundle' => 'panopoly_page',
     'default_value' => NULL,
@@ -209,7 +209,7 @@ function ec_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_category-field_ref_prodcat_faq'
+  // Exported field_instance: 'node-product_category-field_ref_prodcat_faq'.
   $field_instances['node-product_category-field_ref_prodcat_faq'] = array(
     'bundle' => 'product_category',
     'default_value' => NULL,
@@ -272,7 +272,7 @@ function ec_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_ref_prodpage_faq'
+  // Exported field_instance: 'node-product_page-field_ref_prodpage_faq'.
   $field_instances['node-product_page-field_ref_prodpage_faq'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -335,7 +335,7 @@ function ec_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_ref_service_faq'
+  // Exported field_instance: 'node-service-field_ref_service_faq'.
   $field_instances['node-service-field_ref_service_faq'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -398,7 +398,7 @@ function ec_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_ref_serv_cat_faq'
+  // Exported field_instance: 'node-service_category-field_ref_serv_cat_faq'.
   $field_instances['node-service_category-field_ref_serv_cat_faq'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -461,7 +461,7 @@ function ec_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_ref_serv_group_faq'
+  // Exported field_instance: 'node-service_group-field_ref_serv_group_faq'.
   $field_instances['node-service_group-field_ref_serv_group_faq'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,

@@ -5,6 +5,7 @@ package = ECFeatures - Core EXT
 version = 7.x-1.4
 project = ec_faq
 dependencies[] = draggableviews
+dependencies[] = ec_panopoly_page_overrides
 dependencies[] = entityreference
 dependencies[] = field_group
 dependencies[] = menu

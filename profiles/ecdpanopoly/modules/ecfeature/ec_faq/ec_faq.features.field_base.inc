@@ -10,7 +10,7 @@
 function ec_faq_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ref_faq_content_page'
+  // Exported field_base: 'field_ref_faq_content_page'.
   $field_bases['field_ref_faq_content_page'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -48,7 +48,7 @@ function ec_faq_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_page_faq'
+  // Exported field_base: 'field_ref_page_faq'.
   $field_bases['field_ref_page_faq'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -86,7 +86,7 @@ function ec_faq_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodcat_faq'
+  // Exported field_base: 'field_ref_prodcat_faq'.
   $field_bases['field_ref_prodcat_faq'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -124,7 +124,7 @@ function ec_faq_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_faq'
+  // Exported field_base: 'field_ref_prodpage_faq'.
   $field_bases['field_ref_prodpage_faq'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -162,7 +162,7 @@ function ec_faq_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_cat_faq'
+  // Exported field_base: 'field_ref_serv_cat_faq'.
   $field_bases['field_ref_serv_cat_faq'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -200,7 +200,7 @@ function ec_faq_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_group_faq'
+  // Exported field_base: 'field_ref_serv_group_faq'.
   $field_bases['field_ref_serv_group_faq'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -238,7 +238,7 @@ function ec_faq_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_service_faq'
+  // Exported field_base: 'field_ref_service_faq'.
   $field_bases['field_ref_service_faq'] = array(
     'active' => 1,
     'cardinality' => -1,

@@ -176,6 +176,29 @@ function ec_financing_option_panelizer_defaults() {
   $display->content['new-9da01ed5-9406-4a60-a0ef-a0168e4ec151'] = $pane;
   $display->panels['two_66_33_first'][2] = 'new-9da01ed5-9406-4a60-a0ef-a0168e4ec151';
   $pane = new stdClass();
+  $pane->pid = 'new-58256036-ac65-4600-b6f2-1bd420f4e371';
+  $pane->panel = 'two_66_33_second';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'service_request-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+    'view_mode' => 'full',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '58256036-ac65-4600-b6f2-1bd420f4e371';
+  $display->content['new-58256036-ac65-4600-b6f2-1bd420f4e371'] = $pane;
+  $display->panels['two_66_33_second'][0] = 'new-58256036-ac65-4600-b6f2-1bd420f4e371';
+  $pane = new stdClass();
   $pane->pid = 'new-19dcdd26-2175-4e55-a58b-54edc2722695';
   $pane->panel = 'two_66_33_second';
   $pane->type = 'entity_field';
@@ -200,11 +223,11 @@ function ec_financing_option_panelizer_defaults() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 0;
+  $pane->position = 1;
   $pane->locks = array();
   $pane->uuid = '19dcdd26-2175-4e55-a58b-54edc2722695';
   $display->content['new-19dcdd26-2175-4e55-a58b-54edc2722695'] = $pane;
-  $display->panels['two_66_33_second'][0] = 'new-19dcdd26-2175-4e55-a58b-54edc2722695';
+  $display->panels['two_66_33_second'][1] = 'new-19dcdd26-2175-4e55-a58b-54edc2722695';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;

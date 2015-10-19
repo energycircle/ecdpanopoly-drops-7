@@ -6,6 +6,7 @@ version = 7.x-1.6
 project = ec_casestudy
 dependencies[] = ec_panopoly_page_overrides
 dependencies[] = field_group
+dependencies[] = flexslider_views
 apps[screenshots][] = app/screenshot.png
 apps[logo] = app/logo.png
 apps[author] = Energy Circle

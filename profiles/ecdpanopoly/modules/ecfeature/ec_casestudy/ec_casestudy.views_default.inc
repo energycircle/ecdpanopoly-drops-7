@@ -245,10 +245,18 @@ function ec_casestudy_views_default_views() {
 
   /* Display: Case Study - Service page */
   $handler = $view->new_display('panel_pane', 'Case Study - Service page', 'panel_pane_1');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
 
   /* Display: Case Study - Service category page */
   $handler = $view->new_display('panel_pane', 'Case Study - Service category page', 'panel_pane_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_ref_case_study_serv_cat_target_id']['id'] = 'field_ref_case_study_serv_cat_target_id';

@@ -10,7 +10,7 @@
 function ec_casestudy_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ref_article_case_study'
+  // Exported field_base: 'field_ref_article_case_study'.
   $field_bases['field_ref_article_case_study'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -48,7 +48,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_blog_case_study'
+  // Exported field_base: 'field_ref_blog_case_study'.
   $field_bases['field_ref_blog_case_study'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -83,7 +83,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_study_serv_group'
+  // Exported field_base: 'field_ref_case_study_serv_group'.
   $field_bases['field_ref_case_study_serv_group'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -118,7 +118,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_sudy_page'
+  // Exported field_base: 'field_ref_case_sudy_page'.
   $field_bases['field_ref_case_sudy_page'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -153,7 +153,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_gallery_case_study'
+  // Exported field_base: 'field_ref_gallery_case_study'.
   $field_bases['field_ref_gallery_case_study'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -191,7 +191,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_page_case_study'
+  // Exported field_base: 'field_ref_page_case_study'.
   $field_bases['field_ref_page_case_study'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -226,7 +226,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodcat_case_study'
+  // Exported field_base: 'field_ref_prodcat_case_study'.
   $field_bases['field_ref_prodcat_case_study'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -264,7 +264,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_case_study'
+  // Exported field_base: 'field_ref_prodpage_case_study'.
   $field_bases['field_ref_prodpage_case_study'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -299,7 +299,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_promo_case_study'
+  // Exported field_base: 'field_ref_promo_case_study'.
   $field_bases['field_ref_promo_case_study'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -334,7 +334,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_cat_case_study'
+  // Exported field_base: 'field_ref_serv_cat_case_study'.
   $field_bases['field_ref_serv_cat_case_study'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -369,7 +369,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_group_case_study'
+  // Exported field_base: 'field_ref_serv_group_case_study'.
   $field_bases['field_ref_serv_group_case_study'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -404,7 +404,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_service_case_study'
+  // Exported field_base: 'field_ref_service_case_study'.
   $field_bases['field_ref_service_case_study'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -439,7 +439,7 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_case_study'
+  // Exported field_base: 'field_ref_testimonial_case_study'.
   $field_bases['field_ref_testimonial_case_study'] = array(
     'active' => 1,
     'cardinality' => -1,

@@ -10,7 +10,7 @@
 function ec_financing_option_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_financing_forms'
+  // Exported field_base: 'field_financing_forms'.
   $field_bases['field_financing_forms'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -33,7 +33,7 @@ function ec_financing_option_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_financing_link'
+  // Exported field_base: 'field_financing_link'.
   $field_bases['field_financing_link'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -62,7 +62,7 @@ function ec_financing_option_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_financing_logo'
+  // Exported field_base: 'field_financing_logo'.
   $field_bases['field_financing_logo'] = array(
     'active' => 1,
     'cardinality' => 1,

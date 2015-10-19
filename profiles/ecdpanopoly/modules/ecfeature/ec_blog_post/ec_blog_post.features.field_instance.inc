@@ -10,7 +10,7 @@
 function ec_blog_post_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-field_ref_article_blog'
+  // Exported field_instance: 'node-article-field_ref_article_blog'.
   $field_instances['node-article-field_ref_article_blog'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -79,7 +79,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-body'
+  // Exported field_instance: 'node-blog_post-body'.
   $field_instances['node-blog_post-body'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -151,7 +151,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_blog_category'
+  // Exported field_instance: 'node-blog_post-field_blog_category'.
   $field_instances['node-blog_post-field_blog_category'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -209,7 +209,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_blog_image'
+  // Exported field_instance: 'node-blog_post-field_blog_image'.
   $field_instances['node-blog_post-field_blog_image'] = array(
     'bundle' => 'blog_post',
     'deleted' => 0,
@@ -312,7 +312,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_content_link'
+  // Exported field_instance: 'node-blog_post-field_content_link'.
   $field_instances['node-blog_post-field_content_link'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -393,7 +393,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_display_date'
+  // Exported field_instance: 'node-blog_post-field_display_date'.
   $field_instances['node-blog_post-field_display_date'] = array(
     'bundle' => 'blog_post',
     'deleted' => 0,
@@ -477,7 +477,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_ref_blog_page'
+  // Exported field_instance: 'node-blog_post-field_ref_blog_page'.
   $field_instances['node-blog_post-field_ref_blog_page'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -546,7 +546,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_study_blog'
+  // Exported field_instance: 'node-case_study-field_ref_case_study_blog'.
   $field_instances['node-case_study-field_ref_case_study_blog'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -615,7 +615,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-panopoly_page-field_ref_page_blog'
+  // Exported field_instance: 'node-panopoly_page-field_ref_page_blog'.
   $field_instances['node-panopoly_page-field_ref_page_blog'] = array(
     'bundle' => 'panopoly_page',
     'default_value' => NULL,
@@ -690,7 +690,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_ref_service_blog'
+  // Exported field_instance: 'node-service-field_ref_service_blog'.
   $field_instances['node-service-field_ref_service_blog'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -759,7 +759,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_ref_serv_cat_blog'
+  // Exported field_instance: 'node-service_category-field_ref_serv_cat_blog'.
   $field_instances['node-service_category-field_ref_serv_cat_blog'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -828,7 +828,7 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_ref_serv_group_blog'
+  // Exported field_instance: 'node-service_group-field_ref_serv_group_blog'.
   $field_instances['node-service_group-field_ref_serv_group_blog'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,

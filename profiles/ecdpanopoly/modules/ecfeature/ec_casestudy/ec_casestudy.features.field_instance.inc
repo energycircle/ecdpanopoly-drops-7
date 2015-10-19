@@ -10,7 +10,7 @@
 function ec_casestudy_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-field_ref_article_case_study'
+  // Exported field_instance: 'node-article-field_ref_article_case_study'.
   $field_instances['node-article-field_ref_article_case_study'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -79,7 +79,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_ref_blog_case_study'
+  // Exported field_instance: 'node-blog_post-field_ref_blog_case_study'.
   $field_instances['node-blog_post-field_ref_blog_case_study'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -148,7 +148,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-body'
+  // Exported field_instance: 'node-case_study-body'.
   $field_instances['node-case_study-body'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -215,7 +215,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_display_subtitle'
+  // Exported field_instance: 'node-case_study-field_display_subtitle'.
   $field_instances['node-case_study-field_display_subtitle'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -280,7 +280,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_display_title'
+  // Exported field_instance: 'node-case_study-field_display_title'.
   $field_instances['node-case_study-field_display_title'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -345,7 +345,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_sudy_page'
+  // Exported field_instance: 'node-case_study-field_ref_case_sudy_page'.
   $field_instances['node-case_study-field_ref_case_sudy_page'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -414,7 +414,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-gallery-field_ref_gallery_case_study'
+  // Exported field_instance: 'node-gallery-field_ref_gallery_case_study'.
   $field_instances['node-gallery-field_ref_gallery_case_study'] = array(
     'bundle' => 'gallery',
     'default_value' => NULL,
@@ -477,7 +477,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-panopoly_page-field_ref_page_case_study'
+  // Exported field_instance: 'node-panopoly_page-field_ref_page_case_study'.
   $field_instances['node-panopoly_page-field_ref_page_case_study'] = array(
     'bundle' => 'panopoly_page',
     'default_value' => NULL,
@@ -553,7 +553,7 @@ function ec_casestudy_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-product_category-field_ref_prodcat_case_study'
+  // 'node-product_category-field_ref_prodcat_case_study'.
   $field_instances['node-product_category-field_ref_prodcat_case_study'] = array(
     'bundle' => 'product_category',
     'default_value' => NULL,
@@ -616,7 +616,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_ref_prodpage_case_study'
+  // Exported field_instance: 'node-product_page-field_ref_prodpage_case_study'.
   $field_instances['node-product_page-field_ref_prodpage_case_study'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -685,7 +685,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_ref_promo_case_study'
+  // Exported field_instance: 'node-promotion-field_ref_promo_case_study'.
   $field_instances['node-promotion-field_ref_promo_case_study'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -754,7 +754,7 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_ref_service_case_study'
+  // Exported field_instance: 'node-service-field_ref_service_case_study'.
   $field_instances['node-service-field_ref_service_case_study'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -824,7 +824,7 @@ function ec_casestudy_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-service_category-field_ref_serv_cat_case_study'
+  // 'node-service_category-field_ref_serv_cat_case_study'.
   $field_instances['node-service_category-field_ref_serv_cat_case_study'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -894,7 +894,7 @@ function ec_casestudy_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-service_group-field_ref_serv_group_case_study'
+  // 'node-service_group-field_ref_serv_group_case_study'.
   $field_instances['node-service_group-field_ref_serv_group_case_study'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,
@@ -964,7 +964,7 @@ function ec_casestudy_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-testimonial-field_ref_testimonial_case_study'
+  // 'node-testimonial-field_ref_testimonial_case_study'.
   $field_instances['node-testimonial-field_ref_testimonial_case_study'] = array(
     'bundle' => 'testimonial',
     'default_value' => NULL,

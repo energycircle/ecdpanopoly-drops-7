@@ -137,7 +137,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -434,7 +434,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -674,7 +674,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -821,7 +821,7 @@ function ec_panopoly_page_overrides_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_panopoly_page';
-  $strongarm->value = 'edit-menu';
+  $strongarm->value = 'edit-panelizer';
   $export['additional_settings__active_tab_panopoly_page'] = $strongarm;
 
   return $export;
