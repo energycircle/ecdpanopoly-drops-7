@@ -42,7 +42,7 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Content: Tetstimonial Name */
+  /* Field: Content: Testimonial Name */
   $handler->display->display_options['fields']['field_tetstimonial_name']['id'] = 'field_tetstimonial_name';
   $handler->display->display_options['fields']['field_tetstimonial_name']['table'] = 'field_data_field_tetstimonial_name';
   $handler->display->display_options['fields']['field_tetstimonial_name']['field'] = 'field_tetstimonial_name';
@@ -141,7 +141,7 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Content: Tetstimonial Name */
+  /* Field: Content: Testimonial Name */
   $handler->display->display_options['fields']['field_tetstimonial_name']['id'] = 'field_tetstimonial_name';
   $handler->display->display_options['fields']['field_tetstimonial_name']['table'] = 'field_data_field_tetstimonial_name';
   $handler->display->display_options['fields']['field_tetstimonial_name']['field'] = 'field_tetstimonial_name';

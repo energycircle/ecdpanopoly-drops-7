@@ -35,7 +35,7 @@ projects[panopoly_search][subdir] = panopoly
 
 
 ;panopoly add ons
-projects[panopoly_config][version] = 1.x-dev
+projects[panopoly_config][version] = 1.0
 projects[panopoly_config][subdir] = panopoly_custom
 
 projects[panopoly_seo][version] = 1.0-beta3

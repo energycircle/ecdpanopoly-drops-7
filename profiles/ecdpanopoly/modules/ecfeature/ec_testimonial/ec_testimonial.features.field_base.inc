@@ -10,7 +10,7 @@
 function ec_testimonial_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ref_article_testimonial'
+  // Exported field_base: 'field_ref_article_testimonial'.
   $field_bases['field_ref_article_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -45,7 +45,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_study_testimonial'
+  // Exported field_base: 'field_ref_case_study_testimonial'.
   $field_bases['field_ref_case_study_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -80,7 +80,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_page_testimonial'
+  // Exported field_base: 'field_ref_page_testimonial'.
   $field_bases['field_ref_page_testimonial'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -115,7 +115,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodcat_testimonial'
+  // Exported field_base: 'field_ref_prodcat_testimonial'.
   $field_bases['field_ref_prodcat_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -153,7 +153,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_testimonial'
+  // Exported field_base: 'field_ref_prodpage_testimonial'.
   $field_bases['field_ref_prodpage_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -188,7 +188,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_cat_testimonial'
+  // Exported field_base: 'field_ref_serv_cat_testimonial'.
   $field_bases['field_ref_serv_cat_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -223,7 +223,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_group_testimonial'
+  // Exported field_base: 'field_ref_serv_group_testimonial'.
   $field_bases['field_ref_serv_group_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -258,7 +258,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_service_testimonial'
+  // Exported field_base: 'field_ref_service_testimonial'.
   $field_bases['field_ref_service_testimonial'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -293,7 +293,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_testimonial_city'
+  // Exported field_base: 'field_testimonial_city'.
   $field_bases['field_testimonial_city'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -314,7 +314,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_testimonial_image'
+  // Exported field_base: 'field_testimonial_image'.
   $field_bases['field_testimonial_image'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -336,7 +336,7 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_tetstimonial_name'
+  // Exported field_base: 'field_tetstimonial_name'.
   $field_bases['field_tetstimonial_name'] = array(
     'active' => 1,
     'cardinality' => 1,

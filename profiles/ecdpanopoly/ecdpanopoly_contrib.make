@@ -37,7 +37,7 @@ projects[cer][subdir] = eccontrib
 projects[cer][version] = 3.0-alpha7
 
 projects[colorbox][subdir] = eccontrib
-projects[colorbox][version] = 2.9
+projects[colorbox][version] = 2.10
 
 projects[compact_forms][subdir] = eccontrib
 projects[compact_forms][version] = 1.x
@@ -247,7 +247,7 @@ projects[smtp][subdir] = eccontrib
 projects[smtp][version] = 1.2
 
 projects[table_element][subdir] = eccontrib
-projects[table_element][version] = 1.0-beta1
+projects[table_element][version] = 1.0-beta2
 
 projects[taxonomy_menu][subdir] = eccontrib
 projects[taxonomy_menu][version] = 1.x

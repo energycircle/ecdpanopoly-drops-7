@@ -10,7 +10,28 @@
 function ec_service_stack_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ref_blog_serv_cat'
+  // Exported field_base: 'field_featured_video'.
+  $field_bases['field_featured_video'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_featured_video',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_ref_blog_serv_cat'.
   $field_bases['field_ref_blog_serv_cat'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -45,7 +66,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_blog_serv_group'
+  // Exported field_base: 'field_ref_blog_serv_group'.
   $field_bases['field_ref_blog_serv_group'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -80,7 +101,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_blog_service'
+  // Exported field_base: 'field_ref_blog_service'.
   $field_bases['field_ref_blog_service'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -115,7 +136,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_study_serv_cat'
+  // Exported field_base: 'field_ref_case_study_serv_cat'.
   $field_bases['field_ref_case_study_serv_cat'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -150,7 +171,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_study_service'
+  // Exported field_base: 'field_ref_case_study_service'.
   $field_bases['field_ref_case_study_service'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -185,7 +206,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_faq_serv'
+  // Exported field_base: 'field_ref_faq_serv'.
   $field_bases['field_ref_faq_serv'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -223,7 +244,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_faq_servcat'
+  // Exported field_base: 'field_ref_faq_servcat'.
   $field_bases['field_ref_faq_servcat'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -261,7 +282,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_faq_servgroup'
+  // Exported field_base: 'field_ref_faq_servgroup'.
   $field_bases['field_ref_faq_servgroup'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -299,7 +320,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_serv_cat'
+  // Exported field_base: 'field_ref_prodpage_serv_cat'.
   $field_bases['field_ref_prodpage_serv_cat'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -334,7 +355,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_serv_group'
+  // Exported field_base: 'field_ref_prodpage_serv_group'.
   $field_bases['field_ref_prodpage_serv_group'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -369,7 +390,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_service'
+  // Exported field_base: 'field_ref_prodpage_service'.
   $field_bases['field_ref_prodpage_service'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -404,7 +425,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_promo_serv_cat'
+  // Exported field_base: 'field_ref_promo_serv_cat'.
   $field_bases['field_ref_promo_serv_cat'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -439,7 +460,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_promo_serv_group'
+  // Exported field_base: 'field_ref_promo_serv_group'.
   $field_bases['field_ref_promo_serv_group'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -474,7 +495,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_promo_service'
+  // Exported field_base: 'field_ref_promo_service'.
   $field_bases['field_ref_promo_service'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -509,7 +530,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_cat_serv_group'
+  // Exported field_base: 'field_ref_serv_cat_serv_group'.
   $field_bases['field_ref_serv_cat_serv_group'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -544,7 +565,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_cat_services'
+  // Exported field_base: 'field_ref_serv_cat_services'.
   $field_bases['field_ref_serv_cat_services'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -579,7 +600,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_group_serv_cat'
+  // Exported field_base: 'field_ref_serv_group_serv_cat'.
   $field_bases['field_ref_serv_group_serv_cat'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -617,7 +638,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_service_serv_cat'
+  // Exported field_base: 'field_ref_service_serv_cat'.
   $field_bases['field_ref_service_serv_cat'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -652,7 +673,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_serv_cat'
+  // Exported field_base: 'field_ref_testimonial_serv_cat'.
   $field_bases['field_ref_testimonial_serv_cat'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -687,7 +708,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_serv_group'
+  // Exported field_base: 'field_ref_testimonial_serv_group'.
   $field_bases['field_ref_testimonial_serv_group'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -722,7 +743,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_service'
+  // Exported field_base: 'field_ref_testimonial_service'.
   $field_bases['field_ref_testimonial_service'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -757,7 +778,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_service_category_image'
+  // Exported field_base: 'field_service_category_image'.
   $field_bases['field_service_category_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -779,7 +800,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_service_group_image'
+  // Exported field_base: 'field_service_group_image'.
   $field_bases['field_service_group_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -801,7 +822,7 @@ function ec_service_stack_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_service_image'
+  // Exported field_base: 'field_service_image'.
   $field_bases['field_service_image'] = array(
     'active' => 1,
     'cardinality' => 1,

@@ -50,7 +50,7 @@ function ec_panopoly_page_overrides_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Shown on This Page',
-    'weight' => '8',
+    'weight' => '7',
     'children' => array(
       0 => 'field_ref_page_blog',
       1 => 'field_ref_page_case_study',

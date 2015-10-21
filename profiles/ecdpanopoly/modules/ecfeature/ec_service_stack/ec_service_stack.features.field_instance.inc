@@ -10,7 +10,7 @@
 function ec_service_stack_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'entityform-schedule_service-field_business2'
+  // Exported field_instance: 'entityform-schedule_service-field_business2'.
   $field_instances['entityform-schedule_service-field_business2'] = array(
     'bundle' => 'schedule_service',
     'default_value' => NULL,
@@ -102,7 +102,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-schedule_service-field_email'
+  // Exported field_instance: 'entityform-schedule_service-field_email'.
   $field_instances['entityform-schedule_service-field_email'] = array(
     'bundle' => 'schedule_service',
     'default_value' => NULL,
@@ -177,7 +177,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-schedule_service-field_i_need'
+  // Exported field_instance: 'entityform-schedule_service-field_i_need'.
   $field_instances['entityform-schedule_service-field_i_need'] = array(
     'bundle' => 'schedule_service',
     'default_value' => array(
@@ -256,7 +256,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-schedule_service-field_name'
+  // Exported field_instance: 'entityform-schedule_service-field_name'.
   $field_instances['entityform-schedule_service-field_name'] = array(
     'bundle' => 'schedule_service',
     'default_value' => NULL,
@@ -340,7 +340,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-schedule_service-field_page_tracking'
+  // Exported field_instance: 'entityform-schedule_service-field_page_tracking'.
   $field_instances['entityform-schedule_service-field_page_tracking'] = array(
     'bundle' => 'schedule_service',
     'default_value' => array(
@@ -416,7 +416,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-schedule_service-field_phone'
+  // Exported field_instance: 'entityform-schedule_service-field_phone'.
   $field_instances['entityform-schedule_service-field_phone'] = array(
     'bundle' => 'schedule_service',
     'default_value' => NULL,
@@ -507,7 +507,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_ref_blog_serv_cat'
+  // Exported field_instance: 'node-blog_post-field_ref_blog_serv_cat'.
   $field_instances['node-blog_post-field_ref_blog_serv_cat'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -576,7 +576,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_ref_blog_serv_group'
+  // Exported field_instance: 'node-blog_post-field_ref_blog_serv_group'.
   $field_instances['node-blog_post-field_ref_blog_serv_group'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -645,7 +645,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_ref_blog_service'
+  // Exported field_instance: 'node-blog_post-field_ref_blog_service'.
   $field_instances['node-blog_post-field_ref_blog_service'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -714,7 +714,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_study_serv_cat'
+  // Exported field_instance: 'node-case_study-field_ref_case_study_serv_cat'.
   $field_instances['node-case_study-field_ref_case_study_serv_cat'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -783,7 +783,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_study_serv_group'
+  // Exported field_instance: 'node-case_study-field_ref_case_study_serv_group'.
   $field_instances['node-case_study-field_ref_case_study_serv_group'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -852,7 +852,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_study_service'
+  // Exported field_instance: 'node-case_study-field_ref_case_study_service'.
   $field_instances['node-case_study-field_ref_case_study_service'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -921,7 +921,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-faq-field_ref_faq_serv'
+  // Exported field_instance: 'node-faq-field_ref_faq_serv'.
   $field_instances['node-faq-field_ref_faq_serv'] = array(
     'bundle' => 'faq',
     'default_value' => NULL,
@@ -984,7 +984,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-faq-field_ref_faq_servcat'
+  // Exported field_instance: 'node-faq-field_ref_faq_servcat'.
   $field_instances['node-faq-field_ref_faq_servcat'] = array(
     'bundle' => 'faq',
     'default_value' => NULL,
@@ -1047,7 +1047,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-faq-field_ref_faq_servgroup'
+  // Exported field_instance: 'node-faq-field_ref_faq_servgroup'.
   $field_instances['node-faq-field_ref_faq_servgroup'] = array(
     'bundle' => 'faq',
     'default_value' => NULL,
@@ -1110,7 +1110,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_ref_prodpage_serv_cat'
+  // Exported field_instance: 'node-product_page-field_ref_prodpage_serv_cat'.
   $field_instances['node-product_page-field_ref_prodpage_serv_cat'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -1179,7 +1179,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_ref_prodpage_serv_group'
+  // Exported field_instance: 'node-product_page-field_ref_prodpage_serv_group'.
   $field_instances['node-product_page-field_ref_prodpage_serv_group'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -1248,7 +1248,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_ref_prodpage_service'
+  // Exported field_instance: 'node-product_page-field_ref_prodpage_service'.
   $field_instances['node-product_page-field_ref_prodpage_service'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -1317,7 +1317,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_ref_promo_serv_cat'
+  // Exported field_instance: 'node-promotion-field_ref_promo_serv_cat'.
   $field_instances['node-promotion-field_ref_promo_serv_cat'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -1386,7 +1386,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_ref_promo_serv_group'
+  // Exported field_instance: 'node-promotion-field_ref_promo_serv_group'.
   $field_instances['node-promotion-field_ref_promo_serv_group'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -1455,7 +1455,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_ref_promo_service'
+  // Exported field_instance: 'node-promotion-field_ref_promo_service'.
   $field_instances['node-promotion-field_ref_promo_service'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -1524,7 +1524,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-body'
+  // Exported field_instance: 'node-service-body'.
   $field_instances['node-service-body'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -1587,11 +1587,11 @@ function ec_service_stack_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-service-field_button_text'
+  // Exported field_instance: 'node-service-field_button_text'.
   $field_instances['node-service-field_button_text'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -1656,7 +1656,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_call_to_action'
+  // Exported field_instance: 'node-service-field_call_to_action'.
   $field_instances['node-service-field_call_to_action'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -1721,7 +1721,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_display_subtitle'
+  // Exported field_instance: 'node-service-field_display_subtitle'.
   $field_instances['node-service-field_display_subtitle'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -1787,7 +1787,75 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_ref_service_promo'
+  // Exported field_instance: 'node-service-field_featured_video'.
+  $field_instances['node-service-field_featured_video'] = array(
+    'bundle' => 'service',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_featured_video',
+    'label' => 'Featured Video',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-service-field_ref_service_promo'.
   $field_instances['node-service-field_ref_service_promo'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -1856,7 +1924,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_ref_service_serv_cat'
+  // Exported field_instance: 'node-service-field_ref_service_serv_cat'.
   $field_instances['node-service-field_ref_service_serv_cat'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -1921,11 +1989,11 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-service-field_ref_to_cta_form'
+  // Exported field_instance: 'node-service-field_ref_to_cta_form'.
   $field_instances['node-service-field_ref_to_cta_form'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -1994,7 +2062,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_service_image'
+  // Exported field_instance: 'node-service-field_service_image'.
   $field_instances['node-service-field_service_image'] = array(
     'bundle' => 'service',
     'deleted' => 0,
@@ -2101,7 +2169,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-body'
+  // Exported field_instance: 'node-service_category-body'.
   $field_instances['node-service_category-body'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2164,11 +2232,11 @@ function ec_service_stack_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_button_text'
+  // Exported field_instance: 'node-service_category-field_button_text'.
   $field_instances['node-service_category-field_button_text'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2233,7 +2301,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_call_to_action'
+  // Exported field_instance: 'node-service_category-field_call_to_action'.
   $field_instances['node-service_category-field_call_to_action'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2298,7 +2366,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_display_subtitle'
+  // Exported field_instance: 'node-service_category-field_display_subtitle'.
   $field_instances['node-service_category-field_display_subtitle'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2364,8 +2432,76 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-service_category-field_featured_video'.
+  $field_instances['node-service_category-field_featured_video'] = array(
+    'bundle' => 'service_category',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_featured_video',
+    'label' => 'Featured Video',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance:
-  // 'node-service_category-field_ref_serv_cat_serv_group'
+  // 'node-service_category-field_ref_serv_cat_serv_group'.
   $field_instances['node-service_category-field_ref_serv_cat_serv_group'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2430,12 +2566,12 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
   // Exported field_instance:
-  // 'node-service_category-field_ref_serv_cat_services'
+  // 'node-service_category-field_ref_serv_cat_services'.
   $field_instances['node-service_category-field_ref_serv_cat_services'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2500,11 +2636,11 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_ref_to_cta_form'
+  // Exported field_instance: 'node-service_category-field_ref_to_cta_form'.
   $field_instances['node-service_category-field_ref_to_cta_form'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -2574,7 +2710,7 @@ function ec_service_stack_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-service_category-field_service_category_image'
+  // 'node-service_category-field_service_category_image'.
   $field_instances['node-service_category-field_service_category_image'] = array(
     'bundle' => 'service_category',
     'deleted' => 0,
@@ -2681,7 +2817,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-body'
+  // Exported field_instance: 'node-service_group-body'.
   $field_instances['node-service_group-body'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,
@@ -2748,7 +2884,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_button_text'
+  // Exported field_instance: 'node-service_group-field_button_text'.
   $field_instances['node-service_group-field_button_text'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,
@@ -2813,7 +2949,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_call_to_action'
+  // Exported field_instance: 'node-service_group-field_call_to_action'.
   $field_instances['node-service_group-field_call_to_action'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,
@@ -2878,7 +3014,8 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_ref_serv_group_serv_cat'
+  // Exported field_instance:
+  // 'node-service_group-field_ref_serv_group_serv_cat'.
   $field_instances['node-service_group-field_ref_serv_group_serv_cat'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,
@@ -2948,7 +3085,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_ref_to_cta_form'
+  // Exported field_instance: 'node-service_group-field_ref_to_cta_form'.
   $field_instances['node-service_group-field_ref_to_cta_form'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,
@@ -3017,7 +3154,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_service_group_image'
+  // Exported field_instance: 'node-service_group-field_service_group_image'.
   $field_instances['node-service_group-field_service_group_image'] = array(
     'bundle' => 'service_group',
     'deleted' => 0,
@@ -3118,7 +3255,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-testimonial-field_ref_testimonial_serv_cat'
+  // Exported field_instance: 'node-testimonial-field_ref_testimonial_serv_cat'.
   $field_instances['node-testimonial-field_ref_testimonial_serv_cat'] = array(
     'bundle' => 'testimonial',
     'default_value' => NULL,
@@ -3188,7 +3325,7 @@ function ec_service_stack_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-testimonial-field_ref_testimonial_serv_group'
+  // 'node-testimonial-field_ref_testimonial_serv_group'.
   $field_instances['node-testimonial-field_ref_testimonial_serv_group'] = array(
     'bundle' => 'testimonial',
     'default_value' => NULL,
@@ -3257,7 +3394,7 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-testimonial-field_ref_testimonial_service'
+  // Exported field_instance: 'node-testimonial-field_ref_testimonial_service'.
   $field_instances['node-testimonial-field_ref_testimonial_service'] = array(
     'bundle' => 'testimonial',
     'default_value' => NULL,
@@ -3335,9 +3472,11 @@ function ec_service_stack_field_default_field_instances() {
   t('Call to Action');
   t('Display subtitle');
   t('Email');
+  t('Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD');
   t('Enter the service category pages on which to show this testimonial');
   t('Enter the service group pages on which to show this testimonial');
   t('Enter the service pages on which to show this testimonial');
+  t('Featured Video');
   t('I need...');
   t('Name');
   t('Page Tracking');

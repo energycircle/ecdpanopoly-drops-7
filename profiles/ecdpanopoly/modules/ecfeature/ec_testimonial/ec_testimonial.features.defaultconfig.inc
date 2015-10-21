@@ -1521,12 +1521,13 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_tetstimonial_name',
-      'label' => 'Tetstimonial Name',
+      'label' => 'Testimonial Name',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
+          'button_text' => 'Search',
           'enable' => 0,
-          'insert_plugin' => '',
+          'profile' => '',
         ),
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -1678,11 +1679,11 @@ function ec_testimonial_defaultconfig_field_default_fields() {
   t('Testimonial');
   t('Testimonial City');
   t('Testimonial Image');
+  t('Testimonial Name');
   t('Testimonials');
   t('Testimonials displayed on this page.');
   t('Testimonials shown on this page');
   t('Testimonials shown on this page.');
-  t('Tetstimonial Name');
   t('Video');
 
   return $fields;
