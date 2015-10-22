@@ -297,8 +297,8 @@ projects[compact_forms][patch] = https://www.drupal.org/files/issues/compact_for
 projects[cer][patch][] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
 projects[metatag][patch][0] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
 projects[metatag][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/master/patches/character_count_on_fields-1918738-9-ec.patch
-projects[maxlength][patch] =https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
-
+projects[maxlength][patch] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
+projects[table_element][patch] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
