@@ -114,6 +114,9 @@ projects[eva][version] = 1.x
 projects[exclude_node_title][subdir] = eccontrib
 projects[exclude_node_title][version] = 1.9
 
+projects[external][subdir] = eccontrib
+projects[external][version] = 1.x-dev
+
 #projects[feeds][subdir] = eccontrib
 #projects[feeds][version] = 2.x
 
