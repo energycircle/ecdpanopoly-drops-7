@@ -33,6 +33,9 @@ projects[better_exposed_filters][version] = 3.x
 projects[better_formats][subdir] = eccontrib
 projects[better_formats][version] = 1.x-dev
 
+projects[backup_migrate][subdir] = eccontrib
+projects[backup_migrate][version] = 3.1
+
 projects[cer][subdir] = eccontrib
 projects[cer][version] = 3.0-alpha7
 
@@ -175,7 +178,7 @@ projects[linkit_target][subdir] = eccontrib
 projects[linkit_target][version] = 1.0
 
 projects[mailsystem][subdir] = eccontrib
-projects[mailsystem][version] = 2.34
+projects[mailsystem][version] = 2.x-dev
 
 projects[masquerade][subdir] = eccontrib
 projects[masquerade][version] = 1.0-rc7

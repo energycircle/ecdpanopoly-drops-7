@@ -1,13 +1,13 @@
 <?php
 
 /**
-* @file
-* The theme system, which controls the output of email messages.
-*/
+ * @file
+ * The theme system, which controls the output of email messages.
+ */
 
 /**
-* Implements hook_theme_registry_alter().
-*/
+ * Implements hook_theme_registry_alter().
+ */
 function mailsystem_theme_theme_registry_alter(&$theme_registry) {
   global $theme_key;
   static $recursion_prevention = FALSE;
@@ -42,9 +42,9 @@ function mailsystem_theme_theme_registry_alter(&$theme_registry) {
 
         // Include template files to let _theme_load_registry add preprocess
         // functions.
-        include_once(drupal_get_path('theme', $theme->name) . '/template.php');
+        include_once drupal_get_path('theme', $theme->name) . '/template.php';
         foreach ($base_theme as $base) {
-          include_once(drupal_get_path('theme', $base->name) . '/template.php');
+          include_once drupal_get_path('theme', $base->name) . '/template.php';
         }
 
         // Get the theme_registry cache.
