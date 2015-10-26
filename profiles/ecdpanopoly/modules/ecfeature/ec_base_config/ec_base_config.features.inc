@@ -11,6 +11,9 @@ function ec_base_config_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "breakpoints" && $api == "default_breakpoints") {
     return array("version" => "1");
   }
+  if ($module == "ctools_custom_content" && $api == "ctools_content") {
+    return array("version" => "1");
+  }
   if ($module == "field_validation" && $api == "default_field_validation_rules") {
     return array("version" => "2");
   }
@@ -61,6 +64,7 @@ function ec_base_config_default_entityform_type() {
       "enable_block" : 1
     },
     "weight" : "0",
+    "uuid" : "43320df9-c1f4-48f2-9e99-c8c5c0185eaa",
     "paths" : []
   }');
   return $items;
