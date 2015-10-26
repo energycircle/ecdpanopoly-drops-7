@@ -10,7 +10,7 @@
 function ec_base_config_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'entityform-contact-field_address'
+  // Exported field_instance: 'entityform-contact-field_address'.
   $field_instances['entityform-contact-field_address'] = array(
     'bundle' => 'contact',
     'default_value' => NULL,
@@ -103,7 +103,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact-field_business2'
+  // Exported field_instance: 'entityform-contact-field_business2'.
   $field_instances['entityform-contact-field_business2'] = array(
     'bundle' => 'contact',
     'default_value' => NULL,
@@ -164,7 +164,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact-field_email'
+  // Exported field_instance: 'entityform-contact-field_email'.
   $field_instances['entityform-contact-field_email'] = array(
     'bundle' => 'contact',
     'default_value' => NULL,
@@ -231,7 +231,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact-field_first_name'
+  // Exported field_instance: 'entityform-contact-field_first_name'.
   $field_instances['entityform-contact-field_first_name'] = array(
     'bundle' => 'contact',
     'default_value' => NULL,
@@ -304,7 +304,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact-field_last_name'
+  // Exported field_instance: 'entityform-contact-field_last_name'.
   $field_instances['entityform-contact-field_last_name'] = array(
     'bundle' => 'contact',
     'default_value' => NULL,
@@ -377,7 +377,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact-field_phone'
+  // Exported field_instance: 'entityform-contact-field_phone'.
   $field_instances['entityform-contact-field_phone'] = array(
     'bundle' => 'contact',
     'default_value' => NULL,
@@ -448,7 +448,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact-field_question_or_comment'
+  // Exported field_instance: 'entityform-contact-field_question_or_comment'.
   $field_instances['entityform-contact-field_question_or_comment'] = array(
     'bundle' => 'contact',
     'default_value' => NULL,
@@ -523,7 +523,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact_us-field_address'
+  // Exported field_instance: 'entityform-contact_us-field_address'.
   $field_instances['entityform-contact_us-field_address'] = array(
     'bundle' => 'contact_us',
     'default_value' => NULL,
@@ -576,7 +576,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact_us-field_email'
+  // Exported field_instance: 'entityform-contact_us-field_email'.
   $field_instances['entityform-contact_us-field_email'] = array(
     'bundle' => 'contact_us',
     'default_value' => NULL,
@@ -612,7 +612,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact_us-field_first_name'
+  // Exported field_instance: 'entityform-contact_us-field_first_name'.
   $field_instances['entityform-contact_us-field_first_name'] = array(
     'bundle' => 'contact_us',
     'default_value' => NULL,
@@ -654,7 +654,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact_us-field_last_name'
+  // Exported field_instance: 'entityform-contact_us-field_last_name'.
   $field_instances['entityform-contact_us-field_last_name'] = array(
     'bundle' => 'contact_us',
     'default_value' => NULL,
@@ -696,7 +696,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact_us-field_phone'
+  // Exported field_instance: 'entityform-contact_us-field_phone'.
   $field_instances['entityform-contact_us-field_phone'] = array(
     'bundle' => 'contact_us',
     'default_value' => NULL,
@@ -735,7 +735,7 @@ function ec_base_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-contact_us-field_question_or_comment'
+  // Exported field_instance: 'entityform-contact_us-field_question_or_comment'.
   $field_instances['entityform-contact_us-field_question_or_comment'] = array(
     'bundle' => 'contact_us',
     'default_value' => NULL,

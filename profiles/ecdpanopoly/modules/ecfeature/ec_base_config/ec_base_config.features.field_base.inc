@@ -10,7 +10,7 @@
 function ec_base_config_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'comment_body'
+  // Exported field_base: 'comment_body'.
   $field_bases['comment_body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -31,7 +31,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_address'
+  // Exported field_base: 'field_address'.
   $field_bases['field_address'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -46,7 +46,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'addressfield',
   );
 
-  // Exported field_base: 'field_business2'
+  // Exported field_base: 'field_business2'.
   $field_bases['field_business2'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -67,7 +67,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_button_text'
+  // Exported field_base: 'field_button_text'.
   $field_bases['field_button_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -88,7 +88,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_call_to_action'
+  // Exported field_base: 'field_call_to_action'.
   $field_bases['field_call_to_action'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -107,7 +107,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_content_link'
+  // Exported field_base: 'field_content_link'.
   $field_bases['field_content_link'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -136,7 +136,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_display_date'
+  // Exported field_base: 'field_display_date'.
   $field_bases['field_display_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -165,7 +165,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_display_startend'
+  // Exported field_base: 'field_display_startend'.
   $field_bases['field_display_startend'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -194,7 +194,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_display_subtitle'
+  // Exported field_base: 'field_display_subtitle'.
   $field_bases['field_display_subtitle'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -215,7 +215,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_display_title'
+  // Exported field_base: 'field_display_title'.
   $field_bases['field_display_title'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -236,7 +236,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_email'
+  // Exported field_base: 'field_email'.
   $field_bases['field_email'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -251,7 +251,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'email',
   );
 
-  // Exported field_base: 'field_file_image_alt_text'
+  // Exported field_base: 'field_file_image_alt_text'.
   $field_bases['field_file_image_alt_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -272,7 +272,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_file_image_title_text'
+  // Exported field_base: 'field_file_image_title_text'.
   $field_bases['field_file_image_title_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -293,7 +293,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_first_name'
+  // Exported field_base: 'field_first_name'.
   $field_bases['field_first_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -314,7 +314,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_i_need'
+  // Exported field_base: 'field_i_need'.
   $field_bases['field_i_need'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -341,7 +341,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_last_name'
+  // Exported field_base: 'field_last_name'.
   $field_bases['field_last_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -362,7 +362,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_logo'
+  // Exported field_base: 'field_logo'.
   $field_bases['field_logo'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -384,7 +384,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_name'
+  // Exported field_base: 'field_name'.
   $field_bases['field_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -405,7 +405,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_page_tracking'
+  // Exported field_base: 'field_page_tracking'.
   $field_bases['field_page_tracking'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -422,7 +422,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'field_hidden_text',
   );
 
-  // Exported field_base: 'field_phone'
+  // Exported field_base: 'field_phone'.
   $field_bases['field_phone'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -439,7 +439,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'phone',
   );
 
-  // Exported field_base: 'field_question_or_comment'
+  // Exported field_base: 'field_question_or_comment'.
   $field_bases['field_question_or_comment'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -458,7 +458,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_ref_to_cta_form'
+  // Exported field_base: 'field_ref_to_cta_form'.
   $field_bases['field_ref_to_cta_form'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -494,7 +494,7 @@ function ec_base_config_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_video'
+  // Exported field_base: 'field_video'.
   $field_bases['field_video'] = array(
     'active' => 1,
     'cardinality' => 1,

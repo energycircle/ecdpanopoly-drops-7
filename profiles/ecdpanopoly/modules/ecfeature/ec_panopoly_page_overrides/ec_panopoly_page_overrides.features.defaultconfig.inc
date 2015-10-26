@@ -137,7 +137,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 5,
+        'weight' => 4,
       ),
     ),
   );
@@ -434,7 +434,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
   );
@@ -674,7 +674,110 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 4,
+        'weight' => 3,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-panopoly_page-field_featured_video'.
+  $fields['node-panopoly_page-field_featured_video'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_featured_video',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => 0,
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'panopoly_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 13,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_featured_video',
+      'label' => 'Featured Video',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+        'weight' => 2,
       ),
     ),
   );
@@ -805,7 +908,9 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
   t('CTA form');
   t('Call to Action');
   t('Categories');
+  t('Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD');
   t('Feature content');
+  t('Featured Video');
   t('Primary Image');
 
   return $fields;

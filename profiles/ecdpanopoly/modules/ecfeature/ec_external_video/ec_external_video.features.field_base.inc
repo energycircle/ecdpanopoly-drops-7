@@ -10,7 +10,7 @@
 function ec_external_video_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_video_url'
+  // Exported field_base: 'field_video_url'.
   $field_bases['field_video_url'] = array(
     'active' => 1,
     'cardinality' => 1,

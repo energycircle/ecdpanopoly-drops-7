@@ -21,6 +21,34 @@ function ec_external_video_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_default_roles_permissions_alter().
+ */
+function ec_external_video_default_roles_permissions_alter(&$data) {
+  if (isset($data['EC Platinum admin'])) {
+    $data['EC Platinum admin']['permissions']['create external_video content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['delete own external_video content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['edit any external_video content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['edit own external_video content'] = TRUE; /* WAS: '' */
+  }
+  if (isset($data['administrator'])) {
+    $data['administrator']['permissions']['create external_video content'] = TRUE; /* WAS: '' */
+    $data['administrator']['permissions']['delete any external_video content'] = TRUE; /* WAS: '' */
+    $data['administrator']['permissions']['delete own external_video content'] = TRUE; /* WAS: '' */
+    $data['administrator']['permissions']['edit any external_video content'] = TRUE; /* WAS: '' */
+    $data['administrator']['permissions']['edit own external_video content'] = TRUE; /* WAS: '' */
+  }
+}
+
+/**
+ * Implements hook_user_default_permissions_alter().
+ */
+function ec_external_video_user_default_permissions_alter(&$data) {
+  if (isset($data['administer panelizer node external_video defaults'])) {
+    unset($data['administer panelizer node external_video defaults']['module']);
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_external_video_node_info() {

@@ -10,7 +10,7 @@
 function ec_external_video_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-external_video-body'
+  // Exported field_instance: 'node-external_video-body'.
   $field_instances['node-external_video-body'] = array(
     'bundle' => 'external_video',
     'default_value' => NULL,
@@ -77,7 +77,7 @@ function ec_external_video_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-external_video-field_video_url'
+  // Exported field_instance: 'node-external_video-field_video_url'.
   $field_instances['node-external_video-field_video_url'] = array(
     'bundle' => 'external_video',
     'default_value' => NULL,
