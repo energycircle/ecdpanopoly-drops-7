@@ -1,0 +1,17 @@
+***************
+*** 81,87 ****
+   * @see form_process_tableselect()
+   * @see theme_tableselect()
+   */
+- function table_element_process_table(array $element, array &$form_state) {
+    if (!empty($element['#tableselect'])) {
+      if ($element['#multiple']) {
+        $value = is_array($element['#value']) ? $element['#value'] : array();
+--- 81,87 ----
+   * @see form_process_tableselect()
+   * @see theme_tableselect()
+   */
++ function table_element_process_table(array $element, &$form_state) {
+    if (!empty($element['#tableselect'])) {
+      if ($element['#multiple']) {
+        $value = is_array($element['#value']) ? $element['#value'] : array();

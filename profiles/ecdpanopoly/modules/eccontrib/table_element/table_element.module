@@ -72,8 +72,6 @@ function table_element_table_value(array $element, $input = FALSE) {
  * @param array $element
  *   An associative array containing the properties and children of the
  *   table element.
- * @param array $form_state
- *   The current state of the form.
  *
  * @return array
  *   The processed element.
@@ -81,7 +79,7 @@ function table_element_table_value(array $element, $input = FALSE) {
  * @see form_process_tableselect()
  * @see theme_tableselect()
  */
-function table_element_process_table(array $element, &$form_state) {
+function table_element_process_table(array $element) {
   if (!empty($element['#tableselect'])) {
     if ($element['#multiple']) {
       $value = is_array($element['#value']) ? $element['#value'] : array();
@@ -172,7 +170,7 @@ function table_element_process_table(array $element, &$form_state) {
  * @param array $form_state
  *   The current state of the form.
  */
-function table_element_validate_table(array $element, array &$form_state) {
+function table_element_validate_table(array $element, &$form_state) {
   // Skip this validation if the button to submit the form does not require
   // selected table row data.
   if (empty($form_state['triggering_element']['#tableselect'])) {

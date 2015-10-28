@@ -46,10 +46,10 @@ projects[panopoly_seo][subdir] = panopoly_custom
 projects[panopoly_test][version] = 1.28
 projects[panopoly_test][subdir] = panopoly
 
+
 ; patches
 projects[defaultconfig][patch][1900574] = https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
 projects[defaultconfig][subdir] = contrib
-
 
 projects[views][patch][1036962] = https://www.drupal.org/files/views-fix-destination-link-for-ajax-1036962-29.patch
 projects[views][subdir] = contrib
@@ -65,6 +65,9 @@ projects[features][subdir] = contrib
 
 projects[entity][patch][2112855-25] = https://www.drupal.org/files/issues/entity-label-2112855-25.patch
 projects[entity][subdir] = contrib
+
+#projects[table_field][patch][2475537-2] = https://www.drupal.org/files/issues/tablefield-update7002_fix-2475537-2.patch
+#projects[table_field][subdir] = contrib
 
 ; disabled patch
 #projects[views][patch][2018737] = https://www.drupal.org/files/issues/views-asset-diff-2018737-37.patch
