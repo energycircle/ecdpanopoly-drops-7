@@ -153,8 +153,11 @@ projects[flexslider][version] = 2.x-dev
 projects[globalredirect][subdir] = eccontrib
 projects[globalredirect][version] = 1.5
 
-projects[google_analytics][subdir] = eccontrib
+projects[google_analytics][subdir] = eccntrib
 projects[google_analytics][version] = 2.x
+
+projects[htmlmail][subdir] = eccontrib
+projects[htmlmail][version] = 2.65
 
 projects[hierarchical_select][subdir] = eccontrib
 projects[hierarchical_select][version] = 3.0-beta2

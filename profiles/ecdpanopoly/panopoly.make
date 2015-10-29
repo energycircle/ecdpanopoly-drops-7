@@ -63,13 +63,13 @@ projects[menu_block][subdir] = contrib
 projects[features][patch][2899733] = https://www.drupal.org/files/issues/2138331-eval-log.patch
 projects[features][subdir] = contrib
 
-projects[entity][patch][2112855-25] = https://www.drupal.org/files/issues/entity-label-2112855-25.patch
-projects[entity][subdir] = contrib
+; disabled patch
+#projects[entity][patch][2112855-25] = https://www.drupal.org/files/issues/entity-label-2112855-25.patch
+#projects[entity][subdir] = contrib
 
 #projects[table_field][patch][2475537-2] = https://www.drupal.org/files/issues/tablefield-update7002_fix-2475537-2.patch
 #projects[table_field][subdir] = contrib
 
-; disabled patch
 #projects[views][patch][2018737] = https://www.drupal.org/files/issues/views-asset-diff-2018737-37.patch
 #projects[views][subdir] = contrib
 
