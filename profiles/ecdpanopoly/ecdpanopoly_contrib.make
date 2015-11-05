@@ -153,7 +153,7 @@ projects[flexslider][version] = 2.x-dev
 projects[globalredirect][subdir] = eccontrib
 projects[globalredirect][version] = 1.5
 
-projects[google_analytics][subdir] = eccntrib
+projects[google_analytics][subdir] = eccontrib
 projects[google_analytics][version] = 2.x
 
 projects[htmlmail][subdir] = eccontrib
@@ -251,6 +251,9 @@ projects[superfish][version] = 1.x-dev
 
 projects[sendgrid_integration][subdir] = eccontrib
 projects[sendgrid_integration][version] = 1.0-alpha2
+
+projects[sharethis][subdir] = eccontrib
+projects[sharethis][version] = 2.12
 
 projects[smtp][subdir] = eccontrib
 projects[smtp][version] = 1.2

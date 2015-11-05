@@ -22,28 +22,40 @@ function ec_slide_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Rearrange home slides';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '3600';
-  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '3600';
-  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'flexslider';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Slide image */
+  $handler->display->display_options['fields']['field_slide_image']['id'] = 'field_slide_image';
+  $handler->display->display_options['fields']['field_slide_image']['table'] = 'field_data_field_slide_image';
+  $handler->display->display_options['fields']['field_slide_image']['field'] = 'field_slide_image';
+  $handler->display->display_options['fields']['field_slide_image']['label'] = '';
+  $handler->display->display_options['fields']['field_slide_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_slide_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_slide_image']['settings'] = array(
+    'image_style' => 'hero-slider',
+    'image_link' => '',
+  );
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: Display Title */
+  $handler->display->display_options['fields']['field_display_title']['id'] = 'field_display_title';
+  $handler->display->display_options['fields']['field_display_title']['table'] = 'field_data_field_display_title';
+  $handler->display->display_options['fields']['field_display_title']['field'] = 'field_display_title';
+  $handler->display->display_options['fields']['field_display_title']['label'] = '';
+  $handler->display->display_options['fields']['field_display_title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_display_title']['element_label_colon'] = FALSE;
   /* Field: Content: Display subtitle */
   $handler->display->display_options['fields']['field_display_subtitle']['id'] = 'field_display_subtitle';
   $handler->display->display_options['fields']['field_display_subtitle']['table'] = 'field_data_field_display_subtitle';
@@ -59,31 +71,29 @@ function ec_slide_views_default_views() {
   $handler->display->display_options['fields']['field_content_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_content_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_content_link']['click_sort_column'] = 'url';
-  /* Field: Content: Slide image */
-  $handler->display->display_options['fields']['field_slide_image']['id'] = 'field_slide_image';
-  $handler->display->display_options['fields']['field_slide_image']['table'] = 'field_data_field_slide_image';
-  $handler->display->display_options['fields']['field_slide_image']['field'] = 'field_slide_image';
-  $handler->display->display_options['fields']['field_slide_image']['label'] = '';
-  $handler->display->display_options['fields']['field_slide_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_slide_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_slide_image']['settings'] = array(
-    'image_style' => 'sc_1280x440',
-    'image_link' => '',
-  );
-  /* Field: Content: Display Title */
-  $handler->display->display_options['fields']['field_display_title']['id'] = 'field_display_title';
-  $handler->display->display_options['fields']['field_display_title']['table'] = 'field_data_field_display_title';
-  $handler->display->display_options['fields']['field_display_title']['field'] = 'field_display_title';
-  $handler->display->display_options['fields']['field_display_title']['label'] = '';
-  $handler->display->display_options['fields']['field_display_title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_display_title']['alter']['text'] = '<div class="slide-caption">
-<div class="display-title">[field_display_title]</div>
-<div class="display-subtitle">[field_display_subtitle]</div>
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<div class="hero-caption-wrapper">
+<div class="hero-caption">
+<div class="field-display-title">[field_display_title]</div>
+<div class="field-display-subtitle">[field_display_subtitle]</div>
+<div class="body">[body]</div>
 <div class="link">[field_content_link]</div>
-</div>';
-  $handler->display->display_options['fields']['field_display_title']['element_class'] = 'slide-caption-wrapper';
-  $handler->display->display_options['fields']['field_display_title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_display_title']['element_default_classes'] = FALSE;
+</div></div>';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Sort criterion: Draggableviews: Weight */
+  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
+  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'slides_home:panel_pane_2';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -99,8 +109,88 @@ function ec_slide_views_default_views() {
     'slide' => 'slide',
   );
 
-  /* Display: home page slides */
-  $handler = $view->new_display('panel_pane', 'home page slides', 'panel_pane_1');
+  /* Display: Home Slides */
+  $handler = $view->new_display('panel_pane', 'Home Slides', 'panel_pane_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+
+  /* Display: Rearrange slides */
+  $handler = $view->new_display('panel_pane', 'Rearrange slides', 'panel_pane_2');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_slide_image' => 'field_slide_image',
+    'body' => 'body',
+    'field_display_title' => 'field_display_title',
+    'field_display_subtitle' => 'field_display_subtitle',
+    'field_content_link' => 'field_content_link',
+    'title' => 'title',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_slide_image' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'body' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_display_title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_display_subtitle' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_content_link' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Draggableviews: Content */
+  $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
+  $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
+  $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
+  $handler->display->display_options['fields']['draggableviews']['label'] = 'Rearrange';
+  $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
+  /* Field: Content: Slide image */
+  $handler->display->display_options['fields']['field_slide_image']['id'] = 'field_slide_image';
+  $handler->display->display_options['fields']['field_slide_image']['table'] = 'field_data_field_slide_image';
+  $handler->display->display_options['fields']['field_slide_image']['field'] = 'field_slide_image';
+  $handler->display->display_options['fields']['field_slide_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_slide_image']['settings'] = array(
+    'image_style' => 's_220',
+    'image_link' => '',
+  );
   $export['slides_home'] = $view;
 
   $view = new view();

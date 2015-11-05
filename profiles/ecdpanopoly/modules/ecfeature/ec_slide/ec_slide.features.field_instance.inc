@@ -10,7 +10,7 @@
 function ec_slide_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-slide-body'
+  // Exported field_instance: 'node-slide-body'.
   $field_instances['node-slide-body'] = array(
     'bundle' => 'slide',
     'default_value' => NULL,
@@ -71,7 +71,7 @@ function ec_slide_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slide-field_content_link'
+  // Exported field_instance: 'node-slide-field_content_link'.
   $field_instances['node-slide-field_content_link'] = array(
     'bundle' => 'slide',
     'default_value' => NULL,
@@ -146,7 +146,7 @@ function ec_slide_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slide-field_display_subtitle'
+  // Exported field_instance: 'node-slide-field_display_subtitle'.
   $field_instances['node-slide-field_display_subtitle'] = array(
     'bundle' => 'slide',
     'default_value' => NULL,
@@ -205,7 +205,7 @@ function ec_slide_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slide-field_display_title'
+  // Exported field_instance: 'node-slide-field_display_title'.
   $field_instances['node-slide-field_display_title'] = array(
     'bundle' => 'slide',
     'default_value' => NULL,
@@ -264,7 +264,7 @@ function ec_slide_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slide-field_slide_image'
+  // Exported field_instance: 'node-slide-field_slide_image'.
   $field_instances['node-slide-field_slide_image'] = array(
     'bundle' => 'slide',
     'deleted' => 0,
@@ -356,7 +356,7 @@ function ec_slide_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slide-field_slide_set'
+  // Exported field_instance: 'node-slide-field_slide_set'.
   $field_instances['node-slide-field_slide_set'] = array(
     'bundle' => 'slide',
     'default_value' => NULL,

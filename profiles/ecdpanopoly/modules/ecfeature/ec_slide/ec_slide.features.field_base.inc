@@ -10,7 +10,7 @@
 function ec_slide_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_slide_image'
+  // Exported field_base: 'field_slide_image'.
   $field_bases['field_slide_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -32,7 +32,7 @@ function ec_slide_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_slide_set'
+  // Exported field_base: 'field_slide_set'.
   $field_bases['field_slide_set'] = array(
     'active' => 1,
     'cardinality' => -1,
