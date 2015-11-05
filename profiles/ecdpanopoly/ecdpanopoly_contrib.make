@@ -147,6 +147,9 @@ projects[field_multiple_limit][version] = 1.x
 projects[field_validation][subdir] = eccontrib
 projects[field_validation][version] = 2.6
 
+projects[flippy][subdir] = eccontrib
+projects[flippy][version] = 1.4
+
 projects[flexslider][subdir] = eccontrib
 projects[flexslider][version] = 2.x-dev
 
