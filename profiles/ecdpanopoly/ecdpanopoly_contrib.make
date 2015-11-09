@@ -61,7 +61,7 @@ projects[deploy_services_client][subdir] = eccontrib
 projects[deploy_services_client][version] = 1.x-dev
 
 projects[deploy][subdir] = eccontrib
-projects[deploy][version] = 2.0-alpha3
+projects[deploy][version] = 2.0-beta1
 
 projects[disable_term_node_listings][subdir] = eccontrib
 projects[disable_term_node_listings][version] = 1.2
@@ -94,7 +94,7 @@ projects[entity2text][subdir] = eccontrib
 projects[entity2text][version] = 1.x
 
 projects[entitycache][subdir] = eccontrib
-projects[entitycache][version] = 1.2
+projects[entitycache][version] = 1.5
 
 projects[entityform_block][subdir] = eccontrib
 projects[entityform_block][version] = 1.3
@@ -127,7 +127,7 @@ projects[external][version] = 1.x-dev
 #projects[feeds_tamper][version] = 1.1
 
 projects[field_collection][subdir] = eccontrib
-projects[field_collection][version] = 1.0-beta8
+projects[field_collection][version] = 1.0-beta10
 
 projects[field_default_token][subdir] = eccontrib
 projects[field_default_token][version] = 1.2
@@ -289,7 +289,7 @@ projects[video_filter][subdir] = eccontrib
 projects[video_filter][version] = 3.x-dev
 
 projects[views_data_export][subdir] = eccontrib
-projects[views_data_export][version] = 3.0-beta8
+projects[views_data_export][version] = 3.0-beta9	
 
 projects[views_slideshow][subdir] = eccontrib
 projects[views_slideshow][version] = 3.x

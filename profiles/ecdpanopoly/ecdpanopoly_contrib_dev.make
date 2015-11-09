@@ -33,7 +33,7 @@ projects[permissions_export][version] = 1.0-rc3
 projects[permissions_export][subdir] = ec-dev
 
 ; Field Tools
-projects[field_tools][version] = 1.0-alpha8
+projects[field_tools][version] = 1.0-alpha9
 projects[field_tools][subdir] = ec-dev
 
 projects[ftools][version] = 2.x-dev

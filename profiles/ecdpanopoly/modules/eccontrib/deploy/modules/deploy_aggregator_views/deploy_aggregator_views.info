@@ -7,9 +7,9 @@ dependencies[] = views
 
 files[] = plugins/DeployAggregatorViews.inc
 
-; Information added by Drupal.org packaging script on 2014-09-23
-version = "7.x-2.0-alpha3"
+; Information added by Drupal.org packaging script on 2015-10-05
+version = "7.x-2.0-beta1"
 core = "7.x"
 project = "deploy"
-datestamp = "1411455082"
+datestamp = "1444072457"
 
