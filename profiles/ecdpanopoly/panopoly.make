@@ -51,27 +51,8 @@ projects[panopoly_test][subdir] = panopoly
 projects[defaultconfig][patch][1900574] = https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
 projects[defaultconfig][subdir] = contrib
 
-#projects[views][patch][1036962] = https://www.drupal.org/files/views-fix-destination-link-for-ajax-1036962-29.patch
-#projects[views][subdir] = contrib
-
 projects[views][patch][1615438] = https://www.drupal.org/files/search_multiple_terms-1615438-30.patch
 projects[views][subdir] = contrib
 
-#projects[menu_block][patch][2899733] = https://www.drupal.org/files/issues/menu_block-check-depth_relative--2499733-1.patch
-#projects[menu_block][subdir] = contrib
-
 projects[features][patch][2899733] = https://www.drupal.org/files/issues/2138331-eval-log.patch
 projects[features][subdir] = contrib
-
-; disabled patch
-#projects[entity][patch][2112855-25] = https://www.drupal.org/files/issues/entity-label-2112855-25.patch
-#projects[entity][subdir] = contrib
-
-#projects[table_field][patch][2475537-2] = https://www.drupal.org/files/issues/tablefield-update7002_fix-2475537-2.patch
-#projects[table_field][subdir] = contrib
-
-#projects[views][patch][2018737] = https://www.drupal.org/files/issues/views-asset-diff-2018737-37.patch
-#projects[views][subdir] = contrib
-
-#projects[defaultconfig][patch][1912812] = https://www.drupal.org/files/defaultconfig-remove-notice-1912812.patch
-#projects[defaultconfig][subdir] = contrib

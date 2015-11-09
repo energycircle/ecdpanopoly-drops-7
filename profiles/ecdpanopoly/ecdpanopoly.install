@@ -18,7 +18,7 @@
  function ecdpanopoly_install() {
 	
  // Enable the administration theme.
- $admin_theme = 'seven';
+ $admin_theme = 'ec_admin';
  db_update('system')
    ->fields(array('status' => 1))
    ->condition('type', 'theme')
@@ -36,25 +36,26 @@
 
  /**
   * Enable the Distribution Update Status Manager (distro_update) module.
-  */
- function ecdpanopoly_update_7101() {
-   module_enable(array('distro_update'));
- }
-
+ 
+** function ecdpanopoly_update_7101() {
+**   module_enable(array('distro_update'));
+** }
+ */
+ 
  /**
   * Enable the core Block module and place the Help block.
-  */
- function ecdpanopoly_update_7102() {
-   if (!module_exists('block')) {
-     module_enable(array('block'));
-   }
- }
 
+ **function ecdpanopoly_update_7102() {
+**   if (!module_exists('block')) {
+**     module_enable(array('block'));
+**   }
+** }
+  */
 
 
 function ecdpanopoly_features_form($form_state, $url) {
   $form = array();
-  drupal_set_title(st('Choose from available features'));
+  drupal_set_title(st('Choose from available EC features'));
    
   // Ancillary message
   $form['message'] = array(
