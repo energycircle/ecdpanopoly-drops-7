@@ -61,7 +61,7 @@ projects[deploy_services_client][subdir] = eccontrib
 projects[deploy_services_client][version] = 1.x-dev
 
 projects[deploy][subdir] = eccontrib
-projects[deploy][version] = 2.0-alpha3
+projects[deploy][version] = 2.0-beta1
 
 projects[disable_term_node_listings][subdir] = eccontrib
 projects[disable_term_node_listings][version] = 1.2
