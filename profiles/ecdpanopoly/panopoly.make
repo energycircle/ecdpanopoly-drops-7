@@ -56,3 +56,6 @@ projects[views][subdir] = contrib
 
 projects[features][patch][2899733] = https://www.drupal.org/files/issues/2138331-eval-log.patch
 projects[features][subdir] = contrib
+
+projects[entity][patch][1414428] = https://www.drupal.org/files/issues/entity-stop-assuming-you-may-find-array-1414428-14_0.patch
+projects[entity][subdir] = contrib
