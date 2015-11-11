@@ -58,10 +58,10 @@ projects[context][subdir] = eccontrib
 projects[context][version] = 3.x
 
 projects[deploy_services_client][subdir] = eccontrib
-projects[deploy_services_client][version] = 1.x-dev
+projects[deploy_services_client][version] = 1.0-beta2
 
 projects[deploy][subdir] = eccontrib
-projects[deploy][version] = 2.0-beta1
+projects[deploy][version] = 2.0-alpha3
 
 projects[disable_term_node_listings][subdir] = eccontrib
 projects[disable_term_node_listings][version] = 1.2
@@ -247,7 +247,7 @@ projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.x-dev
+projects[services][version] = 3.11
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 1.x-dev
@@ -315,6 +315,9 @@ projects[metatag][patch][0] = https://www.drupal.org/files/issues/character_coun
 projects[maxlength][patch] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
 #projects[table_element][patch][] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
 #projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
+
+projects[deploy][patch][] = https://www.drupal.org/files/deploy-1604938_1.patch
+
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git

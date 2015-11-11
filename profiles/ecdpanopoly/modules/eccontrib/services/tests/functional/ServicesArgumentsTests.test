@@ -1,6 +1,6 @@
 <?php
 
-class ServicesArgumentsTestCase extends ServicesWebTestCase {
+class ServicesArgumentsTestCase extends ServicesWebtestCase {
   // Endpoint details.
   protected $endpoint = NULL;
   // Session ID.

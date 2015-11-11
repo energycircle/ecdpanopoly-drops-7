@@ -577,14 +577,8 @@ function _services_sessions_authenticate_call($module, $controller) {
 
   if ($controller['callback'] != '_user_resource_get_token') {
     $non_safe_method_called = !in_array($_SERVER['REQUEST_METHOD'], array('GET', 'HEAD', 'OPTIONS', 'TRACE'));
-    $csrf_token = NULL;
-    if (isset($_SERVER['HTTP_X_CSRF_TOKEN'])) {
-      $csrf_token = $_SERVER['HTTP_X_CSRF_TOKEN'];
-    }
-    elseif (isset($_REQUEST['services_token'])) {
-      $csrf_token = $_REQUEST['services_token'];
-    }
-    if ($non_safe_method_called && !drupal_valid_token($csrf_token, 'services')) {
+    $csrf_token_invalid = !isset($_SERVER['HTTP_X_CSRF_TOKEN']) || !drupal_valid_token($_SERVER['HTTP_X_CSRF_TOKEN'], 'services');
+    if ($non_safe_method_called && $csrf_token_invalid) {
       return t('CSRF validation failed');
     }
   }
@@ -805,12 +799,11 @@ function services_get_resource_api_version($endpoint, $resource, $method) {
   if (isset($endpoint->resources[$resource]) ) {
     $class_info = services_operation_class_info();
     foreach ($class_info as $class_name => $class) {
-      if (!empty($endpoint->resources[$resource][$class_name])) {
+      if (!empty($resource[$class_name])) {
         if (isset($endpoint->resources[$resource][$class_name][$method]['settings']['services']['resource_api_version'])) {
           if($version = _services_version_header_options()) {
             $split = explode('.', $version);
-          }
-          else {
+          } else {
             $split = explode('.', $endpoint->resources[$resource][$class_name][$method]['settings']['services']['resource_api_version']);
           }
           return array(
@@ -915,10 +908,8 @@ function services_resources_as_procedures($resource, $resource_name) {
  *   Integer number of items to be returned.
  * @param $resource
  *   String name of the resource building the index query
- * @param $options
- *   Additional query options.
  */
-function services_resource_build_index_query($query, $page, $fields, $parameters, $page_size, $resource, $options = array()) {
+function services_resource_build_index_query($query, $page, $fields, $parameters, $page_size, $resource) {
   $default_limit = variable_get("services_{$resource}_index_page_size", 20);
   if (!user_access('perform unlimited index queries') && $page_size > $default_limit) {
     $page_size = $default_limit;
@@ -932,16 +923,7 @@ function services_resource_build_index_query($query, $page, $fields, $parameters
   }
   if (isset($parameters) && is_array($parameters)) {
     foreach ($parameters as $parameter => $parameter_value) {
-      $op = 'IN';
-      if (isset($options['parameters_op']) && isset($options['parameters_op'][$parameter])) {
-        $op = strtoupper($options['parameters_op'][$parameter]);
-      }
-      $query->condition($parameter, services_str_getcsv($parameter_value), $op);
-    }
-  }
-  if (isset($options['orderby'])) {
-    foreach($options['orderby'] as $column => $sort) {
-      $query->orderBy($column, $sort);
+      $query->condition($parameter, services_str_getcsv($parameter_value), 'IN');
     }
   }
 }
@@ -1026,53 +1008,6 @@ function services_remove_user_data(&$account) {
     $account->picture->url = file_create_url($account->picture->uri);
   }
 }
-
-/**
- * Helper function to remove fields from an entity according to field_access
- *
- * @param $op What you want to do with the entity. ie, view
- * @param $entity_type The entity type. ie node, or user
- * @param $entity The physical entity object
- *
- * returns $cloned_entity with fields removed that are needed.
- */
-function services_field_permissions_clean($op, $entity_type, $entity) {
-  $cloned_entity = clone $entity;
-  //Each entity type seems to have a different key needed from field_info_instances
-  //Lets determine that key here.
-  switch ($entity_type) {
-    case 'comment':
-      $key = $cloned_entity->node_type;
-      break;
-    case 'user':
-      $key = $entity_type;
-      break;
-    case 'node':
-      $key = $cloned_entity->type;
-      break;
-    case 'taxonomy_term':
-      $key = $cloned_entity->vocabulary_machine_name;
-      break;
-    default:
-      $key = $entity_type;
-  }
-  //Allow someone to alter the field lookup key in the case they used their own entity.
-  drupal_alter('services_field_permissions_field_lookup_key', $key);
-
-  //load the fields info
-  $fields_info = field_info_instances($entity_type);
-  //Loop through all the fields on the content type
-  foreach ($fields_info[$key] as $field_name => $field_data) {
-    //check for access on our op
-    $access = field_access($op, field_info_field($field_name), $entity_type, $entity);
-    //If no access unset the field.
-    if (!$access) {
-      unset($cloned_entity->$field_name);
-    }
-  }
-  return $cloned_entity;
-}
-
 
 /**
  * Helper function to execute a index query.
