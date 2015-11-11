@@ -318,7 +318,6 @@ projects[maxlength][patch] = https://www.drupal.org/files/metatags_quick_integra
 
 projects[deploy][patch][] = https://www.drupal.org/files/deploy-1604938_1.patch
 
-
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
 projects[energycircle_apps][download][url] = https://github.com/energycircle/energycircle_apps.git

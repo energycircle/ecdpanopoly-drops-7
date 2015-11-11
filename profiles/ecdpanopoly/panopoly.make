@@ -65,3 +65,6 @@ projects[uuid][subdir] = contrib
 
 projects[uuid][patch][1927474] = https://www.drupal.org/files/issues/uuid-fix-empty-uuids-1927474-9_0.patch
 projects[uuid][subdir] = contrib
+
+projects[tablefield][patch][] = https://www.drupal.org/files/issues/tablefield-update7002_fix-2475537-2.patch
+projects[tablefield][subdir] = contrib
