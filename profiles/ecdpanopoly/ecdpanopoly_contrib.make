@@ -315,8 +315,8 @@ projects[metatag][patch][0] = https://www.drupal.org/files/issues/character_coun
 projects[maxlength][patch] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
 #projects[table_element][patch][] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
 #projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
-
-projects[deploy][patch][] = https://www.drupal.org/files/deploy-1604938_1.patch
+projects[entitycache][patch][2441965] = https://www.drupal.org/files/issues/entitycache_fix_upgrade_path-2441965-39.patch
+projects[deploy][patch][1604938] = https://www.drupal.org/files/deploy-1604938_1.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
