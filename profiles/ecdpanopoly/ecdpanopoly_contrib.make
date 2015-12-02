@@ -37,7 +37,7 @@ projects[backup_migrate][subdir] = eccontrib
 projects[backup_migrate][version] = 3.1
 
 projects[cer][subdir] = eccontrib
-projects[cer][version] = 3.x
+projects[cer][version] = 3.0-alpha7
 
 projects[colorbox][subdir] = eccontrib
 projects[colorbox][version] = 2.10
