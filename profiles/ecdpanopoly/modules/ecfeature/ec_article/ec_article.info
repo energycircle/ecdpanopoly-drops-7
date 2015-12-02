@@ -5,7 +5,6 @@ package = ECFeatures - Core EXT
 version = 7.x-1.5
 project = ec_article
 dependencies[] = date
-dependencies[] = ec_a_b_testing_setup
 dependencies[] = field_group
 dependencies[] = link
 dependencies[] = media
