@@ -342,6 +342,11 @@ projects[superfish_hack][download][url] = https://github.com/energycircle/superf
 projects[superfish_hack][subdir] = eccustom
 projects[superfish_hack][type] = module
 
+projects[ec_restrict_dl][download][type] = git
+projects[ec_restrict_dl][download][url] = https://github.com/energycircle/ec_restrict_dl.git
+projects[ec_restrict_dl][subdir] = eccustom
+projects[ec_restrict_dl][type] = module
+
 ; LIBRARIES
 libraries[superfish][download][type] = get
 libraries[superfish][type] = library
