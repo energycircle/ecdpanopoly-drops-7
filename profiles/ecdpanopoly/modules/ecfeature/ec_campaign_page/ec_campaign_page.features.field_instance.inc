@@ -10,7 +10,7 @@
 function ec_campaign_page_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'entityform-campaign_form-field_business2'
+  // Exported field_instance: 'entityform-campaign_form-field_business2'.
   $field_instances['entityform-campaign_form-field_business2'] = array(
     'bundle' => 'campaign_form',
     'default_value' => NULL,
@@ -53,7 +53,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-campaign_form-field_email'
+  // Exported field_instance: 'entityform-campaign_form-field_email'.
   $field_instances['entityform-campaign_form-field_email'] = array(
     'bundle' => 'campaign_form',
     'default_value' => NULL,
@@ -90,7 +90,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-campaign_form-field_first_name'
+  // Exported field_instance: 'entityform-campaign_form-field_first_name'.
   $field_instances['entityform-campaign_form-field_first_name'] = array(
     'bundle' => 'campaign_form',
     'default_value' => NULL,
@@ -133,7 +133,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-campaign_form-field_last_name'
+  // Exported field_instance: 'entityform-campaign_form-field_last_name'.
   $field_instances['entityform-campaign_form-field_last_name'] = array(
     'bundle' => 'campaign_form',
     'default_value' => NULL,
@@ -176,7 +176,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-campaign_form-field_page_tracking'
+  // Exported field_instance: 'entityform-campaign_form-field_page_tracking'.
   $field_instances['entityform-campaign_form-field_page_tracking'] = array(
     'bundle' => 'campaign_form',
     'default_value' => array(
@@ -218,7 +218,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'entityform-campaign_form-field_phone'
+  // Exported field_instance: 'entityform-campaign_form-field_phone'.
   $field_instances['entityform-campaign_form-field_phone'] = array(
     'bundle' => 'campaign_form',
     'default_value' => NULL,
@@ -259,7 +259,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-campaign_page-body'
+  // Exported field_instance: 'node-campaign_page-body'.
   $field_instances['node-campaign_page-body'] = array(
     'bundle' => 'campaign_page',
     'default_value' => NULL,
@@ -314,7 +314,52 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-campaign_page-field_button_text'
+  // Exported field_instance: 'node-campaign_page-field_a_b_test_page'.
+  $field_instances['node-campaign_page-field_a_b_test_page'] = array(
+    'bundle' => 'campaign_page',
+    'default_value' => array(
+      0 => array(
+        'value' => 'A Page',
+      ),
+    ),
+    'default_value_label_token' => 0,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'list_default',
+        'weight' => 7,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_a_b_test_page',
+    'label' => 'A/B Test Page',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-campaign_page-field_button_text'.
   $field_instances['node-campaign_page-field_button_text'] = array(
     'bundle' => 'campaign_page',
     'default_value' => NULL,
@@ -359,7 +404,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-campaign_page-field_call_to_action'
+  // Exported field_instance: 'node-campaign_page-field_call_to_action'.
   $field_instances['node-campaign_page-field_call_to_action'] = array(
     'bundle' => 'campaign_page',
     'default_value' => NULL,
@@ -410,7 +455,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-campaign_page-field_display_subtitle'
+  // Exported field_instance: 'node-campaign_page-field_display_subtitle'.
   $field_instances['node-campaign_page-field_display_subtitle'] = array(
     'bundle' => 'campaign_page',
     'default_value' => NULL,
@@ -459,7 +504,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-campaign_page-field_display_title'
+  // Exported field_instance: 'node-campaign_page-field_display_title'.
   $field_instances['node-campaign_page-field_display_title'] = array(
     'bundle' => 'campaign_page',
     'default_value' => NULL,
@@ -508,7 +553,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-campaign_page-field_featured_image'
+  // Exported field_instance: 'node-campaign_page-field_featured_image'.
   $field_instances['node-campaign_page-field_featured_image'] = array(
     'bundle' => 'campaign_page',
     'deleted' => 0,
@@ -588,7 +633,7 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-campaign_page-field_ref_to_cta_form'
+  // Exported field_instance: 'node-campaign_page-field_ref_to_cta_form'.
   $field_instances['node-campaign_page-field_ref_to_cta_form'] = array(
     'bundle' => 'campaign_page',
     'default_value' => NULL,
@@ -643,6 +688,7 @@ function ec_campaign_page_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A/B Test Page');
   t('Body');
   t('Business Name');
   t('Button Text');

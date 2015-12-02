@@ -74,6 +74,13 @@ function ec_gallery_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'gallery' => 'gallery',
   );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'A Page' => 'A Page',
+  );
 
   /* Display: Gallery */
   $handler = $view->new_display('panel_pane', 'Gallery', 'panel_pane_1');

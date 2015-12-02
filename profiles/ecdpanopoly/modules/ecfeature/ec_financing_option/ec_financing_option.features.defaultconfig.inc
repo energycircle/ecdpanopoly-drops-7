@@ -11,7 +11,6 @@ function ec_financing_option_defaultconfig_features() {
   return array(
     'ec_financing_option' => array(
       'field_default_fields' => 'field_default_fields',
-      'field_group_info' => 'field_group_info',
     ),
   );
 }
@@ -114,6 +113,95 @@ function ec_financing_option_defaultconfig_field_default_fields() {
         ),
         'type' => 'text_textarea_with_summary',
         'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-financing_option-field_a_b_test_page'.
+  $fields['node-financing_option-field_a_b_test_page'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_a_b_test_page',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'A Page' => 'A Page',
+          'B Page' => 'B Page',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => 0,
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'financing_option',
+      'default_value' => array(
+        0 => array(
+          'value' => 'A Page',
+        ),
+      ),
+      'default_value_label_token' => 0,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'list_default',
+          'weight' => 7,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_a_b_test_page',
+      'label' => 'A/B Test Page',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => 14,
       ),
     ),
   );
@@ -456,6 +544,7 @@ function ec_financing_option_defaultconfig_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A/B Test Page');
   t('Body');
   t('Enter a full url to a third-party web page. Enter the link text in the link\'s title field, such as "Visit ABC Company."');
   t('Forms');
@@ -463,42 +552,4 @@ function ec_financing_option_defaultconfig_field_default_fields() {
   t('Logo');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_field_group_info().
- */
-function ec_financing_option_defaultconfig_field_group_info() {
-  $export = array();
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_show_this_on|node|financing_option|form';
-  $field_group->group_name = 'group_show_this_on';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'financing_option';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Show This On',
-    'weight' => '9',
-    'children' => array(
-      0 => 'field_button_text',
-      1 => 'field_call_to_action',
-      2 => 'field_ref_to_cta_form',
-    ),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-show-this-on field-group-tab',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_show_this_on|node|financing_option|form'] = $field_group;
-
-  return $export;
 }

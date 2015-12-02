@@ -137,7 +137,102 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => 5,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-panopoly_page-field_a_b_test_page'.
+  $fields['node-panopoly_page-field_a_b_test_page'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_a_b_test_page',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'A Page' => 'A Page',
+          'B Page' => 'B Page',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => 0,
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'panopoly_page',
+      'default_value' => array(
+        0 => array(
+          'value' => 'A Page',
+        ),
+      ),
+      'default_value_label_token' => 0,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'list_default',
+          'weight' => 14,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_a_b_test_page',
+      'label' => 'A/B Test Page',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => 17,
       ),
     ),
   );
@@ -434,7 +529,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -674,7 +769,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -903,6 +998,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A/B Test Page');
   t('Body');
   t('Button Text');
   t('CTA form');

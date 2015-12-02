@@ -10,22 +10,29 @@
 function ec_campaign_page_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_page_tracking'
-  $field_bases['field_page_tracking'] = array(
+  // Exported field_base: 'field_a_b_test_page'.
+  $field_bases['field_a_b_test_page'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_page_tracking',
-    'foreign keys' => array(),
-    'indexes' => array(),
+    'field_name' => 'field_a_b_test_page',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
     'locked' => 0,
-    'module' => 'field_hidden',
+    'module' => 'list',
     'settings' => array(
-      'max_length' => 255,
+      'allowed_values' => array(
+        'A Page' => 'A Page',
+        'B Page' => 'B Page',
+      ),
+      'allowed_values_function' => '',
     ),
     'translatable' => 0,
-    'type' => 'field_hidden_text',
+    'type' => 'list_text',
   );
 
   return $field_bases;

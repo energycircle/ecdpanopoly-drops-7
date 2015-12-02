@@ -89,6 +89,13 @@ function ec_distinction_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'distinction' => 'distinction',
   );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'A Page' => 'A Page',
+  );
 
   /* Display: All Distinctions - List */
   $handler = $view->new_display('panel_pane', 'All Distinctions - List', 'panel_pane_1');
