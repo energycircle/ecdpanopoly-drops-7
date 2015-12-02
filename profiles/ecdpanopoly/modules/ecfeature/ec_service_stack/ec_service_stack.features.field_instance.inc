@@ -1591,69 +1591,6 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_a_b_test_page'.
-  $field_instances['node-service-field_a_b_test_page'] = array(
-    'bundle' => 'service',
-    'default_value' => array(
-      0 => array(
-        'value' => 'A Page',
-      ),
-    ),
-    'default_value_label_token' => 0,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'list_default',
-        'weight' => 14,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_a_b_test_page',
-    'label' => 'A/B Test Page',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 20,
-    ),
-  );
-
   // Exported field_instance: 'node-service-field_button_text'.
   $field_instances['node-service-field_button_text'] = array(
     'bundle' => 'service',
@@ -2296,69 +2233,6 @@ function ec_service_stack_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'node-service_category-field_a_b_test_page'.
-  $field_instances['node-service_category-field_a_b_test_page'] = array(
-    'bundle' => 'service_category',
-    'default_value' => array(
-      0 => array(
-        'value' => 'A Page',
-      ),
-    ),
-    'default_value_label_token' => 0,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'list_default',
-        'weight' => 17,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_a_b_test_page',
-    'label' => 'A/B Test Page',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 19,
     ),
   );
 
@@ -3010,69 +2884,6 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_a_b_test_page'.
-  $field_instances['node-service_group-field_a_b_test_page'] = array(
-    'bundle' => 'service_group',
-    'default_value' => array(
-      0 => array(
-        'value' => 'A Page',
-      ),
-    ),
-    'default_value_label_token' => 0,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'list_default',
-        'weight' => 12,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_a_b_test_page',
-    'label' => 'A/B Test Page',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 26,
-    ),
-  );
-
   // Exported field_instance: 'node-service_group-field_button_text'.
   $field_instances['node-service_group-field_button_text'] = array(
     'bundle' => 'service_group',
@@ -3654,7 +3465,6 @@ function ec_service_stack_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A/B Test Page');
   t('Body');
   t('Business Name');
   t('Button Text');

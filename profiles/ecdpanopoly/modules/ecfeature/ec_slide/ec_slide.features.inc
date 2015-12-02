@@ -61,12 +61,14 @@ function ec_slide_image_styles_alter(&$data) {
   if (isset($data['flexslider_full'])) {
 
   if (!isset($data['flexslider_full']['storage']) || $data['flexslider_full']['storage'] == IMAGE_STORAGE_DEFAULT) {
+    $data['flexslider_full']['effects'] = array_values($data['flexslider_full']['effects']);
     $data['flexslider_full']['label'] = 'flexslider_full';
   }
   }
   if (isset($data['flexslider_thumbnail'])) {
 
   if (!isset($data['flexslider_thumbnail']['storage']) || $data['flexslider_thumbnail']['storage'] == IMAGE_STORAGE_DEFAULT) {
+    $data['flexslider_thumbnail']['effects'] = array_values($data['flexslider_thumbnail']['effects']);
     $data['flexslider_thumbnail']['label'] = 'flexslider_thumbnail';
   }
   }

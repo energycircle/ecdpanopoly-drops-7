@@ -65,7 +65,7 @@ function ec_service_stack_default_entityform_type() {
       "enable_block" : 0
     },
     "weight" : "0",
-    "uuid" : "4fb4c015-bd8d-4e51-9ddd-7a21bf4dd9d7",
+    "uuid" : "c86a51ec-1c86-4650-99ac-d5af64d05173",
     "paths" : []
   }');
   return $items;

@@ -10,7 +10,7 @@
 function ec_staff_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_staff_department'
+  // Exported field_base: 'field_staff_department'.
   $field_bases['field_staff_department'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -37,7 +37,7 @@ function ec_staff_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_staff_photo'
+  // Exported field_base: 'field_staff_photo'.
   $field_bases['field_staff_photo'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -59,7 +59,7 @@ function ec_staff_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_staff_title'
+  // Exported field_base: 'field_staff_title'.
   $field_bases['field_staff_title'] = array(
     'active' => 1,
     'cardinality' => 1,

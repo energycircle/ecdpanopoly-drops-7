@@ -140,69 +140,6 @@ function ec_gallery_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-gallery-field_a_b_test_page'.
-  $field_instances['node-gallery-field_a_b_test_page'] = array(
-    'bundle' => 'gallery',
-    'default_value' => array(
-      0 => array(
-        'value' => 'A Page',
-      ),
-    ),
-    'default_value_label_token' => 0,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_a_b_test_page',
-    'label' => 'A/B Test Page',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 10,
-    ),
-  );
-
   // Exported field_instance: 'node-gallery-field_gallery_image'.
   $field_instances['node-gallery-field_gallery_image'] = array(
     'bundle' => 'gallery',
@@ -303,7 +240,6 @@ function ec_gallery_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A/B Test Page');
   t('Body');
   t('Gallery');
   t('Gallery_image');

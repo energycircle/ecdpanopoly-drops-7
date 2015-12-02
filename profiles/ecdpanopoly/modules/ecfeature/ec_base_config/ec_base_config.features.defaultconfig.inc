@@ -10,38 +10,12 @@
 function ec_base_config_defaultconfig_features() {
   return array(
     'ec_base_config' => array(
-      'default_ctools_custom_content' => 'default_ctools_custom_content',
       'field_default_fields' => 'field_default_fields',
       'metatag_config_default' => 'metatag_config_default',
       'strongarm' => 'strongarm',
       'views_default_views' => 'views_default_views',
     ),
   );
-}
-
-/**
- * Implements hook_defaultconfig_default_ctools_custom_content().
- */
-function ec_base_config_defaultconfig_default_ctools_custom_content() {
-  $export = array();
-
-  $content = new stdClass();
-  $content->disabled = FALSE; /* Edit this to true to make a default content disabled initially */
-  $content->api_version = 1;
-  $content->name = 'phone_number';
-  $content->admin_title = 'Phone Number';
-  $content->admin_description = '';
-  $content->category = '';
-  $content->settings = array(
-    'admin_title' => 'Phone Number',
-    'title' => '',
-    'body' => '<p>1 (555) 555-5555</p>',
-    'format' => 'panopoly_wysiwyg_text',
-    'substitute' => TRUE,
-  );
-  $export['phone_number'] = $content;
-
-  return $export;
 }
 
 /**
@@ -1067,7 +1041,7 @@ function ec_base_config_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
-  $strongarm->value = 'digital@energycircle.com';
+  $strongarm->value = 'thomas@energycircle.com';
   $export['site_mail'] = $strongarm;
 
   $strongarm = new stdClass();

@@ -314,51 +314,6 @@ function ec_campaign_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-campaign_page-field_a_b_test_page'.
-  $field_instances['node-campaign_page-field_a_b_test_page'] = array(
-    'bundle' => 'campaign_page',
-    'default_value' => array(
-      0 => array(
-        'value' => 'A Page',
-      ),
-    ),
-    'default_value_label_token' => 0,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'list_default',
-        'weight' => 7,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_a_b_test_page',
-    'label' => 'A/B Test Page',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-campaign_page-field_button_text'.
   $field_instances['node-campaign_page-field_button_text'] = array(
     'bundle' => 'campaign_page',
@@ -688,7 +643,6 @@ function ec_campaign_page_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A/B Test Page');
   t('Body');
   t('Business Name');
   t('Button Text');

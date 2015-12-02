@@ -62,7 +62,7 @@ function ec_campaign_page_default_entityform_type() {
       "enable_block" : 0
     },
     "weight" : "0",
-    "uuid" : "39a87c3b-6d2b-40c9-bf22-1851dcae15fc",
+    "uuid" : "694e825f-5af3-4324-bead-66caa739b3bb",
     "paths" : []
   }');
   return $items;

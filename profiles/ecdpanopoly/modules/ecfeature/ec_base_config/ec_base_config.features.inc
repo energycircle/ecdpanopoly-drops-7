@@ -77,6 +77,7 @@ function ec_base_config_image_styles_alter(&$data) {
   if (isset($data['linkit_thumb'])) {
 
   if (!isset($data['linkit_thumb']['storage']) || $data['linkit_thumb']['storage'] == IMAGE_STORAGE_DEFAULT) {
+    $data['linkit_thumb']['effects'] = array_values($data['linkit_thumb']['effects']);
     $data['linkit_thumb']['label'] = 'linkit_thumb';
   }
   }

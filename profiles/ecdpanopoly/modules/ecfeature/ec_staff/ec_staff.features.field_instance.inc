@@ -10,7 +10,7 @@
 function ec_staff_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-staff-body'
+  // Exported field_instance: 'node-staff-body'.
   $field_instances['node-staff-body'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -77,7 +77,7 @@ function ec_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff-field_first_name'
+  // Exported field_instance: 'node-staff-field_first_name'.
   $field_instances['node-staff-field_first_name'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -142,7 +142,7 @@ function ec_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff-field_last_name'
+  // Exported field_instance: 'node-staff-field_last_name'.
   $field_instances['node-staff-field_last_name'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -207,7 +207,7 @@ function ec_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff-field_staff_department'
+  // Exported field_instance: 'node-staff-field_staff_department'.
   $field_instances['node-staff-field_staff_department'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -265,7 +265,7 @@ function ec_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff-field_staff_photo'
+  // Exported field_instance: 'node-staff-field_staff_photo'.
   $field_instances['node-staff-field_staff_photo'] = array(
     'bundle' => 'staff',
     'deleted' => 0,
@@ -363,7 +363,7 @@ function ec_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff-field_staff_title'
+  // Exported field_instance: 'node-staff-field_staff_title'.
   $field_instances['node-staff-field_staff_title'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
