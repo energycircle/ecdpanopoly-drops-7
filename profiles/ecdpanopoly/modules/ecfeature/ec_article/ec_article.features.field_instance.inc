@@ -10,7 +10,7 @@
 function ec_article_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-body'
+  // Exported field_instance: 'node-article-body'.
   $field_instances['node-article-body'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -81,7 +81,70 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_article_author'
+  // Exported field_instance: 'node-article-field_a_b_test_page'.
+  $field_instances['node-article-field_a_b_test_page'] = array(
+    'bundle' => 'article',
+    'default_value' => array(
+      0 => array(
+        'value' => 'A Page',
+      ),
+    ),
+    'default_value_label_token' => 0,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'list_default',
+        'weight' => 11,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_a_b_test_page',
+    'label' => 'A/B Test Page',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 20,
+    ),
+  );
+
+  // Exported field_instance: 'node-article-field_article_author'.
   $field_instances['node-article-field_article_author'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -150,7 +213,7 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_article_image'
+  // Exported field_instance: 'node-article-field_article_image'.
   $field_instances['node-article-field_article_image'] = array(
     'bundle' => 'article',
     'deleted' => 0,
@@ -253,7 +316,7 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_article_source'
+  // Exported field_instance: 'node-article-field_article_source'.
   $field_instances['node-article-field_article_source'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -338,7 +401,7 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_article_type'
+  // Exported field_instance: 'node-article-field_article_type'.
   $field_instances['node-article-field_article_type'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -400,7 +463,7 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_display_date'
+  // Exported field_instance: 'node-article-field_display_date'.
   $field_instances['node-article-field_display_date'] = array(
     'bundle' => 'article',
     'deleted' => 0,
@@ -484,7 +547,7 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog_post-field_ref_blog_article'
+  // Exported field_instance: 'node-blog_post-field_ref_blog_article'.
   $field_instances['node-blog_post-field_ref_blog_article'] = array(
     'bundle' => 'blog_post',
     'default_value' => NULL,
@@ -553,7 +616,7 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_study_article'
+  // Exported field_instance: 'node-case_study-field_ref_case_study_article'.
   $field_instances['node-case_study-field_ref_case_study_article'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -618,11 +681,11 @@ function ec_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 17,
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_ref_prodpage_article'
+  // Exported field_instance: 'node-product_page-field_ref_prodpage_article'.
   $field_instances['node-product_page-field_ref_prodpage_article'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -691,7 +754,7 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_ref_promo_article'
+  // Exported field_instance: 'node-promotion-field_ref_promo_article'.
   $field_instances['node-promotion-field_ref_promo_article'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -760,7 +823,7 @@ function ec_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-testimonial-field_ref_testimonial_article'
+  // Exported field_instance: 'node-testimonial-field_ref_testimonial_article'.
   $field_instances['node-testimonial-field_ref_testimonial_article'] = array(
     'bundle' => 'testimonial',
     'default_value' => NULL,
@@ -831,6 +894,7 @@ function ec_article_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A/B Test Page');
   t('Article');
   t('Article Type');
   t('Article author');

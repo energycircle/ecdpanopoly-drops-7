@@ -19,7 +19,7 @@ projects[adminrole][subdir] = eccontrib
 projects[adminrole][version] = 1.x
 
 projects[advanced_help][subdir] = eccontrib
-projects[advanced_help][version] = 1.3
+projects[advanced_help][version] = 1.x
 
 projects[auto_menutitle][subdir] = eccontrib
 projects[auto_menutitle][version] = 1.x
@@ -37,7 +37,7 @@ projects[backup_migrate][subdir] = eccontrib
 projects[backup_migrate][version] = 3.1
 
 projects[cer][subdir] = eccontrib
-projects[cer][version] = 3.0-alpha7
+projects[cer][version] = 3.x
 
 projects[colorbox][subdir] = eccontrib
 projects[colorbox][version] = 2.10
@@ -308,11 +308,11 @@ projects[xmlsitemap][version] = 2.2
 projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
 projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch 
 projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
-projects[compact_forms][patch] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
-projects[cer][patch][] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
-projects[metatag][patch][0] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
+projects[compact_forms][patch][2464993] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
+projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
+projects[metatag][patch][1918738] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
 #projects[metatag][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/master/patches/character_count_on_fields-1918738-9-ec.patch
-projects[maxlength][patch] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
+projects[maxlength][patch][1256968] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
 #projects[table_element][patch][] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
 #projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
 projects[entitycache][patch][2441965] = https://www.drupal.org/files/issues/entitycache_fix_upgrade_path-2441965-39.patch

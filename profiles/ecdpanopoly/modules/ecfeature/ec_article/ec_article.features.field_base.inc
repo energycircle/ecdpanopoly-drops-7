@@ -10,7 +10,32 @@
 function ec_article_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_article_author'
+  // Exported field_base: 'field_a_b_test_page'.
+  $field_bases['field_a_b_test_page'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_a_b_test_page',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'A Page' => 'A Page',
+        'B Page' => 'B Page',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_article_author'.
   $field_bases['field_article_author'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -31,7 +56,7 @@ function ec_article_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_article_image'
+  // Exported field_base: 'field_article_image'.
   $field_bases['field_article_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -53,7 +78,7 @@ function ec_article_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_article_source'
+  // Exported field_base: 'field_article_source'.
   $field_bases['field_article_source'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -82,7 +107,7 @@ function ec_article_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_article_type'
+  // Exported field_base: 'field_article_type'.
   $field_bases['field_article_type'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -109,7 +134,7 @@ function ec_article_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_ref_blog_article'
+  // Exported field_base: 'field_ref_blog_article'.
   $field_bases['field_ref_blog_article'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -144,7 +169,7 @@ function ec_article_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_study_article'
+  // Exported field_base: 'field_ref_case_study_article'.
   $field_bases['field_ref_case_study_article'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -179,7 +204,7 @@ function ec_article_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_article'
+  // Exported field_base: 'field_ref_prodpage_article'.
   $field_bases['field_ref_prodpage_article'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -214,7 +239,7 @@ function ec_article_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_promo_article'
+  // Exported field_base: 'field_ref_promo_article'.
   $field_bases['field_ref_promo_article'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -249,7 +274,7 @@ function ec_article_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_article'
+  // Exported field_base: 'field_ref_testimonial_article'.
   $field_bases['field_ref_testimonial_article'] = array(
     'active' => 1,
     'cardinality' => -1,

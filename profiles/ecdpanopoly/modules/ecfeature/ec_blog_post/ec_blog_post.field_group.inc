@@ -25,10 +25,10 @@ function ec_blog_post_field_group_info() {
     'children' => array(
       0 => 'field_ref_blog_article',
       1 => 'field_ref_blog_case_study',
-      2 => 'field_ref_blog_serv_group',
+      2 => 'field_ref_blog_page',
       3 => 'field_ref_blog_serv_cat',
-      4 => 'field_ref_blog_service',
-      5 => 'field_ref_blog_page',
+      4 => 'field_ref_blog_serv_group',
+      5 => 'field_ref_blog_service',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
