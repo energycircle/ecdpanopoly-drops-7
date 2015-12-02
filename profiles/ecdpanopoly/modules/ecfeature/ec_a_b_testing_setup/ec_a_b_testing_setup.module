@@ -1,0 +1,38 @@
+<?php
+/**
+ * @file
+ * Code for the EC A/B Testing Setup feature.
+ */
+
+include_once 'ec_a_b_testing_setup.features.inc';
+
+
+/*
+ * Implements hook_form_FORM_ID_alter.
+ *
+ * Move the 'field_path_override' field to the 'path' fieldset.
+ */
+
+function ec_a_b_testing_setup_form_node_form_alter(&$form, &$form_state, $form_id) {
+  // Check if field exists on node form.
+  if(isset($form['field_a_b_test_page'])) {
+    // Define field in 'path' fieldset and unset original definition.
+    $form['content_experiments']['field_a_b_test_page'] = $form['field_a_b_test_page'];
+    unset($form['field_a_b_test_page']);
+  }
+}
+/*
+ * Implements hook_node_update.
+ *
+ * Before saving the node, move the 'field_path_override' field back
+ * to its original location. Otherwise the field won't save.
+ */
+
+function ec_a_b_testing_setup_node_update($node) {
+  // Check if field exists on node form.
+  if(isset($node->content_experiments['field_a_b_test_page']['und'][0]['value'])) {
+    // Redefine field in original definition and unset in 'path' fieldset.
+    $node->field_a_b_test_page['und'][0]['value'] = $node->content_experiments['field_a_b_test_page']['und'][0]['value'];
+    unset($node->content_experiments['field_a_b_test_page']);
+	}
+}

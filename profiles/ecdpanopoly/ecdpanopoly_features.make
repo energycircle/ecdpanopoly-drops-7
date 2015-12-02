@@ -2,6 +2,12 @@ api = 2
 core = 7.x
 
 ;EC Features
+projects[ec_a_b_testing_setup][download][type] = git
+projects[ec_a_b_testing_setup][download][url] = https://github.com/energycircle/ec_a_b_testing_setup.git
+projects[ec_a_b_testing_setup][type] = module
+projects[ec_a_b_testing_setup][subdir] = ecfeature
+projects[ec_a_b_testing_setup][version] = 1.x
+
 projects[ec_administrative_dashboard][download][type] = git
 projects[ec_administrative_dashboard][download][url] = https://github.com/energycircle/ec_administrative_dashboard.git
 projects[ec_administrative_dashboard][type] = module
