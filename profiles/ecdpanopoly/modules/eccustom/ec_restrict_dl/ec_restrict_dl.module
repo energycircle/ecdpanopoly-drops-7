@@ -52,7 +52,11 @@ function ec_restrict_dl_file_entity_access($op, $file, $account) {
  */
 function ec_restrict_dl_file_transfer($uri, array $headers) {
 
-  //check if pdf and part of the private file system
+  if(user_access('view private files')) {
+    return $uri;
+  }
+
+  //check if not pdf and not part of the private file system
   if (substr($uri, -4) != '.pdf' || file_uri_scheme($uri) != 'private') {
     return $uri;
   }else{
