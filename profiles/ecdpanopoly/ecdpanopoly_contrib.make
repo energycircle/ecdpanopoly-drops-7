@@ -354,7 +354,7 @@ projects[ec_restrict_dl][type] = module
 libraries[superfish][download][type] = get
 libraries[superfish][type] = library
 libraries[superfish][directory_name] = superfish
-libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/archive/master.zip
+libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/archive/1.x.zip
 
 libraries[flexslider][download][type] = get
 libraries[flexslider][type] = library
