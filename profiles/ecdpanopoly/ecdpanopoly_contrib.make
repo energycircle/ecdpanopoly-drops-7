@@ -253,7 +253,7 @@ projects[services][subdir] = eccontrib
 projects[services][version] = 3.11
 
 projects[superfish][subdir] = eccontrib
-projects[superfish][version] = 1.x-dev
+projects[superfish][version] = 2.0
 
 projects[sendgrid_integration][subdir] = eccontrib
 projects[sendgrid_integration][version] = 1.0-alpha2
