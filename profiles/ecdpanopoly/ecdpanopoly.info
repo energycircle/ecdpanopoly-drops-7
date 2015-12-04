@@ -81,6 +81,7 @@ dependencies[] = field_validation_extras
 dependencies[] = field_validation_ui
 dependencies[] = field_hidden
 dependencies[] = flexslider
+dependencies[] = honeypot
 dependencies[] = insert_view
 dependencies[] = imagecache_token
 dependencies[] = jcarousel

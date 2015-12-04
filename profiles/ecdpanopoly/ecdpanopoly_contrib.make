@@ -165,6 +165,9 @@ projects[htmlmail][version] = 2.65
 projects[hierarchical_select][subdir] = eccontrib
 projects[hierarchical_select][version] = 3.0-beta2
 
+projects[honeypot][subdir] = eccontrib
+projects[honeypot][version] = 1.21
+
 projects[image_link_formatter][subdir] = eccontrib
 projects[image_link_formatter][version] = 1.0
 
