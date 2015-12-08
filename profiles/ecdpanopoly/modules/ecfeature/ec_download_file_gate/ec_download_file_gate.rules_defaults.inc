@@ -15,7 +15,7 @@ function ec_download_file_gate_default_rules_configuration() {
       "OWNER" : "rules",
       "REQUIRES" : [ "rules" ],
       "ON" : { "node_insert--request_restricted" : { "bundle" : "request_restricted" } },
-      "DO" : [ { "redirect" : { "url" : "node\\/1299" } } ]
+      "DO" : [ { "redirect" : { "url" : "node\\/2" } } ]
     }
   }');
   $items['rules_request_restricted'] = entity_import('rules_config', '{ "rules_request_restricted" : {

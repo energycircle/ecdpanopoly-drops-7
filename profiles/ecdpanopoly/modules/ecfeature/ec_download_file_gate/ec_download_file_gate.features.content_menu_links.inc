@@ -10,11 +10,31 @@
 function ec_download_file_gate_content_menu_links_defaults() {
   $menu_links = array();
 
+  // Exported menu link: management:admin/config/ecdpanopoly
+  $menu_links['management:admin/config/ecdpanopoly'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/ecdpanopoly',
+    'router_path' => 'admin/config/ecdpanopoly',
+    'link_title' => 'ECDPanopoly',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Configuration for ECDPanopoly',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -47,
+    'customized' => 1,
+    'parent_path' => 'admin/content',
+  );
   // Exported menu link: management:admin/reports/downloads
   $menu_links['management:admin/reports/downloads'] = array(
     'menu_name' => 'management',
     'link_path' => 'admin/reports/downloads',
-    'router_path' => 'admin/reports/downloads',
+    'router_path' => 'admin/reports',
     'link_title' => 'Tracked downloads',
     'options' => array(
       'attributes' => array(
@@ -26,33 +46,35 @@ function ec_download_file_gate_content_menu_links_defaults() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -41,
+    'weight' => -48,
     'customized' => 1,
-    'parent_path' => 'admin/reports',
+    'parent_path' => 'admin/config/ecdpanopoly',
   );
-  // Exported menu link: management:node/1318
-  $menu_links['management:node/1318'] = array(
+  // Exported menu link: management_thank-you-page:admin/settings/ecres
+  $menu_links['management_thank-you-page:admin/settings/ecres'] = array(
     'menu_name' => 'management',
-    'link_path' => 'node/1318',
-    'router_path' => 'node/%',
-    'link_title' => 'EC Guide Downloads',
+    'link_path' => 'admin/settings/ecres',
+    'router_path' => 'admin',
+    'link_title' => 'Thank you page',
     'options' => array(
       'attributes' => array(
-        'title' => '',
+        'title' => 'enter the thank you url',
       ),
+      'identifier' => 'management_thank-you-page:admin/settings/ecres',
     ),
-    'module' => 'menu',
+    'module' => 'system',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -39,
+    'weight' => -49,
     'customized' => 1,
-    'parent_path' => 'admin/reports',
+    'parent_path' => 'admin/config/ecdpanopoly',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('EC Guide Downloads');
+  t('ECDPanopoly');
+  t('Thank you page');
   t('Tracked downloads');
 
 

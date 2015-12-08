@@ -10,6 +10,219 @@
 function ec_download_file_gate_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'file-document-field_file_restricted'.
+  $field_instances['file-document-field_file_restricted'] = array(
+    'bundle' => 'document',
+    'default_value' => NULL,
+    'default_value_label_token' => 0,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'link' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'file',
+    'field_name' => 'field_file_restricted',
+    'label' => 'Restricted',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+      'wysiwyg_override' => 0,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-gated_file_page-body'.
+  $field_instances['node-gated_file_page-body'] = array(
+    'bundle' => 'gated_file_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => 0,
+    'settings' => array(
+      'display_summary' => 0,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-gated_file_page-field_restricted_download_file'.
+  $field_instances['node-gated_file_page-field_restricted_download_file'] = array(
+    'bundle' => 'gated_file_page',
+    'deleted' => 0,
+    'description' => 'Add a file that will require the site visitor to enter name/email/other fields in order to download.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'file_default',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_restricted_download_file',
+    'label' => 'Restricted Download File',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'restricted',
+      'file_extensions' => 'txt doc docx pdf',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'private' => 'private',
+          'public' => 0,
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 'document',
+          'image' => 0,
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-request_restricted-field_req_res_dl_link'.
   $field_instances['node-request_restricted-field_req_res_dl_link'] = array(
     'bundle' => 'request_restricted',
@@ -631,6 +844,8 @@ function ec_download_file_gate_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add a file that will require the site visitor to enter name/email/other fields in order to download.');
+  t('Body');
   t('Download Link');
   t('Download Times');
   t('Downloaded');
@@ -639,6 +854,8 @@ function ec_download_file_gate_field_default_field_instances() {
   t('Key');
   t('Name');
   t('Request Times');
+  t('Restricted');
+  t('Restricted Download File');
   t('Send Email');
 
   return $field_instances;

@@ -10,31 +10,31 @@
 function ec_download_file_gate_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: management_ec-guide-downloads:node/1318.
-  $menu_links['management_ec-guide-downloads:node/1318'] = array(
+  // Exported menu link: management_thank-you-page:admin/settings/ecres.
+  $menu_links['management_thank-you-page:admin/settings/ecres'] = array(
     'menu_name' => 'management',
-    'link_path' => 'node/1318',
-    'router_path' => 'node/%',
-    'link_title' => 'EC Guide Downloads',
+    'link_path' => 'admin/settings/ecres',
+    'router_path' => 'admin',
+    'link_title' => 'Thank you page',
     'options' => array(
       'attributes' => array(
-        'title' => '',
+        'title' => 'enter the thank you url',
       ),
-      'identifier' => 'management_ec-guide-downloads:node/1318',
+      'identifier' => 'management_thank-you-page:admin/settings/ecres',
     ),
-    'module' => 'menu',
+    'module' => 'system',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -39,
+    'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'management_reports:admin/reports',
+    'parent_identifier' => 'management_ecdpanopoly:admin/config/ecdpanopoly',
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('EC Guide Downloads');
+  t('Thank you page');
 
   return $menu_links;
 }

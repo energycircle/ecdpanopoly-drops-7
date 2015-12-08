@@ -11,11 +11,69 @@ function ec_download_file_gate_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'ec_guide_download_report';
+  $view->name = 'restrict_thumbnail';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'EC Guide Download Report';
+  $view->human_name = 'Restricted Download Thumbnail';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Restricted Download File */
+  $handler->display->display_options['fields']['field_restricted_download_file']['id'] = 'field_restricted_download_file';
+  $handler->display->display_options['fields']['field_restricted_download_file']['table'] = 'field_data_field_restricted_download_file';
+  $handler->display->display_options['fields']['field_restricted_download_file']['field'] = 'field_restricted_download_file';
+  $handler->display->display_options['fields']['field_restricted_download_file']['label'] = '';
+  $handler->display->display_options['fields']['field_restricted_download_file']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_restricted_download_file']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_restricted_download_file']['type'] = 'file_download_link';
+  $handler->display->display_options['fields']['field_restricted_download_file']['settings'] = array(
+    'text' => 'Download [file:name]',
+  );
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+
+  /* Display: Restricted Download Thumbnail */
+  $handler = $view->new_display('panel_pane', 'Restricted Download Thumbnail', 'panel_pane_1');
+  $export['restrict_thumbnail'] = $view;
+
+  $view = new view();
+  $view->name = 'restricted_download_report';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Restricted Download Report';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -165,7 +223,7 @@ function ec_download_file_gate_views_default_views() {
     'panel_pane_1' => 'panel_pane_1',
     'default' => 0,
   );
-  $export['ec_guide_download_report'] = $view;
+  $export['restricted_download_report'] = $view;
 
   $view = new view();
   $view->name = 'restricted_file_check';
@@ -192,10 +250,10 @@ function ec_download_file_gate_views_default_views() {
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Content: Guide File (field_ec_guide_document:fid) */
-  $handler->display->display_options['relationships']['field_ec_guide_document_fid']['id'] = 'field_ec_guide_document_fid';
-  $handler->display->display_options['relationships']['field_ec_guide_document_fid']['table'] = 'field_data_field_ec_guide_document';
-  $handler->display->display_options['relationships']['field_ec_guide_document_fid']['field'] = 'field_ec_guide_document_fid';
+  /* Relationship: Content: Restricted Download File (field_restricted_download_file:fid) */
+  $handler->display->display_options['relationships']['field_restricted_download_file_fid']['id'] = 'field_restricted_download_file_fid';
+  $handler->display->display_options['relationships']['field_restricted_download_file_fid']['table'] = 'field_data_field_restricted_download_file';
+  $handler->display->display_options['relationships']['field_restricted_download_file_fid']['field'] = 'field_restricted_download_file_fid';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -213,34 +271,26 @@ function ec_download_file_gate_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Guide File (field_ec_guide_document:fid) */
-  $handler->display->display_options['arguments']['field_ec_guide_document_fid']['id'] = 'field_ec_guide_document_fid';
-  $handler->display->display_options['arguments']['field_ec_guide_document_fid']['table'] = 'field_data_field_ec_guide_document';
-  $handler->display->display_options['arguments']['field_ec_guide_document_fid']['field'] = 'field_ec_guide_document_fid';
-  $handler->display->display_options['arguments']['field_ec_guide_document_fid']['default_action'] = 'not found';
-  $handler->display->display_options['arguments']['field_ec_guide_document_fid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_ec_guide_document_fid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_ec_guide_document_fid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_ec_guide_document_fid']['summary_options']['items_per_page'] = '25';
+  /* Contextual filter: Content: Restricted Download File (field_restricted_download_file:fid) */
+  $handler->display->display_options['arguments']['field_restricted_download_file_fid']['id'] = 'field_restricted_download_file_fid';
+  $handler->display->display_options['arguments']['field_restricted_download_file_fid']['table'] = 'field_data_field_restricted_download_file';
+  $handler->display->display_options['arguments']['field_restricted_download_file_fid']['field'] = 'field_restricted_download_file_fid';
+  $handler->display->display_options['arguments']['field_restricted_download_file_fid']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['field_restricted_download_file_fid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_restricted_download_file_fid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_restricted_download_file_fid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_restricted_download_file_fid']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'ec_guide' => 'ec_guide',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: File: Restricted (field_file_restricted) */
   $handler->display->display_options['filters']['field_file_restricted_value']['id'] = 'field_file_restricted_value';
   $handler->display->display_options['filters']['field_file_restricted_value']['table'] = 'field_data_field_file_restricted';
   $handler->display->display_options['filters']['field_file_restricted_value']['field'] = 'field_file_restricted_value';
-  $handler->display->display_options['filters']['field_file_restricted_value']['relationship'] = 'field_ec_guide_document_fid';
+  $handler->display->display_options['filters']['field_file_restricted_value']['relationship'] = 'field_restricted_download_file_fid';
   $handler->display->display_options['filters']['field_file_restricted_value']['value'] = array(
     1 => '1',
   );
