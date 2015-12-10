@@ -1274,18 +1274,18 @@ function ec_download_file_gate_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_gated_file_page';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
-  $export['menu_options_gated_file_page'] = $strongarm;
+  $strongarm->name = 'ec_restrict_dl_ty_url';
+  $strongarm->value = 'file-request-thank-you';
+  $export['ec_restrict_dl_ty_url'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_gated_file_page';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_gated_file_page'] = $strongarm;
+  $strongarm->name = 'menu_options_request_restricted';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_request_restricted'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -1297,25 +1297,18 @@ function ec_download_file_gate_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_gated_file_page';
+  $strongarm->name = 'node_options_request_restricted';
   $strongarm->value = array(
     0 => 'status',
   );
-  $export['node_options_gated_file_page'] = $strongarm;
+  $export['node_options_request_restricted'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_gated_file_page';
+  $strongarm->name = 'node_preview_request_restricted';
   $strongarm->value = '0';
-  $export['node_preview_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_gated_file_page';
-  $strongarm->value = 0;
-  $export['node_submitted_gated_file_page'] = $strongarm;
+  $export['node_preview_request_restricted'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -1375,6 +1368,48 @@ function ec_download_file_gate_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'redirect_setting_name_request_restricted';
+  $strongarm->value = 'rh_node_redirect';
+  $export['redirect_setting_name_request_restricted'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_module_request_restricted';
+  $strongarm->value = 'rh_node';
+  $export['rh_module_request_restricted'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_action_request_restricted';
+  $strongarm->value = '0';
+  $export['rh_node_action_request_restricted'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_override_request_restricted';
+  $strongarm->value = 0;
+  $export['rh_node_override_request_restricted'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_request_restricted';
+  $strongarm->value = '';
+  $export['rh_node_redirect_request_restricted'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_response_request_restricted';
+  $strongarm->value = '301';
+  $export['rh_node_redirect_response_request_restricted'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'weight_default_gated_file_page';
   $strongarm->value = '0';
   $export['weight_default_gated_file_page'] = $strongarm;
@@ -1419,46 +1454,53 @@ function ec_download_file_gate_defaultconfig_strongarm() {
 function ec_download_file_gate_defaultconfig_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer panelizer node gated_file_page defaults'.
-  $permissions['administer panelizer node gated_file_page defaults'] = array(
-    'name' => 'administer panelizer node gated_file_page defaults',
+  // Exported permission: 'administer panelizer node gated_file_page breadcrumbs'.
+  $permissions['administer panelizer node gated_file_page breadcrumbs'] = array(
+    'name' => 'administer panelizer node gated_file_page breadcrumbs',
     'roles' => array(),
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'create gated_file_page content'.
-  $permissions['create gated_file_page content'] = array(
-    'name' => 'create gated_file_page content',
+  // Exported permission: 'administer panelizer node gated_file_page content'.
+  $permissions['administer panelizer node gated_file_page content'] = array(
+    'name' => 'administer panelizer node gated_file_page content',
     'roles' => array(),
-    'module' => 'node',
+    'module' => 'panelizer',
   );
 
-  // Exported permission: 'delete any gated_file_page content'.
-  $permissions['delete any gated_file_page content'] = array(
-    'name' => 'delete any gated_file_page content',
+  // Exported permission: 'administer panelizer node gated_file_page context'.
+  $permissions['administer panelizer node gated_file_page context'] = array(
+    'name' => 'administer panelizer node gated_file_page context',
     'roles' => array(),
-    'module' => 'node',
+    'module' => 'panelizer',
   );
 
-  // Exported permission: 'delete own gated_file_page content'.
-  $permissions['delete own gated_file_page content'] = array(
-    'name' => 'delete own gated_file_page content',
+  // Exported permission: 'administer panelizer node gated_file_page layout'.
+  $permissions['administer panelizer node gated_file_page layout'] = array(
+    'name' => 'administer panelizer node gated_file_page layout',
     'roles' => array(),
-    'module' => 'node',
+    'module' => 'panelizer',
   );
 
-  // Exported permission: 'edit any gated_file_page content'.
-  $permissions['edit any gated_file_page content'] = array(
-    'name' => 'edit any gated_file_page content',
+  // Exported permission: 'administer panelizer node gated_file_page overview'.
+  $permissions['administer panelizer node gated_file_page overview'] = array(
+    'name' => 'administer panelizer node gated_file_page overview',
     'roles' => array(),
-    'module' => 'node',
+    'module' => 'panelizer',
   );
 
-  // Exported permission: 'edit own gated_file_page content'.
-  $permissions['edit own gated_file_page content'] = array(
-    'name' => 'edit own gated_file_page content',
+  // Exported permission: 'administer panelizer node gated_file_page settings'.
+  $permissions['administer panelizer node gated_file_page settings'] = array(
+    'name' => 'administer panelizer node gated_file_page settings',
     'roles' => array(),
-    'module' => 'node',
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node request_restricted defaults'.
+  $permissions['administer panelizer node request_restricted defaults'] = array(
+    'name' => 'administer panelizer node request_restricted defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
   );
 
   return $permissions;

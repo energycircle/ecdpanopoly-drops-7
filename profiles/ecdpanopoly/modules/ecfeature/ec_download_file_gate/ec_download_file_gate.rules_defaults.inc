@@ -15,7 +15,7 @@ function ec_download_file_gate_default_rules_configuration() {
       "OWNER" : "rules",
       "REQUIRES" : [ "rules" ],
       "ON" : { "node_insert--request_restricted" : { "bundle" : "request_restricted" } },
-      "DO" : [ { "redirect" : { "url" : "node\\/2" } } ]
+      "DO" : [ { "redirect" : { "url" : "node\\/65" } } ]
     }
   }');
   $items['rules_request_restricted'] = entity_import('rules_config', '{ "rules_request_restricted" : {
@@ -32,8 +32,8 @@ function ec_download_file_gate_default_rules_configuration() {
         { "mail" : {
             "to" : "[node:field-req-res-email]",
             "subject" : "[node:title] - [node:field-req-res-name]",
-            "message" : "Thank you for requesting an Energy Circle Guide.\\r\\n\\r\\nClick the link below to download the file. \\r\\n\\r\\n[node:title]\\r\\n\\r\\nhttp:\\/\\/energycircle.com.678elmp02.blackmesh.com\\/[node:field_req_res_dl_link]\\u0026key=[node:field-req-res-key]\\r\\n\\r\\n",
-            "from" : "info@energycircle.com",
+            "message" : "Thank you for requesting a Guide.\\r\\n\\r\\nClick the link below to download the file. \\r\\n\\r\\n[node:title]\\r\\n\\r\\n[site:url]\\/[node:field_req_res_dl_link]\\u0026key=[node:field-req-res-key]\\r\\n\\r\\n",
+            "from" : "[site:mail]",
             "language" : [ "" ]
           }
         },

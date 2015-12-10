@@ -24,11 +24,11 @@ function ec_download_file_gate_content_menu_links_defaults() {
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-    'parent_path' => 'admin/content',
+    'weight' => 0,
+    'customized' => 0,
+    'parent_path' => 'admin/config',
   );
   // Exported menu link: management:admin/reports/downloads
   $menu_links['management:admin/reports/downloads'] = array(
@@ -44,17 +44,17 @@ function ec_download_file_gate_content_menu_links_defaults() {
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
+    'has_children' => 1,
+    'expanded' => 1,
     'weight' => -48,
     'customized' => 1,
-    'parent_path' => 'admin/config/ecdpanopoly',
+    'parent_path' => 'admin/content',
   );
   // Exported menu link: management_thank-you-page:admin/settings/ecres
   $menu_links['management_thank-you-page:admin/settings/ecres'] = array(
     'menu_name' => 'management',
     'link_path' => 'admin/settings/ecres',
-    'router_path' => 'admin',
+    'router_path' => 'admin/settings/ecres',
     'link_title' => 'Thank you page',
     'options' => array(
       'attributes' => array(
@@ -65,11 +65,11 @@ function ec_download_file_gate_content_menu_links_defaults() {
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
+    'has_children' => 1,
+    'expanded' => 1,
+    'weight' => -50,
     'customized' => 1,
-    'parent_path' => 'admin/config/ecdpanopoly',
+    'parent_path' => 'admin/reports/downloads',
   );
   // Translatables
   // Included for use with string extractors like potx.

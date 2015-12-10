@@ -80,6 +80,7 @@ function ec_download_file_gate_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Manage Tracked Downloads';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
@@ -202,9 +203,6 @@ function ec_download_file_gate_views_default_views() {
     'request_restricted' => 'request_restricted',
   );
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
-
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
   $handler->display->display_options['pager']['type'] = 'none';
@@ -220,9 +218,21 @@ function ec_download_file_gate_views_default_views() {
   $handler->display->display_options['style_options']['keep_html'] = 0;
   $handler->display->display_options['path'] = 'admin/export-guide-downloads';
   $handler->display->display_options['displays'] = array(
-    'panel_pane_1' => 'panel_pane_1',
+    'page_1' => 'page_1',
     'default' => 0,
+    'panel_pane_1' => 0,
   );
+
+  /* Display: Manage Downloads */
+  $handler = $view->new_display('page', 'Manage Downloads', 'page_1');
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  $handler->display->display_options['path'] = 'admin/reports/downloads';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Tracked downloads';
+  $handler->display->display_options['menu']['weight'] = '10';
+  $handler->display->display_options['menu']['name'] = 'management';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['restricted_download_report'] = $view;
 
   $view = new view();

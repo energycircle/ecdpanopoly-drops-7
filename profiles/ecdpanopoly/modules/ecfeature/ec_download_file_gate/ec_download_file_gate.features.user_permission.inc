@@ -10,9 +10,58 @@
 function ec_download_file_gate_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node gated_file_page breadcrumbs'.
+  $permissions['administer panelizer node gated_file_page breadcrumbs'] = array(
+    'name' => 'administer panelizer node gated_file_page breadcrumbs',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node gated_file_page content'.
+  $permissions['administer panelizer node gated_file_page content'] = array(
+    'name' => 'administer panelizer node gated_file_page content',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node gated_file_page context'.
+  $permissions['administer panelizer node gated_file_page context'] = array(
+    'name' => 'administer panelizer node gated_file_page context',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node gated_file_page defaults'.
   $permissions['administer panelizer node gated_file_page defaults'] = array(
     'name' => 'administer panelizer node gated_file_page defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node gated_file_page layout'.
+  $permissions['administer panelizer node gated_file_page layout'] = array(
+    'name' => 'administer panelizer node gated_file_page layout',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node gated_file_page overview'.
+  $permissions['administer panelizer node gated_file_page overview'] = array(
+    'name' => 'administer panelizer node gated_file_page overview',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node gated_file_page settings'.
+  $permissions['administer panelizer node gated_file_page settings'] = array(
+    'name' => 'administer panelizer node gated_file_page settings',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node request_restricted defaults'.
+  $permissions['administer panelizer node request_restricted defaults'] = array(
+    'name' => 'administer panelizer node request_restricted defaults',
     'roles' => array(),
     'module' => 'panelizer',
   );

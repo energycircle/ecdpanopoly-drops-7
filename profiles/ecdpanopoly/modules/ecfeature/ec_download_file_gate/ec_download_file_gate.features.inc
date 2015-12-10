@@ -27,35 +27,6 @@ function ec_download_file_gate_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_strongarm_alter().
- */
-function ec_download_file_gate_strongarm_alter(&$data) {
-  if (isset($data['ec_restrict_dl_max'])) {
-    unset($data['ec_restrict_dl_max']);
-  }
-  if (isset($data['ec_restrict_dl_ty_url'])) {
-    unset($data['ec_restrict_dl_ty_url']);
-  }
-  if (isset($data['field_bundle_settings_node__request_restricted'])) {
-    unset($data['field_bundle_settings_node__request_restricted']);
-  }
-}
-
-/**
- * Implements hook_views_default_views_alter().
- */
-function ec_download_file_gate_views_default_views_alter(&$data) {
-  if (isset($data['admin_views_file'])) {
-    $data['admin_views_file']->display['default']->display_options['fields']['field_file_restricted'] = array(
-      'id' => 'field_file_restricted',
-      'table' => 'field_data_field_file_restricted',
-      'field' => 'field_file_restricted',
-      'type' => 'list_key',
-    ); /* WAS: '' */
-  }
-}
-
-/**
  * Implements hook_node_info().
  */
 function ec_download_file_gate_node_info() {
