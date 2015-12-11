@@ -123,11 +123,11 @@ projects[exclude_node_title][version] = 1.9
 projects[external][subdir] = eccontrib
 projects[external][version] = 1.x-dev
 
-#projects[feeds][subdir] = eccontrib
-#projects[feeds][version] = 2.x
+projects[feeds][subdir] = eccontrib
+projects[feeds][version] = 2.x
 
-#projects[feeds_tamper][subdir] = eccontrib
-#projects[feeds_tamper][version] = 1.1
+projects[feeds_tamper][subdir] = eccontrib
+projects[feeds_tamper][version] = 1.1
 
 projects[field_collection][subdir] = eccontrib
 projects[field_collection][version] = 1.0-beta10
