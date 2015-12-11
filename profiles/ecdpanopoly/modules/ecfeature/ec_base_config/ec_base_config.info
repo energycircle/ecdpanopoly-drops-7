@@ -18,6 +18,7 @@ dependencies[] = date
 dependencies[] = defaultconfig
 dependencies[] = defaultcontent
 dependencies[] = email
+dependencies[] = ec_mail_settings
 dependencies[] = entity
 dependencies[] = entity_view_mode
 dependencies[] = entityform
