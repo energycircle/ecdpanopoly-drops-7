@@ -45,6 +45,9 @@ projects[colorbox][version] = 2.10
 projects[compact_forms][subdir] = eccontrib
 projects[compact_forms][version] = 1.x
 
+projects[computed_field][subdir] = eccontrib
+projects[computed_field][version] = 1.x
+
 projects[contemplate][subdir] = eccontrib
 projects[contemplate][version] = 1.x
 
@@ -141,8 +144,8 @@ projects[field_hidden][version] = 1.7
 projects[field_multiple_limit][subdir] = eccontrib
 projects[field_multiple_limit][version] = 1.x
 
-;projects[field_permissions][version] = 1.x
-;projects[field_permissions][subdir] = eccontrib
+projects[field_permissions][version] = 1.x
+projects[field_permissions][subdir] = eccontrib
 
 projects[field_validation][subdir] = eccontrib
 projects[field_validation][version] = 2.6
@@ -282,6 +285,9 @@ projects[total_control][version] = 2.x
 projects[variable][subdir] = eccontrib
 projects[variable][version] = 2.5
 
+projects[variable_email][subdir] = eccontrib
+projects[variable_email][version] = 1.0-alpha1
+
 projects[views_accordion][subdir] = eccontrib
 projects[views_accordion][version] = 1.x
 
@@ -360,6 +366,11 @@ libraries[flexslider][download][type] = get
 libraries[flexslider][type] = library
 libraries[flexslider][directory_name] = flexslider
 libraries[flexslider][download][url] = https://api.github.com/repos/woothemes/FlexSlider/zipball/version/2.2.2
+
+libraries[matchMedia][download][type] = git
+libraries[matchMedia][type] = library
+libraries[matchMedia][directory_name] = matchMedia
+libraries[matchMedia][download][url] = https://github.com/paulirish/matchMedia.js.git
 
 ; THEMES
 projects[adaptivetheme][version] = 3.x

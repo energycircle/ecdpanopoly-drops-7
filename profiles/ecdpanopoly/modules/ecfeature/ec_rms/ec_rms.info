@@ -182,7 +182,6 @@ features[defaultconfig][] = user_default_permissions:edit any review_site conten
 features[defaultconfig][] = user_default_permissions:edit field_review_email
 features[defaultconfig][] = user_default_permissions:edit field_review_first_name
 features[defaultconfig][] = user_default_permissions:edit field_review_last_name
-features[defaultconfig][] = user_default_permissions:edit mimemail user settings
 features[defaultconfig][] = user_default_permissions:edit own ec_review content
 features[defaultconfig][] = user_default_permissions:edit own field_review_email
 features[defaultconfig][] = user_default_permissions:edit own field_review_first_name

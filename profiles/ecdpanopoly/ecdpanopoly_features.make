@@ -98,6 +98,12 @@ projects[ec_download_file_gate][subdir] = ecfeature
 projects[ec_download_file_gate][type] = module
 projects[ec_download_file_gate][version] = 1.x
 
+projects[ec_mail_settings][download][type] = git
+projects[ec_mail_settings][download][url] = https://github.com/energycircle/ec_mail_settings.git
+projects[ec_mail_settings][subdir] = ecfeature
+projects[ec_mail_settings][type] = module
+projects[ec_mail_settings][version] = 1.x
+
 projects[ec_external_video][download][type] = git
 projects[ec_external_video][download][url] = https://github.com/energycircle/ec_external_video.git
 projects[ec_external_video][subdir] = ecfeature

@@ -2183,15 +2183,7 @@ function ec_rms_defaultconfig_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: 'edit mimemail user settings'.
-  $permissions['edit mimemail user settings'] = array(
-    'name' => 'edit mimemail user settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'mimemail',
-  );
+  
 
   // Exported permission: 'edit own ec_review content'.
   $permissions['edit own ec_review content'] = array(
