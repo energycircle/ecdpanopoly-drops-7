@@ -71,9 +71,9 @@ files[] = views/feeds_views_handler_field_source.inc
 files[] = views/feeds_views_handler_filter_severity.inc
 files[] = views/feeds_views_plugin_argument_validate_feed_nid.inc
 
-; Information added by Drupal.org packaging script on 2015-12-08
-version = "7.x-2.0-beta1+23-dev"
+; Information added by Drupal.org packaging script on 2015-12-13
+version = "7.x-2.0-beta1+24-dev"
 core = "7.x"
 project = "feeds"
-datestamp = "1449609844"
+datestamp = "1450042144"
 

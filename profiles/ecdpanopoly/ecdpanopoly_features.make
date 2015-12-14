@@ -62,6 +62,12 @@ projects[ec_cleaner][subdir] = ecfeature
 projects[ec_cleaner][type] = module
 projects[ec_cleaner][version] =  1.x
 
+projects[ec_citypages][download][type] = git
+projects[ec_citypages][download][url] = https://github.com/energycircle/ec_citypages.git
+projects[ec_citypages][subdir] = ecfeature
+projects[ec_citypages][type] = module
+projects[ec_citypages][version] =  1.x
+
 #projects[ec_conference_tracks_sessions][download][type] = git
 #projects[ec_conference_tracks_sessions][download][url] = https://github.com/energycircle/ec_conference_tracks_sessions.git
 #projects[ec_conference_tracks_sessions][subdir] = ecfeature
