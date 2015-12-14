@@ -10,5 +10,5 @@ dependencies[] = libraries
 version = "7.x-1.0-alpha10+8-dev"
 core = "7.x"
 project = "navbar"
-datestamp = "1450115961"
+datestamp = "1450117742"
 
