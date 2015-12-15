@@ -10,6 +10,7 @@ dependencies[] = field_group
 dependencies[] = flexslider_views
 dependencies[] = geolocation
 dependencies[] = geolocation_googlemaps
+dependencies[] = geolocation_views
 dependencies[] = media
 dependencies[] = metatag
 dependencies[] = panopoly_core

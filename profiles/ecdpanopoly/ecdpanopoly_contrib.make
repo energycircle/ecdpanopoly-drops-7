@@ -156,6 +156,12 @@ projects[flippy][version] = 1.4
 projects[flexslider][subdir] = eccontrib
 projects[flexslider][version] = 2.x-dev
 
+projects[geolocation][subdir] = eccontrib
+projects[geolocation][version] = 1.x
+
+projects[geolocation_views][subdir] = eccontrib
+projects[geolocation_views][version] = 1.x
+
 projects[globalredirect][subdir] = eccontrib
 projects[globalredirect][version] = 1.5
 
