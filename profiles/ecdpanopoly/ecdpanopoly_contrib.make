@@ -16,7 +16,7 @@ projects[admin_theme][subdir] = eccontrib
 projects[admin_theme][version] = 1.x
 
 projects[adminrole][subdir] = eccontrib
-projects[adminrole][version] = 1.x
+projects[adminrole][version] = 1.1
 
 projects[advanced_help][subdir] = eccontrib
 projects[advanced_help][version] = 1.x
@@ -172,7 +172,7 @@ projects[htmlmail][subdir] = eccontrib
 projects[htmlmail][version] = 2.65
 
 projects[hierarchical_select][subdir] = eccontrib
-projects[hierarchical_select][version] = 3.0-beta2
+projects[hierarchical_select][version] = 3.0-beta3
 
 projects[honeypot][subdir] = eccontrib
 projects[honeypot][version] = 1.21
@@ -220,7 +220,7 @@ projects[node_authlink][subdir] = eccontrib
 projects[node_authlink][version] = 1.1
 
 projects[node_clone][subdir] = eccontrib
-projects[node_clone][version] = 1.x
+projects[node_clone][version] = 1.0
 
 projects[nodequeue][subdir] = eccontrib
 projects[nodequeue][version] = 2.0
@@ -259,19 +259,19 @@ projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.11
+projects[services][version] = 3.12
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 2.0
 
 projects[sendgrid_integration][subdir] = eccontrib
-projects[sendgrid_integration][version] = 1.0-alpha2
+projects[sendgrid_integration][version] = 1.0-alpha3
 
 projects[sharethis][subdir] = eccontrib
 projects[sharethis][version] = 2.12
 
 projects[smtp][subdir] = eccontrib
-projects[smtp][version] = 1.2
+projects[smtp][version] = 1.3
 
 projects[table_element][subdir] = eccontrib
 projects[table_element][version] = 1.0-beta3

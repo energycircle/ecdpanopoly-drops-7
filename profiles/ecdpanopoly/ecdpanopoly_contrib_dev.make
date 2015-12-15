@@ -6,7 +6,7 @@ core = 7.x
 projects[diff][version] = 3.2
 projects[diff][subdir] = ec-dev
 
-projects[features_extra][version] = 1.0-beta1
+projects[features_extra][version] = 1.0
 projects[features_extra][subdir] = ec-dev
 
 projects[uuid_features][version] = 1.0-alpha4
