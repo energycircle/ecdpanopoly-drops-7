@@ -21,11 +21,11 @@ function ec_citypages_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'City Page Tabs',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'group_citypages_description',
-      1 => 'group_citypages_shown_this_page',
-      2 => 'group_citypages_photoset',
+      1 => 'group_citypages_photoset',
+      2 => 'group_citypages_shown_this_page',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -50,10 +50,10 @@ function ec_citypages_field_group_info() {
     'label' => 'Description Builder',
     'weight' => '2',
     'children' => array(
-      0 => 'field_citypages_placenames',
+      0 => 'field_citypages_example',
       1 => 'field_citypages_local_experience',
-      2 => 'field_citypages_example',
-      3 => 'field_citypages_other_descriptio',
+      2 => 'field_citypages_other_descriptio',
+      3 => 'field_citypages_placenames',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -112,9 +112,9 @@ function ec_citypages_field_group_info() {
     'label' => 'Shown on This Page',
     'weight' => '4',
     'children' => array(
-      0 => 'field_ref_citypages_testimonials',
-      1 => 'field_ref_citypages_blog',
-      2 => 'field_ref_citypages_case_study',
+      0 => 'field_ref_citypages_blog',
+      1 => 'field_ref_citypages_case_study',
+      2 => 'field_ref_citypages_testimonials',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

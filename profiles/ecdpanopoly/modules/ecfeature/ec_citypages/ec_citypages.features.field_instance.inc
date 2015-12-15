@@ -10,6 +10,132 @@
 function ec_citypages_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-blog_post-field_ref_blog_citypages'.
+  $field_instances['node-blog_post-field_ref_blog_citypages'] = array(
+    'bundle' => 'blog_post',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Show this blog post on the selected city page(s).',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 12,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_blog_citypages',
+    'label' => 'City Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance: 'node-case_study-field_ref_case_study_citypages'.
+  $field_instances['node-case_study-field_ref_case_study_citypages'] = array(
+    'bundle' => 'case_study',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Show this case study on the selected city page(s)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 17,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_case_study_citypages',
+    'label' => 'City Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 20,
+    ),
+  );
+
   // Exported field_instance: 'node-city_page-field_citypages_example'.
   $field_instances['node-city_page-field_citypages_example'] = array(
     'bundle' => 'city_page',
@@ -298,6 +424,67 @@ function ec_citypages_field_default_field_instances() {
       ),
       'type' => 'media_generic',
       'weight' => 18,
+    ),
+  );
+
+  // Exported field_instance: 'node-city_page-field_citypages_pin'.
+  $field_instances['node-city_page-field_citypages_pin'] = array(
+    'bundle' => 'city_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select a point in the city/neighborhood for the map pin.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'geolocation',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'geolocation_text',
+        'weight' => 11,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_citypages_pin',
+    'label' => 'Location pin',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'geolocation_googlemaps',
+      'settings' => array(
+        'marker_draggable' => 1,
+        'scrollwheel' => 1,
+      ),
+      'type' => 'geolocation_googlemap',
+      'weight' => 1,
     ),
   );
 
@@ -704,10 +891,75 @@ function ec_citypages_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-testimonial-field_ref_testimonial_citypages'.
+  $field_instances['node-testimonial-field_ref_testimonial_citypages'] = array(
+    'bundle' => 'testimonial',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 15,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_testimonial_citypages',
+    'label' => 'City Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 25,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog Posts');
   t('Case Studies');
+  t('City Page');
   t('City Photos');
   t('Describe a notable, particular job of local appeal.<br /><br /><strong>Example: "Did you see our trucks installing panels for the school on Main Street? We installed a PV array that provides 70% of the electricity for the new wing."</strong>');
   t('Describe the type of clients, buildings, or structures you typically work with, in this locality.<br /><br /><strong>Example: "Our contractors work in all type of homes, from the brownstones of Back Bay to the single-family homes in the newest developments. We\'ve worked in Boston for years, and have experience in all types of Boston structures."</strong>');
@@ -718,8 +970,12 @@ function ec_citypages_field_default_field_instances() {
   t('Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD');
   t('Featured Video');
   t('Image');
+  t('Location pin');
   t('Other Local Notes');
+  t('Select a point in the city/neighborhood for the map pin.');
   t('Short, narrative description of what places are in this City.<br /><br /> <strong>Example: "From the distinctive Beacon Hill to the North End, Back Bay and Chinatown, we serve all of downtown Boston."</strong>');
+  t('Show this blog post on the selected city page(s).');
+  t('Show this case study on the selected city page(s)');
   t('Testimonials');
   t('Upload local photos for an in-page slideshow. Ideal photos show your work and your brand. Enter captions in the "Description" field.');
 

@@ -110,19 +110,19 @@ function ec_citypages_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '6',
+          'weight' => '4',
         ),
         'xmlsitemap' => array(
-          'weight' => '5',
+          'weight' => '3',
         ),
       ),
       'display' => array(),

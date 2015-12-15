@@ -47,10 +47,10 @@ function ec_citypages_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
-  $pane->pid = 'new-60419546-cecf-4434-9418-4ff6ffc2de5e';
+  $pane->pid = 'new-19c604c9-c704-4e0c-bafe-9f5cf443c12d';
   $pane->panel = 'two_66_33_first';
   $pane->type = 'views_panes';
-  $pane->subtype = 'city_pages-panel_pane_2';
+  $pane->subtype = 'citypages_image_or_video-panel_pane_1';
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
@@ -66,9 +66,9 @@ function ec_citypages_panelizer_defaults() {
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
-  $pane->uuid = '60419546-cecf-4434-9418-4ff6ffc2de5e';
-  $display->content['new-60419546-cecf-4434-9418-4ff6ffc2de5e'] = $pane;
-  $display->panels['two_66_33_first'][0] = 'new-60419546-cecf-4434-9418-4ff6ffc2de5e';
+  $pane->uuid = '19c604c9-c704-4e0c-bafe-9f5cf443c12d';
+  $display->content['new-19c604c9-c704-4e0c-bafe-9f5cf443c12d'] = $pane;
+  $display->panels['two_66_33_first'][0] = 'new-19c604c9-c704-4e0c-bafe-9f5cf443c12d';
   $pane = new stdClass();
   $pane->pid = 'new-b7d51614-0ab2-423a-81e9-c04f81c8a173';
   $pane->panel = 'two_66_33_first';
@@ -92,6 +92,29 @@ function ec_citypages_panelizer_defaults() {
   $pane->uuid = 'b7d51614-0ab2-423a-81e9-c04f81c8a173';
   $display->content['new-b7d51614-0ab2-423a-81e9-c04f81c8a173'] = $pane;
   $display->panels['two_66_33_first'][1] = 'new-b7d51614-0ab2-423a-81e9-c04f81c8a173';
+  $pane = new stdClass();
+  $pane->pid = 'new-60419546-cecf-4434-9418-4ff6ffc2de5e';
+  $pane->panel = 'two_66_33_first';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'city_pages-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+    'view_mode' => 'teaser',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $pane->uuid = '60419546-cecf-4434-9418-4ff6ffc2de5e';
+  $display->content['new-60419546-cecf-4434-9418-4ff6ffc2de5e'] = $pane;
+  $display->panels['two_66_33_first'][2] = 'new-60419546-cecf-4434-9418-4ff6ffc2de5e';
   $pane = new stdClass();
   $pane->pid = 'new-2ada9f9a-4730-4ac2-92ee-cfd7ba6bc30d';
   $pane->panel = 'two_66_33_second';

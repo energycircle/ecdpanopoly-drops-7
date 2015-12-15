@@ -11,10 +11,6 @@ function ec_citypages_defaultconfig_features() {
   return array(
     'ec_citypages' => array(
       'field_default_fields' => 'field_default_fields',
-      'field_group_info' => 'field_group_info',
-      'panelizer_defaults' => 'panelizer_defaults',
-      'strongarm' => 'strongarm',
-      'user_default_permissions' => 'user_default_permissions',
       'views_default_views' => 'views_default_views',
     ),
   );
@@ -25,6 +21,224 @@ function ec_citypages_defaultconfig_features() {
  */
 function ec_citypages_defaultconfig_field_default_fields() {
   $fields = array();
+
+  // Exported field: 'node-blog_post-field_ref_blog_citypages'.
+  $fields['node-blog_post-field_ref_blog_citypages'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_blog_citypages',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'city_page' => 'city_page',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'blog_post',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Show this blog post on the selected city page(s).',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 12,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_blog_citypages',
+      'label' => 'City Page',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 17,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-case_study-field_ref_case_study_citypages'.
+  $fields['node-case_study-field_ref_case_study_citypages'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_case_study_citypages',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'city_page' => 'city_page',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'case_study',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Show this case study on the selected city page(s)',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 17,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_case_study_citypages',
+      'label' => 'City Page',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 20,
+      ),
+    ),
+  );
 
   // Exported field: 'node-city_page-field_citypages_example'.
   $fields['node-city_page-field_citypages_example'] = array(
@@ -425,6 +639,90 @@ function ec_citypages_defaultconfig_field_default_fields() {
         ),
         'type' => 'media_generic',
         'weight' => 18,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-city_page-field_citypages_pin'.
+  $fields['node-city_page-field_citypages_pin'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_citypages_pin',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'lat' => array(
+          0 => 'lat',
+        ),
+        'lng' => array(
+          0 => 'lng',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'geolocation',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'geolocation_latlng',
+    ),
+    'field_instance' => array(
+      'bundle' => 'city_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Select a point in the city/neighborhood for the map pin.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'geolocation',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'geolocation_text',
+          'weight' => 11,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_citypages_pin',
+      'label' => 'Location pin',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'geolocation_googlemaps',
+        'settings' => array(
+          'marker_draggable' => 1,
+          'scrollwheel' => 1,
+        ),
+        'type' => 'geolocation_googlemap',
+        'weight' => 1,
       ),
     ),
   );
@@ -1138,10 +1436,120 @@ function ec_citypages_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-testimonial-field_ref_testimonial_citypages'.
+  $fields['node-testimonial-field_ref_testimonial_citypages'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_testimonial_citypages',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'city_page' => 'city_page',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'testimonial',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 15,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_testimonial_citypages',
+      'label' => 'City Page',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 25,
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog Posts');
   t('Case Studies');
+  t('City Page');
   t('City Photos');
   t('Describe a notable, particular job of local appeal.<br /><br /><strong>Example: "Did you see our trucks installing panels for the school on Main Street? We installed a PV array that provides 70% of the electricity for the new wing."</strong>');
   t('Describe the type of clients, buildings, or structures you typically work with, in this locality.<br /><br /><strong>Example: "Our contractors work in all type of homes, from the brownstones of Back Bay to the single-family homes in the newest developments. We\'ve worked in Boston for years, and have experience in all types of Boston structures."</strong>');
@@ -1153,566 +1561,17 @@ function ec_citypages_defaultconfig_field_default_fields() {
   t('Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD');
   t('Featured Video');
   t('Image');
+  t('Location pin');
   t('Other Local Notes');
+  t('Select a point in the city/neighborhood for the map pin.');
   t('Short, narrative description of what places are in this City.<br /><br /> <strong>Example: "From the distinctive Beacon Hill to the North End, Back Bay and Chinatown, we serve all of downtown Boston."</strong>');
+  t('Show this blog post on the selected city page(s).');
+  t('Show this case study on the selected city page(s)');
   t('Testimonials');
   t('The value in kWh.');
   t('Upload local photos for an in-page slideshow. Ideal photos show your work and your brand. Enter captions in the "Description" field.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_field_group_info().
- */
-function ec_citypages_defaultconfig_field_group_info() {
-  $export = array();
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_city_page_tabs|node|city_page|form';
-  $field_group->group_name = 'group_city_page_tabs';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'city_page';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'City Page Tabs',
-    'weight' => '1',
-    'children' => array(
-      0 => 'group_citypages_description',
-      1 => 'group_citypages_shown_this_page',
-      2 => 'group_citypages_photoset',
-    ),
-    'format_type' => 'htabs',
-    'format_settings' => array(
-      'formatter' => '',
-      'instance_settings' => array(
-        'classes' => 'group-city-page-tabs field-group-htabs',
-      ),
-    ),
-  );
-  $export['group_city_page_tabs|node|city_page|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_citypages_description|node|city_page|form';
-  $field_group->group_name = 'group_citypages_description';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'city_page';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_city_page_tabs';
-  $field_group->data = array(
-    'label' => 'Description Builder',
-    'weight' => '2',
-    'children' => array(
-      0 => 'field_citypages_placenames',
-      1 => 'field_citypages_local_experience',
-      2 => 'field_citypages_example',
-      3 => 'field_citypages_other_descriptio',
-    ),
-    'format_type' => 'htab',
-    'format_settings' => array(
-      'label' => 'Description Builder',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => '',
-        'description' => '',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $export['group_citypages_description|node|city_page|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_citypages_photoset|node|city_page|form';
-  $field_group->group_name = 'group_citypages_photoset';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'city_page';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_city_page_tabs';
-  $field_group->data = array(
-    'label' => 'City Photos',
-    'weight' => '3',
-    'children' => array(
-      0 => 'field_citypages_photos',
-      1 => 'field_featured_image',
-      2 => 'field_featured_video',
-    ),
-    'format_type' => 'htab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
-        'required_fields' => 1,
-        'id' => '',
-      ),
-    ),
-  );
-  $export['group_citypages_photoset|node|city_page|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_citypages_shown_this_page|node|city_page|form';
-  $field_group->group_name = 'group_citypages_shown_this_page';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'city_page';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_city_page_tabs';
-  $field_group->data = array(
-    'label' => 'Shown on This Page',
-    'weight' => '4',
-    'children' => array(
-      0 => 'field_ref_citypages_testimonials',
-      1 => 'field_ref_citypages_blog',
-      2 => 'field_ref_citypages_case_study',
-    ),
-    'format_type' => 'htab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
-        'required_fields' => 1,
-        'id' => '',
-      ),
-    ),
-  );
-  $export['group_citypages_shown_this_page|node|city_page|form'] = $field_group;
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_panelizer_defaults().
- */
-function ec_citypages_defaultconfig_panelizer_defaults() {
-  $export = array();
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_citypages_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_city_page';
-  $strongarm->value = 'edit-extras';
-  $export['additional_settings__active_tab_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'auto_menutitle_city_page';
-  $strongarm->value = 0;
-  $export['auto_menutitle_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'clear_all_city_page';
-  $strongarm->value = 0;
-  $export['clear_all_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_cancel_city_page';
-  $strongarm->value = '0';
-  $export['content_type_extras_cancel_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_preview_button_city_page';
-  $strongarm->value = 'Preview';
-  $export['content_type_extras_preview_button_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_button_city_page';
-  $strongarm->value = 'Save and Edit';
-  $export['content_type_extras_save_and_edit_button_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_city_page';
-  $strongarm->value = '0';
-  $export['content_type_extras_save_and_edit_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_new_button_city_page';
-  $strongarm->value = 'Save and New';
-  $export['content_type_extras_save_and_new_button_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_new_city_page';
-  $strongarm->value = '1';
-  $export['content_type_extras_save_and_new_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_title_hide_city_page';
-  $strongarm->value = 0;
-  $export['content_type_extras_title_hide_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'date_popup_authored_enabled_city_page';
-  $strongarm->value = 0;
-  $export['date_popup_authored_enabled_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'date_popup_authored_format_city_page';
-  $strongarm->value = 'm/d/Y - H:i';
-  $export['date_popup_authored_format_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'date_popup_authored_year_range_city_page';
-  $strongarm->value = '3';
-  $export['date_popup_authored_year_range_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__city_page';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'metatags' => array(
-          'weight' => '8',
-        ),
-        'title' => array(
-          'weight' => '0',
-        ),
-        'path' => array(
-          'weight' => '7',
-        ),
-        'redirect' => array(
-          'weight' => '6',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '5',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_node__city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_city_page';
-  $strongarm->value = array(
-    0 => 'menu-auxiliary-menu',
-    1 => 'main-menu',
-  );
-  $export['menu_options_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_city_page';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__city_page';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_city_page';
-  $strongarm->value = array(
-    0 => 'status',
-  );
-  $export['node_options_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_city_page';
-  $strongarm->value = '0';
-  $export['node_preview_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_city_page';
-  $strongarm->value = 0;
-  $export['node_submitted_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_city_page';
-  $strongarm->value = array(
-    'status' => 1,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 1,
-        'default' => 1,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'show_this_block' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'grouped_teaser' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-    ),
-  );
-  $export['panelizer_defaults_node_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_city_page_pattern';
-  $strongarm->value = 'city/[node:title]';
-  $export['pathauto_node_city_page_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_continue_city_page';
-  $strongarm->value = 'Save and add fields';
-  $export['save_continue_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sync_translations_city_page';
-  $strongarm->value = '0';
-  $export['sync_translations_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'user_permissions_city_page';
-  $strongarm->value = array(
-    0 => 'create_roles',
-    1 => 'edit_roles',
-    2 => 'edit_own_roles',
-    3 => 'delete_roles',
-    4 => 'delete_own_roles',
-  );
-  $export['user_permissions_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_default_city_page';
-  $strongarm->value = '0';
-  $export['weight_default_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_enabled_city_page';
-  $strongarm->value = '1';
-  $export['weight_enabled_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_menu_city_page';
-  $strongarm->value = '0';
-  $export['weight_menu_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_range_city_page';
-  $strongarm->value = '20';
-  $export['weight_range_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'xmlsitemap_settings_node_city_page';
-  $strongarm->value = array(
-    'status' => '1',
-    'priority' => '0.5',
-  );
-  $export['xmlsitemap_settings_node_city_page'] = $strongarm;
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_citypages_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node city_page breadcrumbs'.
-  $permissions['administer panelizer node city_page breadcrumbs'] = array(
-    'name' => 'administer panelizer node city_page breadcrumbs',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node city_page content'.
-  $permissions['administer panelizer node city_page content'] = array(
-    'name' => 'administer panelizer node city_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node city_page context'.
-  $permissions['administer panelizer node city_page context'] = array(
-    'name' => 'administer panelizer node city_page context',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node city_page defaults'.
-  $permissions['administer panelizer node city_page defaults'] = array(
-    'name' => 'administer panelizer node city_page defaults',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node city_page layout'.
-  $permissions['administer panelizer node city_page layout'] = array(
-    'name' => 'administer panelizer node city_page layout',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node city_page overview'.
-  $permissions['administer panelizer node city_page overview'] = array(
-    'name' => 'administer panelizer node city_page overview',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node city_page settings'.
-  $permissions['administer panelizer node city_page settings'] = array(
-    'name' => 'administer panelizer node city_page settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'create city_page content'.
-  $permissions['create city_page content'] = array(
-    'name' => 'create city_page content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any city_page content'.
-  $permissions['delete any city_page content'] = array(
-    'name' => 'delete any city_page content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own city_page content'.
-  $permissions['delete own city_page content'] = array(
-    'name' => 'delete own city_page content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any city_page content'.
-  $permissions['edit any city_page content'] = array(
-    'name' => 'edit any city_page content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own city_page content'.
-  $permissions['edit own city_page content'] = array(
-    'name' => 'edit own city_page content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  return $permissions;
 }
 
 /**
@@ -1722,11 +1581,90 @@ function ec_citypages_defaultconfig_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'city_pages';
+  $view->name = 'city_pages_service_area_map';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'City Pages';
+  $view->human_name = 'City Pages - Service Area Map';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'google_map';
+  $handler->display->display_options['style_options']['map_min_zoom'] = '1';
+  $handler->display->display_options['style_options']['map_max_zoom'] = '19';
+  $handler->display->display_options['style_options']['use_marker_clusterer'] = 0;
+  $handler->display->display_options['style_options']['marker_clusterer'] = array(
+    'grid_size' => '',
+    'max_zoom' => '',
+    'icon_url' => '',
+    'icon_size' => '',
+  );
+  $handler->display->display_options['style_options']['map_auto_center_and_zoom'] = 1;
+  $handler->display->display_options['style_options']['map_disable_scroll_wheel'] = 0;
+  $handler->display->display_options['style_options']['map_disable_double_click_zoom'] = 0;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Location pin */
+  $handler->display->display_options['fields']['field_citypages_pin']['id'] = 'field_citypages_pin';
+  $handler->display->display_options['fields']['field_citypages_pin']['table'] = 'field_data_field_citypages_pin';
+  $handler->display->display_options['fields']['field_citypages_pin']['field'] = 'field_citypages_pin';
+  $handler->display->display_options['fields']['field_citypages_pin']['label'] = '';
+  $handler->display->display_options['fields']['field_citypages_pin']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_citypages_pin']['click_sort_column'] = 'lat';
+  $handler->display->display_options['fields']['field_citypages_pin']['type'] = 'geolocation_latitude';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'city_page' => 'city_page',
+  );
+
+  /* Display: Service Area Pin Map */
+  $handler = $view->new_display('panel_pane', 'Service Area Pin Map', 'panel_pane_1');
+  $handler->display->display_options['link_to_view'] = '1';
+  $handler->display->display_options['inherit_panels_path'] = '1';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'service-area-map';
+  $export['city_pages_service_area_map'] = $view;
+
+  $view = new view();
+  $view->name = 'citypages_image_or_video';
+  $view->description = 'Show video if there is one, otherwise image';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'CityPages Hero Image or Video';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -1735,50 +1673,48 @@ function ec_citypages_defaultconfig_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Description Local Experience */
-  $handler->display->display_options['fields']['field_citypages_local_experience']['id'] = 'field_citypages_local_experience';
-  $handler->display->display_options['fields']['field_citypages_local_experience']['table'] = 'field_data_field_citypages_local_experience';
-  $handler->display->display_options['fields']['field_citypages_local_experience']['field'] = 'field_citypages_local_experience';
-  $handler->display->display_options['fields']['field_citypages_local_experience']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_local_experience']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_citypages_local_experience']['element_label_colon'] = FALSE;
-  /* Field: Content: Description Example */
-  $handler->display->display_options['fields']['field_citypages_example']['id'] = 'field_citypages_example';
-  $handler->display->display_options['fields']['field_citypages_example']['table'] = 'field_data_field_citypages_example';
-  $handler->display->display_options['fields']['field_citypages_example']['field'] = 'field_citypages_example';
-  $handler->display->display_options['fields']['field_citypages_example']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_example']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_citypages_example']['element_label_colon'] = FALSE;
-  /* Field: Content: Other Local Notes */
-  $handler->display->display_options['fields']['field_citypages_other_descriptio']['id'] = 'field_citypages_other_descriptio';
-  $handler->display->display_options['fields']['field_citypages_other_descriptio']['table'] = 'field_data_field_citypages_other_descriptio';
-  $handler->display->display_options['fields']['field_citypages_other_descriptio']['field'] = 'field_citypages_other_descriptio';
-  $handler->display->display_options['fields']['field_citypages_other_descriptio']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_other_descriptio']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_citypages_other_descriptio']['element_label_colon'] = FALSE;
-  /* Field: Content: Description Place Names */
-  $handler->display->display_options['fields']['field_citypages_placenames']['id'] = 'field_citypages_placenames';
-  $handler->display->display_options['fields']['field_citypages_placenames']['table'] = 'field_data_field_citypages_placenames';
-  $handler->display->display_options['fields']['field_citypages_placenames']['field'] = 'field_citypages_placenames';
-  $handler->display->display_options['fields']['field_citypages_placenames']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_placenames']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_citypages_placenames']['alter']['text'] = '[field_citypages_placenames]
-[field_citypages_local_experience]
-[field_citypages_example]
-[field_citypages_other_descriptio]';
-  $handler->display->display_options['fields']['field_citypages_placenames']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  /* Field: Content: Featured Video */
+  $handler->display->display_options['fields']['field_featured_video']['id'] = 'field_featured_video';
+  $handler->display->display_options['fields']['field_featured_video']['table'] = 'field_data_field_featured_video';
+  $handler->display->display_options['fields']['field_featured_video']['field'] = 'field_featured_video';
+  $handler->display->display_options['fields']['field_featured_video']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_video']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_featured_video']['alter']['text'] = '<iframe width="853" height="480" src="[field_featured_video]" frameborder="0" allowfullscreen></iframe>';
+  $handler->display->display_options['fields']['field_featured_video']['element_label_colon'] = FALSE;
+  /* Field: Field: Image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
+    'image_style' => 'sc_940x470_mc',
+    'image_link' => '',
+  );
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'field_featured_video';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '5';
+  $handler->display->display_options['fields']['views_conditional']['then'] = '[field_featured_image]';
+  $handler->display->display_options['fields']['views_conditional']['or'] = '<iframe width="100%" height="auto" src="[field_featured_video]" frameborder="0" allowfullscreen></iframe>';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
@@ -1803,132 +1739,43 @@ function ec_citypages_defaultconfig_views_default_views() {
     'city_page' => 'city_page',
   );
 
-  /* Display: City Page - Description */
-  $handler = $view->new_display('panel_pane', 'City Page - Description', 'panel_pane_1');
-
-  /* Display: City Page - Slides */
-  $handler = $view->new_display('panel_pane', 'City Page - Slides', 'panel_pane_2');
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'flexslider';
-  $handler->display->display_options['style_options']['optionset'] = 'pcase_gallery_slides';
-  $handler->display->display_options['style_options']['captionfield'] = 'field_citypages_photos_1';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  /* Display: CityPages hero image or video */
+  $handler = $view->new_display('panel_pane', 'CityPages hero image or video', 'panel_pane_1');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: City Photos */
-  $handler->display->display_options['fields']['field_citypages_photos_1']['id'] = 'field_citypages_photos_1';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['table'] = 'field_data_field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['field'] = 'field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_citypages_photos_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_citypages_photos_1']['alter']['text'] = '[field_citypages_photos_1-description]';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_citypages_photos_1']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['settings'] = array(
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
+  /* Field: Content: Featured Video */
+  $handler->display->display_options['fields']['field_featured_video']['id'] = 'field_featured_video';
+  $handler->display->display_options['fields']['field_featured_video']['table'] = 'field_data_field_featured_video';
+  $handler->display->display_options['fields']['field_featured_video']['field'] = 'field_featured_video';
+  $handler->display->display_options['fields']['field_featured_video']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_video']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_featured_video']['alter']['text'] = '<iframe width="853" height="480" src="[field_featured_video]" frameborder="0" allowfullscreen></iframe>';
+  $handler->display->display_options['fields']['field_featured_video']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_video']['hide_empty'] = TRUE;
+  /* Field: Field: Image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
+    'image_style' => 'sc_940x470',
+    'image_link' => '',
   );
-  $handler->display->display_options['fields']['field_citypages_photos_1']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_citypages_photos_1']['delta_offset'] = '0';
-  /* Field: Content: City Photos */
-  $handler->display->display_options['fields']['field_citypages_photos']['id'] = 'field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos']['table'] = 'field_data_field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos']['field'] = 'field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_photos']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_citypages_photos']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_citypages_photos']['type'] = 'file_rendered';
-  $handler->display->display_options['fields']['field_citypages_photos']['settings'] = array(
-    'file_view_mode' => 'default',
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_citypages_photos']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_citypages_photos']['delta_offset'] = '0';
-  $export['city_pages'] = $view;
-
-  $view = new view();
-  $view->name = 'city_pages_lists';
-  $view->description = 'LIstings and administrative views of City Pages';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'City Pages - Lists';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Blog Posts */
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['id'] = 'field_ref_citypages_blog';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['table'] = 'field_data_field_ref_citypages_blog';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['field'] = 'field_ref_citypages_blog';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['settings'] = array(
-    'link' => 1,
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['delta_offset'] = '0';
-  /* Field: Content: Testimonials */
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['id'] = 'field_ref_citypages_testimonials';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['table'] = 'field_data_field_ref_citypages_testimonials';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['field'] = 'field_ref_citypages_testimonials';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['settings'] = array(
-    'link' => 1,
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['delta_offset'] = '0';
-  /* Field: Content: Case Studies */
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['id'] = 'field_ref_citypages_case_study';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['table'] = 'field_data_field_ref_citypages_case_study';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['field'] = 'field_ref_citypages_case_study';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['settings'] = array(
-    'link' => 1,
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['delta_offset'] = '0';
-  /* Sort criterion: Content: Title */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'node';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'city_page' => 'city_page',
-  );
-
-  /* Display: City Page Linked Content */
-  $handler = $view->new_display('panel_pane', 'City Page Linked Content', 'panel_pane_1');
-  $export['city_pages_lists'] = $view;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'field_featured_video';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '5';
+  $handler->display->display_options['fields']['views_conditional']['then'] = '[field_featured_image]';
+  $handler->display->display_options['fields']['views_conditional']['or'] = '<iframe width="853" height="480" src="[field_featured_video]" frameborder="0" allowfullscreen></iframe>';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
+  $export['citypages_image_or_video'] = $view;
 
   return $export;
 }
