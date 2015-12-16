@@ -53,13 +53,12 @@ function ec_citypages_rdf_default_mappings() {
   // Exported RDF mapping: city_page
   $schemaorg['node']['city_page'] = array(
     'rdftype' => array(
-      0 => 'schema:Place',
-      1 => 'sioc:Item',
-      2 => 'foaf:Document',
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
     ),
     'title' => array(
       'predicates' => array(
-        0 => 'schema:name',
+        0 => 'dc:title',
       ),
     ),
     'created' => array(
@@ -90,7 +89,7 @@ function ec_citypages_rdf_default_mappings() {
     ),
     'name' => array(
       'predicates' => array(
-        0 => 'schema:name',
+        0 => 'foaf:name',
       ),
     ),
     'comment_count' => array(
@@ -105,58 +104,6 @@ function ec_citypages_rdf_default_mappings() {
       ),
       'datatype' => 'xsd:dateTime',
       'callback' => 'date_iso8601',
-    ),
-    'field_ref_citypages_testimonials' => array(
-      'predicates' => array(
-        0 => 'schema:review',
-      ),
-    ),
-    'url' => array(
-      'predicates' => array(
-        0 => 'schema:url',
-      ),
-      'type' => 'rel',
-    ),
-    'field_citypages_pin' => array(
-      'predicates' => array(
-        0 => 'schema:hasMap',
-      ),
-    ),
-    'field_citypages_image' => array(
-      'predicates' => array(
-        0 => 'schema:photo',
-      ),
-      'type' => 'rel',
-    ),
-    'field_featured_video' => array(
-      'predicates' => array(
-        0 => 'schema:photo',
-      ),
-    ),
-    'field_citypagesshort_description' => array(
-      'predicates' => array(
-        0 => 'schema:description',
-      ),
-    ),
-    'field_citypages_placenames' => array(
-      'predicates' => array(
-        0 => 'schema:description',
-      ),
-    ),
-    'field_citypages_local_experience' => array(
-      'predicates' => array(
-        0 => 'schema:description',
-      ),
-    ),
-    'field_citypages_example' => array(
-      'predicates' => array(
-        0 => 'schema:description',
-      ),
-    ),
-    'field_citypages_other_descriptio' => array(
-      'predicates' => array(
-        0 => 'schema:description',
-      ),
     ),
   );
 
