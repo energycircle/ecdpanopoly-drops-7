@@ -24,8 +24,8 @@ function ec_citypages_field_group_info() {
     'weight' => '3',
     'children' => array(
       0 => 'group_citypages_description',
-      1 => 'group_citypages_general',
-      2 => 'group_citypages_shown_this_page',
+      1 => 'group_citypages_shown_this_page',
+      2 => 'group_citypages_general',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -82,10 +82,10 @@ function ec_citypages_field_group_info() {
     'label' => 'General',
     'weight' => '2',
     'children' => array(
-      0 => 'field_citypages_image',
+      0 => 'field_featured_video',
       1 => 'field_citypages_pin',
       2 => 'field_citypagesshort_description',
-      3 => 'field_featured_video',
+      3 => 'field_citypages_image',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
