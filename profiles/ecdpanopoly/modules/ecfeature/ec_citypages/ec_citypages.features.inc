@@ -27,6 +27,24 @@ function ec_citypages_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_node_info_alter().
+ */
+function ec_citypages_node_info_alter(&$data) {
+  if (isset($data['city_page'])) {
+    $data['city_page']['title_label'] = 'Title'; /* WAS: 'Name of city, town or neighborhood' */
+  }
+}
+
+/**
+ * Implements hook_strongarm_alter().
+ */
+function ec_citypages_strongarm_alter(&$data) {
+  if (isset($data['additional_settings__active_tab_city_page'])) {
+    $data['additional_settings__active_tab_city_page']->value = 'edit-schemaorg-ui'; /* WAS: 'edit-extras' */
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_citypages_node_info() {
@@ -36,7 +54,7 @@ function ec_citypages_node_info() {
       'base' => 'node_content',
       'description' => t('A landing page for a locality in the service area.'),
       'has_title' => '1',
-      'title_label' => t('Name of city, town or neighborhood'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );

@@ -14,7 +14,7 @@ function ec_citypages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_city_page';
-  $strongarm->value = 'edit-extras';
+  $strongarm->value = 'edit-schemaorg-ui';
   $export['additional_settings__active_tab_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -259,6 +259,13 @@ function ec_citypages_strongarm() {
   $strongarm->name = 'save_continue_city_page';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_city_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_city_page';
+  $strongarm->value = 'Place';
+  $export['schemaorg_ui_type_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
