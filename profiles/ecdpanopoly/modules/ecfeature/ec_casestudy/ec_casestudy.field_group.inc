@@ -23,9 +23,9 @@ function ec_casestudy_field_group_info() {
     'label' => 'CTA Form',
     'weight' => '4',
     'children' => array(
-      0 => 'field_ref_to_cta_form',
-      1 => 'field_button_text',
-      2 => 'field_call_to_action',
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -52,9 +52,7 @@ function ec_casestudy_field_group_info() {
     'label' => 'Show This On',
     'weight' => '5',
     'children' => array(
-      0 => 'field_ref_case_study_article',
-      1 => 'field_ref_case_study_prodpage',
-      2 => 'field_ref_case_sudy_page',
+      0 => 'field_ref_case_sudy_page',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -88,7 +86,7 @@ function ec_casestudy_field_group_info() {
       3 => 'field_ref_case_study_serv_group',
       4 => 'field_ref_case_study_service',
       5 => 'field_ref_case_study_testimonial',
-      6 => 'field_ref_case_study_gallery',
+      6 => 'field_ref_case_study_citypages',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
