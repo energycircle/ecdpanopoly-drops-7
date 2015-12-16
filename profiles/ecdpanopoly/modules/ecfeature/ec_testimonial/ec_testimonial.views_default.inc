@@ -102,20 +102,13 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['text'] = '[field_tetstimonial_name][field_testimonial_city]';
   $handler->display->display_options['fields']['field_testimonial_city']['element_label_colon'] = FALSE;
-  /* Field: Content: Service */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_ref_testimonial_service']['id'] = 'field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['table'] = 'field_data_field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['field'] = 'field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['label'] = 'Services Provided';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['element_label_type'] = 'h2';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['settings'] = array(
-    'link' => 1,
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['multi_type'] = 'ul';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -208,20 +201,13 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['text'] = '[field_tetstimonial_name][field_testimonial_city]';
   $handler->display->display_options['fields']['field_testimonial_city']['element_label_colon'] = FALSE;
-  /* Field: Content: Service */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_ref_testimonial_service']['id'] = 'field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['table'] = 'field_data_field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['field'] = 'field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['label'] = 'Services Provided';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['element_label_type'] = 'h2';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['settings'] = array(
-    'link' => 1,
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['multi_type'] = 'ul';
 
   /* Display: Testimonials - Slideshow nid block */
   $handler = $view->new_display('panel_pane', 'Testimonials - Slideshow nid block', 'panel_pane_2');

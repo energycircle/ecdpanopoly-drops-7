@@ -165,6 +165,15 @@ projects[geolocation][version] = 1.x
 projects[geolocation_views][subdir] = eccontrib
 projects[geolocation_views][version] = 1.x
 
+projects[geofield][version] = 2.3
+projects[geofield][subdir] = contrib
+
+projects[geophp][version] = 1.x-dev
+projects[geophp][subdir] = contrib
+
+projects[geofield_proximity_polygon][version] = 1.0-beta1
+projects[geofield_proximity_polygon][subdir] = contrib
+
 projects[globalredirect][subdir] = eccontrib
 projects[globalredirect][version] = 1.5
 
@@ -194,6 +203,12 @@ projects[jcarousel][version] = 2.x
 
 projects[job_scheduler][subdir] = eccontrib
 projects[job_scheduler][version] = 2.x
+
+projects[leaflet][subdir] = eccontrib
+projects[leaflet][version] = 1.3
+
+projects[leaflet_widget][version] = 2.0-beta1
+projects[leaflet_widget][subdir] = contrib
 
 projects[linkit_target][subdir] = eccontrib
 projects[linkit_target][version] = 1.0
@@ -335,6 +350,9 @@ projects[maxlength][patch][1256968] = https://www.drupal.org/files/metatags_quic
 #projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
 projects[entitycache][patch][2441965] = https://www.drupal.org/files/issues/entitycache_fix_upgrade_path-2441965-39.patch
 projects[deploy][patch][1604938] = https://www.drupal.org/files/deploy-1604938_1.patch
+projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/leaflet_widget-1974478-vertical-tab-refresh-12.patch
+projects[leaflet_widget][patch] = https://drupal.org/files/0001-Issue-1834446-by-mradcliffe-Use-GeoPHP-native.-GeoJSO.patch
+projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
@@ -380,6 +398,21 @@ libraries[matchMedia][download][type] = git
 libraries[matchMedia][type] = library
 libraries[matchMedia][directory_name] = matchMedia
 libraries[matchMedia][download][url] = https://github.com/paulirish/matchMedia.js.git
+
+libraries[leaflet][download][type] = get
+libraries[leaflet][type] = library
+libraries[leaflet][directory_name] = leaflet
+libraries[leaflet][download][url] = http://cdn.leafletjs.com/downloads/leaflet-0.7.3.zip
+
+libraries[leaflet.widget][download][type] = get
+libraries[leaflet.widget][type] = library
+libraries[leaflet.widget][directory_name] = Leaflet.widget
+libraries[leaflet.widget][download][url] = https://github.com/tnightingale/Leaflet.widget/archive/master.zip
+
+libraries[geoPHP][download][type] = get
+libraries[geoPHP][type] = library
+libraries[geoPHP][directory_name] = geoPHP
+libraries[geoPHP][download][url] = https://github.com/phayes/geoPHP/zipball/master
 
 ; THEMES
 projects[adaptivetheme][version] = 3.x

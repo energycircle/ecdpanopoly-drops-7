@@ -199,13 +199,6 @@ function ec_blog_post_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__blog_post';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__blog_post'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'metatag_enable_taxonomy_term__blog_categories';
   $strongarm->value = TRUE;
   $export['metatag_enable_taxonomy_term__blog_categories'] = $strongarm;

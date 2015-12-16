@@ -23,8 +23,8 @@ function ec_citypages_field_group_info() {
     'label' => 'City Page Tabs',
     'weight' => '3',
     'children' => array(
-      0 => 'group_citypages_general',
-      1 => 'group_citypages_description',
+      0 => 'group_citypages_description',
+      1 => 'group_citypages_general',
       2 => 'group_citypages_shown_this_page',
     ),
     'format_type' => 'htabs',
@@ -99,36 +99,6 @@ function ec_citypages_field_group_info() {
     ),
   );
   $export['group_citypages_general|node|city_page|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_citypages_photoset|node|city_page|form';
-  $field_group->group_name = 'group_citypages_photoset';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'city_page';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_city_page_tabs';
-  $field_group->data = array(
-    'label' => 'City Photos',
-    'weight' => '3',
-    'children' => array(
-      0 => 'field_citypages_photos',
-      1 => 'field_featured_image',
-      2 => 'field_featured_video',
-    ),
-    'format_type' => 'htab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
-        'required_fields' => 1,
-        'id' => '',
-      ),
-    ),
-  );
-  $export['group_citypages_photoset|node|city_page|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

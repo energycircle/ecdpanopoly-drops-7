@@ -109,7 +109,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 9,
+        'weight' => 20,
       ),
     ),
   );
@@ -332,7 +332,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 8,
+        'weight' => 19,
       ),
     ),
   );
@@ -425,7 +425,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 10,
+        'weight' => 21,
       ),
     ),
   );
@@ -602,7 +602,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 7,
+        'weight' => 18,
       ),
     ),
   );

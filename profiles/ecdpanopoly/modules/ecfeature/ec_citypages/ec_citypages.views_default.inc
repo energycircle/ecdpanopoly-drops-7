@@ -428,17 +428,12 @@ function ec_citypages_views_default_views() {
     'image_style' => 'sc_940x470_mc',
     'image_link' => '',
   );
-  /* Field: Views: Views Conditional */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['label'] = '';
   $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional']['if'] = 'field_featured_video';
-  $handler->display->display_options['fields']['views_conditional']['condition'] = '5';
-  $handler->display->display_options['fields']['views_conditional']['then'] = '[field_featured_image]';
-  $handler->display->display_options['fields']['views_conditional']['or'] = '<iframe width="100%" height="auto" src="[field_featured_video]" frameborder="0" allowfullscreen></iframe>';
-  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
@@ -487,18 +482,13 @@ function ec_citypages_views_default_views() {
     'image_style' => 'sc_940x470_mc',
     'image_link' => '',
   );
-  /* Field: Views: Views Conditional */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['label'] = '';
   $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['views_conditional']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['views_conditional']['if'] = 'field_featured_video';
-  $handler->display->display_options['fields']['views_conditional']['condition'] = '5';
-  $handler->display->display_options['fields']['views_conditional']['then'] = '[field_citypages_image]';
-  $handler->display->display_options['fields']['views_conditional']['or'] = '<iframe width="853" height="480" src="[field_featured_video]" frameborder="0" allowfullscreen></iframe>';
-  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   $export['citypages_image_or_video'] = $view;
 
   return $export;
