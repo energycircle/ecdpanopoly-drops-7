@@ -210,6 +210,9 @@ projects[leaflet][version] = 1.3
 projects[leaflet_widget][version] = 2.0-beta1
 projects[leaflet_widget][subdir] = contrib
 
+projects[leaflet_more_maps][version] = 1.14
+projects[leaflet_more_maps][subdir] = contrib
+
 projects[linkit_target][subdir] = eccontrib
 projects[linkit_target][version] = 1.0
 
