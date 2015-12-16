@@ -263,13 +263,6 @@ function ec_citypages_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'schemaorg_ui_type_city_page';
-  $strongarm->value = 'Place';
-  $export['schemaorg_ui_type_city_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'sync_translations_city_page';
   $strongarm->value = '0';
   $export['sync_translations_city_page'] = $strongarm;

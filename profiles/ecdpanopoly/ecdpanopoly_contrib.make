@@ -72,6 +72,9 @@ projects[disable_term_node_listings][version] = 1.2
 projects[draggableviews][subdir] = eccontrib
 projects[draggableviews][version] = 2.x
 
+projects[eck][subdir] = eccontrib
+projects[eck][version] = 2.0-rc8
+
 projects[elements][subdir] = eccontrib
 projects[elements][version] = 1.x
 

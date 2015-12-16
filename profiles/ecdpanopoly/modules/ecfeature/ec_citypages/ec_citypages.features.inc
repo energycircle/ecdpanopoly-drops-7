@@ -45,6 +45,125 @@ function ec_citypages_node_info() {
 }
 
 /**
+ * Implements hook_rdf_default_mappings().
+ */
+function ec_citypages_rdf_default_mappings() {
+  $schemaorg = array();
+
+  // Exported RDF mapping: city_page
+  $schemaorg['node']['city_page'] = array(
+    'rdftype' => array(
+      0 => 'schema:Place',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'field_ref_citypages_testimonials' => array(
+      'predicates' => array(
+        0 => 'schema:review',
+      ),
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_citypages_pin' => array(
+      'predicates' => array(
+        0 => 'schema:hasMap',
+      ),
+    ),
+    'field_citypages_image' => array(
+      'predicates' => array(
+        0 => 'schema:photo',
+      ),
+      'type' => 'rel',
+    ),
+    'field_featured_video' => array(
+      'predicates' => array(
+        0 => 'schema:photo',
+      ),
+    ),
+    'field_citypagesshort_description' => array(
+      'predicates' => array(
+        0 => 'schema:description',
+      ),
+    ),
+    'field_citypages_placenames' => array(
+      'predicates' => array(
+        0 => 'schema:description',
+      ),
+    ),
+    'field_citypages_local_experience' => array(
+      'predicates' => array(
+        0 => 'schema:description',
+      ),
+    ),
+    'field_citypages_example' => array(
+      'predicates' => array(
+        0 => 'schema:description',
+      ),
+    ),
+    'field_citypages_other_descriptio' => array(
+      'predicates' => array(
+        0 => 'schema:description',
+      ),
+    ),
+  );
+
+  return $schemaorg;
+}
+
+/**
  * Implements hook_weight_features_default_settings().
  */
 function ec_citypages_weight_features_default_settings() {
