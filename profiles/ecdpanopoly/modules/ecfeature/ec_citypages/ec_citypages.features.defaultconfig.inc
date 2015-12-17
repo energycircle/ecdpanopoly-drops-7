@@ -21,6 +21,129 @@ function ec_citypages_defaultconfig_features() {
 function ec_citypages_defaultconfig_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'node-city_page-field_citypages_area'.
+  $fields['node-city_page-field_citypages_area'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_citypages_area',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'bbox' => array(
+          0 => 'top',
+          1 => 'bottom',
+          2 => 'left',
+          3 => 'right',
+        ),
+        'bottom' => array(
+          0 => 'bottom',
+        ),
+        'centroid' => array(
+          0 => 'lat',
+          1 => 'lon',
+        ),
+        'geohash' => array(
+          0 => 'geohash',
+        ),
+        'lat' => array(
+          0 => 'lat',
+        ),
+        'left' => array(
+          0 => 'left',
+        ),
+        'lon' => array(
+          0 => 'lon',
+        ),
+        'right' => array(
+          0 => 'right',
+        ),
+        'top' => array(
+          0 => 'top',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'geofield',
+      'settings' => array(
+        'backend' => 'default',
+        'srid' => 4326,
+      ),
+      'translatable' => 0,
+      'type' => 'geofield',
+    ),
+    'field_instance' => array(
+      'bundle' => 'city_page',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'geofield',
+          'settings' => array(
+            'data' => 'full',
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'geofield_wkt',
+          'weight' => 14,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_citypages_area',
+      'label' => 'Location Area',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'leaflet_widget',
+        'settings' => array(
+          'geocoder' => array(
+            'enabled' => FALSE,
+            'handler' => NULL,
+          ),
+          'map' => array(
+            'auto_center' => 0,
+            'base_url' => 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            'center' => array(
+              'lat' => 40.7,
+              'lng' => '-74.0',
+            ),
+            'zoom' => 5,
+          ),
+        ),
+        'type' => 'leaflet_widget_widget',
+        'weight' => 20,
+      ),
+    ),
+  );
+
   // Exported field: 'node-city_page-field_citypages_example'.
   $fields['node-city_page-field_citypages_example'] = array(
     'field_config' => array(
@@ -811,6 +934,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
   t('Enter any other content about your work in this locality.<br /><br /><strong>Example: "Ask us about our work in the historic district. Our designs and installations are tailored to fit the appearance standards of your neighborhood while maximizing efficiency and return on investment."</strong>');
   t('Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD');
   t('Featured Video');
+  t('Location Area');
   t('Location pin');
   t('Other Local Notes');
   t('Select a point in the city/neighborhood for the map pin.');

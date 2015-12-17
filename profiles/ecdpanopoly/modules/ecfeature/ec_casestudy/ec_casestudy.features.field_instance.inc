@@ -483,69 +483,6 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_study_citypages'.
-  $field_instances['node-case_study-field_ref_case_study_citypages'] = array(
-    'bundle' => 'case_study',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Show this case study on the selected city page(s)',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 17,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ref_case_study_citypages',
-    'label' => 'City Page',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 28,
-    ),
-  );
-
   // Exported field_instance: 'node-case_study-field_ref_case_sudy_page'.
   $field_instances['node-case_study-field_ref_case_sudy_page'] = array(
     'bundle' => 'case_study',
@@ -1368,7 +1305,6 @@ function ec_casestudy_field_default_field_instances() {
   t('Call to Action');
   t('Case Studies');
   t('Case Study');
-  t('City Page');
   t('Content Page');
   t('Display Title');
   t('Display subtitle');
@@ -1377,7 +1313,6 @@ function ec_casestudy_field_default_field_instances() {
   t('Select case study pages on which to display this promo.');
   t('Select the case study pages on which to display this testimonial.');
   t('Show this blog post on these case studies.');
-  t('Show this case study on the selected city page(s)');
   t('Show this product on these case study pages.');
 
   return $field_instances;
