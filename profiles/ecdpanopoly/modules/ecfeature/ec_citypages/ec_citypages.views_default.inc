@@ -223,22 +223,24 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'google_map';
-  $handler->display->display_options['style_options']['map_min_zoom'] = '1';
-  $handler->display->display_options['style_options']['map_max_zoom'] = '19';
-  $handler->display->display_options['style_options']['marker_url_field'] = 'path';
-  $handler->display->display_options['style_options']['marker_title_field'] = 'title';
-  $handler->display->display_options['style_options']['use_marker_clusterer'] = 0;
-  $handler->display->display_options['style_options']['marker_clusterer'] = array(
-    'grid_size' => '',
-    'max_zoom' => '',
-    'icon_url' => '',
-    'icon_size' => '',
-  );
-  $handler->display->display_options['style_options']['map_auto_center_and_zoom'] = 1;
-  $handler->display->display_options['style_options']['map_disable_scroll_wheel'] = 1;
-  $handler->display->display_options['style_options']['map_disable_double_click_zoom'] = 1;
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['style_plugin'] = 'leaflet';
+  $handler->display->display_options['style_options']['entity_type'] = 'node';
+  $handler->display->display_options['style_options']['data_source'] = 'field_citypages_area';
+  $handler->display->display_options['style_options']['name_field'] = 'title';
+  $handler->display->display_options['style_options']['description_field'] = 'field_citypagesshort_description';
+  $handler->display->display_options['style_options']['map'] = 'google-roadmap';
+  $handler->display->display_options['style_options']['height'] = '600';
+  $handler->display->display_options['style_options']['hide_empty'] = 0;
+  $handler->display->display_options['style_options']['zoom']['initialZoom'] = '-1';
+  $handler->display->display_options['style_options']['zoom']['minZoom'] = '0';
+  $handler->display->display_options['style_options']['zoom']['maxZoom'] = '18';
+  $handler->display->display_options['style_options']['zoom']['scrollWheelZoom'] = 0;
+  $handler->display->display_options['style_options']['vector_display']['stroke_override'] = 1;
+  $handler->display->display_options['style_options']['vector_display']['color'] = '#000';
+  $handler->display->display_options['style_options']['vector_display']['weight'] = '1';
+  $handler->display->display_options['style_options']['vector_display']['opacity'] = '.5';
+  $handler->display->display_options['style_options']['vector_display']['fillColor'] = '#000';
+  $handler->display->display_options['style_options']['vector_display']['fillOpacity'] = '.2';
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
@@ -246,14 +248,6 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Content: Location pin */
-  $handler->display->display_options['fields']['field_citypages_pin']['id'] = 'field_citypages_pin';
-  $handler->display->display_options['fields']['field_citypages_pin']['table'] = 'field_data_field_citypages_pin';
-  $handler->display->display_options['fields']['field_citypages_pin']['field'] = 'field_citypages_pin';
-  $handler->display->display_options['fields']['field_citypages_pin']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_pin']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_citypages_pin']['click_sort_column'] = 'lat';
-  $handler->display->display_options['fields']['field_citypages_pin']['type'] = 'geolocation_latitude';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -261,6 +255,28 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Location Area */
+  $handler->display->display_options['fields']['field_citypages_area']['id'] = 'field_citypages_area';
+  $handler->display->display_options['fields']['field_citypages_area']['table'] = 'field_data_field_citypages_area';
+  $handler->display->display_options['fields']['field_citypages_area']['field'] = 'field_citypages_area';
+  $handler->display->display_options['fields']['field_citypages_area']['label'] = '';
+  $handler->display->display_options['fields']['field_citypages_area']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_citypages_area']['click_sort_column'] = 'geom';
+  $handler->display->display_options['fields']['field_citypages_area']['type'] = 'geolocation_googlemaps_dynamic';
+  $handler->display->display_options['fields']['field_citypages_area']['settings'] = array(
+    'map_width' => '300px',
+    'map_height' => '300px',
+    'marker_icon' => '',
+    'map_scrollwheel' => 0,
+    'map_maptype' => 'roadmap',
+    'map_zoomlevel' => '7',
+  );
+  /* Field: Content: Short Description */
+  $handler->display->display_options['fields']['field_citypagesshort_description']['id'] = 'field_citypagesshort_description';
+  $handler->display->display_options['fields']['field_citypagesshort_description']['table'] = 'field_data_field_citypagesshort_description';
+  $handler->display->display_options['fields']['field_citypagesshort_description']['field'] = 'field_citypagesshort_description';
+  $handler->display->display_options['fields']['field_citypagesshort_description']['label'] = '';
+  $handler->display->display_options['fields']['field_citypagesshort_description']['element_label_colon'] = FALSE;
   /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
@@ -280,8 +296,8 @@ function ec_citypages_views_default_views() {
     'city_page' => 'city_page',
   );
 
-  /* Display: Service Area Pin Map */
-  $handler = $view->new_display('panel_pane', 'Service Area Pin Map', 'panel_pane_1');
+  /* Display: Service Area Map */
+  $handler = $view->new_display('panel_pane', 'Service Area Map', 'panel_pane_1');
   $handler->display->display_options['defaults']['footer'] = FALSE;
   $handler->display->display_options['link_to_view'] = '1';
   $handler->display->display_options['inherit_panels_path'] = '1';
@@ -304,30 +320,16 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['header']['area']['content'] = '<h2 class="city-page-list">Our service area includes:</h2>';
   $handler->display->display_options['header']['area']['format'] = 'panopoly_html_text';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Location pin */
-  $handler->display->display_options['fields']['field_citypages_pin']['id'] = 'field_citypages_pin';
-  $handler->display->display_options['fields']['field_citypages_pin']['table'] = 'field_data_field_citypages_pin';
-  $handler->display->display_options['fields']['field_citypages_pin']['field'] = 'field_citypages_pin';
-  $handler->display->display_options['fields']['field_citypages_pin']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_pin']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_citypages_pin']['click_sort_column'] = 'lat';
-  $handler->display->display_options['fields']['field_citypages_pin']['type'] = 'geolocation_googlemaps_static';
-  $handler->display->display_options['fields']['field_citypages_pin']['settings'] = array(
-    'map_width' => '100px',
-    'map_height' => '100px',
-    'marker_icon' => '',
-    'map_imageformat' => 'png8',
-    'map_link' => 0,
-    'map_maptype' => 'roadmap',
-    'map_zoomlevel' => '14',
-  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[title]<br />';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Short Description */
   $handler->display->display_options['fields']['field_citypagesshort_description']['id'] = 'field_citypagesshort_description';
   $handler->display->display_options['fields']['field_citypagesshort_description']['table'] = 'field_data_field_citypagesshort_description';

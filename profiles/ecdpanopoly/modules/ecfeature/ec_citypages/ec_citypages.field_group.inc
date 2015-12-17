@@ -86,6 +86,7 @@ function ec_citypages_field_group_info() {
       1 => 'field_citypages_pin',
       2 => 'field_citypagesshort_description',
       3 => 'field_citypages_image',
+      4 => 'field_citypages_area',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

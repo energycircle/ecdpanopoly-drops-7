@@ -105,6 +105,9 @@ function ec_citypages_rdf_default_mappings() {
       'datatype' => 'xsd:dateTime',
       'callback' => 'date_iso8601',
     ),
+    'field_citypages_area' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

@@ -93,26 +93,74 @@ function ec_citypages_panelizer_defaults() {
   $display->content['new-b7d51614-0ab2-423a-81e9-c04f81c8a173'] = $pane;
   $display->panels['two_66_33_first'][1] = 'new-b7d51614-0ab2-423a-81e9-c04f81c8a173';
   $pane = new stdClass();
-  $pane->pid = 'new-71c85bac-262b-4c19-afd2-4d2f2165dd3e';
+  $pane->pid = 'new-a354d14f-13d2-4c04-8090-979e08bd822d';
   $pane->panel = 'two_66_33_second';
   $pane->type = 'entity_field';
-  $pane->subtype = 'node:field_citypages_pin';
+  $pane->subtype = 'node:field_citypages_area';
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
     'label' => 'hidden',
-    'formatter' => 'geolocation_googlemaps_static',
+    'formatter' => 'geofield_leaflet',
     'delta_limit' => 0,
     'delta_offset' => '0',
     'delta_reversed' => FALSE,
     'formatter_settings' => array(
-      'map_width' => '300px',
-      'map_height' => '300px',
-      'map_zoomlevel' => '7',
+      'map_width' => '600px',
+      'map_height' => '400px',
+      'map_zoomlevel' => '10',
       'map_imageformat' => 'png8',
       'map_link' => 0,
       'map_maptype' => 'roadmap',
       'marker_icon' => '',
+      'leaflet_map' => 'google-roadmap',
+      'height' => '600',
+      'popup' => array(
+        'show' => 0,
+        'text' => '',
+      ),
+      'zoom' => array(
+        'initialZoom' => '-1',
+        'minZoom' => '1',
+        'maxZoom' => '-1',
+        'scrollWheelZoom' => 0,
+      ),
+      'icon' => array(
+        'iconType' => 'marker',
+        'iconUrl' => '',
+        'shadowUrl' => '',
+        'html' => '',
+        'iconImageStyle' => '',
+        'htmlClass' => '',
+        'iconSize' => array(
+          'x' => '',
+          'y' => '',
+        ),
+        'iconAnchor' => array(
+          'x' => '',
+          'y' => '',
+        ),
+        'shadowAnchor' => array(
+          'x' => '',
+          'y' => '',
+        ),
+        'popupAnchor' => array(
+          'x' => '',
+          'y' => '',
+        ),
+      ),
+      'vector_display' => array(
+        'stroke_override' => 1,
+        'stroke' => 1,
+        'color' => '#000',
+        'weight' => '2',
+        'opacity' => '.5',
+        'dashArray' => '',
+        'fill' => 1,
+        'fillColor' => '#000',
+        'fillOpacity' => '.2',
+        'clickable' => 0,
+      ),
     ),
     'context' => array(),
     'override_title' => 0,
@@ -127,9 +175,9 @@ function ec_citypages_panelizer_defaults() {
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
-  $pane->uuid = '71c85bac-262b-4c19-afd2-4d2f2165dd3e';
-  $display->content['new-71c85bac-262b-4c19-afd2-4d2f2165dd3e'] = $pane;
-  $display->panels['two_66_33_second'][0] = 'new-71c85bac-262b-4c19-afd2-4d2f2165dd3e';
+  $pane->uuid = 'a354d14f-13d2-4c04-8090-979e08bd822d';
+  $display->content['new-a354d14f-13d2-4c04-8090-979e08bd822d'] = $pane;
+  $display->panels['two_66_33_second'][0] = 'new-a354d14f-13d2-4c04-8090-979e08bd822d';
   $pane = new stdClass();
   $pane->pid = 'new-2ada9f9a-4730-4ac2-92ee-cfd7ba6bc30d';
   $pane->panel = 'two_66_33_second';
