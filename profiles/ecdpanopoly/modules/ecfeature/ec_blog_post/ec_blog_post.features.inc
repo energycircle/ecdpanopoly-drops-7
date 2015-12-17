@@ -29,7 +29,15 @@ function ec_blog_post_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
-
+/**
+ * Implements hook_field_group_info_alter().
+ */
+function ec_blog_post_field_group_info_alter(&$data) {
+  if (isset($data['group_citypages_shown_this_page|node|city_page|form'])) {
+    $data['group_citypages_shown_this_page|node|city_page|form']->data['children'][1] = 'field_ref_citypages_case_study'; /* WAS: '' */
+    $data['group_citypages_shown_this_page|node|city_page|form']->data['children'][2] = 'field_ref_citypages_testimonials'; /* WAS: '' */
+  }
+}
 
 /**
  * Implements hook_node_info().
