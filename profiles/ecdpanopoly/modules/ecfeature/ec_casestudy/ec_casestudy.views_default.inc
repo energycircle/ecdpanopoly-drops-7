@@ -172,7 +172,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Broken/missing handler */
+  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_ref_case_study_service_target_id']['id'] = 'field_ref_case_study_service_target_id';
   $handler->display->display_options['relationships']['field_ref_case_study_service_target_id']['table'] = 'field_data_field_ref_case_study_service';
   $handler->display->display_options['relationships']['field_ref_case_study_service_target_id']['field'] = 'field_ref_case_study_service_target_id';
@@ -252,7 +252,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Broken/missing handler */
+  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_ref_case_study_serv_cat_target_id']['id'] = 'field_ref_case_study_serv_cat_target_id';
   $handler->display->display_options['relationships']['field_ref_case_study_serv_cat_target_id']['table'] = 'field_data_field_ref_case_study_serv_cat';
   $handler->display->display_options['relationships']['field_ref_case_study_serv_cat_target_id']['field'] = 'field_ref_case_study_serv_cat_target_id';
@@ -379,7 +379,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Slide image */
   $handler->display->display_options['fields']['field_slide_image']['id'] = 'field_slide_image';
   $handler->display->display_options['fields']['field_slide_image']['table'] = 'field_data_field_slide_image';
   $handler->display->display_options['fields']['field_slide_image']['field'] = 'field_slide_image';
@@ -562,7 +562,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['field_feature_on_home_value']['table'] = 'field_data_field_feature_on_home';
   $handler->display->display_options['filters']['field_feature_on_home_value']['field'] = 'field_feature_on_home_value';
   $handler->display->display_options['filters']['field_feature_on_home_value']['operator'] = 'not empty';
-  /* Filter criterion: : field_ref_case_study_serv_group (field_ref_case_study_serv_group) */
+  /* Filter criterion: Content: Service Group (field_ref_case_study_serv_group) */
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['id'] = 'field_ref_case_study_serv_group_target_id';
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['table'] = 'field_data_field_ref_case_study_serv_group';
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['field'] = 'field_ref_case_study_serv_group_target_id';
@@ -594,7 +594,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['field_feature_on_home_value']['table'] = 'field_data_field_feature_on_home';
   $handler->display->display_options['filters']['field_feature_on_home_value']['field'] = 'field_feature_on_home_value';
   $handler->display->display_options['filters']['field_feature_on_home_value']['operator'] = 'not empty';
-  /* Filter criterion: : field_ref_case_study_serv_group (field_ref_case_study_serv_group) */
+  /* Filter criterion: Content: Service Group (field_ref_case_study_serv_group) */
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['id'] = 'field_ref_case_study_serv_group_target_id';
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['table'] = 'field_data_field_ref_case_study_serv_group';
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['field'] = 'field_ref_case_study_serv_group_target_id';
