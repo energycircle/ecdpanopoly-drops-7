@@ -74,6 +74,7 @@ dependencies[] = entityform_notifications
 dependencies[] = elements
 dependencies[] = entityform_block
 dependencies[] = entityreference_filter
+dependencies[] = external
 dependencies[] = field_default_token
 dependencies[] = field_multiple_limit
 dependencies[] = field_validation
