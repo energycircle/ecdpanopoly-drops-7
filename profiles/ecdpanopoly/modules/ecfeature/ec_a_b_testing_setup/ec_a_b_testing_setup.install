@@ -7,12 +7,12 @@
 /**
  * Implements hook_install().
  */
-function ec_blog_post_install() {
-}
+function ec_a_b_testing_setup_install() {
 
+}
   /**
  * Revert feature on installation
  */
-function ec_blog_post_update_7102(&$sandbox) {
-  features_revert_module('ec_blog_post');
+function ec_a_b_testing_setup_update_7102(&$sandbox) {
+  features_revert_module('ec_a_b_testing_setup');
 }
