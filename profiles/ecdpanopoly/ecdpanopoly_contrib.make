@@ -356,6 +356,8 @@ projects[deploy][patch][1604938] = https://www.drupal.org/files/deploy-1604938_1
 projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/leaflet_widget-1974478-vertical-tab-refresh-12.patch
 projects[leaflet_widget][patch] = https://drupal.org/files/0001-Issue-1834446-by-mradcliffe-Use-GeoPHP-native.-GeoJSO.patch
 projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.patch
+projects[schemaorg][patch][1296760] = https://www.drupal.org/files/1296760_entity_1.patch
+
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
