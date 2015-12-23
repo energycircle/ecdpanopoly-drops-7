@@ -59,8 +59,9 @@ function ec_testimonial_rdf_default_mappings() {
   // Exported RDF mapping: testimonial
   $schemaorg['node']['testimonial'] = array(
     'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
+      0 => 'schema:Review',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
     ),
     'title' => array(
       'predicates' => array(
@@ -84,7 +85,7 @@ function ec_testimonial_rdf_default_mappings() {
     ),
     'body' => array(
       'predicates' => array(
-        0 => 'schema:https://schema.org/reviewBody',
+        0 => 'schema:reviewBody',
         1 => 'content:encoded',
       ),
     ),
@@ -120,17 +121,17 @@ function ec_testimonial_rdf_default_mappings() {
     ),
     'field_ref_testimonial_serv_group' => array(
       'predicates' => array(
-        0 => 'schema:https://schema.org/itemReviewed',
+        0 => 'schema:itemReviewed',
       ),
     ),
     'field_ref_testimonial_serv_cat' => array(
       'predicates' => array(
-        0 => 'schema:https://schema.org/itemReviewed',
+        0 => 'schema:itemReviewed',
       ),
     ),
     'field_ref_testimonial_service' => array(
       'predicates' => array(
-        0 => 'schema:https://schema.org/itemReviewed',
+        0 => 'schema:itemReviewed',
       ),
     ),
     'field_testimonial_city' => array(
@@ -153,6 +154,16 @@ function ec_testimonial_rdf_default_mappings() {
         0 => 'schema:thumbnailUrl',
       ),
       'type' => 'rel',
+    ),
+    'field_display_title' => array(
+      'predicates' => array(
+        0 => 'schema:alternativeHeadline',
+      ),
+    ),
+    'field_display_subtitle' => array(
+      'predicates' => array(
+        0 => 'schema:alternativeHeadline',
+      ),
     ),
   );
 

@@ -25,6 +25,7 @@ function ec_panopoly_page_overrides_user_default_permissions() {
   $permissions['delete any panopoly_landing_page content'] = array(
     'name' => 'delete any panopoly_landing_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

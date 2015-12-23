@@ -14,14 +14,14 @@ function ec_citypages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_city_page';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_menutitle_city_page';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['auto_menutitle_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -172,7 +172,7 @@ function ec_citypages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_city_page';
-  $strongarm->value = 'main-menu:0';
+  $strongarm->value = 'menu-auxiliary-menu:2291';
   $export['menu_parent_city_page'] = $strongarm;
 
   $strongarm = new stdClass();

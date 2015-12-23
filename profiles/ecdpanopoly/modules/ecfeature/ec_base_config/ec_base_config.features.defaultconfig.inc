@@ -1041,7 +1041,7 @@ function ec_base_config_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
-  $strongarm->value = 'thomas@energycircle.com';
+  $strongarm->value = 'digital@energycircle.com';
   $export['site_mail'] = $strongarm;
 
   $strongarm = new stdClass();

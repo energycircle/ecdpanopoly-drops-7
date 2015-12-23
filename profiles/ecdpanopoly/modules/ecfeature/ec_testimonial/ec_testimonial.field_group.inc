@@ -27,7 +27,8 @@ function ec_testimonial_field_group_info() {
       1 => 'field_ref_testimonial_serv_cat',
       2 => 'field_ref_testimonial_serv_group',
       3 => 'field_ref_testimonial_service',
-      4 => 'field_ref_testimonial_citypages',
+      4 => 'field_ref_testimonial_article',
+      5 => 'field_ref_testimonial_citypages',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

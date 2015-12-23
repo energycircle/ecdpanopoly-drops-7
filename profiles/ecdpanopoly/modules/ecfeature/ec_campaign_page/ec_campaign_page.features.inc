@@ -62,7 +62,7 @@ function ec_campaign_page_default_entityform_type() {
       "enable_block" : 0
     },
     "weight" : "0",
-    "uuid" : "694e825f-5af3-4324-bead-66caa739b3bb",
+    "rdf_mapping" : [],
     "paths" : []
   }');
   return $items;

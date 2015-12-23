@@ -1340,6 +1340,9 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -1452,6 +1455,9 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),

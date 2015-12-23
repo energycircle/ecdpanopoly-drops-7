@@ -48,6 +48,9 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -216,13 +219,19 @@ function ec_blog_post_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
+        'display_summary' => 1,
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
           'rows' => 20,
@@ -272,6 +281,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'blog_post',
       'default_value' => NULL,
+      'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -676,6 +686,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'input_format' => 'M j Y - g:i:sa',
           'input_format_custom' => '',
           'label_position' => 'above',
+          'no_fieldset' => 0,
           'text_parts' => array(),
           'year_range' => '-3:+3',
         ),
@@ -1163,6 +1174,9 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -1275,6 +1289,9 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -1387,6 +1404,9 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),

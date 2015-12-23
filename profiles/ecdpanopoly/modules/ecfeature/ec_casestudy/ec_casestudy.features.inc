@@ -56,8 +56,9 @@ function ec_casestudy_rdf_default_mappings() {
   // Exported RDF mapping: case_study
   $schemaorg['node']['case_study'] = array(
     'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
+      0 => 'schema:ScholarlyArticle',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
     ),
     'title' => array(
       'predicates' => array(

@@ -13,14 +13,20 @@ function ec_a_b_testing_setup_user_default_permissions() {
   // Exported permission: 'administer content_experiments'.
   $permissions['administer content_experiments'] = array(
     'name' => 'administer content_experiments',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
     'module' => 'content_experiments',
   );
 
   // Exported permission: 'clone node'.
   $permissions['clone node'] = array(
     'name' => 'clone node',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
     'module' => 'clone',
   );
 

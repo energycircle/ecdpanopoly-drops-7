@@ -57,7 +57,7 @@ function ec_staff_default_entityform_type() {
       "enable_block" : 1
     },
     "weight" : "0",
-    "uuid" : "f92250e3-fd73-4572-bbd0-d7942897b378",
+    "rdf_mapping" : [],
     "paths" : []
   }');
   return $items;
@@ -73,7 +73,7 @@ function ec_staff_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Full Name'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );

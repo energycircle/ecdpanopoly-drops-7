@@ -125,7 +125,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 17,
+        'weight' => 18,
       ),
     ),
   );
@@ -234,7 +234,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 28,
+        'weight' => 30,
       ),
     ),
   );
@@ -547,7 +547,6 @@ function ec_citypages_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 0,
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -572,7 +571,9 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
-          'manualcrop_require_cropping' => array(),
+          'manualcrop_require_cropping' => array(
+            'sc_940x470_mc' => 'sc_940x470_mc',
+          ),
           'manualcrop_styles_list' => array(
             'sc_940x470_mc' => 'sc_940x470_mc',
           ),
@@ -838,7 +839,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_citypages_pin',
       'label' => 'Location pin',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1244,7 +1245,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 23,
+        'weight' => 24,
       ),
     ),
   );

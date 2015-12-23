@@ -94,33 +94,46 @@ function ec_citypages_views_default_views() {
 
   /* Display: City Page - Description */
   $handler = $view->new_display('panel_pane', 'City Page - Description', 'panel_pane_1');
-
-  /* Display: City Page - Slides */
-  $handler = $view->new_display('panel_pane', 'City Page - Slides', 'panel_pane_2');
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'flexslider';
-  $handler->display->display_options['style_options']['optionset'] = 'pcase_gallery_slides';
-  $handler->display->display_options['style_options']['captionfield'] = 'field_citypages_photos_1';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_citypages_photos_1']['id'] = 'field_citypages_photos_1';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['table'] = 'field_data_field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['field'] = 'field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_citypages_photos_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_citypages_photos_1']['alter']['text'] = '[field_citypages_photos_1-description]';
-  $handler->display->display_options['fields']['field_citypages_photos_1']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_citypages_photos']['id'] = 'field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos']['table'] = 'field_data_field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos']['field'] = 'field_citypages_photos';
-  $handler->display->display_options['fields']['field_citypages_photos']['label'] = '';
-  $handler->display->display_options['fields']['field_citypages_photos']['element_label_colon'] = FALSE;
+  /* Field: Content: Description Local Experience */
+  $handler->display->display_options['fields']['field_citypages_local_experience']['id'] = 'field_citypages_local_experience';
+  $handler->display->display_options['fields']['field_citypages_local_experience']['table'] = 'field_data_field_citypages_local_experience';
+  $handler->display->display_options['fields']['field_citypages_local_experience']['field'] = 'field_citypages_local_experience';
+  $handler->display->display_options['fields']['field_citypages_local_experience']['label'] = '';
+  $handler->display->display_options['fields']['field_citypages_local_experience']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_citypages_local_experience']['element_label_colon'] = FALSE;
+  /* Field: Content: Description Example */
+  $handler->display->display_options['fields']['field_citypages_example']['id'] = 'field_citypages_example';
+  $handler->display->display_options['fields']['field_citypages_example']['table'] = 'field_data_field_citypages_example';
+  $handler->display->display_options['fields']['field_citypages_example']['field'] = 'field_citypages_example';
+  $handler->display->display_options['fields']['field_citypages_example']['label'] = '';
+  $handler->display->display_options['fields']['field_citypages_example']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_citypages_example']['element_label_colon'] = FALSE;
+  /* Field: Content: Other Local Notes */
+  $handler->display->display_options['fields']['field_citypages_other_descriptio']['id'] = 'field_citypages_other_descriptio';
+  $handler->display->display_options['fields']['field_citypages_other_descriptio']['table'] = 'field_data_field_citypages_other_descriptio';
+  $handler->display->display_options['fields']['field_citypages_other_descriptio']['field'] = 'field_citypages_other_descriptio';
+  $handler->display->display_options['fields']['field_citypages_other_descriptio']['label'] = '';
+  $handler->display->display_options['fields']['field_citypages_other_descriptio']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_citypages_other_descriptio']['element_label_colon'] = FALSE;
+  /* Field: Content: Description Place Names */
+  $handler->display->display_options['fields']['field_citypages_placenames']['id'] = 'field_citypages_placenames';
+  $handler->display->display_options['fields']['field_citypages_placenames']['table'] = 'field_data_field_citypages_placenames';
+  $handler->display->display_options['fields']['field_citypages_placenames']['field'] = 'field_citypages_placenames';
+  $handler->display->display_options['fields']['field_citypages_placenames']['label'] = '';
+  $handler->display->display_options['fields']['field_citypages_placenames']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_citypages_placenames']['element_label_colon'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['nid']['alter']['text'] = '[field_citypages_placenames]
+[field_citypages_local_experience]
+[field_citypages_example]
+[field_citypages_other_descriptio]';
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   $export['city_pages'] = $view;
 
   $view = new view();
@@ -491,6 +504,11 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['views_conditional']['label'] = '';
   $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['views_conditional']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'field_featured_video';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '5';
+  $handler->display->display_options['fields']['views_conditional']['then'] = '[field_citypages_image]';
+  $handler->display->display_options['fields']['views_conditional']['or'] = '[field_citypages_image]';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   $export['citypages_image_or_video'] = $view;
 
   return $export;

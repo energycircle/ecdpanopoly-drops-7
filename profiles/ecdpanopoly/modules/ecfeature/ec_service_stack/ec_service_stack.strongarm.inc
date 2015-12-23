@@ -14,21 +14,21 @@ function ec_service_stack_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_service';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-schemaorg-ui';
   $export['additional_settings__active_tab_service'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_service_category';
-  $strongarm->value = 'edit-menu';
+  $strongarm->value = 'edit-schemaorg-ui';
   $export['additional_settings__active_tab_service_category'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_service_group';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-schemaorg-ui';
   $export['additional_settings__active_tab_service_group'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -588,6 +588,11 @@ function ec_service_stack_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
+      'grouped_teaser' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
       'featured' => array(
         'status' => 0,
         'default' => 0,
@@ -661,6 +666,11 @@ function ec_service_stack_strongarm() {
         'choice' => 0,
       ),
       'show_this_block' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'grouped_teaser' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
@@ -744,7 +754,9 @@ function ec_service_stack_strongarm() {
   $strongarm->value = array(
     0 => 'create_roles',
     1 => 'edit_roles',
-    2 => 'delete_roles',
+    2 => 'edit_own_roles',
+    3 => 'delete_roles',
+    4 => 'delete_own_roles',
   );
   $export['user_permissions_service'] = $strongarm;
 
@@ -755,7 +767,9 @@ function ec_service_stack_strongarm() {
   $strongarm->value = array(
     0 => 'create_roles',
     1 => 'edit_roles',
-    2 => 'delete_roles',
+    2 => 'edit_own_roles',
+    3 => 'delete_roles',
+    4 => 'delete_own_roles',
   );
   $export['user_permissions_service_category'] = $strongarm;
 
@@ -766,7 +780,9 @@ function ec_service_stack_strongarm() {
   $strongarm->value = array(
     0 => 'create_roles',
     1 => 'edit_roles',
-    2 => 'delete_roles',
+    2 => 'edit_own_roles',
+    3 => 'delete_roles',
+    4 => 'delete_own_roles',
   );
   $export['user_permissions_service_group'] = $strongarm;
 

@@ -14,7 +14,7 @@ function ec_casestudy_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_case_study';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-schemaorg-ui';
   $export['additional_settings__active_tab_case_study'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -287,7 +287,9 @@ function ec_casestudy_strongarm() {
   $strongarm->value = array(
     0 => 'create_roles',
     1 => 'edit_roles',
-    2 => 'delete_roles',
+    2 => 'edit_own_roles',
+    3 => 'delete_roles',
+    4 => 'delete_own_roles',
   );
   $export['user_permissions_case_study'] = $strongarm;
 

@@ -6,6 +6,7 @@ version = 7.x-1.2
 project = ec_gallery
 dependencies[] = ec_base_config
 dependencies[] = field_group
+dependencies[] = flexslider_views
 dependencies[] = panopoly_pages
 dependencies[] = views_content
 apps[screenshots][] = app/screenshot.png

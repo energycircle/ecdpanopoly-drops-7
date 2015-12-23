@@ -28,7 +28,8 @@ function ec_blog_post_field_group_info() {
       2 => 'field_ref_blog_serv_cat',
       3 => 'field_ref_blog_serv_group',
       4 => 'field_ref_blog_service',
-      5 => 'field_ref_blog_citypages',
+      5 => 'field_ref_blog_article',
+      6 => 'field_ref_blog_citypages',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

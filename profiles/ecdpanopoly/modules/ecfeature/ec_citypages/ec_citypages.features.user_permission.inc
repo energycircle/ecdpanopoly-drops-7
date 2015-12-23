@@ -62,35 +62,55 @@ function ec_citypages_user_default_permissions() {
   // Exported permission: 'create city_page content'.
   $permissions['create city_page content'] = array(
     'name' => 'create city_page content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any city_page content'.
   $permissions['delete any city_page content'] = array(
     'name' => 'delete any city_page content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own city_page content'.
   $permissions['delete own city_page content'] = array(
     'name' => 'delete own city_page content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any city_page content'.
   $permissions['edit any city_page content'] = array(
     'name' => 'edit any city_page content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own city_page content'.
   $permissions['edit own city_page content'] = array(
     'name' => 'edit own city_page content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 

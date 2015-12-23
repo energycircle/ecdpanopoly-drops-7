@@ -56,12 +56,13 @@ function ec_blog_post_rdf_default_mappings() {
   // Exported RDF mapping: blog_post
   $schemaorg['node']['blog_post'] = array(
     'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
+      0 => 'schema:Blog',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
     ),
     'title' => array(
       'predicates' => array(
-        0 => 'dc:title',
+        0 => 'schema:name',
       ),
     ),
     'created' => array(
@@ -81,7 +82,8 @@ function ec_blog_post_rdf_default_mappings() {
     ),
     'body' => array(
       'predicates' => array(
-        0 => 'content:encoded',
+        0 => 'schema:articleBody',
+        1 => 'content:encoded',
       ),
     ),
     'uid' => array(
@@ -92,7 +94,7 @@ function ec_blog_post_rdf_default_mappings() {
     ),
     'name' => array(
       'predicates' => array(
-        0 => 'foaf:name',
+        0 => 'schema:name',
       ),
     ),
     'comment_count' => array(
@@ -107,6 +109,54 @@ function ec_blog_post_rdf_default_mappings() {
       ),
       'datatype' => 'xsd:dateTime',
       'callback' => 'date_iso8601',
+    ),
+    'field_display_date' => array(
+      'predicates' => array(
+        0 => 'schema:datePublished',
+      ),
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_blog_category' => array(
+      'predicates' => array(
+        0 => 'schema:articleSection',
+      ),
+      'type' => 'rel',
+    ),
+    'field_blog_image' => array(
+      'predicates' => array(
+        0 => 'schema:primaryImageOfPage',
+      ),
+      'type' => 'rel',
+    ),
+    'field_ref_blog_article' => array(
+      'predicates' => array(
+        0 => 'schema:associatedArticle',
+      ),
+    ),
+    'field_ref_blog_serv_group' => array(
+      'predicates' => array(
+        0 => 'schema:providesService',
+      ),
+    ),
+    'field_ref_blog_serv_cat' => array(
+      'predicates' => array(
+        0 => 'schema:providesService',
+      ),
+    ),
+    'field_ref_blog_service' => array(
+      'predicates' => array(
+        0 => 'schema:providesService',
+      ),
+    ),
+    'field_ref_blog_citypages' => array(
+      'predicates' => array(
+        0 => 'schema:serviceLocation',
+      ),
     ),
   );
 

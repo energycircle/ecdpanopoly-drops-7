@@ -13,101 +13,87 @@ function ec_blog_post_user_default_permissions() {
   // Exported permission: 'administer panelizer node blog_post breadcrumbs'.
   $permissions['administer panelizer node blog_post breadcrumbs'] = array(
     'name' => 'administer panelizer node blog_post breadcrumbs',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node blog_post content'.
   $permissions['administer panelizer node blog_post content'] = array(
     'name' => 'administer panelizer node blog_post content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node blog_post context'.
   $permissions['administer panelizer node blog_post context'] = array(
     'name' => 'administer panelizer node blog_post context',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node blog_post defaults'.
   $permissions['administer panelizer node blog_post defaults'] = array(
     'name' => 'administer panelizer node blog_post defaults',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node blog_post layout'.
   $permissions['administer panelizer node blog_post layout'] = array(
     'name' => 'administer panelizer node blog_post layout',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node blog_post overview'.
   $permissions['administer panelizer node blog_post overview'] = array(
     'name' => 'administer panelizer node blog_post overview',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node blog_post settings'.
   $permissions['administer panelizer node blog_post settings'] = array(
     'name' => 'administer panelizer node blog_post settings',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term blog_categories defaults'.
   $permissions['administer panelizer taxonomy_term blog_categories defaults'] = array(
     'name' => 'administer panelizer taxonomy_term blog_categories defaults',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'create blog_post content'.
   $permissions['create blog_post content'] = array(
     'name' => 'create blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any blog_post content'.
   $permissions['delete any blog_post content'] = array(
     'name' => 'delete any blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own blog_post content'.
   $permissions['delete own blog_post content'] = array(
     'name' => 'delete own blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -115,7 +101,6 @@ function ec_blog_post_user_default_permissions() {
   $permissions['delete terms in blog_categories'] = array(
     'name' => 'delete terms in blog_categories',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -124,14 +109,22 @@ function ec_blog_post_user_default_permissions() {
   // Exported permission: 'edit any blog_post content'.
   $permissions['edit any blog_post content'] = array(
     'name' => 'edit any blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own blog_post content'.
   $permissions['edit own blog_post content'] = array(
     'name' => 'edit own blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -140,6 +133,7 @@ function ec_blog_post_user_default_permissions() {
     'name' => 'edit terms in blog_categories',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',

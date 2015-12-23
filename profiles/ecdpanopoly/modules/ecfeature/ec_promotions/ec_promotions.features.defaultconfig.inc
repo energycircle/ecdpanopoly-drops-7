@@ -48,6 +48,9 @@ function ec_promotions_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -245,7 +248,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 23,
+        'weight' => 25,
       ),
     ),
   );
@@ -558,13 +561,19 @@ function ec_promotions_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
+        'display_summary' => 1,
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
           'rows' => 20,
@@ -864,6 +873,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'input_format' => 'M j Y - g:i:sa',
           'input_format_custom' => '',
           'label_position' => 'above',
+          'no_fieldset' => 0,
           'text_parts' => array(),
           'year_range' => '-3:+3',
         ),
@@ -960,8 +970,9 @@ function ec_promotions_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'linkit' => array(
+          'button_text' => 'Search',
           'enable' => 0,
-          'insert_plugin' => '',
+          'profile' => '',
         ),
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -1065,8 +1076,9 @@ function ec_promotions_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'linkit' => array(
+          'button_text' => 'Search',
           'enable' => 0,
-          'insert_plugin' => '',
+          'profile' => '',
         ),
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -1075,8 +1087,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'maxlength_js' => 0,
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => 60,
         ),
         'type' => 'text_textfield',
@@ -1177,7 +1187,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 'private',
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -1300,8 +1309,9 @@ function ec_promotions_defaultconfig_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'linkit' => array(
+          'button_text' => 'Search',
           'enable' => 0,
-          'insert_plugin' => '',
+          'profile' => '',
         ),
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -1310,8 +1320,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'maxlength_js' => 0,
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => 60,
         ),
         'type' => 'text_textfield',
@@ -1460,6 +1468,9 @@ function ec_promotions_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -1572,6 +1583,9 @@ function ec_promotions_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -1684,6 +1698,9 @@ function ec_promotions_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
