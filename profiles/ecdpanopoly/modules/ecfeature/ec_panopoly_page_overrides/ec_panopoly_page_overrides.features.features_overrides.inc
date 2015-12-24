@@ -78,8 +78,8 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panel_settings|style_settings|two_66_33_top"] = NULL;
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|contentmain"]["DELETED"] = TRUE;
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|two_66_33_first"] = array(
-    0 => 'new-ab6d95ae-008b-48ab-84b4-0b3c475b7fa4',
-    1 => 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40',
+    0 => 'new-74f82699-93ba-4b15-8bcf-e3bfa1894d40',
+    1 => 'new-ab6d95ae-008b-48ab-84b4-0b3c475b7fa4',
   );
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|panels|two_66_33_second"] = array(
     0 => 'new-b92fd697-8377-4b5e-87cc-d81df0e7e61d',
@@ -94,6 +94,11 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
     'choice' => 0,
   );
   $overrides["variable.panelizer_defaults_node_panopoly_page.value|view modes|page_manager|status"] = 0;
+  $overrides["variable.panelizer_defaults_node_panopoly_page.value|view modes|search_result"] = array(
+    'status' => 0,
+    'default' => 0,
+    'choice' => 0,
+  );
   $overrides["variable.panelizer_defaults_node_panopoly_page.value|view modes|show_this_block"] = array(
     'status' => 0,
     'default' => 0,

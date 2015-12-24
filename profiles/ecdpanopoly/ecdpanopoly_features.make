@@ -2,6 +2,12 @@ api = 2
 core = 7.x
 
 ;EC Features
+projects[ec_a_b_testing_setup][download][type] = git
+projects[ec_a_b_testing_setup][download][url] = https://github.com/energycircle/ec_a_b_testing_setup.git
+projects[ec_a_b_testing_setup][type] = module
+projects[ec_a_b_testing_setup][subdir] = ecfeature
+projects[ec_a_b_testing_setup][version] = 1.x
+
 projects[ec_administrative_dashboard][download][type] = git
 projects[ec_administrative_dashboard][download][url] = https://github.com/energycircle/ec_administrative_dashboard.git
 projects[ec_administrative_dashboard][type] = module
@@ -56,6 +62,12 @@ projects[ec_cleaner][subdir] = ecfeature
 projects[ec_cleaner][type] = module
 projects[ec_cleaner][version] =  1.x
 
+projects[ec_citypages][download][type] = git
+projects[ec_citypages][download][url] = https://github.com/energycircle/ec_citypages.git
+projects[ec_citypages][subdir] = ecfeature
+projects[ec_citypages][type] = module
+projects[ec_citypages][version] =  1.x
+
 #projects[ec_conference_tracks_sessions][download][type] = git
 #projects[ec_conference_tracks_sessions][download][url] = https://github.com/energycircle/ec_conference_tracks_sessions.git
 #projects[ec_conference_tracks_sessions][subdir] = ecfeature
@@ -85,6 +97,18 @@ projects[ec_distributor][download][url] = https://github.com/energycircle/ec_dis
 projects[ec_distributor][subdir] = ecfeature
 projects[ec_distributor][type] = module
 projects[ec_distributor][version] = 1.x
+
+projects[ec_download_file_gate][download][type] = git
+projects[ec_download_file_gate][download][url] = https://github.com/energycircle/ec_download_file_gate.git
+projects[ec_download_file_gate][subdir] = ecfeature
+projects[ec_download_file_gate][type] = module
+projects[ec_download_file_gate][version] = 1.x
+
+projects[ec_mail_settings][download][type] = git
+projects[ec_mail_settings][download][url] = https://github.com/energycircle/ec_mail_settings.git
+projects[ec_mail_settings][subdir] = ecfeature
+projects[ec_mail_settings][type] = module
+projects[ec_mail_settings][version] = 1.x
 
 projects[ec_external_video][download][type] = git
 projects[ec_external_video][download][url] = https://github.com/energycircle/ec_external_video.git

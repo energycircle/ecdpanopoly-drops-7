@@ -14,7 +14,7 @@ function ec_financing_option_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_financing_option';
-  $strongarm->value = 'edit-extras';
+  $strongarm->value = 'edit-schemaorg-ui';
   $export['additional_settings__active_tab_financing_option'] = $strongarm;
 
   $strongarm = new stdClass();

@@ -381,6 +381,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'menu',
@@ -399,6 +400,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer mini panels'] = array(
     'name' => 'administer mini panels',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'panels_mini',
@@ -470,63 +472,49 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'administer panelizer user user breadcrumbs'.
   $permissions['administer panelizer user user breadcrumbs'] = array(
     'name' => 'administer panelizer user user breadcrumbs',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user content'.
   $permissions['administer panelizer user user content'] = array(
     'name' => 'administer panelizer user user content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user context'.
   $permissions['administer panelizer user user context'] = array(
     'name' => 'administer panelizer user user context',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user defaults'.
   $permissions['administer panelizer user user defaults'] = array(
     'name' => 'administer panelizer user user defaults',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user layout'.
   $permissions['administer panelizer user user layout'] = array(
     'name' => 'administer panelizer user user layout',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user overview'.
   $permissions['administer panelizer user user overview'] = array(
     'name' => 'administer panelizer user user overview',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user settings'.
   $permissions['administer panelizer user user settings'] = array(
     'name' => 'administer panelizer user user settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
@@ -851,6 +839,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['delete any panopoly_page content'] = array(
     'name' => 'delete any panopoly_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1048,6 +1037,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any audio files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -1058,6 +1048,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any document files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -1078,6 +1069,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any image files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -1099,6 +1091,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit any video files',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
@@ -1109,6 +1102,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit meta tags',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'metatag',
@@ -1193,6 +1187,8 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit terms in panopoly_categories'] = array(
     'name' => 'edit terms in panopoly_categories',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -1249,6 +1245,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'flush caches',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'admin_menu',
@@ -1314,6 +1311,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'masquerade as user',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',

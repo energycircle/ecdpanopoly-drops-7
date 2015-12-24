@@ -16,10 +16,10 @@ projects[admin_theme][subdir] = eccontrib
 projects[admin_theme][version] = 1.x
 
 projects[adminrole][subdir] = eccontrib
-projects[adminrole][version] = 1.x
+projects[adminrole][version] = 1.1
 
 projects[advanced_help][subdir] = eccontrib
-projects[advanced_help][version] = 1.3
+projects[advanced_help][version] = 1.x
 
 projects[auto_menutitle][subdir] = eccontrib
 projects[auto_menutitle][version] = 1.x
@@ -45,6 +45,9 @@ projects[colorbox][version] = 2.10
 projects[compact_forms][subdir] = eccontrib
 projects[compact_forms][version] = 1.x
 
+projects[computed_field][subdir] = eccontrib
+projects[computed_field][version] = 1.x
+
 projects[contemplate][subdir] = eccontrib
 projects[contemplate][version] = 1.x
 
@@ -68,6 +71,9 @@ projects[disable_term_node_listings][version] = 1.2
 
 projects[draggableviews][subdir] = eccontrib
 projects[draggableviews][version] = 2.x
+
+projects[eck][subdir] = eccontrib
+projects[eck][version] = 2.0-rc8
 
 projects[elements][subdir] = eccontrib
 projects[elements][version] = 1.x
@@ -120,11 +126,11 @@ projects[exclude_node_title][version] = 1.9
 projects[external][subdir] = eccontrib
 projects[external][version] = 1.x-dev
 
-#projects[feeds][subdir] = eccontrib
-#projects[feeds][version] = 2.x
+projects[feeds][subdir] = eccontrib
+projects[feeds][version] = 2.x
 
-#projects[feeds_tamper][subdir] = eccontrib
-#projects[feeds_tamper][version] = 1.1
+projects[feeds_tamper][subdir] = eccontrib
+projects[feeds_tamper][version] = 1.1
 
 projects[field_collection][subdir] = eccontrib
 projects[field_collection][version] = 1.0-beta10
@@ -141,8 +147,8 @@ projects[field_hidden][version] = 1.7
 projects[field_multiple_limit][subdir] = eccontrib
 projects[field_multiple_limit][version] = 1.x
 
-;projects[field_permissions][version] = 1.x
-;projects[field_permissions][subdir] = eccontrib
+projects[field_permissions][version] = 1.x
+projects[field_permissions][subdir] = eccontrib
 
 projects[field_validation][subdir] = eccontrib
 projects[field_validation][version] = 2.6
@@ -152,6 +158,21 @@ projects[flippy][version] = 1.4
 
 projects[flexslider][subdir] = eccontrib
 projects[flexslider][version] = 2.x-dev
+
+projects[geolocation][subdir] = eccontrib
+projects[geolocation][version] = 1.x
+
+projects[geolocation_views][subdir] = eccontrib
+projects[geolocation_views][version] = 1.x
+
+projects[geofield][version] = 2.3
+projects[geofield][subdir] = contrib
+
+projects[geophp][version] = 1.x-dev
+projects[geophp][subdir] = contrib
+
+projects[geofield_proximity_polygon][version] = 1.0-beta1
+projects[geofield_proximity_polygon][subdir] = contrib
 
 projects[globalredirect][subdir] = eccontrib
 projects[globalredirect][version] = 1.5
@@ -163,7 +184,10 @@ projects[htmlmail][subdir] = eccontrib
 projects[htmlmail][version] = 2.65
 
 projects[hierarchical_select][subdir] = eccontrib
-projects[hierarchical_select][version] = 3.0-beta2
+projects[hierarchical_select][version] = 3.0-beta3
+
+projects[honeypot][subdir] = eccontrib
+projects[honeypot][version] = 1.21
 
 projects[image_link_formatter][subdir] = eccontrib
 projects[image_link_formatter][version] = 1.0
@@ -179,6 +203,15 @@ projects[jcarousel][version] = 2.x
 
 projects[job_scheduler][subdir] = eccontrib
 projects[job_scheduler][version] = 2.x
+
+projects[leaflet][subdir] = eccontrib
+projects[leaflet][version] = 1.3
+
+projects[leaflet_widget][version] = 2.0-beta1
+projects[leaflet_widget][subdir] = contrib
+
+projects[leaflet_more_maps][version] = 1.14
+projects[leaflet_more_maps][subdir] = contrib
 
 projects[linkit_target][subdir] = eccontrib
 projects[linkit_target][version] = 1.0
@@ -208,7 +241,7 @@ projects[node_authlink][subdir] = eccontrib
 projects[node_authlink][version] = 1.1
 
 projects[node_clone][subdir] = eccontrib
-projects[node_clone][version] = 1.x
+projects[node_clone][version] = 1.0
 
 projects[nodequeue][subdir] = eccontrib
 projects[nodequeue][version] = 2.0
@@ -247,19 +280,19 @@ projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.11
+projects[services][version] = 3.12
 
 projects[superfish][subdir] = eccontrib
-projects[superfish][version] = 1.x-dev
+projects[superfish][version] = 2.0
 
 projects[sendgrid_integration][subdir] = eccontrib
-projects[sendgrid_integration][version] = 1.0-alpha2
+projects[sendgrid_integration][version] = 1.0-alpha3
 
 projects[sharethis][subdir] = eccontrib
 projects[sharethis][version] = 2.12
 
 projects[smtp][subdir] = eccontrib
-projects[smtp][version] = 1.2
+projects[smtp][version] = 1.3
 
 projects[table_element][subdir] = eccontrib
 projects[table_element][version] = 1.0-beta3
@@ -278,6 +311,9 @@ projects[total_control][version] = 2.x
 
 projects[variable][subdir] = eccontrib
 projects[variable][version] = 2.5
+
+projects[variable_email][subdir] = eccontrib
+projects[variable_email][version] = 1.0-alpha1
 
 projects[views_accordion][subdir] = eccontrib
 projects[views_accordion][version] = 1.x
@@ -308,15 +344,20 @@ projects[xmlsitemap][version] = 2.2
 projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
 projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch 
 projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
-projects[compact_forms][patch] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
-projects[cer][patch][] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
-projects[metatag][patch][0] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
+projects[compact_forms][patch][2464993] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
+projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
+projects[metatag][patch][1918738] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
 #projects[metatag][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/master/patches/character_count_on_fields-1918738-9-ec.patch
-projects[maxlength][patch] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
+projects[maxlength][patch][1256968] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
 #projects[table_element][patch][] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
 #projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
 projects[entitycache][patch][2441965] = https://www.drupal.org/files/issues/entitycache_fix_upgrade_path-2441965-39.patch
 projects[deploy][patch][1604938] = https://www.drupal.org/files/deploy-1604938_1.patch
+projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/leaflet_widget-1974478-vertical-tab-refresh-12.patch
+projects[leaflet_widget][patch] = https://drupal.org/files/0001-Issue-1834446-by-mradcliffe-Use-GeoPHP-native.-GeoJSO.patch
+projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.patch
+#projects[schemaorg][patch][1296760] = https://www.drupal.org/files/1296760_entity_1.patch
+
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
@@ -342,16 +383,46 @@ projects[superfish_hack][download][url] = https://github.com/energycircle/superf
 projects[superfish_hack][subdir] = eccustom
 projects[superfish_hack][type] = module
 
+projects[ec_restrict_dl][download][type] = git
+projects[ec_restrict_dl][download][url] = https://github.com/energycircle/ec_restrict_dl.git
+projects[ec_restrict_dl][subdir] = eccustom
+projects[ec_restrict_dl][type] = module
+
 ; LIBRARIES
 libraries[superfish][download][type] = get
 libraries[superfish][type] = library
 libraries[superfish][directory_name] = superfish
-libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/archive/master.zip
+libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/archive/1.x.zip
 
 libraries[flexslider][download][type] = get
 libraries[flexslider][type] = library
 libraries[flexslider][directory_name] = flexslider
 libraries[flexslider][download][url] = https://api.github.com/repos/woothemes/FlexSlider/zipball/version/2.2.2
+
+libraries[matchMedia][download][type] = git
+libraries[matchMedia][type] = library
+libraries[matchMedia][directory_name] = matchMedia
+libraries[matchMedia][download][url] = https://github.com/paulirish/matchMedia.js.git
+
+libraries[leaflet][download][type] = get
+libraries[leaflet][type] = library
+libraries[leaflet][directory_name] = leaflet
+libraries[leaflet][download][url] = http://cdn.leafletjs.com/downloads/leaflet-0.7.3.zip
+
+libraries[leaflet.widget][download][type] = get
+libraries[leaflet.widget][type] = library
+libraries[leaflet.widget][directory_name] = Leaflet.widget
+libraries[leaflet.widget][download][url] = https://github.com/tnightingale/Leaflet.widget/archive/master.zip
+
+libraries[leaflet.draw][download][type] = get
+libraries[leaflet.draw][type] = library
+libraries[leaflet.draw][directory_name] = Leaflet.draw
+libraries[leaflet.draw][download][url] = https://github.com/Leaflet/Leaflet.draw/archive/master.zip
+
+libraries[geoPHP][download][type] = get
+libraries[geoPHP][type] = library
+libraries[geoPHP][directory_name] = geoPHP
+libraries[geoPHP][download][url] = https://github.com/phayes/geoPHP/zipball/master
 
 ; THEMES
 projects[adaptivetheme][version] = 3.x

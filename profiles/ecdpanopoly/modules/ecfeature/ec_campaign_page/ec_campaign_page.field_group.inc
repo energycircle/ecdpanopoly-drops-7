@@ -23,9 +23,9 @@ function ec_campaign_page_field_group_info() {
     'label' => 'CTA Form',
     'weight' => '5',
     'children' => array(
-      0 => 'field_call_to_action',
-      1 => 'field_ref_to_cta_form',
-      2 => 'field_button_text',
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

@@ -82,6 +82,9 @@ function maxlength_form_field_ui_field_edit_form_alter(&$form, &$form_state, $fo
 
   // Add settings for textarea widgets.
   $fields = array('text_textarea_with_summary', 'text_textarea');
+  if (module_exists('metatags_quick')){
+    $fields[] = 'metatags_quick_textarea';
+  }  
   if (in_array($form['#instance']['widget']['type'], $fields)) {
     $form['instance']['widget']['settings']['maxlength_js'] = array(
       '#type' => 'textfield',

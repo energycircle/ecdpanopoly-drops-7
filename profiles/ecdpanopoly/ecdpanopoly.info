@@ -74,6 +74,7 @@ dependencies[] = entityform_notifications
 dependencies[] = elements
 dependencies[] = entityform_block
 dependencies[] = entityreference_filter
+dependencies[] = external
 dependencies[] = field_default_token
 dependencies[] = field_multiple_limit
 dependencies[] = field_validation
@@ -81,6 +82,7 @@ dependencies[] = field_validation_extras
 dependencies[] = field_validation_ui
 dependencies[] = field_hidden
 dependencies[] = flexslider
+dependencies[] = honeypot
 dependencies[] = insert_view
 dependencies[] = imagecache_token
 dependencies[] = jcarousel
@@ -94,6 +96,9 @@ dependencies[] = nodequeue
 dependencies[] = panels_mini
 dependencies[] = phone
 dependencies[] = rules
+dependencies[] = schemaorg
+dependencies[] = schemaorg_ui
+dependencies[] = schemaorg_contrib
 dependencies[] = superfish
 dependencies[] = title
 dependencies[] = table_element
@@ -117,7 +122,7 @@ dependencies[] = ec_base_config
 dependencies[] = ec_panopoly_page_overrides
 
 
-; Information added by flux423 - updated on 2015-07-10
+; Information added by flux423 - updated on 2015-12-22
 version = "7.x-1.1-rc10.2"
 core = "7.x"
 project = "ECDPanopoly"

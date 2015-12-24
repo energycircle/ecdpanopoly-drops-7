@@ -65,6 +65,7 @@ function ec_service_stack_default_entityform_type() {
       "enable_block" : 0
     },
     "weight" : "0",
+    "rdf_mapping" : [],
     "paths" : []
   }');
   return $items;

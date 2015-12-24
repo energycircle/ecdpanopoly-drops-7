@@ -23,13 +23,12 @@ function ec_testimonial_field_group_info() {
     'label' => 'Show This On',
     'weight' => '8',
     'children' => array(
-      0 => 'field_ref_testimonial_serv_group',
+      0 => 'field_ref_testimonial_case_study',
       1 => 'field_ref_testimonial_serv_cat',
-      2 => 'field_ref_testimonial_service',
-      3 => 'field_ref_testimonial_article',
-      4 => 'field_ref_testimonial_case_study',
-      5 => 'field_ref_testimonial_prodpage',
-      6 => 'field_ref_testimonial_page',
+      2 => 'field_ref_testimonial_serv_group',
+      3 => 'field_ref_testimonial_service',
+      4 => 'field_ref_testimonial_article',
+      5 => 'field_ref_testimonial_citypages',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

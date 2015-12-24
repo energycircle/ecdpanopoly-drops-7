@@ -763,7 +763,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 25,
+        'weight' => 27,
       ),
     ),
   );
@@ -846,13 +846,19 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
+        'display_summary' => 1,
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
           'rows' => 20,
@@ -1172,6 +1178,9 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 1,
             ),
@@ -1585,13 +1594,19 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
+        'display_summary' => 1,
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
           'rows' => 20,
@@ -2023,6 +2038,9 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 1,
             ),
@@ -2436,13 +2454,19 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
+        'display_summary' => 1,
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
           'rows' => 20,
@@ -2746,7 +2770,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'entityreference',
         'settings' => array(
           'match_operator' => 'CONTAINS',
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'path' => '',
           'size' => 60,
         ),

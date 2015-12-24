@@ -23,12 +23,13 @@ function ec_blog_post_field_group_info() {
     'label' => 'Show This On',
     'weight' => '6',
     'children' => array(
-      0 => 'field_ref_blog_article',
+      0 => 'field_ref_blog_page',
       1 => 'field_ref_blog_case_study',
-      2 => 'field_ref_blog_serv_group',
-      3 => 'field_ref_blog_serv_cat',
+      2 => 'field_ref_blog_serv_cat',
+      3 => 'field_ref_blog_serv_group',
       4 => 'field_ref_blog_service',
-      5 => 'field_ref_blog_page',
+      5 => 'field_ref_blog_article',
+      6 => 'field_ref_blog_citypages',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

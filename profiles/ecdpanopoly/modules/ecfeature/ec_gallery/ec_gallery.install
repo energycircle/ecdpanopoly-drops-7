@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * Install code for openpublic blog feature.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function ec_gallery_install() {
+}
+
+  /**
+ * Revert feature on installation
+ */
+function ec_gallery_update_7102(&$sandbox) {
+  features_revert_module('ec_gallery');
+}

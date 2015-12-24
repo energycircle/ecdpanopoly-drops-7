@@ -1,0 +1,259 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function ec_restrict_dl_menu() {
+  $items = array();
+  $items['admin/settings/ecres'] = array(
+    'title' => 'Thank you page',
+    'description' => 'enter the thank you url',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ec_restrict_dl_form'),
+    'access arguments' => array('administer ec restrict dl settings'),
+    'type' => MENU_NORMAL_ITEM,
+   );
+  return $items;
+}
+/**
+ * Page callback: Current posts settings
+ *
+ * @see ec_restrict_dl_menu()
+ */
+function ec_restrict_dl_form($form, &$form_state) {
+
+  $form['ec_restrict_dl_ty_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Thank you page'),
+    '#default_value' => variable_get('ec_restrict_dl_ty_url', 0),
+    '#size' => 60,
+    '#maxlength' => 60,
+    '#description' => t('Thank you page'),
+    '#required' => TRUE,
+  );
+
+  return system_settings_form($form);
+}
+
+//grant download access on files with field marked as file_restricted
+function ec_restrict_dl_file_entity_access($op, $file, $account) {
+  if(isset($file->field_file_restricted['und'][0]['value'])){
+    $restricted = $file->field_file_restricted['und'][0]['value'];
+    if($restricted == 1){
+      if($op == 'download'){
+        return FILE_ENTITY_ACCESS_ALLOW;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_file_transfer
+ */
+function ec_restrict_dl_file_transfer($uri, array $headers) {
+
+  if(user_access('view private files')) {
+    return $uri;
+  }
+
+  //check if not pdf and not part of the private file system
+  if (substr($uri, -4) != '.pdf' || file_uri_scheme($uri) != 'private') {
+    return $uri;
+  }else{
+
+    //if fid and fid matches restricted file
+    $fid = check_plain(arg(1));
+    $record = views_get_view_result('restricted_file_check', NULL, $fid);
+    if($record){
+
+      //if key and key matches and key is < 24hours old delilver dl set $record_key values else set $record_key to FALSE
+      if(isset($_GET['key'])){
+        $key = check_plain($_GET['key']);
+        $record_key = views_get_view_result('restricted_request_key_check', NULL, $fid, $key);
+      }else{
+        $record_key = FALSE;
+      }
+
+      //IF $record_key else redirect to request form
+      if($record_key) {
+        $nid = $record_key[0]->nid;
+        $node = node_load($nid);
+
+        //set times etc without node save
+        $dl_times = $node->field_req_res_dl_times[LANGUAGE_NONE][0]['value'];
+        $dl_times++;
+        $transaction = db_transaction();
+        try {
+          $update_node = new stdClass();
+          $update_node->nid = $node->nid;
+          $update_node->vid = $node->vid;
+          $update_node->type = $node->type;
+          $update_node->field_req_res_dl_times[LANGUAGE_NONE][0]['value'] = $dl_times;
+          field_attach_presave('node', $update_node);
+          field_attach_update('node', $update_node);
+          entity_get_controller('node')->resetCache(array($update_node->nid));
+        } catch (Exception $e) {
+          $transaction->rollback();
+          throw $e;
+        }
+        return true;
+      }else{
+
+        //$_GET['key'] exists pass message
+        if(isset($_GET['key'])){
+          drupal_set_message('Previous download request expired.  Please request again and an email will be sent to you with a new download link.');
+        }
+        drupal_goto('/node/add/request-restricted/' . $fid);
+      }
+
+    }
+    /*else{
+      //is not a file you could request download for; fallback to drupal default handling
+    }*/
+  }
+}
+
+/*function ec_restrict_dl_file_download($uri) {
+  //deny access to private file unless 'view private files' permission access.
+  if(!user_access('view private files')) {
+    return -1;
+  }
+}*/
+
+/**
+ * Implements hook_form_alter().
+ */
+function ec_restrict_dl_form_alter(&$form, &$form_state, $form_id) {
+  //if file is removed from form it catches it before exposing forms fields based on some sort of field error
+  if(isset($form_state['input']['form_id']) && $form_state['input']['form_id'] == 'request_restricted_node_form' && $form_state['input']['field_req_res_file']['und'][0]['fid'] == '0'){
+    $fid = check_plain(arg(3));
+    drupal_set_message('File is required please do not remove it.', 'status');
+    drupal_goto('/node/add/request-restricted/'.$fid);
+    exit;
+  }
+
+  if($form_id == 'request_restricted_node_form') {
+
+    $fid = check_plain(arg(3));
+    if(is_numeric($fid)) {
+
+      //view if file_restricted is set on file return record
+      $record = views_get_view_result('restricted_file_check', NULL, $fid);
+      if($record){
+
+        $title = $record[0]->node_title;
+        $form['title']['#default_value'] = 'Request - ' . $title;
+        $form['title']['#disabled'] = TRUE;
+
+        //hide values and set defaults if user doesn't have elevated access (nome fine tuning needed) //possible configuration options could help here for wider distribution
+        if(!user_access('Request Restricted: Edit own content')){
+
+          //resets field to send email on node save
+          $form['field_req_res_send_email'][LANGUAGE_NONE]['#default_value'] = 1;
+
+          if(isset($form['field_req_res_file'])){
+            $form['field_req_res_file'][LANGUAGE_NONE][0]['#default_value']['fid'] = $fid;
+            $form['field_req_res_file'][LANGUAGE_NONE][0]['#default_value']['display'] = TRUE;
+          }
+
+          //hide fields
+          $form['field_req_res_send_email'][LANGUAGE_NONE]['#type'] = 'hidden';
+          $form['field_req_res_dl_times'][LANGUAGE_NONE][0]['#type'] = 'hidden';
+          $form['field_req_res_request_times'][LANGUAGE_NONE][0]['#type'] = 'hidden';
+          $form['field_req_res_key'][LANGUAGE_NONE][0]['#type'] = 'hidden';
+          $form['field_req_res_dl_link'][LANGUAGE_NONE][0]['#type'] = 'hidden';
+          $form['field_req_res_downloaded'][LANGUAGE_NONE]['#type'] = 'hidden';
+        }
+
+        $form['#validate'][] = 'ec_restrict_validate_create_restricted';
+        //$form['#submit'][] = 'ec_restrict_submit_create_restricted';
+      }else{
+        drupal_goto('/');
+      }
+    }
+  }
+}
+/*function ec_restrict_submit_create_restricted($form, $form_state) {
+
+}*/
+function ec_restrict_validate_create_restricted($form, $form_state) {
+
+  /*if(!isset($form['field_req_res_file']['und'][0]['#default_value']['fid'])){
+    drupal_goto('/');
+    exit;
+  }else{
+
+  }*/
+  $email = $form_state['input']['field_req_res_email'][LANGUAGE_NONE][0]['email'];
+  $fid = $form_state['input']['field_req_res_file'][LANGUAGE_NONE][0]['fid'];
+  $record = views_get_view_result('restricted_request_check', NULL, $fid, $email);
+
+  //if record fid email result set new key and email instead of creating a new node
+  if($record){
+    $nid = $record[0]->nid;
+    $node = node_load($nid);
+    $name = $form_state['input']['field_req_res_name']['und'][0]['value'];
+    $node->field_req_res_name['und'][0]['value'] = $name;
+    $node->field_req_res_send_email['und'][0]['value'] = 1;
+    node_save($node);
+
+    //redirect to keep from saving a new node.
+    $ty_page = check_plain(variable_get('ec_restrict_dl_ty_url'));
+    drupal_goto($ty_page);
+    return false;
+  }else{
+
+  }
+}
+
+/**
+ * Implementation of hook_rules_action_info().
+ * @ingroup rules
+ */
+function ec_restrict_dl_rules_action_info() {
+  return array(
+    'ec_restrict_request_action_process' => array(
+      'label' => t('EC Restrict Request'),
+      'arguments' => array(
+        'node' => array('type' => 'node', 'label' => t('Content'),
+        ),
+      ),
+      'module' => 'node',
+      'group' => 'node',
+    ),
+  );
+}
+
+/**
+ * Modifies a node as configured
+ */
+function ec_restrict_request_action_process($node) {
+
+  $email = $node->field_req_res_email['und'][0]['email'];
+  $fid = $node->field_req_res_file['und'][0]['fid'];
+  $changed = $node->changed;
+  $key = $fid.$email.$changed;
+  $key_encoded = drupal_hash_base64($key);
+
+  //set new key
+  $node->field_req_res_key['und'][0]['value'] = $key_encoded;
+
+  //file get link
+  $file = file_load($fid);
+  $uri = file_entity_download_uri($file);
+  $token = $uri['options']['query']['token'];
+  $uri['options']['query']['key'] = $key_encoded;
+  $path = $uri['path'];
+  //$link = l('Download ' . $node->title, $uri['path'], $uri['options']);
+  $link_raw = $path.'?token='.$token;
+
+  //set link to create email w/key from
+  $node->field_req_res_dl_link['und'][0]['value'] = $link_raw;
+
+  //increment times requested
+  if(isset($node->field_req_res_request_times['und'][0]['value'])){
+    $node->field_req_res_request_times['und'][0]['value']++;
+  }
+
+  return array('node' => $node);
+}

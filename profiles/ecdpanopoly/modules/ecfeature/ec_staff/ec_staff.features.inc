@@ -57,6 +57,7 @@ function ec_staff_default_entityform_type() {
       "enable_block" : 1
     },
     "weight" : "0",
+    "rdf_mapping" : [],
     "paths" : []
   }');
   return $items;
@@ -72,7 +73,7 @@ function ec_staff_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Full Name'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );

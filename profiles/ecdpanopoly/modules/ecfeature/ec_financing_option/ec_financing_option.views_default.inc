@@ -81,6 +81,13 @@ function ec_financing_option_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'financing_option' => 'financing_option',
   );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'A Page' => 'A Page',
+  );
 
   /* Display: Financing Options List */
   $handler = $view->new_display('panel_pane', 'Financing Options List', 'panel_pane_1');

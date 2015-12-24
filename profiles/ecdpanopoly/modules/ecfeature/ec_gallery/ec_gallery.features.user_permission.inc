@@ -13,63 +13,49 @@ function ec_gallery_user_default_permissions() {
   // Exported permission: 'administer panelizer node gallery breadcrumbs'.
   $permissions['administer panelizer node gallery breadcrumbs'] = array(
     'name' => 'administer panelizer node gallery breadcrumbs',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node gallery content'.
   $permissions['administer panelizer node gallery content'] = array(
     'name' => 'administer panelizer node gallery content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node gallery context'.
   $permissions['administer panelizer node gallery context'] = array(
     'name' => 'administer panelizer node gallery context',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node gallery defaults'.
   $permissions['administer panelizer node gallery defaults'] = array(
     'name' => 'administer panelizer node gallery defaults',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node gallery layout'.
   $permissions['administer panelizer node gallery layout'] = array(
     'name' => 'administer panelizer node gallery layout',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node gallery overview'.
   $permissions['administer panelizer node gallery overview'] = array(
     'name' => 'administer panelizer node gallery overview',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node gallery settings'.
   $permissions['administer panelizer node gallery settings'] = array(
     'name' => 'administer panelizer node gallery settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
@@ -88,6 +74,7 @@ function ec_gallery_user_default_permissions() {
   $permissions['delete any gallery content'] = array(
     'name' => 'delete any gallery content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -98,6 +85,7 @@ function ec_gallery_user_default_permissions() {
     'name' => 'delete own gallery content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

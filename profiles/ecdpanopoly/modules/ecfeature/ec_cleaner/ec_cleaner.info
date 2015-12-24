@@ -66,7 +66,6 @@ features[disable_modules][] = node_export_dependency
 features[disable_modules][] = node_export_feeds
 features[disable_modules][] = node_export_relation
 features[disable_modules][] = permissions_export
-features[disable_modules][] = rdf
 features[disable_modules][] = schemaorg_event
 features[disable_modules][] = schemaorg_person
 features[disable_modules][] = schemaorg_recipe

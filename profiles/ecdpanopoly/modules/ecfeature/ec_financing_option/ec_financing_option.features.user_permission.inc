@@ -62,35 +62,52 @@ function ec_financing_option_user_default_permissions() {
   // Exported permission: 'create financing_option content'.
   $permissions['create financing_option content'] = array(
     'name' => 'create financing_option content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any financing_option content'.
   $permissions['delete any financing_option content'] = array(
     'name' => 'delete any financing_option content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own financing_option content'.
   $permissions['delete own financing_option content'] = array(
     'name' => 'delete own financing_option content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any financing_option content'.
   $permissions['edit any financing_option content'] = array(
     'name' => 'edit any financing_option content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own financing_option content'.
   $permissions['edit own financing_option content'] = array(
     'name' => 'edit own financing_option content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 

@@ -60,13 +60,19 @@ function ec_financing_option_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'body',
     'label' => 'Body',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 1,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
@@ -424,7 +430,6 @@ function ec_financing_option_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
-          'private' => 0,
           'public' => 'public',
           'vimeo' => 0,
           'youtube' => 0,
@@ -440,7 +445,6 @@ function ec_financing_option_field_default_field_instances() {
           'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 'upload',
-          'youtube' => 0,
         ),
         'manualcrop_crop_info' => 1,
         'manualcrop_default_crop_area' => 1,

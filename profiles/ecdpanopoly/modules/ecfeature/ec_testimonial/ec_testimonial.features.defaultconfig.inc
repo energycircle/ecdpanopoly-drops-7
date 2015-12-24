@@ -48,6 +48,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -245,7 +248,116 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 27,
+        'weight' => 29,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-city_page-field_ref_citypages_testimonials'.
+  $fields['node-city_page-field_ref_citypages_testimonials'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_citypages_testimonials',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'testimonial' => 'testimonial',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'city_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 1,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_citypages_testimonials',
+      'label' => 'Testimonials',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 15,
       ),
     ),
   );
@@ -616,6 +728,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -728,6 +843,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -840,6 +958,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -1008,13 +1129,19 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
+        'display_summary' => 1,
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
           'rows' => 20,
@@ -1102,8 +1229,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'linkit' => array(
+          'button_text' => 'Search',
           'enable' => 0,
-          'insert_plugin' => '',
+          'profile' => '',
         ),
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -1196,8 +1324,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'linkit' => array(
+          'button_text' => 'Search',
           'enable' => 0,
-          'insert_plugin' => '',
+          'profile' => '',
         ),
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -1294,8 +1423,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'linkit' => array(
+          'button_text' => 'Search',
           'enable' => 0,
-          'insert_plugin' => '',
+          'profile' => '',
         ),
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -1410,6 +1540,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
+            'private' => 0,
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -1536,8 +1667,6 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'maxlength_js' => 0,
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => 60,
         ),
         'type' => 'text_textfield',

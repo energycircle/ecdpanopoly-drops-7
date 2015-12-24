@@ -51,6 +51,126 @@ function ec_testimonial_node_info() {
 }
 
 /**
+ * Implements hook_rdf_default_mappings().
+ */
+function ec_testimonial_rdf_default_mappings() {
+  $schemaorg = array();
+
+  // Exported RDF mapping: testimonial
+  $schemaorg['node']['testimonial'] = array(
+    'rdftype' => array(
+      0 => 'schema:Review',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'schema:reviewBody',
+        1 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_ref_testimonial_serv_group' => array(
+      'predicates' => array(
+        0 => 'schema:itemReviewed',
+      ),
+    ),
+    'field_ref_testimonial_serv_cat' => array(
+      'predicates' => array(
+        0 => 'schema:itemReviewed',
+      ),
+    ),
+    'field_ref_testimonial_service' => array(
+      'predicates' => array(
+        0 => 'schema:itemReviewed',
+      ),
+    ),
+    'field_testimonial_city' => array(
+      'predicates' => array(
+        0 => 'schema:jobLocation',
+      ),
+    ),
+    'field_ref_testimonial_citypages' => array(
+      'predicates' => array(
+        0 => 'schema:https://schema.org/location',
+      ),
+    ),
+    'field_tetstimonial_name' => array(
+      'predicates' => array(
+        0 => 'schema:author',
+      ),
+    ),
+    'field_testimonial_image' => array(
+      'predicates' => array(
+        0 => 'schema:thumbnailUrl',
+      ),
+      'type' => 'rel',
+    ),
+    'field_display_title' => array(
+      'predicates' => array(
+        0 => 'schema:alternativeHeadline',
+      ),
+    ),
+    'field_display_subtitle' => array(
+      'predicates' => array(
+        0 => 'schema:alternativeHeadline',
+      ),
+    ),
+  );
+
+  return $schemaorg;
+}
+
+/**
  * Implements hook_weight_features_default_settings().
  */
 function ec_testimonial_weight_features_default_settings() {

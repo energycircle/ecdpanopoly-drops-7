@@ -10,7 +10,7 @@
 function ec_distinction_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-distinction-body'
+  // Exported field_instance: 'node-distinction-body'.
   $field_instances['node-distinction-body'] = array(
     'bundle' => 'distinction',
     'default_value' => NULL,
@@ -77,7 +77,7 @@ function ec_distinction_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-distinction-field_content_link'
+  // Exported field_instance: 'node-distinction-field_content_link'.
   $field_instances['node-distinction-field_content_link'] = array(
     'bundle' => 'distinction',
     'default_value' => NULL,
@@ -158,7 +158,7 @@ function ec_distinction_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-distinction-field_distinction_type'
+  // Exported field_instance: 'node-distinction-field_distinction_type'.
   $field_instances['node-distinction-field_distinction_type'] = array(
     'bundle' => 'distinction',
     'default_value' => NULL,
@@ -216,7 +216,7 @@ function ec_distinction_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-distinction-field_logo'
+  // Exported field_instance: 'node-distinction-field_logo'.
   $field_instances['node-distinction-field_logo'] = array(
     'bundle' => 'distinction',
     'deleted' => 0,

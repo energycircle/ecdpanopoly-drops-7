@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC CityPages feature.
+ */
+
+include_once 'ec_citypages.features.inc';

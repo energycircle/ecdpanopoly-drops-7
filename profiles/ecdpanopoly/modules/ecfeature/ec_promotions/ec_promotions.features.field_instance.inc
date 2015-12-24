@@ -10,7 +10,7 @@
 function ec_promotions_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-field_ref_article_promo'
+  // Exported field_instance: 'node-article-field_ref_article_promo'.
   $field_instances['node-article-field_ref_article_promo'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -84,7 +84,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_study_promo'
+  // Exported field_instance: 'node-case_study-field_ref_case_study_promo'.
   $field_instances['node-case_study-field_ref_case_study_promo'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -149,11 +149,11 @@ function ec_promotions_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 25,
     ),
   );
 
-  // Exported field_instance: 'node-panopoly_page-field_ref_page_promotions'
+  // Exported field_instance: 'node-panopoly_page-field_ref_page_promotions'.
   $field_instances['node-panopoly_page-field_ref_page_promotions'] = array(
     'bundle' => 'panopoly_page',
     'default_value' => NULL,
@@ -228,7 +228,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_ref_prodpage_promotion'
+  // Exported field_instance: 'node-product_page-field_ref_prodpage_promotion'.
   $field_instances['node-product_page-field_ref_prodpage_promotion'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -297,7 +297,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-body'
+  // Exported field_instance: 'node-promotion-body'.
   $field_instances['node-promotion-body'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -347,13 +347,19 @@ function ec_promotions_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'body',
     'label' => 'Body',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 1,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
@@ -364,7 +370,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_button_text'
+  // Exported field_instance: 'node-promotion-field_button_text'.
   $field_instances['node-promotion-field_button_text'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -436,7 +442,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_call_to_action'
+  // Exported field_instance: 'node-promotion-field_call_to_action'.
   $field_instances['node-promotion-field_call_to_action'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -501,7 +507,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_display_startend'
+  // Exported field_instance: 'node-promotion-field_display_startend'.
   $field_instances['node-promotion-field_display_startend'] = array(
     'bundle' => 'promotion',
     'deleted' => 0,
@@ -567,6 +573,7 @@ function ec_promotions_field_default_field_instances() {
         'input_format' => 'M j Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
+        'no_fieldset' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
@@ -575,7 +582,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_display_subtitle'
+  // Exported field_instance: 'node-promotion-field_display_subtitle'.
   $field_instances['node-promotion-field_display_subtitle'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -634,8 +641,9 @@ function ec_promotions_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -651,7 +659,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_display_title'
+  // Exported field_instance: 'node-promotion-field_display_title'.
   $field_instances['node-promotion-field_display_title'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -710,8 +718,9 @@ function ec_promotions_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -720,8 +729,6 @@ function ec_promotions_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'size' => 60,
       ),
       'type' => 'text_textfield',
@@ -729,7 +736,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_promotion_image'
+  // Exported field_instance: 'node-promotion-field_promotion_image'.
   $field_instances['node-promotion-field_promotion_image'] = array(
     'bundle' => 'promotion',
     'deleted' => 0,
@@ -792,7 +799,6 @@ function ec_promotions_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
-          'private' => 'private',
           'public' => 'public',
           'vimeo' => 0,
           'youtube' => 0,
@@ -827,7 +833,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_promotion_link_text'
+  // Exported field_instance: 'node-promotion-field_promotion_link_text'.
   $field_instances['node-promotion-field_promotion_link_text'] = array(
     'bundle' => 'promotion',
     'default_value' => array(
@@ -886,8 +892,9 @@ function ec_promotions_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -896,8 +903,6 @@ function ec_promotions_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'size' => 60,
       ),
       'type' => 'text_textfield',
@@ -905,7 +910,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_ref_to_cta_form'
+  // Exported field_instance: 'node-promotion-field_ref_to_cta_form'.
   $field_instances['node-promotion-field_ref_to_cta_form'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -974,7 +979,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_category-field_ref_serv_cat_promo'
+  // Exported field_instance: 'node-service_category-field_ref_serv_cat_promo'.
   $field_instances['node-service_category-field_ref_serv_cat_promo'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -1043,7 +1048,7 @@ function ec_promotions_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_ref_serv_group_promo'
+  // Exported field_instance: 'node-service_group-field_ref_serv_group_promo'.
   $field_instances['node-service_group-field_ref_serv_group_promo'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,

@@ -10,7 +10,7 @@
 function ec_promotions_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_promotion_image'
+  // Exported field_base: 'field_promotion_image'.
   $field_bases['field_promotion_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -32,7 +32,7 @@ function ec_promotions_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_promotion_link_text'
+  // Exported field_base: 'field_promotion_link_text'.
   $field_bases['field_promotion_link_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -53,7 +53,7 @@ function ec_promotions_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_ref_article_promo'
+  // Exported field_base: 'field_ref_article_promo'.
   $field_bases['field_ref_article_promo'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -71,6 +71,9 @@ function ec_promotions_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -88,7 +91,7 @@ function ec_promotions_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_study_promo'
+  // Exported field_base: 'field_ref_case_study_promo'.
   $field_bases['field_ref_case_study_promo'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -123,7 +126,7 @@ function ec_promotions_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_page_promotions'
+  // Exported field_base: 'field_ref_page_promotions'.
   $field_bases['field_ref_page_promotions'] = array(
     'active' => 1,
     'cardinality' => 2,
@@ -158,7 +161,7 @@ function ec_promotions_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodpage_promotion'
+  // Exported field_base: 'field_ref_prodpage_promotion'.
   $field_bases['field_ref_prodpage_promotion'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -193,7 +196,7 @@ function ec_promotions_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_cat_promo'
+  // Exported field_base: 'field_ref_serv_cat_promo'.
   $field_bases['field_ref_serv_cat_promo'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -211,6 +214,9 @@ function ec_promotions_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -228,7 +234,7 @@ function ec_promotions_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_group_promo'
+  // Exported field_base: 'field_ref_serv_group_promo'.
   $field_bases['field_ref_serv_group_promo'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -246,6 +252,9 @@ function ec_promotions_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -263,7 +272,7 @@ function ec_promotions_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_service_promo'
+  // Exported field_base: 'field_ref_service_promo'.
   $field_bases['field_ref_service_promo'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -281,6 +290,9 @@ function ec_promotions_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),

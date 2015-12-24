@@ -15,6 +15,7 @@ function ec_external_video_user_default_permissions() {
     'name' => 'create external_video content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -23,9 +24,7 @@ function ec_external_video_user_default_permissions() {
   // Exported permission: 'delete any external_video content'.
   $permissions['delete any external_video content'] = array(
     'name' => 'delete any external_video content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -44,6 +43,7 @@ function ec_external_video_user_default_permissions() {
     'name' => 'edit any external_video content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -54,6 +54,7 @@ function ec_external_video_user_default_permissions() {
     'name' => 'edit own external_video content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

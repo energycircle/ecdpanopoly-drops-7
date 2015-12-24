@@ -478,7 +478,6 @@ function ec_slide_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 'private',
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,

@@ -57,12 +57,11 @@ projects[views][subdir] = contrib
 projects[features][patch][2899733] = https://www.drupal.org/files/issues/2138331-eval-log.patch
 projects[features][subdir] = contrib
 
+projects[features][patch][1437264] = https://www.drupal.org/files/issues/features-var-export-object-1437264-12_0.patch
+projects[features][subdir] = contrib
+
 projects[entity][patch][1414428] = https://www.drupal.org/files/issues/entity-stop-assuming-you-may-find-array-1414428-14_0.patch
 projects[entity][subdir] = contrib
-
-projects[uuid][patch][1927474] = https://www.drupal.org/files/issues/uuid-fix-empty-uuids-1927474-9_0.patch
-projects[uuid][subdir] = contrib
-
 
 projects[uuid][patch][1927474] = https://www.drupal.org/files/issues/uuid-fix-empty-uuids-1927474-9_0.patch
 projects[uuid][subdir] = contrib
