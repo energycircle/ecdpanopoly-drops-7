@@ -58,7 +58,7 @@ function ec_citypages_rdf_default_mappings() {
     ),
     'title' => array(
       'predicates' => array(
-        0 => 'schema:name',
+        0 => 'dc:title',
       ),
     ),
     'created' => array(
@@ -89,7 +89,7 @@ function ec_citypages_rdf_default_mappings() {
     ),
     'name' => array(
       'predicates' => array(
-        0 => 'schema:name',
+        0 => 'foaf:name',
       ),
     ),
     'comment_count' => array(
@@ -106,71 +106,23 @@ function ec_citypages_rdf_default_mappings() {
       'callback' => 'date_iso8601',
     ),
     'field_citypages_area' => array(
-      'predicates' => array(
-        0 => 'schema:areaServed',
-      ),
+      'predicates' => array(),
     ),
     'field_citypages_pin' => array(
-      'predicates' => array(
-        0 => 'schema:location',
-      ),
+      'predicates' => array(),
     ),
     'field_citypages_image' => array(
-      'predicates' => array(
-        0 => 'schema:primaryImageOfPage',
-      ),
+      'predicates' => array(),
       'type' => 'rel',
     ),
-    'url' => array(
-      'predicates' => array(
-        0 => 'schema:url',
-      ),
-      'type' => 'rel',
+    'field_call_to_action' => array(
+      'predicates' => array(),
     ),
-    'field_featured_video' => array(
-      'predicates' => array(
-        0 => 'schema:video',
-      ),
+    'field_ref_to_cta_form' => array(
+      'predicates' => array(),
     ),
-    'field_citypagesshort_description' => array(
-      'predicates' => array(
-        0 => 'schema:bodyLocation',
-      ),
-    ),
-    'field_citypages_placenames' => array(
-      'predicates' => array(
-        0 => 'schema:articleBody',
-      ),
-    ),
-    'field_citypages_local_experience' => array(
-      'predicates' => array(
-        0 => 'schema:articleBody',
-      ),
-    ),
-    'field_citypages_example' => array(
-      'predicates' => array(
-        0 => 'schema:articleBody',
-      ),
-    ),
-    'field_citypages_other_descriptio' => array(
-      'predicates' => array(
-        0 => 'schema:articleBody',
-      ),
-    ),
-    'field_ref_citypages_blog' => array(
-      'predicates' => array(
-        0 => 'schema:associatedArticle',
-      ),
-    ),
-    'field_ref_citypages_case_study' => array(
-      'predicates' => array(
-        0 => 'schema:associatedArticle',
-      ),
-    ),
-    'field_ref_citypages_testimonials' => array(
-      'predicates' => array(
-        0 => 'schema:review',
-      ),
+    'field_button_text' => array(
+      'predicates' => array(),
     ),
   );
 

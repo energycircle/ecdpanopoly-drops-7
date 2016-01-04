@@ -1,7 +1,7 @@
 /* @file global.styles  Styles you add here will load for all device sizes, they are "global", as opposed to "responsive" styles, which only load for a given breakpoint (media query) that you set in theme settings. See the README for more details.   How to use this file: --------------------  There are many empty selectors and some basic styles to act as a guide. Nothing is set in stone and you can change anything - even delete all of it and start with your own clean slate.  To FORCE PRINT all selectors you can search and replace a single { (opening curly brace) and insert an empty comment. This is very useful in conjuction with FireSass: https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/  See global.base also which includes normalize.css and some additional helper classes and base styles. */
 /* ============================================================================= Base ========================================================================== */
 /* To preserve theme settings never apply font properties to the HTML element. This is critically important if you are using the Responsive JavaScript feature as this relies on being able to set a pseudo font family on the HTML element. If you need to set default font properties of any kind use the BODY element as these can be overridden using font theme settings. */
-html { background: white; }
+html { background: #fff; }
 
 body { font-family: "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 87.5%; }
 
@@ -157,20 +157,20 @@ ul.pager li.pager-current { font-weight: 700; }
 /* Theme the various states of pager links */
 /* ============================================================================= Skip Navigation ========================================================================== */
 #skip-link { left: 50%; margin-left: -6.5em; margin-top: 0; padding: 0 0.5em; position: absolute; width: 12em; z-index: 50; }
-#skip-link a { background: #444; background: rgba(0, 0, 0, 0.6); color: white; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
-#skip-link a:link, #skip-link a:visited { background: #444; background: rgba(0, 0, 0, 0.6); color: white; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
+#skip-link a { background: #444; background: rgba(0, 0, 0, 0.6); color: #fff; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
+#skip-link a:link, #skip-link a:visited { background: #444; background: rgba(0, 0, 0, 0.6); color: #fff; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active { outline: 0; }
 
 /* ============================================================================= Tabs (local tasks) ========================================================================== */
 #tasks { margin-bottom: 15px; }
 
-ul.primary { border-bottom-color: #cccccc; margin: 20px 0; padding: 0 0 0 5px; }
+ul.primary { border-bottom-color: #ccc; margin: 20px 0; padding: 0 0 0 5px; }
 ul.primary li { display: block; float: left; margin: 0 1px -1px; }
-ul.primary li a { background-color: whitesmoke; border-color: #cccccc; margin-right: 1px; padding: 0 10px; display: block; float: left; height: 1.5em; line-height: 1.5em; }
-ul.primary li a:hover, ul.primary li a:focus { background-color: #eeeeee; border-color: #cccccc; }
-ul.primary li.active a, ul.primary li.active a:hover, ul.primary li.active a:focus { background-color: white; border-bottom-color: white; }
+ul.primary li a { background-color: #f5f5f5; border-color: #ccc; margin-right: 1px; padding: 0 10px; display: block; float: left; height: 1.5em; line-height: 1.5em; }
+ul.primary li a:hover, ul.primary li a:focus { background-color: #eee; border-color: #ccc; }
+ul.primary li.active a, ul.primary li.active a:hover, ul.primary li.active a:focus { background-color: #fff; border-bottom-color: #fff; }
 
-ul.secondary { border-bottom: 1px solid #cccccc; margin: 1em 0 0; padding: 0 .3em 1em; }
+ul.secondary { border-bottom: 1px solid #ccc; margin: 1em 0 0; padding: 0 .3em 1em; }
 ul.secondary li { border-right: 0; list-style: none; padding: 0 10px 0 0; }
 ul.secondary li a:hover, ul.secondary li a.active { border-bottom: none; text-decoration: underline; }
 
@@ -283,29 +283,29 @@ ul.action-links { margin: 20px 0 0; list-style: none; }
 /* Comment states */
 /* Preview of the comment before submitting new or updated comment */
 /* "New" marker for comments that are new for the current user */
-.new { color: #cc0000; }
+.new { color: #c00; }
 
 /* Nested comments are indented */
 .indented { margin-left: 40px; }
 
 /* ============================================================================= Forms ========================================================================== */
 /* Wrapper for a form element (or group of form elements) and its label */
-.form-item input.error, .form-item textarea.error, .form-item select.error { border: 1px solid #cc0000; }
+.form-item input.error, .form-item textarea.error, .form-item select.error { border: 1px solid #c00; }
 .form-item label { font-weight: 700; }
 .form-item .description { font-size: 0.85em; }
 
 /* Highlight marks and form required mark */
-.marker, .form-required { color: #cc0000; }
+.marker, .form-required { color: #c00; }
 
 /* The submit button */
 .container-inline div, .container-inline label { display: inline; }
 
 /* Define consistent borders */
-fieldset { border: 1px solid #cccccc; }
+fieldset { border: 1px solid #ccc; }
 
 /* Tips for Drupal's input formats */
 /* Buttons used by contrib modules like Media */
-a.button { -webkit-appearance: button; -moz-appearance: button; appearance: button; }
+a.button { -moz-appearance: button; -webkit-appearance: button; }
 
 /* Password confirmation */
 .password-parent, .confirm-parent { margin: 0; }
@@ -314,7 +314,7 @@ a.button { -webkit-appearance: button; -moz-appearance: button; appearance: butt
 table { margin: 10px 0; padding: 0; width: 100%; }
 table.sticky-header { z-index: 10; }
 
-table, thead, tbody, tr, th, td { border-color: #cccccc; }
+table, thead, tbody, tr, th, td { border-color: #ccc; }
 
 table, td, th { vertical-align: middle; }
 
@@ -324,12 +324,12 @@ thead tr { font-weight: 700; background-color: #e5e5e5; }
 
 td, th { border-bottom: 0; margin: 0; padding: 5px 7px; }
 
-tbody tr { border-top: 1px solid #cccccc; }
+tbody tr { border-top: 1px solid #ccc; }
 
 tr { /* Table row striping */ }
-tr.odd { background: white; }
-tr.info, tr.even, tr:nth-child(2n+2) { border-bottom: 0; background-color: whitesmoke; }
-tr.odd td.active { background-color: #eeeeee; }
+tr.odd { background: #fff; }
+tr.info, tr.even, tr:nth-child(2n+2) { border-bottom: 0; background-color: #f5f5f5; }
+tr.odd td.active { background-color: #eee; }
 tr.even td.active { background-color: #ebebeb; }
 
 /* Forum tables Core sets white-space to nowrap, which makes no sense */
@@ -356,7 +356,7 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 #admin-menu { margin: 0; padding: 0; }
 
 /* Devel Module */
-.dev-query { background: #eeeeee; padding: 30px; }
+.dev-query { background: #eee; padding: 30px; }
 
 /* Styleguide module tweaks */
 #styleguide-header { padding: 0 10px; }
@@ -367,4 +367,4 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 
 #edit-field-business2 { display: none; }
 
-#redhen_dedupe_merge_data p, #redhen_dedupe_merge_data div.field-item { white-space: normal; }
+#total-subscription-subscribe-form .form-item-node-taxonomy, #total-subscription-subscribe-form .form-type-checkbox { display: none; }

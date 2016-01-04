@@ -1990,10 +1990,8 @@ tr.error {
 #edit-field-business2 {
 	display:none;
 }
-
-#redhen_dedupe_merge_data {
-  p, 
-  div.field-item {
-    white-space: normal;
-    }
+#total-subscription-subscribe-form {
+	.form-item-node-taxonomy, .form-type-checkbox {
+		display:none;
+	}
 }
