@@ -98,6 +98,27 @@ class better_exposed_filters_exposed_form_plugin extends views_plugin_exposed_fo
         ),
       ),
     );
+    $bef_options['general']['secondary_collapse_override'] = array(
+      '#type' => 'select',
+      '#title' => t('Override secondary options fieldset'),
+      '#default_value' => $existing['general']['secondary_collapse_override'],
+      '#description' => t(
+        'This setting overrides the secondary options fieldset collapsed value. By default the fieldset renders opened if a value within is selected and closed otherwise.'
+        ),
+      '#options' => array(
+        0 => t('Default'),
+        1 => t('Always open'),
+        2 => t('Always closed'),
+      ),
+      // Indent dependent options.
+      '#prefix' => '<div class="dependent-options">',
+      '#suffix' => '</div>',
+      '#states' => array(
+        'visible' => array(
+          ':input[name="exposed_form_options[bef][general][allow_secondary]"]' => array('checked' => TRUE),
+        ),
+      ),
+    );
 
     /*
      * Add options for exposed sorts.
@@ -770,23 +791,33 @@ dateFormat: "dd-mm-yy"
     $context['display'] = $this->display;
     drupal_alter('better_exposed_filters_settings', $settings, $context);
 
+    // Adds view's arguments (if any) to the path to be used use for #bef_path.
+    $view_path = $this->view->args ? implode('/', array_merge(array($this->view->get_path()), $this->view->args)) : $this->view->get_path();
+
     // Some elements may be placed in a secondary fieldset (eg: "Advanced
     // search options"). Place this after the exposed filters and before the
     // rest of the items in the exposed form.
     if ($allow_secondary = $settings['general']['allow_secondary']) {
-      // If one of the secondary widgets has exposed input, do not collapse
-      // the secondary fieldset.
+      // If one of the secondary widgets has exposed input, do not collapse the
+      // secondary fieldset. Or is the "always open" or "always closed" option
+      // is selected, use that instead.
       $secondary_collapse = TRUE;
-      $exposed_input = $this->view->get_exposed_input();
-      foreach ($this->display->handler->get_handlers('filter') as $label => $filter) {
-        if (!$filter->options['exposed']) {
-          continue;
-        }
-        if (!empty($exposed_input[$filter->options['expose']['identifier']]) && $settings[$label]['more_options']['is_secondary']) {
-          $secondary_collapse = FALSE;
-          break;
+      if ($settings['general']['secondary_collapse_override']) {
+        $secondary_collapse = $settings['general']['secondary_collapse_override'] == 2;
+      }
+      else {
+        $exposed_input = $this->view->get_exposed_input();
+        foreach ($this->display->handler->get_handlers('filter') as $label => $filter) {
+          if (!$filter->options['exposed']) {
+            continue;
+          }
+          if (!empty($exposed_input[$filter->options['expose']['identifier']]) && $settings[$label]['more_options']['is_secondary']) {
+            $secondary_collapse = FALSE;
+            break;
+          }
         }
       }
+
       $secondary = array(
         '#type' => 'fieldset',
         '#title' => $settings['general']['secondary_label'],
@@ -913,7 +944,7 @@ dateFormat: "dd-mm-yy"
             // select_as_links options as they will use the wrong path. We
             // provide a hint for theme functions to correct this.
             if (!empty($this->display->display_options['exposed_block'])) {
-              $form[$settings['sort']['advanced']['combine_param']]['#bef_path'] = $this->view->get_path();
+              $form[$settings['sort']['advanced']['combine_param']]['#bef_path'] = $view_path;
             }
             break;
 
@@ -967,7 +998,7 @@ dateFormat: "dd-mm-yy"
           // select_as_links options as they will use the wrong path. We provide
           // a hint for theme functions to correct this.
           if (!empty($this->display->display_options['exposed_block'])) {
-            $form['sort_by']['#bef_path'] = $form['sort_order']['#bef_path'] = $this->view->get_path();
+            $form['sort_by']['#bef_path'] = $form['sort_order']['#bef_path'] = $view_path;
           }
         }
 
@@ -1016,7 +1047,7 @@ dateFormat: "dd-mm-yy"
         // select_as_links options as they will use the wrong path. We
         // provide a hint for theme functions to correct this.
         if (!empty($this->display->display_options['exposed_block'])) {
-          $form['sort_by']['#bef_path'] = $this->display->display_options['path'];
+          $form['sort_by']['#bef_path'] = $view_path;
         }
       }
     }
@@ -1049,7 +1080,7 @@ dateFormat: "dd-mm-yy"
             // select_as_links options as they will use the wrong path. We
             // provide a hint for theme functions to correct this.
             if (!empty($this->display->display_options['exposed_block'])) {
-              $form['items_per_page']['#bef_path'] = $this->view->get_path();
+              $form['items_per_page']['#bef_path'] = $view_path;
             }
           }
           break;
@@ -1078,7 +1109,7 @@ dateFormat: "dd-mm-yy"
 
       // Form element is designated by the element ID which is user-
       // configurable.
-      $filter_key = 'filter-' . ($filters[$label]->options['is_grouped'] ? $filters[$label]->options['group_info']['identifier'] : $label);
+      $filter_key = 'filter-' . (!empty($filters[$label]->options['is_grouped']) ? $filters[$label]->options['group_info']['identifier'] : $label);
       $filter_id = $form['#info'][$filter_key]['value'];
 
       // Token replacement on BEF Description fields.
@@ -1398,7 +1429,7 @@ dateFormat: "dd-mm-yy"
           // select_as_links options as they will use the wrong path. We provide
           // a hint for theme functions to correct this.
           if (!empty($this->display->display_options['exposed_block'])) {
-            $form[$filter_id]['#bef_path'] = $this->view->get_path();
+            $form[$filter_id]['#bef_path'] = $view_path;
           }
           break;
 
@@ -1410,7 +1441,27 @@ dateFormat: "dd-mm-yy"
           $form[$filter_id]['#description'] = $options['more_options']['bef_filter_description'];
           $form[$filter_id]['#return_value'] = 1;
           $form[$filter_id]['#type'] = 'checkbox';
+          // Views populates missing values in $form_state['input'] with the
+          // defaults and a checkbox does not appear in $_GET (or $_POST) so it
+          // will appear to be missing when a user submits a form. Because of
+          // this, instead of unchecking the checkbox value will revert to the
+          // default. More, the default value for select values is reused which
+          // results in the checkbox always checked. So we need to add a form
+          // element to see whether the form is submitted or not and then we
+          // need to look at $_GET directly to see whether the checkbox is
+          // there. For security reasons, we must not copy the $_GET value.
 
+          // First, let's figure out a short name for the signal element and
+          // then add it.
+          if (empty($signal)) {
+            for ($signal = 'a'; isset($form[$signal]); $signal++);
+            // This is all the signal element needs.
+            $form[$signal]['#type'] = 'hidden';
+          }
+          $checked = isset($form_state['input'][$signal]) ? isset($_GET[$filter_id]) : $form[$filter_id]['#default_value'];
+          // Now we know whether the checkbox is checked or not, set #value
+          // accordingly.
+          $form[$filter_id]['#value'] = $checked ? $form[$filter_id]['#return_value'] : 0;
           // Handoff to the theme layer.
           $form[$filter_id]['#theme'] = 'checkbox';
           break;
@@ -1831,6 +1882,7 @@ dateFormat: "dd-mm-yy"
         ),
         'allow_secondary' => FALSE,
         'secondary_label' => t('Advanced options'),
+        'secondary_collapse_override' => 0,
       ),
       'sort' => array(
         'bef_format' => 'default',
