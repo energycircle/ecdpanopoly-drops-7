@@ -11,7 +11,7 @@ function ec_base_config_metatag_export_default() {
   $config = array();
 
   // Exported Metatag config instance: global.
-  $config['global'] = array(
+  $config['global'] = (object) array(
     'instance' => 'global',
     'config' => array(
       'title' => array(
@@ -42,7 +42,7 @@ function ec_base_config_metatag_export_default() {
   );
 
   // Exported Metatag config instance: global:403.
-  $config['global:403'] = array(
+  $config['global:403'] = (object) array(
     'instance' => 'global:403',
     'config' => array(
       'canonical' => array(
@@ -64,7 +64,7 @@ function ec_base_config_metatag_export_default() {
   );
 
   // Exported Metatag config instance: global:404.
-  $config['global:404'] = array(
+  $config['global:404'] = (object) array(
     'instance' => 'global:404',
     'config' => array(
       'canonical' => array(
@@ -86,7 +86,7 @@ function ec_base_config_metatag_export_default() {
   );
 
   // Exported Metatag config instance: global:frontpage.
-  $config['global:frontpage'] = array(
+  $config['global:frontpage'] = (object) array(
     'instance' => 'global:frontpage',
     'config' => array(
       'title' => array(
@@ -111,7 +111,7 @@ function ec_base_config_metatag_export_default() {
   );
 
   // Exported Metatag config instance: taxonomy_term.
-  $config['taxonomy_term'] = array(
+  $config['taxonomy_term'] = (object) array(
     'instance' => 'taxonomy_term',
     'config' => array(
       'title' => array(
@@ -130,7 +130,7 @@ function ec_base_config_metatag_export_default() {
   );
 
   // Exported Metatag config instance: user.
-  $config['user'] = array(
+  $config['user'] = (object) array(
     'instance' => 'user',
     'config' => array(
       'title' => array(

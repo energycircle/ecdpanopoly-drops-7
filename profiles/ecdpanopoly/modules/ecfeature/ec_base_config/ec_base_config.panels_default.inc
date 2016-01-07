@@ -107,19 +107,18 @@ function ec_base_config_default_panels_mini() {
   $display->content['new-aa35bdc7-4725-4670-b757-6bc754e595cb'] = $pane;
   $display->panels['two_50_bottom'][1] = 'new-aa35bdc7-4725-4670-b757-6bc754e595cb';
   $pane = new stdClass();
-  $pane->pid = 'new-27c7a7d7-805f-4e39-98d9-cb2098731f31';
+  $pane->pid = 'new-0b0f1304-ac9d-4046-a5d1-9d7d24f8f41a';
   $pane->panel = 'two_50_bottom';
   $pane->type = 'custom';
   $pane->subtype = 'custom';
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'admin_title' => '',
+    'admin_title' => 'Copyright',
     'title' => '',
-    'body' => '',
+    'body' => '<p>®&nbsp;[date:custom:Y] | All rights reserved.</p>',
     'format' => 'panopoly_wysiwyg_text',
     'substitute' => TRUE,
-    'name' => 'copyright',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -129,9 +128,9 @@ function ec_base_config_default_panels_mini() {
   $pane->extras = array();
   $pane->position = 2;
   $pane->locks = array();
-  $pane->uuid = '27c7a7d7-805f-4e39-98d9-cb2098731f31';
-  $display->content['new-27c7a7d7-805f-4e39-98d9-cb2098731f31'] = $pane;
-  $display->panels['two_50_bottom'][2] = 'new-27c7a7d7-805f-4e39-98d9-cb2098731f31';
+  $pane->uuid = '0b0f1304-ac9d-4046-a5d1-9d7d24f8f41a';
+  $display->content['new-0b0f1304-ac9d-4046-a5d1-9d7d24f8f41a'] = $pane;
+  $display->panels['two_50_bottom'][2] = 'new-0b0f1304-ac9d-4046-a5d1-9d7d24f8f41a';
   $pane = new stdClass();
   $pane->pid = 'new-990d30bc-4ac2-44ee-82b1-cd9d6b7a936a';
   $pane->panel = 'two_50_top';

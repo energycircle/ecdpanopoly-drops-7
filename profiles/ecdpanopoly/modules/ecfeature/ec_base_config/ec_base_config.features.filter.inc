@@ -11,7 +11,7 @@ function ec_base_config_filter_default_formats() {
   $formats = array();
 
   // Exported format: iframe.
-  $formats['iframe'] = array(
+  $formats['iframe'] = (object) array(
     'format' => 'iframe',
     'name' => 'iframe',
     'cache' => 1,

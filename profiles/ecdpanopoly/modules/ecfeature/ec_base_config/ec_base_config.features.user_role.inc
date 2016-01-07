@@ -11,19 +11,19 @@ function ec_base_config_user_default_roles() {
   $roles = array();
 
   // Exported role: EC Platinum admin.
-  $roles['EC Platinum admin'] = array(
+  $roles['EC Platinum admin'] = (object) array(
     'name' => 'EC Platinum admin',
     'weight' => 3,
   );
 
   // Exported role: EC Platinum editor.
-  $roles['EC Platinum editor'] = array(
+  $roles['EC Platinum editor'] = (object) array(
     'name' => 'EC Platinum editor',
     'weight' => 4,
   );
 
   // Exported role: administrator.
-  $roles['administrator'] = array(
+  $roles['administrator'] = (object) array(
     'name' => 'administrator',
     'weight' => 2,
   );
