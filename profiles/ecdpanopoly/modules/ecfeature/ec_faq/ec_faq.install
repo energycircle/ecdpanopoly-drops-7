@@ -8,11 +8,10 @@
  * Implements hook_install().
  */
 function ec_faq_install() {
+	  features_revert_module('ec_faq');
 }
 
-  /**
- * Revert feature on installation
- */
+
 function ec_faq_update_7102(&$sandbox) {
-  features_revert_module('ec_faq');
+
 }

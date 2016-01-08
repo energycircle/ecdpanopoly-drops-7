@@ -8,11 +8,9 @@
  * Implements hook_install().
  */
 function ec_distinction_install() {
+	  features_revert_module('ec_distinction');
 }
 
-  /**
- * Revert feature on installation
- */
 function ec_distinction_update_7102(&$sandbox) {
-  features_revert_module('ec_distinction');
+
 }

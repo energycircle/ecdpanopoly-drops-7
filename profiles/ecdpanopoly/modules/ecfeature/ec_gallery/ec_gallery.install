@@ -8,11 +8,10 @@
  * Implements hook_install().
  */
 function ec_gallery_install() {
+  features_revert_module('ec_gallery');
 }
 
-  /**
- * Revert feature on installation
- */
+
 function ec_gallery_update_7102(&$sandbox) {
-  features_revert_module('ec_gallery');
+
 }

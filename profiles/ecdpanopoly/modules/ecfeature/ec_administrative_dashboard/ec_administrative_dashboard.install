@@ -8,11 +8,8 @@
  * Implements hook_install().
  */
 function ec_administrative_dashboard_install() {
-
+    features_revert_module('ec_administrative_dashboard');
 }
-  /**
- * Revert feature on installation
- */
+
 function ec_administrative_dashboard_update_7102(&$sandbox) {
-  features_revert_module('ec_administrative_dashboard');
 }

@@ -8,11 +8,9 @@
  * Implements hook_install().
  */
 function ec_testimonial_install() {
+  features_revert_module('ec_testimonial');
 }
 
-  /**
- * Revert feature on installation
- */
 function ec_testimonial_update_7102(&$sandbox) {
-  features_revert_module('ec_testimonial');
+
 }

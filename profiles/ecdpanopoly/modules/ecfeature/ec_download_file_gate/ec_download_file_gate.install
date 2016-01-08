@@ -8,11 +8,12 @@
  * Implements hook_install().
  */
 function ec_download_file_gate_install() {
+	  features_revert_module('ec_download_file_gate');
 }
 
   /**
  * Revert feature on installation
  */
 function ec_download_file_gate_update_7102(&$sandbox) {
-  features_revert_module('ec_download_file_gate');
+
 }

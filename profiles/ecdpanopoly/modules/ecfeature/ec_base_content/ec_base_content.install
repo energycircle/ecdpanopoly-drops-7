@@ -8,11 +8,9 @@
  * Implements hook_install().
  */
 function ec_base_content_install() {
-
-}
-  /**
- * Revert feature on installation
- */
-function ec_base_content_update_7102(&$sandbox) {
   features_revert_module('ec_base_content');
+}
+
+function ec_base_content_update_7102(&$sandbox) {
+
 }

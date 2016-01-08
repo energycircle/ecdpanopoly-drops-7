@@ -8,11 +8,10 @@
  * Implements hook_install().
  */
 function ec_mail_settings_install() {
+	  features_revert_module('ec_mail_settings');
 }
 
-  /**
- * Revert feature on installation
- */
+
 function ec_mail_settings_update_7102(&$sandbox) {
-  features_revert_module('ec_mail_settings');
+
 }

@@ -8,11 +8,9 @@
  * Implements hook_install().
  */
 function ec_financing_option_install() {
+	  features_revert_module('ec_financing_option');
 }
 
-  /**
- * Revert feature on installation
- */
 function ec_financing_option_update_7102(&$sandbox) {
-  features_revert_module('ec_financing_option');
+
 }

@@ -8,11 +8,9 @@
  * Implements hook_install().
  */
 function ec_foundation_image_styles_install() {
+	  features_revert_module('ec_foundation_image_styles');
 }
 
-  /**
- * Revert feature on installation
- */
 function ec_foundation_image_styles_update_7102(&$sandbox) {
-  features_revert_module('ec_foundation_image_styles');
+
 }

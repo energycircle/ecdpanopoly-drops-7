@@ -8,11 +8,10 @@
  * Implements hook_install().
  */
 function ec_external_video_install() {
+	  features_revert_module('ec_external_video');
 }
 
-  /**
- * Revert feature on installation
- */
+
 function ec_external_video_update_7102(&$sandbox) {
-  features_revert_module('ec_external_video');
+
 }

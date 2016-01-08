@@ -8,11 +8,10 @@
  * Implements hook_install().
  */
 function ec_product_page_category_install() {
+	  features_revert_module('ec_product_page_category');
 }
 
-  /**
- * Revert feature on installation
- */
+
 function ec_product_page_category_update_7102(&$sandbox) {
-  features_revert_module('ec_product_page_category');
+
 }
