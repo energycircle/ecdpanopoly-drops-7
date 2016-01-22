@@ -50,6 +50,7 @@ files[] = tests/feeds_fetcher_http.test
 files[] = tests/feeds_i18n.test
 files[] = tests/feeds_i18n_node.test
 files[] = tests/feeds_i18n_taxonomy.test
+files[] = tests/feeds_parser_csv.test
 files[] = tests/feeds_parser_sitemap.test
 files[] = tests/feeds_parser_syndication.test
 files[] = tests/feeds_processor_node.test
@@ -72,9 +73,9 @@ files[] = views/feeds_views_handler_field_source.inc
 files[] = views/feeds_views_handler_filter_severity.inc
 files[] = views/feeds_views_plugin_argument_validate_feed_nid.inc
 
-; Information added by Drupal.org packaging script on 2016-01-06
-version = "7.x-2.0-beta1+31-dev"
+; Information added by Drupal.org packaging script on 2016-01-17
+version = "7.x-2.0-beta1+32-dev"
 core = "7.x"
 project = "feeds"
-datestamp = "1452112746"
+datestamp = "1453029245"
 
