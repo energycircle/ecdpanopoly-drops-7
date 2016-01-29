@@ -25,10 +25,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-article-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -39,7 +42,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -49,11 +51,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'article',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -96,7 +94,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -114,10 +112,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-blog_post-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -128,7 +129,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -138,11 +138,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'blog_post',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -185,7 +181,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -203,10 +199,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-campaign_page-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -217,7 +216,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -227,11 +225,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'campaign_page',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -256,7 +250,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -274,10 +268,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-case_study-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -288,7 +285,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -298,11 +294,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'case_study',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -345,7 +337,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -363,10 +355,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-distinction-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -377,7 +372,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -387,11 +381,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'distinction',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -434,7 +424,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -452,10 +442,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-distributor-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -466,7 +459,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -541,10 +533,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-external_video-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -555,7 +550,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -565,11 +559,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'external_video',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -612,7 +602,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -630,10 +620,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-faq-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -644,7 +637,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -654,11 +646,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'faq',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -701,7 +689,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -719,10 +707,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-financing_option-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -733,7 +724,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -743,11 +733,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'financing_option',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -790,7 +776,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -808,10 +794,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-gallery-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -822,7 +811,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -832,11 +820,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'gallery',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -879,7 +863,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -897,10 +881,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-panopoly_landing_page-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -911,7 +898,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -921,11 +907,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'panopoly_landing_page',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -968,7 +950,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -986,10 +968,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-panopoly_page-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1000,7 +985,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1010,11 +994,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'panopoly_page',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -1063,7 +1043,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1081,10 +1061,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-product_category-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1095,7 +1078,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1170,10 +1152,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-product_page-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1184,7 +1169,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1259,10 +1243,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-promotion-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1273,7 +1260,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1283,11 +1269,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'promotion',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -1330,7 +1312,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1348,10 +1330,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-service-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1362,7 +1347,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1372,11 +1356,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -1419,7 +1399,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1437,10 +1417,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-service_category-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1451,7 +1434,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1461,11 +1443,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service_category',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -1508,7 +1486,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1526,10 +1504,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-service_group-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1540,7 +1521,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1550,11 +1530,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service_group',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -1597,7 +1573,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1615,10 +1591,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-slide-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1629,7 +1608,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1639,11 +1617,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'slide',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -1680,7 +1654,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1698,10 +1672,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-staff-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1712,7 +1689,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1722,11 +1698,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'staff',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -1769,7 +1741,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1787,10 +1759,13 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   $fields['node-testimonial-field_a_b_test_page'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => 2,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -1801,7 +1776,6 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'A Page' => 'A Page',
           'B Page' => 'B Page',
         ),
         'allowed_values_function' => '',
@@ -1811,11 +1785,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'testimonial',
-      'default_value' => array(
-        0 => array(
-          'value' => 'A Page',
-        ),
-      ),
+      'default_value' => NULL,
       'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
@@ -1858,7 +1828,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
       'label' => 'A/B Test Page',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
