@@ -8,7 +8,7 @@
  * Implements hook_install().
  */
 function ec_panopoly_page_overrides_install() {
-	  features_revert_module('ec_panopoly_page_overrides');
+	//  features_revert_module('ec_panopoly_page_overrides');
 }
 
 function ec_panopoly_page_overrides_update_7102(&$sandbox) {
