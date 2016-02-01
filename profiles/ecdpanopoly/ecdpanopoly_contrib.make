@@ -229,7 +229,7 @@ projects[maxlength][version] = 3.x
 #projects[menu_icons][version] = 3.x-dev
 
 projects[metatag][subdir] = eccontrib
-projects[metatag][version] = 1.7
+projects[metatag][version] = 1.11
 
 projects[mimemail][subdir] = eccontrib
 projects[mimemail][version] = 1.x
