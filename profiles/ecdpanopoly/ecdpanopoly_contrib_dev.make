@@ -9,8 +9,10 @@ projects[diff][subdir] = ec-dev
 projects[features_extra][version] = 1.0
 projects[features_extra][subdir] = ec-dev
 
-projects[uuid_features][version] = 1.0-alpha4
+projects[uuid_features][version] = 1.x-dev
 projects[uuid_features][subdir] = ec-dev
+projects[uuid_features][patch] = https://www.drupal.org/files/issues/uuid_features-fpp_panelizer_view_mode_object_array.patch
+
 
 projects[features_roles_permissions][version] = 1.2
 projects[features_roles_permissions][subdir] = ec-dev
@@ -38,3 +40,5 @@ projects[field_tools][subdir] = ec-dev
 
 projects[ftools][version] = 2.x-dev
 projects[ftools][subdir] = ec-dev
+
+

@@ -9,9 +9,9 @@ files[] = views_slideshow_cycle.module
 files[] = views_slideshow_cycle.views_slideshow.inc
 files[] = theme/views_slideshow_cycle.theme.inc
 
-; Information added by Drupal.org packaging script on 2015-07-17
-version = "7.x-3.1+12-dev"
+; Information added by Drupal.org packaging script on 2016-02-18
+version = "7.x-3.1+14-dev"
 core = "7.x"
 project = "views_slideshow"
-datestamp = "1437137357"
+datestamp = "1455835326"
 

@@ -216,6 +216,9 @@ projects[leaflet_more_maps][subdir] = contrib
 projects[linkit_target][subdir] = eccontrib
 projects[linkit_target][version] = 1.0
 
+projects[mailchimp][subdir] = eccontrib
+projects[mailchimp][version] = 3.6
+
 projects[mailsystem][subdir] = eccontrib
 projects[mailsystem][version] = 2.x-dev
 
@@ -229,7 +232,7 @@ projects[maxlength][version] = 3.x
 #projects[menu_icons][version] = 3.x-dev
 
 projects[metatag][subdir] = eccontrib
-projects[metatag][version] = 1.11
+projects[metatag][version] = 1.x
 
 projects[mimemail][subdir] = eccontrib
 projects[mimemail][version] = 1.x
@@ -360,7 +363,7 @@ projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/leaflet_wi
 projects[leaflet_widget][patch] = https://drupal.org/files/0001-Issue-1834446-by-mradcliffe-Use-GeoPHP-native.-GeoJSO.patch
 projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.patch
 #projects[schemaorg][patch][1296760] = https://www.drupal.org/files/1296760_entity_1.patch
-
+projects[feeds][patch] = https://www.drupal.org/files/issues/feeds-unlock-1535368-18.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
@@ -426,6 +429,12 @@ libraries[geoPHP][download][type] = get
 libraries[geoPHP][type] = library
 libraries[geoPHP][directory_name] = geoPHP
 libraries[geoPHP][download][url] = https://github.com/phayes/geoPHP/zipball/master
+
+libraries[mailchimp][download][type] = get
+libraries[mailchimp][type] = library
+libraries[mailchimp][directory_name] = mailchimp
+libraries[mailchimp][download][url] = https://bitbucket.org/mailchimp/mailchimp-api-php.git
+
 
 ; THEMES
 projects[adaptivetheme][version] = 3.x

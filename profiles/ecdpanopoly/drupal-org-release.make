@@ -6,10 +6,10 @@ base= panopoly
  projects[panopoly][type] = core
  projects[panopoly][download][type] = git
  projects[panopoly][download][url] = https://github.com/pantheon-systems/drops-7.git
- projects[panopoly][version] = master
+ projects[panopoly][branch] = master
  
 ; Pull in Custom Profile ECDPanopoly:
  projects[ecdpanopoly][type] = profile
  projects[ecdpanopoly][download][type] = git
  projects[ecdpanopoly][download][url] = https://github.com/energycircle/ecdpanopoly.git
- projects[ecdpanopoly][version] = master
+ projects[ecdpanopoly][branch] = master
