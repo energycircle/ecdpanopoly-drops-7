@@ -5,6 +5,12 @@ core = 7.x
 dependencies[] = ctools
 dependencies[] = job_scheduler
 
+test_dependencies[] = date:date
+test_dependencies[] = entity_translation:entity_translation
+test_dependencies[] = feeds_xpathparser:feeds_xpathparser
+test_dependencies[] = link:link
+test_dependencies[] = i18n:i18n_taxonomy
+
 files[] = includes/FeedsConfigurable.inc
 files[] = includes/FeedsImporter.inc
 files[] = includes/FeedsSource.inc
@@ -74,9 +80,9 @@ files[] = views/feeds_views_handler_field_source.inc
 files[] = views/feeds_views_handler_filter_severity.inc
 files[] = views/feeds_views_plugin_argument_validate_feed_nid.inc
 
-; Information added by Drupal.org packaging script on 2016-02-04
-version = "7.x-2.0-beta1+35-dev"
+; Information added by Drupal.org packaging script on 2016-02-05
+version = "7.x-2.0-beta1+36-dev"
 core = "7.x"
 project = "feeds"
-datestamp = "1454607558"
+datestamp = "1454707162"
 

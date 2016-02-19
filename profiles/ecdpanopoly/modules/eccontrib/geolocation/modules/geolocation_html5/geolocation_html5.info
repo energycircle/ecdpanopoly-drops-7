@@ -1,11 +1,11 @@
 name = Geolocation HTML5
-description = Provides a widget and formater for geolocation field based on <a href="http://www.w3.org/TR/geolocation-API/">HTML5’s geolocation API</a>.
+description = Provides a widget and formatter for geolocation field based on <a href="http://www.w3.org/TR/geolocation-API/">HTML5’s geolocation API</a>.
 package = Geolocation
 core = 7.x
 dependencies[] = geolocation
-; Information added by Drupal.org packaging script on 2015-11-10
-version = "7.x-1.6+8-dev"
+; Information added by Drupal.org packaging script on 2016-02-05
+version = "7.x-1.6+10-dev"
 core = "7.x"
 project = "geolocation"
-datestamp = "1447163352"
+datestamp = "1454691241"
 
