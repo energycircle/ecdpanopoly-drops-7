@@ -45,6 +45,98 @@ function ec_faq_node_info() {
 }
 
 /**
+ * Implements hook_rdf_default_mappings().
+ */
+function ec_faq_rdf_default_mappings() {
+  $schemaorg = array();
+
+  // Exported RDF mapping: faq
+  $schemaorg['node']['faq'] = array(
+    'rdftype' => array(
+      0 => 'schema:TechArticle',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'schema:articleBody',
+        1 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_ref_faq_servgroup' => array(
+      'predicates' => array(
+        0 => 'schema:serviceType',
+      ),
+    ),
+    'field_ref_faq_servcat' => array(
+      'predicates' => array(
+        0 => 'schema:serviceType',
+      ),
+    ),
+    'field_ref_faq_serv' => array(
+      'predicates' => array(
+        0 => 'schema:serviceType',
+      ),
+    ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
+  );
+
+  return $schemaorg;
+}
+
+/**
  * Implements hook_weight_features_default_settings().
  */
 function ec_faq_weight_features_default_settings() {

@@ -13,49 +13,63 @@ function ec_casestudy_user_default_permissions() {
   // Exported permission: 'administer panelizer node case_study breadcrumbs'.
   $permissions['administer panelizer node case_study breadcrumbs'] = array(
     'name' => 'administer panelizer node case_study breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node case_study content'.
   $permissions['administer panelizer node case_study content'] = array(
     'name' => 'administer panelizer node case_study content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node case_study context'.
   $permissions['administer panelizer node case_study context'] = array(
     'name' => 'administer panelizer node case_study context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node case_study defaults'.
   $permissions['administer panelizer node case_study defaults'] = array(
     'name' => 'administer panelizer node case_study defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node case_study layout'.
   $permissions['administer panelizer node case_study layout'] = array(
     'name' => 'administer panelizer node case_study layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node case_study overview'.
   $permissions['administer panelizer node case_study overview'] = array(
     'name' => 'administer panelizer node case_study overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node case_study settings'.
   $permissions['administer panelizer node case_study settings'] = array(
     'name' => 'administer panelizer node case_study settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -75,7 +89,6 @@ function ec_casestudy_user_default_permissions() {
     'name' => 'delete any case_study content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

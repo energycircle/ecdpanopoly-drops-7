@@ -13,49 +13,63 @@ function ec_financing_option_user_default_permissions() {
   // Exported permission: 'administer panelizer node financing_option breadcrumbs'.
   $permissions['administer panelizer node financing_option breadcrumbs'] = array(
     'name' => 'administer panelizer node financing_option breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node financing_option content'.
   $permissions['administer panelizer node financing_option content'] = array(
     'name' => 'administer panelizer node financing_option content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node financing_option context'.
   $permissions['administer panelizer node financing_option context'] = array(
     'name' => 'administer panelizer node financing_option context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node financing_option defaults'.
   $permissions['administer panelizer node financing_option defaults'] = array(
     'name' => 'administer panelizer node financing_option defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node financing_option layout'.
   $permissions['administer panelizer node financing_option layout'] = array(
     'name' => 'administer panelizer node financing_option layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node financing_option overview'.
   $permissions['administer panelizer node financing_option overview'] = array(
     'name' => 'administer panelizer node financing_option overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node financing_option settings'.
   $permissions['administer panelizer node financing_option settings'] = array(
     'name' => 'administer panelizer node financing_option settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -85,6 +99,8 @@ function ec_financing_option_user_default_permissions() {
     'name' => 'delete own financing_option content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );

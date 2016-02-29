@@ -58,6 +58,13 @@ function ec_external_video_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__external_video';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__external_video'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_external_video';
   $strongarm->value = array(
     0 => 'status',
@@ -77,6 +84,13 @@ function ec_external_video_strongarm() {
   $strongarm->name = 'node_submitted_external_video';
   $strongarm->value = 0;
   $export['node_submitted_external_video'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_external_video';
+  $strongarm->value = 'VideoObject';
+  $export['schemaorg_ui_type_external_video'] = $strongarm;
 
   return $export;
 }

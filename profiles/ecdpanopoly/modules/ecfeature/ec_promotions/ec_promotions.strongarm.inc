@@ -14,7 +14,7 @@ function ec_promotions_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_promotion';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_promotion'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -192,9 +192,17 @@ function ec_promotions_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__promotion';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_promotion';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_promotion'] = $strongarm;
 
@@ -266,6 +274,13 @@ function ec_promotions_strongarm() {
   $strongarm->name = 'save_continue_promotion';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_promotion'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_promotion';
+  $strongarm->value = 'Offer';
+  $export['schemaorg_ui_type_promotion'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

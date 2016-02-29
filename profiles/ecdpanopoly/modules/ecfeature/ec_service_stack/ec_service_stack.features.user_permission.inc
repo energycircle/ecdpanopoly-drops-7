@@ -13,147 +13,189 @@ function ec_service_stack_user_default_permissions() {
   // Exported permission: 'administer panelizer node service breadcrumbs'.
   $permissions['administer panelizer node service breadcrumbs'] = array(
     'name' => 'administer panelizer node service breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service content'.
   $permissions['administer panelizer node service content'] = array(
     'name' => 'administer panelizer node service content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service context'.
   $permissions['administer panelizer node service context'] = array(
     'name' => 'administer panelizer node service context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service defaults'.
   $permissions['administer panelizer node service defaults'] = array(
     'name' => 'administer panelizer node service defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service layout'.
   $permissions['administer panelizer node service layout'] = array(
     'name' => 'administer panelizer node service layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service overview'.
   $permissions['administer panelizer node service overview'] = array(
     'name' => 'administer panelizer node service overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service settings'.
   $permissions['administer panelizer node service settings'] = array(
     'name' => 'administer panelizer node service settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_category breadcrumbs'.
   $permissions['administer panelizer node service_category breadcrumbs'] = array(
     'name' => 'administer panelizer node service_category breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_category content'.
   $permissions['administer panelizer node service_category content'] = array(
     'name' => 'administer panelizer node service_category content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_category context'.
   $permissions['administer panelizer node service_category context'] = array(
     'name' => 'administer panelizer node service_category context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_category defaults'.
   $permissions['administer panelizer node service_category defaults'] = array(
     'name' => 'administer panelizer node service_category defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_category layout'.
   $permissions['administer panelizer node service_category layout'] = array(
     'name' => 'administer panelizer node service_category layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_category overview'.
   $permissions['administer panelizer node service_category overview'] = array(
     'name' => 'administer panelizer node service_category overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_category settings'.
   $permissions['administer panelizer node service_category settings'] = array(
     'name' => 'administer panelizer node service_category settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_group breadcrumbs'.
   $permissions['administer panelizer node service_group breadcrumbs'] = array(
     'name' => 'administer panelizer node service_group breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_group content'.
   $permissions['administer panelizer node service_group content'] = array(
     'name' => 'administer panelizer node service_group content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_group context'.
   $permissions['administer panelizer node service_group context'] = array(
     'name' => 'administer panelizer node service_group context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_group defaults'.
   $permissions['administer panelizer node service_group defaults'] = array(
     'name' => 'administer panelizer node service_group defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_group layout'.
   $permissions['administer panelizer node service_group layout'] = array(
     'name' => 'administer panelizer node service_group layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_group overview'.
   $permissions['administer panelizer node service_group overview'] = array(
     'name' => 'administer panelizer node service_group overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node service_group settings'.
   $permissions['administer panelizer node service_group settings'] = array(
     'name' => 'administer panelizer node service_group settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -225,6 +267,7 @@ function ec_service_stack_user_default_permissions() {
     'name' => 'delete own service content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -235,6 +278,7 @@ function ec_service_stack_user_default_permissions() {
     'name' => 'delete own service_category content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -245,6 +289,7 @@ function ec_service_stack_user_default_permissions() {
     'name' => 'delete own service_group content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

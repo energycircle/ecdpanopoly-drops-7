@@ -82,6 +82,110 @@ function ec_staff_node_info() {
 }
 
 /**
+ * Implements hook_rdf_default_mappings().
+ */
+function ec_staff_rdf_default_mappings() {
+  $schemaorg = array();
+
+  // Exported RDF mapping: staff
+  $schemaorg['node']['staff'] = array(
+    'rdftype' => array(
+      0 => 'schema:Person',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'schema:articleBody',
+        1 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'field_first_name' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_last_name' => array(
+      'predicates' => array(
+        0 => 'schema:legalName',
+      ),
+    ),
+    'field_staff_title' => array(
+      'predicates' => array(
+        0 => 'schema:jobTitle',
+      ),
+    ),
+    'field_staff_photo' => array(
+      'predicates' => array(
+        0 => 'schema:photo',
+      ),
+      'type' => 'rel',
+    ),
+    'field_staff_department' => array(
+      'predicates' => array(
+        0 => 'schema:subOrganization',
+      ),
+      'type' => 'rel',
+    ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
+  );
+
+  return $schemaorg;
+}
+
+/**
  * Implements hook_weight_features_default_settings().
  */
 function ec_staff_weight_features_default_settings() {

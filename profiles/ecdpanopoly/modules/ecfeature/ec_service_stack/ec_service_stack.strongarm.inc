@@ -14,21 +14,21 @@ function ec_service_stack_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_service';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_service'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_service_category';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_service_category'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_service_group';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_service_group'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -76,9 +76,30 @@ function ec_service_stack_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_service';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_cancel_service_category';
   $strongarm->value = '0';
   $export['content_type_extras_cancel_service_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_service_group';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_service_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_service';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_service'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -90,9 +111,37 @@ function ec_service_stack_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_service_group';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_service_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_service';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_save_and_edit_button_service_category';
   $strongarm->value = 'Save and Edit';
   $export['content_type_extras_save_and_edit_button_service_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_service_group';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_service_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_service';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_service'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -104,9 +153,37 @@ function ec_service_stack_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_service_group';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_service_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_service';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_save_and_new_button_service_category';
   $strongarm->value = 'Save and New';
   $export['content_type_extras_save_and_new_button_service_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_service_group';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_service_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_service';
+  $strongarm->value = '1';
+  $export['content_type_extras_save_and_new_service'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -118,9 +195,30 @@ function ec_service_stack_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_service_group';
+  $strongarm->value = '1';
+  $export['content_type_extras_save_and_new_service_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_service';
+  $strongarm->value = 0;
+  $export['content_type_extras_title_hide_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_title_hide_service_category';
   $strongarm->value = 0;
   $export['content_type_extras_title_hide_service_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_service_group';
+  $strongarm->value = 0;
+  $export['content_type_extras_title_hide_service_group'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -498,6 +596,7 @@ function ec_service_stack_strongarm() {
   $strongarm->name = 'node_options_service';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_service'] = $strongarm;
 
@@ -507,6 +606,7 @@ function ec_service_stack_strongarm() {
   $strongarm->name = 'node_options_service_category';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_service_category'] = $strongarm;
 
@@ -516,6 +616,7 @@ function ec_service_stack_strongarm() {
   $strongarm->name = 'node_options_service_group';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_service_group'] = $strongarm;
 
@@ -725,6 +826,27 @@ function ec_service_stack_strongarm() {
   $strongarm->name = 'save_continue_service_group';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_service_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_service';
+  $strongarm->value = 'Service';
+  $export['schemaorg_ui_type_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_service_category';
+  $strongarm->value = 'Service';
+  $export['schemaorg_ui_type_service_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_service_group';
+  $strongarm->value = 'ServiceChannel';
+  $export['schemaorg_ui_type_service_group'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

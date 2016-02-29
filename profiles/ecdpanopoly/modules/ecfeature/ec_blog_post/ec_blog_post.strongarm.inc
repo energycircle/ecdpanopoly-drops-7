@@ -14,7 +14,7 @@ function ec_blog_post_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_blog_post';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_blog_post'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -209,6 +209,7 @@ function ec_blog_post_strongarm() {
   $strongarm->name = 'node_options_blog_post';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_blog_post'] = $strongarm;
 
@@ -320,6 +321,13 @@ function ec_blog_post_strongarm() {
   $strongarm->name = 'save_continue_blog_post';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_blog_post'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_blog_post';
+  $strongarm->value = 'Blog';
+  $export['schemaorg_ui_type_blog_post'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

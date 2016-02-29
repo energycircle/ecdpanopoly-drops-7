@@ -11,6 +11,7 @@ function ec_casestudy_defaultconfig_features() {
   return array(
     'ec_casestudy' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -1670,4 +1671,20 @@ function ec_casestudy_defaultconfig_field_default_fields() {
   t('Show this product on these case study pages.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_casestudy_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_case_study';
+  $strongarm->value = 'ScholarlyArticle';
+  $export['schemaorg_ui_type_case_study'] = $strongarm;
+
+  return $export;
 }

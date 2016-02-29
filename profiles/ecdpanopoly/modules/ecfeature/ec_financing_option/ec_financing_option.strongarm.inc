@@ -14,7 +14,7 @@ function ec_financing_option_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_financing_option';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_financing_option'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -153,6 +153,7 @@ function ec_financing_option_strongarm() {
   $strongarm->name = 'node_options_financing_option';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_financing_option'] = $strongarm;
 
@@ -224,6 +225,13 @@ function ec_financing_option_strongarm() {
   $strongarm->name = 'save_continue_financing_option';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_financing_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_financing_option';
+  $strongarm->value = 'FinancialService';
+  $export['schemaorg_ui_type_financing_option'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

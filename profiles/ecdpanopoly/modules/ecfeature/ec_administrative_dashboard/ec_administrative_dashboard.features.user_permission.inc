@@ -13,7 +13,9 @@ function ec_administrative_dashboard_user_default_permissions() {
   // Exported permission: 'administer total control'.
   $permissions['administer total control'] = array(
     'name' => 'administer total control',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'total_control',
   );
 

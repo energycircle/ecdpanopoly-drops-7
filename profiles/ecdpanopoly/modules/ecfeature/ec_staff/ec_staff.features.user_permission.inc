@@ -13,49 +13,63 @@ function ec_staff_user_default_permissions() {
   // Exported permission: 'administer panelizer node staff breadcrumbs'.
   $permissions['administer panelizer node staff breadcrumbs'] = array(
     'name' => 'administer panelizer node staff breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff content'.
   $permissions['administer panelizer node staff content'] = array(
     'name' => 'administer panelizer node staff content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff context'.
   $permissions['administer panelizer node staff context'] = array(
     'name' => 'administer panelizer node staff context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff defaults'.
   $permissions['administer panelizer node staff defaults'] = array(
     'name' => 'administer panelizer node staff defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff layout'.
   $permissions['administer panelizer node staff layout'] = array(
     'name' => 'administer panelizer node staff layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff overview'.
   $permissions['administer panelizer node staff overview'] = array(
     'name' => 'administer panelizer node staff overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node staff settings'.
   $permissions['administer panelizer node staff settings'] = array(
     'name' => 'administer panelizer node staff settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -85,6 +99,7 @@ function ec_staff_user_default_permissions() {
     'name' => 'delete own staff content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
