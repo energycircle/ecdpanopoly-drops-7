@@ -424,10 +424,10 @@ libraries[leaflet.draw][type] = library
 libraries[leaflet.draw][directory_name] = Leaflet.draw
 libraries[leaflet.draw][download][url] = https://github.com/Leaflet/Leaflet.draw/archive/master.zip
 
-libraries[geoPHP][download][type] = get
+libraries[geoPHP][download][type] = git
 libraries[geoPHP][type] = library
 libraries[geoPHP][directory_name] = geoPHP
-libraries[geoPHP][download][url] = https://github.com/phayes/geoPHP/zipball/master.zip
+libraries[geoPHP][download][url] = https://github.com/phayes/geoPHP.git
 
 libraries[mailchimp][download][type] = get
 libraries[mailchimp][type] = library
