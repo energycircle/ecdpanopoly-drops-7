@@ -331,7 +331,7 @@ projects[views_data_export][subdir] = eccontrib
 projects[views_data_export][version] = 3.0-beta9	
 
 projects[views_slideshow][subdir] = eccontrib
-projects[views_slideshow][version] = 3.x
+projects[views_slideshow][version] = 3.1
 
 projects[views_url_path_arguments][subdir] = eccontrib
 projects[views_url_path_arguments][version] = 1.1
