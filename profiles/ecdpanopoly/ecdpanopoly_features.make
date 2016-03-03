@@ -68,6 +68,13 @@ projects[ec_citypages][subdir] = ecfeature
 projects[ec_citypages][type] = module
 projects[ec_citypages][version] =  1.x
 
+
+projects[ec_custom_tokens][download][type] = git
+projects[ec_custom_tokens][download][url] = https://github.com/energycircle/ec_custom_tokens.git
+projects[ec_custom_tokens][subdir] = ecfeature
+projects[ec_custom_tokens][type] = module
+projects[ec_custom_tokens][version] =  1.x
+
 #projects[ec_conference_tracks_sessions][download][type] = git
 #projects[ec_conference_tracks_sessions][download][url] = https://github.com/energycircle/ec_conference_tracks_sessions.git
 #projects[ec_conference_tracks_sessions][subdir] = ecfeature
