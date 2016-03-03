@@ -303,6 +303,9 @@ projects[taxonomy_menu][version] = 1.x
 projects[title][subdir] = eccontrib
 projects[title][version] = 1.x
 
+projects[token_custom][subdir] = eccontrib
+projects[token_custom][version] = 2.0-beta3
+
 projects[token_tweaks][subdir] = eccontrib
 projects[token_tweaks][version] = 1.x
 
@@ -344,6 +347,7 @@ projects[xmlsitemap][version] = 2.2
 
 
 ;PATCHES
+projects[token_custom][patch][] = https://www.drupal.org/files/issues/export_custom_token.patch
 projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
 projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch 
 projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
