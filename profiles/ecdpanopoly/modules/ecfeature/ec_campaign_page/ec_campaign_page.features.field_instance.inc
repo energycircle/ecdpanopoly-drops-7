@@ -10,49 +10,6 @@
 function ec_campaign_page_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'entityform-campaign_form-field_business2'.
-  $field_instances['entityform-campaign_form-field_business2'] = array(
-    'bundle' => 'campaign_form',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'entityform',
-    'field_name' => 'field_business2',
-    'label' => 'Business Name',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'entityform-campaign_form-field_email'.
   $field_instances['entityform-campaign_form-field_email'] = array(
     'bundle' => 'campaign_form',
@@ -644,7 +601,6 @@ function ec_campaign_page_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Business Name');
   t('Button Text');
   t('CTA form');
   t('Call to Action');
