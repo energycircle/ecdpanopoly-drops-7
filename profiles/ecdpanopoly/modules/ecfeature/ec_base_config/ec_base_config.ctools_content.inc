@@ -32,13 +32,13 @@ function ec_base_config_default_ctools_custom_content() {
   $content->name = 'phone_number';
   $content->admin_title = 'Phone Number';
   $content->admin_description = '';
-  $content->category = '';
+  $content->category = 'Site Assets';
   $content->settings = array(
     'admin_title' => 'Phone Number',
     'title' => '',
-    'body' => '<p>1 (555) 555-5555</p>',
+    'body' => '<p>[custom:phone-number]</p>',
     'format' => 'panopoly_wysiwyg_text',
-    'substitute' => TRUE,
+    'substitute' => 1,
   );
   $export['phone_number'] = $content;
 

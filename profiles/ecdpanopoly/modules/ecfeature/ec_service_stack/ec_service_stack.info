@@ -127,7 +127,6 @@ features[field_instance][] = node-service_group-field_service_group_image
 features[field_instance][] = node-testimonial-field_ref_testimonial_serv_cat
 features[field_instance][] = node-testimonial-field_ref_testimonial_serv_group
 features[field_instance][] = node-testimonial-field_ref_testimonial_service
-features[field_validation_rule][] = service_spam_protect
 features[node][] = service
 features[node][] = service_category
 features[node][] = service_group

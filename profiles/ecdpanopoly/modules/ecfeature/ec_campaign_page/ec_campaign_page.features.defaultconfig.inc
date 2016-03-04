@@ -11,7 +11,6 @@ function ec_campaign_page_defaultconfig_features() {
   return array(
     'ec_campaign_page' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -959,27 +958,4 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
   t('Phone');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_campaign_page_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__campaign_page';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__campaign_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'schemaorg_ui_type_campaign_page';
-  $strongarm->value = '';
-  $export['schemaorg_ui_type_campaign_page'] = $strongarm;
-
-  return $export;
 }
