@@ -120,6 +120,7 @@ dependencies[] = uuid_path
 ;EC features
 dependencies[] = ec_foundation_image_styles
 dependencies[] = ec_base_config
+dependencies[] = ec_custom_tokens
 dependencies[] = ec_panopoly_page_overrides
 
 
