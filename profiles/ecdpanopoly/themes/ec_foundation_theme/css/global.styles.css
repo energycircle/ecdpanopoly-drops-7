@@ -341,7 +341,6 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 
 /* Unpublished nodes */
 .node-unpublished p.unpublished, .comment-unpublished p.unpublished { color: pink; color: rgba(239, 170, 170, 0.4); font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; font-size: 50px; font-weight: 700; line-height: 1.2; height: 0; margin: 0; padding: 0; overflow: visible; text-align: center; text-transform: uppercase; word-wrap: break-word; }
-.ie6-7 .node-unpublished p.unpublished > *, .ie6-7 .comment-unpublished p.unpublished > * { position: relative; }
 
 /* ============================================================================= Maintenance pages ========================================================================== */
 .maintenance-page .container { padding: 40px 0; }
@@ -365,6 +364,6 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 /* ============================================================================= EC HACKS ========================================================================== */
 #admin-menu .dropdown li li { opacity: 1; background-color: rgba(69, 69, 69, 0.88); }
 
-#edit-field-business2 { display: none; }
+.url-textfield { display: none; }
 
 #total-subscription-subscribe-form .form-item-node-taxonomy, #total-subscription-subscribe-form .form-type-checkbox { display: none; }
