@@ -127,14 +127,5 @@ function ec_promotions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'execute node_promote_action'.
-  $permissions['execute node_promote_action'] = array(
-    'name' => 'execute node_promote_action',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'actions_permissions',
-  );
-
   return $permissions;
 }
