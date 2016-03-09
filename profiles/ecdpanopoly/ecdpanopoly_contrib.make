@@ -72,6 +72,9 @@ projects[disable_term_node_listings][version] = 1.2
 projects[draggableviews][subdir] = eccontrib
 projects[draggableviews][version] = 2.x
 
+projects[editablefields][subdir] = eccontrib
+projects[editablefields][version] = 1.0-alpha2
+
 projects[eck][subdir] = eccontrib
 projects[eck][version] = 2.0-rc8
 
@@ -222,6 +225,9 @@ projects[mailchimp][version] = 3.6
 projects[mailsystem][subdir] = eccontrib
 projects[mailsystem][version] = 2.x-dev
 
+projects[markup][subdir] = eccontrib
+projects[markup][version] = 1.2
+
 projects[masquerade][subdir] = eccontrib
 projects[masquerade][version] = 1.0-rc7
 
@@ -326,6 +332,9 @@ projects[views_accordion][version] = 1.x
 
 projects[views_conditional][subdir] = eccontrib
 projects[views_conditional][version] = 1.x-dev
+
+projects[views_calc][subdir] = eccontrib
+projects[views_calc][version] = 1.1
 
 projects[video_filter][subdir] = eccontrib
 projects[video_filter][version] = 3.x-dev
