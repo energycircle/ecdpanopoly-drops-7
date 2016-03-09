@@ -184,7 +184,9 @@ function imagecache_token_tokens($type, $tokens, array $data = array(), array $o
             $output[] = theme('image_formatter', array('item' => $field, 'image_style' => $type));
           }
           elseif (isset($attribute) && !empty($attribute) && isset($field[$attribute])) {
-            if (in_array($attribute, array('width', 'height', 'mimetype'))) {
+            // These attributes are for the resized image, rather than the
+            // original, so load the resized image and obtain its meta data.
+            if (in_array($attribute, array('width', 'height', 'mimetype', 'extension', 'filesize'))) {
               $styled_uri = image_style_path($type, $field['uri']);
               $style = image_style_load($type);
 
@@ -195,10 +197,10 @@ function imagecache_token_tokens($type, $tokens, array $data = array(), array $o
               // Create a derivative of the image for this style.
               image_style_create_derivative($style, $field['uri'], $styled_uri);
 
-              // If the styled image's information wasn't loaded before then load
-              // it now; as this process is a little heavy, the information will
-              // be statically cached to avoid needing to reload the details for
-              // for another token.
+              // If the styled image's information wasn't loaded before then
+              // load it now; as this process is a little heavy, the
+              // information will be statically cached to avoid needing to
+              // reload the details for another token.
               if (empty($images_style_data[$styled_uri])) {
                 $images_style_data[$styled_uri] = image_get_info($styled_uri);
               }

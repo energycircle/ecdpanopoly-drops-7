@@ -75,6 +75,12 @@ projects[ec_custom_tokens][subdir] = ecfeature
 projects[ec_custom_tokens][type] = module
 projects[ec_custom_tokens][version] =  1.x
 
+projects[ec_customer_referral][download][type] = git
+projects[ec_customer_referral][download][url] = https://github.com/energycircle/ec_customer_referral.git
+projects[ec_customer_referral][subdir] = ecfeature
+projects[ec_customer_referral][type] = module
+projects[ec_customer_referral][version] =  1.x
+
 #projects[ec_conference_tracks_sessions][download][type] = git
 #projects[ec_conference_tracks_sessions][download][url] = https://github.com/energycircle/ec_conference_tracks_sessions.git
 #projects[ec_conference_tracks_sessions][subdir] = ecfeature
@@ -183,17 +189,23 @@ projects[ec_promotions][version] = 1.x
 #projects[ec_redhen][type] = module
 #projects[ec_redhen][version] = 1.0-beta7
 
-projects[ec_rms][download][type] = git
-projects[ec_rms][download][url] = https://github.com/energycircle/ec_rms.git
-projects[ec_rms][subdir] = ecfeature
-projects[ec_rms][type] = module
-projects[ec_rms][version] = 1.x
+#projects[ec_rms][download][type] = git
+#projects[ec_rms][download][url] = https://github.com/energycircle/ec_rms.git
+#projects[ec_rms][subdir] = ecfeature
+#projects[ec_rms][type] = module
+#projects[ec_rms][version] = 1.x
 
 projects[ec_service_stack][download][type] = git
 projects[ec_service_stack][download][url] = https://github.com/energycircle/ec_service_stack.git
 projects[ec_service_stack][subdir] = ecfeature
 projects[ec_service_stack][type] = module
 projects[ec_service_stack][version] = 1.x
+
+projects[ec_service_review_system][download][type] = git
+projects[ec_service_review_system][download][url] = https://github.com/energycircle/ec_service_review_system.git
+projects[ec_service_review_system][subdir] = ecfeature
+projects[ec_service_review_system][type] = module
+projects[ec_service_review_system][version] =  1.x
 
 projects[ec_slide][download][type] = git
 projects[ec_slide][download][url] = https://github.com/energycircle/ec_slide.git
