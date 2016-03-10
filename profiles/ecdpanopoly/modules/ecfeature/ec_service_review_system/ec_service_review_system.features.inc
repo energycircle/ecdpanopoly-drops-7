@@ -24,6 +24,45 @@ function ec_service_review_system_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_default_entityform_type().
+ */
+function ec_service_review_system_default_entityform_type() {
+  $items = array();
+  $items['sreview'] = entity_import('entityform_type', '{
+    "type" : "sreview",
+    "label" : "Service Review",
+    "data" : {
+      "draftable" : 0,
+      "draft_redirect_path" : "",
+      "draft_button_text" : "",
+      "draft_save_text" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
+      "submit_button_text" : "",
+      "submit_confirm_msg" : "",
+      "your_submissions" : "",
+      "disallow_resubmit_msg" : "",
+      "delete_confirm_msg" : "",
+      "page_title_view" : "",
+      "preview_page" : 0,
+      "submission_page_title" : "",
+      "submission_text" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
+      "submission_show_submitted" : 0,
+      "submissions_view" : "default",
+      "user_submissions_view" : "",
+      "form_status" : "ENTITYFORM_OPEN",
+      "roles" : { "1" : "1", "2" : "2", "5" : 0, "3" : 0, "6" : 0, "4" : 0 },
+      "resubmit_action" : "new",
+      "redirect_path" : "",
+      "instruction_pre" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
+      "enable_block" : 1
+    },
+    "weight" : "0",
+    "rdf_mapping" : [],
+    "paths" : []
+  }');
+  return $items;
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_service_review_system_node_info() {

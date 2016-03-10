@@ -10,7 +10,7 @@
 function ec_service_review_system_uuid_features_default_terms() {
   $terms = array();
 
-  $terms[] = (object) array(
+  $terms[] = array(
     'name' => 'Show on Reviews Page',
     'description' => '<p>Show this review in the public-facing list of reviews on the site.</p>',
     'format' => 'panopoly_wysiwyg_text',
@@ -21,7 +21,7 @@ function ec_service_review_system_uuid_features_default_terms() {
       'pathauto' => 1,
     ),
   );
-  $terms[] = (object) array(
+  $terms[] = array(
     'name' => 'New',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
@@ -32,7 +32,7 @@ function ec_service_review_system_uuid_features_default_terms() {
       'pathauto' => 1,
     ),
   );
-  $terms[] = (object) array(
+  $terms[] = array(
     'name' => 'Complete',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
@@ -43,7 +43,7 @@ function ec_service_review_system_uuid_features_default_terms() {
       'pathauto' => 1,
     ),
   );
-  $terms[] = (object) array(
+  $terms[] = array(
     'name' => 'Follow-up needed',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',

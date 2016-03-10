@@ -1278,7 +1278,7 @@ function ec_service_review_system_defaultconfig_field_default_fields() {
  * Implements hook_defaultconfig_field_group_info().
  */
 function ec_service_review_system_defaultconfig_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1315,7 +1315,7 @@ function ec_service_review_system_defaultconfig_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_step_1_group|entityform|sreview|form'] = $field_group;
+  $field_groups['group_step_1_group|entityform|sreview|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1349,7 +1349,7 @@ function ec_service_review_system_defaultconfig_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_step_2_group|entityform|sreview|form'] = $field_group;
+  $field_groups['group_step_2_group|entityform|sreview|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1384,7 +1384,7 @@ function ec_service_review_system_defaultconfig_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_step_3_group|entityform|sreview|form'] = $field_group;
+  $field_groups['group_step_3_group|entityform|sreview|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1418,9 +1418,16 @@ function ec_service_review_system_defaultconfig_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_step_4_group|entityform|sreview|form'] = $field_group;
+  $field_groups['group_step_4_group|entityform|sreview|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Step 1 Group');
+  t('Step 2 Group');
+  t('Step 3 Group');
+  t('Step 4 Group');
+
+  return $field_groups;
 }
 
 /**

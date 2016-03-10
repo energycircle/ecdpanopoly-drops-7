@@ -128,7 +128,7 @@ function ec_citypages_field_default_field_instances() {
         'enable' => 0,
         'profile' => '',
       ),
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -145,6 +145,7 @@ function ec_citypages_field_default_field_instances() {
   // Exported field_instance: 'node-city_page-field_citypages_area'.
   $field_instances['node-city_page-field_citypages_area'] = array(
     'bundle' => 'city_page',
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -453,7 +454,7 @@ function ec_citypages_field_default_field_instances() {
     'bundle' => 'city_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter any other content about your work in this locality.<br /><br /><strong>Example: "Ask us about our work in the historic district. Our designs and installations are tailored to fit the appearance standards of your neighborhood while maximizing efficiency and return on investment."</strong>',
+    'description' => 'Enter seasonal services and/or any other content about your work in this locality.<br /><br /><strong>Example: "Ask us about our work in the historic district. Our designs and installations are tailored to fit the appearance standards of your neighborhood while maximizing efficiency and return on investment."</strong>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -492,7 +493,7 @@ function ec_citypages_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_citypages_other_descriptio',
-    'label' => 'Other Local Notes',
+    'label' => 'Local/Seasonal Services -- or -- Other Local Notes',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -852,12 +853,12 @@ function ec_citypages_field_default_field_instances() {
   t('Description Local Experience');
   t('Description Place Names');
   t('Enter a short description to include in the service area page list of cities.');
-  t('Enter any other content about your work in this locality.<br /><br /><strong>Example: "Ask us about our work in the historic district. Our designs and installations are tailored to fit the appearance standards of your neighborhood while maximizing efficiency and return on investment."</strong>');
+  t('Enter seasonal services and/or any other content about your work in this locality.<br /><br /><strong>Example: "Ask us about our work in the historic district. Our designs and installations are tailored to fit the appearance standards of your neighborhood while maximizing efficiency and return on investment."</strong>');
   t('Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD');
   t('Featured Video');
+  t('Local/Seasonal Services -- or -- Other Local Notes');
   t('Location Area');
   t('Location pin');
-  t('Other Local Notes');
   t('Select a point in the city/neighborhood for the map pin.');
   t('Short Description');
   t('Short, narrative description of what places are in this City.<br /><br /> <strong>Example: "From the distinctive Beacon Hill to the North End, Back Bay and Chinatown, we serve all of downtown Boston."</strong>');

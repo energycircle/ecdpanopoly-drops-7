@@ -21,7 +21,7 @@ function ec_citypages_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'City Page Tabs',
-    'weight' => '3',
+    'weight' => '1',
     'children' => array(
       0 => 'group_cta_form',
       1 => 'group_citypages_description',
@@ -85,9 +85,8 @@ function ec_citypages_field_group_info() {
     'children' => array(
       0 => 'field_citypages_area',
       1 => 'field_citypages_image',
-      2 => 'field_citypages_pin',
-      3 => 'field_citypagesshort_description',
-      4 => 'field_featured_video',
+      2 => 'field_citypagesshort_description',
+      3 => 'field_featured_video',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -161,6 +160,33 @@ function ec_citypages_field_group_info() {
     ),
   );
   $export['group_cta_form|node|city_page|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_unused_fields|node|city_page|form';
+  $field_group->group_name = 'group_unused_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'city_page';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Unused Fields',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_citypages_pin',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-unused-fields field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_unused_fields|node|city_page|form'] = $field_group;
 
   return $export;
 }

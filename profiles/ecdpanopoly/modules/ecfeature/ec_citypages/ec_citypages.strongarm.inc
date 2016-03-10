@@ -21,7 +21,7 @@ function ec_citypages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_menutitle_city_page';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['auto_menutitle_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -138,19 +138,19 @@ function ec_citypages_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
-        ),
-        'redirect' => array(
           'weight' => '5',
         ),
-        'xmlsitemap' => array(
+        'redirect' => array(
           'weight' => '4',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '3',
         ),
       ),
       'display' => array(),
@@ -162,10 +162,7 @@ function ec_citypages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_city_page';
-  $strongarm->value = array(
-    0 => 'menu-auxiliary-menu',
-    1 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_city_page'] = $strongarm;
 
   $strongarm = new stdClass();

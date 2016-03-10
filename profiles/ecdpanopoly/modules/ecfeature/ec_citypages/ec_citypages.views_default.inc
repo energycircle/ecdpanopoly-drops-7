@@ -24,7 +24,11 @@ function ec_citypages_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -45,7 +49,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['field_citypages_example']['label'] = '';
   $handler->display->display_options['fields']['field_citypages_example']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_citypages_example']['element_label_colon'] = FALSE;
-  /* Field: Content: Other Local Notes */
+  /* Field: Content: Local/Seasonal Services -- or -- Other Local Notes */
   $handler->display->display_options['fields']['field_citypages_other_descriptio']['id'] = 'field_citypages_other_descriptio';
   $handler->display->display_options['fields']['field_citypages_other_descriptio']['table'] = 'field_data_field_citypages_other_descriptio';
   $handler->display->display_options['fields']['field_citypages_other_descriptio']['field'] = 'field_citypages_other_descriptio';
@@ -109,7 +113,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['field_citypages_example']['label'] = '';
   $handler->display->display_options['fields']['field_citypages_example']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_citypages_example']['element_label_colon'] = FALSE;
-  /* Field: Content: Other Local Notes */
+  /* Field: Content: Local/Seasonal Services -- or -- Other Local Notes */
   $handler->display->display_options['fields']['field_citypages_other_descriptio']['id'] = 'field_citypages_other_descriptio';
   $handler->display->display_options['fields']['field_citypages_other_descriptio']['table'] = 'field_data_field_citypages_other_descriptio';
   $handler->display->display_options['fields']['field_citypages_other_descriptio']['field'] = 'field_citypages_other_descriptio';
@@ -150,7 +154,11 @@ function ec_citypages_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -214,6 +222,20 @@ function ec_citypages_views_default_views() {
 
   /* Display: City Page Linked Content */
   $handler = $view->new_display('panel_pane', 'City Page Linked Content', 'panel_pane_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+
+  /* Display: City Page Linked Content Simple */
+  $handler = $view->new_display('panel_pane', 'City Page Linked Content Simple', 'panel_pane_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Service Areas All Over New Jersey';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $export['city_pages_lists'] = $view;
 
   $view = new view();
@@ -231,7 +253,11 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -344,7 +370,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['field_citypages_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_citypages_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_citypages_image']['settings'] = array(
-    'image_style' => 'sc_140x105',
+    'image_style' => 'sc_300x225',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -380,6 +406,8 @@ function ec_citypages_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Rearrange City Pages Mapping', 'panel_pane_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Rearrange City Pages Mapping';
+  $handler->display->display_options['defaults']['cache'] = FALSE;
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -424,6 +452,8 @@ function ec_citypages_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Rearrange City Pages List', 'panel_pane_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Rearrange City Pages List';
+  $handler->display->display_options['defaults']['cache'] = FALSE;
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
