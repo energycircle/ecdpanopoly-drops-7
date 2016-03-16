@@ -237,6 +237,9 @@ projects[maxlength][version] = 3.x
 #projects[menu_icons][subdir] = eccontrib
 #projects[menu_icons][version] = 3.x-dev
 
+projects[menu_attributes][subdir] = eccontrib
+projects[menu_attributes][version] = 1.x
+
 projects[metatag][subdir] = eccontrib
 projects[metatag][version] = 1.x
 
