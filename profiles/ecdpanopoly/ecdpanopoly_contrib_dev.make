@@ -12,7 +12,7 @@ projects[features_extra][subdir] = ec-dev
 projects[uuid_features][version] = 1.x-dev
 projects[uuid_features][subdir] = ec-dev
 projects[uuid_features][patch] = https://www.drupal.org/files/issues/uuid_features-fpp_panelizer_view_mode_object_array.patch
-
+projects[uuid_features][patch][1973770] = https://www.drupal.org/files/issues/uuid_features-users-etc-integration-1973770-42.patch			
 
 projects[features_roles_permissions][version] = 1.2
 projects[features_roles_permissions][subdir] = ec-dev
