@@ -558,8 +558,6 @@ function ec_service_review_system_field_default_field_instances() {
     ),
   );
 
-
-
   // Exported field_instance: 'node-sreview_site-field_sreview_logo'.
   $field_instances['node-sreview_site-field_sreview_logo'] = array(
     'bundle' => 'sreview_site',
@@ -745,7 +743,6 @@ function ec_service_review_system_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('City');
   t('Email');
-  t('FAQ');
   t('High Rating Email Sent');
   t('Name');
   t('Rating');

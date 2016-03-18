@@ -10,29 +10,25 @@
 function ec_service_review_system_content_menu_links_defaults() {
   $menu_links = array();
 
-  // Exported menu link: management:admin/content
-  $menu_links['management:admin/content'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/content',
-    'router_path' => 'admin/content',
-    'link_title' => 'Content',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Find and manage content.',
-      ),
-    ),
+  // Exported menu link: navigation:node/add/sreview-site
+  $menu_links['navigation:node/add/sreview-site'] = array(
+    'menu_name' => 'navigation',
+    'link_path' => 'node/add/sreview-site',
+    'router_path' => 'node/add/sreview-site',
+    'link_title' => 'Service Review Site',
+    'options' => array(),
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 0,
-    'weight' => -10,
+    'weight' => 0,
     'customized' => 0,
-    'parent_path' => 'admin',
+    'parent_path' => 'node/add',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Content');
+  t('Service Review Site');
 
 
   return $menu_links;

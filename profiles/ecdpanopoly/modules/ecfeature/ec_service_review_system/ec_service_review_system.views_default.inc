@@ -324,7 +324,7 @@ function ec_service_review_system_views_default_views() {
   $view->description = 'External review sites to display in the Review Management System';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Service Review Sites';
+  $view->human_name = 'DELETE - Service Review Sites';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */

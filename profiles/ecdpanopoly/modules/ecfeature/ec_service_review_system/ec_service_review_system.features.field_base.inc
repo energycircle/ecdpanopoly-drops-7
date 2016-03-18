@@ -10,8 +10,6 @@
 function ec_service_review_system_field_default_field_bases() {
   $field_bases = array();
 
- 
-
   // Exported field_base: 'field_sreview_city'.
   $field_bases['field_sreview_city'] = array(
     'active' => 1,
