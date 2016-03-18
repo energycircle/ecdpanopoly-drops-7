@@ -378,7 +378,7 @@ projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.pa
 #projects[schemaorg][patch][1296760] = https://www.drupal.org/files/1296760_entity_1.patch
 projects[feeds][patch] = https://www.drupal.org/files/issues/feeds-unlock-1535368-18.patch
 #projects[views_slideshow][patch] = https://www.drupal.org/files/views_slideshow_cycle-hook-requirements-broken-1090052-27.patch
-projects[metatag][patch][1880302] = https://www.drupal.org/files/metatag-1880302-2.patch
+#projects[metatag][patch][1880302] = https://www.drupal.org/files/metatag-1880302-2.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
