@@ -2,9 +2,10 @@ name = EC Restrict File Download
 description = "EC Restrict File Download"
 core = 7.x
 
-version = "7.x-1.x"
-core = "7.x"
-project = "ec_restrict_dl"
-
 dependencies[] = file_entity
 dependencies[] = rules
+
+; Information added by Drupal.org packaging script on 2015-01-16
+version = "7.x-1.1"
+core = "7.x"
+project = "ec_restrict_dl"

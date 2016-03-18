@@ -124,6 +124,7 @@ function ec_restrict_dl_file_transfer($uri, array $headers) {
  * Implements hook_form_alter().
  */
 function ec_restrict_dl_form_alter(&$form, &$form_state, $form_id) {
+
   //if file is removed from form it catches it before exposing forms fields based on some sort of field error
   if(isset($form_state['input']['form_id']) && $form_state['input']['form_id'] == 'request_restricted_node_form' && $form_state['input']['field_req_res_file']['und'][0]['fid'] == '0'){
     $fid = check_plain(arg(3));
@@ -133,8 +134,22 @@ function ec_restrict_dl_form_alter(&$form, &$form_state, $form_id) {
   }
 
   if($form_id == 'request_restricted_node_form') {
+    //node page args
+    $arg_0 = check_plain(arg(0));
+    $arg_1 = check_plain(arg(1));
+    $arg_2 = check_plain(arg(2));
+    //request click arg
+    $arg_3 = check_plain(arg(3));
 
-    $fid = check_plain(arg(3));
+    //if node page and gated file set fid
+    if($arg_0 == 'node' && is_numeric($arg_1) && $arg_2 != 'edit') {
+      $node = node_load($arg_1);
+      if($node->type == "gated_file_page") {
+        $fid = $node->field_restricted_download_file[LANGUAGE_NONE][0]['fid'];
+      }
+    }else{
+      $fid = $arg_3;
+    }
     if(is_numeric($fid)) {
 
       //view if file_restricted is set on file return record
@@ -146,16 +161,14 @@ function ec_restrict_dl_form_alter(&$form, &$form_state, $form_id) {
         $form['title']['#disabled'] = TRUE;
 
         //hide values and set defaults if user doesn't have elevated access (nome fine tuning needed) //possible configuration options could help here for wider distribution
+        if(isset($form['field_req_res_file'])){
+          $form['field_req_res_file'][LANGUAGE_NONE][0]['#default_value']['fid'] = $fid;
+          $form['field_req_res_file'][LANGUAGE_NONE][0]['#default_value']['display'] = TRUE;
+        }
         if(!user_access('Request Restricted: Edit own content')){
 
           //resets field to send email on node save
           $form['field_req_res_send_email'][LANGUAGE_NONE]['#default_value'] = 1;
-
-          if(isset($form['field_req_res_file'])){
-            $form['field_req_res_file'][LANGUAGE_NONE][0]['#default_value']['fid'] = $fid;
-            $form['field_req_res_file'][LANGUAGE_NONE][0]['#default_value']['display'] = TRUE;
-          }
-
           //hide fields
           $form['field_req_res_send_email'][LANGUAGE_NONE]['#type'] = 'hidden';
           $form['field_req_res_dl_times'][LANGUAGE_NONE][0]['#type'] = 'hidden';
@@ -163,8 +176,9 @@ function ec_restrict_dl_form_alter(&$form, &$form_state, $form_id) {
           $form['field_req_res_key'][LANGUAGE_NONE][0]['#type'] = 'hidden';
           $form['field_req_res_dl_link'][LANGUAGE_NONE][0]['#type'] = 'hidden';
           $form['field_req_res_downloaded'][LANGUAGE_NONE]['#type'] = 'hidden';
+          $form['content_experiments']['#type'] = 'hidden';
         }
-
+        $form['ajax-submit']['#ajax'] = array();
         $form['#validate'][] = 'ec_restrict_validate_create_restricted';
         //$form['#submit'][] = 'ec_restrict_submit_create_restricted';
       }else{
@@ -199,7 +213,9 @@ function ec_restrict_validate_create_restricted($form, $form_state) {
 
     //redirect to keep from saving a new node.
     $ty_page = check_plain(variable_get('ec_restrict_dl_ty_url'));
-    drupal_goto($ty_page);
+    $path = current_path();
+
+    drupal_goto($ty_page, array('query' => array('destination' => $path)));
     return false;
   }else{
 

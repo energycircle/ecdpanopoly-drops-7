@@ -408,6 +408,7 @@ projects[ec_restrict_dl][download][type] = git
 projects[ec_restrict_dl][download][url] = https://github.com/energycircle/ec_restrict_dl.git
 projects[ec_restrict_dl][subdir] = eccustom
 projects[ec_restrict_dl][type] = module
+projects[ec_restrict_dl][version] = 1.1
 
 ; LIBRARIES
 libraries[superfish][download][type] = get
