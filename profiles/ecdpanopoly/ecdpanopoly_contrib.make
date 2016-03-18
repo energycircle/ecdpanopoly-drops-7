@@ -21,6 +21,9 @@ projects[adminrole][version] = 1.1
 projects[advanced_help][subdir] = eccontrib
 projects[advanced_help][version] = 1.x
 
+projects[afb][subdir] = eccontrib
+projects[afb][version] = 1.x
+
 projects[auto_menutitle][subdir] = eccontrib
 projects[auto_menutitle][version] = 1.x
 
