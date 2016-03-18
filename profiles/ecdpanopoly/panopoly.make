@@ -74,3 +74,6 @@ projects[views_bulk_operations][subdir] = contrib
 
 projects[token][patch][919760] = https://www.drupal.org/files/issues/token-current_page_object_token-919760-16.patch
 projects[token][subdir] = contrib
+
+projects[ctools][patch][2373777] = https://www.drupal.org/files/issues/warning_attempt_to-2373777-1.patch
+projects[ctools][subdir] = contrib
