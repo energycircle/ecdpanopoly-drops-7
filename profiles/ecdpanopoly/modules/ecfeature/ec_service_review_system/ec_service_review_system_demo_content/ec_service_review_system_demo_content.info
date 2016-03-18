@@ -1,6 +1,6 @@
 name = EC Service Review System Demo Content
 core = 7.x
-package = ECFeatures - BETA
+package = ECFeatures - Demo
 version = 7.x-1.0-beta1
 dependencies[] = ctools
 dependencies[] = ec_panopoly_page_overrides

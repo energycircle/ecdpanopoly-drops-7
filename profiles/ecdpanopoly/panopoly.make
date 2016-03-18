@@ -71,3 +71,6 @@ projects[tablefield][subdir] = contrib
 
 projects[views_bulk_operations][patch] =https://www.drupal.org/files/issues/inaccurate_total_passed_to_action.patch
 projects[views_bulk_operations][subdir] = contrib
+
+projects[token][patch][919760] = https://www.drupal.org/files/issues/token-current_page_object_token-919760-16.patch
+projects[token][subdir] = contrib
