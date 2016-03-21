@@ -139,10 +139,10 @@ projects[feeds_tamper][subdir] = eccontrib
 projects[feeds_tamper][version] = 1.1
 
 projects[field_collection][subdir] = eccontrib
-projects[field_collection][version] = 1.x
+projects[field_collection][version] = 1.0-beta11
 
 projects[field_default_token][subdir] = eccontrib
-projects[field_default_token][version] = 1.x
+projects[field_default_token][version] = 1.3
 
 projects[field_formatter_settings][subdir] = eccontrib
 projects[field_formatter_settings][version] = 1.x
@@ -193,13 +193,13 @@ projects[hierarchical_select][subdir] = eccontrib
 projects[hierarchical_select][version] = 3.0-beta3
 
 projects[honeypot][subdir] = eccontrib
-projects[honeypot][version] = 1.x
+projects[honeypot][version] = 1.22
 
 projects[image_link_formatter][subdir] = eccontrib
 projects[image_link_formatter][version] = 1.0
 
 projects[imagecache_token][subdir] = eccontrib
-projects[imagecache_token][version] = 1.x-dev
+projects[imagecache_token][version] = 1.0-rc2
 
 projects[insert_view][subdir] = eccontrib
 projects[insert_view][version] = 2.x
@@ -216,7 +216,7 @@ projects[leaflet][version] = 1.3
 projects[leaflet_widget][version] = 2.0-beta1
 projects[leaflet_widget][subdir] = contrib
 
-projects[leaflet_more_maps][version] = 1.14
+projects[leaflet_more_maps][version] = 1.16
 projects[leaflet_more_maps][subdir] = contrib
 
 projects[linkit_target][subdir] = eccontrib
@@ -295,7 +295,7 @@ projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.12
+projects[services][version] = 3.14
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 2.0
@@ -307,7 +307,7 @@ projects[smtp][subdir] = eccontrib
 projects[smtp][version] = 1.3
 
 projects[table_element][subdir] = eccontrib
-projects[table_element][version] = 1.x
+projects[table_element][version] = 1.0-beta5
 
 projects[taxonomy_menu][subdir] = eccontrib
 projects[taxonomy_menu][version] = 1.x
