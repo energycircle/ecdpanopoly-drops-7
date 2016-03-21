@@ -123,6 +123,18 @@ function ec_download_file_gate_rdf_default_mappings() {
     'field_button_text' => array(
       'predicates' => array(),
     ),
+    'field_ref_gated_file_service' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_gated_file_serv_cat' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_gated_file_serv_group' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_gated_file_page' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

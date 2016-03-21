@@ -11,7 +11,6 @@ function ec_download_file_gate_defaultconfig_features() {
   return array(
     'ec_download_file_gate' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
       'user_default_permissions' => 'user_default_permissions',
     ),
   );
@@ -86,6 +85,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Restricted',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
         'wysiwyg_override' => 0,
       ),
@@ -177,6 +177,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'display_summary' => 0,
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -193,7 +194,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -277,6 +278,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Button Text',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -292,7 +294,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -372,6 +374,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Display subtitle',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -387,7 +390,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -471,6 +474,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'settings' => array(
         'alt_field' => 1,
         'default_image' => 0,
+        'exclude_cv' => FALSE,
         'file_directory' => 'gate',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -503,7 +507,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -585,6 +589,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
+        'exclude_cv' => FALSE,
         'file_directory' => 'restricted',
         'file_extensions' => 'txt doc docx pdf',
         'max_filesize' => '',
@@ -626,7 +631,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -706,6 +711,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Company Name',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -792,6 +798,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'settings' => array(
         'ca_phone_parentheses' => 1,
         'ca_phone_separator' => '-',
+        'exclude_cv' => FALSE,
         'phone_country_code' => 0,
         'phone_default_country_code' => 1,
         'phone_int_max_length' => 15,
@@ -882,6 +889,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Download Link',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -972,6 +980,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Download Times',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'max' => '',
         'min' => '',
         'prefix' => '',
@@ -1061,6 +1070,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Downloaded',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1137,6 +1147,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Email',
       'required' => 1,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1228,6 +1239,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'description_field' => 0,
+        'exclude_cv' => FALSE,
         'file_directory' => 'private/restricted',
         'file_extensions' => 'pdf doc docx',
         'max_filesize' => '',
@@ -1349,6 +1361,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Key',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -1444,6 +1457,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Name',
       'required' => 1,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -1534,6 +1548,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Request Times',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'max' => '',
         'min' => '',
         'prefix' => '',
@@ -1627,6 +1642,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Send Email',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1666,404 +1682,10 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
 }
 
 /**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_download_file_gate_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_gated_file_page';
-  $strongarm->value = 'edit-extras';
-  $export['additional_settings__active_tab_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'auto_menutitle_gated_file_page';
-  $strongarm->value = 0;
-  $export['auto_menutitle_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'clear_all_gated_file_page';
-  $strongarm->value = 0;
-  $export['clear_all_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_cancel_gated_file_page';
-  $strongarm->value = '0';
-  $export['content_type_extras_cancel_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_preview_button_gated_file_page';
-  $strongarm->value = 'Preview';
-  $export['content_type_extras_preview_button_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_button_gated_file_page';
-  $strongarm->value = 'Save and Edit';
-  $export['content_type_extras_save_and_edit_button_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_gated_file_page';
-  $strongarm->value = '0';
-  $export['content_type_extras_save_and_edit_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_new_button_gated_file_page';
-  $strongarm->value = 'Save and New';
-  $export['content_type_extras_save_and_new_button_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_new_gated_file_page';
-  $strongarm->value = '1';
-  $export['content_type_extras_save_and_new_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_title_hide_gated_file_page';
-  $strongarm->value = 0;
-  $export['content_type_extras_title_hide_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'date_popup_authored_enabled_gated_file_page';
-  $strongarm->value = 1;
-  $export['date_popup_authored_enabled_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'date_popup_authored_format_gated_file_page';
-  $strongarm->value = 'm/d/Y - H:i';
-  $export['date_popup_authored_format_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'date_popup_authored_year_range_gated_file_page';
-  $strongarm->value = '3';
-  $export['date_popup_authored_year_range_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__gated_file_page';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'metatags' => array(
-          'weight' => '9',
-        ),
-        'title' => array(
-          'weight' => '0',
-        ),
-        'path' => array(
-          'weight' => '8',
-        ),
-        'redirect' => array(
-          'weight' => '7',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '6',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_node__gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__request_restricted';
-  $strongarm->value = array(
-    'view_modes' => array(
-      'teaser' => array(
-        'custom_settings' => TRUE,
-      ),
-      'show_this_block' => array(
-        'custom_settings' => TRUE,
-      ),
-      'grouped_teaser' => array(
-        'custom_settings' => TRUE,
-      ),
-      'featured' => array(
-        'custom_settings' => TRUE,
-      ),
-      'full' => array(
-        'custom_settings' => FALSE,
-      ),
-      'rss' => array(
-        'custom_settings' => FALSE,
-      ),
-      'search_index' => array(
-        'custom_settings' => FALSE,
-      ),
-      'search_result' => array(
-        'custom_settings' => FALSE,
-      ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
-    'extra_fields' => array(
-      'form' => array(
-        'metatags' => array(
-          'weight' => '15',
-        ),
-        'title' => array(
-          'weight' => '0',
-        ),
-        'path' => array(
-          'weight' => '14',
-        ),
-        'redirect' => array(
-          'weight' => '13',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '12',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_node__request_restricted'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'formblock_expose_request_restricted';
-  $strongarm->value = 1;
-  $export['formblock_expose_request_restricted'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'formblock_show_help_request_restricted';
-  $strongarm->value = 0;
-  $export['formblock_show_help_request_restricted'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_request_restricted';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
-  $export['menu_options_request_restricted'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__gated_file_page';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_request_restricted';
-  $strongarm->value = array(
-    0 => 'status',
-  );
-  $export['node_options_request_restricted'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_request_restricted';
-  $strongarm->value = '0';
-  $export['node_preview_request_restricted'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_gated_file_page';
-  $strongarm->value = array(
-    'status' => 1,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 1,
-        'default' => 1,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'show_this_block' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'grouped_teaser' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-    ),
-  );
-  $export['panelizer_defaults_node_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_gated_file_page_pattern';
-  $strongarm->value = 'guide/[node:title]';
-  $export['pathauto_node_gated_file_page_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'schemaorg_ui_type_gated_file_page';
-  $strongarm->value = '';
-  $export['schemaorg_ui_type_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'schemaorg_ui_type_request_restricted';
-  $strongarm->value = '';
-  $export['schemaorg_ui_type_request_restricted'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sync_translations_gated_file_page';
-  $strongarm->value = '0';
-  $export['sync_translations_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'user_permissions_gated_file_page';
-  $strongarm->value = array(
-    0 => 'create_roles',
-    1 => 'edit_roles',
-    2 => 'edit_own_roles',
-    3 => 'delete_roles',
-    4 => 'delete_own_roles',
-  );
-  $export['user_permissions_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_default_gated_file_page';
-  $strongarm->value = '0';
-  $export['weight_default_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_enabled_gated_file_page';
-  $strongarm->value = '0';
-  $export['weight_enabled_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_menu_gated_file_page';
-  $strongarm->value = '0';
-  $export['weight_menu_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_range_gated_file_page';
-  $strongarm->value = '20';
-  $export['weight_range_gated_file_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'xmlsitemap_settings_node_gated_file_page';
-  $strongarm->value = array(
-    'status' => '1',
-    'priority' => '0.5',
-  );
-  $export['xmlsitemap_settings_node_gated_file_page'] = $strongarm;
-
-  return $export;
-}
-
-/**
  * Implements hook_defaultconfig_user_default_permissions().
  */
 function ec_download_file_gate_defaultconfig_user_default_permissions() {
   $permissions = array();
-
-  // Exported permission: 'administer panelizer node gated_file_page breadcrumbs'.
-  $permissions['administer panelizer node gated_file_page breadcrumbs'] = array(
-    'name' => 'administer panelizer node gated_file_page breadcrumbs',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node gated_file_page content'.
-  $permissions['administer panelizer node gated_file_page content'] = array(
-    'name' => 'administer panelizer node gated_file_page content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node gated_file_page context'.
-  $permissions['administer panelizer node gated_file_page context'] = array(
-    'name' => 'administer panelizer node gated_file_page context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node gated_file_page layout'.
-  $permissions['administer panelizer node gated_file_page layout'] = array(
-    'name' => 'administer panelizer node gated_file_page layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node gated_file_page overview'.
-  $permissions['administer panelizer node gated_file_page overview'] = array(
-    'name' => 'administer panelizer node gated_file_page overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node gated_file_page settings'.
-  $permissions['administer panelizer node gated_file_page settings'] = array(
-    'name' => 'administer panelizer node gated_file_page settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
 
   // Exported permission: 'administer panelizer node request_restricted defaults'.
   $permissions['administer panelizer node request_restricted defaults'] = array(

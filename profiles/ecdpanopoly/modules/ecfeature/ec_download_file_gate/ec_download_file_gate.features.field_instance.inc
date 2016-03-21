@@ -48,6 +48,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Restricted',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'user_register_form' => FALSE,
       'wysiwyg_override' => 0,
     ),
@@ -110,6 +111,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
+      'exclude_cv' => FALSE,
       'linkit' => array(
         'button_text' => 'Search',
         'enable' => 0,
@@ -126,7 +128,7 @@ function ec_download_file_gate_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -181,6 +183,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Button Text',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'linkit' => array(
         'button_text' => 'Search',
         'enable' => 0,
@@ -196,7 +199,7 @@ function ec_download_file_gate_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -247,6 +250,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Display subtitle',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'linkit' => array(
         'button_text' => 'Search',
         'enable' => 0,
@@ -262,7 +266,7 @@ function ec_download_file_gate_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -316,6 +320,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
+      'exclude_cv' => FALSE,
       'file_directory' => 'gate',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -348,7 +353,270 @@ function ec_download_file_gate_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 2,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-gated_file_page-field_ref_gated_file_page'.
+  $field_instances['node-gated_file_page-field_ref_gated_file_page'] = array(
+    'bundle' => 'gated_file_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 8,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'exclude_cv' => 0,
+    'field_name' => 'field_ref_gated_file_page',
+    'label' => 'Page',
+    'required' => 0,
+    'settings' => array(
+      'exclude_cv' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-gated_file_page-field_ref_gated_file_serv_cat'.
+  $field_instances['node-gated_file_page-field_ref_gated_file_serv_cat'] = array(
+    'bundle' => 'gated_file_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select service category pages to show this gated file on.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 6,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'exclude_cv' => 0,
+    'field_name' => 'field_ref_gated_file_serv_cat',
+    'label' => 'Service Catetory',
+    'required' => 0,
+    'settings' => array(
+      'exclude_cv' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-gated_file_page-field_ref_gated_file_serv_group'.
+  $field_instances['node-gated_file_page-field_ref_gated_file_serv_group'] = array(
+    'bundle' => 'gated_file_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 7,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'exclude_cv' => 0,
+    'field_name' => 'field_ref_gated_file_serv_group',
+    'label' => 'Service Group',
+    'required' => 0,
+    'settings' => array(
+      'exclude_cv' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 18,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-gated_file_page-field_ref_gated_file_service'.
+  $field_instances['node-gated_file_page-field_ref_gated_file_service'] = array(
+    'bundle' => 'gated_file_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select Service pages to show this file on',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'exclude_cv' => 0,
+    'field_name' => 'field_ref_gated_file_service',
+    'label' => 'Service',
+    'required' => 0,
+    'settings' => array(
+      'exclude_cv' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 16,
     ),
   );
 
@@ -400,6 +668,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
+      'exclude_cv' => FALSE,
       'file_directory' => 'restricted',
       'file_extensions' => 'txt doc docx pdf',
       'max_filesize' => '',
@@ -441,7 +710,78 @@ function ec_download_file_gate_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 4,
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-panopoly_page-field_ref_page_gated_file'.
+  $field_instances['node-panopoly_page-field_ref_page_gated_file'] = array(
+    'bundle' => 'panopoly_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 15,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'exclude_cv' => 0,
+    'field_name' => 'field_ref_page_gated_file',
+    'label' => 'Gated File',
+    'required' => 0,
+    'settings' => array(
+      'exclude_cv' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 15,
     ),
   );
 
@@ -492,6 +832,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Company Name',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'linkit' => array(
         'button_text' => 'Search',
         'enable' => 0,
@@ -560,6 +901,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'settings' => array(
       'ca_phone_parentheses' => 1,
       'ca_phone_separator' => '-',
+      'exclude_cv' => FALSE,
       'phone_country_code' => 0,
       'phone_default_country_code' => 1,
       'phone_int_max_length' => 15,
@@ -621,6 +963,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Download Link',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'linkit' => array(
         'button_text' => 'Search',
         'enable' => 0,
@@ -695,6 +1038,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Download Times',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -759,6 +1103,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Downloaded',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -819,6 +1164,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Email',
     'required' => 1,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -879,6 +1225,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'description_field' => 0,
+      'exclude_cv' => FALSE,
       'file_directory' => 'private/restricted',
       'file_extensions' => 'pdf doc docx',
       'max_filesize' => '',
@@ -971,6 +1318,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Key',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'linkit' => array(
         'button_text' => 'Search',
         'enable' => 0,
@@ -1037,6 +1385,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Name',
     'required' => 1,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'linkit' => array(
         'button_text' => 'Search',
         'enable' => 0,
@@ -1112,6 +1461,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Request Times',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -1180,6 +1530,7 @@ function ec_download_file_gate_field_default_field_instances() {
     'label' => 'Send Email',
     'required' => 0,
     'settings' => array(
+      'exclude_cv' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1190,6 +1541,203 @@ function ec_download_file_gate_field_default_field_instances() {
       ),
       'type' => 'options_onoff',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-service-field_ref_service_gated_file'.
+  $field_instances['node-service-field_ref_service_gated_file'] = array(
+    'bundle' => 'service',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 15,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'exclude_cv' => 0,
+    'field_name' => 'field_ref_service_gated_file',
+    'label' => 'Gated File',
+    'required' => 0,
+    'settings' => array(
+      'exclude_cv' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-service_category-field_ref_serv_cat_gated_file'.
+  $field_instances['node-service_category-field_ref_serv_cat_gated_file'] = array(
+    'bundle' => 'service_category',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 18,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'exclude_cv' => 0,
+    'field_name' => 'field_ref_serv_cat_gated_file',
+    'label' => 'Gated File',
+    'required' => 0,
+    'settings' => array(
+      'exclude_cv' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-service_group-field_ref_serv_group_gated_file'.
+  $field_instances['node-service_group-field_ref_serv_group_gated_file'] = array(
+    'bundle' => 'service_group',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 14,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'exclude_cv' => 0,
+    'field_name' => 'field_ref_serv_group_gated_file',
+    'label' => 'Gated File',
+    'required' => 0,
+    'settings' => array(
+      'exclude_cv' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 23,
     ),
   );
 
@@ -1205,14 +1753,21 @@ function ec_download_file_gate_field_default_field_instances() {
   t('Downloaded');
   t('Email');
   t('File');
+  t('Gated File');
   t('Image');
   t('Key');
   t('Name');
+  t('Page');
   t('Phone');
   t('Request Times');
   t('Restricted');
   t('Restricted Download File');
+  t('Select Service pages to show this file on');
+  t('Select service category pages to show this gated file on.');
   t('Send Email');
+  t('Service');
+  t('Service Catetory');
+  t('Service Group');
 
   return $field_instances;
 }
