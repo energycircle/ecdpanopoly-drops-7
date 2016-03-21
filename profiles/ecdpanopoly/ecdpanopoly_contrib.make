@@ -139,10 +139,10 @@ projects[feeds_tamper][subdir] = eccontrib
 projects[feeds_tamper][version] = 1.1
 
 projects[field_collection][subdir] = eccontrib
-projects[field_collection][version] = 1.0-beta10
+projects[field_collection][version] = 1.x
 
 projects[field_default_token][subdir] = eccontrib
-projects[field_default_token][version] = 1.2
+projects[field_default_token][version] = 1.x
 
 projects[field_formatter_settings][subdir] = eccontrib
 projects[field_formatter_settings][version] = 1.x
@@ -193,7 +193,7 @@ projects[hierarchical_select][subdir] = eccontrib
 projects[hierarchical_select][version] = 3.0-beta3
 
 projects[honeypot][subdir] = eccontrib
-projects[honeypot][version] = 1.21
+projects[honeypot][version] = 1.x
 
 projects[image_link_formatter][subdir] = eccontrib
 projects[image_link_formatter][version] = 1.0
@@ -307,7 +307,7 @@ projects[smtp][subdir] = eccontrib
 projects[smtp][version] = 1.3
 
 projects[table_element][subdir] = eccontrib
-projects[table_element][version] = 1.0-beta3
+projects[table_element][version] = 1.x
 
 projects[taxonomy_menu][subdir] = eccontrib
 projects[taxonomy_menu][version] = 1.x
