@@ -9,9 +9,9 @@ package = "Node export"
 project = node_export
 
 
-; Information added by Drupal.org packaging script on 2016-03-19
-version = "7.x-3.1+1-dev"
+; Information added by Drupal.org packaging script on 2016-03-23
+version = "7.x-3.1+3-dev"
 core = "7.x"
 project = "node_export"
-datestamp = "1458391143"
+datestamp = "1458698951"
 
