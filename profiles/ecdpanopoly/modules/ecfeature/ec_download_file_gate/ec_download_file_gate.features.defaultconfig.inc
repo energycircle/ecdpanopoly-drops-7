@@ -85,7 +85,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Restricted',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
         'wysiwyg_override' => 0,
       ),
@@ -177,7 +176,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'display_summary' => 0,
-        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -194,7 +192,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => 3,
       ),
     ),
   );
@@ -278,7 +276,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Button Text',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -294,7 +291,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 6,
+        'weight' => 5,
       ),
     ),
   );
@@ -374,7 +371,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Display subtitle',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -390,7 +386,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
   );
@@ -474,7 +470,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'settings' => array(
         'alt_field' => 1,
         'default_image' => 0,
-        'exclude_cv' => FALSE,
         'file_directory' => 'gate',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -507,7 +502,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
   );
@@ -589,7 +584,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
-        'exclude_cv' => FALSE,
         'file_directory' => 'restricted',
         'file_extensions' => 'txt doc docx pdf',
         'max_filesize' => '',
@@ -631,7 +625,7 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 5,
+        'weight' => 4,
       ),
     ),
   );
@@ -711,7 +705,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Company Name',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -798,7 +791,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'settings' => array(
         'ca_phone_parentheses' => 1,
         'ca_phone_separator' => '-',
-        'exclude_cv' => FALSE,
         'phone_country_code' => 0,
         'phone_default_country_code' => 1,
         'phone_int_max_length' => 15,
@@ -889,7 +881,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Download Link',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -980,7 +971,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Download Times',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'max' => '',
         'min' => '',
         'prefix' => '',
@@ -1070,7 +1060,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Downloaded',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1147,7 +1136,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Email',
       'required' => 1,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1239,7 +1227,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'description_field' => 0,
-        'exclude_cv' => FALSE,
         'file_directory' => 'private/restricted',
         'file_extensions' => 'pdf doc docx',
         'max_filesize' => '',
@@ -1361,7 +1348,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Key',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -1457,7 +1443,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Name',
       'required' => 1,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -1548,7 +1533,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Request Times',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'max' => '',
         'min' => '',
         'prefix' => '',
@@ -1642,7 +1626,6 @@ function ec_download_file_gate_defaultconfig_field_default_fields() {
       'label' => 'Send Email',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(

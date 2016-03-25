@@ -31,9 +31,28 @@ function ec_download_file_gate_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'management_tracked-downloads:admin/reports/downloads',
   );
+  // Exported menu link: navigation_request-restricted:node/add/request-restricted.
+  $menu_links['navigation_request-restricted:node/add/request-restricted'] = array(
+    'menu_name' => 'navigation',
+    'link_path' => 'node/add/request-restricted',
+    'router_path' => 'node/add/request-restricted',
+    'link_title' => 'Request Restricted',
+    'options' => array(
+      'identifier' => 'navigation_request-restricted:node/add/request-restricted',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'navigation_add-content:node/add',
+  );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Request Restricted');
   t('Thank you page');
 
   return $menu_links;

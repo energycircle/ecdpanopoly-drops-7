@@ -123,16 +123,67 @@ function ec_download_file_gate_rdf_default_mappings() {
     'field_button_text' => array(
       'predicates' => array(),
     ),
-    'field_ref_gated_file_service' => array(
+  );
+
+  // Exported RDF mapping: request_restricted
+  $schemaorg['node']['request_restricted'] = array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'field_phone' => array(
       'predicates' => array(),
     ),
-    'field_ref_gated_file_serv_cat' => array(
-      'predicates' => array(),
-    ),
-    'field_ref_gated_file_serv_group' => array(
-      'predicates' => array(),
-    ),
-    'field_ref_gated_file_page' => array(
+    'field_company' => array(
       'predicates' => array(),
     ),
   );
