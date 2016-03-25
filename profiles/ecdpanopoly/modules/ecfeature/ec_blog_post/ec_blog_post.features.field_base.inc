@@ -167,7 +167,6 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-
   // Exported field_base: 'field_ref_page_blog'.
   $field_bases['field_ref_page_blog'] = array(
     'active' => 1,

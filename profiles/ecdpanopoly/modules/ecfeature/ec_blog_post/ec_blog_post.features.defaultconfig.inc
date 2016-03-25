@@ -921,7 +921,6 @@ function ec_blog_post_defaultconfig_field_default_fields() {
     ),
   );
 
-  
   // Exported field: 'node-panopoly_page-field_ref_page_blog'.
   $fields['node-panopoly_page-field_ref_page_blog'] = array(
     'field_config' => array(
@@ -1388,7 +1387,6 @@ function ec_blog_post_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
-  t('Blog Posts');
   t('Body');
   t('Category');
   t('Content Page');
@@ -1417,13 +1415,6 @@ function ec_blog_post_defaultconfig_strongarm() {
   $strongarm->name = 'metatag_enable_node__blog_post';
   $strongarm->value = TRUE;
   $export['metatag_enable_node__blog_post'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'schemaorg_ui_type_blog_post';
-  $strongarm->value = 'Blog';
-  $export['schemaorg_ui_type_blog_post'] = $strongarm;
 
   return $export;
 }

@@ -1011,48 +1011,6 @@ function ec_base_config_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'honeypot_element_name';
-  $strongarm->value = 'url';
-  $export['honeypot_element_name'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'honeypot_form_user_pass';
-  $strongarm->value = 0;
-  $export['honeypot_form_user_pass'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'honeypot_form_user_register_form';
-  $strongarm->value = 0;
-  $export['honeypot_form_user_register_form'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'honeypot_log';
-  $strongarm->value = 0;
-  $export['honeypot_log'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'honeypot_protect_all_forms';
-  $strongarm->value = 1;
-  $export['honeypot_protect_all_forms'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'honeypot_time_limit';
-  $strongarm->value = '5';
-  $export['honeypot_time_limit'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'image_toolkit';
   $strongarm->value = 'gd';
   $export['image_toolkit'] = $strongarm;
@@ -1084,6 +1042,79 @@ function ec_base_config_defaultconfig_strongarm() {
   $strongarm->name = 'panopoly_magic_strip_js_from_preview';
   $strongarm->value = '1';
   $export['panopoly_magic_strip_js_from_preview'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_button_option';
+  $strongarm->value = 'stbc_button';
+  $export['sharethis_button_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_late_load';
+  $strongarm->value = 0;
+  $export['sharethis_late_load'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_location';
+  $strongarm->value = 'block';
+  $export['sharethis_location'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_option_extras';
+  $strongarm->value = array(
+    'Google Plus One:plusone' => 0,
+    'Facebook Like:fblike' => 0,
+  );
+  $export['sharethis_option_extras'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_option_neworzero';
+  $strongarm->value = 0;
+  $export['sharethis_option_neworzero'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_option_onhover';
+  $strongarm->value = 1;
+  $export['sharethis_option_onhover'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_option_shorten';
+  $strongarm->value = 1;
+  $export['sharethis_option_shorten'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_twitter_recommends';
+  $strongarm->value = '';
+  $export['sharethis_twitter_recommends'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_twitter_suffix';
+  $strongarm->value = '';
+  $export['sharethis_twitter_suffix'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_weight';
+  $strongarm->value = '10';
+  $export['sharethis_weight'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

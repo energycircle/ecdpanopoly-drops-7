@@ -599,6 +599,17 @@ function ec_base_config_user_default_permissions() {
     'module' => 'rules',
   );
 
+  // Exported permission: 'administer sharethis'.
+  $permissions['administer sharethis'] = array(
+    'name' => 'administer sharethis',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'sharethis',
+  );
+
   // Exported permission: 'administer site configuration'.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',

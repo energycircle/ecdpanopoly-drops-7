@@ -623,8 +623,6 @@ function ec_blog_post_field_default_field_instances() {
     ),
   );
 
-
-
   // Exported field_instance: 'node-panopoly_page-field_ref_page_blog'.
   $field_instances['node-panopoly_page-field_ref_page_blog'] = array(
     'bundle' => 'panopoly_page',
@@ -910,7 +908,6 @@ function ec_blog_post_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
-  t('Blog Posts');
   t('Body');
   t('Category');
   t('Content Page');
