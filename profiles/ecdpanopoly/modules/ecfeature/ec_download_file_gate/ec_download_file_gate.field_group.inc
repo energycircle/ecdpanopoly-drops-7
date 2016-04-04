@@ -26,7 +26,6 @@ function ec_download_file_gate_field_group_info() {
       0 => 'field_ref_gated_file_service',
       1 => 'field_ref_gated_file_serv_cat',
       2 => 'field_ref_gated_file_serv_group',
-      3 => 'field_ref_gated_file_page',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

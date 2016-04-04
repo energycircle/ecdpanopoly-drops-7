@@ -58,9 +58,9 @@ test_dependencies[] = context
 test_dependencies[] = panels
 test_dependencies[] = views
 
-; Information added by Drupal.org packaging script on 2016-03-24
-version = "7.x-1.13+10-dev"
+; Information added by Drupal.org packaging script on 2016-04-02
+version = "7.x-1.14+0-dev"
 core = "7.x"
 project = "metatag"
-datestamp = "1458826747"
+datestamp = "1459607041"
 

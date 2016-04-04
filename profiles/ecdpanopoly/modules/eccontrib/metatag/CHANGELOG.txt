@@ -1,5 +1,5 @@
-Metatag 7.x-1.x-dev, xxxx-xx-xx
--------------------------------
+Metatag 7.x-1.14, 2016-04-02
+----------------------------
 By DamienMcKenna: Corrected return code from update 7107.
 #2664624 by DamienMcKenna: Added a space in front of the Google Plus schemaorg
   variable to avoid HTML validation errors because of the lack of space.
@@ -12,6 +12,13 @@ By DamienMcKenna: Corrected return code from update 7107.
 #2692933 by doostinharrell, DamienMcKenna: $metatags variable in
   metatag_field_attach_form() may not be an array in certain circumstances.
 #2658808 by tommik: Rewrote query in update 7040 so it works better.
+#2688963 by DamienMcKenna: Added a note about the Yoast SEO module.
+#2687847 by DamienMcKenna: Added a note about the Parse.ly module.
+#2696445 by Simon Georges: Added the twitter:image:alt meta tag.
+#2678896 by Dave Reid: Fixed double-encoding of form fields.
+#2667214 by DamienMcKenna: Improved tests for string encoding.
+#2667214 by joelstein, DamienMcKenna: Decode HTML entities prior to rendering
+  meta tags.
 
 
 Metatag 7.x-1.13, 2016-03-04

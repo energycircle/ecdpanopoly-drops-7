@@ -183,8 +183,6 @@ function ec_service_review_system_views_default_views() {
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'entityform';
   $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
-  $handler->display->display_options['fields']['created']['second_date_format'] = 'panopoly_time';
   /* Field: Entityform Submission: Rating */
   $handler->display->display_options['fields']['field_sreview_rating']['id'] = 'field_sreview_rating';
   $handler->display->display_options['fields']['field_sreview_rating']['table'] = 'field_data_field_sreview_rating';
@@ -321,10 +319,10 @@ function ec_service_review_system_views_default_views() {
 
   $view = new view();
   $view->name = 'sreview_sites';
-  $view->description = 'External review sites to display in the Review Management System';
+  $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'DELETE - Service Review Sites';
+  $view->human_name = 'Service Review Sites';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -337,51 +335,28 @@ function ec_service_review_system_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['columns'] = array(
-    'title' => 'title',
-    'field_review_site_url' => 'field_review_site_url',
-  );
-  $handler->display->display_options['style_options']['default'] = '-1';
-  $handler->display->display_options['style_options']['info'] = array(
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_review_site_url' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-  );
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<h2>Satisfied with your experience? Please take a minute to share a review of our services on any of the following sites.</h2>';
-  $handler->display->display_options['header']['area']['format'] = 'panopoly_wysiwyg_text';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: Service Review Page */
   $handler->display->display_options['fields']['field_sreview_page']['id'] = 'field_sreview_page';
   $handler->display->display_options['fields']['field_sreview_page']['table'] = 'field_data_field_sreview_page';
   $handler->display->display_options['fields']['field_sreview_page']['field'] = 'field_sreview_page';
-  $handler->display->display_options['fields']['field_sreview_page']['label'] = '';
   $handler->display->display_options['fields']['field_sreview_page']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_sreview_page']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_sreview_page']['click_sort_column'] = 'url';
-  $handler->display->display_options['fields']['field_sreview_page']['type'] = 'link_plain';
+  $handler->display->display_options['fields']['field_sreview_page']['type'] = 'link_title_plain';
   /* Field: Content: Service Review Site Logo */
   $handler->display->display_options['fields']['field_sreview_logo']['id'] = 'field_sreview_logo';
   $handler->display->display_options['fields']['field_sreview_logo']['table'] = 'field_data_field_sreview_logo';
   $handler->display->display_options['fields']['field_sreview_logo']['field'] = 'field_sreview_logo';
-  $handler->display->display_options['fields']['field_sreview_logo']['label'] = '';
   $handler->display->display_options['fields']['field_sreview_logo']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_sreview_logo']['alter']['text'] = '<a href="[field_sreview_page]" target="_blank">[field_sreview_logo]</a>';
-  $handler->display->display_options['fields']['field_sreview_logo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_sreview_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_sreview_logo']['settings'] = array(
     'image_style' => 's_140',
@@ -391,7 +366,7 @@ function ec_service_review_system_views_default_views() {
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'rms_review_sites:page_1';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'sreview_sites:panel_pane_2';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -411,8 +386,8 @@ function ec_service_review_system_views_default_views() {
   /* Display: Service Review Sites */
   $handler = $view->new_display('panel_pane', 'Service Review Sites', 'panel_pane_1');
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_1');
+  /* Display: Rearrange Service Review Sites */
+  $handler = $view->new_display('panel_pane', 'Rearrange Service Review Sites', 'panel_pane_2');
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
@@ -420,6 +395,40 @@ function ec_service_review_system_views_default_views() {
     3 => '3',
     4 => '4',
   );
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_sreview_page' => 'field_sreview_page',
+    'field_sreview_logo' => 'field_sreview_logo',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_sreview_page' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_sreview_logo' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Draggableviews: Content */
   $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
@@ -433,13 +442,9 @@ function ec_service_review_system_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  $handler->display->display_options['path'] = 'admin/service-review-sites';
-  $handler->display->display_options['menu']['title'] = 'RMS Review';
-  $handler->display->display_options['menu']['weight'] = '0';
-  $handler->display->display_options['menu']['name'] = 'management';
-  $handler->display->display_options['menu']['context'] = 0;
-  $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $export['sreview_sites'] = $view;
 
   $view = new view();
