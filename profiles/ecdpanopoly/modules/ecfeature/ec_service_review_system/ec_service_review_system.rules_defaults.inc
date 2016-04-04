@@ -9,6 +9,63 @@
  */
 function ec_service_review_system_default_rules_configuration() {
   $items = array();
+  $items['entityform_notifications_sreview_notification_email_admin'] = entity_import('rules_config', '{ "entityform_notifications_sreview_notification_email_admin" : {
+      "LABEL" : "Service Review Notification Email Admin",
+      "PLUGIN" : "rule",
+      "OWNER" : "rules",
+      "TAGS" : [ "entity_rules_entityform_submission" ],
+      "REQUIRES" : [ "rules" ],
+      "USES VARIABLES" : {
+        "entity" : { "label" : "Entity", "type" : "entityform" },
+        "continue" : { "label" : "Continue Rules", "type" : "boolean" },
+        "email_subject" : { "label" : "Email Subject", "type" : "text" },
+        "email_body" : { "label" : "Email Body", "type" : "text" },
+        "show_submission" : { "label" : "Show Submission", "type" : "boolean" },
+        "to_email" : { "label" : "To Email", "type" : "text" }
+      },
+      "IF" : [ { "entity_is_new" : { "entity" : [ "entity" ] } } ],
+      "DO" : [
+        { "component_rules_entityform_notifications_email_send" : {
+            "entityform" : [ "entity" ],
+            "email_address" : [ "to-email" ],
+            "show_submission" : [ "show-submission" ],
+            "email_subject" : [ "email-subject" ],
+            "email_body" : [ "email-body" ]
+          }
+        }
+      ],
+      "PROVIDES VARIABLES" : [ "continue" ]
+    }
+  }');
+  $items['entityform_notifications_sreview_notification_email_submitter'] = entity_import('rules_config', '{ "entityform_notifications_sreview_notification_email_submitter" : {
+      "LABEL" : "Service Review Notification Email Submitter",
+      "PLUGIN" : "rule",
+      "OWNER" : "rules",
+      "TAGS" : [ "entity_rules_entityform_submission" ],
+      "REQUIRES" : [ "rules" ],
+      "USES VARIABLES" : {
+        "entity" : { "label" : "Entity", "type" : "entityform" },
+        "continue" : { "label" : "Continue Rules", "type" : "boolean" },
+        "email_subject" : { "label" : "Email Subject", "type" : "text" },
+        "email_body" : { "label" : "Email Body", "type" : "text" },
+        "show_submission" : { "label" : "Show Submission", "type" : "boolean" }
+      },
+      "IF" : [
+        { "user_has_role" : { "account" : [ "entity:user" ], "roles" : { "value" : { "2" : "2" } } } }
+      ],
+      "DO" : [
+        { "component_rules_entityform_notifications_email_send" : {
+            "entityform" : [ "entity" ],
+            "email_address" : [ "entity:user:mail" ],
+            "show_submission" : [ "show-submission" ],
+            "email_subject" : [ "email-subject" ],
+            "email_body" : [ "email-body" ]
+          }
+        }
+      ],
+      "PROVIDES VARIABLES" : [ "continue" ]
+    }
+  }');
   $items['rules_sreview_email_submitter'] = entity_import('rules_config', '{ "rules_sreview_email_submitter" : {
       "LABEL" : "Service Review - Email Submitter",
       "PLUGIN" : "reaction rule",

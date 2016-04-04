@@ -20,7 +20,6 @@ function ec_service_review_system_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
-    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'New',
@@ -32,7 +31,6 @@ function ec_service_review_system_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
-    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Complete',
@@ -44,7 +42,6 @@ function ec_service_review_system_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
-    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Follow-up needed',
@@ -56,7 +53,6 @@ function ec_service_review_system_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
-    'url_alias' => array(),
   );
   return $terms;
 }
