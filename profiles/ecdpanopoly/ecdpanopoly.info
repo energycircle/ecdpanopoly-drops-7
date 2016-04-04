@@ -125,7 +125,7 @@ dependencies[] = ec_panopoly_page_overrides
 
 
 ; Information added by flux423 - updated on 2016-3-15
-version = "7.x-1.2-rc1.2"
+version = "7.x-1.2"
 core = "7.x"
 project = "ECDPanopoly"
 
