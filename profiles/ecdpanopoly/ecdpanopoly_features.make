@@ -177,6 +177,12 @@ projects[ec_product_page_lite][subdir] = ecfeature
 projects[ec_product_page_lite][type] = module
 projects[ec_product_page_lite][version] = 1.x
 
+projects[ec_pdf_watermark][download][type] = git
+projects[ec_pdf_watermark][download][url] = https://github.com/energycircle/ec_pdf_watermark.git
+projects[ec_pdf_watermark][subdir] = ecfeature
+projects[ec_pdf_watermark][type] = module
+projects[ec_pdf_watermark][version] = 1.x
+
 projects[ec_promotions][download][type] = git
 projects[ec_promotions][download][url] = https://github.com/energycircle/ec_promotions.git
 projects[ec_promotions][subdir] = ecfeature

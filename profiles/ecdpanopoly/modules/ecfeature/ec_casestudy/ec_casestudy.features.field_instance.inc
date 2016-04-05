@@ -286,7 +286,13 @@ function ec_casestudy_field_default_field_instances() {
   // Exported field_instance: 'node-case_study-field_call_to_action'.
   $field_instances['node-case_study-field_call_to_action'] = array(
     'bundle' => 'case_study',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => '<p>[custom:phone-number]</p>',
+        'format' => 'panopoly_wysiwyg_text',
+      ),
+    ),
+    'default_value_function' => 'field_default_token_default_value_function',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -614,8 +620,6 @@ function ec_casestudy_field_default_field_instances() {
       'weight' => 15,
     ),
   );
-
- 
 
   // Exported field_instance: 'node-gallery-field_ref_gallery_case_study'.
   $field_instances['node-gallery-field_ref_gallery_case_study'] = array(

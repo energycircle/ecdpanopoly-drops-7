@@ -153,7 +153,6 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-
   // Exported field_base: 'field_ref_gallery_case_study'.
   $field_bases['field_ref_gallery_case_study'] = array(
     'active' => 1,
