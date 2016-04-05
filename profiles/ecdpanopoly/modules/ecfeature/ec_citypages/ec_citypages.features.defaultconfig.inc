@@ -11,7 +11,6 @@ function ec_citypages_defaultconfig_features() {
   return array(
     'ec_citypages' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -343,6 +342,9 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_call_to_action',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -364,7 +366,13 @@ function ec_citypages_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'city_page',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => '<p>[custom:phone-number]</p>',
+          'format' => 'panopoly_wysiwyg_text',
+        ),
+      ),
+      'default_value_function' => 'field_default_token_default_value_function',
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -420,6 +428,10 @@ function ec_citypages_defaultconfig_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => 5,
         ),
         'type' => 'text_textarea',
@@ -1904,20 +1916,4 @@ function ec_citypages_defaultconfig_field_default_fields() {
   t('Testimonials');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_citypages_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'schemaorg_ui_type_city_page';
-  $strongarm->value = '';
-  $export['schemaorg_ui_type_city_page'] = $strongarm;
-
-  return $export;
 }
