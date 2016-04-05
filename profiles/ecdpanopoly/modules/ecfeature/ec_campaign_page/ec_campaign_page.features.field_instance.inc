@@ -319,7 +319,13 @@ function ec_campaign_page_field_default_field_instances() {
   // Exported field_instance: 'node-campaign_page-field_call_to_action'.
   $field_instances['node-campaign_page-field_call_to_action'] = array(
     'bundle' => 'campaign_page',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => '<p>[custom:phone-number]</p>',
+        'format' => 'panopoly_wysiwyg_text',
+      ),
+    ),
+    'default_value_function' => 'field_default_token_default_value_function',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -346,8 +352,9 @@ function ec_campaign_page_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
       'text_processing' => 1,
       'user_register_form' => FALSE,

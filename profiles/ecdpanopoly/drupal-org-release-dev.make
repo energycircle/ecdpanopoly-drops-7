@@ -1,6 +1,6 @@
 api = 2
 core = 7.x
-base= panopoly
+base = panopoly
 
 ; Use Panopoly instead of Drupal core:
  projects[panopoly][type] = core

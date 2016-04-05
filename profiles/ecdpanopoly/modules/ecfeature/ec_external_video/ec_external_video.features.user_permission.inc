@@ -10,15 +10,6 @@
 function ec_external_video_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer panelizer node external_video defaults'.
-  $permissions['administer panelizer node external_video defaults'] = array(
-    'name' => 'administer panelizer node external_video defaults',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'create external_video content'.
   $permissions['create external_video content'] = array(
     'name' => 'create external_video content',

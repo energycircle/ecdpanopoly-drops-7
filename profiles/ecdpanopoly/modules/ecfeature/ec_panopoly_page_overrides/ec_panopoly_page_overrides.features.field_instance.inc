@@ -84,7 +84,13 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
   // Exported field_instance: 'node-panopoly_page-field_call_to_action'.
   $field_instances['node-panopoly_page-field_call_to_action'] = array(
     'bundle' => 'panopoly_page',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => '<p>[custom:phone-number]</p>',
+        'format' => 'panopoly_wysiwyg_text',
+      ),
+    ),
+    'default_value_function' => 'field_default_token_default_value_function',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -135,8 +141,9 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
@@ -145,6 +152,10 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
         'rows' => 5,
       ),
       'type' => 'text_textarea',
