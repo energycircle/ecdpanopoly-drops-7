@@ -16,7 +16,7 @@ projects[uuid_features][patch][1973770] = https://www.drupal.org/files/issues/uu
 projects[uuid_features][patch] = https://www.drupal.org/files/uuid_features-1719414-13.patch
 projects[uuid_features][patch] = https://www.drupal.org/files/uuid_features-fix_pipe-1964722-11.patch
 projects[uuid_features][patch] = https://www.drupal.org/files/uuid_features-user_export-993076-0.patch			
-
+projects[uuid_features][patch] = https://www.drupal.org/files/issues/added-filter-check-on-feature-node-rebuild-2307757-2.patch
 projects[features_roles_permissions][version] = 1.2
 projects[features_roles_permissions][subdir] = ec-dev
 
