@@ -89,6 +89,7 @@ dependencies[] = jcarousel
 dependencies[] = jcarousel_skins
 dependencies[] = linkit_target
 dependencies[] = masquerade
+dependencies[] = maxlength
 dependencies[] = metatag
 dependencies[] = metatag_google_plus
 dependencies[] = module_filter
