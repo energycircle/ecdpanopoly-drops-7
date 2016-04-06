@@ -14,7 +14,7 @@ function ec_campaign_page_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_campaign_page';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_campaign_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -155,9 +155,17 @@ function ec_campaign_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__campaign_page';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_campaign_page';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_campaign_page'] = $strongarm;
 
@@ -192,6 +200,11 @@ function ec_campaign_page_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
+      'grouped_teaser' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
     ),
   );
   $export['panelizer_defaults_node_campaign_page'] = $strongarm;
@@ -213,6 +226,13 @@ function ec_campaign_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_campaign_page';
+  $strongarm->value = '';
+  $export['schemaorg_ui_type_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'sync_translations_campaign_page';
   $strongarm->value = '0';
   $export['sync_translations_campaign_page'] = $strongarm;
@@ -224,7 +244,9 @@ function ec_campaign_page_strongarm() {
   $strongarm->value = array(
     0 => 'create_roles',
     1 => 'edit_roles',
-    2 => 'delete_roles',
+    2 => 'edit_own_roles',
+    3 => 'delete_roles',
+    4 => 'delete_own_roles',
   );
   $export['user_permissions_campaign_page'] = $strongarm;
 

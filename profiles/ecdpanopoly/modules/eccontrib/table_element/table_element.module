@@ -260,24 +260,33 @@ function table_element_validate_table(array $element, &$form_state) {
 function table_element_pre_render_table(array $element) {
   foreach (element_children($element) as $first) {
     $row = array('data' => array());
+
     // Apply attributes of first-level elements as table row attributes.
     if (isset($element[$first]['#attributes'])) {
       $row += $element[$first]['#attributes'];
     }
+
     // Turn second-level elements into table row columns.
-    // @todo Do not render a cell for children of #type 'value'.
-    // @see http://drupal.org/node/1248940
     foreach (element_children($element[$first]) as $second) {
-      // Assign the element by reference, so any potential changes to the
-      // original element are taken over.
-      $cell = array('data' => &$element[$first][$second]);
+      $cell =& $element[$first][$second];
+      $cell += array(
+        // If an access is not configured then will assume that is
+        // granted. As Drupal does.
+        '#access' => TRUE,
+        // If attributes for table cell is not set then initialize
+        // an empty value for them.
+        '#cell' => array(),
+      );
 
-      if (!empty($element[$first][$second]['#cell'])) {
-        $cell += $element[$first][$second]['#cell'];
+      // Element with granted access and without "value" type could
+      // be rendered as table cell.
+      if (!empty($cell['#access']) && !(isset($cell['#type']) && 'value' === $cell['#type'])) {
+        // Assign the element by reference, so any potential changes to the
+        // original element are taken over.
+        $row['data'][] = array('data' => &$cell) + $cell['#cell'];
       }
-
-      $row['data'][] = $cell;
     }
+
     $element['#rows'][] = $row;
   }
 

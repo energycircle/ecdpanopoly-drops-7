@@ -124,6 +124,9 @@ function ec_citypages_rdf_default_mappings() {
     'field_button_text' => array(
       'predicates' => array(),
     ),
+    'field_citypages_other_descriptio' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

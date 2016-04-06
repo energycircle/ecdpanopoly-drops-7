@@ -1,0 +1,10 @@
+name = Advanced Form block
+description = Exposes any number of node add/edit forms in blocks and facilitates their ajax saving.
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2016-03-09
+version = "7.x-1.0+6-dev"
+core = "7.x"
+project = "afb"
+datestamp = "1457516940"
+

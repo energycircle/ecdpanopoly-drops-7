@@ -36,6 +36,7 @@ function ec_panopoly_page_overrides_user_default_permissions() {
     'name' => 'delete own panopoly_landing_page content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

@@ -13,7 +13,9 @@ function ec_mail_settings_user_default_permissions() {
   // Exported permission: 'administer mailsystem'.
   $permissions['administer mailsystem'] = array(
     'name' => 'administer mailsystem',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'mailsystem',
   );
 
@@ -30,21 +32,27 @@ function ec_mail_settings_user_default_permissions() {
   // Exported permission: 'choose htmlmail_plaintext'.
   $permissions['choose htmlmail_plaintext'] = array(
     'name' => 'choose htmlmail_plaintext',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'htmlmail',
   );
 
   // Exported permission: 'edit mimemail user settings'.
   $permissions['edit mimemail user settings'] = array(
     'name' => 'edit mimemail user settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'mimemail',
   );
 
   // Exported permission: 'send arbitrary files'.
   $permissions['send arbitrary files'] = array(
     'name' => 'send arbitrary files',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'mimemail',
   );
 

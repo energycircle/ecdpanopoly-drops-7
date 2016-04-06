@@ -1,2 +1,4 @@
-# ec_at_admin
-Admin Theme for EC Distro
+ec_foundation_theme
+===================
+
+Base AT sub-theme for platinum distro

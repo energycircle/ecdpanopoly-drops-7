@@ -13,10 +13,13 @@ function ec_a_b_testing_setup_field_default_field_bases() {
   // Exported field_base: 'field_a_b_test_page'.
   $field_bases['field_a_b_test_page'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => 2,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_a_b_test_page',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -26,7 +29,6 @@ function ec_a_b_testing_setup_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'A Page' => 'A Page',
         'B Page' => 'B Page',
       ),
       'allowed_values_function' => '',

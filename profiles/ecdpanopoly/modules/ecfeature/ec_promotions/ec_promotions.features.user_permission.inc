@@ -13,49 +13,63 @@ function ec_promotions_user_default_permissions() {
   // Exported permission: 'administer panelizer node promotion breadcrumbs'.
   $permissions['administer panelizer node promotion breadcrumbs'] = array(
     'name' => 'administer panelizer node promotion breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node promotion content'.
   $permissions['administer panelizer node promotion content'] = array(
     'name' => 'administer panelizer node promotion content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node promotion context'.
   $permissions['administer panelizer node promotion context'] = array(
     'name' => 'administer panelizer node promotion context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node promotion defaults'.
   $permissions['administer panelizer node promotion defaults'] = array(
     'name' => 'administer panelizer node promotion defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node promotion layout'.
   $permissions['administer panelizer node promotion layout'] = array(
     'name' => 'administer panelizer node promotion layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node promotion overview'.
   $permissions['administer panelizer node promotion overview'] = array(
     'name' => 'administer panelizer node promotion overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node promotion settings'.
   $permissions['administer panelizer node promotion settings'] = array(
     'name' => 'administer panelizer node promotion settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -85,6 +99,7 @@ function ec_promotions_user_default_permissions() {
     'name' => 'delete own promotion content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

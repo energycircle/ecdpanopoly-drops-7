@@ -89,6 +89,7 @@ dependencies[] = jcarousel
 dependencies[] = jcarousel_skins
 dependencies[] = linkit_target
 dependencies[] = masquerade
+dependencies[] = maxlength
 dependencies[] = metatag
 dependencies[] = metatag_google_plus
 dependencies[] = module_filter
@@ -120,11 +121,12 @@ dependencies[] = uuid_path
 ;EC features
 dependencies[] = ec_foundation_image_styles
 dependencies[] = ec_base_config
+dependencies[] = ec_custom_tokens
 dependencies[] = ec_panopoly_page_overrides
 
 
-; Information added by flux423 - updated on 2015-1-8
-version = "7.x-1.1-rc10.2"
+; Information added by flux423 - updated on 2016-3-15
+version = "7.x-1.2"
 core = "7.x"
 project = "ECDPanopoly"
 

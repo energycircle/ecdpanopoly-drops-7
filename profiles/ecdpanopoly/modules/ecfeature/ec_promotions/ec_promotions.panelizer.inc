@@ -231,7 +231,7 @@ function ec_promotions_panelizer_defaults() {
     ),
     'context' => 'panelizer',
     'override_title' => 1,
-    'override_title_text' => 'Promotion Day\'s Left',
+    'override_title_text' => 'Promotion Days Left',
     'override_title_heading' => 'h2',
   );
   $pane->cache = array();

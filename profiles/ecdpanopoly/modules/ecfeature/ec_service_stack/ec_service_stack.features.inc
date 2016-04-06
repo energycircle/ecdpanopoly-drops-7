@@ -106,6 +106,342 @@ function ec_service_stack_node_info() {
 }
 
 /**
+ * Implements hook_rdf_default_mappings().
+ */
+function ec_service_stack_rdf_default_mappings() {
+  $schemaorg = array();
+
+  // Exported RDF mapping: service
+  $schemaorg['node']['service'] = array(
+    'rdftype' => array(
+      0 => 'schema:Service',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'schema:articleBody',
+        1 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'field_display_subtitle' => array(
+      'predicates' => array(
+        0 => 'schema:availableService',
+      ),
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_service_image' => array(
+      'predicates' => array(
+        0 => 'schema:primaryImageOfPage',
+      ),
+      'type' => 'rel',
+    ),
+    'field_featured_video' => array(
+      'predicates' => array(
+        0 => 'schema:video',
+      ),
+    ),
+    'field_ref_service_serv_cat' => array(
+      'predicates' => array(
+        0 => 'schema:serviceType',
+      ),
+    ),
+    'field_ref_service_blog' => array(
+      'predicates' => array(
+        0 => 'schema:associatedArticle',
+      ),
+    ),
+    'field_ref_service_faq' => array(
+      'predicates' => array(
+        0 => 'schema:associatedArticle',
+      ),
+    ),
+    'field_ref_service_testimonial' => array(
+      'predicates' => array(
+        0 => 'schema:reviews',
+      ),
+    ),
+    'field_ref_service_promo' => array(
+      'predicates' => array(
+        0 => 'schema:offers',
+      ),
+    ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
+  );
+
+  // Exported RDF mapping: service_category
+  $schemaorg['node']['service_category'] = array(
+    'rdftype' => array(
+      0 => 'schema:Service',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'schema:articleBody',
+        1 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'field_display_subtitle' => array(
+      'predicates' => array(
+        0 => 'schema:availableService',
+      ),
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_service_category_image' => array(
+      'predicates' => array(
+        0 => 'schema:primaryImageOfPage',
+      ),
+      'type' => 'rel',
+    ),
+    'field_featured_video' => array(
+      'predicates' => array(
+        0 => 'schema:video',
+      ),
+    ),
+    'field_ref_serv_cat_services' => array(
+      'predicates' => array(
+        0 => 'schema:availableService',
+      ),
+    ),
+    'field_ref_serv_cat_blog' => array(
+      'predicates' => array(
+        0 => 'schema:associatedArticle',
+      ),
+    ),
+    'field_ref_serv_cat_case_study' => array(
+      'predicates' => array(
+        0 => 'schema:associatedArticle',
+      ),
+    ),
+    'field_ref_serv_cat_promo' => array(
+      'predicates' => array(
+        0 => 'schema:offers',
+      ),
+    ),
+    'field_ref_serv_cat_testimonial' => array(
+      'predicates' => array(
+        0 => 'schema:reviews',
+      ),
+    ),
+    'field_ref_serv_cat_faq' => array(
+      'predicates' => array(
+        0 => 'schema:associatedArticle',
+      ),
+    ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
+  );
+
+  // Exported RDF mapping: service_group
+  $schemaorg['node']['service_group'] = array(
+    'rdftype' => array(
+      0 => 'schema:ServiceChannel',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'schema:articleBody',
+        1 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'field_service_group_image' => array(
+      'predicates' => array(
+        0 => 'schema:primaryImageOfPage',
+      ),
+      'type' => 'rel',
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_ref_serv_group_serv_cat' => array(
+      'predicates' => array(
+        0 => 'schema:serviceType',
+      ),
+    ),
+    'field_ref_serv_group_blog' => array(
+      'predicates' => array(
+        0 => 'schema:associatedArticle',
+      ),
+    ),
+    'field_ref_serv_group_case_study' => array(
+      'predicates' => array(
+        0 => 'schema:associatedArticle',
+      ),
+    ),
+    'field_ref_serv_group_promo' => array(
+      'predicates' => array(
+        0 => 'schema:offers',
+      ),
+    ),
+    'field_ref_serv_group_testimonial' => array(
+      'predicates' => array(
+        0 => 'schema:reviews',
+      ),
+    ),
+    'field_ref_serv_group_faq' => array(
+      'predicates' => array(
+        0 => 'schema:associatedArticle',
+      ),
+    ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
+  );
+
+  return $schemaorg;
+}
+
+/**
  * Implements hook_weight_features_default_settings().
  */
 function ec_service_stack_weight_features_default_settings() {

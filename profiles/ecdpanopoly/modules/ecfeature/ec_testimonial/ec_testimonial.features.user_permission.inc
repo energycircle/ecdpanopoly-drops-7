@@ -13,49 +13,63 @@ function ec_testimonial_user_default_permissions() {
   // Exported permission: 'administer panelizer node testimonial breadcrumbs'.
   $permissions['administer panelizer node testimonial breadcrumbs'] = array(
     'name' => 'administer panelizer node testimonial breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node testimonial content'.
   $permissions['administer panelizer node testimonial content'] = array(
     'name' => 'administer panelizer node testimonial content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node testimonial context'.
   $permissions['administer panelizer node testimonial context'] = array(
     'name' => 'administer panelizer node testimonial context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node testimonial defaults'.
   $permissions['administer panelizer node testimonial defaults'] = array(
     'name' => 'administer panelizer node testimonial defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node testimonial layout'.
   $permissions['administer panelizer node testimonial layout'] = array(
     'name' => 'administer panelizer node testimonial layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node testimonial overview'.
   $permissions['administer panelizer node testimonial overview'] = array(
     'name' => 'administer panelizer node testimonial overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node testimonial settings'.
   $permissions['administer panelizer node testimonial settings'] = array(
     'name' => 'administer panelizer node testimonial settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -85,6 +99,7 @@ function ec_testimonial_user_default_permissions() {
     'name' => 'delete own testimonial content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

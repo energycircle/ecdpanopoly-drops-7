@@ -21,127 +21,6 @@ function ec_service_stack_defaultconfig_features() {
 function ec_service_stack_defaultconfig_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'entityform-schedule_service-field_business2'.
-  $fields['entityform-schedule_service-field_business2'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_business2',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 255,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'schedule_service',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 2,
-        ),
-        'email' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 6,
-        ),
-        'full' => array(
-          'label' => 'inline',
-          'module' => 'title',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'title_class' => '',
-            'title_link' => '',
-            'title_style' => '',
-          ),
-          'type' => 'title_linked',
-          'weight' => 1,
-        ),
-        'review' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 2,
-        ),
-        'table' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 2,
-        ),
-        'token' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 2,
-        ),
-      ),
-      'entity_type' => 'entityform',
-      'field_name' => 'field_business2',
-      'label' => 'Business Name',
-      'required' => 0,
-      'settings' => array(
-        'linkit' => array(
-          'enable' => 0,
-          'insert_plugin' => '',
-        ),
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'maxlength_js' => 0,
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-        'weight' => 5,
-      ),
-    ),
-  );
-
   // Exported field: 'entityform-schedule_service-field_email'.
   $fields['entityform-schedule_service-field_email'] = array(
     'field_config' => array(
@@ -3026,7 +2905,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Business Name');
   t('Button Text');
   t('CTA form');
   t('Call to Action');

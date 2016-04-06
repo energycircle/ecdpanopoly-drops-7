@@ -165,6 +165,9 @@ function ec_testimonial_rdf_default_mappings() {
         0 => 'schema:alternativeHeadline',
       ),
     ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

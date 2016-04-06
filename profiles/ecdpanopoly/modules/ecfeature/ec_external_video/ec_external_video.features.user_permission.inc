@@ -10,6 +10,15 @@
 function ec_external_video_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node external_video defaults'.
+  $permissions['administer panelizer node external_video defaults'] = array(
+    'name' => 'administer panelizer node external_video defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'create external_video content'.
   $permissions['create external_video content'] = array(
     'name' => 'create external_video content',
@@ -24,7 +33,10 @@ function ec_external_video_user_default_permissions() {
   // Exported permission: 'delete any external_video content'.
   $permissions['delete any external_video content'] = array(
     'name' => 'delete any external_video content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -33,6 +45,7 @@ function ec_external_video_user_default_permissions() {
     'name' => 'delete own external_video content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

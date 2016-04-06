@@ -14,7 +14,7 @@ function ec_staff_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_staff';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_staff'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -30,6 +30,55 @@ function ec_staff_strongarm() {
   $strongarm->name = 'clear_all_staff';
   $strongarm->value = 0;
   $export['clear_all_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_staff';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_staff';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_staff';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_staff';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_staff';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_staff';
+  $strongarm->value = '1';
+  $export['content_type_extras_save_and_new_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_staff';
+  $strongarm->value = 0;
+  $export['content_type_extras_title_hide_staff'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -131,6 +180,7 @@ function ec_staff_strongarm() {
   $strongarm->name = 'node_options_staff';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_staff'] = $strongarm;
 
@@ -202,6 +252,13 @@ function ec_staff_strongarm() {
   $strongarm->name = 'save_continue_staff';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_staff';
+  $strongarm->value = 'Person';
+  $export['schemaorg_ui_type_staff'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

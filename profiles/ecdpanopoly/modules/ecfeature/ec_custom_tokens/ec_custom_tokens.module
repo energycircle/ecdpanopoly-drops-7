@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC Custom Tokens feature.
+ */
+
+include_once 'ec_custom_tokens.features.inc';

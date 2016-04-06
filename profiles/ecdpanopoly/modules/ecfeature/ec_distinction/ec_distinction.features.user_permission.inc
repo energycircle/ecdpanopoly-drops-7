@@ -13,56 +13,72 @@ function ec_distinction_user_default_permissions() {
   // Exported permission: 'administer panelizer node distinction breadcrumbs'.
   $permissions['administer panelizer node distinction breadcrumbs'] = array(
     'name' => 'administer panelizer node distinction breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distinction content'.
   $permissions['administer panelizer node distinction content'] = array(
     'name' => 'administer panelizer node distinction content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distinction context'.
   $permissions['administer panelizer node distinction context'] = array(
     'name' => 'administer panelizer node distinction context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distinction defaults'.
   $permissions['administer panelizer node distinction defaults'] = array(
     'name' => 'administer panelizer node distinction defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distinction layout'.
   $permissions['administer panelizer node distinction layout'] = array(
     'name' => 'administer panelizer node distinction layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distinction overview'.
   $permissions['administer panelizer node distinction overview'] = array(
     'name' => 'administer panelizer node distinction overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distinction settings'.
   $permissions['administer panelizer node distinction settings'] = array(
     'name' => 'administer panelizer node distinction settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term distinction_types defaults'.
   $permissions['administer panelizer taxonomy_term distinction_types defaults'] = array(
     'name' => 'administer panelizer taxonomy_term distinction_types defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -92,6 +108,7 @@ function ec_distinction_user_default_permissions() {
     'name' => 'delete own distinction content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

@@ -25,6 +25,7 @@ function ec_a_b_testing_setup_user_default_permissions() {
     'name' => 'clone node',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'clone',
@@ -33,14 +34,18 @@ function ec_a_b_testing_setup_user_default_permissions() {
   // Exported permission: 'clone own nodes'.
   $permissions['clone own nodes'] = array(
     'name' => 'clone own nodes',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'clone',
   );
 
   // Exported permission: 'use PHP for content experiments visibility'.
   $permissions['use PHP for content experiments visibility'] = array(
     'name' => 'use PHP for content experiments visibility',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'content_experiments',
   );
 

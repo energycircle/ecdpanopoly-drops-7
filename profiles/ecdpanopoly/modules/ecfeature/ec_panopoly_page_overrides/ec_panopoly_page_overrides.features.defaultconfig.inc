@@ -126,11 +126,6 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'display_summary' => 0,
-        'linkit' => array(
-          'button_text' => 'Search',
-          'enable' => 0,
-          'profile' => '',
-        ),
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
@@ -383,7 +378,6 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'panopoly_page',
       'default_value' => NULL,
-      'default_value_label_token' => 0,
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -945,98 +939,126 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
   // Exported permission: 'administer panelizer node panopoly_landing_page breadcrumbs'.
   $permissions['administer panelizer node panopoly_landing_page breadcrumbs'] = array(
     'name' => 'administer panelizer node panopoly_landing_page breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_landing_page content'.
   $permissions['administer panelizer node panopoly_landing_page content'] = array(
     'name' => 'administer panelizer node panopoly_landing_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_landing_page context'.
   $permissions['administer panelizer node panopoly_landing_page context'] = array(
     'name' => 'administer panelizer node panopoly_landing_page context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_landing_page defaults'.
   $permissions['administer panelizer node panopoly_landing_page defaults'] = array(
     'name' => 'administer panelizer node panopoly_landing_page defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_landing_page layout'.
   $permissions['administer panelizer node panopoly_landing_page layout'] = array(
     'name' => 'administer panelizer node panopoly_landing_page layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_landing_page overview'.
   $permissions['administer panelizer node panopoly_landing_page overview'] = array(
     'name' => 'administer panelizer node panopoly_landing_page overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_landing_page settings'.
   $permissions['administer panelizer node panopoly_landing_page settings'] = array(
     'name' => 'administer panelizer node panopoly_landing_page settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_page breadcrumbs'.
   $permissions['administer panelizer node panopoly_page breadcrumbs'] = array(
     'name' => 'administer panelizer node panopoly_page breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_page content'.
   $permissions['administer panelizer node panopoly_page content'] = array(
     'name' => 'administer panelizer node panopoly_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_page context'.
   $permissions['administer panelizer node panopoly_page context'] = array(
     'name' => 'administer panelizer node panopoly_page context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_page defaults'.
   $permissions['administer panelizer node panopoly_page defaults'] = array(
     'name' => 'administer panelizer node panopoly_page defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_page layout'.
   $permissions['administer panelizer node panopoly_page layout'] = array(
     'name' => 'administer panelizer node panopoly_page layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_page overview'.
   $permissions['administer panelizer node panopoly_page overview'] = array(
     'name' => 'administer panelizer node panopoly_page overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node panopoly_page settings'.
   $permissions['administer panelizer node panopoly_page settings'] = array(
     'name' => 'administer panelizer node panopoly_page settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

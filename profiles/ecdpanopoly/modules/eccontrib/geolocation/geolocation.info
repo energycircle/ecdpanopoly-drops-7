@@ -3,9 +3,13 @@ name = Geolocation
 description = Provides a geolocation field.
 package = Geolocation
 core = 7.x
-; Information added by Drupal.org packaging script on 2015-11-10
-version = "7.x-1.6+8-dev"
+
+; Migrate handlers
+files[] = migrate/destinations/geolocation.inc
+
+; Information added by Drupal.org packaging script on 2016-03-10
+version = "7.x-1.6+12-dev"
 core = "7.x"
 project = "geolocation"
-datestamp = "1447163352"
+datestamp = "1457648692"
 

@@ -13,56 +13,72 @@ function ec_article_user_default_permissions() {
   // Exported permission: 'administer panelizer node article breadcrumbs'.
   $permissions['administer panelizer node article breadcrumbs'] = array(
     'name' => 'administer panelizer node article breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node article content'.
   $permissions['administer panelizer node article content'] = array(
     'name' => 'administer panelizer node article content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node article context'.
   $permissions['administer panelizer node article context'] = array(
     'name' => 'administer panelizer node article context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node article defaults'.
   $permissions['administer panelizer node article defaults'] = array(
     'name' => 'administer panelizer node article defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node article layout'.
   $permissions['administer panelizer node article layout'] = array(
     'name' => 'administer panelizer node article layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node article overview'.
   $permissions['administer panelizer node article overview'] = array(
     'name' => 'administer panelizer node article overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node article settings'.
   $permissions['administer panelizer node article settings'] = array(
     'name' => 'administer panelizer node article settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term article_types defaults'.
   $permissions['administer panelizer taxonomy_term article_types defaults'] = array(
     'name' => 'administer panelizer taxonomy_term article_types defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -101,7 +117,9 @@ function ec_article_user_default_permissions() {
   // Exported permission: 'delete terms in article_types'.
   $permissions['delete terms in article_types'] = array(
     'name' => 'delete terms in article_types',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -133,6 +151,7 @@ function ec_article_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );

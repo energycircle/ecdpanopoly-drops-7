@@ -175,6 +175,13 @@ function ec_faq_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__faq';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_faq';
   $strongarm->value = array(
     0 => 'status',
@@ -249,6 +256,13 @@ function ec_faq_strongarm() {
   $strongarm->name = 'save_continue_faq';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_faq';
+  $strongarm->value = 'TechArticle';
+  $export['schemaorg_ui_type_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

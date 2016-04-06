@@ -158,6 +158,9 @@ function ec_blog_post_rdf_default_mappings() {
         0 => 'schema:serviceLocation',
       ),
     ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
   );
 
   // Exported RDF mapping: blog_categories

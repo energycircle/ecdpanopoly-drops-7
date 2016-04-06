@@ -11,6 +11,7 @@ function ec_faq_defaultconfig_features() {
   return array(
     'ec_faq' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -790,4 +791,20 @@ function ec_faq_defaultconfig_field_default_fields() {
   t('Select FAQ to display on this product category page.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_faq_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_faq';
+  $strongarm->value = 'TechArticle';
+  $export['schemaorg_ui_type_faq'] = $strongarm;
+
+  return $export;
 }

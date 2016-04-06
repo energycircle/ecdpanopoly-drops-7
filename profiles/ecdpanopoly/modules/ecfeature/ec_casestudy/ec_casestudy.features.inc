@@ -109,6 +109,9 @@ function ec_casestudy_rdf_default_mappings() {
       'datatype' => 'xsd:dateTime',
       'callback' => 'date_iso8601',
     ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

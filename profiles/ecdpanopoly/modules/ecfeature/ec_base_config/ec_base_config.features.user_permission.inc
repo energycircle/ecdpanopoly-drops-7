@@ -141,6 +141,8 @@ function ec_base_config_user_default_permissions() {
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'media_internet',
@@ -150,6 +152,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer Compact Forms'] = array(
     'name' => 'administer Compact Forms',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'compact_forms',
@@ -169,7 +172,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'administer advanced pane settings',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
@@ -331,6 +333,15 @@ function ec_base_config_user_default_permissions() {
     'module' => 'googleanalytics',
   );
 
+  // Exported permission: 'administer honeypot'.
+  $permissions['administer honeypot'] = array(
+    'name' => 'administer honeypot',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'honeypot',
+  );
+
   // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
@@ -472,49 +483,63 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'administer panelizer user user breadcrumbs'.
   $permissions['administer panelizer user user breadcrumbs'] = array(
     'name' => 'administer panelizer user user breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user content'.
   $permissions['administer panelizer user user content'] = array(
     'name' => 'administer panelizer user user content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user context'.
   $permissions['administer panelizer user user context'] = array(
     'name' => 'administer panelizer user user context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user defaults'.
   $permissions['administer panelizer user user defaults'] = array(
     'name' => 'administer panelizer user user defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user layout'.
   $permissions['administer panelizer user user layout'] = array(
     'name' => 'administer panelizer user user layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user overview'.
   $permissions['administer panelizer user user overview'] = array(
     'name' => 'administer panelizer user user overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer user user settings'.
   $permissions['administer panelizer user user settings'] = array(
     'name' => 'administer panelizer user user settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -572,6 +597,17 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'rules',
+  );
+
+  // Exported permission: 'administer sharethis'.
+  $permissions['administer sharethis'] = array(
+    'name' => 'administer sharethis',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'sharethis',
   );
 
   // Exported permission: 'administer site configuration'.
@@ -693,6 +729,15 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'bypass honeypot protection'.
+  $permissions['bypass honeypot protection'] = array(
+    'name' => 'bypass honeypot protection',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'honeypot',
   );
 
   // Exported permission: 'bypass node access'.
@@ -900,6 +945,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'delete own panopoly_page content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -939,6 +985,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'display drupal links',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'admin_menu',
@@ -1198,6 +1245,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['exclude any node title'] = array(
     'name' => 'exclude any node title',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'exclude_node_title',
@@ -1339,6 +1387,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['override content type title display'] = array(
     'name' => 'override content type title display',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'content_type_extras',
@@ -1348,6 +1397,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['rebuild tablefield'] = array(
     'name' => 'rebuild tablefield',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'tablefield',
@@ -1415,6 +1465,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['use exclude node title'] = array(
     'name' => 'use exclude node title',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'exclude_node_title',
@@ -1553,7 +1604,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'view own entityform',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'entityform',

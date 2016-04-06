@@ -11,6 +11,163 @@ function ec_download_file_gate_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = 'ec_guide_download_report';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'EC Guide Download Report';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    5 => '5',
+    3 => '3',
+    4 => '4',
+  );
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '100';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'changed' => 'changed',
+    'field_req_res_name' => 'field_req_res_name',
+    'field_req_res_email' => 'field_req_res_email',
+    'field_req_res_file' => 'field_req_res_file',
+    'field_req_res_request_times' => 'field_req_res_request_times',
+    'field_req_res_dl_times' => 'field_req_res_dl_times',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'changed' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_req_res_name' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_req_res_email' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_req_res_file' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_req_res_request_times' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_req_res_dl_times' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['label'] = 'Date';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['changed']['second_date_format'] = 'panopoly_time';
+  /* Field: Content: Name */
+  $handler->display->display_options['fields']['field_req_res_name']['id'] = 'field_req_res_name';
+  $handler->display->display_options['fields']['field_req_res_name']['table'] = 'field_data_field_req_res_name';
+  $handler->display->display_options['fields']['field_req_res_name']['field'] = 'field_req_res_name';
+  /* Field: Content: Email */
+  $handler->display->display_options['fields']['field_req_res_email']['id'] = 'field_req_res_email';
+  $handler->display->display_options['fields']['field_req_res_email']['table'] = 'field_data_field_req_res_email';
+  $handler->display->display_options['fields']['field_req_res_email']['field'] = 'field_req_res_email';
+  $handler->display->display_options['fields']['field_req_res_email']['type'] = 'email_plain';
+  /* Field: Content: File */
+  $handler->display->display_options['fields']['field_req_res_file']['id'] = 'field_req_res_file';
+  $handler->display->display_options['fields']['field_req_res_file']['table'] = 'field_data_field_req_res_file';
+  $handler->display->display_options['fields']['field_req_res_file']['field'] = 'field_req_res_file';
+  $handler->display->display_options['fields']['field_req_res_file']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_req_res_file']['settings'] = array(
+    'text' => 'Download [file:name]',
+  );
+  /* Field: Content: Request Times */
+  $handler->display->display_options['fields']['field_req_res_request_times']['id'] = 'field_req_res_request_times';
+  $handler->display->display_options['fields']['field_req_res_request_times']['table'] = 'field_data_field_req_res_request_times';
+  $handler->display->display_options['fields']['field_req_res_request_times']['field'] = 'field_req_res_request_times';
+  $handler->display->display_options['fields']['field_req_res_request_times']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Download Times */
+  $handler->display->display_options['fields']['field_req_res_dl_times']['id'] = 'field_req_res_dl_times';
+  $handler->display->display_options['fields']['field_req_res_dl_times']['table'] = 'field_data_field_req_res_dl_times';
+  $handler->display->display_options['fields']['field_req_res_dl_times']['field'] = 'field_req_res_dl_times';
+  $handler->display->display_options['fields']['field_req_res_dl_times']['settings'] = array(
+    'thousand_separator' => ',',
+    'prefix_suffix' => 1,
+  );
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'request_restricted' => 'request_restricted',
+  );
+
+  /* Display: Content pane */
+  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%view-%timestamp-full.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
+  $handler->display->display_options['path'] = 'admin/export-guide-downloads';
+  $handler->display->display_options['displays'] = array(
+    'panel_pane_1' => 'panel_pane_1',
+    'default' => 0,
+  );
+  $export['ec_guide_download_report'] = $view;
+
+  $view = new view();
   $view->name = 'restrict_thumbnail';
   $view->description = '';
   $view->tag = 'default';
