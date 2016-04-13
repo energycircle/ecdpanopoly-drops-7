@@ -10,7 +10,7 @@ mysql:
 
 env:
   - UPGRADE=none
-	- UPGRADE=7.x-1.0-rc8
+  - UPGRADE=7.x-1.0-rc8
 
 matrix:
   fast_finish: true
@@ -38,7 +38,7 @@ script:
 
 after_script:
   - $HOME/travis-ci.sh after-tests
-	- $HOME/check-overridden.sh
+  - $HOME/check-overridden.sh
 
 notifications:
   irc:
