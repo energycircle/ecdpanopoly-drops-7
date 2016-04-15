@@ -1,19 +1,20 @@
+# Behat.yml
 default:
-  suites:
-    default:
-      contexts:
-        - FeatureContext
-        - Drupal\DrupalExtension\Context\DrupalContext
-        - Drupal\DrupalExtension\Context\MinkContext
+  paths:
+    features: 'features'
+    bootstrap: 'features/bootstrap'
+  context:
+    parameters:
+      default_browser: 'goutte'
   extensions:
-    Behat\MinkExtension:
+    Behat\MinkExtension\Extension:
       goutte: ~
       selenium2: ~
-      base_url: http://localhost:8080
-    Drupal\DrupalExtension:
+      default_session: 'goutte'
+      javascript_session: 'selenium2'
+    Drupal\DrupalExtension\Extension:
       blackbox: ~
       api_driver: 'drupal'
-      drush:
-        alias: 'local'
-      drupal: 
-        drupal_root: './html'
+
+imports:
+  - behat.local.yml
