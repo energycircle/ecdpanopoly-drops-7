@@ -30,8 +30,8 @@ before_install:
 #  -in travis_rsa.enc -out ~/.ssh/id_rsa -d
 #- chmod 0600 ~/.ssh/id_rsa
  - composer self-update
- - pear channel-discover pear.drush.org
- - php /home/travis/.phpenv/versions/5.3.26/bin/composer.phar self-update
+# - pear channel-discover pear.drush.org
+# - php /home/travis/.phpenv/versions/5.3.26/bin/composer.phar self-update
 
 install:
   - bash scripts/install.sh
