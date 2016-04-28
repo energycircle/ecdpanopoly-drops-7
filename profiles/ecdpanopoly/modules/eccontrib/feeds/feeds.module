@@ -604,8 +604,12 @@ function feeds_node_validate($node, $form, &$form_state) {
   $last_feeds = $node->feeds;
   $source->configFormValidate($last_feeds);
 
-  // If node title is empty, try to retrieve title from feed.
-  if (trim($node->title) == '') {
+  // Check if title form element is hidden.
+  $title_hidden = (isset($form['title']['#access']) && !$form['title']['#access']);
+
+  // If the node title is empty and the title form element wasn't hidden, try to
+  // retrieve the title from the feed.
+  if (trim($node->title) == '' && !$title_hidden) {
     try {
       $source->addConfig($last_feeds);
       if (!$last_title = $source->preview()->title) {
@@ -688,11 +692,6 @@ function feeds_node_delete($node) {
  */
 function feeds_form_node_form_alter(&$form, $form_state) {
   if ($importer_id = feeds_get_importer_id($form['#node']->type)) {
-    // Set title to not required, try to retrieve it from feed.
-    if (isset($form['title'])) {
-      $form['title']['#required'] = FALSE;
-    }
-
     // Enable uploads.
     $form['#attributes']['enctype'] = 'multipart/form-data';
 
@@ -706,6 +705,14 @@ function feeds_form_node_form_alter(&$form, $form_state) {
     );
     $form['feeds'] += $source->configForm($form_state);
     $form['#feed_id'] = $importer_id;
+
+    // If the parser has support for delivering a source title, set node title
+    // to not required and try to retrieve it from the source if the node title
+    // is left empty by the user.
+    // @see feeds_node_validate()
+    if (isset($form['title']) && $source->importer()->parser->providesSourceTitle()) {
+      $form['title']['#required'] = FALSE;
+    }
   }
 }
 
