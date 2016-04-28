@@ -41,7 +41,7 @@ after_script:
   - $HOME/check-overridden.sh
 
 notifications:
-  slack: energycircle:WWOFqIM3SpYIEh3U0nyrNq73
+  slack: energycircle:eCY1M8EKjmZbSUYLwW9nkL2V
   irc:
     channels:
       - "chat.freenode.net#EnergyCircle-Dev"
