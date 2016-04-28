@@ -125,8 +125,8 @@ dependencies[] = ec_custom_tokens
 dependencies[] = ec_panopoly_page_overrides
 
 
-; Information added by flux423 - updated on 2016-4-15
-version = "7.x-1.3"
+; Information added by flux423 - updated on 2016-4-5
+version = "7.x-1.2"
 core = "7.x"
 project = "ECDPanopoly"
 
