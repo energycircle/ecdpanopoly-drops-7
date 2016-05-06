@@ -11,7 +11,6 @@ function ec_testimonial_defaultconfig_features() {
   return array(
     'ec_testimonial' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -253,8 +252,6 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       ),
     ),
   );
-
- 
 
   // Exported field: 'node-panopoly_page-field_ref_page_testimonial'.
   $fields['node-panopoly_page-field_ref_page_testimonial'] = array(
@@ -1042,7 +1039,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 7,
+        'weight' => 9,
       ),
     ),
   );
@@ -1331,7 +1328,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -1465,7 +1462,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 5,
+        'weight' => 7,
       ),
     ),
   );
@@ -1478,6 +1475,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_tetstimonial_name',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1564,7 +1564,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -1686,7 +1686,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 6,
+        'weight' => 8,
       ),
     ),
   );
@@ -1710,20 +1710,4 @@ function ec_testimonial_defaultconfig_field_default_fields() {
   t('Video');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_testimonial_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'schemaorg_ui_type_testimonial';
-  $strongarm->value = 'Review';
-  $export['schemaorg_ui_type_testimonial'] = $strongarm;
-
-  return $export;
 }

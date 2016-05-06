@@ -10,6 +10,51 @@
 function ec_testimonial_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_aggregate_rating'.
+  $field_bases['field_aggregate_rating'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_aggregate_rating',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'fivestar',
+    'settings' => array(
+      'axis' => 'vote',
+    ),
+    'translatable' => 0,
+    'type' => 'fivestar',
+  );
+
+  // Exported field_base: 'field_content_geo_data'.
+  $field_bases['field_content_geo_data'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_content_geo_data',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'lat' => array(
+        0 => 'lat',
+      ),
+      'lng' => array(
+        0 => 'lng',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'geolocation',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'geolocation_latlng',
+  );
+
   // Exported field_base: 'field_ref_article_testimonial'.
   $field_bases['field_ref_article_testimonial'] = array(
     'active' => 1,
@@ -82,8 +127,6 @@ function ec_testimonial_field_default_field_bases() {
     'translatable' => 0,
     'type' => 'entityreference',
   );
-
- 
 
   // Exported field_base: 'field_ref_page_testimonial'.
   $field_bases['field_ref_page_testimonial'] = array(
@@ -357,6 +400,9 @@ function ec_testimonial_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_tetstimonial_name',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',

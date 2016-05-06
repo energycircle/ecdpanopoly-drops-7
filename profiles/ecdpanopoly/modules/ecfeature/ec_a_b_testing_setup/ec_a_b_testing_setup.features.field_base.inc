@@ -29,7 +29,7 @@ function ec_a_b_testing_setup_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'B Page' => 'B Page',
+        'BPage' => 'B Page',
       ),
       'allowed_values_function' => '',
     ),

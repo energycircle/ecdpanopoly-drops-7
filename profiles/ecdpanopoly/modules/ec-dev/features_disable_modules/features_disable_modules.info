@@ -4,9 +4,9 @@ core = 7.x
 package = Features
 
 
-; Information added by drush on 2016-04-28
+; Information added by drush on 2016-05-06
 version = "7.x-1.0-alpha1+9-dev"
 core = "7.x"
 project = "features_disable_modules"
-datestamp = "1461869149"
+datestamp = "1462542733"
 

@@ -42,7 +42,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -129,7 +129,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -216,7 +216,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -285,7 +285,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -372,7 +372,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -459,7 +459,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -550,7 +550,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -637,7 +637,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -724,7 +724,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -811,7 +811,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -898,7 +898,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -985,7 +985,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1078,7 +1078,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1169,7 +1169,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1260,7 +1260,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1347,7 +1347,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1434,7 +1434,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1521,7 +1521,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1608,7 +1608,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1689,7 +1689,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1776,7 +1776,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'B Page' => 'B Page',
+          'BPage' => 'B Page',
         ),
         'allowed_values_function' => '',
       ),
@@ -1837,7 +1837,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 26,
+        'weight' => 15,
       ),
     ),
   );

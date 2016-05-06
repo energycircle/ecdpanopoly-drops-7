@@ -146,7 +146,7 @@ function ec_testimonial_rdf_default_mappings() {
     ),
     'field_tetstimonial_name' => array(
       'predicates' => array(
-        0 => 'schema:author',
+        0 => 'schema:reviewedBy',
       ),
     ),
     'field_testimonial_image' => array(
@@ -167,6 +167,16 @@ function ec_testimonial_rdf_default_mappings() {
     ),
     'field_a_b_test_page' => array(
       'predicates' => array(),
+    ),
+    'field_content_geo_data' => array(
+      'predicates' => array(
+        0 => 'schema:serviceLocation',
+      ),
+    ),
+    'field_aggregate_rating' => array(
+      'predicates' => array(
+        0 => 'schema:aggregateRating',
+      ),
     ),
   );
 

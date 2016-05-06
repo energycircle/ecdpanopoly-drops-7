@@ -21,14 +21,15 @@ function ec_testimonial_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Show This On',
-    'weight' => '8',
+    'weight' => '10',
     'children' => array(
-      0 => 'field_ref_testimonial_case_study',
-      1 => 'field_ref_testimonial_serv_cat',
-      2 => 'field_ref_testimonial_serv_group',
-      3 => 'field_ref_testimonial_service',
-      4 => 'field_ref_testimonial_article',
-      5 => 'field_ref_testimonial_citypages',
+      0 => 'field_ref_testimonial_article',
+      1 => 'field_ref_testimonial_case_study',
+      2 => 'field_ref_testimonial_prodpage',
+      3 => 'field_ref_testimonial_serv_cat',
+      4 => 'field_ref_testimonial_serv_group',
+      5 => 'field_ref_testimonial_service',
+      6 => 'field_ref_testimonial_citypages',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
