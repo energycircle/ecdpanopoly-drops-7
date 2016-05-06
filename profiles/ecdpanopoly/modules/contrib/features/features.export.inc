@@ -577,21 +577,7 @@ function features_var_export($var, $prefix = '', $init = TRUE, $count = 0) {
   }
 
   if (is_object($var)) {
-    if (method_exists($var, 'export')) {
-      $output = $var->export();
-    }
-    elseif (get_class($var) === 'stdClass') {
-      $output = '(object) ' . features_var_export((array) $var, '', FALSE, $count+1);
-    }
-    elseif (!method_exists($var, '__set_state')) {
-      // This is a custom object of unknown class that does not have a
-      // __set_state() method. By using serialize, the class name is preserved
-      // and the object is exported successfully (though unideally).
-      $output = 'unserialize(' . var_export(serialize($var), TRUE) . ')';
-    }
-    else {
-      $output = var_export($var, TRUE);
-    }
+    $output = method_exists($var, 'export') ? $var->export() : features_var_export((array) $var, '', FALSE, $count+1);
   }
   else if (is_array($var)) {
     if (empty($var)) {
@@ -760,21 +746,7 @@ function features_get_normal($component, $module_name, $reset = FALSE) {
       $default_hook = features_get_default_hooks($component);
       if ($module && $default_hook && isset($module->info['features'][$component]) && features_hook($component, 'features_export_render')) {
         $code = features_invoke($component, 'features_export_render', $module_name, $module->info['features'][$component], NULL);
-        
-        if (isset($code[$default_hook])) {
-          $eval_return = eval($code[$default_hook]);
-          // eval returns FALSE on syntax errors but FALSE could also be a valid return value.
-          // We log the possibility of an error.
-          if (FALSE === $eval_return) {
-            watchdog('features', 'Evaluated code in module %module_name with component %component returned FALSE. Possible syntax error.', array('%module_name' => $module_name, '%component' => $component), WATCHDOG_WARNING);
-          }
-          
-          $cache[$module_name][$component] = $eval_return;
-          
-        }
-        else {
-          $cache[$module_name][$component] = FALSE;
-        }
+        $cache[$module_name][$component] = isset($code[$default_hook]) ? eval($code[$default_hook]) : FALSE;
       }
     }
 

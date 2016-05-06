@@ -162,6 +162,9 @@ projects[field_validation][version] = 2.6
 projects[flippy][subdir] = eccontrib
 projects[flippy][version] = 1.4
 
+projects[fivestar][subdir] = eccontrib
+projects[fivestar][version] = 2.x
+
 projects[flexslider][subdir] = eccontrib
 projects[flexslider][version] = 2.x-dev
 
@@ -273,6 +276,9 @@ projects[pps][version] = 1.x
 #projects[redhen][subdir] = eccontrib
 #projects[redhen][version] = 1.9
 
+projects[rdfx][subdir] = eccontrib
+projects[rdfx][version] = 2.x
+
 projects[redirect][subdir] = eccontrib
 projects[redirect][version] = 1.0-rc3
 
@@ -353,6 +359,9 @@ projects[views_slideshow][version] = 3.1
 
 projects[views_url_path_arguments][subdir] = eccontrib
 projects[views_url_path_arguments][version] = 1.1
+
+projects[votingapi][subdir] = eccontrib
+projects[votingapi][version] = 2.12
 
 projects[weight][subdir] = eccontrib
 projects[weight][version] = 2.5
