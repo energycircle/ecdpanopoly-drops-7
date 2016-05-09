@@ -21,7 +21,7 @@ function ec_promotions_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'CTA Form',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_button_text',
       1 => 'field_call_to_action',
@@ -51,15 +51,14 @@ function ec_promotions_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Show This On',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_ref_promo_article',
       1 => 'field_ref_promo_case_study',
-      2 => 'field_ref_promo_page',
+      2 => 'field_ref_promotion_product',
       3 => 'field_ref_promo_serv_cat',
       4 => 'field_ref_promo_serv_group',
       5 => 'field_ref_promo_service',
-      6 => 'field_ref_promotion_product',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
