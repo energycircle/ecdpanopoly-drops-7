@@ -11,7 +11,6 @@ function ec_promotions_defaultconfig_features() {
   return array(
     'ec_promotions' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -581,7 +580,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -695,9 +694,6 @@ function ec_promotions_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_call_to_action',
-      'field_permissions' => array(
-        'type' => 0,
-      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1232,7 +1228,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -1822,27 +1818,4 @@ function ec_promotions_defaultconfig_field_default_fields() {
   t('Select the promotions to display on this product page.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_promotions_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__promotion';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__promotion'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'schemaorg_ui_type_promotion';
-  $strongarm->value = 'Offer';
-  $export['schemaorg_ui_type_promotion'] = $strongarm;
-
-  return $export;
 }
