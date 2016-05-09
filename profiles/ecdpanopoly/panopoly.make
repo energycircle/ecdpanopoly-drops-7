@@ -2,35 +2,35 @@ api = 2
 core = 7.x
 
 ; The Panopoly Foundation
-projects[panopoly_core][version] = 1.34
+projects[panopoly_core][version] = 1.35
 projects[panopoly_core][subdir] = panopoly
 
-projects[panopoly_images][version] = 1.34
+projects[panopoly_images][version] = 1.35
 projects[panopoly_images][subdir] = panopoly
 
-projects[panopoly_theme][version] = 1.34
+projects[panopoly_theme][version] = 1.35
 projects[panopoly_theme][subdir] = panopoly
 
-projects[panopoly_magic][version] = 1.34
+projects[panopoly_magic][version] = 1.35
 projects[panopoly_magic][subdir] = panopoly
 
-projects[panopoly_widgets][version] = 1.34
+projects[panopoly_widgets][version] = 1.35
 projects[panopoly_widgets][subdir] = panopoly
 
-projects[panopoly_admin][version] = 1.34
+projects[panopoly_admin][version] = 1.35
 projects[panopoly_admin][subdir] = panopoly
 
-projects[panopoly_users][version] = 1.34
+projects[panopoly_users][version] = 1.35
 projects[panopoly_users][subdir] = panopoly
 
 ; The Panopoly Toolset
-projects[panopoly_pages][version] = 1.34
+projects[panopoly_pages][version] = 1.35
 projects[panopoly_pages][subdir] = panopoly
 
-projects[panopoly_wysiwyg][version] = 1.34
+projects[panopoly_wysiwyg][version] = 1.35
 projects[panopoly_wysiwyg][subdir] = panopoly
 
-projects[panopoly_search][version] = 1.34
+projects[panopoly_search][version] = 1.35
 projects[panopoly_search][subdir] = panopoly
 
 
@@ -43,7 +43,7 @@ projects[panopoly_seo][subdir] = panopoly_custom
 
 
 ; For running the automated tests.
-projects[panopoly_test][version] = 1.34
+projects[panopoly_test][version] = 1.35
 projects[panopoly_test][subdir] = panopoly
 
 
@@ -54,7 +54,7 @@ projects[defaultconfig][subdir] = contrib
 projects[views][patch][1615438] = https://www.drupal.org/files/search_multiple_terms-1615438-30.patch
 projects[views][subdir] = contrib
 
-projects[features][patch][2899734] = https://www.drupal.org/files/issues/2138341-eval-log.patch
+projects[features][patch][2899735] = https://www.drupal.org/files/issues/2138351-eval-log.patch
 projects[features][subdir] = contrib
 
 projects[features][patch][1437264] = https://www.drupal.org/files/issues/features-var-export-object-1437264-12_0.patch
