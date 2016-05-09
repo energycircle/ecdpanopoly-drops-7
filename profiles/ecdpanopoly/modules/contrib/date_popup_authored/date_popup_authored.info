@@ -5,9 +5,9 @@ files[] = date_popup_authored.test
 package = Date/Time
 dependencies[] = date_popup
 
-; Information added by drush on 2016-05-06
+; Information added by drush on 2016-05-09
 version = "7.x-1.1+2-dev"
 core = "7.x"
 project = "date_popup_authored"
-datestamp = "1462542701"
+datestamp = "1462799327"
 

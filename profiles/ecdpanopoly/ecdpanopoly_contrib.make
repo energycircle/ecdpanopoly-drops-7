@@ -277,7 +277,7 @@ projects[pps][version] = 1.x
 #projects[redhen][version] = 1.9
 
 projects[rdfx][subdir] = eccontrib
-projects[rdfx][version] = 2.x
+projects[rdfx][version] = 2.0-alpha4
 
 projects[redirect][subdir] = eccontrib
 projects[redirect][version] = 1.0-rc3
@@ -462,6 +462,11 @@ libraries[mailchimp][download][type] = get
 libraries[mailchimp][type] = library
 libraries[mailchimp][directory_name] = mailchimp
 libraries[mailchimp][download][url] = https://bitbucket.org/mailchimp/mailchimp-api-php/get/master.zip
+
+libraries[arc][download][type] = get
+libraries[arc][type] = library
+libraries[arc][directory_name] = arc
+libraries[arc][download][url] = http://github.com/semsol/arc2/tarball/master
 
 
 ; THEMES
