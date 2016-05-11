@@ -56,7 +56,7 @@ function rdf_mappings_features_export_render($module, $data, $export = NULL) {
     }
     $parts = explode('-', $entity_type_bundle);
     $entity_type = $parts[0];
-    $bundle_name = $parts[1];
+    $bundle_name = isset($parts[1]) ? $parts[1] : NULL;
     if ($rdf_mapping = rdf_mapping_load($entity_type, $bundle_name)) {
       $rdf_mapping_export = features_var_export($rdf_mapping, '  ');
       $rdf_bundle = features_var_export($bundle_name);
