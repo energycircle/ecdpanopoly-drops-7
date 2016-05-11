@@ -11,7 +11,7 @@ function ec_awards_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'Linda Wigington Leadership Award',
+    'name' => 'Award Category 1',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 0,
@@ -25,10 +25,14 @@ function ec_awards_uuid_features_default_terms() {
         'alias' => 'award-types/linda-wigington-leadership-award',
         'language' => 'und',
       ),
+      1 => array(
+        'alias' => 'award-types/award-category-1',
+        'language' => 'und',
+      ),
     ),
   );
   $terms[] = array(
-    'name' => 'Woman of the Year Award',
+    'name' => 'Award Category 2',
     'description' => '',
     'format' => 'panopoly_wysiwyg_text',
     'weight' => 0,
@@ -40,6 +44,10 @@ function ec_awards_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'award-types/woman-year-award',
+        'language' => 'und',
+      ),
+      1 => array(
+        'alias' => 'award-types/award-category-2',
         'language' => 'und',
       ),
     ),

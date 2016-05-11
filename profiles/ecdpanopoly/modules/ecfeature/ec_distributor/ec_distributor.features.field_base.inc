@@ -10,7 +10,7 @@
 function ec_distributor_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_distributor_contact_name'
+  // Exported field_base: 'field_distributor_contact_name'.
   $field_bases['field_distributor_contact_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -31,7 +31,7 @@ function ec_distributor_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_external_website'
+  // Exported field_base: 'field_external_website'.
   $field_bases['field_external_website'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -60,7 +60,7 @@ function ec_distributor_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_region'
+  // Exported field_base: 'field_region'.
   $field_bases['field_region'] = array(
     'active' => 1,
     'cardinality' => 1,

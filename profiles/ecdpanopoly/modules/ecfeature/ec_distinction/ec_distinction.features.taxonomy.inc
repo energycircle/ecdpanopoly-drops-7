@@ -9,7 +9,7 @@
  */
 function ec_distinction_taxonomy_default_vocabularies() {
   return array(
-    'distinction_types' => (object) array(
+    'distinction_types' => array(
       'name' => 'Distinction Types',
       'machine_name' => 'distinction_types',
       'description' => 'Categories for content of type distinction',

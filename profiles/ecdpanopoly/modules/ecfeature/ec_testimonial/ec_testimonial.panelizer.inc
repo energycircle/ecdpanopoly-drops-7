@@ -799,7 +799,7 @@ function ec_testimonial_panelizer_defaults() {
   $display->content['new-fa5a7c1e-3fcb-4fe8-ae01-68f42ee0c70f'] = $pane;
   $display->panels['two_66_33_second'][2] = 'new-fa5a7c1e-3fcb-4fe8-ae01-68f42ee0c70f';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-a1e69fa0-6e5c-4874-ac54-33e1981f475c';
+  $display->title_pane = '0';
   $panelizer->display = $display;
   $export['node:testimonial:geo_default'] = $panelizer;
 

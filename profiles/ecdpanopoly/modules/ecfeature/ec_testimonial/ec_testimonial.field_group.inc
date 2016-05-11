@@ -21,7 +21,7 @@ function ec_testimonial_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Show This On',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_ref_testimonial_article',
       1 => 'field_ref_testimonial_case_study',
@@ -43,9 +43,44 @@ function ec_testimonial_field_group_info() {
   );
   $field_groups['group_show_this_on|node|testimonial|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_testimonial_info|node|testimonial|form';
+  $field_group->group_name = 'group_testimonial_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'testimonial';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Testimonial Info',
+    'weight' => '3',
+    'children' => array(
+      0 => 'body',
+      1 => 'field_testimonial_city',
+      2 => 'field_testimonial_image',
+      3 => 'field_tetstimonial_name',
+      4 => 'field_video',
+      5 => 'field_aggregate_rating',
+      6 => 'field_content_geo_data',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'label' => 'Testimonial Info',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_testimonial_info|node|testimonial|form'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Show This On');
+  t('Testimonial Info');
 
   return $field_groups;
 }

@@ -14,7 +14,7 @@ function ec_blog_post_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_blog_post';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_blog_post'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -195,6 +195,13 @@ function ec_blog_post_strongarm() {
   $strongarm->name = 'menu_parent_blog_post';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_blog_post'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__blog_post';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__blog_post'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

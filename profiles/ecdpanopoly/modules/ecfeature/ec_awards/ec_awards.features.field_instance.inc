@@ -11,7 +11,7 @@ function ec_awards_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'entityform-award_nomination_form-field_ref_nomination_award'
+  // 'entityform-award_nomination_form-field_ref_nomination_award'.
   $field_instances['entityform-award_nomination_form-field_ref_nomination_award'] = array(
     'bundle' => 'award_nomination_form',
     'default_value' => NULL,
@@ -48,7 +48,7 @@ function ec_awards_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'entityform-award_nomination_form-field_supporting_text'
+  // 'entityform-award_nomination_form-field_supporting_text'.
   $field_instances['entityform-award_nomination_form-field_supporting_text'] = array(
     'bundle' => 'award_nomination_form',
     'default_value' => NULL,
@@ -95,7 +95,7 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-award-body'
+  // Exported field_instance: 'node-award-body'.
   $field_instances['node-award-body'] = array(
     'bundle' => 'award',
     'default_value' => NULL,
@@ -163,7 +163,7 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-award-field_award_nomination_deadline'
+  // Exported field_instance: 'node-award-field_award_nomination_deadline'.
   $field_instances['node-award-field_award_nomination_deadline'] = array(
     'bundle' => 'award',
     'deleted' => 0,
@@ -240,7 +240,7 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-award-field_award_nomination_form'
+  // Exported field_instance: 'node-award-field_award_nomination_form'.
   $field_instances['node-award-field_award_nomination_form'] = array(
     'bundle' => 'award',
     'default_value' => NULL,
@@ -305,7 +305,7 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-award-field_award_type'
+  // Exported field_instance: 'node-award-field_award_type'.
   $field_instances['node-award-field_award_type'] = array(
     'bundle' => 'award',
     'default_value' => NULL,
@@ -367,7 +367,7 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-award-field_award_user_company'
+  // Exported field_instance: 'node-award-field_award_user_company'.
   $field_instances['node-award-field_award_user_company'] = array(
     'bundle' => 'award',
     'default_value' => NULL,
@@ -424,7 +424,7 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-award-field_award_winner_description'
+  // Exported field_instance: 'node-award-field_award_winner_description'.
   $field_instances['node-award-field_award_winner_description'] = array(
     'bundle' => 'award',
     'default_value' => NULL,
@@ -495,7 +495,7 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-award-field_award_year'
+  // Exported field_instance: 'node-award-field_award_year'.
   $field_instances['node-award-field_award_year'] = array(
     'bundle' => 'award',
     'deleted' => 0,
@@ -569,7 +569,7 @@ function ec_awards_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-award-field_ref_award_win_user'
+  // Exported field_instance: 'node-award-field_ref_award_win_user'.
   $field_instances['node-award-field_ref_award_win_user'] = array(
     'bundle' => 'award',
     'default_value' => NULL,

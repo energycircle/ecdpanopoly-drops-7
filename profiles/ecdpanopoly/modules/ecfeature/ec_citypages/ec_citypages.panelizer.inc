@@ -42,7 +42,7 @@ function ec_citypages_panelizer_defaults() {
     ),
   );
   $display->cache = array();
-  $display->title = '%node:title';
+  $display->title = '%node:field_ref_citypages_services we provide in %node:title';
   $display->uuid = '60209d87-3ec8-4eea-bce3-b6787afeca31';
   $display->content = array();
   $display->panels = array();
@@ -226,6 +226,29 @@ function ec_citypages_panelizer_defaults() {
   $display->content['new-210ec5e9-312c-4f96-9d36-4035e0e6dce4'] = $pane;
   $display->panels['two_66_33_first'][4] = 'new-210ec5e9-312c-4f96-9d36-4035e0e6dce4';
   $pane = new stdClass();
+  $pane->pid = 'new-c44e16b3-5860-44ce-a25f-6e08aa25831d';
+  $pane->panel = 'two_66_33_first';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'blog_listing-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+    'view_mode' => 'teaser',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 5;
+  $pane->locks = array();
+  $pane->uuid = 'c44e16b3-5860-44ce-a25f-6e08aa25831d';
+  $display->content['new-c44e16b3-5860-44ce-a25f-6e08aa25831d'] = $pane;
+  $display->panels['two_66_33_first'][5] = 'new-c44e16b3-5860-44ce-a25f-6e08aa25831d';
+  $pane = new stdClass();
   $pane->pid = 'new-fcb9f388-7a91-48b7-a98c-05037c624219';
   $pane->panel = 'two_66_33_second';
   $pane->type = 'views_panes';
@@ -248,6 +271,29 @@ function ec_citypages_panelizer_defaults() {
   $pane->uuid = 'fcb9f388-7a91-48b7-a98c-05037c624219';
   $display->content['new-fcb9f388-7a91-48b7-a98c-05037c624219'] = $pane;
   $display->panels['two_66_33_second'][0] = 'new-fcb9f388-7a91-48b7-a98c-05037c624219';
+  $pane = new stdClass();
+  $pane->pid = 'new-f9802f5b-ab74-4703-954a-45fb1fc337ea';
+  $pane->panel = 'two_66_33_second';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'city_pages_services-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+    'view_mode' => 'teaser',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = 'f9802f5b-ab74-4703-954a-45fb1fc337ea';
+  $display->content['new-f9802f5b-ab74-4703-954a-45fb1fc337ea'] = $pane;
+  $display->panels['two_66_33_second'][1] = 'new-f9802f5b-ab74-4703-954a-45fb1fc337ea';
   $pane = new stdClass();
   $pane->pid = 'new-2ada9f9a-4730-4ac2-92ee-cfd7ba6bc30d';
   $pane->panel = 'two_66_33_second';
@@ -279,12 +325,12 @@ function ec_citypages_panelizer_defaults() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 1;
+  $pane->position = 2;
   $pane->locks = array();
   $pane->uuid = '2ada9f9a-4730-4ac2-92ee-cfd7ba6bc30d';
   $display->content['new-2ada9f9a-4730-4ac2-92ee-cfd7ba6bc30d'] = $pane;
-  $display->panels['two_66_33_second'][1] = 'new-2ada9f9a-4730-4ac2-92ee-cfd7ba6bc30d';
-  $display->hide_title = PANELS_TITLE_NONE;
+  $display->panels['two_66_33_second'][2] = 'new-2ada9f9a-4730-4ac2-92ee-cfd7ba6bc30d';
+  $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
   $export['node:city_page:default:default'] = $panelizer;

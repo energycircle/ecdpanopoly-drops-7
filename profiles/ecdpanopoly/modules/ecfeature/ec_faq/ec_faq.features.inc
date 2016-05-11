@@ -34,7 +34,7 @@ function ec_faq_node_info() {
     'faq' => array(
       'name' => t('FAQ'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Used to display faq\'s on the site as well as pull them into other content.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

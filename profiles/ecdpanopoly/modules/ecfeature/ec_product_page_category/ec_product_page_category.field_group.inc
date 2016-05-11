@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function ec_product_page_category_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -37,7 +37,7 @@ function ec_product_page_category_field_group_info() {
       ),
     ),
   );
-  $export['group_cta_form|node|product_category|form'] = $field_group;
+  $field_groups['group_cta_form|node|product_category|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -66,7 +66,12 @@ function ec_product_page_category_field_group_info() {
       ),
     ),
   );
-  $export['group_shown_on_this_page|node|product_category|form'] = $field_group;
+  $field_groups['group_shown_on_this_page|node|product_category|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('CTA Form');
+  t('Shown on This Page');
+
+  return $field_groups;
 }

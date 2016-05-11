@@ -139,6 +139,13 @@ function ec_product_page_lite_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__product_page';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__product_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_export_reset_author_product_page';
   $strongarm->value = 0;
   $export['node_export_reset_author_product_page'] = $strongarm;

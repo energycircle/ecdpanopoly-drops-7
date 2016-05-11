@@ -11,7 +11,7 @@ function ec_base_config_default_roles_permissions() {
   $roles = array();
 
   // Exported role: EC Platinum admin
-  $roles['EC Platinum admin'] = (object) array(
+  $roles['EC Platinum admin'] = array(
     'name' => 'EC Platinum admin',
     'weight' => 3,
     'permissions' => array(
@@ -49,6 +49,7 @@ function ec_base_config_default_roles_permissions() {
       'create blog_post content' => TRUE,
       'create campaign_page content' => TRUE,
       'create case_study content' => TRUE,
+      'create city_page content' => TRUE,
       'create distinction content' => TRUE,
       'create external_video content' => TRUE,
       'create faq content' => TRUE,
@@ -75,6 +76,7 @@ function ec_base_config_default_roles_permissions() {
       'delete any blog_post content' => TRUE,
       'delete any campaign_page content' => TRUE,
       'delete any case_study content' => TRUE,
+      'delete any city_page content' => TRUE,
       'delete any distinction content' => TRUE,
       'delete any document files' => TRUE,
       'delete any entityform' => TRUE,
@@ -100,6 +102,7 @@ function ec_base_config_default_roles_permissions() {
       'delete own blog_post content' => TRUE,
       'delete own campaign_page content' => TRUE,
       'delete own case_study content' => TRUE,
+      'delete own city_page content' => TRUE,
       'delete own distinction content' => TRUE,
       'delete own document files' => TRUE,
       'delete own entityform' => TRUE,
@@ -134,6 +137,7 @@ function ec_base_config_default_roles_permissions() {
       'edit any blog_post content' => TRUE,
       'edit any campaign_page content' => TRUE,
       'edit any case_study content' => TRUE,
+      'edit any city_page content' => TRUE,
       'edit any distinction content' => TRUE,
       'edit any document files' => TRUE,
       'edit any entityform' => TRUE,
@@ -165,6 +169,7 @@ function ec_base_config_default_roles_permissions() {
       'edit own blog_post content' => TRUE,
       'edit own campaign_page content' => TRUE,
       'edit own case_study content' => TRUE,
+      'edit own city_page content' => TRUE,
       'edit own distinction content' => TRUE,
       'edit own document files' => TRUE,
       'edit own entityform' => TRUE,
@@ -234,7 +239,7 @@ function ec_base_config_default_roles_permissions() {
   );
 
   // Exported role: EC Platinum editor
-  $roles['EC Platinum editor'] = (object) array(
+  $roles['EC Platinum editor'] = array(
     'name' => 'EC Platinum editor',
     'weight' => 4,
     'permissions' => array(
@@ -260,6 +265,7 @@ function ec_base_config_default_roles_permissions() {
       'create blog_post content' => TRUE,
       'create campaign_page content' => TRUE,
       'create case_study content' => TRUE,
+      'create city_page content' => TRUE,
       'create distinction content' => TRUE,
       'create external_video content' => TRUE,
       'create faq content' => TRUE,
@@ -278,10 +284,12 @@ function ec_base_config_default_roles_permissions() {
       'create staff content' => TRUE,
       'create testimonial content' => TRUE,
       'create url aliases' => TRUE,
+      'delete any city_page content' => TRUE,
       'delete own article content' => TRUE,
       'delete own blog_post content' => TRUE,
       'delete own campaign_page content' => TRUE,
       'delete own case_study content' => TRUE,
+      'delete own city_page content' => TRUE,
       'delete own distinction content' => TRUE,
       'delete own external_video content' => TRUE,
       'delete own faq content' => TRUE,
@@ -310,6 +318,7 @@ function ec_base_config_default_roles_permissions() {
       'edit any blog_post content' => TRUE,
       'edit any campaign_page content' => TRUE,
       'edit any case_study content' => TRUE,
+      'edit any city_page content' => TRUE,
       'edit any distinction content' => TRUE,
       'edit any document files' => TRUE,
       'edit any external_video content' => TRUE,
@@ -336,6 +345,7 @@ function ec_base_config_default_roles_permissions() {
       'edit own blog_post content' => TRUE,
       'edit own campaign_page content' => TRUE,
       'edit own case_study content' => TRUE,
+      'edit own city_page content' => TRUE,
       'edit own distinction content' => TRUE,
       'edit own document files' => TRUE,
       'edit own external_video content' => TRUE,
@@ -390,7 +400,7 @@ function ec_base_config_default_roles_permissions() {
   );
 
   // Exported role: administrator
-  $roles['administrator'] = (object) array(
+  $roles['administrator'] = array(
     'name' => 'administrator',
     'weight' => 2,
     'permissions' => array(
@@ -626,6 +636,7 @@ function ec_base_config_default_roles_permissions() {
       'create blog_post content' => TRUE,
       'create campaign_page content' => TRUE,
       'create case_study content' => TRUE,
+      'create city_page content' => TRUE,
       'create distinction content' => TRUE,
       'create external_video content' => TRUE,
       'create faq content' => TRUE,
@@ -652,6 +663,7 @@ function ec_base_config_default_roles_permissions() {
       'delete any blog_post content' => TRUE,
       'delete any campaign_page content' => TRUE,
       'delete any case_study content' => TRUE,
+      'delete any city_page content' => TRUE,
       'delete any distinction content' => TRUE,
       'delete any document files' => TRUE,
       'delete any entityform' => TRUE,
@@ -678,6 +690,7 @@ function ec_base_config_default_roles_permissions() {
       'delete own blog_post content' => TRUE,
       'delete own campaign_page content' => TRUE,
       'delete own case_study content' => TRUE,
+      'delete own city_page content' => TRUE,
       'delete own distinction content' => TRUE,
       'delete own document files' => TRUE,
       'delete own entityform' => TRUE,
@@ -719,6 +732,7 @@ function ec_base_config_default_roles_permissions() {
       'edit any blog_post content' => TRUE,
       'edit any campaign_page content' => TRUE,
       'edit any case_study content' => TRUE,
+      'edit any city_page content' => TRUE,
       'edit any distinction content' => TRUE,
       'edit any document files' => TRUE,
       'edit any entityform' => TRUE,
@@ -750,6 +764,7 @@ function ec_base_config_default_roles_permissions() {
       'edit own blog_post content' => TRUE,
       'edit own campaign_page content' => TRUE,
       'edit own case_study content' => TRUE,
+      'edit own city_page content' => TRUE,
       'edit own distinction content' => TRUE,
       'edit own document files' => TRUE,
       'edit own entityform' => TRUE,

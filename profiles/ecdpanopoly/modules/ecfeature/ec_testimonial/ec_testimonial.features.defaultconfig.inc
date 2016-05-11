@@ -947,6 +947,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1019,7 +1022,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Body',
+      'label' => 'Testimonial Quote',
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
@@ -1039,7 +1042,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 9,
+        'weight' => 11,
       ),
     ),
   );
@@ -1328,7 +1331,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 5,
+        'weight' => 7,
       ),
     ),
   );
@@ -1462,7 +1465,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 7,
+        'weight' => 9,
       ),
     ),
   );
@@ -1564,7 +1567,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -1686,14 +1689,13 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 8,
+        'weight' => 10,
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
   t('Display Title');
   t('Display subtitle');
   t('Enter the name of the person who wrote this testimonial, as it should be displayed on the site. Example: John Smith');
@@ -1703,6 +1705,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
   t('Testimonial City');
   t('Testimonial Image');
   t('Testimonial Name');
+  t('Testimonial Quote');
   t('Testimonials');
   t('Testimonials displayed on this page.');
   t('Testimonials shown on this page');

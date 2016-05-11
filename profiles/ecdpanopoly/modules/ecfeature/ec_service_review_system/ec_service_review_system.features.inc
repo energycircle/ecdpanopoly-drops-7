@@ -59,7 +59,6 @@ function ec_service_review_system_default_entityform_type() {
       "enable_block" : 1
     },
     "weight" : "0",
-    "uuid" : "d7ebd08f-389a-4da7-a675-2a4c6f4b7317",
     "rdf_mapping" : [],
     "paths" : []
   }');
@@ -74,7 +73,7 @@ function ec_service_review_system_node_info() {
     'sreview_site' => array(
       'name' => t('Service Review Site'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Used to display links to sites that manage customer reviews. Usually only one node will be created for this content type. '),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

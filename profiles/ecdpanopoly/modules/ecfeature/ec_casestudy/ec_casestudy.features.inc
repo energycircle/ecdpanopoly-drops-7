@@ -37,7 +37,7 @@ function ec_casestudy_node_info() {
     'case_study' => array(
       'name' => t('Case Study'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Used to display Case Studies on the site as well as pull them into other content.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
@@ -110,9 +110,6 @@ function ec_casestudy_rdf_default_mappings() {
       'callback' => 'date_iso8601',
     ),
     'field_a_b_test_page' => array(
-      'predicates' => array(),
-    ),
-    'field_call_to_action' => array(
       'predicates' => array(),
     ),
   );

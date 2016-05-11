@@ -42,7 +42,7 @@ function ec_download_file_gate_node_info() {
     'request_restricted' => array(
       'name' => t('Request Restricted'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Used to display files and restrict them from download behind a lead capture form. '),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

@@ -34,7 +34,7 @@ function ec_financing_option_node_info() {
     'financing_option' => array(
       'name' => t('Financing Option'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Used to display financial options on the site as well as pull them into other content.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

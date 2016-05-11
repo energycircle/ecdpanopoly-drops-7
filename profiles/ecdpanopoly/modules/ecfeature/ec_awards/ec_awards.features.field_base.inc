@@ -10,7 +10,7 @@
 function ec_awards_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_award_nomination_deadline'
+  // Exported field_base: 'field_award_nomination_deadline'.
   $field_bases['field_award_nomination_deadline'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -43,7 +43,7 @@ function ec_awards_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_award_nomination_form'
+  // Exported field_base: 'field_award_nomination_form'.
   $field_bases['field_award_nomination_form'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -83,7 +83,7 @@ function ec_awards_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_award_type'
+  // Exported field_base: 'field_award_type'.
   $field_bases['field_award_type'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -114,7 +114,7 @@ function ec_awards_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_award_user_company'
+  // Exported field_base: 'field_award_user_company'.
   $field_bases['field_award_user_company'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -151,7 +151,7 @@ function ec_awards_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_award_winner_description'
+  // Exported field_base: 'field_award_winner_description'.
   $field_bases['field_award_winner_description'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -175,7 +175,7 @@ function ec_awards_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_award_year'
+  // Exported field_base: 'field_award_year'.
   $field_bases['field_award_year'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -208,7 +208,7 @@ function ec_awards_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_ref_award_win_user'
+  // Exported field_base: 'field_ref_award_win_user'.
   $field_bases['field_ref_award_win_user'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -245,7 +245,7 @@ function ec_awards_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_nomination_award'
+  // Exported field_base: 'field_ref_nomination_award'.
   $field_bases['field_ref_nomination_award'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -287,7 +287,7 @@ function ec_awards_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_supporting_text'
+  // Exported field_base: 'field_supporting_text'.
   $field_bases['field_supporting_text'] = array(
     'active' => 1,
     'cardinality' => 1,

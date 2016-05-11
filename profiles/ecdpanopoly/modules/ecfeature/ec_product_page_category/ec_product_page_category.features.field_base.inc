@@ -10,7 +10,7 @@
 function ec_product_page_category_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_product_category_image'
+  // Exported field_base: 'field_product_category_image'.
   $field_bases['field_product_category_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -32,7 +32,7 @@ function ec_product_page_category_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_ref_product_prodcat'
+  // Exported field_base: 'field_ref_product_prodcat'.
   $field_bases['field_ref_product_prodcat'] = array(
     'active' => 1,
     'cardinality' => -1,

@@ -16,7 +16,11 @@ function ec_service_review_system_content_menu_links_defaults() {
     'link_path' => 'node/add/sreview-site',
     'router_path' => 'node/add/sreview-site',
     'link_title' => 'Service Review Site',
-    'options' => array(),
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Used to display links to sites that manage customer reviews. Usually only one node will be created for this content type. ',
+      ),
+    ),
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,

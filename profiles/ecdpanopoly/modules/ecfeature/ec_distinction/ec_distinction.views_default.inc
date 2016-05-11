@@ -93,8 +93,9 @@ function ec_distinction_views_default_views() {
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
-    'A Page' => 'A Page',
+    'BPage' => 'BPage',
   );
 
   /* Display: All Distinctions - List */
@@ -183,6 +184,14 @@ function ec_distinction_views_default_views() {
   );
   $handler->display->display_options['filters']['field_distinction_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_distinction_type_tid']['vocabulary'] = 'distinction_types';
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
+  );
 
   /* Display: All Distinctions - Logo as link */
   $handler = $view->new_display('panel_pane', 'All Distinctions - Logo as link', 'panel_pane_3');
@@ -214,6 +223,13 @@ function ec_distinction_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'distinction' => 'distinction',
+  );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
   );
 
   /* Display: Rearrange Distinctions */
