@@ -30,7 +30,7 @@ projects[ec_base_config][download][type] = git
 projects[ec_base_config][download][url] = https://github.com/energycircle/ec_base_config.git
 projects[ec_base_config][type] = module
 projects[ec_base_config][subdir] = ecfeature
-projects[ec_base_config][version] = 1.x
+projects[ec_base_config][version] = 2.x
 
 projects[ec_base_content][download][type] = git
 projects[ec_base_content][download][url] = https://github.com/energycircle/ec_base_content.git
