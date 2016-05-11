@@ -119,7 +119,7 @@ function ec_awards_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'award' => 'award',
   );
-  /* Filter criterion: Content: Award Type (field_award_type) */
+  /* Filter criterion: Content: Award Category (field_award_type) */
   $handler->display->display_options['filters']['field_award_type_tid']['id'] = 'field_award_type_tid';
   $handler->display->display_options['filters']['field_award_type_tid']['table'] = 'field_data_field_award_type';
   $handler->display->display_options['filters']['field_award_type_tid']['field'] = 'field_award_type_tid';
@@ -163,7 +163,7 @@ function ec_awards_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'award' => 'award',
   );
-  /* Filter criterion: Content: Award Type (field_award_type) */
+  /* Filter criterion: Content: Award Category (field_award_type) */
   $handler->display->display_options['filters']['field_award_type_tid']['id'] = 'field_award_type_tid';
   $handler->display->display_options['filters']['field_award_type_tid']['table'] = 'field_data_field_award_type';
   $handler->display->display_options['filters']['field_award_type_tid']['field'] = 'field_award_type_tid';
@@ -201,7 +201,7 @@ function ec_awards_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'award' => 'award',
   );
-  /* Filter criterion: Content: Award Type (field_award_type) */
+  /* Filter criterion: Content: Award Category (field_award_type) */
   $handler->display->display_options['filters']['field_award_type_tid']['id'] = 'field_award_type_tid';
   $handler->display->display_options['filters']['field_award_type_tid']['table'] = 'field_data_field_award_type';
   $handler->display->display_options['filters']['field_award_type_tid']['field'] = 'field_award_type_tid';
@@ -238,7 +238,7 @@ function ec_awards_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'award' => 'award',
   );
-  /* Filter criterion: Content: Award Type (field_award_type) */
+  /* Filter criterion: Content: Award Category (field_award_type) */
   $handler->display->display_options['filters']['field_award_type_tid']['id'] = 'field_award_type_tid';
   $handler->display->display_options['filters']['field_award_type_tid']['table'] = 'field_data_field_award_type';
   $handler->display->display_options['filters']['field_award_type_tid']['field'] = 'field_award_type_tid';

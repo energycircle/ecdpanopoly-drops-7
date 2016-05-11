@@ -11,7 +11,6 @@ function ec_awards_defaultconfig_features() {
   return array(
     'ec_awards' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -197,6 +196,9 @@ function ec_awards_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -265,14 +267,19 @@ function ec_awards_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
-        'exclude_cv' => FALSE,
+        'display_summary' => 1,
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
           'rows' => 20,
@@ -591,7 +598,7 @@ function ec_awards_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_award_type',
-      'label' => 'Award Type',
+      'label' => 'Award Category',
       'required' => 1,
       'settings' => array(
         'exclude_cv' => FALSE,
@@ -600,9 +607,7 @@ function ec_awards_defaultconfig_field_default_fields() {
       'widget' => array(
         'active' => 1,
         'module' => 'options',
-        'settings' => array(
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        ),
+        'settings' => array(),
         'type' => 'options_select',
         'weight' => 1,
       ),
@@ -906,6 +911,7 @@ function ec_awards_defaultconfig_field_default_fields() {
           'input_format' => 'm/d/Y - H:i:s',
           'input_format_custom' => '',
           'label_position' => 'above',
+          'no_fieldset' => 0,
           'text_parts' => array(),
           'year_range' => '-10:+3',
         ),
@@ -1020,7 +1026,7 @@ function ec_awards_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Award');
-  t('Award Type');
+  t('Award Category');
   t('Body');
   t('Contact');
   t('Contact Company');
@@ -1036,27 +1042,4 @@ function ec_awards_defaultconfig_field_default_fields() {
   t('Year');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_awards_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__award';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__award'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_taxonomy_term__award_types';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_taxonomy_term__award_types'] = $strongarm;
-
-  return $export;
 }
