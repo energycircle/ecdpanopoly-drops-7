@@ -197,7 +197,14 @@ function ec_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_ids';
-  $strongarm->value = 'user-login-form';
+  $strongarm->value = 'user-login-form
+search-form
+search-form--2
+schedule-service-entityform-edit-form
+promotion-entityform-edit-form
+contact-us-entityform-edit-form
+join-our-team-entityform-edit-form
+campaign-form-entityform-edit-form';
   $export['compact_forms_ids'] = $strongarm;
 
   $strongarm = new stdClass();
