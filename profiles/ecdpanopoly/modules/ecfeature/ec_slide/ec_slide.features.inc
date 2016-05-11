@@ -31,24 +31,24 @@ function ec_slide_views_api($module = NULL, $api = NULL) {
  */
 function ec_slide_flexslider_default_presets_alter(&$data) {
   if (isset($data['default'])) {
-    $data['default']->options['animationLoop'] = 1; /* WAS: TRUE */
-    $data['default']->options['controlNav'] = 0; /* WAS: 1 */
-    $data['default']->options['directionNav'] = 1; /* WAS: TRUE */
-    $data['default']->options['keyboard'] = 1; /* WAS: TRUE */
-    $data['default']->options['mousewheel'] = 0; /* WAS: FALSE */
-    $data['default']->options['multipleKeyboard'] = 0; /* WAS: FALSE */
-    $data['default']->options['pauseOnAction'] = 1; /* WAS: TRUE */
-    $data['default']->options['pauseOnHover'] = 0; /* WAS: FALSE */
-    $data['default']->options['pausePlay'] = 0; /* WAS: FALSE */
-    $data['default']->options['randomize'] = 0; /* WAS: FALSE */
-    $data['default']->options['reverse'] = 0; /* WAS: FALSE */
-    $data['default']->options['slideshow'] = 1; /* WAS: TRUE */
-    $data['default']->options['smoothHeight'] = 0; /* WAS: FALSE */
-    $data['default']->options['thumbCaptions'] = 0; /* WAS: FALSE */
-    $data['default']->options['thumbCaptionsBoth'] = 0; /* WAS: FALSE */
-    $data['default']->options['touch'] = 1; /* WAS: TRUE */
-    $data['default']->options['useCSS'] = 1; /* WAS: TRUE */
-    $data['default']->options['video'] = 0; /* WAS: FALSE */
+    $data['default']->options['animationLoop'] = 1; /* WAS: '' */
+    $data['default']->options['controlNav'] = 0; /* WAS: '' */
+    $data['default']->options['directionNav'] = 1; /* WAS: '' */
+    $data['default']->options['keyboard'] = 1; /* WAS: '' */
+    $data['default']->options['mousewheel'] = 0; /* WAS: '' */
+    $data['default']->options['multipleKeyboard'] = 0; /* WAS: '' */
+    $data['default']->options['pauseOnAction'] = 1; /* WAS: '' */
+    $data['default']->options['pauseOnHover'] = 0; /* WAS: '' */
+    $data['default']->options['pausePlay'] = 0; /* WAS: '' */
+    $data['default']->options['randomize'] = 0; /* WAS: '' */
+    $data['default']->options['reverse'] = 0; /* WAS: '' */
+    $data['default']->options['slideshow'] = 1; /* WAS: '' */
+    $data['default']->options['smoothHeight'] = 0; /* WAS: '' */
+    $data['default']->options['thumbCaptions'] = 0; /* WAS: '' */
+    $data['default']->options['thumbCaptionsBoth'] = 0; /* WAS: '' */
+    $data['default']->options['touch'] = 1; /* WAS: '' */
+    $data['default']->options['useCSS'] = 1; /* WAS: '' */
+    $data['default']->options['video'] = 0; /* WAS: '' */
     unset($data['default']->export_type);
     unset($data['default']->type);
   }
@@ -90,6 +90,102 @@ function ec_slide_node_info() {
   );
   drupal_alter('node_info', $items);
   return $items;
+}
+
+/**
+ * Implements hook_rdf_default_mappings().
+ */
+function ec_slide_rdf_default_mappings() {
+  $schemaorg = array();
+
+  // Exported RDF mapping: slide
+  $schemaorg['node']['slide'] = array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  );
+
+  // Exported RDF mapping: slide_set
+  $schemaorg['taxonomy_term']['slide_set'] = array(
+    'rdftype' => array(
+      0 => 'skos:Concept',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'rdfs:label',
+        1 => 'skos:prefLabel',
+      ),
+    ),
+    'description' => array(
+      'predicates' => array(
+        0 => 'skos:definition',
+      ),
+    ),
+    'vid' => array(
+      'predicates' => array(
+        0 => 'skos:inScheme',
+      ),
+      'type' => 'rel',
+    ),
+    'parent' => array(
+      'predicates' => array(
+        0 => 'skos:broader',
+      ),
+      'type' => 'rel',
+    ),
+  );
+
+  return $schemaorg;
 }
 
 /**

@@ -112,8 +112,9 @@ function ec_slide_views_default_views() {
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
-    'A Page' => 'A Page',
+    'BPage' => 'BPage',
   );
 
   /* Display: Home Slides */
@@ -256,8 +257,9 @@ function ec_slide_views_default_views() {
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
-    'A Page' => 'A Page',
+    'BPage' => 'BPage',
   );
 
   /* Display: Gallery */
