@@ -6,8 +6,8 @@ dependencies[] = features
 package = "Features"
 
 ; Information added by Drupal.org packaging script on 2015-10-14
-version = "7.x-2.0-rc3"
+version = "7.x-2.0-rc2+3-dev"
 core = "7.x"
 project = "features_override"
-datestamp = "1444843045"
+datestamp = "1444829649"
 
