@@ -127,6 +127,12 @@ function ec_citypages_rdf_default_mappings() {
     'field_citypages_other_descriptio' => array(
       'predicates' => array(),
     ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_citypages_services' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

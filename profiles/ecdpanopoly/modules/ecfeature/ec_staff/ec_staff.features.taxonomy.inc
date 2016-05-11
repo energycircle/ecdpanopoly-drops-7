@@ -9,7 +9,7 @@
  */
 function ec_staff_taxonomy_default_vocabularies() {
   return array(
-    'departments' => (object) array(
+    'departments' => array(
       'name' => 'Departments',
       'machine_name' => 'departments',
       'description' => 'Team or department names, for staff members',

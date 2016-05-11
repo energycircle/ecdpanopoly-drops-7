@@ -9,7 +9,7 @@
  */
 function ec_blog_post_taxonomy_default_vocabularies() {
   return array(
-    'blog_categories' => (object) array(
+    'blog_categories' => array(
       'name' => 'Blog Categories',
       'machine_name' => 'blog_categories',
       'description' => '',

@@ -24,32 +24,6 @@ function ec_distributor_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_user_default_permissions_alter().
- */
-function ec_distributor_user_default_permissions_alter(&$data) {
-  if (isset($data['create distributor content'])) {
-    unset($data['create distributor content']['roles']['EC Platinum admin']);
-    unset($data['create distributor content']['roles']['administrator']);
-  }
-  if (isset($data['delete any distributor content'])) {
-    unset($data['delete any distributor content']['roles']['EC Platinum admin']);
-    unset($data['delete any distributor content']['roles']['administrator']);
-  }
-  if (isset($data['delete own distributor content'])) {
-    unset($data['delete own distributor content']['roles']['EC Platinum admin']);
-    unset($data['delete own distributor content']['roles']['administrator']);
-  }
-  if (isset($data['edit any distributor content'])) {
-    unset($data['edit any distributor content']['roles']['EC Platinum admin']);
-    unset($data['edit any distributor content']['roles']['administrator']);
-  }
-  if (isset($data['edit own distributor content'])) {
-    unset($data['edit own distributor content']['roles']['EC Platinum admin']);
-    unset($data['edit own distributor content']['roles']['administrator']);
-  }
-}
-
-/**
  * Implements hook_node_info().
  */
 function ec_distributor_node_info() {
@@ -57,14 +31,80 @@ function ec_distributor_node_info() {
     'distributor' => array(
       'name' => t('Distributor'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Used to display distributors on the site as well as pull them into other content.'),
       'has_title' => '1',
-      'title_label' => t('Company'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );
   drupal_alter('node_info', $items);
   return $items;
+}
+
+/**
+ * Implements hook_rdf_default_mappings().
+ */
+function ec_distributor_rdf_default_mappings() {
+  $schemaorg = array();
+
+  // Exported RDF mapping: distributor
+  $schemaorg['node']['distributor'] = array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  );
+
+  return $schemaorg;
 }
 
 /**

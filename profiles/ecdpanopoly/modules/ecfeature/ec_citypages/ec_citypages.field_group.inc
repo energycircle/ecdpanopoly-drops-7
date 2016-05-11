@@ -23,10 +23,10 @@ function ec_citypages_field_group_info() {
     'label' => 'City Page Tabs',
     'weight' => '1',
     'children' => array(
-      0 => 'group_cta_form',
-      1 => 'group_citypages_description',
-      2 => 'group_citypages_general',
-      3 => 'group_citypages_shown_this_page',
+      0 => 'group_citypages_description',
+      1 => 'group_citypages_general',
+      2 => 'group_citypages_shown_this_page',
+      3 => 'group_cta_form',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -117,6 +117,7 @@ function ec_citypages_field_group_info() {
       0 => 'field_ref_citypages_blog',
       1 => 'field_ref_citypages_case_study',
       2 => 'field_ref_citypages_testimonials',
+      3 => 'field_ref_citypages_services',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -144,9 +145,9 @@ function ec_citypages_field_group_info() {
     'label' => 'CTA Form',
     'weight' => '4',
     'children' => array(
-      0 => 'field_call_to_action',
-      1 => 'field_ref_to_cta_form',
-      2 => 'field_button_text',
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

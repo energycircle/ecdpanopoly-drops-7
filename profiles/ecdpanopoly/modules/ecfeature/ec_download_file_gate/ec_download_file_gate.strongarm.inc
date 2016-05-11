@@ -14,14 +14,14 @@ function ec_download_file_gate_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_gated_file_page';
-  $strongarm->value = 'edit-extras';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_gated_file_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_request_restricted';
-  $strongarm->value = 'edit-formblock';
+  $strongarm->value = 'edit-weight-settings';
   $export['additional_settings__active_tab_request_restricted'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -297,7 +297,7 @@ function ec_download_file_gate_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_gated_file_page';
   $strongarm->value = array(
-    0 => 'main-menu',
+    0 => 'menu-auxiliary-menu',
   );
   $export['menu_options_gated_file_page'] = $strongarm;
 
@@ -305,16 +305,14 @@ function ec_download_file_gate_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_request_restricted';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_request_restricted'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_gated_file_page';
-  $strongarm->value = 'main-menu:0';
+  $strongarm->value = 'menu-auxiliary-menu:0';
   $export['menu_parent_gated_file_page'] = $strongarm;
 
   $strongarm = new stdClass();

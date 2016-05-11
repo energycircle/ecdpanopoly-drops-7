@@ -10,7 +10,7 @@
 function ec_product_page_lite_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-field_ref_article_product'
+  // Exported field_instance: 'node-article-field_ref_article_product'.
   $field_instances['node-article-field_ref_article_product'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -79,7 +79,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_study_prodpage'
+  // Exported field_instance: 'node-case_study-field_ref_case_study_prodpage'.
   $field_instances['node-case_study-field_ref_case_study_prodpage'] = array(
     'bundle' => 'case_study',
     'default_value' => NULL,
@@ -148,7 +148,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_category-field_ref_prodcat_product'
+  // Exported field_instance: 'node-product_category-field_ref_prodcat_product'.
   $field_instances['node-product_category-field_ref_prodcat_product'] = array(
     'bundle' => 'product_category',
     'default_value' => NULL,
@@ -211,7 +211,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-body'
+  // Exported field_instance: 'node-product_page-body'.
   $field_instances['node-product_page-body'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -284,7 +284,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_button_text'
+  // Exported field_instance: 'node-product_page-field_button_text'.
   $field_instances['node-product_page-field_button_text'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -350,7 +350,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_call_to_action'
+  // Exported field_instance: 'node-product_page-field_call_to_action'.
   $field_instances['node-product_page-field_call_to_action'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -416,7 +416,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_display_subtitle'
+  // Exported field_instance: 'node-product_page-field_display_subtitle'.
   $field_instances['node-product_page-field_display_subtitle'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -488,7 +488,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_display_title'
+  // Exported field_instance: 'node-product_page-field_display_title'.
   $field_instances['node-product_page-field_display_title'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -560,7 +560,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_product_diagram'
+  // Exported field_instance: 'node-product_page-field_product_diagram'.
   $field_instances['node-product_page-field_product_diagram'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -623,7 +623,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_product_image'
+  // Exported field_instance: 'node-product_page-field_product_image'.
   $field_instances['node-product_page-field_product_image'] = array(
     'bundle' => 'product_page',
     'deleted' => 0,
@@ -733,7 +733,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_product_technical_docs'
+  // Exported field_instance: 'node-product_page-field_product_technical_docs'.
   $field_instances['node-product_page-field_product_technical_docs'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -796,7 +796,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_ref_to_cta_form'
+  // Exported field_instance: 'node-product_page-field_ref_to_cta_form'.
   $field_instances['node-product_page-field_ref_to_cta_form'] = array(
     'bundle' => 'product_page',
     'default_value' => NULL,
@@ -859,7 +859,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-product_page-field_technical_data_table'
+  // Exported field_instance: 'node-product_page-field_technical_data_table'.
   $field_instances['node-product_page-field_technical_data_table'] = array(
     'bundle' => 'product_page',
     'default_value' => array(
@@ -930,7 +930,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-promotion-field_ref_promotion_product'
+  // Exported field_instance: 'node-promotion-field_ref_promotion_product'.
   $field_instances['node-promotion-field_ref_promotion_product'] = array(
     'bundle' => 'promotion',
     'default_value' => NULL,
@@ -999,7 +999,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_ref_service_product'
+  // Exported field_instance: 'node-service-field_ref_service_product'.
   $field_instances['node-service-field_ref_service_product'] = array(
     'bundle' => 'service',
     'default_value' => NULL,
@@ -1069,7 +1069,7 @@ function ec_product_page_lite_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-service_category-field_ref_serv_cat_prodpage'
+  // 'node-service_category-field_ref_serv_cat_prodpage'.
   $field_instances['node-service_category-field_ref_serv_cat_prodpage'] = array(
     'bundle' => 'service_category',
     'default_value' => NULL,
@@ -1138,7 +1138,8 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service_group-field_ref_serv_group_prodpage'
+  // Exported field_instance:
+  // 'node-service_group-field_ref_serv_group_prodpage'.
   $field_instances['node-service_group-field_ref_serv_group_prodpage'] = array(
     'bundle' => 'service_group',
     'default_value' => NULL,
@@ -1207,7 +1208,7 @@ function ec_product_page_lite_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-testimonial-field_ref_testimonial_prodpage'
+  // Exported field_instance: 'node-testimonial-field_ref_testimonial_prodpage'.
   $field_instances['node-testimonial-field_ref_testimonial_prodpage'] = array(
     'bundle' => 'testimonial',
     'default_value' => NULL,
@@ -1272,7 +1273,7 @@ function ec_product_page_lite_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 24,
+      'weight' => 25,
     ),
   );
 

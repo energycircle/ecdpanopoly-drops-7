@@ -71,7 +71,7 @@ function ec_staff_node_info() {
     'staff' => array(
       'name' => t('Staff'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Used to display staff members profiles on the site as well as pull them into other content.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

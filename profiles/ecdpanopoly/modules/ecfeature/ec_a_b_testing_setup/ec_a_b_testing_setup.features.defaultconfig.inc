@@ -1321,7 +1321,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 32,
+        'weight' => 14,
       ),
     ),
   );

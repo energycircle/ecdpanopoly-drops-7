@@ -11,6 +11,8 @@ function ec_citypages_defaultconfig_features() {
   return array(
     'ec_citypages' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
+      'views_default_views' => 'views_default_views',
     ),
   );
 }
@@ -342,9 +344,6 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_call_to_action',
-      'field_permissions' => array(
-        'type' => 0,
-      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -975,90 +974,6 @@ function ec_citypages_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-city_page-field_citypages_pin'.
-  $fields['node-city_page-field_citypages_pin'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_citypages_pin',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'lat' => array(
-          0 => 'lat',
-        ),
-        'lng' => array(
-          0 => 'lng',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'geolocation',
-      'settings' => array(),
-      'translatable' => 0,
-      'type' => 'geolocation_latlng',
-    ),
-    'field_instance' => array(
-      'bundle' => 'city_page',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => 'Select a point in the city/neighborhood for the map pin.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'geolocation',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'geolocation_latitude',
-          'weight' => 11,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 2,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_citypages_pin',
-      'label' => 'Location pin',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'geolocation_googlemaps',
-        'settings' => array(
-          'marker_draggable' => 1,
-          'scrollwheel' => 1,
-        ),
-        'type' => 'geolocation_googlemap',
-        'weight' => 19,
-      ),
-    ),
-  );
-
   // Exported field: 'node-city_page-field_citypages_placenames'.
   $fields['node-city_page-field_citypages_placenames'] = array(
     'field_config' => array(
@@ -1448,7 +1363,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 12,
+        'weight' => 27,
       ),
     ),
   );
@@ -1557,7 +1472,117 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 13,
+        'weight' => 28,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-city_page-field_ref_citypages_services'.
+  $fields['node-city_page-field_ref_citypages_services'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_citypages_services',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'service' => 'service',
+            'service_category' => 'service_category',
+            'service_group' => 'service_group',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'city_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 19,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_citypages_services',
+      'label' => 'Services',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => 26,
       ),
     ),
   );
@@ -1666,7 +1691,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 15,
+        'weight' => 29,
       ),
     ),
   );
@@ -1882,7 +1907,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 23,
+        'weight' => 24,
       ),
     ),
   );
@@ -1907,8 +1932,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
   t('Featured Video');
   t('Local/Seasonal Services -- or -- Other Local Notes');
   t('Location Area');
-  t('Location pin');
-  t('Select a point in the city/neighborhood for the map pin.');
+  t('Services');
   t('Short Description');
   t('Short, narrative description of what places are in this City.<br /><br /> <strong>Example: "From the distinctive Beacon Hill to the North End, Back Bay and Chinatown, we serve all of downtown Boston."</strong>');
   t('Show this blog post on the selected city page(s).');
@@ -1916,4 +1940,121 @@ function ec_citypages_defaultconfig_field_default_fields() {
   t('Testimonials');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_citypages_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rdf_rdftype_city_page';
+  $strongarm->value = 'sioc:Item, foaf:Document';
+  $export['rdf_rdftype_city_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rdf_title_datatype_city_page';
+  $strongarm->value = '';
+  $export['rdf_title_datatype_city_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rdf_title_predicates_city_page';
+  $strongarm->value = 'dc:title';
+  $export['rdf_title_predicates_city_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rdf_title_type_city_page';
+  $strongarm->value = 'property';
+  $export['rdf_title_type_city_page'] = $strongarm;
+
+  return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_views_default_views().
+ */
+function ec_citypages_defaultconfig_views_default_views() {
+  $export = array();
+
+  $view = new view();
+  $view->name = 'city_pages_services';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'City Pages - Services';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_services_node']['id'] = 'reverse_field_ref_citypages_services_node';
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_services_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_services_node']['field'] = 'reverse_field_ref_citypages_services_node';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = 'Services We Provide in [title]';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Services */
+  $handler->display->display_options['fields']['field_ref_citypages_services']['id'] = 'field_ref_citypages_services';
+  $handler->display->display_options['fields']['field_ref_citypages_services']['table'] = 'field_data_field_ref_citypages_services';
+  $handler->display->display_options['fields']['field_ref_citypages_services']['field'] = 'field_ref_citypages_services';
+  $handler->display->display_options['fields']['field_ref_citypages_services']['relationship'] = 'reverse_field_ref_citypages_services_node';
+  $handler->display->display_options['fields']['field_ref_citypages_services']['settings'] = array(
+    'link' => 0,
+  );
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'city_page' => 'city_page',
+  );
+
+  /* Display: Citypage - Services */
+  $handler = $view->new_display('panel_pane', 'Citypage - Services', 'panel_pane_1');
+  $export['city_pages_services'] = $view;
+
+  return $export;
 }

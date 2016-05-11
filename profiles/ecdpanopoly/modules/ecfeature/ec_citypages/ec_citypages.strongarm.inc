@@ -162,14 +162,16 @@ function ec_citypages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_city_page';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'menu-auxiliary-menu',
+  );
   $export['menu_options_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_city_page';
-  $strongarm->value = 'menu-auxiliary-menu:2291';
+  $strongarm->value = 'menu-auxiliary-menu:0';
   $export['menu_parent_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -249,6 +251,34 @@ function ec_citypages_strongarm() {
   $strongarm->name = 'pathauto_node_city_page_pattern';
   $strongarm->value = 'city/[node:title]';
   $export['pathauto_node_city_page_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rdf_rdftype_city_page';
+  $strongarm->value = 'sioc:Item, foaf:Document';
+  $export['rdf_rdftype_city_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rdf_title_datatype_city_page';
+  $strongarm->value = '';
+  $export['rdf_title_datatype_city_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rdf_title_predicates_city_page';
+  $strongarm->value = 'dc:title';
+  $export['rdf_title_predicates_city_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rdf_title_type_city_page';
+  $strongarm->value = 'property';
+  $export['rdf_title_type_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

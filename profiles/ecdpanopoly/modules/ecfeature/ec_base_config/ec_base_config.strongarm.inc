@@ -225,6 +225,10 @@ function ec_base_config_strongarm() {
       0 => 'fieldable_panels_panes',
       1 => 'fpid',
     ),
+    'field_collection_item' => array(
+      0 => 'field_collection_item',
+      1 => 'item_id',
+    ),
     'redirect' => array(
       0 => 'redirect',
       1 => 'rid',

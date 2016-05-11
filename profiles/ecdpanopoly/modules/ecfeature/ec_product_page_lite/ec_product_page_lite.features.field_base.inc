@@ -10,7 +10,7 @@
 function ec_product_page_lite_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_product_diagram'
+  // Exported field_base: 'field_product_diagram'.
   $field_bases['field_product_diagram'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -48,7 +48,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_product_image'
+  // Exported field_base: 'field_product_image'.
   $field_bases['field_product_image'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -70,7 +70,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_product_technical_docs'
+  // Exported field_base: 'field_product_technical_docs'.
   $field_bases['field_product_technical_docs'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -108,7 +108,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_article_product'
+  // Exported field_base: 'field_ref_article_product'.
   $field_bases['field_ref_article_product'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -146,7 +146,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_study_prodpage'
+  // Exported field_base: 'field_ref_case_study_prodpage'.
   $field_bases['field_ref_case_study_prodpage'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -181,7 +181,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_prodcat_product'
+  // Exported field_base: 'field_ref_prodcat_product'.
   $field_bases['field_ref_prodcat_product'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -219,7 +219,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_promotion_product'
+  // Exported field_base: 'field_ref_promotion_product'.
   $field_bases['field_ref_promotion_product'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -254,7 +254,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_cat_prodpage'
+  // Exported field_base: 'field_ref_serv_cat_prodpage'.
   $field_bases['field_ref_serv_cat_prodpage'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -289,7 +289,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_serv_group_prodpage'
+  // Exported field_base: 'field_ref_serv_group_prodpage'.
   $field_bases['field_ref_serv_group_prodpage'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -324,7 +324,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_service_product'
+  // Exported field_base: 'field_ref_service_product'.
   $field_bases['field_ref_service_product'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -359,7 +359,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_prodpage'
+  // Exported field_base: 'field_ref_testimonial_prodpage'.
   $field_bases['field_ref_testimonial_prodpage'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -394,7 +394,7 @@ function ec_product_page_lite_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_technical_data_table'
+  // Exported field_base: 'field_technical_data_table'.
   $field_bases['field_technical_data_table'] = array(
     'active' => 1,
     'cardinality' => 1,

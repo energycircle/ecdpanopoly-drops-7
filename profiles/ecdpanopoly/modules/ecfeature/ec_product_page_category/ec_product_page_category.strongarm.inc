@@ -14,7 +14,7 @@ function ec_product_page_category_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_product_category';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_product_category'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -30,6 +30,55 @@ function ec_product_page_category_strongarm() {
   $strongarm->name = 'clear_all_product_category';
   $strongarm->value = 0;
   $export['clear_all_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_product_category';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_product_category';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_product_category';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_product_category';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_product_category';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_product_category';
+  $strongarm->value = '1';
+  $export['content_type_extras_save_and_new_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_product_category';
+  $strongarm->value = 0;
+  $export['content_type_extras_title_hide_product_category'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -122,6 +171,13 @@ function ec_product_page_category_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__product_category';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_product_category';
   $strongarm->value = array(
     0 => 'status',
@@ -159,32 +215,7 @@ function ec_product_page_category_strongarm() {
         'default' => 1,
         'choice' => 0,
       ),
-      'full' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
       'teaser' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'rss' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'search_index' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'search_result' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'diff_standard' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
@@ -194,12 +225,12 @@ function ec_product_page_category_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
-      'featured' => array(
+      'grouped_teaser' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
       ),
-      'token' => array(
+      'featured' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
@@ -211,6 +242,13 @@ function ec_product_page_category_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_product_category_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_product_category_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'save_continue_product_category';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_product_category'] = $strongarm;
@@ -218,9 +256,29 @@ function ec_product_page_category_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'schemaorg_ui_type_product_category';
+  $strongarm->value = '';
+  $export['schemaorg_ui_type_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'sync_translations_product_category';
   $strongarm->value = '0';
   $export['sync_translations_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_permissions_product_category';
+  $strongarm->value = array(
+    0 => 'create_roles',
+    1 => 'edit_roles',
+    2 => 'edit_own_roles',
+    3 => 'delete_roles',
+    4 => 'delete_own_roles',
+  );
+  $export['user_permissions_product_category'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

@@ -136,6 +136,65 @@ function ec_citypages_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-city_page-field_a_b_test_page'.
+  $field_instances['node-city_page-field_a_b_test_page'] = array(
+    'bundle' => 'city_page',
+    'default_value' => NULL,
+    'default_value_label_token' => 0,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'list_default',
+        'weight' => 18,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_a_b_test_page',
+    'label' => 'A/B Test Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-city_page-field_button_text'.
   $field_instances['node-city_page-field_button_text'] = array(
     'bundle' => 'city_page',
@@ -651,67 +710,6 @@ function ec_citypages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-city_page-field_citypages_pin'.
-  $field_instances['node-city_page-field_citypages_pin'] = array(
-    'bundle' => 'city_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Select a point in the city/neighborhood for the map pin.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'geolocation',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-        ),
-        'type' => 'geolocation_latitude',
-        'weight' => 11,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_citypages_pin',
-    'label' => 'Location pin',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'geolocation_googlemaps',
-      'settings' => array(
-        'marker_draggable' => 1,
-        'scrollwheel' => 1,
-      ),
-      'type' => 'geolocation_googlemap',
-      'weight' => 19,
-    ),
-  );
-
   // Exported field_instance: 'node-city_page-field_citypages_placenames'.
   $field_instances['node-city_page-field_citypages_placenames'] = array(
     'bundle' => 'city_page',
@@ -973,7 +971,7 @@ function ec_citypages_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 27,
     ),
   );
 
@@ -1036,7 +1034,66 @@ function ec_citypages_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 28,
+    ),
+  );
+
+  // Exported field_instance: 'node-city_page-field_ref_citypages_services'.
+  $field_instances['node-city_page-field_ref_citypages_services'] = array(
+    'bundle' => 'city_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 19,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_citypages_services',
+    'label' => 'Services',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 26,
     ),
   );
 
@@ -1099,7 +1156,7 @@ function ec_citypages_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 29,
     ),
   );
 
@@ -1226,12 +1283,13 @@ function ec_citypages_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 24,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A/B Test Page');
   t('Blog Posts');
   t('Button Text');
   t('CTA form');
@@ -1250,8 +1308,7 @@ function ec_citypages_field_default_field_instances() {
   t('Featured Video');
   t('Local/Seasonal Services -- or -- Other Local Notes');
   t('Location Area');
-  t('Location pin');
-  t('Select a point in the city/neighborhood for the map pin.');
+  t('Services');
   t('Short Description');
   t('Short, narrative description of what places are in this City.<br /><br /> <strong>Example: "From the distinctive Beacon Hill to the North End, Back Bay and Chinatown, we serve all of downtown Boston."</strong>');
   t('Show this blog post on the selected city page(s).');

@@ -10,7 +10,7 @@
 function ec_distributor_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-distributor-field_address'
+  // Exported field_instance: 'node-distributor-field_address'.
   $field_instances['node-distributor-field_address'] = array(
     'bundle' => 'distributor',
     'default_value' => array(
@@ -94,7 +94,7 @@ function ec_distributor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-distributor-field_distributor_contact_name'
+  // Exported field_instance: 'node-distributor-field_distributor_contact_name'.
   $field_instances['node-distributor-field_distributor_contact_name'] = array(
     'bundle' => 'distributor',
     'default_value' => NULL,
@@ -160,7 +160,7 @@ function ec_distributor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-distributor-field_email'
+  // Exported field_instance: 'node-distributor-field_email'.
   $field_instances['node-distributor-field_email'] = array(
     'bundle' => 'distributor',
     'default_value' => NULL,
@@ -220,7 +220,7 @@ function ec_distributor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-distributor-field_external_website'
+  // Exported field_instance: 'node-distributor-field_external_website'.
   $field_instances['node-distributor-field_external_website'] = array(
     'bundle' => 'distributor',
     'default_value' => NULL,
@@ -303,7 +303,7 @@ function ec_distributor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-distributor-field_phone'
+  // Exported field_instance: 'node-distributor-field_phone'.
   $field_instances['node-distributor-field_phone'] = array(
     'bundle' => 'distributor',
     'default_value' => NULL,
@@ -366,7 +366,7 @@ function ec_distributor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-distributor-field_region'
+  // Exported field_instance: 'node-distributor-field_region'.
   $field_instances['node-distributor-field_region'] = array(
     'bundle' => 'distributor',
     'default_value' => NULL,
