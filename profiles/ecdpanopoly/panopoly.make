@@ -46,6 +46,10 @@ projects[panopoly_seo][subdir] = panopoly_custom
 projects[panopoly_test][version] = 1.35
 projects[panopoly_test][subdir] = panopoly
 
+;feature override dev
+projects[features_override][version] = 2.x-dev
+projects[features_override][subdir] = contrib
+
 
 ; patches
 projects[defaultconfig][patch][1900574] = https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
