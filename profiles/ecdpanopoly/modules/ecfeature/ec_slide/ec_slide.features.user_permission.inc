@@ -22,56 +22,72 @@ function ec_slide_user_default_permissions() {
   // Exported permission: 'administer panelizer node slide breadcrumbs'.
   $permissions['administer panelizer node slide breadcrumbs'] = array(
     'name' => 'administer panelizer node slide breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node slide content'.
   $permissions['administer panelizer node slide content'] = array(
     'name' => 'administer panelizer node slide content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node slide context'.
   $permissions['administer panelizer node slide context'] = array(
     'name' => 'administer panelizer node slide context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node slide defaults'.
   $permissions['administer panelizer node slide defaults'] = array(
     'name' => 'administer panelizer node slide defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node slide layout'.
   $permissions['administer panelizer node slide layout'] = array(
     'name' => 'administer panelizer node slide layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node slide overview'.
   $permissions['administer panelizer node slide overview'] = array(
     'name' => 'administer panelizer node slide overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node slide settings'.
   $permissions['administer panelizer node slide settings'] = array(
     'name' => 'administer panelizer node slide settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term slide_set defaults'.
   $permissions['administer panelizer taxonomy_term slide_set defaults'] = array(
     'name' => 'administer panelizer taxonomy_term slide_set defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -101,6 +117,7 @@ function ec_slide_user_default_permissions() {
     'name' => 'delete own slide content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

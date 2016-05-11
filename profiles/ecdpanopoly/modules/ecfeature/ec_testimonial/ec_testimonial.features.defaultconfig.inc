@@ -1047,6 +1047,187 @@ function ec_testimonial_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-testimonial-field_aggregate_rating'.
+  $fields['node-testimonial-field_aggregate_rating'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_aggregate_rating',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => 0,
+      'module' => 'fivestar',
+      'settings' => array(
+        'axis' => 'vote',
+      ),
+      'translatable' => 0,
+      'type' => 'fivestar',
+    ),
+    'field_instance' => array(
+      'bundle' => 'testimonial',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'fivestar',
+          'settings' => array(
+            'expose' => TRUE,
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'style' => 'average',
+            'text' => 'average',
+            'widget' => array(
+              'fivestar_widget' => NULL,
+            ),
+          ),
+          'type' => 'fivestar_formatter_default',
+          'weight' => 17,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_aggregate_rating',
+      'label' => 'Aggregate Rating',
+      'required' => 0,
+      'settings' => array(
+        'allow_clear' => 0,
+        'allow_ownvote' => 1,
+        'allow_revote' => 1,
+        'stars' => 5,
+        'target' => 'none',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'fivestar',
+        'settings' => array(
+          'widget' => array(
+            'fivestar_widget' => 'sites/all/modules/fivestar/widgets/oxygen/oxygen.css',
+          ),
+        ),
+        'type' => 'stars',
+        'weight' => 6,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-testimonial-field_content_geo_data'.
+  $fields['node-testimonial-field_content_geo_data'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_content_geo_data',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'lat' => array(
+          0 => 'lat',
+        ),
+        'lng' => array(
+          0 => 'lng',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'geolocation',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'geolocation_latlng',
+    ),
+    'field_instance' => array(
+      'bundle' => 'testimonial',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'geolocation',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'geolocation_text',
+          'weight' => 18,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_content_geo_data',
+      'label' => 'Content Geo Data',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'geolocation_googlemaps',
+        'settings' => array(
+          'marker_draggable' => 0,
+          'scrollwheel' => 0,
+        ),
+        'type' => 'geolocation_googlemap',
+        'weight' => 8,
+      ),
+    ),
+  );
+
   // Exported field: 'node-testimonial-field_display_subtitle'.
   $fields['node-testimonial-field_display_subtitle'] = array(
     'field_config' => array(
@@ -1696,6 +1877,8 @@ function ec_testimonial_defaultconfig_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Aggregate Rating');
+  t('Content Geo Data');
   t('Display Title');
   t('Display subtitle');
   t('Enter the name of the person who wrote this testimonial, as it should be displayed on the site. Example: John Smith');
