@@ -100,12 +100,13 @@ function ec_awards_rdf_default_mappings() {
   // Exported RDF mapping: award
   $schemaorg['node']['award'] = array(
     'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
+      0 => 'schema:Thing',
+      1 => 'sioc:Item',
+      2 => 'foaf:Document',
     ),
     'title' => array(
       'predicates' => array(
-        0 => 'dc:title',
+        0 => 'schema:name',
       ),
     ),
     'created' => array(
@@ -125,7 +126,8 @@ function ec_awards_rdf_default_mappings() {
     ),
     'body' => array(
       'predicates' => array(
-        0 => 'content:encoded',
+        0 => 'schema:description',
+        1 => 'content:encoded',
       ),
     ),
     'uid' => array(
@@ -136,7 +138,7 @@ function ec_awards_rdf_default_mappings() {
     ),
     'name' => array(
       'predicates' => array(
-        0 => 'foaf:name',
+        0 => 'schema:name',
       ),
     ),
     'comment_count' => array(
@@ -151,6 +153,23 @@ function ec_awards_rdf_default_mappings() {
       ),
       'datatype' => 'xsd:dateTime',
       'callback' => 'date_iso8601',
+    ),
+    'field_award_type' => array(
+      'predicates' => array(
+        0 => 'schema:award',
+      ),
+      'type' => 'rel',
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_award_year' => array(
+      'predicates' => array(
+        0 => 'schema:releaseDate',
+      ),
     ),
   );
 
