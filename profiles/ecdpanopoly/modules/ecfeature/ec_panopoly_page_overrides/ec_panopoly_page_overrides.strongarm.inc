@@ -13,6 +13,13 @@ function ec_panopoly_page_overrides_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_panopoly_page';
+  $strongarm->value = 'edit-panelizer';
+  $export['additional_settings__active_tab_panopoly_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'auto_menutitle_panopoly_page';
   $strongarm->value = 0;
   $export['auto_menutitle_panopoly_page'] = $strongarm;

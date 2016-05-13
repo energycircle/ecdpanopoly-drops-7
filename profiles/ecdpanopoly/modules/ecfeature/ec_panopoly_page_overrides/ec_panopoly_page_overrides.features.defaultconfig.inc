@@ -33,6 +33,9 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -938,7 +941,7 @@ function ec_panopoly_page_overrides_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_panopoly_page';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-panelizer';
   $export['additional_settings__active_tab_panopoly_page'] = $strongarm;
 
   return $export;
@@ -955,6 +958,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -964,6 +968,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -973,6 +978,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page context',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -982,6 +988,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -991,6 +998,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page layout',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1000,6 +1008,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1009,6 +1018,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_landing_page settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1018,6 +1028,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page breadcrumbs',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1027,6 +1038,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1036,6 +1048,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page context',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1045,6 +1058,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page defaults',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1054,6 +1068,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page layout',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1063,6 +1078,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
@@ -1072,6 +1088,7 @@ function ec_panopoly_page_overrides_defaultconfig_user_default_permissions() {
     'name' => 'administer panelizer node panopoly_page settings',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'panelizer',
   );
