@@ -41,13 +41,6 @@ function ec_service_review_system_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'auto_menutitle_sreview_site';
-  $strongarm->value = 0;
-  $export['auto_menutitle_sreview_site'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'clear_all_sreview_site';
   $strongarm->value = 0;
   $export['clear_all_sreview_site'] = $strongarm;
@@ -206,20 +199,6 @@ function ec_service_review_system_strongarm() {
   $strongarm->name = 'generate_sreview_site';
   $strongarm->value = 'Generate authkeys';
   $export['generate_sreview_site'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_sreview_site';
-  $strongarm->value = array();
-  $export['menu_options_sreview_site'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_sreview_site';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_sreview_site'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -386,13 +365,6 @@ function ec_service_review_system_strongarm() {
   $strongarm->name = 'weight_enabled_sreview_site';
   $strongarm->value = '0';
   $export['weight_enabled_sreview_site'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_menu_sreview_site';
-  $strongarm->value = '0';
-  $export['weight_menu_sreview_site'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
