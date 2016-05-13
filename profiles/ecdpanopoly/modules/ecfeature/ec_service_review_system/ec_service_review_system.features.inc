@@ -241,28 +241,3 @@ function ec_service_review_system_rdf_default_mappings() {
 
   return $schemaorg;
 }
-
-/**
- * Implements hook_weight_features_default_settings().
- */
-function ec_service_review_system_weight_features_default_settings() {
-  $settings = array();
-
-  $settings['review_site'] = array(
-    'enabled' => 1,
-    'range' => 20,
-    'menu_weight' => 0,
-    'default' => 0,
-    'sync_translations' => 0,
-  );
-
-  $settings['sreview_site'] = array(
-    'enabled' => 0,
-    'range' => 20,
-    'menu_weight' => 0,
-    'default' => 0,
-    'sync_translations' => 0,
-  );
-
-  return $settings;
-}
