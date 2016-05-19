@@ -14,14 +14,14 @@ function ec_service_stack_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_service';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-panelizer';
   $export['additional_settings__active_tab_service'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_service_category';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-panelizer';
   $export['additional_settings__active_tab_service_category'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -677,10 +677,10 @@ function ec_service_stack_strongarm() {
       'default' => array(
         'status' => 1,
         'default' => 1,
-        'choice' => 1,
+        'choice' => 0,
       ),
       'teaser' => array(
-        'status' => 1,
+        'status' => 0,
         'default' => 1,
         'choice' => 0,
       ),
@@ -721,7 +721,7 @@ function ec_service_stack_strongarm() {
         'choice' => 1,
       ),
       'teaser' => array(
-        'status' => 1,
+        'status' => 0,
         'default' => 1,
         'choice' => 1,
       ),

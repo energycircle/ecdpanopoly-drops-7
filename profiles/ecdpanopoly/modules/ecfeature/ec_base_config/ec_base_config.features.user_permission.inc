@@ -172,6 +172,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'administer advanced pane settings',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
@@ -190,6 +191,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer cer settings'] = array(
     'name' => 'administer cer settings',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'cer',
@@ -218,6 +220,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'administer custom content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'ctools_custom_content',
@@ -328,6 +331,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer google analytics'] = array(
     'name' => 'administer google analytics',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'googleanalytics',
@@ -599,17 +603,6 @@ function ec_base_config_user_default_permissions() {
     'module' => 'rules',
   );
 
-  // Exported permission: 'administer sharethis'.
-  $permissions['administer sharethis'] = array(
-    'name' => 'administer sharethis',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'sharethis',
-  );
-
   // Exported permission: 'administer site configuration'.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -696,6 +689,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer xmlsitemap'] = array(
     'name' => 'administer xmlsitemap',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'xmlsitemap',
@@ -1235,7 +1229,6 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit terms in panopoly_categories',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -1255,6 +1248,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['exclude own node title'] = array(
     'name' => 'exclude own node title',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'exclude_node_title',
@@ -1378,6 +1372,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['opt-in or out of tracking'] = array(
     'name' => 'opt-in or out of tracking',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'googleanalytics',
@@ -1441,15 +1436,6 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: 'use PHP for tracking visibility'.
-  $permissions['use PHP for tracking visibility'] = array(
-    'name' => 'use PHP for tracking visibility',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'googleanalytics',
   );
 
   // Exported permission: 'use ctools import'.
@@ -1604,6 +1590,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'view own entityform',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'entityform',

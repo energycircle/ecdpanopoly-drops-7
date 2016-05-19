@@ -322,7 +322,7 @@ projects[title][subdir] = eccontrib
 projects[title][version] = 1.x
 
 projects[token_custom][subdir] = eccontrib
-projects[token_custom][version] = 2.0-beta3
+projects[token_custom][version] = 2.x-dev
 
 projects[token_tweaks][subdir] = eccontrib
 projects[token_tweaks][version] = 1.x

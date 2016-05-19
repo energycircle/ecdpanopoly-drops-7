@@ -159,7 +159,6 @@ function ec_slide_user_default_permissions() {
     'name' => 'edit terms in slide_set',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
