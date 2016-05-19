@@ -115,9 +115,8 @@ class metatag_context_reaction extends context_reaction {
             $metadata_array = $metadata_array[LANGUAGE_NONE];
           }
 
-          // Translate all of the meta tags using i18n, but don't update the
-          // strings.
-          metatag_translate_metatags($metadata_array, 'metatag_context:' . $context->name, NULL, FALSE);
+          // Translate all of the meta tags using i18n.
+          metatag_translate_metatags($metadata_array, 'metatag_context:' . $context->name);
 
           // Add the meta tags to the output.
           foreach ($metadata_array as $langcode => $tags) {
