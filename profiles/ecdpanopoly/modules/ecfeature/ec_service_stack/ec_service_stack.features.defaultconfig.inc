@@ -657,6 +657,9 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1419,6 +1422,9 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -2293,6 +2299,9 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(

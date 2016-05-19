@@ -13,49 +13,63 @@ function ec_citypages_user_default_permissions() {
   // Exported permission: 'administer panelizer node city_page breadcrumbs'.
   $permissions['administer panelizer node city_page breadcrumbs'] = array(
     'name' => 'administer panelizer node city_page breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node city_page content'.
   $permissions['administer panelizer node city_page content'] = array(
     'name' => 'administer panelizer node city_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node city_page context'.
   $permissions['administer panelizer node city_page context'] = array(
     'name' => 'administer panelizer node city_page context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node city_page defaults'.
   $permissions['administer panelizer node city_page defaults'] = array(
     'name' => 'administer panelizer node city_page defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node city_page layout'.
   $permissions['administer panelizer node city_page layout'] = array(
     'name' => 'administer panelizer node city_page layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node city_page overview'.
   $permissions['administer panelizer node city_page overview'] = array(
     'name' => 'administer panelizer node city_page overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node city_page settings'.
   $permissions['administer panelizer node city_page settings'] = array(
     'name' => 'administer panelizer node city_page settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -75,7 +89,6 @@ function ec_citypages_user_default_permissions() {
     'name' => 'delete any city_page content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

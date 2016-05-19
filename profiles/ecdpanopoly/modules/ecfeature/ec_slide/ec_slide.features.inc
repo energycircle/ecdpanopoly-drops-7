@@ -31,24 +31,24 @@ function ec_slide_views_api($module = NULL, $api = NULL) {
  */
 function ec_slide_flexslider_default_presets_alter(&$data) {
   if (isset($data['default'])) {
-    $data['default']->options['animationLoop'] = 1; /* WAS: '' */
-    $data['default']->options['controlNav'] = 0; /* WAS: '' */
-    $data['default']->options['directionNav'] = 1; /* WAS: '' */
-    $data['default']->options['keyboard'] = 1; /* WAS: '' */
-    $data['default']->options['mousewheel'] = 0; /* WAS: '' */
-    $data['default']->options['multipleKeyboard'] = 0; /* WAS: '' */
-    $data['default']->options['pauseOnAction'] = 1; /* WAS: '' */
-    $data['default']->options['pauseOnHover'] = 0; /* WAS: '' */
-    $data['default']->options['pausePlay'] = 0; /* WAS: '' */
-    $data['default']->options['randomize'] = 0; /* WAS: '' */
-    $data['default']->options['reverse'] = 0; /* WAS: '' */
-    $data['default']->options['slideshow'] = 1; /* WAS: '' */
-    $data['default']->options['smoothHeight'] = 0; /* WAS: '' */
-    $data['default']->options['thumbCaptions'] = 0; /* WAS: '' */
-    $data['default']->options['thumbCaptionsBoth'] = 0; /* WAS: '' */
-    $data['default']->options['touch'] = 1; /* WAS: '' */
-    $data['default']->options['useCSS'] = 1; /* WAS: '' */
-    $data['default']->options['video'] = 0; /* WAS: '' */
+    $data['default']->options['animationLoop'] = 1; /* WAS: TRUE */
+    $data['default']->options['controlNav'] = 0; /* WAS: 1 */
+    $data['default']->options['directionNav'] = 1; /* WAS: TRUE */
+    $data['default']->options['keyboard'] = 1; /* WAS: TRUE */
+    $data['default']->options['mousewheel'] = 0; /* WAS: FALSE */
+    $data['default']->options['multipleKeyboard'] = 0; /* WAS: FALSE */
+    $data['default']->options['pauseOnAction'] = 1; /* WAS: TRUE */
+    $data['default']->options['pauseOnHover'] = 0; /* WAS: FALSE */
+    $data['default']->options['pausePlay'] = 0; /* WAS: FALSE */
+    $data['default']->options['randomize'] = 0; /* WAS: FALSE */
+    $data['default']->options['reverse'] = 0; /* WAS: FALSE */
+    $data['default']->options['slideshow'] = 1; /* WAS: TRUE */
+    $data['default']->options['smoothHeight'] = 0; /* WAS: FALSE */
+    $data['default']->options['thumbCaptions'] = 0; /* WAS: FALSE */
+    $data['default']->options['thumbCaptionsBoth'] = 0; /* WAS: FALSE */
+    $data['default']->options['touch'] = 1; /* WAS: TRUE */
+    $data['default']->options['useCSS'] = 1; /* WAS: TRUE */
+    $data['default']->options['video'] = 0; /* WAS: FALSE */
     unset($data['default']->export_type);
     unset($data['default']->type);
   }

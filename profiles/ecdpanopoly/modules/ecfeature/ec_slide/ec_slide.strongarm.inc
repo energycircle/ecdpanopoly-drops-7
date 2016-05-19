@@ -140,20 +140,6 @@ function ec_slide_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__slide';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__slide'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_taxonomy_term__slide_set';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_taxonomy_term__slide_set'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_slide';
   $strongarm->value = array(
     0 => 'status',

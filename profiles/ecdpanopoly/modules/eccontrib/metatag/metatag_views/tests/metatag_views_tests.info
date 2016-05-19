@@ -9,9 +9,9 @@ dependencies[] = metatag
 dependencies[] = metatag_views
 dependencies[] = views
 
-; Information added by Drupal.org packaging script on 2016-05-11
-version = "7.x-1.14+15-dev"
+; Information added by Drupal.org packaging script on 2016-05-18
+version = "7.x-1.14+19-dev"
 core = "7.x"
 project = "metatag"
-datestamp = "1462991649"
+datestamp = "1463578897"
 

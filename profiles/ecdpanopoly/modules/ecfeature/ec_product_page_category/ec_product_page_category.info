@@ -70,7 +70,6 @@ features[variable][] = diff_view_mode_preview_node_product_category
 features[variable][] = field_bundle_settings_node__product_category
 features[variable][] = menu_options_product_category
 features[variable][] = menu_parent_product_category
-features[variable][] = metatag_enable_node__product_category
 features[variable][] = node_options_product_category
 features[variable][] = node_preview_product_category
 features[variable][] = node_submitted_product_category

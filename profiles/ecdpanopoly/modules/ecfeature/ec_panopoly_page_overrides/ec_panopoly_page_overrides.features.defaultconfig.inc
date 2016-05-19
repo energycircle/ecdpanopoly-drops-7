@@ -11,7 +11,6 @@ function ec_panopoly_page_overrides_defaultconfig_features() {
   return array(
     'ec_panopoly_page_overrides' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
       'user_default_permissions' => 'user_default_permissions',
     ),
   );
@@ -929,22 +928,6 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
   t('Primary Image');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_panopoly_page_overrides_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_panopoly_page';
-  $strongarm->value = 'edit-panelizer';
-  $export['additional_settings__active_tab_panopoly_page'] = $strongarm;
-
-  return $export;
 }
 
 /**

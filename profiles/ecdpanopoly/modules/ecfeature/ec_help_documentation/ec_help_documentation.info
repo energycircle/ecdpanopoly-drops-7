@@ -44,7 +44,6 @@ features[field_base][] = field_help_documentation_type
 features[field_instance][] = node-help_documentation-body
 features[field_instance][] = node-help_documentation-field_featured_status
 features[field_instance][] = node-help_documentation-field_help_documentation_type
-features[menu_custom][] = management
 features[node][] = help_documentation
 features[page_manager_pages][] = ec_help_documentation
 features[panelizer_defaults][] = node:help_documentation:default:default

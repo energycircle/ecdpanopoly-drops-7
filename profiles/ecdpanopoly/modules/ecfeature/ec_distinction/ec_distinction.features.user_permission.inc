@@ -150,7 +150,6 @@ function ec_distinction_user_default_permissions() {
     'name' => 'edit terms in distinction_types',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
