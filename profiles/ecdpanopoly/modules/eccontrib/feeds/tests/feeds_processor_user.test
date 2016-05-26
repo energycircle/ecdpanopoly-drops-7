@@ -124,10 +124,7 @@ class FeedsCSVtoUsersTest extends FeedsWebTestCase {
     $this->assertText('Failed importing 2 user');
 
     // Attempt to log in as one of the imported users.
-    $account = user_load_by_name('Fester');
-    $this->assertTrue($account, 'Imported user account loaded.');
-    $account->pass_raw = 'fest';
-    $this->drupalLogin($account);
+    $this->feedsLoginUser('Fester', 'fest');
 
     // Login as admin.
     $this->drupalLogin($this->admin_user);
@@ -599,5 +596,178 @@ class FeedsCSVtoUsersTest extends FeedsWebTestCase {
       $account = user_load_by_name($user_name);
       $this->assertTrue(isset($account->roles[$manager_rid]), format_string('@user has the manager role.', $vars));
     }
+  }
+
+  /**
+   * Tests if roles are replaced when replacing users.
+   */
+  public function testAdditionalRolesSettingWhenReplacingUsers() {
+    // Create manager role.
+    $manager_rid = $this->drupalCreateRole(array('access content'), 'manager');
+    // Create editor role.
+    $editor_rid = $this->drupalCreateRole(array('access content'), 'editor');
+
+    // Set that the "manager" role should be assigned to every user that is
+    // imported. Other roles should be revoked.
+    $this->setSettings('user_import', 'FeedsUserProcessor', array(
+      "roles[$manager_rid]" => TRUE,
+      'update_existing' => FEEDS_REPLACE_EXISTING,
+    ));
+
+    // Create account for Morticia with no roles. Morticia should gain the
+    // "manager" role.
+    user_save(drupal_anonymous_user(), array(
+      'name' => 'Morticia',
+      'mail' => 'morticia@example.com',
+      'pass' => 'mort',
+      'status' => 1,
+    ));
+
+    // Create account for Gomez and give it the "editor" role. After import
+    // Gomez should have lost the role "editor" and gained the role "manager".
+    user_save(drupal_anonymous_user(), array(
+      'name' => 'Gomez',
+      'mail' => 'gomez@example.com',
+      'pass' => 'gome',
+      'status' => 1,
+      'roles' => array(
+        $editor_rid => $editor_rid,
+      ),
+    ));
+
+    // Import CSV file.
+    $this->importFile('user_import', $this->absolutePath() . '/tests/feeds/users_roles.csv');
+
+    // Assert that Morticia has gained the role "manager".
+    $account = user_load_by_name('Morticia');
+    $this->assertTrue(isset($account->roles[$manager_rid]), 'Morticia has the manager role.');
+    $this->assertEqual(2, count($account->roles), 'Morticia has two roles.');
+
+    // Assert that Gomez has gained the role "manager" and but no longer has the
+    // "editor" role.
+    $account = user_load_by_name('Gomez');
+    $this->assertFalse(isset($account->roles[$editor_rid]), 'Gomez no longer has the editor role.');
+    $this->assertTrue(isset($account->roles[$manager_rid]), 'Gomez has the manager role.');
+    $this->assertEqual(2, count($account->roles), 'Gomez has two roles.');
+
+    // Now remove all default roles and import again.
+    $this->setSettings('user_import', 'FeedsUserProcessor', array(
+      "roles[$manager_rid]" => FALSE,
+      'skip_hash_check' => TRUE,
+    ));
+    $this->importFile('user_import', $this->absolutePath() . '/tests/feeds/users_roles.csv');
+
+    // Reset loaded users cache.
+    entity_get_controller('user')->resetCache();
+
+    // Assert that Morticia no longer has the role "manager".
+    $account = user_load_by_name('Morticia');
+    $this->assertFalse(isset($account->roles[$manager_rid]), 'Morticia no longer has the manager role.');
+    $this->assertEqual(1, count($account->roles), 'Morticia has one role.');
+  }
+
+  /**
+   * Test if users with md5 passwords can login after import.
+   */
+  public function testMD5() {
+    // Set to update existing users.
+    $this->setSettings('user_import', 'FeedsUserProcessor', array('update_existing' => FEEDS_UPDATE_EXISTING));
+
+    // Replace password mapper.
+    $this->removeMappings('user_import', array(
+      3 => array(
+        'source' => 'password',
+        'target' => 'pass',
+      ),
+    ));
+    $this->addMappings('user_import', array(
+      3 => array(
+        'source' => 'password_md5',
+        'target' => 'pass',
+        'pass_encryption' => 'md5',
+      ),
+    ));
+
+    // Create an account for Gomez, to ensure passwords can also be imported for
+    // existing users. Give Gomez a password different from the one that gets
+    // imported to ensure that his password gets updated.
+    user_save(drupal_anonymous_user(), array(
+      'name' => 'Gomez',
+      'mail' => 'gomez@example.com',
+      'pass' => 'temporary',
+      'status' => 1,
+    ));
+
+    // Import CSV file.
+    $this->importFile('user_import', $this->absolutePath() . '/tests/feeds/users.csv');
+
+    // Assert result.
+    $this->assertText('Created 2 users');
+    $this->assertText('Updated 1 user');
+
+    // Try to login as each successful imported user.
+    $this->feedsLoginUser('Morticia', 'mort');
+    $this->feedsLoginUser('Fester', 'fest');
+    $this->feedsLoginUser('Gomez', 'gome');
+  }
+
+  /**
+   * Test if users with sha512 passwords can login after import.
+   */
+  public function testSha512() {
+    // Set to update existing users.
+    $this->setSettings('user_import', 'FeedsUserProcessor', array('update_existing' => FEEDS_UPDATE_EXISTING));
+
+    // Replace password mapper.
+    $this->removeMappings('user_import', array(
+      3 => array(
+        'source' => 'password',
+        'target' => 'pass',
+      ),
+    ));
+    $this->addMappings('user_import', array(
+      3 => array(
+        'source' => 'password_sha512',
+        'target' => 'pass',
+        'pass_encryption' => 'sha512',
+      ),
+    ));
+
+    // Create an account for Gomez, to ensure passwords can also be imported for
+    // existing users. Give Gomez a password different from the one that gets
+    // imported to ensure that his password gets updated.
+    user_save(drupal_anonymous_user(), array(
+      'name' => 'Gomez',
+      'mail' => 'gomez@example.com',
+      'pass' => 'temporary',
+      'status' => 1,
+    ));
+
+    // Import CSV file.
+    $this->importFile('user_import', $this->absolutePath() . '/tests/feeds/users.csv');
+
+    // Assert result.
+    $this->assertText('Created 2 users');
+    $this->assertText('Updated 1 user');
+
+    // Try to login as each successful imported user.
+    $this->feedsLoginUser('Morticia', 'mort');
+    $this->feedsLoginUser('Fester', 'fest');
+    $this->feedsLoginUser('Gomez', 'gome');
+  }
+
+  /**
+   * Log in an imported user.
+   *
+   * @param string $username
+   *   The user's username.
+   * @param string $password
+   *   The user's password.
+   */
+  protected function feedsLoginUser($username, $password) {
+    $account = user_load_by_name($username);
+    $this->assertTrue($account, 'Imported user account loaded.');
+    $account->pass_raw = $password;
+    $this->drupalLogin($account);
   }
 }
