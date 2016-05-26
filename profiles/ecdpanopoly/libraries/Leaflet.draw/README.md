@@ -1,8 +1,9 @@
 
 [![Build Status](https://travis-ci.org/Leaflet/Leaflet.draw.svg?branch=master)](https://travis-ci.org/Leaflet/Leaflet.draw)
 
- * Leaflet.draw: [![Join the chat at https://gitter.im/Leaflet/Leaflet.draw](https://badges.gitter.im/Leaflet/Leaflet.draw.svg)](https://gitter.im/Leaflet/Leaflet.draw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
- * Leaflet: [![Gitter](https://badges.gitter.im/Leaflet/Leaflet.svg)](https://gitter.im/Leaflet/Leaflet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+ Leaflet.draw: [![Join the chat at https://gitter.im/Leaflet/Leaflet.draw](https://badges.gitter.im/Leaflet/Leaflet.draw.svg)](https://gitter.im/Leaflet/Leaflet.draw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+ 
+ Leaflet: [![Gitter](https://badges.gitter.im/Leaflet/Leaflet.svg)](https://gitter.im/Leaflet/Leaflet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # Important
 Leaflet.draw 0.2.3+ requires [Leaflet 0.7.x](https://github.com/Leaflet/Leaflet/releases).
@@ -412,7 +413,7 @@ map.on('draw:created', function (e) {
 		layer.bindPopup('A popup!');
 	}
 
-	drawnItems.addLayer(layer);
+	editableLayers.addLayer(layer);
 });
 ````
 
