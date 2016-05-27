@@ -3,7 +3,7 @@
   Drupal.behaviors.external = {
     attach: function (context, settings) {
       // Open external links in new tabs.
-      $("a[href^=http\\:\\/\\/]:not(.external-processed)", context).each(function() {
+      $("a[href^=http\\:\\/\\/]:not(.external-processed), a[href^=https\\:\\/\\/]:not(.external-processed)", context).each(function() {
         if(this.href.toLowerCase().indexOf(location.hostname) == -1 || this.href.toLowerCase().indexOf(location.hostname) > 13) {
 
           $(this).click(externalNewWindow);

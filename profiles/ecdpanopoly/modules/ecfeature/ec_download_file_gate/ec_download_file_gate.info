@@ -7,7 +7,6 @@ project = ec_download_file_gate
 dependencies[] = afb
 dependencies[] = ec_panopoly_page_overrides
 dependencies[] = ec_restrict_dl
-dependencies[] = ec_service_stack
 dependencies[] = features
 dependencies[] = number
 dependencies[] = views
