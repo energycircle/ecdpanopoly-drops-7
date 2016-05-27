@@ -34,7 +34,7 @@ projects[better_exposed_filters][subdir] = eccontrib
 projects[better_exposed_filters][version] = 3.x
 
 projects[better_formats][subdir] = eccontrib
-projects[better_formats][version] = 1.x-dev
+projects[better_formats][version] = 1.0-beta2
 
 projects[backup_migrate][subdir] = eccontrib
 projects[backup_migrate][version] = 3.1
@@ -61,7 +61,7 @@ projects[content_experiments][subdir] = eccontrib
 projects[content_experiments][version] = 1.4
 
 projects[context][subdir] = eccontrib
-projects[context][version] = 3.x
+projects[context][version] = 3.7
 
 projects[disable_term_node_listings][subdir] = eccontrib
 projects[disable_term_node_listings][version] = 1.2
@@ -112,7 +112,7 @@ projects[entityreference_filter][subdir] = eccontrib
 projects[entityreference_filter][version] = 1.5
 
 projects[entityreference_prepopulate][subdir] = eccontrib
-projects[entityreference_prepopulate][version] = 1.x
+projects[entityreference_prepopulate][version] = 1.6
 
 projects[entityreference_current][subdir] = eccontrib
 projects[entityreference_current][version] = 1.0-alpha2
@@ -187,13 +187,13 @@ projects[htmlmail][subdir] = eccontrib
 projects[htmlmail][version] = 2.65
 
 projects[hierarchical_select][subdir] = eccontrib
-projects[hierarchical_select][version] = 3.0-beta3
+projects[hierarchical_select][version] = 3.0-beta6
 
 projects[honeypot][subdir] = eccontrib
 projects[honeypot][version] = 1.22
 
 projects[image_link_formatter][subdir] = eccontrib
-projects[image_link_formatter][version] = 1.0
+projects[image_link_formatter][version] = 1.1
 
 projects[imagecache_token][subdir] = eccontrib
 projects[imagecache_token][version] = 1.0-rc2
@@ -343,7 +343,7 @@ projects[views_calc][subdir] = eccontrib
 projects[views_calc][version] = 1.1
 
 projects[video_filter][subdir] = eccontrib
-projects[video_filter][version] = 3.x-dev
+projects[video_filter][version] = 3.3
 
 projects[views_data_export][subdir] = eccontrib
 projects[views_data_export][version] = 3.0-beta9	
