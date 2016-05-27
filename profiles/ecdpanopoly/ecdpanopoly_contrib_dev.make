@@ -41,4 +41,10 @@ projects[field_tools][subdir] = ec-dev
 projects[ftools][version] = 2.x-dev
 projects[ftools][subdir] = ec-dev
 
+; Deploy Mods
 
+projects[deploy_services_client][subdir] = eccontrib
+projects[deploy_services_client][version] = 1.0-beta2
+
+projects[deploy][subdir] = eccontrib
+projects[deploy][version] = 2.0-beta2
