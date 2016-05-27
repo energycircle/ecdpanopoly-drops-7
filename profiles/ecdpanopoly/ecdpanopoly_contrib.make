@@ -7,7 +7,7 @@ projects[addressfield_tokens][subdir] = eccontrib
 projects[addressfield_tokens][version] = 1.5
 
 projects[addressfield][subdir] = eccontrib
-projects[addressfield][version] = 1.1
+projects[addressfield][version] = 1.2
 
 #projects[addthis][subdir] = eccontrib
 #projects[addthis][version] = 4.0-alpha6
@@ -62,12 +62,6 @@ projects[content_experiments][version] = 1.4
 
 projects[context][subdir] = eccontrib
 projects[context][version] = 3.x
-
-projects[deploy_services_client][subdir] = eccontrib
-projects[deploy_services_client][version] = 1.0-beta2
-
-projects[deploy][subdir] = eccontrib
-projects[deploy][version] = 2.0-alpha3
 
 projects[disable_term_node_listings][subdir] = eccontrib
 projects[disable_term_node_listings][version] = 1.2
@@ -187,7 +181,7 @@ projects[globalredirect][subdir] = eccontrib
 projects[globalredirect][version] = 1.5
 
 projects[google_analytics][subdir] = eccontrib
-projects[google_analytics][version] = 2.x
+projects[google_analytics][version] = 2.2
 
 projects[htmlmail][subdir] = eccontrib
 projects[htmlmail][version] = 2.65
@@ -310,7 +304,7 @@ projects[sharethis][subdir] = eccontrib
 projects[sharethis][version] = 2.12
 
 projects[smtp][subdir] = eccontrib
-projects[smtp][version] = 1.3
+projects[smtp][version] = 1.4
 
 projects[table_element][subdir] = eccontrib
 projects[table_element][version] = 1.0-beta5
