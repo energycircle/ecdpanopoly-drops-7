@@ -196,7 +196,7 @@ campaign-form-entityform-edit-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_stars';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['compact_forms_stars'] = $strongarm;
 
   $strongarm = new stdClass();

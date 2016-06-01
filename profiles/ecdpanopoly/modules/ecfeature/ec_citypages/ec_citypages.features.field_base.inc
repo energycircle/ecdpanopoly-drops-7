@@ -332,7 +332,7 @@ function ec_citypages_field_default_field_bases() {
   // Exported field_base: 'field_ref_citypages_services'.
   $field_bases['field_ref_citypages_services'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ref_citypages_services',
