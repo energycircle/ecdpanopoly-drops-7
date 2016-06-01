@@ -984,7 +984,7 @@ function ec_citypages_field_default_field_instances() {
     'bundle' => 'city_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The selected items will also be used to compile the page title.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1024,16 +1024,20 @@ function ec_citypages_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ref_citypages_services',
-    'label' => 'Services',
+    'label' => 'Primary Services',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
       'weight' => 26,
     ),
   );
@@ -1248,12 +1252,13 @@ function ec_citypages_field_default_field_instances() {
   t('Featured Video');
   t('Local/Seasonal Services -- or -- Other Local Notes');
   t('Location Area');
-  t('Services');
+  t('Primary Services');
   t('Short Description');
   t('Short, narrative description of what places are in this City.<br /><br /> <strong>Example: "From the distinctive Beacon Hill to the North End, Back Bay and Chinatown, we serve all of downtown Boston."</strong>');
   t('Show this blog post on the selected city page(s).');
   t('Show this case study on the selected city page(s)');
   t('Testimonials');
+  t('The selected items will also be used to compile the page title.');
 
   return $field_instances;
 }

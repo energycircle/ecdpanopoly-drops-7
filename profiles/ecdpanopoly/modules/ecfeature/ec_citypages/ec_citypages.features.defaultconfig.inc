@@ -247,6 +247,9 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_button_text',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1482,7 +1485,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
   $fields['node-city_page-field_ref_citypages_services'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_citypages_services',
@@ -1533,7 +1536,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'bundle' => 'city_page',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'The selected items will also be used to compile the page title.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -1573,16 +1576,20 @@ function ec_citypages_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_ref_citypages_services',
-      'label' => 'Services',
+      'label' => 'Primary Services',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
         'weight' => 26,
       ),
     ),
@@ -1933,12 +1940,13 @@ function ec_citypages_defaultconfig_field_default_fields() {
   t('Featured Video');
   t('Local/Seasonal Services -- or -- Other Local Notes');
   t('Location Area');
-  t('Services');
+  t('Primary Services');
   t('Short Description');
   t('Short, narrative description of what places are in this City.<br /><br /> <strong>Example: "From the distinctive Beacon Hill to the North End, Back Bay and Chinatown, we serve all of downtown Boston."</strong>');
   t('Show this blog post on the selected city page(s).');
   t('Show this case study on the selected city page(s)');
   t('Testimonials');
+  t('The selected items will also be used to compile the page title.');
 
   return $fields;
 }
