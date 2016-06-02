@@ -183,7 +183,7 @@ function media_field_widget_value($element, $input = FALSE, $form_state) {
     // If the display field is present make sure its unchecked value is saved.
     $field = field_widget_field($element, $form_state);
     if (empty($input['display'])) {
-      $input['display'] = intval(!empty($field['settings']['display_field']));
+      $input['display'] = intval(empty($field['settings']['display_field']));
     }
   }
 
@@ -389,12 +389,10 @@ function media_field_widget_submit($form, &$form_state) {
  */
 function theme_media_widget($variables) {
   $element = $variables['element'];
-  // Remove -update from the id.
-  $element_id = drupal_substr($element['#id'], 0, -7);
   $output = '';
 
   // The "form-media" class is required for proper Ajax functionality.
-  $output .= '<div id="' . $element_id . '" class="media-widget form-media clearfix">';
+  $output .= '<div class="media-widget form-media clearfix">';
   $output .= drupal_render_children($element);
   $output .= '</div>';
 

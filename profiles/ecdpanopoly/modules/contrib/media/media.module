@@ -67,9 +67,9 @@ function media_entity_info_alter(&$entity_info) {
       'custom settings' => TRUE,
     );
   }
-
   if (module_exists('entity_translation')) {
     $entity_info['file']['translation']['entity_translation']['class'] = 'MediaEntityTranslationHandler';
+    $entity_info['file']['translation']['entity_translation']['path schemes']['media'] = array('edit path' => 'media/%file/edit/%ctools_js');
   }
 }
 
@@ -790,7 +790,7 @@ function media_element_process($element, &$form_state, $form) {
     '#attributes' => array(
       'class' => array(
         // Required for CTools modal to work.
-        'ctools-use-modal', 'use-ajax',
+        'ctools-use-modal',
         'ctools-modal-media-file-edit', 'button', 'edit',
       ),
     ),
@@ -822,7 +822,7 @@ function media_element_process($element, &$form_state, $form) {
   $element['browse_button']['#attached']['js'] = array(
     array(
       'type' => 'setting',
-      'data' => array('media' => array('elements' => array('#' . $original_id => $element['#media_options'])))
+      'data' => array('media' => array('elements' => array('#' . $element['#id'] => $element['#media_options'])))
     )
   );
 
@@ -1022,7 +1022,7 @@ function theme_media_element($variables) {
 
   $attributes = array();
   if (isset($element['#id'])) {
-    $attributes['id'] = drupal_substr($element['#id'], 0, -7);
+    $attributes['id'] = $element['#id'];
   }
   if (!empty($element['#attributes']['class'])) {
     $attributes['class'] = (array) $element['#attributes']['class'];

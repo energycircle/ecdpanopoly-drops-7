@@ -81,3 +81,6 @@ projects[token][subdir] = contrib
 
 projects[ctools][patch][2373777] = https://www.drupal.org/files/issues/warning_attempt_to-2373777-1.patch
 projects[ctools][subdir] = contrib
+
+projects[media][patch][2317519] = https://www.drupal.org/files/issues/media-multiple-blank-wysiwyg-2317519-22.patch
+projects[media][subdir] = contrib
