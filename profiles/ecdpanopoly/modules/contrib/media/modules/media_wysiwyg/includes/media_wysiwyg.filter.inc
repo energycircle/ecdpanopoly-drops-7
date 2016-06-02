@@ -138,14 +138,6 @@ function media_wysiwyg_token_to_markup($match, $wysiwyg = FALSE) {
       $settings['attributes'] = array_intersect_key($tag_info['attributes'], array_flip($attribute_whitelist));
       $settings['fields'] = $fields;
 
-      // Decode HTML entities when reading attributes from the token, because
-      // we are going to encode them before outputting as HTML.
-      foreach ($settings['attributes'] as $key => $value) {
-        if (is_string($value)) {
-          $settings['attributes'][$key] = html_entity_decode($value);
-        }
-      }
-
       // Many media formatters will want to apply width and height independently
       // of the style attribute or the corresponding HTML attributes, so pull
       // these two out into top-level settings. Different WYSIWYG editors have
@@ -255,9 +247,6 @@ function media_wysiwyg_filter_field_parser($tag_info) {
   $fields = array();
   if (isset($tag_info['fields'])) {
     foreach($tag_info['fields'] as $field_name => $field_value) {
-      // Decode HTML entities in fields because they will be encoded again
-      // when we output the fields for the user to edit.
-      $field_value = html_entity_decode($field_value);
       if (strpos($field_name, 'field_') === 0) {
         $parsed_field = explode('[', str_replace(']', '', $field_name));
         $ref = &$fields;
@@ -332,6 +321,8 @@ function _media_wysiwyg_generate_tagMap($text) {
  * @return array
  *   An array of view modes that can be used on the file when embedded in the
  *   WYSIWYG.
+ *
+ * @deprecated
  */
 function media_wysiwyg_get_wysiwyg_allowed_view_modes($file) {
   $enabled_view_modes = &drupal_static(__FUNCTION__, array());
@@ -365,6 +356,8 @@ function media_wysiwyg_get_wysiwyg_allowed_view_modes($file) {
   }
 
   $view_modes = $enabled_view_modes[$file->type];
+  drupal_alter('media_wysiwyg_allowed_view_modes', $view_modes, $file);
+  // Invoke the deprecated/misspelled alter hook as well.
   drupal_alter('media_wysiwyg_wysiwyg_allowed_view_modes', $view_modes, $file);
   return $view_modes;
 }
