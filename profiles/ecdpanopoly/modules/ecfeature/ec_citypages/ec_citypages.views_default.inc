@@ -267,15 +267,13 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['field_ref_citypages_blog']['settings'] = array(
     'view_mode' => 'teaser',
     'links' => 1,
-    'field_multiple_limit' => '1',
+    'field_multiple_limit' => '-1',
     'field_multiple_limit_offset' => '0',
   );
+  $handler->display->display_options['fields']['field_ref_citypages_blog']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_ref_citypages_blog']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_ref_citypages_blog']['separator'] = '';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: City Page (field_ref_blog_citypages:delta) */
-  $handler->display->display_options['sorts']['delta']['id'] = 'delta';
-  $handler->display->display_options['sorts']['delta']['table'] = 'field_data_field_ref_blog_citypages';
-  $handler->display->display_options['sorts']['delta']['field'] = 'delta';
 
   /* Display: Featured Blog Articles list (NID) */
   $handler = $view->new_display('panel_pane', 'Featured Blog Articles list (NID)', 'panel_pane_4');
@@ -299,10 +297,6 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['field_ref_citypages_blog']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_ref_citypages_blog']['multi_type'] = 'ul';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: City Page (field_ref_blog_citypages:delta) */
-  $handler->display->display_options['sorts']['delta']['id'] = 'delta';
-  $handler->display->display_options['sorts']['delta']['table'] = 'field_data_field_ref_blog_citypages';
-  $handler->display->display_options['sorts']['delta']['field'] = 'delta';
 
   /* Display: Featured Testimonial (NID) */
   $handler = $view->new_display('panel_pane', 'Featured Testimonial (NID)', 'panel_pane_5');
@@ -327,7 +321,9 @@ function ec_citypages_views_default_views() {
     'field_multiple_limit' => '1',
     'field_multiple_limit_offset' => '0',
   );
+  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_ref_citypages_testimonials']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['separator'] = '';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
 
   /* Display: Featured Testimonials list (NID) */
@@ -363,20 +359,22 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Testimonials */
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['id'] = 'field_ref_citypages_testimonials';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['table'] = 'field_data_field_ref_citypages_testimonials';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['field'] = 'field_ref_citypages_testimonials';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['label'] = '';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['type'] = 'entityreference_entity_view';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['settings'] = array(
+  /* Field: Content: Case Studies */
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['id'] = 'field_ref_citypages_case_study';
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['table'] = 'field_data_field_ref_citypages_case_study';
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['field'] = 'field_ref_citypages_case_study';
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['label'] = '';
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['type'] = 'entityreference_entity_view';
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['settings'] = array(
     'view_mode' => 'teaser',
     'links' => 1,
     'field_multiple_limit' => '1',
     'field_multiple_limit_offset' => '0',
   );
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_ref_citypages_case_study']['separator'] = '';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
 
   /* Display: Featured Casestudies list (NID) */
