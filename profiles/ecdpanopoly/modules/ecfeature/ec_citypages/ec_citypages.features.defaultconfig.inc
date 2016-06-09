@@ -106,7 +106,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 6,
         ),
       ),
       'entity_type' => 'node',
@@ -114,6 +114,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'City Page',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -215,7 +216,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 6,
         ),
       ),
       'entity_type' => 'node',
@@ -223,6 +224,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'City Page',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -317,6 +319,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Button Text',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -419,6 +422,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Call to Action',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -541,6 +545,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Location Area',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -640,6 +645,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Description Example',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -739,6 +745,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'settings' => array(
         'alt_field' => 0,
         'default_image' => 0,
+        'exclude_cv' => FALSE,
         'file_directory' => 'citypages',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -865,6 +872,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Description Local Experience',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -958,6 +966,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Local/Seasonal Services -- or -- Other Local Notes',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -1051,6 +1060,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Description Place Names',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -1148,6 +1158,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Short Description',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -1243,6 +1254,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Featured Video',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -1356,6 +1368,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Blog Posts',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1465,6 +1478,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Case Studies',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1579,6 +1593,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Primary Services',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1688,6 +1703,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Testimonials',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1712,6 +1728,9 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'entityform_type' => array(
           'columns' => array(
@@ -1795,6 +1814,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'CTA form',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1904,6 +1924,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'City Page',
       'required' => 0,
       'settings' => array(
+        'exclude_cv' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
