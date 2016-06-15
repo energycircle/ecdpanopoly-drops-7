@@ -116,7 +116,7 @@ function ec_base_config_default_panels_mini() {
   $pane->configuration = array(
     'admin_title' => 'Copyright',
     'title' => '',
-    'body' => '<p>®&nbsp;[date:custom:Y] | All rights reserved.</p>',
+    'body' => '<p>©&nbsp;[date:custom:Y] | All rights reserved.</p>',
     'format' => 'panopoly_wysiwyg_text',
     'substitute' => TRUE,
   );

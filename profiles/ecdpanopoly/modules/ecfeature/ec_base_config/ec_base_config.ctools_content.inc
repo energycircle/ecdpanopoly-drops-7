@@ -18,9 +18,9 @@ function ec_base_config_default_ctools_custom_content() {
   $content->admin_description = '';
   $content->category = 'site-assets';
   $content->settings = array(
-    'admin_title' => '',
+    'admin_title' => 'copyright',
     'title' => '',
-    'body' => '<p>© [date:custom:Y] | All Right Reserved.&nbsp;</p>',
+    'body' => '<p>&copy; [date:custom:Y] | All Right Reserved.</p>',
     'format' => 'panopoly_wysiwyg_text',
     'substitute' => 1,
   );

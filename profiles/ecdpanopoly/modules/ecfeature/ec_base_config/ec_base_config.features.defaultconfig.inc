@@ -951,12 +951,5 @@ function ec_base_config_defaultconfig_strongarm() {
   $strongarm->value = 'This is your site slogan';
   $export['site_slogan'] = $strongarm;
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'token_tree_recursion_limit';
-  $strongarm->value = '2';
-  $export['token_tree_recursion_limit'] = $strongarm;
-
   return $export;
 }
