@@ -748,8 +748,8 @@ campaign-form-entityform-edit-form';
     ),
     'ec_base_config' => array(
       'breakpoints' => 'b780eebaa82042a30ce982db6f937f90',
-      'ctools_custom_content' => '1356da2ddba6c4b36b3f451719094e4f',
-      'defaultconfig' => '49097a09db8dbcd9a56024d29fdce202',
+      'ctools_custom_content' => 'a5d796e407958281537a49de8aa1f3f3',
+      'defaultconfig' => '3074f333922c079342461df144022d62',
       'entityform_type' => '8ac0c648f9026740d431c36662b6f0d5',
       'field_base' => '983b24a454742abef92c1b3485f4eb43',
       'field_instance' => '7adf8f5d1804d65037c624298998c677',
@@ -757,11 +757,11 @@ campaign-form-entityform-edit-form';
       'filter' => 'a70be116297419d97c3fd17dfbe017e7',
       'menu_custom' => '6dd6850f6e008c23813c78f0ae1484ce',
       'metatag' => FALSE,
-      'panels_mini' => 'ae72cf6a0cdad20bb84c03386606b95c',
-      'roles_permissions' => '5093051ee0c05e4f64c74463c48fc057',
+      'panels_mini' => 'f82e630b580cd13d03abebedff902447',
+      'roles_permissions' => '45c233b033b2227a47571c3bdb5ac16b',
       'user_permission' => '0678cd9b4e7072228b372439dac12af9',
       'user_role' => 'd8f4839388dc4e56678018fd5da54553',
-      'variable' => '7864005d7dd0a4450a0ea2a5f9d57469',
+      'variable' => '0531575933394199dc5b37ff145fc174',
       'dependencies' => 'd1a9dea8073e4a6e983b5b5a274a7be0',
     ),
     'panopoly_core' => array(
@@ -776,7 +776,7 @@ campaign-form-entityform-edit-form';
     ),
     'panopoly_pages' => array(
       'node' => 'c97e6b7cff8d0f412dbe54b006c74aa6',
-      'variable' => '7f02a870de009635bba378c2828e05f2',
+      'variable' => 'a92d87cbb2b6e833aa4f56b39a9b64a2',
       'defaultconfig' => 'f7f2bad35b0f80cbaf4afd2dac1f4f48',
       'field_base' => 'f369eac38ebf698eb055113520d0b8c3',
       'field_instance' => '81b5a5bfbbe441e3bf113d956b16a111',
@@ -792,7 +792,7 @@ campaign-form-entityform-edit-form';
     ),
     'ec_panopoly_page_overrides' => array(
       'variable' => '852dc73f34576de06ca855f4cdb6cf3a',
-      'defaultconfig' => '02a5260d6d7c001944099d9994a77b24',
+      'defaultconfig' => '40cfef5b06bd42837052a2ce550dd665',
       'field_instance' => 'd941b28cf816130c2934c01ed75735a4',
       'schemaorg' => 'cadc92c6edc4ff4aff4b2bf1e15f6c4b',
       'user_permission' => 'df654288fa1c6635d0213519665aae3e',
@@ -801,6 +801,8 @@ campaign-form-entityform-edit-form';
       'field_group' => '1f02d2e7ccdbaa60dd1c6ad69e631a65',
       'panelizer_defaults' => 'a9a4cd6a714c44a642252d63fb8b00e5',
       'views_view' => '7a90814ef49ff615b6deebab33834c52',
+      'features_override_items' => FALSE,
+      'features_overrides' => '0029aa6d7e534f4e4b08d8a43267f330',
     ),
     'ec_foundation_image_styles' => array(
       'image' => '42e1e78c3cc02a9c3925d48fc7c6e3d4',
@@ -854,7 +856,7 @@ campaign-form-entityform-edit-form';
       'views_view' => '1a6fdf36a1f8bf9764f1ade473a06790',
       'weight' => '58f47f4d9c3963e90ab4358cce82953b',
       'rdf_mappings' => '1623d8afbc7cbb815e6f868e86c20539',
-      'dependencies' => '3126fc1ec803a4988079051f8b956c4d',
+      'dependencies' => '08e734bb89384e7046046cab24eef9e8',
     ),
     'ec_awards' => array(
       'defaultconfig' => '77b774dc3d041da6d08ca373951e1228',
@@ -909,7 +911,7 @@ campaign-form-entityform-edit-form';
       'defaultconfig' => '37b9c487f5e854978f16948c04cc09f4',
       'field_base' => '9027ed022051226cf98dc3b6d5dbc57b',
       'field_group' => '5e3ab9a565436862e9bd65eaf3f104b4',
-      'field_instance' => 'cc5d0ef39d4a574326d59fbae9fc4b90',
+      'field_instance' => '24ab8aaf9ec6c8096feea56780d8059b',
       'node' => 'a1ea8fb5e4382ad60d4b8fcd6fc559bf',
       'panelizer_defaults' => '34ae086620288deefebed82f41591f2b',
       'schemaorg' => 'e49317909b7c0a7bf7255d189a909a63',
@@ -917,21 +919,21 @@ campaign-form-entityform-edit-form';
       'variable' => 'a7cd7eafa1bdc5312b1f00ac3f58824d',
       'views_view' => '78f6f558c87921f843c11e16be9532d3',
       'weight' => '90277400113747cc0b1a6976e1a9b0f1',
-      'dependencies' => 'c73843fe83b4d2572318f2d7490ac6b1',
+      'dependencies' => '7d59860d823b52fdfe70f764461867ff',
     ),
     'ec_citypages' => array(
       'defaultconfig' => 'c64e3648b281bc6c6503c23820120aad',
-      'field_base' => '51ef2b672ef46a163d65fd14c73a671b',
+      'field_base' => '2c82ec4ad56646c083389073c51bb7ca',
       'field_group' => '241d5cd9f584c972ed2b34f885f98f93',
-      'field_instance' => '8d3414cd8afac5131302c1fe9b4404c6',
+      'field_instance' => '01bab14d715d1d4a333a18d57cfbb289',
       'node' => '0dfcd5cdb6a6ecaa208b1651c4052b0d',
-      'panelizer_defaults' => '352e0b20aa0c9c110b01c0ff502ce97b',
+      'panelizer_defaults' => '6921a9bece5ba3031225e81704e50075',
       'schemaorg' => '01c3a3859ea5f3f4a7f5e053da81b11e',
       'user_permission' => 'd9e94574480f35fa998bd914cbb36c54',
       'variable' => '5742bb6dde8ffa444462bcd102b68ecd',
-      'views_view' => 'bdec8f7c75ff06eba373590b1dc579ca',
+      'views_view' => 'c5cfff93ffca9f94275053ac1ab6047b',
       'weight' => '2e9e7ea552b5cc7968938b9f6ad5e588',
-      'dependencies' => '559bb7fc0da81a93cc65c571661b3a36',
+      'dependencies' => '96789b37fe4a6babcf02422a2a9b08d3',
     ),
     'ec_customer_referral' => array(
       'variable' => '50c9609a59f11c06f93479f0ee73c5b6',
@@ -988,7 +990,7 @@ campaign-form-entityform-edit-form';
       'variable' => '7e1cdf856118f96f90d0c0934e1fa6e8',
       'views_view' => '137737c797dbd8ce2bbede9b61062b86',
       'weight' => '139a7daeb9601423a3da901af69671d5',
-      'dependencies' => 'fb3adfdd29df55f38e1750e36215e1d8',
+      'dependencies' => '857897dae91de1256ca04283adcf04a5',
       'rdf_mappings' => 'e2a53bd84ed957d7e9cfb851dc9854c5',
       'menu_links' => 'e9f674ec18be706ef2af7c5394b59fc4',
     ),
@@ -1002,11 +1004,11 @@ campaign-form-entityform-edit-form';
       'node' => '1b7409dbe4fd756e9971411fc8e8eae0',
       'panelizer_defaults' => '88ae4130af2774eb690bf866ce68e015',
       'schemaorg' => '0dda4355670ffa259d7abbc8398df7f2',
-      'user_permission' => '051ce53569bebec85ad8c37f69448338',
+      'user_permission' => '4316513df9aba0cf58642bf5899786d1',
       'variable' => '37641b2f4b90732a6aa6e8dc8419cd78',
       'views_view' => '3dec0f1dfdd723c015addd3df0642738',
       'weight' => '2ee0e13427815e1ec721b67716365862',
-      'dependencies' => 'b618d62dee01f2f284c6afc2ce5aae8c',
+      'dependencies' => '50abc1f8ff1e9ec23082ab056c3c3ed2',
     ),
     'ec_external_video' => array(
       'defaultconfig' => 'ebdd307467c848f1b55d852736542532',
@@ -1187,6 +1189,11 @@ campaign-form-entityform-edit-form';
       'content_menu_links' => '288a5602a9ec119571de5a458f783fae',
       'user_permission' => 'c8482674cb13b90e27823f18356dbf79',
       'dependencies' => '72936be8658d0bc8ad8fce726adcee1e',
+    ),
+    'ec_base_content' => array(
+      'uuid_node' => '47ad6be32ab3498e201da7a080ed22f7',
+      'variable' => '30a147f8f1c689935c48d9590bff80f0',
+      'dependencies' => '78410cbd1faaaab441725b3100f181d4',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -2142,6 +2149,20 @@ campaign-form-entityform-edit-form';
   $strongarm->name = 'superfish_zebra_1';
   $strongarm->value = 1;
   $export['superfish_zebra_1'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'token_tree_recursion_limit';
+  $strongarm->value = '2';
+  $export['token_tree_recursion_limit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_frontpage';
+  $strongarm->value = 0;
+  $export['weight_frontpage'] = $strongarm;
 
   return $export;
 }
