@@ -34,6 +34,7 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'flexslider';
+  $handler->display->display_options['style_options']['id'] = 'fs-testimonialslide2';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
@@ -102,7 +103,7 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['text'] = '[field_tetstimonial_name][field_testimonial_city]';
   $handler->display->display_options['fields']['field_testimonial_city']['element_label_colon'] = FALSE;
-  /* Field: Content: Service */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_ref_testimonial_service']['id'] = 'field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['table'] = 'field_data_field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['field'] = 'field_ref_testimonial_service';
@@ -123,17 +124,16 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'testimonial' => 'testimonial',
   );
-  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
-    'BPage' => 'BPage',
-  );
 
   /* Display: Testimonials - Slideshow */
   $handler = $view->new_display('panel_pane', 'Testimonials - Slideshow', 'panel_pane_1');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'flexslider';
+  $handler->display->display_options['style_options']['id'] = 'fs-testimonialslide';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
@@ -202,13 +202,6 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['text'] = '[field_tetstimonial_name][field_testimonial_city]';
   $handler->display->display_options['fields']['field_testimonial_city']['element_label_colon'] = FALSE;
-  /* Field: Content: Service */
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['id'] = 'field_ref_testimonial_service';
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['table'] = 'field_data_field_ref_testimonial_service';
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['field'] = 'field_ref_testimonial_service';
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['label'] = 'Services Provided';
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['element_label_type'] = 'h2';
-  $handler->display->display_options['fields']['field_ref_testimonial_service']['hide_empty'] = TRUE;
 
   /* Display: Testimonials - Slideshow nid block */
   $handler = $view->new_display('panel_pane', 'Testimonials - Slideshow nid block', 'panel_pane_2');
@@ -244,6 +237,7 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['field'] = 'reverse_field_ref_page_testimonial_node';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+
   $export['testimonials'] = $view;
 
   return $export;
