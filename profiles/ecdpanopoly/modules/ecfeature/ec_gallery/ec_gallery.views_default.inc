@@ -74,21 +74,13 @@ function ec_gallery_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'gallery' => 'gallery',
   );
-  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
-    'BPage' => 'BPage',
-  );
 
   /* Display: Gallery */
   $handler = $view->new_display('panel_pane', 'Gallery', 'panel_pane_1');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'flexslider';
   $handler->display->display_options['style_options']['optionset'] = 'slideshow_slider';
-  $handler->display->display_options['style_options']['id'] = 'flexslider-slider';
+  $handler->display->display_options['style_options']['id'] = 'fs-csgallery';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -124,7 +116,7 @@ function ec_gallery_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'flexslider';
   $handler->display->display_options['style_options']['optionset'] = 'slideshow_thumbnails';
-  $handler->display->display_options['style_options']['id'] = 'flexslider-thumbnails';
+  $handler->display->display_options['style_options']['id'] = 'fs-csgallerythumb';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -154,6 +146,7 @@ function ec_gallery_views_default_views() {
   );
   $handler->display->display_options['fields']['field_gallery_image']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_gallery_image']['delta_offset'] = '0';
+
   $export['gallery_slideshow_carousel'] = $view;
 
   return $export;
