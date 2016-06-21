@@ -43,7 +43,7 @@ projects[cer][subdir] = eccontrib
 projects[cer][version] = 3.0-alpha7
 
 projects[colorbox][subdir] = eccontrib
-projects[colorbox][version] = 2.10
+projects[colorbox][version] = 2.12
 
 projects[compact_forms][subdir] = eccontrib
 projects[compact_forms][version] = 1.x
@@ -361,7 +361,7 @@ projects[weight][subdir] = eccontrib
 projects[weight][version] = 2.5
 
 projects[xmlsitemap][subdir] = eccontrib
-projects[xmlsitemap][version] = 2.2
+projects[xmlsitemap][version] = 2.3
 
 
 ;PATCHES
