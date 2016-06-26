@@ -237,10 +237,9 @@ table[width|cellpadding|cellspacing|border], tr[align|valign], td[align|valign|w
           ),
           'rule_valid_ids' => array(),
           'rule_style_urls' => array(),
-        ),
       ),
     ),
   );
-  
+
   return $formats;
 }
