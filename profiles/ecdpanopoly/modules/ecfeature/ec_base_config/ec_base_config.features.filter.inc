@@ -58,13 +58,7 @@ table[width|cellpadding|cellspacing|border], tr[align|valign], td[align|valign|w
         'status' => 1,
         'settings' => array(
           'valid_elements' => '@[style|class],
-a[!href|target<_blank|title],
-div[align<center?justify?left?right],
-br,em,i,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd,
-span,p,
-h1,h2,h3,h4,h5,h6,
-img[!src|title|alt|width|height|hspace|vspace],
-table[width|cellpadding|cellspacing|border], tr[align|valign], td[align|valign|width], tbody, th[align|valign|width], thead, tfoot, colgroup, col, caption,',
+a[!href|target<_blank|title],div[align<center?justify?left?right],br,em,i,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd,span,p,h1,h2,h3,h4,h5,h6,img[!src|title|alt|width|height|hspace|vspace],table[width|cellpadding|cellspacing|border], tr[align|valign], td[align|valign|width], tbody, th[align|valign|width], thead, tfoot, colgroup, col, caption,',
           'allow_comments' => 1,
           'nofollow_policy' => 'disabled',
           'nofollow_domains' => array(),
@@ -240,6 +234,7 @@ table[width|cellpadding|cellspacing|border], tr[align|valign], td[align|valign|w
       ),
     ),
   );
+);
 
   return $formats;
 }

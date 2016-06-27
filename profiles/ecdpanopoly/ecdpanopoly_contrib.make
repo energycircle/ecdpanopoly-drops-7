@@ -183,6 +183,9 @@ projects[globalredirect][version] = 1.5
 projects[google_analytics][subdir] = eccontrib
 projects[google_analytics][version] = 2.2
 
+projects[gmap][subdir] = eccontrib
+projects[gmap][version] = 2.11
+
 projects[htmlmail][subdir] = eccontrib
 projects[htmlmail][version] = 2.65
 
@@ -346,7 +349,7 @@ projects[video_filter][subdir] = eccontrib
 projects[video_filter][version] = 3.3
 
 projects[views_data_export][subdir] = eccontrib
-projects[views_data_export][version] = 3.0-beta9	
+projects[views_data_export][version] = 3.0-beta9
 
 projects[views_slideshow][subdir] = eccontrib
 projects[views_slideshow][version] = 3.1
@@ -367,7 +370,7 @@ projects[xmlsitemap][version] = 2.3
 ;PATCHES
 projects[token_custom][patch][] = https://www.drupal.org/files/issues/export_custom_token.patch
 projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
-projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch 
+projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch
 projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
 projects[compact_forms][patch][2464993] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
 projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
