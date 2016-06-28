@@ -231,10 +231,10 @@ a[!href|target<_blank|title],div[align<center?justify?left?right],br,em,i,strong
           ),
           'rule_valid_ids' => array(),
           'rule_style_urls' => array(),
+        ),
       ),
     ),
   );
-);
 
   return $formats;
 }
