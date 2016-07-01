@@ -373,6 +373,7 @@ projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-
 projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch
 projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
 projects[compact_forms][patch][2464993] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
+projects[context][patch][305289] = https://www.drupal.org/files/context_panels-305289-39.patch
 projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
 projects[metatag][patch][1918738] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
 #projects[metatag][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/master/patches/character_count_on_fields-1918738-9-ec.patch
@@ -390,6 +391,7 @@ projects[feeds][patch] = https://www.drupal.org/files/issues/feeds-unlock-153536
 #projects[metatag][patch][1880302] = https://www.drupal.org/files/metatag-1880302-2.patch
 projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
 projects[external][patch][1043324] = https://www.drupal.org/files/issues/external-https-links-1043324-5.patch
+
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git

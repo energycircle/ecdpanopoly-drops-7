@@ -143,6 +143,13 @@ function context_ctools_plugin_type() {
 }
 
 /**
+ * Implementation of hook_ctools_plugin_directory()
+ */
+function context_ctools_plugin_directory($module, $plugin) {
+  return 'plugins/' . $plugin;
+}
+
+/**
  * Implementation of hook_context_plugins().
  *
  * This is a ctools plugins hook.
