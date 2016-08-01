@@ -45,6 +45,9 @@ projects[backup_migrate][version] = 3.1
 projects[cer][subdir] = eccontrib
 projects[cer][version] = 3.0-alpha7
 
+projects[charts][subdir] = eccontrib
+projects[charts][version] = 2.0-rc1
+
 projects[colorbox][subdir] = eccontrib
 projects[colorbox][version] = 2.12
 
@@ -478,6 +481,10 @@ libraries[Geocomplete][type] = library
 libraries[Geocomplete][directory_name] = geocomplete
 libraries[Geocomplete][download][url] = https://github.com/ubilabs/geocomplete/zipball/master
 
+libraries[Highcharts][download][type] = get
+libraries[Highcharts][type] = library
+libraries[Highcharts][directory_name] = highcharts
+libraries[Highcharts][download][url] = http://code.highcharts.com/zips/Highcharts-4.2.5.zip
 
 ; THEMES
 projects[adaptivetheme][version] = 3.x
