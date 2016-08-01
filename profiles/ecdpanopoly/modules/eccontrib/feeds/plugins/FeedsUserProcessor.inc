@@ -65,6 +65,7 @@ class FeedsUserProcessor extends FeedsProcessor {
     $account->uid = 0;
     $account->roles = array_filter($this->config['roles']);
     $account->status = $this->config['status'];
+    $account->is_new = TRUE;
 
     return $account;
   }
@@ -104,6 +105,26 @@ class FeedsUserProcessor extends FeedsProcessor {
     if (empty($account->name) || empty($account->mail) || !valid_email_address($account->mail)) {
       throw new FeedsValidationException(t('User name missing or email not valid.'));
     }
+
+    // Check when an user ID gets set or changed during processing if that user
+    // ID is not already in use.
+    if (!empty($account->uid)) {
+      $is_new = !empty($account->feeds_item->is_new);
+      $different = !empty($account->feeds_item->entity_id) && $account->feeds_item->entity_id != $account->uid;
+      if ($is_new || $different) {
+        $exists = entity_load_unchanged('user', $account->uid);
+        if ($exists) {
+          throw new FeedsValidationException(t('Could not update user ID to @uid since that ID is already in use.', array(
+            '@uid' => $account->uid,
+          )));
+        }
+      }
+    }
+
+    // Timezone validation.
+    if (!empty($account->timezone) && !array_key_exists($account->timezone, system_time_zones())) {
+      throw new FeedsValidationException(t("Failed importing '@name'. User's timezone is not valid.", array('@name' => $account->name)));
+    }
   }
 
   /**
@@ -119,6 +140,17 @@ class FeedsUserProcessor extends FeedsProcessor {
     // Remove pass from $edit if the password is unchanged.
     if (isset($account->feeds_original_pass) && $account->pass == $account->feeds_original_pass) {
       unset($edit['pass']);
+    }
+
+    // Check if the user ID changed when updating users.
+    if (!empty($account->feeds_item->entity_id) && $account->feeds_item->entity_id != $account->uid) {
+      // The user ID of the existing user is different. Try to update the user ID.
+      db_update('users')
+        ->fields(array(
+          'uid' => $account->uid,
+        ))
+        ->condition('uid', $account->feeds_item->entity_id)
+        ->execute();
     }
 
     user_save($account, $edit);
@@ -147,6 +179,16 @@ class FeedsUserProcessor extends FeedsProcessor {
    * Delete multiple user accounts.
    */
   protected function entityDeleteMultiple($uids) {
+    // Prevent user 1 from being deleted.
+    if (in_array(1, $uids)) {
+      $uids = array_diff($uids, array(1));
+
+      // But do delete the associated feeds item.
+      db_delete('feeds_item')
+        ->condition('entity_type', $this->entityType())
+        ->condition('entity_id', 1)
+        ->execute();
+    }
     user_delete_multiple($uids);
   }
 
@@ -237,6 +279,10 @@ class FeedsUserProcessor extends FeedsProcessor {
         $this->rolesListSetTarget($source, $target_user, $target_element, $value, $mapping);
         break;
 
+      case 'timezone':
+        $target_user->timezone = $value;
+        break;
+
       default:
         parent::setTargetElement($source, $target_user, $target_element, $value);
         break;
@@ -249,6 +295,11 @@ class FeedsUserProcessor extends FeedsProcessor {
   public function getMappingTargets() {
     $targets = parent::getMappingTargets();
     $targets += array(
+      'uid' => array(
+        'name' => t('User ID'),
+        'description' => t('The uid of the user. NOTE: use this feature with care, user ids are usually assigned by Drupal.'),
+        'optional_unique' => TRUE,
+      ),
       'name' => array(
         'name' => t('User name'),
         'description' => t('Name of the user.'),
@@ -276,6 +327,10 @@ class FeedsUserProcessor extends FeedsProcessor {
       'language' => array(
         'name' => t('User language'),
         'description' => t('Default language for the user.'),
+      ),
+      'timezone' => array(
+        'name' => t('Timezone'),
+        'description' => t('The timezone identifier, like UTC or Europe/Lisbon.'),
       ),
       'roles_list' => array(
         'name' => t('User roles'),
@@ -309,6 +364,10 @@ class FeedsUserProcessor extends FeedsProcessor {
     // target's value.
     foreach ($this->uniqueTargets($source, $result) as $target => $value) {
       switch ($target) {
+        case 'uid':
+          $uid = db_query("SELECT uid FROM {users} WHERE uid = :uid", array(':uid' => $value))->fetchField();
+          break;
+
         case 'name':
           $uid = db_query("SELECT uid FROM {users} WHERE name = :name", array(':name' => $value))->fetchField();
           break;
@@ -327,6 +386,18 @@ class FeedsUserProcessor extends FeedsProcessor {
       }
     }
     return 0;
+  }
+
+  /**
+   * Overrides FeedsProcessor::initEntitiesToBeRemoved().
+   *
+   * Removes user 1 from the list of entities to be removed.
+   */
+  protected function initEntitiesToBeRemoved(FeedsSource $source, FeedsState $state) {
+    parent::initEntitiesToBeRemoved($source, $state);
+
+    // Prevent user 1 from being deleted.
+    unset($state->removeList[1]);
   }
 
   /**
