@@ -72,7 +72,7 @@ var drawControl = new L.Control.Draw({
 map.addControl(drawControl);
 ````
 
-The key here is the `featureGroup` option. This tells the plugin which `FeatureGroup` contains the layers that should be editable.
+The key here is the `featureGroup` option. This tells the plugin which `FeatureGroup` contains the layers that should be editable.  The featureGroup can contain 0 or more features with geometry types `Point`, `LineString`, and `Polygon`.  **Leaflet.draw does not work with multigeometry features such as `MultiPoint`, `MultiLineString`, `MultiPolygon`, or `GeometryCollection`.**  If you need to add multigeometry features to the draw plugin, convert them to a FeatureCollection of non-multigeometries (`Point`s, `LineString`s, or `Polygon`s).
 
 ### Events
 
@@ -167,7 +167,7 @@ Triggered as the user moves a rectangle, circle or marker.
 | --- | --- | ---
 | layer | [ILayer](http://leafletjs.com/reference.html#ilayer) | Layer that was just moved.
 
-#### draw:editresized
+#### draw:editresize
 
 Triggered as the user resizes a rectangle or circle.
 

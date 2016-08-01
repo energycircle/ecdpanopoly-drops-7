@@ -1,13 +1,13 @@
 name = Custom tokens
-description = Allow users to define custom tokens to use thoughout the site
+description = Allow users to define custom tokens to use throughout the site
 core = 7.x
 dependencies[] = filter
 dependencies[] = features
 configure = admin/structure/token-custom
 
-; Information added by drupal.org packaging script on 2013-10-19
-version = "7.x-2.0-beta3+0-dev"
+; Information added by Drupal.org packaging script on 2016-07-22
+version = "7.x-2.0-beta3+1-dev"
 core = "7.x"
 project = "token_custom"
-datestamp = "1382147408"
+datestamp = "1469179740"
 
