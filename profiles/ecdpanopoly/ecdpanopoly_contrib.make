@@ -24,6 +24,9 @@ projects[advanced_help][version] = 1.x
 projects[afb][subdir] = eccontrib
 projects[afb][version] = 1.x
 
+projects[addressfield_autocomplete][subdir] = eccontrib
+projects[addressfield_autocomplete][version] = 1.0-beta5
+
 projects[auto_menutitle][subdir] = eccontrib
 projects[auto_menutitle][version] = 1.x
 
@@ -468,6 +471,11 @@ libraries[arc][download][type] = get
 libraries[arc][type] = library
 libraries[arc][directory_name] = arc
 libraries[arc][download][url] = http://github.com/semsol/arc2/tarball/master
+
+libraries[Geocomplete][download][type] = get
+libraries[Geocomplete][type] = library
+libraries[Geocomplete][directory_name] = geocomplete
+libraries[Geocomplete][download][url] = https://github.com/ubilabs/geocomplete/zipball/master
 
 
 ; THEMES
