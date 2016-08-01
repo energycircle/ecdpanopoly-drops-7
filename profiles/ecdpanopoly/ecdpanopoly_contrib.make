@@ -394,7 +394,8 @@ projects[feeds][patch] = https://www.drupal.org/files/issues/feeds-unlock-153536
 #projects[metatag][patch][1880302] = https://www.drupal.org/files/metatag-1880302-2.patch
 projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
 projects[external][patch][1043324] = https://www.drupal.org/files/issues/external-https-links-1043324-5.patch
-
+projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
+projects[node_clone][patch][1043324] = https://www.drupal.org/files/issues/1252702-menu-local-task.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
