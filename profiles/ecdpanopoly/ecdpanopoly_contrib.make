@@ -367,7 +367,7 @@ projects[weight][subdir] = eccontrib
 projects[weight][version] = 2.5
 
 projects[xmlsitemap][subdir] = eccontrib
-projects[xmlsitemap][version] = 2.3
+projects[xmlsitemap][version] = 2.x-dev
 
 
 ;PATCHES
@@ -395,7 +395,8 @@ projects[feeds][patch] = https://www.drupal.org/files/issues/feeds-unlock-153536
 projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
 projects[external][patch][1043324] = https://www.drupal.org/files/issues/external-https-links-1043324-5.patch
 projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
-projects[node_clone][patch][1043324] = https://www.drupal.org/files/issues/1252702-menu-local-task.patch
+projects[node_clone][patch][1252702] = https://www.drupal.org/files/issues/1252702-menu-local-task.patch
+projects[xmlsitemap][patch][2521574] = https://www.drupal.org/files/issues/2521574-strongarm-support.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
