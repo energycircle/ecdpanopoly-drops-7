@@ -1090,6 +1090,65 @@ function ec_testimonial_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-testimonial-field_testimonial_source'.
+  $field_instances['node-testimonial-field_testimonial_source'] = array(
+    'bundle' => 'testimonial',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 19,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_testimonial_source',
+    'label' => 'Testimonial Source',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-testimonial-field_tetstimonial_name'.
   $field_instances['node-testimonial-field_tetstimonial_name'] = array(
     'bundle' => 'testimonial',
@@ -1265,6 +1324,7 @@ function ec_testimonial_field_default_field_instances() {
   t('Testimonial Image');
   t('Testimonial Name');
   t('Testimonial Quote');
+  t('Testimonial Source');
   t('Testimonials');
   t('Testimonials displayed on this page.');
   t('Testimonials shown on this page');

@@ -103,7 +103,7 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_testimonial_city']['alter']['text'] = '[field_tetstimonial_name][field_testimonial_city]';
   $handler->display->display_options['fields']['field_testimonial_city']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Service */
   $handler->display->display_options['fields']['field_ref_testimonial_service']['id'] = 'field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['table'] = 'field_data_field_ref_testimonial_service';
   $handler->display->display_options['fields']['field_ref_testimonial_service']['field'] = 'field_ref_testimonial_service';
@@ -237,7 +237,6 @@ function ec_testimonial_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_ref_page_testimonial_node']['field'] = 'reverse_field_ref_page_testimonial_node';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-
   $export['testimonials'] = $view;
 
   return $export;
