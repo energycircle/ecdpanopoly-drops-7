@@ -67,6 +67,9 @@ projects[features][subdir] = contrib
 projects[entity][patch][1414428] = https://www.drupal.org/files/issues/entity-stop-assuming-you-may-find-array-1414428-14_0.patch
 projects[entity][subdir] = contrib
 
+projects[media][patch][2566509] = https://www.drupal.org/files/issues/2566509-deprecate-wysiwyg-wysiwyg-allowed-view-modes-alter.patch
+projects[media][subdir] = contrib
+
 projects[uuid][patch][1927474] = https://www.drupal.org/files/issues/uuid-fix-empty-uuids-1927474-9_0.patch
 projects[uuid][subdir] = contrib
 

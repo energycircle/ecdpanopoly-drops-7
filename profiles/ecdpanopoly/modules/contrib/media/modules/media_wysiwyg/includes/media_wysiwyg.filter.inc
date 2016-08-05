@@ -356,8 +356,6 @@ function media_wysiwyg_get_wysiwyg_allowed_view_modes($file) {
   }
 
   $view_modes = $enabled_view_modes[$file->type];
-  drupal_alter('media_wysiwyg_allowed_view_modes', $view_modes, $file);
-  // Invoke the deprecated/misspelled alter hook as well.
   drupal_alter('media_wysiwyg_wysiwyg_allowed_view_modes', $view_modes, $file);
   return $view_modes;
 }
