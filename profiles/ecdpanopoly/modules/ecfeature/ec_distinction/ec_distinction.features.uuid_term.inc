@@ -58,5 +58,22 @@ function ec_distinction_uuid_features_default_terms() {
     ),
     'url_alias' => array(),
   );
+  $terms[] = array(
+    'name' => 'Review Source',
+    'description' => '',
+    'format' => 'panopoly_wysiwyg_text',
+    'weight' => 0,
+    'uuid' => 'd8cf742c-2f15-4cbf-a0ee-7514b0a31500',
+    'vocabulary_machine_name' => 'distinction_types',
+    'path' => array(
+      'pathauto' => 1,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'distinction-types/review-source',
+        'language' => 'und',
+      ),
+    ),
+  );
   return $terms;
 }
