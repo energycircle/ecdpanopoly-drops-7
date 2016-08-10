@@ -678,11 +678,6 @@ function _ctools_export_get_defaults($table, $export) {
         $function = $module . '_' . $export['default hook'];
         if (function_exists($function)) {
           foreach ((array) $function($export) as $name => $object) {
-            // If it isn't an object change this to object type.
-            if (!is_object($object)) {
-              $object = (object) $object;
-            }
-
             // Record the module that provides this exportable.
             $object->export_module = $module;
 
