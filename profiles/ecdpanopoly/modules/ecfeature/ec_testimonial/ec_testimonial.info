@@ -5,6 +5,7 @@ package = ECFeatures - Core EXT
 version = 7.x-1.8
 project = ec_testimonial
 dependencies[] = ec_panopoly_page_overrides
+dependencies[] = ec_distinction
 dependencies[] = field_group
 dependencies[] = fivestar
 dependencies[] = flexslider_views
