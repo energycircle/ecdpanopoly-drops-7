@@ -141,6 +141,284 @@ function ec_citypages_views_default_views() {
   $export['city_pages'] = $view;
 
   $view = new view();
+  $view->name = 'city_pages_featured_content';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'City Pages - Featured Content';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'blog_post' => 'blog_post',
+  );
+
+  /* Display: Blog Content */
+  $handler = $view->new_display('panel_pane', 'Blog Content', 'panel_pane_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Featured Blog Article';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_blog_node']['id'] = 'reverse_field_ref_citypages_blog_node';
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_blog_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_blog_node']['field'] = 'reverse_field_ref_citypages_blog_node';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Featured Image */
+  $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['label'] = '';
+  $handler->display->display_options['fields']['field_blog_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
+    'image_style' => 'sc_300x225',
+    'image_link' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_ref_citypages_blog_node';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'blog_post' => 'blog_post',
+  );
+
+  /* Display: CaseStudy Content */
+  $handler = $view->new_display('panel_pane', 'CaseStudy Content', 'panel_pane_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Featured Case Studies';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_case_study_node']['id'] = 'reverse_field_ref_citypages_case_study_node';
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_case_study_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_case_study_node']['field'] = 'reverse_field_ref_citypages_case_study_node';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Gallery */
+  $handler->display->display_options['fields']['field_ref_case_study_gallery']['id'] = 'field_ref_case_study_gallery';
+  $handler->display->display_options['fields']['field_ref_case_study_gallery']['table'] = 'field_data_field_ref_case_study_gallery';
+  $handler->display->display_options['fields']['field_ref_case_study_gallery']['field'] = 'field_ref_case_study_gallery';
+  $handler->display->display_options['fields']['field_ref_case_study_gallery']['label'] = '';
+  $handler->display->display_options['fields']['field_ref_case_study_gallery']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ref_case_study_gallery']['type'] = 'entityreference_entity_view';
+  $handler->display->display_options['fields']['field_ref_case_study_gallery']['settings'] = array(
+    'view_mode' => 'default',
+    'links' => 0,
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_ref_citypages_case_study_node';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'case_study' => 'case_study',
+  );
+
+  /* Display: Testimonial Content */
+  $handler = $view->new_display('panel_pane', 'Testimonial Content', 'panel_pane_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Featured Testimonial';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_testimonials_node']['id'] = 'reverse_field_ref_citypages_testimonials_node';
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_testimonials_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_ref_citypages_testimonials_node']['field'] = 'reverse_field_ref_citypages_testimonials_node';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
+  /* Field: Content: Testimonial City */
+  $handler->display->display_options['fields']['field_testimonial_city']['id'] = 'field_testimonial_city';
+  $handler->display->display_options['fields']['field_testimonial_city']['table'] = 'field_data_field_testimonial_city';
+  $handler->display->display_options['fields']['field_testimonial_city']['field'] = 'field_testimonial_city';
+  $handler->display->display_options['fields']['field_testimonial_city']['label'] = '';
+  $handler->display->display_options['fields']['field_testimonial_city']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_testimonial_city']['element_label_colon'] = FALSE;
+  /* Field: Content: Testimonial Image */
+  $handler->display->display_options['fields']['field_testimonial_image']['id'] = 'field_testimonial_image';
+  $handler->display->display_options['fields']['field_testimonial_image']['table'] = 'field_data_field_testimonial_image';
+  $handler->display->display_options['fields']['field_testimonial_image']['field'] = 'field_testimonial_image';
+  $handler->display->display_options['fields']['field_testimonial_image']['label'] = '';
+  $handler->display->display_options['fields']['field_testimonial_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_testimonial_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_testimonial_image']['settings'] = array(
+    'image_style' => 'sc_300x225',
+    'image_link' => '',
+    'field_multiple_limit' => '1',
+    'field_multiple_limit_offset' => '0',
+  );
+  $handler->display->display_options['fields']['field_testimonial_image']['delta_offset'] = '0';
+  /* Field: Content: Testimonial Name */
+  $handler->display->display_options['fields']['field_tetstimonial_name']['id'] = 'field_tetstimonial_name';
+  $handler->display->display_options['fields']['field_tetstimonial_name']['table'] = 'field_data_field_tetstimonial_name';
+  $handler->display->display_options['fields']['field_tetstimonial_name']['field'] = 'field_tetstimonial_name';
+  $handler->display->display_options['fields']['field_tetstimonial_name']['label'] = '';
+  $handler->display->display_options['fields']['field_tetstimonial_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_tetstimonial_name']['alter']['text'] = '[field_tetstimonial_name] - [field_testimonial_city]';
+  $handler->display->display_options['fields']['field_tetstimonial_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_ref_citypages_testimonials_node';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'testimonial' => 'testimonial',
+  );
+  $export['city_pages_featured_content'] = $view;
+
+  $view = new view();
   $view->name = 'city_pages_lists';
   $view->description = 'LIstings and administrative views of City Pages';
   $view->tag = 'default';
@@ -248,97 +526,8 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
 
-  /* Display: Featured Blog Article (NID) */
-  $handler = $view->new_display('panel_pane', 'Featured Blog Article (NID)', 'panel_pane_3');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Featured Blog Article';
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Blog Posts */
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['id'] = 'field_ref_citypages_blog';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['table'] = 'field_data_field_ref_citypages_blog';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['field'] = 'field_ref_citypages_blog';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['label'] = '';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['type'] = 'entityreference_entity_view';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['settings'] = array(
-    'view_mode' => 'teaser',
-    'links' => 1,
-    'field_multiple_limit' => '-1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_ref_citypages_blog']['separator'] = '';
-  /* Field: Content: Featured Image */
-  $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
-  $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
-  $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
-  $handler->display->display_options['fields']['field_blog_image']['label'] = '';
-  $handler->display->display_options['fields']['field_blog_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
-    'image_style' => 'sc_220x110',
-    'image_link' => 'content',
-  );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['max_length'] = '300';
-  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '600',
-  );
-  /* Field: Content: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'Read More';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'blog_post' => 'blog_post',
-  );
-  $handler->display->display_options['argument_input'] = array(
-    'nid' => array(
-      'type' => 'context',
-      'context' => 'entity:cer.cer',
-      'context_optional' => 0,
-      'panel' => '0',
-      'fixed' => '',
-      'label' => 'Content: Nid',
-    ),
-  );
-
-  /* Display: Featured Blog Articles list (NID) */
-  $handler = $view->new_display('panel_pane', 'Featured Blog Articles list (NID)', 'panel_pane_4');
+  /* Display: Blog Articles list (NID) */
+  $handler = $view->new_display('panel_pane', 'Blog Articles list (NID)', 'panel_pane_4');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Featured Blog Articles';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -360,36 +549,8 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['field_ref_citypages_blog']['multi_type'] = 'ul';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
 
-  /* Display: Featured Testimonial (NID) */
-  $handler = $view->new_display('panel_pane', 'Featured Testimonial (NID)', 'panel_pane_5');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Featured Testimonial';
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['relationships'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Testimonials */
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['id'] = 'field_ref_citypages_testimonials';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['table'] = 'field_data_field_ref_citypages_testimonials';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['field'] = 'field_ref_citypages_testimonials';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['label'] = '';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['type'] = 'entityreference_entity_view';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['settings'] = array(
-    'view_mode' => 'teaser',
-    'links' => 1,
-    'field_multiple_limit' => '1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_ref_citypages_testimonials']['separator'] = '';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-
-  /* Display: Featured Testimonials list (NID) */
-  $handler = $view->new_display('panel_pane', 'Featured Testimonials list (NID)', 'panel_pane_6');
+  /* Display: Testimonials list (NID) */
+  $handler = $view->new_display('panel_pane', 'Testimonials list (NID)', 'panel_pane_6');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Featured Testimonials';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -411,105 +572,8 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['field_ref_citypages_testimonials']['multi_type'] = 'ul';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
 
-  /* Display: Featured Casestudy (NID) */
-  $handler = $view->new_display('panel_pane', 'Featured Casestudy (NID)', 'panel_pane_7');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Featured Casestudy';
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_ref_case_study_gallery_target_id']['id'] = 'field_ref_case_study_gallery_target_id';
-  $handler->display->display_options['relationships']['field_ref_case_study_gallery_target_id']['table'] = 'field_data_field_ref_case_study_gallery';
-  $handler->display->display_options['relationships']['field_ref_case_study_gallery_target_id']['field'] = 'field_ref_case_study_gallery_target_id';
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Case Studies */
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['id'] = 'field_ref_citypages_case_study';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['table'] = 'field_data_field_ref_citypages_case_study';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['field'] = 'field_ref_citypages_case_study';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['label'] = '';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['type'] = 'entityreference_entity_view';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['settings'] = array(
-    'view_mode' => 'teaser',
-    'links' => 1,
-    'field_multiple_limit' => '1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_ref_citypages_case_study']['separator'] = '';
-  /* Field: Content: Gallery_image */
-  $handler->display->display_options['fields']['field_gallery_image']['id'] = 'field_gallery_image';
-  $handler->display->display_options['fields']['field_gallery_image']['table'] = 'field_data_field_gallery_image';
-  $handler->display->display_options['fields']['field_gallery_image']['field'] = 'field_gallery_image';
-  $handler->display->display_options['fields']['field_gallery_image']['relationship'] = 'field_ref_case_study_gallery_target_id';
-  $handler->display->display_options['fields']['field_gallery_image']['label'] = '';
-  $handler->display->display_options['fields']['field_gallery_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_gallery_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_gallery_image']['settings'] = array(
-    'image_style' => 'sc_220x110',
-    'image_link' => 'content',
-    'field_multiple_limit' => '1',
-    'field_multiple_limit_offset' => '0',
-  );
-  $handler->display->display_options['fields']['field_gallery_image']['delta_limit'] = '1';
-  $handler->display->display_options['fields']['field_gallery_image']['delta_offset'] = '0';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['max_length'] = '300';
-  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Field: Content: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'Read More';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'case_study' => 'case_study',
-  );
-  $handler->display->display_options['argument_input'] = array(
-    'nid' => array(
-      'type' => 'context',
-      'context' => 'entity:cer.cer',
-      'context_optional' => 0,
-      'panel' => '0',
-      'fixed' => '',
-      'label' => 'Content: Nid',
-    ),
-  );
-
-  /* Display: Featured Casestudies list (NID) */
-  $handler = $view->new_display('panel_pane', 'Featured Casestudies list (NID)', 'panel_pane_8');
+  /* Display: Casestudies list (NID) */
+  $handler = $view->new_display('panel_pane', 'Casestudies list (NID)', 'panel_pane_8');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Featured Case Studies';
   $handler->display->display_options['defaults']['pager'] = FALSE;

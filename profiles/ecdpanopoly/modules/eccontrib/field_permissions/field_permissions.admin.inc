@@ -347,6 +347,12 @@ function field_permissions_overview() {
   $rows = array();
   foreach ($instances as $obj_type => $type_bundles) {
     foreach ($type_bundles as $bundle => $bundle_instances) {
+      // Some fields might belong to bundles that are disabled (which are not
+      // returned by field_info_bundles()).
+      // @see https://www.drupal.org/node/1351506
+      if (!isset($bundles[$obj_type][$bundle])) {
+        continue;
+      }
       foreach ($bundle_instances as $field_name => $instance) {
         // Each field will have a row in the table.
         $field = field_info_field($field_name);

@@ -14,7 +14,7 @@ function ec_citypages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_city_page';
-  $strongarm->value = 'edit-xmlsitemap';
+  $strongarm->value = 'edit-extras';
   $export['additional_settings__active_tab_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -77,7 +77,7 @@ function ec_citypages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_title_hide_city_page';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['content_type_extras_title_hide_city_page'] = $strongarm;
 
   $strongarm = new stdClass();
