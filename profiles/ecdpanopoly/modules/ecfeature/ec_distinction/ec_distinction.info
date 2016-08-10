@@ -5,6 +5,7 @@ package = ECFeatures - Core EXT
 version = 7.x-1.6
 project = ec_distinction
 dependencies[] = ec_base_config
+dependencies[] = ec_testimonial
 dependencies[] = panopoly_pages
 dependencies[] = rdfx
 dependencies[] = uuid_features
