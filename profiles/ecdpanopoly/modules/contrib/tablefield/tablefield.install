@@ -111,11 +111,6 @@ function tablefield_update_7001() {
 function tablefield_update_7002() {
   $include_additional = array('include_inactive' => TRUE, 'include_deleted' => TRUE);
   $fields = field_read_fields(array('type' => 'tablefield'), $include_additional);
-  // tablefield enabled but no tablefields
-  if (!is_array($fields) || !count($fields)) {
-    return;
-  }
-
   $instances = field_read_instances(array('field_id' => array_keys($fields)), $include_additional);
 
   foreach ($instances as $instance) {
