@@ -85,32 +85,21 @@ function ec_distinction_user_default_permissions() {
   // Exported permission: 'create distinction content'.
   $permissions['create distinction content'] = array(
     'name' => 'create distinction content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any distinction content'.
   $permissions['delete any distinction content'] = array(
     'name' => 'delete any distinction content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own distinction content'.
   $permissions['delete own distinction content'] = array(
     'name' => 'delete own distinction content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -126,22 +115,14 @@ function ec_distinction_user_default_permissions() {
   // Exported permission: 'edit any distinction content'.
   $permissions['edit any distinction content'] = array(
     'name' => 'edit any distinction content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own distinction content'.
   $permissions['edit own distinction content'] = array(
     'name' => 'edit own distinction content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 

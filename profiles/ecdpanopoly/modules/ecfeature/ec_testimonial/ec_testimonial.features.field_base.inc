@@ -424,7 +424,7 @@ function ec_testimonial_field_default_field_bases() {
         'view' => array(
           'args' => array(),
           'display_name' => 'entityreference_1',
-          'view_name' => 'er_distinction_review_list',
+          'view_name' => 'review_sites',
         ),
       ),
       'target_type' => 'node',
