@@ -201,6 +201,12 @@ projects[ec_promotions][version] = 1.x
 #projects[ec_rms][type] = module
 #projects[ec_rms][version] = 1.x
 
+projects[ec_review_sites][download][type] = git
+projects[ec_review_sites][download][url] = https://github.com/energycircle/ec_review_sites.git
+projects[ec_review_sites][subdir] = ecfeature
+projects[ec_review_sites][type] = module
+projects[ec_review_sites][version] = 1.x
+
 projects[ec_service_stack][download][type] = git
 projects[ec_service_stack][download][url] = https://github.com/energycircle/ec_service_stack.git
 projects[ec_service_stack][subdir] = ecfeature
@@ -230,4 +236,3 @@ projects[ec_testimonial][download][url] = https://github.com/energycircle/ec_tes
 projects[ec_testimonial][subdir] = ecfeature
 projects[ec_testimonial][type] = module
 projects[ec_testimonial][version] = 1.x
-
