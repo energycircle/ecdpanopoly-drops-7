@@ -1135,7 +1135,7 @@ function ec_testimonial_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_testimonial_source',
-    'label' => 'Testimonial Source',
+    'label' => 'Review Site',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1317,6 +1317,7 @@ function ec_testimonial_field_default_field_instances() {
   t('Display Title');
   t('Display subtitle');
   t('Enter the name of the person who wrote this testimonial, as it should be displayed on the site. Example: John Smith');
+  t('Review Site');
   t('Select testimonials to display on this product category page.');
   t('Select the testimonials to display on this product page.');
   t('Testimonial');
@@ -1324,7 +1325,6 @@ function ec_testimonial_field_default_field_instances() {
   t('Testimonial Image');
   t('Testimonial Name');
   t('Testimonial Quote');
-  t('Testimonial Source');
   t('Testimonials');
   t('Testimonials displayed on this page.');
   t('Testimonials shown on this page');

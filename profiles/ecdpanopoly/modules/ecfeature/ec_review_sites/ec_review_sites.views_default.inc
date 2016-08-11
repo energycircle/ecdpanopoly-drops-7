@@ -90,7 +90,7 @@ function ec_review_sites_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_testimonial_source_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_testimonial_source_node']['field'] = 'reverse_field_testimonial_source_node';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Review Page */
+  /* Field: Content: Review Page Link */
   $handler->display->display_options['fields']['field_review_site_url']['id'] = 'field_review_site_url';
   $handler->display->display_options['fields']['field_review_site_url']['table'] = 'field_data_field_review_site_url';
   $handler->display->display_options['fields']['field_review_site_url']['field'] = 'field_review_site_url';

@@ -11,7 +11,7 @@ function ec_review_sites_defaultconfig_features() {
   return array(
     'ec_review_sites' => array(
       'field_default_fields' => 'field_default_fields',
-      'views_default_views' => 'views_default_views',
+      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -114,7 +114,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 3,
       ),
     ),
   );
@@ -229,7 +229,198 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
+        'weight' => 4,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-review_site-field_review_site_rms_cta'.
+  $fields['node-review_site-field_review_site_rms_cta'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_review_site_rms_cta',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => 0,
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'review_site',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 4,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_review_site_rms_cta',
+      'label' => 'RMS CTA',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
         'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-review_site-field_review_site_tags'.
+  $fields['node-review_site-field_review_site_tags'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_review_site_tags',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'review_site_tags',
+            'parent' => 0,
+          ),
+        ),
+        'options_list_callback' => 'title_taxonomy_allowed_values',
+      ),
+      'translatable' => 0,
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'review_site',
+      'default_value' => NULL,
+      'default_value_label_token' => 0,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+          ),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_review_site_tags',
+      'label' => 'Review Site Tags',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => 1,
       ),
     ),
   );
@@ -310,7 +501,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_review_site_url',
-      'label' => 'Review Page',
+      'label' => 'Review Page Link',
       'required' => 0,
       'settings' => array(
         'absolute_url' => 1,
@@ -345,7 +536,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
@@ -353,154 +544,103 @@ function ec_review_sites_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Add call to action text. example: "Seen on" or "As seen on"');
+  t('RMS CTA');
   t('Review CTA');
-  t('Review Page');
+  t('Review Page Link');
   t('Review Site Logo');
+  t('Review Site Tags');
 
   return $fields;
 }
 
 /**
- * Implements hook_defaultconfig_views_default_views().
+ * Implements hook_defaultconfig_user_default_permissions().
  */
-function ec_review_sites_defaultconfig_views_default_views() {
-  $export = array();
+function ec_review_sites_defaultconfig_user_default_permissions() {
+  $permissions = array();
 
-  $view = new view();
-  $view->name = 'review_sites';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Review Sites';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'review_site' => 'review_site',
+  // Exported permission: 'administer panelizer node review_site defaults'.
+  $permissions['administer panelizer node review_site defaults'] = array(
+    'name' => 'administer panelizer node review_site defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
   );
 
-  /* Display: Entity Reference */
-  $handler = $view->new_display('entityreference', 'Entity Reference', 'entityreference_1');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'entityreference_style';
-  $handler->display->display_options['style_options']['search_fields'] = array(
-    'title' => 'title',
+  // Exported permission: 'administer panelizer taxonomy_term review_site_tags defaults'.
+  $permissions['administer panelizer taxonomy_term review_site_tags defaults'] = array(
+    'name' => 'administer panelizer taxonomy_term review_site_tags defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
   );
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'entityreference_fields';
-  $handler->display->display_options['row_options']['inline'] = array(
-    'title' => 'title',
-  );
-  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
 
-  /* Display: Testimonial Source */
-  $handler = $view->new_display('panel_pane', 'Testimonial Source', 'panel_pane_1');
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['inline'] = array(
-    'field_review_site_cta' => 'field_review_site_cta',
-    'field_review_site_logo' => 'field_review_site_logo',
+  // Exported permission: 'create review_site content'.
+  $permissions['create review_site content'] = array(
+    'name' => 'create review_site content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
-  $handler->display->display_options['row_options']['separator'] = ' ';
-  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Entity Reference: Referencing entity */
-  $handler->display->display_options['relationships']['reverse_field_testimonial_source_node']['id'] = 'reverse_field_testimonial_source_node';
-  $handler->display->display_options['relationships']['reverse_field_testimonial_source_node']['table'] = 'node';
-  $handler->display->display_options['relationships']['reverse_field_testimonial_source_node']['field'] = 'reverse_field_testimonial_source_node';
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Review Page */
-  $handler->display->display_options['fields']['field_review_site_url']['id'] = 'field_review_site_url';
-  $handler->display->display_options['fields']['field_review_site_url']['table'] = 'field_data_field_review_site_url';
-  $handler->display->display_options['fields']['field_review_site_url']['field'] = 'field_review_site_url';
-  $handler->display->display_options['fields']['field_review_site_url']['label'] = '';
-  $handler->display->display_options['fields']['field_review_site_url']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_review_site_url']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_review_site_url']['click_sort_column'] = 'url';
-  /* Field: Content: Review CTA */
-  $handler->display->display_options['fields']['field_review_site_cta']['id'] = 'field_review_site_cta';
-  $handler->display->display_options['fields']['field_review_site_cta']['table'] = 'field_data_field_review_site_cta';
-  $handler->display->display_options['fields']['field_review_site_cta']['field'] = 'field_review_site_cta';
-  $handler->display->display_options['fields']['field_review_site_cta']['label'] = '';
-  $handler->display->display_options['fields']['field_review_site_cta']['element_label_colon'] = FALSE;
-  /* Field: Content: Review Site Logo */
-  $handler->display->display_options['fields']['field_review_site_logo']['id'] = 'field_review_site_logo';
-  $handler->display->display_options['fields']['field_review_site_logo']['table'] = 'field_data_field_review_site_logo';
-  $handler->display->display_options['fields']['field_review_site_logo']['field'] = 'field_review_site_logo';
-  $handler->display->display_options['fields']['field_review_site_logo']['label'] = '';
-  $handler->display->display_options['fields']['field_review_site_logo']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_review_site_logo']['alter']['path'] = '[field_review_site_url]';
-  $handler->display->display_options['fields']['field_review_site_logo']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_review_site_logo']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_review_site_logo']['settings'] = array(
-    'image_style' => 's_140',
-    'image_link' => '',
-  );
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Nid */
-  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['table'] = 'node';
-  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_testimonial_source_node';
-  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'review_site' => 'review_site',
-  );
-  $export['review_sites'] = $view;
 
-  return $export;
+  // Exported permission: 'delete any review_site content'.
+  $permissions['delete any review_site content'] = array(
+    'name' => 'delete any review_site content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own review_site content'.
+  $permissions['delete own review_site content'] = array(
+    'name' => 'delete own review_site content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete terms in review_site_tags'.
+  $permissions['delete terms in review_site_tags'] = array(
+    'name' => 'delete terms in review_site_tags',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit any review_site content'.
+  $permissions['edit any review_site content'] = array(
+    'name' => 'edit any review_site content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own review_site content'.
+  $permissions['edit own review_site content'] = array(
+    'name' => 'edit own review_site content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in review_site_tags'.
+  $permissions['edit terms in review_site_tags'] = array(
+    'name' => 'edit terms in review_site_tags',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  return $permissions;
 }
