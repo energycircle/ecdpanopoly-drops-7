@@ -85,6 +85,7 @@ dependencies[] = field_hidden
 dependencies[] = flexslider
 dependencies[] = globalredirect
 dependencies[] = honeypot
+dependencies[] = image_mobile_camera
 dependencies[] = insert_view
 dependencies[] = imagecache_token
 dependencies[] = jcarousel
