@@ -15,7 +15,7 @@ projects[features_extra][subdir] = ec-dev
 projects[uuid_features][version] = 1.x-dev
 projects[uuid_features][subdir] = ec-dev
 projects[uuid_features][patch] = https://www.drupal.org/files/issues/added-filter-check-on-feature-node-rebuild-2307757-4.patch
-projects[uuid_features][patch] = https://www.drupal.org/files/issues/uuid_features-fpp_panelizer_view_mode_object_array.patch			
+projects[uuid_features][patch] = https://www.drupal.org/files/issues/uuid_features-fpp_panelizer_view_mode_object_array.patch
 
 projects[features_roles_permissions][version] = 1.2
 projects[features_roles_permissions][subdir] = ec-dev
@@ -26,7 +26,7 @@ projects[features_orphans][subdir] = ec-dev
 ;projects[feature_set][version] = 1.x
 ;projects[feature_set][subdir] = ec-dev
 
-projects[node_export][version] = 3.x-dev
+projects[node_export][version] = 3.x
 projects[node_export][subdir] = ec-dev
 
 projects[features_disable_modules][version] = 1.x
