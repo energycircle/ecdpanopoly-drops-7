@@ -61,8 +61,8 @@ projects[defaultconfig][subdir] = contrib
 #projects[features][patch][2899735] = https://www.drupal.org/files/issues/2138351-eval-log.patch
 #projects[features][subdir] = contrib
 
-projects[features][patch][1438264] = https://www.drupal.org/files/issues/features-var-export-object-1438264-12_0.patch
-projects[features][subdir] = contrib
+#projects[features][patch][1438264] = https://www.drupal.org/files/issues/features-var-export-object-1438264-12_0.patch
+#projects[features][subdir] = contrib
 
 projects[entity][patch][1414428] = https://www.drupal.org/files/issues/entity-stop-assuming-you-may-find-array-1414428-14_0.patch
 projects[entity][subdir] = contrib
