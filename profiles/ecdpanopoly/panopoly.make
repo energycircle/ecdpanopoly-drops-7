@@ -55,11 +55,11 @@ projects[features_override][subdir] = contrib
 projects[defaultconfig][patch][1900574] = https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
 projects[defaultconfig][subdir] = contrib
 
-projects[views][patch][1615438] = https://www.drupal.org/files/search_multiple_terms-1615438-30.patch
-projects[views][subdir] = contrib
+#projects[views][patch][1615438] = https://www.drupal.org/files/search_multiple_terms-1615438-30.patch
+#projects[views][subdir] = contrib
 
-projects[features][patch][2899735] = https://www.drupal.org/files/issues/2138351-eval-log.patch
-projects[features][subdir] = contrib
+#projects[features][patch][2899735] = https://www.drupal.org/files/issues/2138351-eval-log.patch
+#projects[features][subdir] = contrib
 
 projects[features][patch][1438264] = https://www.drupal.org/files/issues/features-var-export-object-1438264-12_0.patch
 projects[features][subdir] = contrib
@@ -73,8 +73,8 @@ projects[media][subdir] = contrib
 projects[uuid][patch][1927474] = https://www.drupal.org/files/issues/uuid-fix-empty-uuids-1927474-9_0.patch
 projects[uuid][subdir] = contrib
 
-projects[tablefield][patch][] = https://www.drupal.org/files/issues/tablefield-update7002_fix-2475538-2.patch
-projects[tablefield][subdir] = contrib
+#projects[tablefield][patch][] = https://www.drupal.org/files/issues/tablefield-update7002_fix-2475538-2.patch
+#projects[tablefield][subdir] = contrib
 
 projects[views_bulk_operations][patch] =https://www.drupal.org/files/issues/inaccurate_total_passed_to_action.patch
 projects[views_bulk_operations][subdir] = contrib
@@ -82,8 +82,8 @@ projects[views_bulk_operations][subdir] = contrib
 projects[token][patch][919760] = https://www.drupal.org/files/issues/token-current_page_object_token-919760-16.patch
 projects[token][subdir] = contrib
 
-projects[ctools][patch][2383877] = https://www.drupal.org/files/issues/warning_attempt_to-2383877-1.patch
-projects[ctools][subdir] = contrib
+#projects[ctools][patch][2383877] = https://www.drupal.org/files/issues/warning_attempt_to-2383877-1.patch
+#projects[ctools][subdir] = contrib
 
 projects[media][patch][2317519] = https://www.drupal.org/files/issues/media-multiple-blank-wysiwyg-2317519-22.patch
 projects[media][subdir] = contrib
