@@ -275,17 +275,12 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_ref_citypages_case_study_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_ref_citypages_case_study_node']['field'] = 'reverse_field_ref_citypages_case_study_node';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Gallery */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_ref_case_study_gallery']['id'] = 'field_ref_case_study_gallery';
   $handler->display->display_options['fields']['field_ref_case_study_gallery']['table'] = 'field_data_field_ref_case_study_gallery';
   $handler->display->display_options['fields']['field_ref_case_study_gallery']['field'] = 'field_ref_case_study_gallery';
   $handler->display->display_options['fields']['field_ref_case_study_gallery']['label'] = '';
   $handler->display->display_options['fields']['field_ref_case_study_gallery']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ref_case_study_gallery']['type'] = 'entityreference_entity_view';
-  $handler->display->display_options['fields']['field_ref_case_study_gallery']['settings'] = array(
-    'view_mode' => 'default',
-    'links' => 0,
-  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -340,6 +335,10 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_ref_citypages_testimonials_node']['id'] = 'reverse_field_ref_citypages_testimonials_node';
   $handler->display->display_options['relationships']['reverse_field_ref_citypages_testimonials_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_ref_citypages_testimonials_node']['field'] = 'reverse_field_ref_citypages_testimonials_node';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_testimonial_source_target_id']['id'] = 'field_testimonial_source_target_id';
+  $handler->display->display_options['relationships']['field_testimonial_source_target_id']['table'] = 'field_data_field_testimonial_source';
+  $handler->display->display_options['relationships']['field_testimonial_source_target_id']['field'] = 'field_testimonial_source_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -389,6 +388,38 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['fields']['field_tetstimonial_name']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_tetstimonial_name']['alter']['text'] = '[field_tetstimonial_name] - [field_testimonial_city]';
   $handler->display->display_options['fields']['field_tetstimonial_name']['element_label_colon'] = FALSE;
+  /* Field: Content: Review CTA */
+  $handler->display->display_options['fields']['field_review_site_cta']['id'] = 'field_review_site_cta';
+  $handler->display->display_options['fields']['field_review_site_cta']['table'] = 'field_data_field_review_site_cta';
+  $handler->display->display_options['fields']['field_review_site_cta']['field'] = 'field_review_site_cta';
+  $handler->display->display_options['fields']['field_review_site_cta']['relationship'] = 'field_testimonial_source_target_id';
+  $handler->display->display_options['fields']['field_review_site_cta']['label'] = '';
+  $handler->display->display_options['fields']['field_review_site_cta']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_review_site_cta']['element_label_colon'] = FALSE;
+  /* Field: Content: Review Page Link */
+  $handler->display->display_options['fields']['field_review_site_url']['id'] = 'field_review_site_url';
+  $handler->display->display_options['fields']['field_review_site_url']['table'] = 'field_data_field_review_site_url';
+  $handler->display->display_options['fields']['field_review_site_url']['field'] = 'field_review_site_url';
+  $handler->display->display_options['fields']['field_review_site_url']['relationship'] = 'field_testimonial_source_target_id';
+  $handler->display->display_options['fields']['field_review_site_url']['label'] = '';
+  $handler->display->display_options['fields']['field_review_site_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_review_site_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_review_site_url']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_review_site_url']['type'] = 'link_plain';
+  /* Field: Content: Review Site Logo */
+  $handler->display->display_options['fields']['field_review_site_logo']['id'] = 'field_review_site_logo';
+  $handler->display->display_options['fields']['field_review_site_logo']['table'] = 'field_data_field_review_site_logo';
+  $handler->display->display_options['fields']['field_review_site_logo']['field'] = 'field_review_site_logo';
+  $handler->display->display_options['fields']['field_review_site_logo']['relationship'] = 'field_testimonial_source_target_id';
+  $handler->display->display_options['fields']['field_review_site_logo']['label'] = '';
+  $handler->display->display_options['fields']['field_review_site_logo']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_review_site_logo']['alter']['text'] = '<a target="_blank" href="[field_review_site_url]">[field_review_site_cta] [field_review_site_logo]</a>';
+  $handler->display->display_options['fields']['field_review_site_logo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_review_site_logo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_review_site_logo']['settings'] = array(
+    'image_style' => 's_140',
+    'image_link' => '',
+  );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';

@@ -646,7 +646,7 @@ function ec_testimonial_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 11,
+      'weight' => 19,
     ),
   );
 
@@ -719,7 +719,7 @@ function ec_testimonial_field_default_field_instances() {
         ),
       ),
       'type' => 'stars',
-      'weight' => 6,
+      'weight' => 14,
     ),
   );
 
@@ -780,7 +780,7 @@ function ec_testimonial_field_default_field_instances() {
         'scrollwheel' => 0,
       ),
       'type' => 'geolocation_googlemap',
-      'weight' => 8,
+      'weight' => 16,
     ),
   );
 
@@ -982,7 +982,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 15,
     ),
   );
 
@@ -1086,7 +1086,7 @@ function ec_testimonial_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 9,
+      'weight' => 17,
     ),
   );
 
@@ -1098,14 +1098,15 @@ function ec_testimonial_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'default',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 19,
       ),
       'featured' => array(
@@ -1215,7 +1216,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 13,
     ),
   );
 
@@ -1306,7 +1307,7 @@ function ec_testimonial_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 10,
+      'weight' => 18,
     ),
   );
 
