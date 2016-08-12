@@ -1,0 +1,13 @@
+name = Image Mobile Camera
+description = Allows users to upload photos into image field widgets from their mobile device.
+core = 7.x
+
+dependencies[] = image
+
+
+; Information added by drush on 2016-08-12
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "image_mobile_camera"
+datestamp = "1471029906"
+

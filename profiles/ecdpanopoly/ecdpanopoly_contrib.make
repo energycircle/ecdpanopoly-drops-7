@@ -430,6 +430,12 @@ projects[ec_restrict_dl][subdir] = eccustom
 projects[ec_restrict_dl][type] = module
 projects[ec_restrict_dl][version] = 1.1
 
+projects[image_mobile_camera][download][type] = git
+projects[image_mobile_camera][download][url] = https://git.drupal.org/sandbox/cafuego/1980210.git
+projects[image_mobile_camera][subdir] = eccustom
+projects[image_mobile_camera][type] = module
+projects[image_mobile_camera][version] = 1.x
+
 ; LIBRARIES
 libraries[superfish][download][type] = get
 libraries[superfish][type] = library
