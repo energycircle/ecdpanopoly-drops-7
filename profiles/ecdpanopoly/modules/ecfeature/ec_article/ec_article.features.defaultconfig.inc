@@ -1253,7 +1253,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 23,
+        'weight' => 24,
       ),
     ),
   );

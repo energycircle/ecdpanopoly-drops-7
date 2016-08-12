@@ -129,7 +129,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 16,
+        'weight' => 26,
       ),
     ),
   );
@@ -247,6 +247,9 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_button_text',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -998,6 +1001,9 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'entityform_type' => array(
           'columns' => array(
