@@ -213,11 +213,17 @@ projects[ec_service_stack][subdir] = ecfeature
 projects[ec_service_stack][type] = module
 projects[ec_service_stack][version] = 1.x
 
-projects[ec_service_review_system][download][type] = git
-projects[ec_service_review_system][download][url] = https://github.com/energycircle/ec_service_review_system.git
-projects[ec_service_review_system][subdir] = ecfeature
-projects[ec_service_review_system][type] = module
-projects[ec_service_review_system][version] =  1.x
+#projects[ec_service_review_system][download][type] = git
+#projects[ec_service_review_system][download][url] = https://github.com/energycircle/ec_service_review_system.git
+#projects[ec_service_review_system][subdir] = ecfeature
+#projects[ec_service_review_system][type] = module
+#projects[ec_service_review_system][version] =  1.x
+
+projects[ec_sr3][download][type] = git
+projects[ec_sr3][download][url] = https://github.com/energycircle/ec_sr3.git
+projects[ec_sr3][subdir] = ecfeature
+projects[ec_sr3][type] = module
+projects[ec_sr3][version] = 1.x
 
 projects[ec_slide][download][type] = git
 projects[ec_slide][download][url] = https://github.com/energycircle/ec_slide.git

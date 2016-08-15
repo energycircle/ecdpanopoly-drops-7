@@ -348,6 +348,9 @@ projects[views_accordion][version] = 1.x
 projects[views_conditional][subdir] = eccontrib
 projects[views_conditional][version] = 1.x-dev
 
+projects[views_secondary_row][subdir] = eccontrib
+projects[views_secondary_row][version] = 3.13
+
 projects[views_calc][subdir] = eccontrib
 projects[views_calc][version] = 1.1
 
