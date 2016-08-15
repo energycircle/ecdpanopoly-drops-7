@@ -18,6 +18,7 @@ dependencies[] = features_orphans
 dependencies[] = masquerade
 dependencies[] = node_export_dependency
 dependencies[] = update
+dependencies[] = uuid_features
 dependencies[] = views_ui
 apps[logo] = app/logo.png
 apps[author] = Energy Circle

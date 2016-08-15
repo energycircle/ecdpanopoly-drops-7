@@ -9,9 +9,8 @@ dependencies[] = defaultconfig
 dependencies[] = ec_blog_post
 dependencies[] = features
 dependencies[] = node_export_features
-=dependencies[] = strongarm
+dependencies[] = strongarm
 dependencies[] = uuid_features
-__drupal_alter_by_ref[][node][blog_post] = blog_post
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[node_export_features][] = 4164e0fa-76fd-4421-9f76-31c019db75b1
