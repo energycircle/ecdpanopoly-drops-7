@@ -202,6 +202,69 @@ campaign-form-entityform-edit-form';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_default_settings';
+  $strongarm->value = array(
+    'title_label' => 'Title',
+    'node_preview' => '0',
+    'content_type_extras_preview_button' => 'Preview',
+    'content_type_extras_save_and_new' => '1',
+    'content_type_extras_save_and_new_button' => 'Save and New',
+    'content_type_extras_save_and_edit' => '0',
+    'content_type_extras_save_and_edit_button' => 'Save and Edit',
+    'content_type_extras_cancel' => '0',
+    'node_options' => array(
+      'status' => 'status',
+      'promote' => 0,
+      'sticky' => 0,
+      'revision' => 0,
+    ),
+    'node_submitted' => 1,
+    'user_permissions' => array(
+      'create_roles' => array(
+        5 => '5',
+        3 => '3',
+        4 => '4',
+        1 => 0,
+        2 => 0,
+      ),
+      'edit_roles' => array(
+        5 => '5',
+        3 => '3',
+        4 => '4',
+        1 => 0,
+        2 => 0,
+      ),
+      'delete_roles' => array(
+        5 => '5',
+        3 => '3',
+        1 => 0,
+        2 => 0,
+        4 => 0,
+      ),
+    ),
+    'content_type_extras_descriptions_required' => 0,
+    'content_type_extras_remove_body' => 0,
+    'content_type_extras_title_hide' => 0,
+    'content_type_extras_title_hide_css' => 0,
+    'content_type_extras_title_hide_front' => 0,
+    'content_type_extras_top_buttons' => array(
+      'manage_fields' => 0,
+      'node_edit' => 0,
+    ),
+    'content_type_extras_excluded_node_forms' => array(
+      0 => '',
+    ),
+    'xmlsitemap_settings' => array(
+      'status' => '1',
+      'priority' => '0.5',
+    ),
+    'content_type_extras__active_tab' => 'edit-configuration',
+  );
+  $export['content_type_extras_default_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'entityform_block_types';
   $strongarm->value = array(
     0 => 'contact',
@@ -244,10 +307,6 @@ campaign-form-entityform-edit-form';
     'fieldable_panels_pane' => array(
       0 => 'fieldable_panels_panes',
       1 => 'fpid',
-    ),
-    'field_collection_item' => array(
-      0 => 'field_collection_item',
-      1 => 'item_id',
     ),
     'redirect' => array(
       0 => 'redirect',
@@ -754,15 +813,15 @@ campaign-form-entityform-edit-form';
       'field_base' => '983b24a454742abef92c1b3485f4eb43',
       'field_instance' => '7adf8f5d1804d65037c624298998c677',
       'field_validation_rule' => '67fc133ba688956197a1bd88a95640e0',
-      'filter' => 'a70be116297419d97c3fd17dfbe017e7',
+      'filter' => '4b6ceeedc5e02555d270f23eb45c3a7e',
       'menu_custom' => '6dd6850f6e008c23813c78f0ae1484ce',
       'metatag' => FALSE,
       'panels_mini' => 'f82e630b580cd13d03abebedff902447',
-      'roles_permissions' => '45c233b033b2227a47571c3bdb5ac16b',
-      'user_permission' => '0678cd9b4e7072228b372439dac12af9',
+      'roles_permissions' => 'fcda084c71a294bb35edf03c304ad77b',
+      'user_permission' => 'c69bb4e4af73578e8787f573476a63aa',
       'user_role' => 'd8f4839388dc4e56678018fd5da54553',
-      'variable' => '0531575933394199dc5b37ff145fc174',
-      'dependencies' => 'd1a9dea8073e4a6e983b5b5a274a7be0',
+      'variable' => 'c8c5fbe3f6ac0986125b9f71ae3d19d2',
+      'dependencies' => '57558eead1998ff3ec62aecc48e8e2b8',
     ),
     'panopoly_core' => array(
       'variable' => 'd74822ba8111c9809ba29fe14720ab3d',
@@ -1638,6 +1697,35 @@ campaign-form-entityform-edit-form';
   $strongarm->name = 'ftools_disable_features_page_js';
   $strongarm->value = 0;
   $export['ftools_disable_features_page_js'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'jquery_update_jquery_version';
+  $strongarm->value = '1.7';
+  $export['jquery_update_jquery_version'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'manualcrop_file_entity_settings_image';
+  $strongarm->value = array(
+    'manualcrop_enable' => 1,
+    'manualcrop_keyboard' => 1,
+    'manualcrop_thumblist' => 0,
+    'manualcrop_inline_crop' => 0,
+    'manualcrop_crop_info' => 1,
+    'manualcrop_instant_preview' => 1,
+    'manualcrop_instant_crop' => 0,
+    'manualcrop_default_crop_area' => 0,
+    'manualcrop_maximize_default_crop_area' => 0,
+    'manualcrop_styles_mode' => 'include',
+    'manualcrop_styles_list' => array(
+      'panopoly_image_full' => 'panopoly_image_full',
+    ),
+    'manualcrop_require_cropping' => array(),
+  );
+  $export['manualcrop_file_entity_settings_image'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
