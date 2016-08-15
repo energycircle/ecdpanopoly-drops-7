@@ -282,6 +282,9 @@ projects[pps][version] = 1.x
 projects[rdfx][subdir] = eccontrib
 projects[rdfx][version] = 2.0-alpha4
 
+projects[rabbit_hole][subdir] = eccontrib
+projects[rabbit_hole][version] = 2.23
+
 projects[redirect][subdir] = eccontrib
 projects[redirect][version] = 1.0-rc3
 
