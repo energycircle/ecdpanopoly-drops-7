@@ -80,6 +80,13 @@ function field_permissions_form_field_ui_field_edit_form_alter(&$form, &$form_st
 }
 
 /**
+ * Implements hook_field_permissions_userid_ENTITY_TYPE_alter().
+ */
+function field_permissions_field_permissions_userid_field_collection_item_alter(&$uid, $entity) {
+  $uid = isset($entity->hostEntity()->uid) ? $entity->hostEntity()->uid : $uid;
+}
+
+/**
  * Implementation of hook_field_access().
  *
  * @param $op

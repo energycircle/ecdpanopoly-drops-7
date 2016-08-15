@@ -8,6 +8,7 @@ dependencies[] = ec_gallery
 dependencies[] = ec_panopoly_page_overrides
 dependencies[] = field_group
 dependencies[] = schemaorg
+dependencies[] = uuid_features
 apps[screenshots][] = app/screenshot.png
 apps[logo] = app/logo.png
 apps[author] = Energy Circle
