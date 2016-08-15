@@ -228,6 +228,67 @@ function ec_review_sites_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-review_site-field_review_site_show'.
+  $field_instances['node-review_site-field_review_site_show'] = array(
+    'bundle' => 'review_site',
+    'default_value' => NULL,
+    'default_value_label_token' => 0,
+    'deleted' => 0,
+    'description' => 'Check this to include this in the list of Review Sites shown in the Service Review feature.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_review_site_show',
+    'label' => 'Show in SR3 Review Sites list',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-review_site-field_review_site_tags'.
   $field_instances['node-review_site-field_review_site_tags'] = array(
     'bundle' => 'review_site',
@@ -373,11 +434,13 @@ function ec_review_sites_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Add call to action text. example: "Seen on" or "As seen on"');
+  t('Check this to include this in the list of Review Sites shown in the Service Review feature.');
   t('RMS CTA');
   t('Review CTA');
   t('Review Page Link');
   t('Review Site Logo');
   t('Review Site Tags');
+  t('Show in SR3 Review Sites list');
 
   return $field_instances;
 }

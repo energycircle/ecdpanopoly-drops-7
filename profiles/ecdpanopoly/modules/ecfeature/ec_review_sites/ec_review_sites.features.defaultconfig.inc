@@ -576,33 +576,21 @@ function ec_review_sites_defaultconfig_user_default_permissions() {
   // Exported permission: 'create review_site content'.
   $permissions['create review_site content'] = array(
     'name' => 'create review_site content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any review_site content'.
   $permissions['delete any review_site content'] = array(
     'name' => 'delete any review_site content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own review_site content'.
   $permissions['delete own review_site content'] = array(
     'name' => 'delete own review_site content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -616,22 +604,14 @@ function ec_review_sites_defaultconfig_user_default_permissions() {
   // Exported permission: 'edit any review_site content'.
   $permissions['edit any review_site content'] = array(
     'name' => 'edit any review_site content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own review_site content'.
   $permissions['edit own review_site content'] = array(
     'name' => 'edit own review_site content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
