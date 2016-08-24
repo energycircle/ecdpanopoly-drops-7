@@ -11,15 +11,44 @@
 class deploy_ui_plan extends ctools_export_ui {
 
   /**
-   * Implementats CTools psuedo hook_menu_alter().
-   *
-   * @todo
-   *   Can we do this in $plugin instead?
+   * Implements CTools psuedo hook_menu_alter().
    */
   function hook_menu(&$items) {
     parent::hook_menu($items);
-    $items['admin/structure/deploy/plans']['type'] = MENU_LOCAL_TASK;
+
+    // Hack around some of the limitations of the CTools Exportable UI default implementation.
+    $items['admin/structure/deploy'] = $items['admin/structure/deploy/plans'];
+    $items['admin/structure/deploy']['description'] = 'Manage deployment plans, endpoints etc.';
+    $items['admin/structure/deploy']['title'] = 'Deploy';
+    $items['admin/structure/deploy']['type'] = MENU_NORMAL_ITEM;
+
+    $items['admin/structure/deploy/plans']['type'] = MENU_DEFAULT_LOCAL_TASK;
     $items['admin/structure/deploy/plans']['weight'] = -10;
+
+    $items['admin/structure/deploy/plans/list/%ctools_export_ui/edit'] = $items['admin/structure/deploy/plans/list/%ctools_export_ui'];
+    $items['admin/structure/deploy/plans/list/%ctools_export_ui/edit']['title'] = 'Edit';
+    $items['admin/structure/deploy/plans/list/%ctools_export_ui/edit']['type'] = MENU_LOCAL_TASK;
+    $items['admin/structure/deploy/plans/list/%ctools_export_ui/edit']['weight'] = 0;
+
+    $items['admin/structure/deploy/plans/list/%ctools_export_ui']['title'] = 'View';
+    $items['admin/structure/deploy/plans/list/%ctools_export_ui']['page arguments'][1] = 'view';
+    $items['admin/structure/deploy/plans/list/%ctools_export_ui']['access arguments'][1] = 'view';
+
+    $items['admin/structure/deploy/plans/list/%ctools_export_ui/view']['type'] = MENU_DEFAULT_LOCAL_TASK;
+
+    /*
+      We need to sort the menu items to ensure the parent exists before the
+      children are added. Without the menu is broken.
+     */
+    ksort($items);
+
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  function access($op, $item) {
+    return deploy_access($op);
   }
 
   /**
@@ -277,6 +306,64 @@ class deploy_ui_plan extends ctools_export_ui {
   }
 
   /**
+   * Renders the view deployment plan page.
+   */
+  function view_page($js, $input, $plan) {
+    drupal_set_title(t('Plan: @plan', array('@plan' => $plan->name)), PASS_THROUGH);
+
+    $status = deploy_plan_get_status($plan->name);
+    $status_info = deploy_status_info($status);
+    if ($status_info) {
+      drupal_set_message(t($status_info['keyed message'], ['%key' => $plan->name]), $status_info['class'], FALSE);
+    }
+
+    // For managed entity plans we use a view to provide additional
+    // functionality.
+    if ('DeployAggregatorManaged' == $plan->aggregator_plugin
+      && module_exists('views_bulk_operations')
+      && views_get_view('deploy_managed_entities')) {
+
+      return views_embed_view('deploy_managed_entities', 'list_block');
+    }
+
+    $info = [];
+    // Get the entity keys from the aggregator.
+    $entity_keys = $plan->getEntities();
+    foreach ($entity_keys as $entity_key) {
+      // Get the entity info and all entities of this type.
+      $entity_info = entity_get_info($entity_key['type']);
+      $entity = deploy_plan_entity_load($entity_key['type'], $entity_key['id'], $entity_key['revision_id']);
+      $label = deploy_plan_entity_label($entity_key['type'], $entity, $entity_key['revision_id']);
+
+      // Some entities fail fatally with entity_uri() and
+      // entity_extract_ids(). So handle this gracefully.
+      try {
+        $uri = entity_uri($entity_key['type'], $entity);
+        if ($uri) {
+          $label = l($label, $uri['path'], $uri['options']);
+        }
+      }
+      catch (Exception $e) {
+        watchdog_exception('deploy_ui', $e);
+      }
+
+      // Construct a usable array for the theme function.
+      $info[] = array(
+        'title' => $label,
+        'type' => $entity_info['label'],
+      );
+    }
+
+    $data = [
+      'content' => theme('deploy_ui_overview_plan_content', array('info' => $info)),
+      'plan_description' => check_plain($plan->description),
+      'label_description' => t('Plan description'),
+    ];
+
+    return theme('deploy_ui_plan_view', array('vars' => $data));
+  }
+
+  /**
    * Renders the deployment plan page.
    */
   function deploy_page($js, $input, $plan) {
@@ -298,12 +385,11 @@ class deploy_ui_plan extends ctools_export_ui {
       catch (Exception $e) {
         drupal_set_message(t('Something went wrong during the deployment. Check your logs or the status of the deployment for more information.'), 'error');
       }
-      drupal_goto('admin/structure/deploy');
+      drupal_goto('admin/structure/deploy/plans/list/' . $plan->name);
     }
 
     return $output;
   }
-
 }
 
 /**
@@ -311,7 +397,7 @@ class deploy_ui_plan extends ctools_export_ui {
  */
 function deploy_ui_plan_confirm_form($form, $form_state) {
   $plan = $form_state['plan'];
-  $path = 'admin/structure/deploy/plans';
+  $path = "admin/structure/deploy/plans/list/{$plan->name}";
   if (!empty($_REQUEST['cancel_path']) && !url_is_external($_REQUEST['cancel_path'])) {
     $path = $_REQUEST['cancel_path'];
   }

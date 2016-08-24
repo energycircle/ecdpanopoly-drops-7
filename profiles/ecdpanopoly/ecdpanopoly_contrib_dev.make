@@ -47,7 +47,8 @@ projects[ftools][subdir] = ec-dev
 ; Deploy Mods
 
 projects[deploy_services_client][subdir] = eccontrib
-projects[deploy_services_client][version] = 1.0-beta2
+projects[deploy_services_client][version] = 1.x
 
 projects[deploy][subdir] = eccontrib
-projects[deploy][version] = 2.0-beta2
+projects[deploy][version] = 3.x-dev
+projects[deploy][patch] = https://www.drupal.org/files/deploy-1520410-term_object_needs_vid_property-6.patch
