@@ -12,4 +12,4 @@ base = panopoly
  projects[ecdpanopoly][type] = profile
  projects[ecdpanopoly][download][type] = git
  projects[ecdpanopoly][download][url] = https://github.com/energycircle/ecdpanopoly.git
- projects[ecdpanopoly][download][branch] = 7.x-1.x
+ projects[ecdpanopoly][download][branch] = master
