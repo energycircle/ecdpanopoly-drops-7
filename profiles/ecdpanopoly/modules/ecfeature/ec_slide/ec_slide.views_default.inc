@@ -39,7 +39,7 @@ function ec_slide_views_default_views() {
   $handler->display->display_options['fields']['field_slide_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_slide_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_slide_image']['settings'] = array(
-    'image_style' => 'hero-slider',
+    'image_style' => 'sc_1280x440',
     'image_link' => '',
   );
   /* Field: Content: Body */

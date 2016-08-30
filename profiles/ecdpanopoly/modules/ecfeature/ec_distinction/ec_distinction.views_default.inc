@@ -142,7 +142,6 @@ function ec_distinction_views_default_views() {
 
   /* Display: Memberships */
   $handler = $view->new_display('panel_pane', 'Memberships', 'panel_pane_2');
-  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['display_description'] = 'List of Memberships, logo only';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Logo */
