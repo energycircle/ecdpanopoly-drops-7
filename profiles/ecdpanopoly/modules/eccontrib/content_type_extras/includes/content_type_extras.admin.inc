@@ -182,6 +182,12 @@ function content_type_extras_settings() {
             '#title'         => t('Remove body field from content types'),
             '#default_value' => $defaults['content_type_extras_remove_body'],
           ),
+          'content_type_extras_disable_token_display' => array(
+            '#type'          => 'checkbox',
+            '#description'   => t('Using modules such as pathauto uses tokens and, by default, we show the replacement patterns to use available tokens. However, this can slow some page loads down considerably. To disable token replacement patterns from being displayed on pages altered by Content Type: Extras (i.e. the content type edit page) check this box. This feature only hides the token replacement patterns. Tokens may still be used, they just must be entered manually.'),
+            '#title'         => t('Disable token replacement patterns'),
+            '#default_value' => $defaults['content_type_extras_disable_token_display'],
+          ),
         ),
         'node_titles' => array(
           '#type'   => 'fieldset',

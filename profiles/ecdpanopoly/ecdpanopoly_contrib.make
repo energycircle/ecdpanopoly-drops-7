@@ -61,7 +61,7 @@ projects[contemplate][subdir] = eccontrib
 projects[contemplate][version] = 1.x
 
 projects[content_type_extras][subdir] = eccontrib
-projects[content_type_extras][version] = 1.10
+projects[content_type_extras][version] = 1.11
 
 projects[content_experiments][subdir] = eccontrib
 projects[content_experiments][version] = 1.4
