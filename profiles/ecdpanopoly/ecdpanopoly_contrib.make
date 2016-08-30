@@ -339,6 +339,9 @@ projects[token_filter][version] = 1.1
 projects[total_control][subdir] = eccontrib
 projects[total_control][version] = 2.x
 
+projects[username_enumeration_prevention][subdir] = eccontrib
+projects[username_enumeration_prevention][version] = 1.2
+
 projects[variable][subdir] = eccontrib
 projects[variable][version] = 2.5
 
