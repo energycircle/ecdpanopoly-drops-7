@@ -383,6 +383,7 @@ projects[xmlsitemap][version] = 2.3
 
 
 ;PATCHES
+projects[smtp][patch][2753115] = https://www.drupal.org/files/issues/2753115-2-smtp-multiple-to-addresses-error.patch
 projects[token_custom][patch][] = https://www.drupal.org/files/issues/export_custom_token.patch
 projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
 projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch
