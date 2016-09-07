@@ -72,6 +72,24 @@ function content_experiments_admin_settings_form() {
     );
   }
   // END Page specific visibility configurations.
+  // Content type specific edit configurations.
+  $node_type_options = array();
+  foreach (node_type_get_types() as $node_type_get_type) {
+    $node_type_options[$node_type_get_type->type] = $node_type_get_type->name;
+  }
+  $form['node_type_edit_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Content types'),
+    '#collapsible' => TRUE,
+    '#group' => 'content_experiments',
+  );
+  $form['node_type_edit_settings']['content_experiments_node_types'] = array(
+    '#type' => 'checkboxes',
+    '#title' => t('Experiment ID field on the following types'),
+    '#default_value' => variable_get('content_experiments_node_types', array()),
+    '#options' => $node_type_options,
+    '#description' => t('Only provide the Experiment ID field on the add\edit forms of the selected types. If no types have been selected the Experiment ID field will be on all node forms.'),
+  );
 
   return system_settings_form($form);
 }
