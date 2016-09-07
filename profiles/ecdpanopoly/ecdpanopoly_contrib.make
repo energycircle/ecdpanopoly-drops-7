@@ -408,6 +408,8 @@ projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-featur
 projects[external][patch][1043324] = https://www.drupal.org/files/issues/external-https-links-1043324-5.patch
 projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
 projects[node_clone][patch][1043324] = https://www.drupal.org/files/issues/1252702-menu-local-task.patch
+projects[content_experiments][patch][2759323] = https://www.drupal.org/files/issues/content_experiments-node-type-configuration-2759323-1.patch
+projects[rdfx][patch][1176666] = https://drupal.org/files/find-arc-library-correctly-1176666-14.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
@@ -488,7 +490,7 @@ libraries[mailchimp][download][url] = https://bitbucket.org/mailchimp/mailchimp-
 
 libraries[arc][download][type] = get
 libraries[arc][type] = library
-libraries[arc][directory_name] = arc
+libraries[arc][directory_name] = ARC2
 libraries[arc][download][url] = http://github.com/semsol/arc2/tarball/master
 
 libraries[Geocomplete][download][type] = get
