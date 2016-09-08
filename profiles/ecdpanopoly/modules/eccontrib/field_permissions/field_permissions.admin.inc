@@ -350,14 +350,20 @@ function field_permissions_overview() {
           continue;
         }
         // Each field will have a row in the table.
-        $admin_path = _field_ui_bundle_admin_path($entity_type, $bundle);
+        if (module_exists('field_ui')) {
+          $admin_path = _field_ui_bundle_admin_path($entity_type, $bundle);
+          $field_admin_path = l($bundles_info[$entity_type][$bundle]['label'], $admin_path . '/fields/' . $field_name, array(
+            'query' => $destination,
+            'fragment' => 'edit-field-field-permissions-type',
+          ));
+        }
+        else {
+            $field_admin_path = $bundles_info[$entity_type][$bundle]['label'];
+        }
         $rows[$field_name]['data'][0] = $field['locked'] ? t('@field_name (Locked)', array('@field_name' => $field_name)) : $field_name;
         $rows[$field_name]['data'][1] = t($field_types[$field['type']]['label']);
         $rows[$field_name]['data'][2] = $entity_type;
-        $rows[$field_name]['data'][3][] = l($bundles_info[$entity_type][$bundle]['label'], $admin_path . '/fields/'. $field_name, array(
-          'query' => $destination,
-          'fragment' => 'edit-field-field-permissions-type',
-        ));
+        $rows[$field_name]['data'][3][] = $field_admin_path;
         $rows[$field_name]['class'] = $field['locked'] ? array('menu-disabled') : array('');
 
         // Append field permissions information to the report.
