@@ -6,9 +6,9 @@ dependencies[] = trigger
 core = 7.x
 
 
-; Information added by Drupal.org packaging script on 2016-07-16
-version = "7.x-1.0-beta4+7-dev"
+; Information added by Drupal.org packaging script on 2016-09-10
+version = "7.x-1.0-beta4+13-dev"
 core = "7.x"
 project = "mimemail"
-datestamp = "1468696740"
+datestamp = "1473530940"
 

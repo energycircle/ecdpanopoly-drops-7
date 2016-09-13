@@ -51,6 +51,10 @@ projects[features_override][version] = 2.x-dev
 projects[features_override][subdir] = contrib
 
 
+;save_draft dev
+projects[save_draft][version] = 1.x-dev
+projects[save_draft][subdir] = contrib
+
 ; patches
 projects[defaultconfig][patch][1900574] = https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
 projects[defaultconfig][subdir] = contrib
