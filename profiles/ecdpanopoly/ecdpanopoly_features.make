@@ -20,11 +20,11 @@ projects[ec_article][type] = module
 projects[ec_article][subdir] = ecfeature
 projects[ec_article][version] = 1.x
 
-projects[ec_awards][download][type] = git
-projects[ec_awards][download][url] = https://github.com/energycircle/ec_awards.git
-projects[ec_awards][type] = module
-projects[ec_awards][subdir] = ecfeature
-projects[ec_awards][version] = 1.x
+#projects[ec_awards][download][type] = git
+#projects[ec_awards][download][url] = https://github.com/energycircle/ec_awards.git
+#projects[ec_awards][type] = module
+#projects[ec_awards][subdir] = ecfeature
+#projects[ec_awards][version] = 1.x
 
 projects[ec_base_config][download][type] = git
 projects[ec_base_config][download][url] = https://github.com/energycircle/ec_base_config.git
