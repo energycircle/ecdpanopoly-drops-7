@@ -109,7 +109,7 @@ function ec_financing_option_rdf_default_mappings() {
     ),
     'field_financing_logo' => array(
       'predicates' => array(
-        0 => 'schema:image',
+        0 => 'schema:logo',
       ),
       'type' => 'rel',
     ),

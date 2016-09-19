@@ -11,7 +11,6 @@ function ec_blog_post_defaultconfig_features() {
   return array(
     'ec_blog_post' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -147,6 +146,9 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -454,14 +456,19 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
-          'manualcrop_enable' => 0,
+          'manualcrop_enable' => 1,
           'manualcrop_inline_crop' => 0,
           'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
-          'manualcrop_keyboard' => 1,
-          'manualcrop_maximize_default_crop_area' => 0,
-          'manualcrop_require_cropping' => array(),
-          'manualcrop_styles_list' => array(),
+          'manualcrop_keyboard' => 0,
+          'manualcrop_maximize_default_crop_area' => 1,
+          'manualcrop_require_cropping' => array(
+            'sc_940x470_mc' => 'sc_940x470_mc',
+          ),
+          'manualcrop_styles_list' => array(
+            'sc_1280x440_mc' => 'sc_1280x440_mc',
+            'sc_940x470_mc' => 'sc_940x470_mc',
+          ),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
         ),
@@ -1401,20 +1408,4 @@ function ec_blog_post_defaultconfig_field_default_fields() {
   t('URL of the page to link this blog entry to.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_blog_post_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__blog_post';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__blog_post'] = $strongarm;
-
-  return $export;
 }

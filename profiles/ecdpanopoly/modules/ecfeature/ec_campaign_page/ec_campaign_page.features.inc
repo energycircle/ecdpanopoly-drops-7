@@ -153,6 +153,10 @@ function ec_campaign_page_rdf_default_mappings() {
     'field_call_to_action' => array(
       'predicates' => array(),
     ),
+    'field_featured_image' => array(
+      'predicates' => array(),
+      'type' => 'rel',
+    ),
   );
 
   return $schemaorg;

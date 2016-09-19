@@ -141,15 +141,28 @@ function _field_permissions_field_settings_form_alter(&$form, $form_state, $form
     '#type' => 'container',
     '#states' => array(
       'visible' => array(
-        // We must cast this to a string until http://drupal.org/node/879580 is
-        // fixed.
-        ':input[name="field[field_permissions][type]"]' => array('value' => (string) FIELD_PERMISSIONS_CUSTOM),
+        ':input[name="field[field_permissions][type]"]' => array('value' => FIELD_PERMISSIONS_CUSTOM),
       ),
     ),
     // Custom styling for the permissions matrix on the field settings page.
     '#attached' => array(
       'css' => array(drupal_get_path('module', 'field_permissions') . '/field_permissions.admin.css'),
     ),
+  );
+
+
+  $form['field']['field_permissions']['permission_warning'] = array(
+    '#type' => 'item',
+    '#markup' => '<div class="messages error"><b>'
+      . t('Field permissions error')
+      . '</b><br />'
+      . t('If you are seeing this message and are not seeing a table of permissions, something is wrong! See !link for more information.', array('!link' => l('the Field Permission documentation', 'https://www.drupal.org/node/2802067#known-issues', array('attributes' => array('target' => '_blank'))))) . '</div>',
+    '#states' => array(
+      'visible' => array(
+        ':input[name="field[field_permissions][type]"]' => array('value' => FIELD_PERMISSIONS_CUSTOM)
+      )
+    ),
+    ''
   );
 
   // Add the field permissions matrix itself. Wait until the #pre_render stage

@@ -28,6 +28,8 @@ function ec_testimonial_field_group_info() {
       2 => 'field_ref_testimonial_serv_group',
       3 => 'field_ref_testimonial_service',
       4 => 'field_ref_testimonial_citypages',
+      5 => 'field_ref_testimonial_article',
+      6 => 'field_ref_testimonial_prodpage',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -63,14 +65,20 @@ function ec_testimonial_field_group_info() {
       6 => 'field_tetstimonial_name',
       7 => 'field_video',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Testimonial Info',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_testimonial_info|node|testimonial|form'] = $field_group;

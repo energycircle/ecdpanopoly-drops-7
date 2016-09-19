@@ -719,7 +719,7 @@ function ec_testimonial_field_default_field_instances() {
         ),
       ),
       'type' => 'stars',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -780,7 +780,7 @@ function ec_testimonial_field_default_field_instances() {
         'scrollwheel' => 0,
       ),
       'type' => 'geolocation_googlemap',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -982,7 +982,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -1086,7 +1086,7 @@ function ec_testimonial_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 17,
+      'weight' => 13,
     ),
   );
 
@@ -1216,7 +1216,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 

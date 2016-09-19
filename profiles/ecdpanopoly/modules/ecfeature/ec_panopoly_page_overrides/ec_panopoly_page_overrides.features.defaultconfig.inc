@@ -151,6 +151,9 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_button_text',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -486,6 +489,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'panopoly_page',
+      'default_value' => array(),
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -573,26 +577,44 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'media',
         'settings' => array(
+          'allowed_schemes' => array(
+            'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
+          ),
+          'allowed_types' => array(
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
+          ),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 0,
+            'media_default--media_browser_my_files' => 0,
+            'media_internet' => 0,
+            'upload' => 0,
+          ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 1,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => 0,
+          'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
-          'manualcrop_keyboard' => 1,
+          'manualcrop_keyboard' => 0,
           'manualcrop_maximize_default_crop_area' => 1,
-          'manualcrop_require_cropping' => array(),
+          'manualcrop_require_cropping' => array(
+            'sc_940x470_mc' => 'sc_940x470_mc',
+          ),
           'manualcrop_styles_list' => array(
-            'panopoly_image_full' => 'panopoly_image_full',
+            'sc_1280x440_mc' => 'sc_1280x440_mc',
+            'sc_940x470_mc' => 'sc_940x470_mc',
           ),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
-          'preview_image_style' => 'panopoly_image_full',
-          'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'media_generic',
         'weight' => 1,
       ),
     ),
@@ -803,6 +825,9 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'entityform_type' => array(
           'columns' => array(

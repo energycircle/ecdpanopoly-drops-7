@@ -13,13 +13,19 @@ function ec_panopoly_page_overrides_panelizer_defaults() {
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:panopoly_page:home_default';
   $panelizer->title = 'Home Default';
   $panelizer->panelizer_type = 'node';
   $panelizer->panelizer_key = 'panopoly_page';
-  $panelizer->no_blocks = FALSE;
+  $panelizer->access = array();
+  $panelizer->view_mode = 'default';
+  $panelizer->name = 'node:panopoly_page:home_default';
   $panelizer->css_id = '';
+  $panelizer->css_class = 'page-default';
   $panelizer->css = '';
+  $panelizer->no_blocks = FALSE;
+  $panelizer->title_element = 'H2';
+  $panelizer->link_to_entity = TRUE;
+  $panelizer->extra = '';
   $panelizer->pipeline = 'ipe';
   $panelizer->contexts = array(
     0 => array(
@@ -31,12 +37,6 @@ function ec_panopoly_page_overrides_panelizer_defaults() {
     ),
   );
   $panelizer->relationships = array();
-  $panelizer->access = array();
-  $panelizer->view_mode = 'default';
-  $panelizer->css_class = 'page-default';
-  $panelizer->title_element = 'H2';
-  $panelizer->link_to_entity = TRUE;
-  $panelizer->extra = '';
   $display = new panels_display();
   $display->layout = 'two_66_33';
   $display->layout_settings = array();
@@ -54,6 +54,8 @@ function ec_panopoly_page_overrides_panelizer_defaults() {
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = '10c9e351-f69c-4629-b191-77b8b01f4f1c';
+  $display->storage_type = 'panelizer_default';
+  $display->storage_id = 'node:panopoly_page:home_default';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();

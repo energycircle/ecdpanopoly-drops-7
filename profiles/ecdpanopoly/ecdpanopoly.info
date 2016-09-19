@@ -19,7 +19,7 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = dblog
 dependencies[] = search
-dependencies[] = energycircle_apps
+
 
 ; Panopoly Foundation
 dependencies[] = panopoly_core
@@ -126,7 +126,9 @@ dependencies[] = ec_foundation_image_styles
 dependencies[] = ec_base_config
 dependencies[] = ec_custom_tokens
 dependencies[] = ec_panopoly_page_overrides
-
+dependencies[] = energycircle_apps
+dependencies[] = ec_custom_tokens
+dependencies[] = ec_mail_settings
 
 ; Information added by flux423 - updated on 2016-9-1
 version = "7.x-1.4"

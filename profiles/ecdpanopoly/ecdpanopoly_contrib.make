@@ -334,7 +334,7 @@ projects[token_tweaks][subdir] = eccontrib
 projects[token_tweaks][version] = 1.x
 
 projects[token_filter][subdir] = eccontrib
-projects[token_filter][version] = 1.1
+projects[token_filter][version] = 1.x-dev
 
 projects[total_control][subdir] = eccontrib
 projects[total_control][version] = 2.x

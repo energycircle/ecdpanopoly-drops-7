@@ -89,7 +89,7 @@ function ec_distinction_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'distinction' => 'distinction',
   );
-  /* Filter criterion: Broken/missing handler */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -183,7 +183,7 @@ function ec_distinction_views_default_views() {
   );
   $handler->display->display_options['filters']['field_distinction_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_distinction_type_tid']['vocabulary'] = 'distinction_types';
-  /* Filter criterion: Broken/missing handler */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -223,7 +223,7 @@ function ec_distinction_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'distinction' => 'distinction',
   );
-  /* Filter criterion: Broken/missing handler */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';

@@ -40,6 +40,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '555457cf-6d82-42f4-8afa-e3413c3de894';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'footer';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -185,6 +187,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '05f14956-b2cf-4bbc-9bbf-4709d94029b1';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'header';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -300,6 +304,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '2d179f21-0d5f-4dd9-a991-74247a49277a';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'hero';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -352,6 +358,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '93ad03af-d6a8-40e3-8db3-4ef0c4020bda';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'main_menu_superfish';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -407,6 +415,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '11c09654-f37d-466f-9ebf-7e98e45073d0';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'secondary_menu_tree';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();

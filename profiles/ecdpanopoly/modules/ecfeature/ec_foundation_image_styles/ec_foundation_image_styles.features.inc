@@ -119,6 +119,25 @@ function ec_foundation_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: sc_1280x440_mc.
+  $styles['sc_1280x440_mc'] = array(
+    'label' => 'sc_1280x440_mc',
+    'effects' => array(
+      4 => array(
+        'name' => 'manualcrop_crop_and_scale',
+        'data' => array(
+          'width' => 1280,
+          'height' => 440,
+          'upscale' => 1,
+          'respectminimum' => 1,
+          'onlyscaleifcrop' => 0,
+          'style_name' => 'sc_1280x440_mc',
+        ),
+        'weight' => -11,
+      ),
+    ),
+  );
+
   // Exported image style: sc_140x105.
   $styles['sc_140x105'] = array(
     'label' => 'sc_140x105',
@@ -230,6 +249,24 @@ function ec_foundation_image_styles_image_default_styles() {
           'height' => 225,
         ),
         'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: sc_300x250_custom_mc.
+  $styles['sc_300x250_custom_mc'] = array(
+    'label' => 'sc_300x250_custom_mc',
+    'effects' => array(
+      5 => array(
+        'name' => 'manualcrop_crop',
+        'data' => array(
+          'width' => 300,
+          'height' => 250,
+          'keepproportions' => 0,
+          'reuse_crop_style' => 'panopoly_image_square',
+          'style_name' => 'sc_300x250_custom_mc',
+        ),
+        'weight' => 0,
       ),
     ),
   );
