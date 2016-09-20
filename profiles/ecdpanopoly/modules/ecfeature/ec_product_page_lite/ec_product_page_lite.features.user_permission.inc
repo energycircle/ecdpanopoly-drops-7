@@ -17,6 +17,13 @@ function ec_product_page_lite_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node product_page choice'.
+  $permissions['administer panelizer node product_page choice'] = array(
+    'name' => 'administer panelizer node product_page choice',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node product_page content'.
   $permissions['administer panelizer node product_page content'] = array(
     'name' => 'administer panelizer node product_page content',

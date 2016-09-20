@@ -11,7 +11,6 @@ function ec_a_b_testing_setup_defaultconfig_features() {
   return array(
     'ec_a_b_testing_setup' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -59,13 +58,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 11,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 10,
         ),
         'featured' => array(
           'label' => 'above',
@@ -146,13 +141,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 11,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 8,
         ),
         'featured' => array(
           'label' => 'above',
@@ -233,13 +224,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 7,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 6,
         ),
         'grouped_teaser' => array(
           'label' => 'above',
@@ -302,13 +289,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 16,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 15,
         ),
         'featured' => array(
           'label' => 'above',
@@ -389,12 +372,8 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 4,
         ),
         'featured' => array(
@@ -480,12 +459,8 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 6,
         ),
         'featured' => array(
@@ -654,13 +629,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 5,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 1,
         ),
         'featured' => array(
           'label' => 'above',
@@ -699,7 +670,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 106,
+        'weight' => 7,
       ),
     ),
   );
@@ -741,13 +712,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 7,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'above',
@@ -828,13 +795,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 3,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 2,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1002,13 +965,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 14,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 13,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1099,12 +1058,8 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 11,
         ),
         'featured' => array(
@@ -1190,12 +1145,8 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 19,
         ),
         'featured' => array(
@@ -1277,13 +1228,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 17,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 14,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1364,13 +1311,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 14,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 12,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1451,13 +1394,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 17,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 13,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1538,13 +1477,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 12,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 11,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1625,13 +1560,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 6,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1706,12 +1637,8 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 6,
         ),
         'featured' => array(
@@ -1793,13 +1720,9 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'list_default',
-          'weight' => 14,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 12,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1848,72 +1771,4 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   t('A/B Test Page');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_a_b_testing_setup_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_experiments_node_types';
-  $strongarm->value = array(
-    'campaign_page' => 'campaign_page',
-    'city_page' => 'city_page',
-    'promotion' => 'promotion',
-    'service' => 'service',
-    'service_category' => 'service_category',
-    'service_group' => 'service_group',
-    'panopoly_page' => 'panopoly_page',
-    'article' => 0,
-    'blog_post' => 0,
-    'case_study' => 0,
-    'distinction' => 0,
-    'distributor' => 0,
-    'faq' => 0,
-    'financing_option' => 0,
-    'gallery' => 0,
-    'review_site' => 0,
-    'slide' => 0,
-    'testimonial' => 0,
-    'panopoly_landing_page' => 0,
-  );
-  $export['content_experiments_node_types'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_experiments_pages';
-  $strongarm->value = 'admin
-admin/*
-user/*/*
-node/add*
-node/*/*';
-  $export['content_experiments_pages'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_experiments_roles';
-  $strongarm->value = array(
-    1 => 0,
-    2 => 0,
-    5 => 0,
-    3 => 0,
-    6 => 0,
-    4 => 0,
-  );
-  $export['content_experiments_roles'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_experiments_visibility';
-  $strongarm->value = '0';
-  $export['content_experiments_visibility'] = $strongarm;
-
-  return $export;
 }

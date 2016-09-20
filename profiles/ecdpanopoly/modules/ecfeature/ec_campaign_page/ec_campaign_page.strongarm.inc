@@ -100,6 +100,9 @@ function ec_campaign_page_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'grouped_teaser' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

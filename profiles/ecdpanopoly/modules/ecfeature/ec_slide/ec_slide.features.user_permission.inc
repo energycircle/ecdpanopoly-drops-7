@@ -28,6 +28,13 @@ function ec_slide_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node slide choice'.
+  $permissions['administer panelizer node slide choice'] = array(
+    'name' => 'administer panelizer node slide choice',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node slide content'.
   $permissions['administer panelizer node slide content'] = array(
     'name' => 'administer panelizer node slide content',

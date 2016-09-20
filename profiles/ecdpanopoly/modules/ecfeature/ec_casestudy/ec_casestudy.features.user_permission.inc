@@ -19,6 +19,13 @@ function ec_casestudy_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node case_study choice'.
+  $permissions['administer panelizer node case_study choice'] = array(
+    'name' => 'administer panelizer node case_study choice',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node case_study content'.
   $permissions['administer panelizer node case_study content'] = array(
     'name' => 'administer panelizer node case_study content',
@@ -89,6 +96,7 @@ function ec_casestudy_user_default_permissions() {
     'name' => 'delete any case_study content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

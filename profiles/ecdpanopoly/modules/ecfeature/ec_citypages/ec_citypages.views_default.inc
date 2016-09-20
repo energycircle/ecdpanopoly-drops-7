@@ -275,7 +275,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_ref_citypages_case_study_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_ref_citypages_case_study_node']['field'] = 'reverse_field_ref_citypages_case_study_node';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Gallery */
   $handler->display->display_options['fields']['field_ref_case_study_gallery']['id'] = 'field_ref_case_study_gallery';
   $handler->display->display_options['fields']['field_ref_case_study_gallery']['table'] = 'field_data_field_ref_case_study_gallery';
   $handler->display->display_options['fields']['field_ref_case_study_gallery']['field'] = 'field_ref_case_study_gallery';

@@ -178,9 +178,6 @@ function ec_testimonial_rdf_default_mappings() {
         0 => 'schema:aggregateRating',
       ),
     ),
-    'field_testimonial_source' => array(
-      'predicates' => array(),
-    ),
   );
 
   return $schemaorg;

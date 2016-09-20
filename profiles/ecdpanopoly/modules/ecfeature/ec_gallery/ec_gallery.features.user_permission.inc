@@ -19,6 +19,13 @@ function ec_gallery_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node gallery choice'.
+  $permissions['administer panelizer node gallery choice'] = array(
+    'name' => 'administer panelizer node gallery choice',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node gallery content'.
   $permissions['administer panelizer node gallery content'] = array(
     'name' => 'administer panelizer node gallery content',
@@ -76,35 +83,54 @@ function ec_gallery_user_default_permissions() {
   // Exported permission: 'create gallery content'.
   $permissions['create gallery content'] = array(
     'name' => 'create gallery content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any gallery content'.
   $permissions['delete any gallery content'] = array(
     'name' => 'delete any gallery content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own gallery content'.
   $permissions['delete own gallery content'] = array(
     'name' => 'delete own gallery content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any gallery content'.
   $permissions['edit any gallery content'] = array(
     'name' => 'edit any gallery content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own gallery content'.
   $permissions['edit own gallery content'] = array(
     'name' => 'edit own gallery content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 

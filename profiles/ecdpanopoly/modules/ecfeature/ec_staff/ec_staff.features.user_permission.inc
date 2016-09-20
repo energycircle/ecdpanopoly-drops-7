@@ -19,6 +19,13 @@ function ec_staff_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node staff choice'.
+  $permissions['administer panelizer node staff choice'] = array(
+    'name' => 'administer panelizer node staff choice',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node staff content'.
   $permissions['administer panelizer node staff content'] = array(
     'name' => 'administer panelizer node staff content',
@@ -105,6 +112,13 @@ function ec_staff_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in departments'.
+  $permissions['delete terms in departments'] = array(
+    'name' => 'delete terms in departments',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit any staff content'.
   $permissions['edit any staff content'] = array(
     'name' => 'edit any staff content',
@@ -125,6 +139,13 @@ function ec_staff_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in departments'.
+  $permissions['edit terms in departments'] = array(
+    'name' => 'edit terms in departments',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   return $permissions;

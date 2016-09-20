@@ -17,6 +17,13 @@ function ec_campaign_page_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node campaign_page choice'.
+  $permissions['administer panelizer node campaign_page choice'] = array(
+    'name' => 'administer panelizer node campaign_page choice',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node campaign_page content'.
   $permissions['administer panelizer node campaign_page content'] = array(
     'name' => 'administer panelizer node campaign_page content',

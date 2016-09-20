@@ -745,7 +745,6 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'settings' => array(
         'alt_field' => 0,
         'default_image' => 0,
-        'exclude_cv' => FALSE,
         'file_directory' => 'citypages',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -759,7 +758,6 @@ function ec_citypages_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 0,
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -782,12 +780,13 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'manualcrop_inline_crop' => 0,
           'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
-          'manualcrop_keyboard' => 1,
-          'manualcrop_maximize_default_crop_area' => 0,
+          'manualcrop_keyboard' => 0,
+          'manualcrop_maximize_default_crop_area' => 1,
           'manualcrop_require_cropping' => array(
             'sc_940x470_mc' => 'sc_940x470_mc',
           ),
           'manualcrop_styles_list' => array(
+            'sc_1280x440_mc' => 'sc_1280x440_mc',
             'sc_940x470_mc' => 'sc_940x470_mc',
           ),
           'manualcrop_styles_mode' => 'include',
@@ -1936,7 +1935,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 24,
+        'weight' => 23,
       ),
     ),
   );
