@@ -30,6 +30,7 @@ dependencies[] = features
 dependencies[] = features_override
 dependencies[] = features_roles_permissions
 dependencies[] = field
+dependencies[] = field_default_token
 dependencies[] = field_group
 dependencies[] = field_hidden
 dependencies[] = field_validation
