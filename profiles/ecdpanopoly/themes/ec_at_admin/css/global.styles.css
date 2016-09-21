@@ -31,12 +31,12 @@
  * element. If you need to set default font properties of any kind use the BODY
  * element as these can be overridden using font theme settings.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\0000341}}
 html {
   background: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\0000345}}
 body {
   font-family: "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 87.5%;
@@ -45,7 +45,7 @@ body {
 /* =============================================================================
  *   HTML Elements
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003135}}
 pre,
 code,
 tt,
@@ -104,7 +104,7 @@ var {
 /*
  * Wraps the header
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003231}}
 #header-wrapper {
   /* Debug styles, is this working */
   background: rgba(255, 192, 203, 0.5);
@@ -131,7 +131,7 @@ var {
 /*
  * Footer wrapper
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003289}}
 #footer-wrapper {
   /* Debug styles, is this working? */
   background: rgba(255, 192, 203, 0.5);
@@ -146,11 +146,11 @@ var {
 /*
  * Logo
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003310}}
 #logo {
   padding: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003313}}
 #logo img {
   vertical-align: bottom;
 }
@@ -161,15 +161,15 @@ var {
 /*
  * Site name (h1)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003328}}
 #site-name {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003333}}
 #site-name a:link, #site-name a:visited {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003338}}
 #site-name a:hover, #site-name a:focus {
   text-decoration: underline;
 }
@@ -177,7 +177,7 @@ var {
 /*
  * Site slogan (h2)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003349}}
 #site-slogan {
   margin: 0;
 }
@@ -191,7 +191,7 @@ var {
 /*
  * The main page title (h1)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003367}}
 #page-title {
   margin: 0;
 }
@@ -205,14 +205,14 @@ var {
 /*
  * Aggregator feed source
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003385}}
 #aggregator .feed-source .feed-icon {
   display: inline;
   float: none;
   margin-right: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003392}}
 .feed-details dt,
 .feed-details dd {
   display: inline;
@@ -225,16 +225,16 @@ var {
 /*
  * Generic styles for links. See the ul.links declaration in node and comment stylesheets
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003408}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003408}}
 ul.links {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003412}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003412}}
 ul.links.inline {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003416}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003416}}
 ul.links li {
   display: inline;
   list-style: none;
@@ -244,7 +244,7 @@ ul.links li {
 /*
  * Search results are an ordered list so reset the margin
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003427}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003427}}
 .search-results {
   margin: 0;
   padding: 0;
@@ -253,19 +253,19 @@ ul.links li {
 /*
  * Attribution message and link
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003436}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003436}}
 .attribution {
   display: block;
   opacity: 0.65;
   padding: 1em 0;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003442}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003442}}
 .attribution a {
   text-decoration: none;
   color: inherit;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003446}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003446}}
 .attribution a:hover, .attribution a:focus {
   text-decoration: underline;
 }
@@ -315,11 +315,11 @@ ul.links li {
 /* =============================================================================
  *   Links
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003540}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003540}}
 a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003549}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003549}}
 a:hover, a:focus {
   text-decoration: underline;
 }
@@ -327,18 +327,18 @@ a:hover, a:focus {
 /* =============================================================================
  *   Primary, Secondary and Menu Bar region menus
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003560}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003560}}
 .nav {
   clear: both;
   margin: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003564}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003564}}
 .nav ul,
 .nav ul.menu {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003570}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003570}}
 .nav li,
 .nav ul.menu li {
   display: inline;
@@ -347,14 +347,14 @@ a:hover, a:focus {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003579}}
 .nav li a,
 .nav ul.menu li a {
   display: block;
   white-space: nowrap;
   padding: 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003591}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003591}}
 .nav .block {
   margin-bottom: 0;
 }
@@ -362,11 +362,11 @@ a:hover, a:focus {
 /* =============================================================================
  *   Superfish
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003601}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003601}}
 ul.sf-menu {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003604}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003604}}
 ul.sf-menu a {
   border-left: 0;
   border-top: 0;
@@ -375,11 +375,11 @@ ul.sf-menu a {
   height: 2.5em;
   line-height: 2.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003617}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003617}}
 ul.sf-menu li:hover, ul.sf-menu li.sfHover {
   outline: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003624}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003624}}
 ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
   outline: 0;
 }
@@ -387,12 +387,12 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Superfish blocks
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003640}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003640}}
 .block-superfish ul {
   margin: 0 !important;
   padding: 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003651}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003651}}
 .block-superfish li {
   margin: 0 !important;
   padding: 0 !important;
@@ -401,22 +401,22 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Vertical style
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003661}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003661}}
 .sf-vertical {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003664}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003664}}
 .sf-vertical li {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003669}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003669}}
 .sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
   left: 100%;
   top: 0;
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003677}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003677}}
 .sf-vertical li a {
   padding: 0 10px;
 }
@@ -424,7 +424,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Navbar style
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003687}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003687}}
 .sf-navbar {
   padding-bottom: 0 !important;
 }
@@ -432,7 +432,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Sensible padding for the default style
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003695}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003695}}
 .sf-menu.sf-style-default a {
   padding: 0 10px;
 }
@@ -440,7 +440,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /* =============================================================================
  *   Menu Toggles
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003705}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003705}}
 .at-mt .at-menu-toggle,
 .at-mt .at-menu-toggle ul,
 .at-mt .at-menu-toggle ul.menu {
@@ -448,11 +448,11 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
   margin-bottom: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003713}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003713}}
 .at-mt .at-menu-toggle-button {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003717}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003717}}
 .at-mt .at-menu-toggle ul a {
   padding: 0 10px;
   white-space: nowrap;
@@ -461,21 +461,21 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /* =============================================================================
  *   Menus, usually blocks
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003728}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003728}}
 ul.menu {
   padding-left: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003731}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003731}}
 ul.menu ul {
   padding-left: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003739}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003739}}
 ul.menu li {
   margin: 0;
 }
 
 /* If li.content exists it's a problem, so reset the padding */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003768}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003768}}
 .block .menu li.content {
   padding: 0;
 }
@@ -483,13 +483,13 @@ ul.menu li {
 /* =============================================================================
  *   Book navigation menu
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003785}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003785}}
 .book-navigation .page-up {
   /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
   min-width: 2em;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003791}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003791}}
 .book-navigation .menu {
   margin-left: 0;
 }
@@ -497,31 +497,31 @@ ul.menu li {
 /* =============================================================================
  *   Breadcrumbs
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003801}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003801}}
 #breadcrumb {
   margin: 10px 0;
   /* If the label is set to show in theme settings the label class is added */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003805}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003805}}
 #breadcrumb .breadcrumb-label {
   font-size: 1em;
   display: inline;
   padding-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003810}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003810}}
 #breadcrumb .breadcrumb-label:after {
   content: ":";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003815}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003815}}
 #breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003820}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003820}}
 #breadcrumb .with-breadcrumb-label ol {
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003824}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003824}}
 #breadcrumb li {
   list-style: none;
   display: inline;
@@ -530,31 +530,31 @@ ul.menu li {
 /* =============================================================================
  *   Pagers
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003851}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003851}}
 ul.pager {
   clear: both;
   margin: 0;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003858}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003858}}
 .item-list ul.pager li {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003863}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003863}}
 ul.pager li {
   background-image: none;
   display: inline;
   list-style-type: none;
   padding: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003869}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003869}}
 ul.pager li.pager-current {
   font-weight: 700;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003875}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003875}}
 .block ul.pager li {
   margin: 0;
 }
@@ -565,7 +565,7 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Skip Navigation
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003912}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003912}}
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -575,7 +575,7 @@ ul.pager li.pager-current {
   width: 12em;
   z-index: 50;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003921}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003921}}
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -586,7 +586,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003931}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003931}}
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -597,7 +597,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003942}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003942}}
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
@@ -605,24 +605,24 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Tabs (local tasks)
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003955}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003955}}
 #tasks {
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003960}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003960}}
 ul.primary {
   border-bottom-color: #546e7a;
   margin: 20px 0;
   padding: 0 0 0 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003965}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003965}}
 ul.primary li {
   display: block;
   float: left;
   margin: 0 1px -1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003970}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003970}}
 ul.primary li a {
   background-color: #eceff1;
   border-color: #546e7a;
@@ -633,12 +633,12 @@ ul.primary li a {
   height: 1.5em;
   line-height: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003980}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003980}}
 ul.primary li a:hover, ul.primary li a:focus {
   background-color: #cfd8dc;
   border-color: #546e7a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003989}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003989}}
 ul.primary li.active a,
 ul.primary li.active a:hover,
 ul.primary li.active a:focus {
@@ -646,19 +646,19 @@ ul.primary li.active a:focus {
   border-bottom-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\00003999}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003999}}
 ul.secondary {
   border-bottom: 1px solid #546e7a;
   margin: 1em 0 0;
   padding: 0 .3em 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031004}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031004}}
 ul.secondary li {
   border-right: 0;
   list-style: none;
   padding: 0 10px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031010}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031010}}
 ul.secondary li a:hover, ul.secondary li a.active {
   border-bottom: none;
   text-decoration: underline;
@@ -667,7 +667,7 @@ ul.secondary li a:hover, ul.secondary li a.active {
 /* =============================================================================
  *   Action links
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031024}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031024}}
 ul.action-links {
   margin: 20px 0 0;
   list-style: none;
@@ -685,11 +685,11 @@ ul.action-links {
 /*
  * When labels are set to inline in field display settings the clearfix class is automatically added
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031051}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031051}}
 .field-label-inline {
   /* Remove the margin on inline field lables to preserve vertical formatting */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031054}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031054}}
 .field-label-inline .field-label {
   margin: 0;
 }
@@ -697,7 +697,7 @@ ul.action-links {
 /*
  * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031062}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031062}}
 .field-label {
   font-size: 1em;
   font-weight: 700;
@@ -715,17 +715,17 @@ ul.action-links {
 /*
  * Taxonomy
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031091}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031091}}
 .field-type-taxonomy-term-reference {
   /* The same bottom margin as p, blockquote, ul, ol and dl */
   margin-bottom: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031096}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031096}}
 .field-type-taxonomy-term-reference.field-label-inline .field-items {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031101}}
 .field-type-taxonomy-term-reference.field-label-inline .field-item {
   display: inline;
   list-style: none;
@@ -783,7 +783,7 @@ ul.action-links {
 /*
  * Float left setting
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031215}}
 .ia-l .field-type-image figure,
 .iat-l .field-type-image figure {
   margin: 5px 20px 15px 0;
@@ -792,7 +792,7 @@ ul.action-links {
 /*
  * Centered setting
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031224}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031224}}
 .ia-c .field-type-image figure,
 .iat-c .field-type-image figure {
   margin: 5px auto 15px;
@@ -801,7 +801,7 @@ ul.action-links {
 /*
  * Float right setting
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031233}}
 .ia-r .field-type-image figure,
 .iat-r .field-type-image figure {
   margin: 5px 0 15px 20px;
@@ -813,7 +813,7 @@ ul.action-links {
 /*
  * Main wrapper for most blocks, block_system_main does not have it
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031247}}
 .block {
   margin-bottom: 20px;
 }
@@ -836,7 +836,7 @@ ul.action-links {
 /*
  * Block title
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031285}}
 .block-title {
   margin: 0;
 }
@@ -847,12 +847,12 @@ ul.action-links {
 /*
  * Match item list and block menu margin and padding
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031301}}
 .block-content ul,
 .block-content ol {
   padding: 0 0 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031306}}
 .block-content li {
   margin: 0;
   padding: 0;
@@ -942,11 +942,11 @@ ul.action-links {
 /* =============================================================================
  *   Node Styling
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031479}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031479}}
 .node {
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031496}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031496}}
 .node .node-title {
   margin: 0;
 }
@@ -962,15 +962,15 @@ ul.action-links {
 /*
  * Wrapper for the list of comments and its titles
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031554}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031554}}
 #comments {
   margin: 1.5em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031558}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031558}}
 #comments h2.comment-title {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031562}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031562}}
 #comments h2.comment-form {
   margin: 0;
 }
@@ -978,7 +978,7 @@ ul.action-links {
 /*
  * Wrapper for a single comment
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031572}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031572}}
 .comment {
   margin-bottom: 20px;
 }
@@ -986,7 +986,7 @@ ul.action-links {
 /*
  * Comment title
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031603}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031603}}
 .comment-title {
   margin: 0;
 }
@@ -1000,7 +1000,7 @@ ul.action-links {
 /*
  * "New" marker for comments that are new for the current user
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031635}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031635}}
 .new {
   color: #c00;
 }
@@ -1008,7 +1008,7 @@ ul.action-links {
 /*
  * Nested comments are indented
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031643}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031643}}
 .indented {
   margin-left: 40px;
 }
@@ -1019,17 +1019,17 @@ ul.action-links {
 /*
  * Wrapper for a form element (or group of form elements) and its label
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031657}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031657}}
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #c00;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031663}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031663}}
 .form-item label {
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031670}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031670}}
 .form-item .description {
   font-size: 0.85em;
 }
@@ -1037,7 +1037,7 @@ ul.action-links {
 /*
  * Highlight marks and form required mark
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031683}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031683}}
 .marker,
 .form-required {
   color: #c00;
@@ -1046,7 +1046,7 @@ ul.action-links {
 /*
  * The submit button
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031697}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031697}}
 .container-inline div,
 .container-inline label {
   display: inline;
@@ -1055,7 +1055,7 @@ ul.action-links {
 /*
  * Define consistent borders
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031706}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031706}}
 fieldset {
   border: 1px solid #546e7a;
 }
@@ -1066,7 +1066,7 @@ fieldset {
 /*
  * Buttons used by contrib modules like Media
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031720}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031720}}
 a.button {
   -moz-appearance: button;
   -webkit-appearance: button;
@@ -1075,7 +1075,7 @@ a.button {
 /*
  * Password confirmation
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031728}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031728}}
 .password-parent,
 .confirm-parent {
   margin: 0;
@@ -1084,18 +1084,18 @@ a.button {
 /* =============================================================================
  *   Tables
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031738}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031738}}
 table {
   margin: 10px 0;
   padding: 0;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031743}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031743}}
 table.sticky-header {
   z-index: 10;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031749}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031749}}
 table,
 thead,
 tbody,
@@ -1105,27 +1105,27 @@ td {
   border-color: #546e7a;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031759}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031759}}
 table,
 td,
 th {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031766}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031766}}
 caption,
 th,
 td {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031773}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031773}}
 thead tr {
   font-weight: 700;
   background-color: #90a4ae;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031779}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031779}}
 td,
 th {
   border-bottom: 0;
@@ -1133,29 +1133,29 @@ th {
   padding: 5px 7px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031790}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031790}}
 tbody tr {
   border-top: 1px solid #546e7a;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031795}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031795}}
 tr {
   /* Table row striping */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031797}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031797}}
 tr.odd {
   background: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031802}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031802}}
 tr.info, tr.even, tr:nth-child(2n+2) {
   border-bottom: 0;
   background-color: #eceff1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031813}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031813}}
 tr.odd td.active {
   background-color: #cfd8dc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031817}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031817}}
 tr.even td.active {
   background-color: #b0bec5;
 }
@@ -1164,7 +1164,7 @@ tr.even td.active {
  * Forum tables
  * Core sets white-space to nowrap, which makes no sense
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031840}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031840}}
 #forum td.created, #forum td.posts, #forum td.topics, #forum td.last-reply, #forum td.replies, #forum td.pager {
   white-space: normal;
 }
@@ -1172,12 +1172,12 @@ tr.even td.active {
 /* =============================================================================
  *   Messages
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031856}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031856}}
 div.messages {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031861}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031861}}
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -1186,7 +1186,7 @@ div.messages ul {
 /*
  * Unpublished nodes
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031902}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031902}}
 .node-unpublished p.unpublished,
 .comment-unpublished p.unpublished {
   color: pink;
@@ -1207,28 +1207,28 @@ div.messages ul {
 /* =============================================================================
  *    Maintenance pages
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031913}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031913}}
 .maintenance-page .container {
   padding: 40px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031917}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031917}}
 .maintenance-page #site-name,
 .maintenance-page #page-title {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031925}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031925}}
 .db-offline .container {
   margin: 0 auto;
   padding: 40px 0;
   width: 100%;
   max-width: 960px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031932}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031932}}
 .db-offline div.messages {
   margin: 20px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031936}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031936}}
 .db-offline #content {
   padding: 20px 0;
 }
@@ -1239,7 +1239,7 @@ div.messages ul {
 /*
  * Admin menu overrides
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031949}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031949}}
 #admin-menu {
   margin: 0;
   padding: 0;
@@ -1248,7 +1248,7 @@ div.messages ul {
 /*
  * Devel Module
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031958}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031958}}
 .dev-query {
   background: #cfd8dc;
   padding: 30px;
@@ -1257,11 +1257,11 @@ div.messages ul {
 /*
  * Styleguide module tweaks
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031967}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031967}}
 #styleguide-header {
   padding: 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031970}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031970}}
 #styleguide-header .item-list {
   font-family: inherit;
   margin: 0 20px 20px 0;
@@ -1272,63 +1272,68 @@ div.messages ul {
 /* =============================================================================
  *   EC HACKS
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031984}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031984}}
 #admin-menu .dropdown li li {
   opacity: 1;
   background-color: rgba(69, 69, 69, 0.88);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031990}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031990}}
 #edit-field-business2 {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000031995}}
-#redhen_dedupe_merge_data p,
-#redhen_dedupe_merge_data div.field-item {
-  white-space: normal;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031997}}
+.media-wrapper {
+  width: 90% !important;
+  top: 10% !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032003}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032001}}
+.media-modal-frame {
+  width: 100% !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032006}}
 .crm-container .crm-accordion-body {
   background: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032011}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032014}}
 .time1 {
   color: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032018}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032021}}
 .highlight-Yes {
   color: green;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032025}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032028}}
 .view-id-digital_projects.view-display-id-panel_pane_2 tr.even,
 .view-pro-projects.view-display-id-panel_pane_2 tr.even {
   border-bottom: 1px solid #546e7a;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032029}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032032}}
 .view-id-digital_projects.view-display-id-panel_pane_2 tr.odd,
 .view-pro-projects.view-display-id-panel_pane_2 tr.odd {
   border-bottom: 1px solid #eceff1;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032036}}
 .view-id-digital_projects.view-display-id-panel_pane_2 .highlight-No,
 .view-pro-projects.view-display-id-panel_pane_2 .highlight-No {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032039}}
 .view-id-digital_projects.view-display-id-panel_pane_2 td,
 .view-id-digital_projects.view-display-id-panel_pane_2 th,
 .view-pro-projects.view-display-id-panel_pane_2 td,
 .view-pro-projects.view-display-id-panel_pane_2 th {
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032040}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032043}}
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-wireframes-approved-6,
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-designs-approved-7,
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-build-completed-9,
@@ -1350,12 +1355,12 @@ div.messages ul {
   width: 10%;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032052}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032055}}
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-current-employer,
 .view-pro-projects.view-display-id-panel_pane_2 .views-field-current-employer {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032055}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032058}}
 .view-id-digital_projects.view-display-id-panel_pane_2 td.views-field-wireframes-approved-6,
 .view-id-digital_projects.view-display-id-panel_pane_2 td.views-field-designs-approved-7,
 .view-id-digital_projects.view-display-id-panel_pane_2 td.views-field-content-writing-completed-8,
@@ -1395,7 +1400,7 @@ div.messages ul {
   border-right: 1px solid #cfd8dc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032082}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032085}}
 .view-id-digital_projects.view-display-id-panel_pane_1 td.views-field-website-price-18,
 .view-id-digital_projects.view-display-id-panel_pane_1 td.views-field-content-price-19,
 .view-id-digital_projects.view-display-id-panel_pane_1 td.views-field-monthly-rate-36,
@@ -1409,7 +1414,7 @@ div.messages ul {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/global\.styles\.scss}line{font-family:\000032092}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032095}}
 .key {
   background-color: #cfd8dc;
   border: 1px solid #cfd8dc;

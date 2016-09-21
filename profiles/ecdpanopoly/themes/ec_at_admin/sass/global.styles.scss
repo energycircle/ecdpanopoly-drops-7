@@ -1981,9 +1981,9 @@ tr.error {
  * ========================================================================== */
 
 #admin-menu {
-	.dropdown li li { 
-			opacity: 1;   
-			background-color: rgba(69, 69, 69, 0.88); 
+	.dropdown li li {
+			opacity: 1;
+			background-color: rgba(69, 69, 69, 0.88);
 		}
 }
 
@@ -1991,13 +1991,16 @@ tr.error {
 	display:none;
 }
 
-#redhen_dedupe_merge_data {
-  p, 
-  div.field-item {
-    white-space: normal;
-    }
-}
 
+// Media browser modal box
+// Original styles all set inline so need to use !important all over the place.
+.media-wrapper {
+  width: 90% !important;
+  top: 10% !important;
+}
+.media-modal-frame {
+  width: 100% !important;
+}
 
 // CiviCRM adjustments
 .crm-container .crm-accordion-body {
@@ -2085,7 +2088,7 @@ tr.error {
 	td.views-field-first-half-amount-40,
 	td.views-field-second-half-amount-42 {
 		text-align: right;
-	}	
+	}
 }
 
 // Report page keys

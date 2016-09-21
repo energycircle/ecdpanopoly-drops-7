@@ -43,7 +43,7 @@
    * inspector or Firebug to get the classes from the page output if you need
    * more granular control over block alignment and stacking.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/EC\/energycircle\/sites\/all\/themes\/ec_energycircle_admin\/sass\/responsive\.custom\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/responsive\.custom\.scss}line{font-family:\0000357}}
   .region[class*="float-blocks"] .block {
     float: none;
     width: 100%;
