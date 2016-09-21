@@ -820,8 +820,8 @@ campaign-form-entityform-edit-form';
       'roles_permissions' => 'f395daa920a3b708e9d5dc6780566f6c',
       'user_permission' => '68367d8417e161fd75559d0442ddbb2c',
       'user_role' => 'd8f4839388dc4e56678018fd5da54553',
-      'variable' => '8b542fc6917f9a799b26ad424c96e1f1',
-      'dependencies' => '1563966bafa6c17b400df735b29be916',
+      'variable' => '54519c886c2c80eb5ebdca27d4b5c040',
+      'dependencies' => '119e9ed1088cd54da89dbc0af098c1e5',
     ),
     'panopoly_core' => array(
       'variable' => 'cc2cdfa66cdc9a07e5c32fb6bd7bfac5',
@@ -2270,6 +2270,16 @@ campaign-form-entityform-edit-form';
   $strongarm->name = 'weight_frontpage';
   $strongarm->value = 0;
   $export['weight_frontpage'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_menu_link_menu-auxiliary-menu';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.5',
+  );
+  $export['xmlsitemap_settings_menu_link_menu-auxiliary-menu'] = $strongarm;
 
   return $export;
 }
