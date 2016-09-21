@@ -1283,57 +1283,52 @@ div.messages ul {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031997}}
-.media-wrapper {
-  width: 90% !important;
-  top: 10% !important;
+/* Increase the z-index of the UI dialog so it is higher than Panels 'add content' modal */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031998}}
+.ui-dialog.ui-front {
+  z-index: 1002;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032001}}
-.media-modal-frame {
-  width: 100% !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032006}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032003}}
 .crm-container .crm-accordion-body {
   background: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032014}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032011}}
 .time1 {
   color: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032021}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032018}}
 .highlight-Yes {
   color: green;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032028}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032025}}
 .view-id-digital_projects.view-display-id-panel_pane_2 tr.even,
 .view-pro-projects.view-display-id-panel_pane_2 tr.even {
   border-bottom: 1px solid #546e7a;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032032}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032029}}
 .view-id-digital_projects.view-display-id-panel_pane_2 tr.odd,
 .view-pro-projects.view-display-id-panel_pane_2 tr.odd {
   border-bottom: 1px solid #eceff1;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032033}}
 .view-id-digital_projects.view-display-id-panel_pane_2 .highlight-No,
 .view-pro-projects.view-display-id-panel_pane_2 .highlight-No {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032036}}
 .view-id-digital_projects.view-display-id-panel_pane_2 td,
 .view-id-digital_projects.view-display-id-panel_pane_2 th,
 .view-pro-projects.view-display-id-panel_pane_2 td,
 .view-pro-projects.view-display-id-panel_pane_2 th {
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032043}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032040}}
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-wireframes-approved-6,
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-designs-approved-7,
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-build-completed-9,
@@ -1355,12 +1350,12 @@ div.messages ul {
   width: 10%;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032055}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032052}}
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-current-employer,
 .view-pro-projects.view-display-id-panel_pane_2 .views-field-current-employer {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032058}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032055}}
 .view-id-digital_projects.view-display-id-panel_pane_2 td.views-field-wireframes-approved-6,
 .view-id-digital_projects.view-display-id-panel_pane_2 td.views-field-designs-approved-7,
 .view-id-digital_projects.view-display-id-panel_pane_2 td.views-field-content-writing-completed-8,
@@ -1400,7 +1395,7 @@ div.messages ul {
   border-right: 1px solid #cfd8dc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032085}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032082}}
 .view-id-digital_projects.view-display-id-panel_pane_1 td.views-field-website-price-18,
 .view-id-digital_projects.view-display-id-panel_pane_1 td.views-field-content-price-19,
 .view-id-digital_projects.view-display-id-panel_pane_1 td.views-field-monthly-rate-36,
@@ -1414,7 +1409,7 @@ div.messages ul {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032095}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/flux423\/Sites\/ec\/_DEV\/ec-themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032092}}
 .key {
   background-color: #cfd8dc;
   border: 1px solid #cfd8dc;
