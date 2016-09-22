@@ -188,6 +188,27 @@ function content_type_extras_settings() {
             '#title'         => t('Disable token replacement patterns'),
             '#default_value' => $defaults['content_type_extras_disable_token_display'],
           ),
+          'content_type_extras_cancel_button_location' => array(
+            '#type'          => 'radios',
+            '#description'   => t('Choose whether the user will be taken to the previous page or a specific page when the Cancel button is pressed.'),
+            '#title'         => t('Cancel button destination'),
+            '#options'       => array(
+              'previous' => t('Previous page'),
+              'static_path' => t('Static path'),
+            ),
+            '#default_value' => $defaults['content_type_extras_cancel_button_location'],
+          ),
+          'content_type_extras_cancel_button_location_path' => array(
+            '#type'          => 'textfield',
+            '#description'   => t('Set the path where the user should be redirected when the cancel button is pressed. <strong>Note:</strong> In most cases you will probably want to prepend the path with a /.'),
+            '#title'         => t('Path'),
+            '#default_value' => $defaults['content_type_extras_cancel_button_location_path'],
+            '#states'        => array(
+              'visible' => array(
+                ':input[name="content_type_extras_cancel_button_location"]' => array('value' => 'static_path'),
+              ),
+            ),
+          ),
         ),
         'node_titles' => array(
           '#type'   => 'fieldset',

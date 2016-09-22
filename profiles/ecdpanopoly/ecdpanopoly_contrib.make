@@ -61,7 +61,7 @@ projects[contemplate][subdir] = eccontrib
 projects[contemplate][version] = 1.x
 
 projects[content_type_extras][subdir] = eccontrib
-projects[content_type_extras][version] = 1.11
+projects[content_type_extras][version] = 1.12
 
 projects[content_experiments][subdir] = eccontrib
 projects[content_experiments][version] = 1.4
@@ -115,7 +115,7 @@ projects[entityform][subdir] = eccontrib
 projects[entityform][version] = 2.x
 
 projects[entityreference_filter][subdir] = eccontrib
-projects[entityreference_filter][version] = 1.5
+projects[entityreference_filter][version] = 1.7
 
 projects[entityreference_prepopulate][subdir] = eccontrib
 projects[entityreference_prepopulate][version] = 1.6
@@ -265,7 +265,7 @@ projects[node_clone][subdir] = eccontrib
 projects[node_clone][version] = 1.0
 
 projects[nodequeue][subdir] = eccontrib
-projects[nodequeue][version] = 2.0
+projects[nodequeue][version] = 2.1
 
 projects[path_redirect_import][subdir] = eccontrib
 projects[path_redirect_import][version] = 1.x
@@ -364,7 +364,7 @@ projects[video_filter][subdir] = eccontrib
 projects[video_filter][version] = 3.3
 
 projects[views_data_export][subdir] = eccontrib
-projects[views_data_export][version] = 3.0-beta9
+projects[views_data_export][version] = 3.1
 
 projects[views_slideshow][subdir] = eccontrib
 projects[views_slideshow][version] = 3.1

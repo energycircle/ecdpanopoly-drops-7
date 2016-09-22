@@ -42,7 +42,12 @@
           $(location).attr('href', baseUrl + '/' + destination);
         }
         else {
-          window.location = baseUrl + '/admin/content';
+          if (settings.content_type_extras.cancel_location == 'static_path') {
+            window.location = settings.content_type_extras.location_path;
+          }
+          else {
+            history.go(-1);
+          }
         }
       }
     }

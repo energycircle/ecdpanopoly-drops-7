@@ -176,14 +176,22 @@ function content_type_extras_form_alter(&$form, &$form_state, $form_id) {
     if (!empty($preview)) {
       $form['actions']['preview']['#value']  = content_type_extras_get_setting('content_type_extras_preview_button', $type);
     }
+    elseif (isset($form['actions']['preview'])) {
+      unset($form['actions']['preview']);
+    }
 
     $cancel = content_type_extras_get_setting('content_type_extras_cancel', $type);
-    $cancel_hide_warning = content_type_extras_get_setting('content_type_extras_cancel_hide_warning', $type);
     if (!empty($cancel)) {
+      $cancel_hide_warning = content_type_extras_get_setting('content_type_extras_cancel_hide_warning', $type);
+      $cancel_location = content_type_extras_get_setting('content_type_extras_cancel_button_location', $type);
+      $location_path = content_type_extras_get_setting('content_type_extras_cancel_button_location_path', $type);
+
       $form['#attached']['js'][] = drupal_get_path('module', 'content_type_extras') . '/js/content_type_extras.cancel_button.js';
       $form['#attached']['js'][] = array(
         'data' => array('content_type_extras' => array(
           'hide_warning' => $cancel_hide_warning,
+          'cancel_location' => $cancel_location,
+          'location_path' => $location_path,
         )),
         'type' => 'setting',
       );
@@ -200,7 +208,7 @@ function content_type_extras_form_alter(&$form, &$form_state, $form_id) {
     // Based on: http://blog.urbaninsight.com/2011/09/20/editors-perspective-creating-content-drupal
     $top_buttons = content_type_extras_get_setting('content_type_extras_top_buttons', $type);
 
-    if (!empty($top_buttons['node_edit']) || in_array('node_edit', $top_buttons)) {
+    if (!empty($top_buttons['node_edit']) && in_array('node_edit', $top_buttons)) {
       $form['pre_actions'] = $form['actions'];
       $form['pre_actions']['#weight'] = -100;
     }
@@ -394,23 +402,25 @@ function content_type_extras_get_initial($setting = NULL) {
     ),
     'node_submitted' => 1,
     // Values set by content_type_extras.module
-    'content_type_extras_save_button'             => t('Save'),
-    'content_type_extras_preview_button'          => t('Preview'),
-    'content_type_extras_save_and_new'            => 0,
-    'content_type_extras_save_and_new_button'     => t('Save and New'),
-    'content_type_extras_save_and_edit'           => 0,
-    'content_type_extras_save_and_edit_button'    => t('Save and Edit'),
-    'content_type_extras_cancel'                  => 0,
-    'content_type_extras_cancel_hide_warning'     => 0,
-    'content_type_extras_title_hide'              => 0,
-    'content_type_extras_title_hide_css'          => 0,
-    'content_type_extras_title_hide_front'        => 0,
-    'content_type_extras_top_buttons'             => array(),
-    'content_type_extras_remove_body'             => 0,
-    'content_type_extras_disable_token_display'   => 0,
-    'content_type_extras_descriptions_required'   => 0,
-    'content_type_extras_user_permissions_select' => 'cte',
-    'content_type_extras_excluded_node_forms'     => array(),
+    'content_type_extras_save_button'                 => t('Save'),
+    'content_type_extras_preview_button'              => t('Preview'),
+    'content_type_extras_save_and_new'                => 0,
+    'content_type_extras_save_and_new_button'         => t('Save and New'),
+    'content_type_extras_save_and_edit'               => 0,
+    'content_type_extras_save_and_edit_button'        => t('Save and Edit'),
+    'content_type_extras_cancel'                      => 0,
+    'content_type_extras_cancel_hide_warning'         => 0,
+    'content_type_extras_title_hide'                  => 0,
+    'content_type_extras_title_hide_css'              => 0,
+    'content_type_extras_title_hide_front'            => 0,
+    'content_type_extras_top_buttons'                 => array(),
+    'content_type_extras_remove_body'                 => 0,
+    'content_type_extras_disable_token_display'       => 0,
+    'content_type_extras_cancel_button_location'      => 'previous',
+    'content_type_extras_cancel_button_location_path' => '',
+    'content_type_extras_descriptions_required'       => 0,
+    'content_type_extras_user_permissions_select'     => 'cte',
+    'content_type_extras_excluded_node_forms'         => array(),
     // Values set by comment.module
     'comment' => array(
       'comment'          => 2,
