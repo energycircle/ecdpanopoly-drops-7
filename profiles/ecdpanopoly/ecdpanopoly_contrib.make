@@ -69,6 +69,9 @@ projects[content_experiments][version] = 1.4
 projects[context][subdir] = eccontrib
 projects[context][version] = 3.7
 
+projects[context_entity_field][subdir] = eccontrib
+projects[context_entity_field][version] = 1.x-dev
+
 projects[disable_term_node_listings][subdir] = eccontrib
 projects[disable_term_node_listings][version] = 1.2
 
