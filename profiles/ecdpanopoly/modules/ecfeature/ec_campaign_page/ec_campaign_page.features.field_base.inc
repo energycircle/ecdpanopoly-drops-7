@@ -10,22 +10,54 @@
 function ec_campaign_page_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_page_tracking'
-  $field_bases['field_page_tracking'] = array(
+  // Exported field_base: 'field_panel_hide_footer'.
+  $field_bases['field_panel_hide_footer'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_page_tracking',
-    'foreign keys' => array(),
-    'indexes' => array(),
+    'field_name' => 'field_panel_hide_footer',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
     'locked' => 0,
-    'module' => 'field_hidden',
+    'module' => 'list',
     'settings' => array(
-      'max_length' => 255,
+      'allowed_values' => array(
+        0 => '',
+        1 => '',
+      ),
+      'allowed_values_function' => '',
     ),
     'translatable' => 0,
-    'type' => 'field_hidden_text',
+    'type' => 'list_boolean',
+  );
+
+  // Exported field_base: 'field_panel_hide_header'.
+  $field_bases['field_panel_hide_header'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_panel_hide_header',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 0,
+        1 => 1,
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_boolean',
   );
 
   return $field_bases;

@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function ec_campaign_page_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "context" && $api == "context") {
+    return array("version" => "3");
+  }
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
@@ -156,6 +159,12 @@ function ec_campaign_page_rdf_default_mappings() {
     'field_featured_image' => array(
       'predicates' => array(),
       'type' => 'rel',
+    ),
+    'field_panel_hide_header' => array(
+      'predicates' => array(),
+    ),
+    'field_panel_hide_footer' => array(
+      'predicates' => array(),
     ),
   );
 

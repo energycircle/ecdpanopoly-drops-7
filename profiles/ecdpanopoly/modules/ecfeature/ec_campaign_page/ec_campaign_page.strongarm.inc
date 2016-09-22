@@ -14,7 +14,7 @@ function ec_campaign_page_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_campaign_page';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-panelizer';
   $export['additional_settings__active_tab_campaign_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -30,6 +30,97 @@ function ec_campaign_page_strongarm() {
   $strongarm->name = 'clear_all_campaign_page';
   $strongarm->value = 0;
   $export['clear_all_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_campaign_page';
+  $strongarm->value = '0';
+  $export['content_type_extras_cancel_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_hide_warning_campaign_page';
+  $strongarm->value = 0;
+  $export['content_type_extras_cancel_hide_warning_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_preview_button_campaign_page';
+  $strongarm->value = 'Preview';
+  $export['content_type_extras_preview_button_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_button_campaign_page';
+  $strongarm->value = 'Save and Edit';
+  $export['content_type_extras_save_and_edit_button_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_edit_campaign_page';
+  $strongarm->value = '0';
+  $export['content_type_extras_save_and_edit_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_button_campaign_page';
+  $strongarm->value = 'Save and New';
+  $export['content_type_extras_save_and_new_button_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_and_new_campaign_page';
+  $strongarm->value = '1';
+  $export['content_type_extras_save_and_new_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_button_campaign_page';
+  $strongarm->value = 'Save';
+  $export['content_type_extras_save_button_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_title_hide_campaign_page';
+  $strongarm->value = 0;
+  $export['content_type_extras_title_hide_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_top_buttons_campaign_page';
+  $strongarm->value = array();
+  $export['content_type_extras_top_buttons_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_enabled_campaign_page';
+  $strongarm->value = 1;
+  $export['date_popup_authored_enabled_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_format_campaign_page';
+  $strongarm->value = 'm/d/Y - H:i';
+  $export['date_popup_authored_format_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_year_range_campaign_page';
+  $strongarm->value = '3';
+  $export['date_popup_authored_year_range_campaign_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -107,19 +198,19 @@ function ec_campaign_page_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '11',
         ),
         'redirect' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
         'xmlsitemap' => array(
-          'weight' => '9',
+          'weight' => '10',
         ),
       ),
       'display' => array(),
@@ -192,25 +283,43 @@ function ec_campaign_page_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_campaign_page';
   $strongarm->value = array(
     'status' => 1,
+    'help' => '',
     'view modes' => array(
       'page_manager' => array(
         'status' => 1,
+        'substitute' => '',
         'default' => 1,
         'choice' => 1,
       ),
       'default' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'grouped_teaser' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
     ),
   );
   $export['panelizer_defaults_node_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:campaign_page:default_selection';
+  $strongarm->value = 0;
+  $export['panelizer_node:campaign_page:default_selection'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:campaign_page:page_manager_selection';
+  $strongarm->value = 'node:campaign_page:default';
+  $export['panelizer_node:campaign_page:page_manager_selection'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -225,6 +334,20 @@ function ec_campaign_page_strongarm() {
   $strongarm->name = 'save_continue_campaign_page';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_draft_enabled_campaign_page';
+  $strongarm->value = 1;
+  $export['save_draft_enabled_campaign_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_draft_skip_required_campaign_page';
+  $strongarm->value = 0;
+  $export['save_draft_skip_required_campaign_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

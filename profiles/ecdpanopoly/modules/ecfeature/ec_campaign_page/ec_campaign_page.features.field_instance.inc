@@ -227,7 +227,7 @@ function ec_campaign_page_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'grouped_teaser' => array(
         'label' => 'above',
@@ -278,7 +278,7 @@ function ec_campaign_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'grouped_teaser' => array(
         'label' => 'above',
@@ -308,7 +308,7 @@ function ec_campaign_page_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 108,
+      'weight' => 109,
     ),
   );
 
@@ -329,7 +329,7 @@ function ec_campaign_page_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 5,
       ),
       'grouped_teaser' => array(
         'label' => 'above',
@@ -377,7 +377,7 @@ function ec_campaign_page_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'grouped_teaser' => array(
         'label' => 'above',
@@ -422,7 +422,7 @@ function ec_campaign_page_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'grouped_teaser' => array(
         'label' => 'above',
@@ -466,7 +466,7 @@ function ec_campaign_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'grouped_teaser' => array(
         'label' => 'above',
@@ -519,9 +519,7 @@ function ec_campaign_page_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_keyboard' => 0,
         'manualcrop_maximize_default_crop_area' => 1,
-        'manualcrop_require_cropping' => array(
-          'sc_940x470_mc' => 'sc_940x470_mc',
-        ),
+        'manualcrop_require_cropping' => array(),
         'manualcrop_styles_list' => array(
           'sc_940x470_mc' => 'sc_940x470_mc',
           'sc_1280x440_mc' => 'sc_1280x440_mc',
@@ -531,6 +529,92 @@ function ec_campaign_page_field_default_field_instances() {
       ),
       'type' => 'media_generic',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-campaign_page-field_panel_hide_footer'.
+  $field_instances['node-campaign_page-field_panel_hide_footer'] = array(
+    'bundle' => 'campaign_page',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'default_value_label_token' => 0,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_panel_hide_footer',
+    'label' => 'Hide Footer',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-campaign_page-field_panel_hide_header'.
+  $field_instances['node-campaign_page-field_panel_hide_header'] = array(
+    'bundle' => 'campaign_page',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'default_value_label_token' => 0,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_panel_hide_header',
+    'label' => 'Hide Header',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 13,
     ),
   );
 
@@ -546,7 +630,7 @@ function ec_campaign_page_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'grouped_teaser' => array(
         'label' => 'above',
@@ -591,6 +675,8 @@ function ec_campaign_page_field_default_field_instances() {
   t('Display subtitle');
   t('Email');
   t('First Name');
+  t('Hide Footer');
+  t('Hide Header');
   t('Image');
   t('Last Name');
   t('Page Tracking');
