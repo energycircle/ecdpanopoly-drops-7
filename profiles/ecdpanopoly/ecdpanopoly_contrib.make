@@ -124,7 +124,7 @@ projects[entityreference_current][subdir] = eccontrib
 projects[entityreference_current][version] = 1.0-alpha2
 
 projects[eva][subdir] = eccontrib
-projects[eva][version] = 1.x
+projects[eva][version] = 1.3
 
 projects[exclude_node_title][subdir] = eccontrib
 projects[exclude_node_title][version] = 1.9
@@ -196,7 +196,7 @@ projects[htmlmail][subdir] = eccontrib
 projects[htmlmail][version] = 2.65
 
 projects[hierarchical_select][subdir] = eccontrib
-projects[hierarchical_select][version] = 3.0-beta6
+projects[hierarchical_select][version] = 3.0-beta7
 
 projects[honeypot][subdir] = eccontrib
 projects[honeypot][version] = 1.22
@@ -307,13 +307,13 @@ projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.14
+projects[services][version] = 3.17
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 2.0
 
 projects[sharethis][subdir] = eccontrib
-projects[sharethis][version] = 2.12
+projects[sharethis][version] = 2.13
 
 projects[smtp][subdir] = eccontrib
 projects[smtp][version] = 1.4
@@ -361,7 +361,7 @@ projects[views_calc][subdir] = eccontrib
 projects[views_calc][version] = 1.1
 
 projects[video_filter][subdir] = eccontrib
-projects[video_filter][version] = 3.3
+projects[video_filter][version] = 3.4
 
 projects[views_data_export][subdir] = eccontrib
 projects[views_data_export][version] = 3.1
