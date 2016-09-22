@@ -72,3 +72,15 @@ function context_entity_field_entity_view($entity, $type, $view_mode, $langcode)
     $plugin->execute($type, $view_mode);
   }
 }
+
+/**
+ * Necessary to allow context to alter nodes that are loaded using ctools (panels)
+ * Implements hook_context_node_condition_alter().
+ */
+function context_entity_field_context_node_condition_alter(&$node, $op) {
+  if ($op == 'view') {
+    if ($plugin = context_get_plugin('condition', 'entity_field')) {
+      $plugin->execute('node', $node);
+    }
+  }
+}

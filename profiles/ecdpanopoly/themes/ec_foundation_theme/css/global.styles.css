@@ -367,3 +367,7 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 .url-textfield { display: none; }
 
 #total-subscription-subscribe-form .form-item-node-taxonomy, #total-subscription-subscribe-form .form-type-checkbox { display: none; }
+
+.panel-hide-footer #footer-wrapper { display: none; }
+
+.panel-hide-header #header-wrapper { display: none; }

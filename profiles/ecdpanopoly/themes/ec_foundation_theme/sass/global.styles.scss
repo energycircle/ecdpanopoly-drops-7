@@ -1981,9 +1981,9 @@ tr.error {
  * ========================================================================== */
 
 #admin-menu {
-	.dropdown li li { 
-			opacity: 1;   
-			background-color: rgba(69, 69, 69, 0.88); 
+	.dropdown li li {
+			opacity: 1;
+			background-color: rgba(69, 69, 69, 0.88);
 		}
 }
 
@@ -1994,4 +1994,16 @@ tr.error {
 	.form-item-node-taxonomy, .form-type-checkbox {
 		display:none;
 	}
+}
+
+.panel-hide-footer {
+  #footer-wrapper {
+    display: none;
+  }
+}
+
+.panel-hide-header {
+  #header-wrapper {
+    display:none;
+  }
 }

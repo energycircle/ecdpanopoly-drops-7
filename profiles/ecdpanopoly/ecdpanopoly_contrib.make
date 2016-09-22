@@ -414,6 +414,7 @@ projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-featur
 projects[node_clone][patch][1043324] = https://www.drupal.org/files/issues/1252702-menu-local-task.patch
 projects[content_experiments][patch][2759323] = https://www.drupal.org/files/issues/content_experiments-node-type-configuration-2759323-1.patch
 projects[rdfx][patch][1176666] = https://drupal.org/files/find-arc-library-correctly-1176666-14.patch
+projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/issues/context_entity_field-context-entity-field-2307955-18.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
