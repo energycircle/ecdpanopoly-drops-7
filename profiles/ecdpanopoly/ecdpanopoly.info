@@ -117,18 +117,18 @@ dependencies[] = xmlsitemap
 #dependencies[] = diff
 dependencies[] = features_override
 dependencies[] = features_roles_permissions
-dependencies[] = uuid_features
+#dependencies[] = uuid_features
 dependencies[] = uuid_path
 
 
 ;EC features
-dependencies[] = ec_foundation_image_styles
 dependencies[] = ec_base_config
-dependencies[] = ec_custom_tokens
+dependencies[] = ec_foundation_image_styles
 dependencies[] = ec_panopoly_page_overrides
 dependencies[] = energycircle_apps
-dependencies[] = ec_custom_tokens
 dependencies[] = ec_mail_settings
+dependencies[] = ec_custom_tokens
+
 
 ; Information added by flux423 - updated on 2016-9-1
 version = "7.x-1.4"

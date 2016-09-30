@@ -13,7 +13,6 @@ dependencies[] = link
 dependencies[] = media
 dependencies[] = panelizer
 dependencies[] = taxonomy
-dependencies[] = uuid_features
 dependencies[] = weight
 apps[screenshots][] = app/screenshot.png
 apps[logo] = app/logo.png

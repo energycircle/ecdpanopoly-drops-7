@@ -5,6 +5,7 @@ package = ECFeatures - Core EXT
 version = 7.x-1.1
 project = ec_review_sites
 dependencies[] = ctools
+dependencies[] = ec_testimonial
 dependencies[] = defaultconfig
 dependencies[] = defaultcontent
 dependencies[] = entityreference

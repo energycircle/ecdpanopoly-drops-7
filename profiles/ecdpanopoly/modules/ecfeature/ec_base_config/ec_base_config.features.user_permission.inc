@@ -60,6 +60,7 @@ function ec_base_config_user_default_permissions() {
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -102,6 +103,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'access fieldable panels panes master list',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'fieldable_panels_panes',
@@ -161,7 +163,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'add JS snippets for google analytics'.
   $permissions['add JS snippets for google analytics'] = array(
     'name' => 'add JS snippets for google analytics',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'googleanalytics',
   );
 
@@ -219,6 +223,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'block',
@@ -349,7 +354,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'administer fields'.
   $permissions['administer fields'] = array(
     'name' => 'administer fields',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'field',
   );
 
@@ -659,7 +666,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'administer search'.
   $permissions['administer search'] = array(
     'name' => 'administer search',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'search',
   );
 
@@ -818,7 +827,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'bypass access in place editing'.
   $permissions['bypass access in place editing'] = array(
     'name' => 'bypass access in place editing',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panels',
   );
 
@@ -836,6 +847,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'bypass honeypot protection',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'honeypot',
   );
@@ -843,7 +855,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'bypass maxlength'.
   $permissions['bypass maxlength'] = array(
     'name' => 'bypass maxlength',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'maxlength',
   );
 
@@ -909,6 +923,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'create fieldable fieldable_panels_pane',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'fieldable_panels_panes',
@@ -1101,7 +1116,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'delete terms in panopoly_categories'.
   $permissions['delete terms in panopoly_categories'] = array(
     'name' => 'delete terms in panopoly_categories',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -1274,6 +1291,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'edit fieldable fieldable_panels_pane',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'fieldable_panels_panes',
@@ -1368,7 +1386,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'edit terms in panopoly_categories'.
   $permissions['edit terms in panopoly_categories'] = array(
     'name' => 'edit terms in panopoly_categories',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -1480,7 +1500,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['masquerade as any user'] = array(
     'name' => 'masquerade as any user',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'masquerade',
@@ -1570,7 +1589,12 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'search',
   );
 

@@ -6,7 +6,6 @@ version = 7.x-1.6
 project = ec_promotions
 dependencies[] = date
 dependencies[] = ec_panopoly_page_overrides
-dependencies[] = ec_service_stack
 dependencies[] = entityform_notifications
 dependencies[] = field_group
 dependencies[] = field_validation
