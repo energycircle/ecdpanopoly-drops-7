@@ -130,7 +130,7 @@ dependencies[] = ec_mail_settings
 dependencies[] = ec_custom_tokens
 
 
-; Information added by flux423 - updated on 2016-9-1
+; Information added by flux423 - updated on 2016-10-5
 version = "7.x-1.4"
 core = "7.x"
 project = "ECDPanopoly"
