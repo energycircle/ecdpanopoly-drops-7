@@ -22,7 +22,9 @@ function ec_testimonial_user_default_permissions() {
   // Exported permission: 'administer panelizer node testimonial choice'.
   $permissions['administer panelizer node testimonial choice'] = array(
     'name' => 'administer panelizer node testimonial choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

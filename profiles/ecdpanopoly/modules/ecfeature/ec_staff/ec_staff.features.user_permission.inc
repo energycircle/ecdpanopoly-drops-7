@@ -22,7 +22,9 @@ function ec_staff_user_default_permissions() {
   // Exported permission: 'administer panelizer node staff choice'.
   $permissions['administer panelizer node staff choice'] = array(
     'name' => 'administer panelizer node staff choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

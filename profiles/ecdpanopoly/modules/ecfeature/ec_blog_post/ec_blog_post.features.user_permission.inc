@@ -22,7 +22,9 @@ function ec_blog_post_user_default_permissions() {
   // Exported permission: 'administer panelizer node blog_post choice'.
   $permissions['administer panelizer node blog_post choice'] = array(
     'name' => 'administer panelizer node blog_post choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

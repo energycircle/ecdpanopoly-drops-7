@@ -2586,9 +2586,11 @@ function ec_service_stack_field_default_field_instances() {
         'manualcrop_maximize_default_crop_area' => 0,
         'manualcrop_require_cropping' => array(
           'sc_940x470_mc' => 'sc_940x470_mc',
+          'sc_1280x440_mc' => 'sc_1280x440_mc',
         ),
         'manualcrop_styles_list' => array(
           'sc_940x470_mc' => 'sc_940x470_mc',
+          'sc_1280x440_mc' => 'sc_1280x440_mc',
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
@@ -3008,13 +3010,15 @@ function ec_service_stack_field_default_field_instances() {
         'manualcrop_inline_crop' => 0,
         'manualcrop_instant_crop' => FALSE,
         'manualcrop_instant_preview' => 1,
-        'manualcrop_keyboard' => 1,
+        'manualcrop_keyboard' => 0,
         'manualcrop_maximize_default_crop_area' => 0,
         'manualcrop_require_cropping' => array(
           'sc_940x470_mc' => 'sc_940x470_mc',
+          'sc_1280x440_mc' => 'sc_1280x440_mc',
         ),
         'manualcrop_styles_list' => array(
           'sc_940x470_mc' => 'sc_940x470_mc',
+          'sc_1280x440_mc' => 'sc_1280x440_mc',
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,

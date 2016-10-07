@@ -22,7 +22,9 @@ function ec_faq_user_default_permissions() {
   // Exported permission: 'administer panelizer node faq choice'.
   $permissions['administer panelizer node faq choice'] = array(
     'name' => 'administer panelizer node faq choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

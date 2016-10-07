@@ -6,6 +6,7 @@ version = 7.x-1.6
 project = ec_distinction
 dependencies[] = ec_base_config
 dependencies[] = panopoly_pages
+dependencies[] = schemaorg
 dependencies[] = views_content
 stylesheets[all][] = theme/ec_review_sites.css
 apps[screenshots][] = app/screenshot.png

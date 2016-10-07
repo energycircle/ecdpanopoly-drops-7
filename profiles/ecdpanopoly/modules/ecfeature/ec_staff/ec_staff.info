@@ -6,6 +6,7 @@ version = 7.x-1.4
 project = ec_staff
 dependencies[] = ec_base_config
 dependencies[] = panopoly_pages
+dependencies[] = schemaorg
 dependencies[] = views_content
 apps[screenshots][] = app/screenshot.png
 apps[logo] = app/logo.png

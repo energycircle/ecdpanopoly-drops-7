@@ -22,7 +22,9 @@ function ec_gallery_user_default_permissions() {
   // Exported permission: 'administer panelizer node gallery choice'.
   $permissions['administer panelizer node gallery choice'] = array(
     'name' => 'administer panelizer node gallery choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

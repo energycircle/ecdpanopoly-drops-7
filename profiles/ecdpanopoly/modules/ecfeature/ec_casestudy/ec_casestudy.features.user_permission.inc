@@ -22,7 +22,9 @@ function ec_casestudy_user_default_permissions() {
   // Exported permission: 'administer panelizer node case_study choice'.
   $permissions['administer panelizer node case_study choice'] = array(
     'name' => 'administer panelizer node case_study choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

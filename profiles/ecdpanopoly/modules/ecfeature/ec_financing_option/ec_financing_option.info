@@ -7,6 +7,7 @@ project = ec_financing_option
 dependencies[] = ec_base_config
 dependencies[] = field_group
 dependencies[] = panopoly_pages
+dependencies[] = schemaorg
 dependencies[] = views_content
 apps[screenshots][] = app/screenshot.png
 apps[logo] = app/logo.png

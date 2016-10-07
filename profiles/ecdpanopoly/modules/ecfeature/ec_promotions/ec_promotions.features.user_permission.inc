@@ -22,7 +22,9 @@ function ec_promotions_user_default_permissions() {
   // Exported permission: 'administer panelizer node promotion choice'.
   $permissions['administer panelizer node promotion choice'] = array(
     'name' => 'administer panelizer node promotion choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

@@ -11,7 +11,6 @@ function ec_review_sites_defaultconfig_features() {
   return array(
     'ec_review_sites' => array(
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -658,20 +657,4 @@ function ec_review_sites_defaultconfig_field_default_fields() {
   t('Show in SR3 Review Sites list');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_review_sites_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer taxonomy_term review_site_tags defaults'.
-  $permissions['administer panelizer taxonomy_term review_site_tags defaults'] = array(
-    'name' => 'administer panelizer taxonomy_term review_site_tags defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  return $permissions;
 }

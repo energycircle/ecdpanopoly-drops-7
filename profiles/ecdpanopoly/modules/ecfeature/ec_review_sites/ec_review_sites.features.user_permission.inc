@@ -13,14 +13,18 @@ function ec_review_sites_user_default_permissions() {
   // Exported permission: 'administer panelizer node review_site defaults'.
   $permissions['administer panelizer node review_site defaults'] = array(
     'name' => 'administer panelizer node review_site defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer taxonomy_term review_site_tags defaults'.
   $permissions['administer panelizer taxonomy_term review_site_tags defaults'] = array(
     'name' => 'administer panelizer taxonomy_term review_site_tags defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

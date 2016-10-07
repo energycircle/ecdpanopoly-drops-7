@@ -11,7 +11,6 @@ function ec_gallery_defaultconfig_features() {
   return array(
     'ec_gallery' => array(
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -356,20 +355,4 @@ function ec_gallery_defaultconfig_field_default_fields() {
   t('Upload each image to be included in the gallery.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_gallery_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node gallery choice'.
-  $permissions['administer panelizer node gallery choice'] = array(
-    'name' => 'administer panelizer node gallery choice',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  return $permissions;
 }

@@ -11,7 +11,6 @@ function ec_testimonial_defaultconfig_features() {
   return array(
     'ec_testimonial' => array(
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -1916,20 +1915,4 @@ function ec_testimonial_defaultconfig_field_default_fields() {
   t('Video');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_testimonial_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node testimonial choice'.
-  $permissions['administer panelizer node testimonial choice'] = array(
-    'name' => 'administer panelizer node testimonial choice',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  return $permissions;
 }

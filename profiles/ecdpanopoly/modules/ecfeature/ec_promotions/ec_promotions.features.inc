@@ -134,13 +134,5 @@ function ec_promotions_rdf_default_mappings() {
 function ec_promotions_weight_features_default_settings() {
   $settings = array();
 
-  $settings['promotion'] = array(
-    'enabled' => 1,
-    'range' => 20,
-    'menu_weight' => 0,
-    'default' => 0,
-    'sync_translations' => 0,
-  );
-
   return $settings;
 }

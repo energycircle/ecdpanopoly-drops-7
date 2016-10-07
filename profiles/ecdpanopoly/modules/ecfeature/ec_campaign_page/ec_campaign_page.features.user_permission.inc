@@ -13,56 +13,72 @@ function ec_campaign_page_user_default_permissions() {
   // Exported permission: 'administer panelizer node campaign_page breadcrumbs'.
   $permissions['administer panelizer node campaign_page breadcrumbs'] = array(
     'name' => 'administer panelizer node campaign_page breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node campaign_page choice'.
   $permissions['administer panelizer node campaign_page choice'] = array(
     'name' => 'administer panelizer node campaign_page choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node campaign_page content'.
   $permissions['administer panelizer node campaign_page content'] = array(
     'name' => 'administer panelizer node campaign_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node campaign_page context'.
   $permissions['administer panelizer node campaign_page context'] = array(
     'name' => 'administer panelizer node campaign_page context',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node campaign_page defaults'.
   $permissions['administer panelizer node campaign_page defaults'] = array(
     'name' => 'administer panelizer node campaign_page defaults',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node campaign_page layout'.
   $permissions['administer panelizer node campaign_page layout'] = array(
     'name' => 'administer panelizer node campaign_page layout',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node campaign_page overview'.
   $permissions['administer panelizer node campaign_page overview'] = array(
     'name' => 'administer panelizer node campaign_page overview',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node campaign_page settings'.
   $permissions['administer panelizer node campaign_page settings'] = array(
     'name' => 'administer panelizer node campaign_page settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 

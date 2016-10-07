@@ -12,7 +12,6 @@ function ec_slide_defaultconfig_features() {
     'ec_slide' => array(
       'field_default_fields' => 'field_default_fields',
       'strongarm' => 'strongarm',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -615,20 +614,4 @@ function ec_slide_defaultconfig_strongarm() {
   $export['metatag_enable_taxonomy_term__slide_set'] = $strongarm;
 
   return $export;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_slide_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node slide choice'.
-  $permissions['administer panelizer node slide choice'] = array(
-    'name' => 'administer panelizer node slide choice',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  return $permissions;
 }

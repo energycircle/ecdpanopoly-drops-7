@@ -59,7 +59,9 @@ function ec_mail_settings_user_default_permissions() {
   // Exported permission: 'view mimemail user settings'.
   $permissions['view mimemail user settings'] = array(
     'name' => 'view mimemail user settings',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'mimemail',
   );
 

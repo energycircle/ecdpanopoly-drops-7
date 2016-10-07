@@ -266,6 +266,15 @@ function ec_base_config_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'administer contexts'.
+  $permissions['administer contexts'] = array(
+    'name' => 'administer contexts',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'context_ui',
+  );
+
   // Exported permission: 'administer custom content'.
   $permissions['administer custom content'] = array(
     'name' => 'administer custom content',
@@ -916,6 +925,15 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'tablefield',
+  );
+
+  // Exported permission: 'context ajax block access'.
+  $permissions['context ajax block access'] = array(
+    'name' => 'context ajax block access',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'context_ui',
   );
 
   // Exported permission: 'create fieldable fieldable_panels_pane'.

@@ -31,7 +31,9 @@ function ec_slide_user_default_permissions() {
   // Exported permission: 'administer panelizer node slide choice'.
   $permissions['administer panelizer node slide choice'] = array(
     'name' => 'administer panelizer node slide choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -133,9 +135,7 @@ function ec_slide_user_default_permissions() {
   // Exported permission: 'delete terms in slide_set'.
   $permissions['delete terms in slide_set'] = array(
     'name' => 'delete terms in slide_set',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'taxonomy',
   );
 
@@ -164,10 +164,7 @@ function ec_slide_user_default_permissions() {
   // Exported permission: 'edit terms in slide_set'.
   $permissions['edit terms in slide_set'] = array(
     'name' => 'edit terms in slide_set',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'taxonomy',
   );
 

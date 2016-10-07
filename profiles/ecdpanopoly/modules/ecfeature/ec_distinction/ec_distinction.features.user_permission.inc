@@ -22,7 +22,9 @@ function ec_distinction_user_default_permissions() {
   // Exported permission: 'administer panelizer node distinction choice'.
   $permissions['administer panelizer node distinction choice'] = array(
     'name' => 'administer panelizer node distinction choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
