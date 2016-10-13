@@ -9,7 +9,6 @@ dependencies[] = features
 dependencies[] = field_group
 dependencies[] = panelizer
 dependencies[] = taxonomy
-dependencies[] = uuid_features
 dependencies[] = views
 dependencies[] = weight
 apps[screenshots][] = app/screenshot.png

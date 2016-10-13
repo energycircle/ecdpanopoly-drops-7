@@ -31,9 +31,6 @@ function ec_distinction_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
-      'field_permissions' => array(
-        'type' => 0,
-      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -89,6 +86,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -312,6 +310,100 @@ function ec_distinction_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-distinction-field_dynamic_seal'.
+  $fields['node-distinction-field_dynamic_seal'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_dynamic_seal',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'distinction',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Enter the dynamic seal iFrame code to display a dynamic seal instead of the logo. (Use this field OR the logo, not both.)',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_dynamic_seal',
+      'label' => 'Dynamic Seal',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 3,
+        ),
+        'type' => 'text_textarea',
+        'weight' => 3,
+      ),
+    ),
+  );
+
   // Exported field: 'node-distinction-field_logo'.
   $fields['node-distinction-field_logo'] = array(
     'field_config' => array(
@@ -439,6 +531,8 @@ function ec_distinction_defaultconfig_field_default_fields() {
   t('Body');
   t('Content link');
   t('Distinction Type');
+  t('Dynamic Seal');
+  t('Enter the dynamic seal iFrame code to display a dynamic seal instead of the logo. (Use this field OR the logo, not both.)');
   t('Logo');
   t('Logo or image for this item.');
   t('Url of the page to link this item to.');

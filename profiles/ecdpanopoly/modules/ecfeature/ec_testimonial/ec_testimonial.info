@@ -15,7 +15,6 @@ dependencies[] = flexslider_views
 dependencies[] = geolocation
 dependencies[] = geolocation_googlemaps
 dependencies[] = jcarousel
-dependencies[] = uuid_features
 apps[screenshots][] = app/screenshot.png
 apps[logo] = app/logo.png
 apps[author] = Energy Circle
