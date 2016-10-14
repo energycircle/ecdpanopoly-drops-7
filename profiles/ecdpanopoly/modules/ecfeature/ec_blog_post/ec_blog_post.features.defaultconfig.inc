@@ -193,6 +193,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -204,6 +205,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -312,7 +314,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_blog_category',
-      'label' => 'Category',
+      'label' => 'Blog Categories',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -322,7 +324,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -386,6 +388,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 'sc_220x110',
           ),
@@ -454,7 +457,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -528,28 +531,30 @@ function ec_blog_post_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_content_link',
-      'label' => 'Content link',
+      'label' => 'External Link to Content',
       'required' => 0,
       'settings' => array(
         'absolute_url' => 1,
         'attributes' => array(
           'class' => '',
+          'configurable_class' => 0,
           'configurable_title' => 0,
           'rel' => '',
-          'target' => 'user',
+          'target' => 'default',
           'title' => '',
         ),
         'display' => array(
           'url_cutoff' => 80,
         ),
-        'enable_tokens' => 1,
+        'enable_tokens' => 0,
         'linkit' => array(
+          'button_text' => 'Search',
           'enable' => 0,
-          'insert_plugin' => '',
+          'profile' => '',
         ),
-        'rel_remove' => 'default',
+        'rel_remove' => 'rel_remove_external',
         'title' => 'optional',
-        'title_label_use_field_label' => FALSE,
+        'title_label_use_field_label' => 0,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
@@ -561,7 +566,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 4,
+        'weight' => 6,
       ),
     ),
   );
@@ -666,7 +671,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -1331,11 +1336,11 @@ function ec_blog_post_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
+  t('Blog Categories');
   t('Body');
-  t('Category');
   t('Content Page');
-  t('Content link');
   t('Display date');
+  t('External Link to Content');
   t('Featured Image');
   t('Select the blog posts to display on this case study.');
   t('Select the blog posts to display on this service category page.');
