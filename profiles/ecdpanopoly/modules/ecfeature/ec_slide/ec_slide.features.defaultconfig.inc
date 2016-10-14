@@ -11,6 +11,7 @@ function ec_slide_defaultconfig_features() {
   return array(
     'ec_slide' => array(
       'field_default_fields' => 'field_default_fields',
+      'field_group_info' => 'field_group_info',
       'strongarm' => 'strongarm',
     ),
   );
@@ -84,6 +85,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -106,7 +108,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 9,
+        'weight' => 10,
       ),
     ),
   );
@@ -180,34 +182,36 @@ function ec_slide_defaultconfig_field_default_fields() {
         'absolute_url' => 1,
         'attributes' => array(
           'class' => 'content-link',
-          'configurable_title' => 1,
+          'configurable_class' => 0,
+          'configurable_title' => 0,
           'rel' => '',
-          'target' => 'user',
+          'target' => 'default',
           'title' => '',
         ),
         'display' => array(
           'url_cutoff' => 80,
         ),
-        'enable_tokens' => 1,
+        'enable_tokens' => 0,
         'linkit' => array(
-          'enable' => 0,
-          'insert_plugin' => '',
+          'button_text' => 'Search',
+          'enable' => 1,
+          'profile' => 'fields',
         ),
         'rel_remove' => 'default',
-        'title' => 'optional',
-        'title_label_use_field_label' => FALSE,
+        'title' => 'none',
+        'title_label_use_field_label' => 1,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
         'user_register_form' => FALSE,
-        'validate_url' => 0,
+        'validate_url' => 1,
       ),
       'widget' => array(
         'active' => 0,
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -291,7 +295,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -375,7 +379,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -490,7 +494,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -574,7 +578,7 @@ function ec_slide_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -591,6 +595,77 @@ function ec_slide_defaultconfig_field_default_fields() {
   t('The main image for the slide.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_field_group_info().
+ */
+function ec_slide_defaultconfig_field_group_info() {
+  $field_groups = array();
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_edit_content|node|slide|form';
+  $field_group->group_name = 'group_edit_content';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'slide';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Edit Content',
+    'weight' => '1',
+    'children' => array(
+      0 => 'group_general',
+    ),
+    'format_type' => 'htabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => 'group-edit-content field-group-htabs',
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_edit_content|node|slide|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_general|node|slide|form';
+  $field_group->group_name = 'group_general';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'slide';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_edit_content';
+  $field_group->data = array(
+    'label' => 'General',
+    'weight' => '13',
+    'children' => array(
+      0 => 'field_content_link',
+      1 => 'field_display_subtitle',
+      2 => 'field_display_title',
+      3 => 'field_slide_image',
+      4 => 'field_slide_set',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-general field-group-htab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_general|node|slide|form'] = $field_group;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Edit Content');
+  t('General');
+
+  return $field_groups;
 }
 
 /**
