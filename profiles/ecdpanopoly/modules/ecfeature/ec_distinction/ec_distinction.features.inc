@@ -102,7 +102,13 @@ function ec_distinction_rdf_default_mappings() {
       'datatype' => 'xsd:dateTime',
       'callback' => 'date_iso8601',
     ),
+    'field_a_b_test_page' => array(
+      'predicates' => array(),
+    ),
     'field_dynamic_seal' => array(
+      'predicates' => array(),
+    ),
+    'field_content_link' => array(
       'predicates' => array(),
     ),
   );

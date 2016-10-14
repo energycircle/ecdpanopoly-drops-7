@@ -99,7 +99,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 20,
+        'weight' => 13,
       ),
     ),
   );
@@ -182,7 +182,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 18,
+        'weight' => 8,
       ),
     ),
   );
@@ -247,7 +247,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 6,
+        'weight' => 9,
       ),
     ),
   );
@@ -330,7 +330,95 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 29,
+        'weight' => 13,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-city_page-field_a_b_test_page'.
+  $fields['node-city_page-field_a_b_test_page'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 2,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'BPage' => 'B Page',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => 0,
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'city_page',
+      'default_value' => NULL,
+      'default_value_label_token' => 0,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'list_default',
+          'weight' => 18,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_a_b_test_page',
+      'label' => 'A/B Test Page',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => 2,
       ),
     ),
   );
@@ -413,7 +501,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 10,
+        'weight' => 11,
       ),
     ),
   );
@@ -546,6 +634,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 2,
@@ -587,7 +676,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 8,
+        'weight' => 7,
       ),
     ),
   );
@@ -882,6 +971,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 0,
@@ -1012,7 +1102,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 17,
+        'weight' => 5,
       ),
     ),
   );

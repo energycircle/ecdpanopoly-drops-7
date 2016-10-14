@@ -31,6 +31,9 @@ function ec_distinction_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -109,7 +112,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => 6,
       ),
     ),
   );
@@ -189,9 +192,10 @@ function ec_distinction_defaultconfig_field_default_fields() {
         'absolute_url' => 1,
         'attributes' => array(
           'class' => '',
+          'configurable_class' => 0,
           'configurable_title' => 0,
           'rel' => '',
-          'target' => 'user',
+          'target' => 'default',
           'title' => '',
         ),
         'display' => array(
@@ -199,12 +203,13 @@ function ec_distinction_defaultconfig_field_default_fields() {
         ),
         'enable_tokens' => 1,
         'linkit' => array(
+          'button_text' => 'Search',
           'enable' => 0,
-          'insert_plugin' => '',
+          'profile' => '',
         ),
         'rel_remove' => 'default',
         'title' => 'optional',
-        'title_label_use_field_label' => FALSE,
+        'title_label_use_field_label' => 0,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
@@ -216,7 +221,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
@@ -305,7 +310,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -389,13 +394,17 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'enable' => 0,
           'profile' => '',
         ),
-        'text_processing' => 0,
+        'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => 3,
         ),
         'type' => 'text_textarea',
@@ -521,7 +530,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 2,
+        'weight' => 4,
       ),
     ),
   );

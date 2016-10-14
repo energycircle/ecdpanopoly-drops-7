@@ -20,6 +20,7 @@ features[defaultconfig][] = field_default_fields:node-article-field_a_b_test_pag
 features[defaultconfig][] = field_default_fields:node-blog_post-field_a_b_test_page
 features[defaultconfig][] = field_default_fields:node-campaign_page-field_a_b_test_page
 features[defaultconfig][] = field_default_fields:node-case_study-field_a_b_test_page
+features[defaultconfig][] = field_default_fields:node-city_page-field_a_b_test_page
 features[defaultconfig][] = field_default_fields:node-distinction-field_a_b_test_page
 features[defaultconfig][] = field_default_fields:node-distributor-field_a_b_test_page
 features[defaultconfig][] = field_default_fields:node-external_video-field_a_b_test_page

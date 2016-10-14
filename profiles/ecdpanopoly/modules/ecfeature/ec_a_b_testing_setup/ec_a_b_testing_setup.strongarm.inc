@@ -76,6 +76,7 @@ function ec_a_b_testing_setup_strongarm() {
   $strongarm->value = array(
     'campaign_page' => 'campaign_page',
     'city_page' => 'city_page',
+    'external_video' => 'external_video',
     'promotion' => 'promotion',
     'service' => 'service',
     'service_category' => 'service_category',
@@ -85,12 +86,12 @@ function ec_a_b_testing_setup_strongarm() {
     'blog_post' => 0,
     'case_study' => 0,
     'distinction' => 0,
-    'distributor' => 0,
     'faq' => 0,
     'financing_option' => 0,
     'gallery' => 0,
     'review_site' => 0,
     'slide' => 0,
+    'staff' => 0,
     'testimonial' => 0,
     'panopoly_landing_page' => 0,
   );
@@ -116,7 +117,6 @@ node/*/*';
     2 => 0,
     5 => 0,
     3 => 0,
-    6 => 0,
     4 => 0,
   );
   $export['content_experiments_roles'] = $strongarm;
