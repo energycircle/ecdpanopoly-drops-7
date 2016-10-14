@@ -62,8 +62,13 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'text_default',
           'weight' => 1,
         ),
         'featured' => array(
@@ -72,6 +77,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 400,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -95,6 +101,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_trimmed',
@@ -112,6 +119,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -135,7 +143,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => 6,
       ),
     ),
   );
@@ -390,8 +398,13 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
+          'module' => 'taxonomy',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'taxonomy_term_reference_link',
           'weight' => 3,
         ),
         'featured' => array(
@@ -437,7 +450,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -474,14 +487,20 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'panopoly_page',
-      'default_value' => array(),
       'deleted' => 0,
       'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+            'image_link' => '',
+            'image_style' => 'panopoly_image_half',
+          ),
+          'type' => 'image',
           'weight' => 0,
         ),
         'featured' => array(
@@ -490,6 +509,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 'panopoly_image_half',
           ),
@@ -514,6 +534,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 'panopoly_image_quarter',
           ),
@@ -532,6 +553,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 'panopoly_image_quarter',
           ),
@@ -556,45 +578,27 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'media',
+        'module' => 'image',
         'settings' => array(
-          'allowed_schemes' => array(
-            'public' => 'public',
-            'vimeo' => 0,
-            'youtube' => 0,
-          ),
-          'allowed_types' => array(
-            'audio' => 0,
-            'document' => 0,
-            'image' => 'image',
-            'video' => 0,
-          ),
-          'browser_plugins' => array(
-            'media_default--media_browser_1' => 0,
-            'media_default--media_browser_my_files' => 0,
-            'media_internet' => 0,
-            'upload' => 0,
-          ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 1,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => FALSE,
+          'manualcrop_instant_crop' => 0,
           'manualcrop_instant_preview' => 1,
-          'manualcrop_keyboard' => 0,
+          'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 1,
-          'manualcrop_require_cropping' => array(
-            'sc_940x470_mc' => 'sc_940x470_mc',
-          ),
+          'manualcrop_require_cropping' => array(),
           'manualcrop_styles_list' => array(
-            'sc_1280x440_mc' => 'sc_1280x440_mc',
-            'sc_940x470_mc' => 'sc_940x470_mc',
+            'panopoly_image_full' => 'panopoly_image_full',
           ),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
+          'preview_image_style' => 'panopoly_image_full',
+          'progress_indicator' => 'throbber',
         ),
-        'type' => 'media_generic',
-        'weight' => 1,
+        'type' => 'image_image',
+        'weight' => 2,
       ),
     ),
   );
@@ -637,8 +641,13 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
+          'module' => 'list',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'list_default',
           'weight' => 2,
         ),
         'featured' => array(
@@ -686,7 +695,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
@@ -783,7 +792,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 4,
       ),
     ),
   );

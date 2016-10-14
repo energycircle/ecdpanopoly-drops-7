@@ -85,7 +85,9 @@ function ec_panopoly_page_overrides_user_default_permissions() {
   // Exported permission: 'administer panelizer node panopoly_page choice'.
   $permissions['administer panelizer node panopoly_page choice'] = array(
     'name' => 'administer panelizer node panopoly_page choice',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -228,6 +230,8 @@ function ec_panopoly_page_overrides_user_default_permissions() {
   $permissions['delete own panopoly_landing_page content'] = array(
     'name' => 'delete own panopoly_landing_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -237,6 +241,8 @@ function ec_panopoly_page_overrides_user_default_permissions() {
   $permissions['edit any panopoly_landing_page content'] = array(
     'name' => 'edit any panopoly_landing_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -246,6 +252,7 @@ function ec_panopoly_page_overrides_user_default_permissions() {
   $permissions['edit own panopoly_landing_page content'] = array(
     'name' => 'edit own panopoly_landing_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

@@ -126,6 +126,9 @@ function ec_panopoly_page_overrides_rdf_default_mappings() {
       ),
       'type' => 'rel',
     ),
+    'field_ref_page_promotions' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;
