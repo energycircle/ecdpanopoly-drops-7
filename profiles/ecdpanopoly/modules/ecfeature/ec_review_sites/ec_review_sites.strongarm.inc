@@ -123,7 +123,7 @@ function ec_review_sites_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '4',
+          'weight' => '1',
         ),
         'redirect' => array(
           'weight' => '6',

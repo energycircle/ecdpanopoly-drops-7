@@ -62,6 +62,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 3,
@@ -113,7 +114,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 7,
       ),
     ),
   );
@@ -163,6 +164,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => '',
             'image_style' => '',
           ),
@@ -246,7 +248,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -292,6 +294,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 4,
@@ -343,7 +346,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 6,
       ),
     ),
   );
@@ -387,6 +390,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 4,
@@ -430,7 +434,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 8,
+        'weight' => 10,
       ),
     ),
   );
@@ -483,6 +487,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 5,
@@ -524,7 +529,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 1,
+        'weight' => 9,
       ),
     ),
   );
@@ -574,6 +579,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'link_default',
           'weight' => 1,
@@ -640,7 +646,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 5,
+        'weight' => 8,
       ),
     ),
   );
