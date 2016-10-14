@@ -11,6 +11,7 @@ function ec_campaign_page_defaultconfig_features() {
   return array(
     'ec_campaign_page' => array(
       'field_default_fields' => 'field_default_fields',
+      'field_group_info' => 'field_group_info',
     ),
   );
 }
@@ -49,6 +50,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'email_default',
           'weight' => 4,
@@ -118,6 +120,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 0,
@@ -193,6 +196,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 1,
@@ -259,6 +263,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'field_hidden_text_plain',
           'weight' => 5,
@@ -314,6 +319,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'phone',
           'weight' => 3,
@@ -399,6 +405,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -421,7 +428,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -656,7 +663,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -730,7 +737,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -836,7 +843,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -905,7 +912,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 14,
+        'weight' => 15,
       ),
     ),
   );
@@ -1091,4 +1098,76 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
   t('Phone');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_field_group_info().
+ */
+function ec_campaign_page_defaultconfig_field_group_info() {
+  $field_groups = array();
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_edit_content|node|campaign_page|form';
+  $field_group->group_name = 'group_edit_content';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'campaign_page';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Edit Content',
+    'weight' => '1',
+    'children' => array(
+      0 => 'group_cta_form',
+      1 => 'group_page_design',
+      2 => 'group_general',
+    ),
+    'format_type' => 'htabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_edit_content|node|campaign_page|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_general|node|campaign_page|form';
+  $field_group->group_name = 'group_general';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'campaign_page';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_edit_content';
+  $field_group->data = array(
+    'label' => 'General',
+    'weight' => '13',
+    'children' => array(
+      0 => 'body',
+      1 => 'field_display_subtitle',
+      2 => 'field_display_title',
+      3 => 'field_featured_image',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_general|node|campaign_page|form'] = $field_group;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Edit Content');
+  t('General');
+
+  return $field_groups;
 }
