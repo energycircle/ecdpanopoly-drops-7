@@ -42,6 +42,7 @@ function ec_testimonial_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -463,7 +464,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 15,
     ),
   );
 
@@ -528,7 +529,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 22,
     ),
   );
 
@@ -563,6 +564,7 @@ function ec_testimonial_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -574,6 +576,7 @@ function ec_testimonial_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -602,7 +605,7 @@ function ec_testimonial_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 19,
+      'weight' => 17,
     ),
   );
 
@@ -784,7 +787,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -846,7 +849,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -881,6 +884,7 @@ function ec_testimonial_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'text_plain',
         'weight' => 2,
@@ -946,6 +950,7 @@ function ec_testimonial_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'image_link' => 'content',
           'image_style' => 'sc_220x110',
         ),
@@ -1010,7 +1015,7 @@ function ec_testimonial_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -1099,6 +1104,7 @@ function ec_testimonial_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'text_plain',
         'weight' => 2,
@@ -1130,7 +1136,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 16,
     ),
   );
 
@@ -1217,7 +1223,7 @@ function ec_testimonial_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 18,
+      'weight' => 13,
     ),
   );
 

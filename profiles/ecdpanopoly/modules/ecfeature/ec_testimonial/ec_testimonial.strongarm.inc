@@ -162,19 +162,19 @@ function ec_testimonial_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '15',
+          'weight' => '9',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '8',
         ),
         'redirect' => array(
-          'weight' => '13',
+          'weight' => '7',
         ),
         'xmlsitemap' => array(
-          'weight' => '12',
+          'weight' => '6',
         ),
       ),
       'display' => array(),
