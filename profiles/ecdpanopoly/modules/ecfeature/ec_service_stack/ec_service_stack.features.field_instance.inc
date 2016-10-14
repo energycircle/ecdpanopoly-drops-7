@@ -23,6 +23,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'email_default',
         'weight' => 6,
@@ -33,6 +34,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'email_default',
         'weight' => 2,
@@ -43,6 +45,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'email_default',
         'weight' => 4,
@@ -103,6 +106,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'list_default',
         'weight' => 9,
@@ -113,6 +117,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'list_default',
         'weight' => 3,
@@ -123,6 +128,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'list_default',
         'weight' => 5,
@@ -177,6 +183,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'text_default',
         'weight' => 8,
@@ -187,6 +194,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'text_default',
         'weight' => 0,
@@ -197,6 +205,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'title_class' => '',
           'title_link' => '',
           'title_style' => '',
@@ -272,6 +281,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'field_hidden_text_plain',
         'weight' => 5,
@@ -282,6 +292,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'field_hidden_text_plain',
         'weight' => 6,
@@ -337,6 +348,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'phone',
         'weight' => 1,
@@ -347,6 +359,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'phone',
         'weight' => 4,
@@ -357,6 +370,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'phone',
         'weight' => 3,
@@ -367,6 +381,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'phone',
         'weight' => 1,
@@ -377,6 +392,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'phone',
         'weight' => 1,
@@ -387,6 +403,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'phone',
         'weight' => 1,
@@ -1394,6 +1411,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -1422,7 +1440,7 @@ function ec_service_stack_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -1617,7 +1635,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -1679,7 +1697,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -1807,7 +1825,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1911,6 +1929,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'image_link' => 'content',
           'image_style' => 'sc_220x110',
         ),
@@ -1972,7 +1991,7 @@ function ec_service_stack_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -2013,6 +2032,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -2041,7 +2061,7 @@ function ec_service_stack_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -2236,7 +2256,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -2298,7 +2318,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -2363,7 +2383,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -2428,7 +2448,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -2533,6 +2553,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'image_link' => 'content',
           'image_style' => 'sc_220x110',
         ),
@@ -2596,7 +2617,7 @@ function ec_service_stack_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -2637,6 +2658,7 @@ function ec_service_stack_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -2665,7 +2687,7 @@ function ec_service_stack_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 30,
     ),
   );
 
@@ -2863,7 +2885,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 2,
+      'weight' => 29,
     ),
   );
 
@@ -3024,7 +3046,7 @@ function ec_service_stack_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 28,
     ),
   );
 
