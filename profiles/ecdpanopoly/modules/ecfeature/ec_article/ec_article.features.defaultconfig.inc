@@ -83,6 +83,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 0,
@@ -93,6 +94,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -121,7 +123,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 5,
+        'weight' => 7,
       ),
     ),
   );
@@ -185,6 +187,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 7,
@@ -216,7 +219,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 8,
       ),
     ),
   );
@@ -280,6 +283,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => '',
             'image_style' => '',
           ),
@@ -348,7 +352,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -413,6 +417,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'link_default',
           'weight' => 3,
@@ -435,7 +440,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'configurable_class' => 0,
           'configurable_title' => 1,
           'rel' => '',
-          'target' => 'user',
+          'target' => 'default',
           'title' => '',
         ),
         'display' => array(
@@ -449,7 +454,7 @@ function ec_article_defaultconfig_field_default_fields() {
         ),
         'rel_remove' => 'default',
         'title' => 'optional',
-        'title_label_use_field_label' => 0,
+        'title_label_use_field_label' => 1,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
@@ -461,7 +466,7 @@ function ec_article_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 6,
+        'weight' => 10,
       ),
     ),
   );
@@ -532,6 +537,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 2,
@@ -555,7 +561,7 @@ function ec_article_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 2,
+        'weight' => 6,
       ),
     ),
   );
@@ -660,7 +666,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => 1,
+        'weight' => 9,
       ),
     ),
   );
