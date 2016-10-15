@@ -23,8 +23,8 @@ function ec_review_sites_field_group_info() {
     'label' => 'Add this content to these pages',
     'weight' => '13',
     'children' => array(
-      0 => 'field_review_site_show',
-      1 => 'field_review_site_tags',
+      0 => 'field_review_site_tags',
+      1 => 'field_review_site_show',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -49,7 +49,7 @@ function ec_review_sites_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Edit Content',
-    'weight' => '2',
+    'weight' => '1',
     'children' => array(
       0 => 'group_general',
       1 => 'group_add_this_content_to_these_',

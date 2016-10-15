@@ -114,7 +114,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 7,
+        'weight' => 5,
       ),
     ),
   );
@@ -248,7 +248,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 5,
+        'weight' => 4,
       ),
     ),
   );
@@ -434,7 +434,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 10,
+        'weight' => 8,
       ),
     ),
   );
@@ -529,7 +529,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 9,
+        'weight' => 7,
       ),
     ),
   );
@@ -646,7 +646,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 8,
+        'weight' => 7,
       ),
     ),
   );
