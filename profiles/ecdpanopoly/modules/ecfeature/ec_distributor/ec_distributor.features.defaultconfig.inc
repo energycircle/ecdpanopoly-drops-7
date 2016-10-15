@@ -108,7 +108,7 @@ function ec_distributor_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'addressfield_standard',
-        'weight' => 1,
+        'weight' => 4,
       ),
     ),
   );
@@ -199,7 +199,7 @@ function ec_distributor_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
@@ -271,7 +271,7 @@ function ec_distributor_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'email_textfield',
-        'weight' => 4,
+        'weight' => 6,
       ),
     ),
   );
@@ -380,7 +380,7 @@ function ec_distributor_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 6,
+        'weight' => 8,
       ),
     ),
   );
@@ -457,7 +457,7 @@ function ec_distributor_defaultconfig_field_default_fields() {
         'module' => 'phone',
         'settings' => array(),
         'type' => 'phone_textfield',
-        'weight' => 5,
+        'weight' => 7,
       ),
     ),
   );
@@ -548,7 +548,7 @@ function ec_distributor_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
