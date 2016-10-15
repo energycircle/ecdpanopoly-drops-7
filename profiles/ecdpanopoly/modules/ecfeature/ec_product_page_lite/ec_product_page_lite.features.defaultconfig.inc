@@ -78,6 +78,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
@@ -196,6 +197,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -207,6 +209,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -230,7 +233,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -243,9 +246,6 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_button_text',
-      'field_permissions' => array(
-        'type' => 0,
-      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -480,6 +480,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'title_class' => '',
             'title_link' => '',
             'title_style' => '',
@@ -513,7 +514,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -577,6 +578,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'title_class' => '',
             'title_link' => '',
             'title_style' => '',
@@ -610,7 +612,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -714,7 +716,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 7,
+        'weight' => 8,
       ),
     ),
   );
@@ -778,6 +780,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 'sc_220x110',
           ),
@@ -790,6 +793,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 's_220',
           ),
@@ -848,7 +852,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -952,7 +956,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -965,9 +969,6 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_to_cta_form',
-      'field_permissions' => array(
-        'type' => 0,
-      ),
       'foreign keys' => array(
         'entityform_type' => array(
           'columns' => array(
@@ -1070,6 +1071,9 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_technical_data_table',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1091,12 +1095,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'product_page',
-      'default_value' => array(
-        0 => array(
-          'value' => '<table border="0"><tbody><tr><td>Column1</td><td>Column2</td><td>Column3</td><td>Column4</td></tr><tr><td>Row</td><td></td><td></td><td></td></tr><tr><td>Row</td><td></td><td></td><td></td></tr><tr><td>Row</td><td></td><td></td><td></td></tr></tbody></table>',
-          'format' => 'panopoly_wysiwyg_text',
-        ),
-      ),
+      'default_value' => NULL,
       'deleted' => 0,
       'description' => 'Enter technical data in table format here.',
       'display' => array(
@@ -1148,10 +1147,14 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 8,
+        'weight' => 9,
       ),
     ),
   );
@@ -1212,6 +1215,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
@@ -1263,7 +1267,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 14,
+        'weight' => 16,
       ),
     ),
   );
@@ -1324,6 +1328,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
@@ -1375,7 +1380,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 21,
+        'weight' => 23,
       ),
     ),
   );
@@ -1436,6 +1441,7 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
@@ -1525,7 +1531,7 @@ function ec_product_page_lite_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'metatag_enable_node__product_page';
-  $strongarm->value = TRUE;
+  $strongarm->value = 1;
   $export['metatag_enable_node__product_page'] = $strongarm;
 
   return $export;
