@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function ec_distinction_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
   if ($module == "panelizer" && $api == "panelizer") {
     return array("version" => "1");
   }
@@ -103,12 +106,6 @@ function ec_distinction_rdf_default_mappings() {
       'callback' => 'date_iso8601',
     ),
     'field_a_b_test_page' => array(
-      'predicates' => array(),
-    ),
-    'field_dynamic_seal' => array(
-      'predicates' => array(),
-    ),
-    'field_content_link' => array(
       'predicates' => array(),
     ),
   );

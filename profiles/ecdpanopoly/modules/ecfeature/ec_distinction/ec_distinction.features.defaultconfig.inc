@@ -221,7 +221,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -408,7 +408,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'rows' => 3,
         ),
         'type' => 'text_textarea',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
