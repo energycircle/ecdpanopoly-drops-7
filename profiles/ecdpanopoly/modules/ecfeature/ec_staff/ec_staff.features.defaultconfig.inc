@@ -118,7 +118,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 7,
+        'weight' => 11,
       ),
     ),
   );
@@ -212,7 +212,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 7,
       ),
     ),
   );
@@ -306,7 +306,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 8,
       ),
     ),
   );
@@ -517,7 +517,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 5,
+        'weight' => 10,
       ),
     ),
   );
@@ -608,7 +608,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 4,
+        'weight' => 9,
       ),
     ),
   );
