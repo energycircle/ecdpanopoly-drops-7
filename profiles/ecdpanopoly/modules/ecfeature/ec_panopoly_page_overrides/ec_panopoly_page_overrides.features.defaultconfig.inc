@@ -143,7 +143,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 6,
+        'weight' => 4,
       ),
     ),
   );
@@ -156,9 +156,6 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_button_text',
-      'field_permissions' => array(
-        'type' => 0,
-      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -450,7 +447,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
   );
@@ -598,7 +595,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
   );
@@ -695,7 +692,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 5,
+        'weight' => 3,
       ),
     ),
   );
@@ -805,9 +802,6 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_to_cta_form',
-      'field_permissions' => array(
-        'type' => 0,
-      ),
       'foreign keys' => array(
         'entityform_type' => array(
           'columns' => array(
