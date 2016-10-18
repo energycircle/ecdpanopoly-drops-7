@@ -6,7 +6,6 @@ version = 7.x-1.6
 project = ec_service_stack
 dependencies[] = ec_base_config
 dependencies[] = ec_blog_post
-dependencies[] = ec_faq
 dependencies[] = ec_testimonial
 dependencies[] = entityform_notifications
 dependencies[] = field_group
