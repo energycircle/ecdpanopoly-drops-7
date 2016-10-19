@@ -394,7 +394,8 @@ projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_ru
 projects[compact_forms][patch][2464993] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
 projects[context][patch][305289] = https://www.drupal.org/files/context_panels-305289-39.patch
 projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
-projects[cer][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/7.x-1.x/patches/fix_duplicate_function_when_drush_make-1.patch
+#projects[cer][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/7.x-1.x/patches/fix_duplicate_function_when_drush_make-1.patch
+#patch -p0 < profiles/ecdpanopoly/patches/fix_duplicate_function_when_drush_make-1.patch
 projects[metatag][patch][1918738] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
 #projects[metatag][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/master/patches/character_count_on_fields-1918738-9-ec.patch
 projects[maxlength][patch][1256968] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch

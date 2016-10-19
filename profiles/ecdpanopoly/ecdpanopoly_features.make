@@ -245,6 +245,6 @@ projects[ec_testimonial][version] = 1.x
 
 projects[ecset-proplus][download][type] = git
 projects[ecset-proplus][download][url] = https://github.com/energycircle/ecset-proplus.git
-projects[ecset-proplus][subdir] = ecfeaturesets
+projects[ecset-proplus][subdir] = ecfeature-sets
 projects[ecset-proplus][type] = module
 projects[ecset-proplus][version] = 1.x
