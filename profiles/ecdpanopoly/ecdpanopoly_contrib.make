@@ -138,6 +138,9 @@ projects[external][version] = 1.x-dev
 projects[feeds][subdir] = eccontrib
 projects[feeds][version] = 2.x
 
+projects[feeds_ex][subdir] = eccontrib
+projects[feeds_ex][version] = 1.x
+
 projects[feeds_tamper][subdir] = eccontrib
 projects[feeds_tamper][version] = 1.1
 
