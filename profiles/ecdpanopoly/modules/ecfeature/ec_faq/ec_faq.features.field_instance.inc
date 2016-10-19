@@ -335,7 +335,7 @@ function ec_faq_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'featured' => array(
         'label' => 'above',

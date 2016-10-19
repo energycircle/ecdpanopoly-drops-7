@@ -20,32 +20,6 @@ function ec_product_page_category_ctools_plugin_api($module = NULL, $api = NULL)
 }
 
 /**
- * Implements hook_default_roles_permissions_alter().
- */
-function ec_product_page_category_default_roles_permissions_alter(&$data) {
-  if (isset($data['EC Platinum admin'])) {
-    $data['EC Platinum admin']['permissions']['create product_category content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['delete any product_category content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['delete own product_category content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['edit any product_category content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum admin']['permissions']['edit own product_category content'] = TRUE; /* WAS: '' */
-  }
-  if (isset($data['EC Platinum editor'])) {
-    $data['EC Platinum editor']['permissions']['create product_category content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum editor']['permissions']['delete own product_category content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum editor']['permissions']['edit any product_category content'] = TRUE; /* WAS: '' */
-    $data['EC Platinum editor']['permissions']['edit own product_category content'] = TRUE; /* WAS: '' */
-  }
-  if (isset($data['administrator'])) {
-    $data['administrator']['permissions']['create product_category content'] = TRUE; /* WAS: '' */
-    $data['administrator']['permissions']['delete any product_category content'] = TRUE; /* WAS: '' */
-    $data['administrator']['permissions']['delete own product_category content'] = TRUE; /* WAS: '' */
-    $data['administrator']['permissions']['edit any product_category content'] = TRUE; /* WAS: '' */
-    $data['administrator']['permissions']['edit own product_category content'] = TRUE; /* WAS: '' */
-  }
-}
-
-/**
  * Implements hook_node_info().
  */
 function ec_product_page_category_node_info() {

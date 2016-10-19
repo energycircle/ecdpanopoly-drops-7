@@ -63,7 +63,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 1,
         ),
         'featured' => array(
           'label' => 'above',
@@ -157,7 +157,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 3,
+          'weight' => 4,
         ),
         'featured' => array(
           'label' => 'above',
@@ -271,7 +271,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 1,
+          'weight' => 2,
         ),
         'featured' => array(
           'label' => 'above',
@@ -350,14 +350,9 @@ function ec_distinction_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 5,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'featured' => array(
           'label' => 'above',
@@ -452,7 +447,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 2,
+          'weight' => 3,
         ),
         'featured' => array(
           'label' => 'above',

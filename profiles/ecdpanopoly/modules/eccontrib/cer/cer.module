@@ -298,7 +298,6 @@ function cer_weight_options() {
   return $options;
 }
 
-
 /**
  * Implements hook_features_ignore().
  */

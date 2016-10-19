@@ -20,15 +20,9 @@ function ec_product_page_lite_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 9,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -90,15 +84,9 @@ function ec_product_page_lite_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -907,15 +895,9 @@ function ec_product_page_lite_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 12,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -977,15 +959,9 @@ function ec_product_page_lite_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1048,15 +1024,9 @@ function ec_product_page_lite_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 7,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1119,15 +1089,9 @@ function ec_product_page_lite_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1189,15 +1153,9 @@ function ec_product_page_lite_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 11,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',

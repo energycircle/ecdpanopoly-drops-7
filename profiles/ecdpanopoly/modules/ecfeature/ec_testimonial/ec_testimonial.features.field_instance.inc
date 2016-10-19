@@ -22,7 +22,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'featured' => array(
         'label' => 'above',
@@ -93,7 +93,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -351,7 +351,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'featured' => array(
         'label' => 'above',
@@ -544,7 +544,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'featured' => array(
         'label' => 'above',
@@ -620,7 +620,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 15,
       ),
       'featured' => array(
         'label' => 'above',
@@ -683,7 +683,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 16,
       ),
       'featured' => array(
         'label' => 'above',
@@ -740,7 +740,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -802,7 +802,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'featured' => array(
         'label' => 'above',
@@ -864,7 +864,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 5,
       ),
       'featured' => array(
         'label' => 'above',
@@ -930,7 +930,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1030,7 +1030,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 17,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1084,7 +1084,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1150,7 +1150,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'featured' => array(
         'label' => 'above',

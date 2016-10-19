@@ -21,7 +21,7 @@ function ec_gallery_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'featured' => array(
         'label' => 'above',

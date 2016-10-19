@@ -503,7 +503,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 11,
+          'weight' => 12,
         ),
         'featured' => array(
           'label' => 'above',

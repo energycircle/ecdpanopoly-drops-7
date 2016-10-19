@@ -21,7 +21,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'featured' => array(
         'label' => 'above',
@@ -96,7 +96,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'featured' => array(
         'label' => 'above',
@@ -162,7 +162,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'featured' => array(
         'label' => 'above',
@@ -266,7 +266,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -351,7 +351,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'featured' => array(
         'label' => 'above',
@@ -409,7 +409,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'featured' => array(
         'label' => 'above',
@@ -486,7 +486,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'featured' => array(
         'label' => 'above',
@@ -550,7 +550,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'featured' => array(
         'label' => 'above',
@@ -678,7 +678,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'featured' => array(
         'label' => 'above',
@@ -742,7 +742,7 @@ function ec_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 11,
       ),
       'featured' => array(
         'label' => 'above',

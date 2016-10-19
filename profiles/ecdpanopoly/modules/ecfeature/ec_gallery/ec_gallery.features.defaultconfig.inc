@@ -77,7 +77,7 @@ function ec_gallery_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 11,
+          'weight' => 13,
         ),
         'featured' => array(
           'label' => 'above',
