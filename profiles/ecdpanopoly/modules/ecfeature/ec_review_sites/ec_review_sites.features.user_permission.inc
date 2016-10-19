@@ -63,7 +63,9 @@ function ec_review_sites_user_default_permissions() {
   // Exported permission: 'delete terms in review_site_tags'.
   $permissions['delete terms in review_site_tags'] = array(
     'name' => 'delete terms in review_site_tags',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -92,7 +94,9 @@ function ec_review_sites_user_default_permissions() {
   // Exported permission: 'edit terms in review_site_tags'.
   $permissions['edit terms in review_site_tags'] = array(
     'name' => 'edit terms in review_site_tags',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 

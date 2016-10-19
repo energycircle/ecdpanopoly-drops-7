@@ -422,7 +422,7 @@ function ec_promotions_field_default_field_instances() {
     'bundle' => 'promotion',
     'default_value' => array(
       0 => array(
-        'value' => '<p>[custom:phone-number]</p>',
+        'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
         'format' => 'panopoly_wysiwyg_text',
       ),
     ),

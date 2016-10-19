@@ -464,7 +464,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
       'bundle' => 'case_study',
       'default_value' => array(
         0 => array(
-          'value' => '<p>[custom:phone-number]</p>',
+          'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
           'format' => 'panopoly_wysiwyg_text',
         ),
       ),

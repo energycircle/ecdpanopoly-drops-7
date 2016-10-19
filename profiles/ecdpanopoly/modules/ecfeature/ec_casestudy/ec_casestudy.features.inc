@@ -115,6 +115,9 @@ function ec_casestudy_rdf_default_mappings() {
     'field_button_text' => array(
       'predicates' => array(),
     ),
+    'field_call_to_action' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

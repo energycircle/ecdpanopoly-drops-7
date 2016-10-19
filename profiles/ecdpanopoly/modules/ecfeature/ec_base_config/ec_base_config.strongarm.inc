@@ -308,6 +308,10 @@ campaign-form-entityform-edit-form';
       0 => 'fieldable_panels_panes',
       1 => 'fpid',
     ),
+    'field_collection_item' => array(
+      0 => 'field_collection_item',
+      1 => 'item_id',
+    ),
     'redirect' => array(
       0 => 'redirect',
       1 => 'rid',
@@ -1565,7 +1569,7 @@ campaign-form-entityform-edit-form';
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
-    'taxonomy' => TRUE,
+    'node' => TRUE,
     'user' => TRUE,
   );
   $export['path_alias_whitelist'] = $strongarm;

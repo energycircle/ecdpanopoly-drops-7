@@ -12,11 +12,14 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   $overrides = array();
 
   // Exported overrides for: panelizer_defaults
-  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-28728aad-150d-4767-bf56-e6f78aef1b26"] = (object) array(
-      'pid' => 'new-28728aad-150d-4767-bf56-e6f78aef1b26',
+  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-74f82699-93ba-4b15-8bcf-e3bfa1894d40|panel"] = 'two_66_33_first';
+  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-96fb1bf5-7ac2-4566-9dae-876a363c71c9|panel"] = 'two_66_33_first';
+  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d|panel"] = 'two_66_33_first';
+  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-bcc6c8e4-04cb-4637-a941-703d8659139a"] = (object) array(
+      'pid' => 'new-bcc6c8e4-04cb-4637-a941-703d8659139a',
       'panel' => 'two_66_33_second',
       'type' => 'views_panes',
-      'subtype' => 'testimonials-panel_pane_3',
+      'subtype' => 'testimonials-panel_pane_2',
       'shown' => TRUE,
       'access' => array(),
       'configuration' => array(
@@ -32,11 +35,8 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
       'extras' => array(),
       'position' => 3,
       'locks' => array(),
-      'uuid' => '28728aad-150d-4767-bf56-e6f78aef1b26',
+      'uuid' => 'bcc6c8e4-04cb-4637-a941-703d8659139a',
     );
-  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-74f82699-93ba-4b15-8bcf-e3bfa1894d40|panel"] = 'two_66_33_first';
-  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-96fb1bf5-7ac2-4566-9dae-876a363c71c9|panel"] = 'two_66_33_first';
-  $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-ade8f2e7-1173-418b-8f94-0a2d8f4cdb9d|panel"] = 'two_66_33_first';
   $overrides["panelizer_defaults.node:panopoly_page:default:default.display|content|new-bd56e09b-f7d2-4fc8-b3a0-d74b62df2293"] = (object) array(
       'pid' => 'new-bd56e09b-f7d2-4fc8-b3a0-d74b62df2293',
       'panel' => 'two_66_33_second',
@@ -120,7 +120,7 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
     0 => 'new-bd56e09b-f7d2-4fc8-b3a0-d74b62df2293',
     1 => 'new-eb9d8405-655f-490f-834d-27b0c4e638dc',
     2 => 'new-d1f269e2-19ca-4eb5-a8a8-a108276a7706',
-    3 => 'new-28728aad-150d-4767-bf56-e6f78aef1b26',
+    3 => 'new-bcc6c8e4-04cb-4637-a941-703d8659139a',
   );
 
   // Exported overrides for: variable

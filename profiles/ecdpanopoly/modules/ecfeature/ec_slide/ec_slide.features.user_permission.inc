@@ -135,7 +135,9 @@ function ec_slide_user_default_permissions() {
   // Exported permission: 'delete terms in slide_set'.
   $permissions['delete terms in slide_set'] = array(
     'name' => 'delete terms in slide_set',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -164,7 +166,9 @@ function ec_slide_user_default_permissions() {
   // Exported permission: 'edit terms in slide_set'.
   $permissions['edit terms in slide_set'] = array(
     'name' => 'edit terms in slide_set',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 

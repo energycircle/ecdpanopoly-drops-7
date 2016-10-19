@@ -111,23 +111,23 @@ function ec_citypages_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_city_page_tabs';
   $field_group->data = array(
-    'label' => 'Shown on This Page',
+    'label' => 'Add other content to this page',
     'weight' => '5',
     'children' => array(
       0 => 'field_ref_citypages_blog',
       1 => 'field_ref_citypages_case_study',
-      2 => 'field_ref_citypages_testimonials',
-      3 => 'field_ref_citypages_services',
+      2 => 'field_ref_citypages_services',
+      3 => 'field_ref_citypages_testimonials',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Add other content to this page',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
-        'id' => '',
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $field_groups['group_citypages_shown_this_page|node|city_page|form'] = $field_group;
@@ -191,11 +191,11 @@ function ec_citypages_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add other content to this page');
   t('CTA Form');
   t('City Page Tabs');
   t('Description Builder');
   t('General');
-  t('Shown on This Page');
   t('Unused Fields');
 
   return $field_groups;

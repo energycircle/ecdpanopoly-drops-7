@@ -344,7 +344,13 @@ function ec_product_page_lite_field_default_field_instances() {
   // Exported field_instance: 'node-product_page-field_call_to_action'.
   $field_instances['node-product_page-field_call_to_action'] = array(
     'bundle' => 'product_page',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
+        'format' => 'panopoly_wysiwyg_text',
+      ),
+    ),
+    'default_value_function' => 'field_default_token_default_value_function',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -389,13 +395,17 @@ function ec_product_page_lite_field_default_field_instances() {
         'enable' => 0,
         'profile' => '',
       ),
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
         'rows' => 5,
       ),
       'type' => 'text_textarea',

@@ -24,7 +24,6 @@ function ec_administrative_dashboard_user_default_permissions() {
     'name' => 'have total control',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'total_control',

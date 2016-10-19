@@ -139,7 +139,13 @@ function ec_product_page_category_field_default_field_instances() {
   // Exported field_instance: 'node-product_category-field_call_to_action'.
   $field_instances['node-product_category-field_call_to_action'] = array(
     'bundle' => 'product_category',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
+        'format' => 'panopoly_wysiwyg_text',
+      ),
+    ),
+    'default_value_function' => 'field_default_token_default_value_function',
     'deleted' => 0,
     'description' => '',
     'display' => array(

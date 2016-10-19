@@ -246,6 +246,9 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_button_text',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -361,7 +364,13 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'product_page',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
+          'format' => 'panopoly_wysiwyg_text',
+        ),
+      ),
+      'default_value_function' => 'field_default_token_default_value_function',
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -406,13 +415,17 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
           'enable' => 0,
           'profile' => '',
         ),
-        'text_processing' => 0,
+        'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => 5,
         ),
         'type' => 'text_textarea',
@@ -969,6 +982,9 @@ function ec_product_page_lite_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'entityform_type' => array(
           'columns' => array(

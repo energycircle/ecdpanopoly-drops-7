@@ -126,6 +126,9 @@ function ec_product_page_category_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_button_text',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -241,7 +244,13 @@ function ec_product_page_category_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'product_category',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
+          'format' => 'panopoly_wysiwyg_text',
+        ),
+      ),
+      'default_value_function' => 'field_default_token_default_value_function',
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -616,6 +625,9 @@ function ec_product_page_category_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'entityform_type' => array(
           'columns' => array(

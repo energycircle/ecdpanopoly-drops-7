@@ -117,7 +117,9 @@ function ec_staff_user_default_permissions() {
   // Exported permission: 'delete terms in departments'.
   $permissions['delete terms in departments'] = array(
     'name' => 'delete terms in departments',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -146,7 +148,9 @@ function ec_staff_user_default_permissions() {
   // Exported permission: 'edit terms in departments'.
   $permissions['edit terms in departments'] = array(
     'name' => 'edit terms in departments',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 

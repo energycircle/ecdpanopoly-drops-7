@@ -248,7 +248,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
   $fields['node-panopoly_page-field_ref_page_testimonial'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_page_testimonial',
@@ -271,6 +271,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),

@@ -160,15 +160,6 @@ function ec_base_config_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'add JS snippets for google analytics'.
-  $permissions['add JS snippets for google analytics'] = array(
-    'name' => 'add JS snippets for google analytics',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'googleanalytics',
-  );
-
   // Exported permission: 'add media from remote sources'.
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
@@ -394,16 +385,6 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
-  );
-
-  // Exported permission: 'administer google analytics'.
-  $permissions['administer google analytics'] = array(
-    'name' => 'administer google analytics',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'googleanalytics',
   );
 
   // Exported permission: 'administer honeypot'.
@@ -789,15 +770,6 @@ function ec_base_config_user_default_permissions() {
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'role_delegation',
-  );
-
-  // Exported permission: 'assign administrator role'.
-  $permissions['assign administrator role'] = array(
-    'name' => 'assign administrator role',
-    'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'role_delegation',
@@ -1543,16 +1515,6 @@ function ec_base_config_user_default_permissions() {
     'module' => 'pathauto',
   );
 
-  // Exported permission: 'opt-in or out of tracking'.
-  $permissions['opt-in or out of tracking'] = array(
-    'name' => 'opt-in or out of tracking',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'googleanalytics',
-  );
-
   // Exported permission: 'override content type title display'.
   $permissions['override content type title display'] = array(
     'name' => 'override content type title display',
@@ -1623,15 +1585,6 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: 'use PHP for tracking visibility'.
-  $permissions['use PHP for tracking visibility'] = array(
-    'name' => 'use PHP for tracking visibility',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'googleanalytics',
   );
 
   // Exported permission: 'use advanced search'.

@@ -27,6 +27,32 @@ function ec_distributor_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_default_roles_permissions_alter().
+ */
+function ec_distributor_default_roles_permissions_alter(&$data) {
+  if (isset($data['EC Platinum admin'])) {
+    $data['EC Platinum admin']['permissions']['create distributor content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['delete any distributor content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['delete own distributor content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['edit any distributor content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum admin']['permissions']['edit own distributor content'] = TRUE; /* WAS: '' */
+  }
+  if (isset($data['EC Platinum editor'])) {
+    $data['EC Platinum editor']['permissions']['create distributor content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum editor']['permissions']['delete own distributor content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum editor']['permissions']['edit any distributor content'] = TRUE; /* WAS: '' */
+    $data['EC Platinum editor']['permissions']['edit own distributor content'] = TRUE; /* WAS: '' */
+  }
+  if (isset($data['administrator'])) {
+    $data['administrator']['permissions']['create distributor content'] = TRUE; /* WAS: '' */
+    $data['administrator']['permissions']['delete any distributor content'] = TRUE; /* WAS: '' */
+    $data['administrator']['permissions']['delete own distributor content'] = TRUE; /* WAS: '' */
+    $data['administrator']['permissions']['edit any distributor content'] = TRUE; /* WAS: '' */
+    $data['administrator']['permissions']['edit own distributor content'] = TRUE; /* WAS: '' */
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function ec_distributor_node_info() {

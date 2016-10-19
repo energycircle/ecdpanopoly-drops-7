@@ -123,6 +123,9 @@ function ec_promotions_rdf_default_mappings() {
       ),
       'type' => 'rel',
     ),
+    'field_call_to_action' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

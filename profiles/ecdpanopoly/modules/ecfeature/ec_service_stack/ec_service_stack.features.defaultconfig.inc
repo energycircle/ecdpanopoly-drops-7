@@ -888,7 +888,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'bundle' => 'service',
       'default_value' => array(
         0 => array(
-          'value' => '<p>[custom:phone-number]</p>',
+          'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
           'format' => 'panopoly_wysiwyg_text',
         ),
       ),
@@ -1629,7 +1629,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'bundle' => 'service_category',
       'default_value' => array(
         0 => array(
-          'value' => '<p>[custom:phone-number]</p>',
+          'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
           'format' => 'panopoly_wysiwyg_text',
         ),
       ),
@@ -2479,7 +2479,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'bundle' => 'service_group',
       'default_value' => array(
         0 => array(
-          'value' => '<p>[custom:phone-number]</p>',
+          'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
           'format' => 'panopoly_wysiwyg_text',
         ),
       ),
