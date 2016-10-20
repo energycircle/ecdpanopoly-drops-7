@@ -1,5 +1,5 @@
 <?php
-  
+
 /**
  * Set up base config
  */
@@ -24,7 +24,7 @@ function ecdpanopoly_configure() {
 
 
 
-  
+
 /**
  * Implements hook_install_tasks()
  */
@@ -47,6 +47,12 @@ function ecdpanopoly_install_tasks(&$install_state) {
   // Add the Panopoly theme selection to the installation process
   require_once(drupal_get_path('module', 'panopoly_theme') . '/panopoly_theme.profile.inc');
   $tasks = $tasks + panopoly_theme_profile_theme_selection_install_task($install_state);
+
+  // Add a configuration task.
+  $tasks['configure_profile'] = array(
+    'display_name' => st('Configure profile'),
+    'type' => 'form',
+  );
 
   return $tasks;
 }
@@ -116,13 +122,13 @@ function ecdpanopoly_form_apps_profile_apps_select_form_alter(&$form, $form_stat
  // Disable the 'receive email notifications' check box.
   $form['update_notifications']['update_status_module']['#default_value'][1] = 0;
   }
-  
+
   /**
    * Apps installer default content callback.
    */
   function ecdpanopoly_default_content(&$modules) {
     // TODO: It would be better to figure out which apps have demo content
-    // modules by looking at the app manifest. Unfortunately, this doesn't qute 
+    // modules by looking at the app manifest. Unfortunately, this doesn't qute
     // work because the manifest doesn't know about the default content module
     // until the app has actually been enabled, since that data only comes in
     // from hook_apps_app_info().
@@ -143,4 +149,12 @@ function ecdpanopoly_form_apps_profile_apps_select_form_alter(&$form, $form_stat
       }
     }
   }
-  
+
+  /**
+   * Callback for configure profile.
+   */
+  function ecdpanopoly_configure_profile($form, &$form_state, &$install_state) {
+    module_load_include('inc', 'panopoly_config', 'panopoly_config.profile');
+    $form += panopoly_config_get_profile_form();
+    return $form;
+  }

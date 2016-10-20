@@ -457,6 +457,14 @@ projects[image_mobile_camera][subdir] = eccustom
 projects[image_mobile_camera][type] = module
 projects[image_mobile_camera][version] = 1.x
 
+projects[ecdpanopoly_config][download][type] = git
+projects[ecdpanopoly_config][download][url] = https://github.com/energycircle/ecdpanopoly_config.git
+projects[ecdpanopoly_config][subdir] = eccustom
+projects[ecdpanopoly_config][type] = module
+projects[ecdpanopoly_config][version] = 1.x
+
+
+
 ; LIBRARIES
 libraries[superfish][download][type] = get
 libraries[superfish][type] = library
