@@ -370,7 +370,7 @@ projects[video_filter][subdir] = eccontrib
 projects[video_filter][version] = 3.4
 
 projects[views_data_export][subdir] = eccontrib
-projects[views_data_export][version] = 3.1
+projects[views_data_export][version] = 3.x-dev
 
 projects[views_slideshow][subdir] = eccontrib
 projects[views_slideshow][version] = 3.1
