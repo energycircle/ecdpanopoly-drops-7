@@ -9,6 +9,7 @@ dependencies[] = ec_base_config
 dependencies[] = ec_blog_post
 dependencies[] = ec_casestudy
 dependencies[] = ec_custom_tokens
+dependencies[] = ec_distinction
 dependencies[] = ec_gallery
 dependencies[] = ec_mail_settings
 dependencies[] = ec_panopoly_page_overrides
