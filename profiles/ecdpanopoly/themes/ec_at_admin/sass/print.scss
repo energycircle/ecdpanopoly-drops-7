@@ -335,3 +335,9 @@ form {
     padding: 0;
   }
 }
+
+// Remove from print
+ul.menu,
+.views-exposed-widgets {
+	display: none;
+}

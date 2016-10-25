@@ -98,8 +98,29 @@
  * @see adaptivetheme_process_page()
  */
 ?>
+
 <div id="page-wrapper">
   <div id="page" class="<?php print $classes; ?>">
+
+    <div id="header-wrapper">
+      <div class="container clearfix">
+        <header<?php print $header_attributes; ?>>
+     	 	<?//php	$block = module_invoke('panels_mini', 'block_view', 'header');
+                  //  print $block['content'];
+               ?>
+       		<?//php print render($page['header']); ?>
+
+            <div class="panel-pane pane-page-logo no-title block">
+              <div class="block-inner clearfix">
+                <div class="block-content">
+                  <a href="/" rel="home" id="logo" title="Home"><img src="/profiles/ecdpanopoly/themes/ec_at_admin/images/ec-logo.png" alt="Home"></a>    </div>
+              </div>
+            </div>
+
+        </header>
+
+      </div>
+    </div>
 
     <?php if($page['leaderboard']): ?>
       <div id="leaderboard-wrapper">
@@ -108,83 +129,13 @@
         </div>
       </div>
     <?php endif; ?>
-    <div id="header-top-wrapper">
-					<div id="utility" class="container clearfix">
-						
-						<?php if (isset($page['search_box'])): ?>
-							<?php print $search_box ?>
-						<?php endif; ?>
-						
-                        <div id="navwrap">
-					  	<?php $menu = menu_navigation_links('menu-auxiliary-menu'); print theme('links__menu_auxiliary_menu', array('links' => $menu)); ?>
-						</div>
-					  <div id="header-phone-number">555-555-5555</div>
-				  </div>
-    </div>
-    <div id="header-wrapper">
-      <div class="container clearfix">
-        <header<?php print $header_attributes; ?>>
-
-          <?php if ($site_logo || $site_name || $site_slogan): ?>
-            <!-- start: Branding -->
-            <div<?php print $branding_attributes; ?>>
-
-						  
-              <?php if ($site_logo): ?>
-                <div id="logo">
-                  <?php print $site_logo; ?>
-                </div>
-              <?php endif; ?>
-                
-                
-                <?php if ($site_slogan): ?>
-                    <h2<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
-                  <?php endif; ?>
-                
-              <?php if ($site_name || $site_slogan): ?>
-                <!-- start: Site name and Slogan -->
-                <div<?php print $hgroup_attributes; ?>>
-
-                  <?php if ($site_name): ?>
-                    <h1<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
-                  <?php endif; ?>
-
-                  
-
-                </div><!-- /end #name-and-slogan -->
-              <?php endif; ?>
-
-
-            </div><!-- /end #branding -->
-          <?php endif; ?>
-
-        <?php print render($page['header']); ?>
-
-        </header>
-
-      </div>
-    </div>
 
     <?php if ($page['menu_bar'] || $primary_navigation || $secondary_navigation): ?>
-      <div id="nav-wrapper">
-        <div class="container clearfix">
-          <?php print render($page['menu_bar']); ?>
-          	<div id="main-menu-sf">
-          	<?php	$block = module_invoke('panels_mini', 'block_view', 'main_menu_superfish');
-          		print $block['content'];
-						?>
-						</div>
-        </div>
-      </div>
+
+
+
     <?php endif; ?>
-    <?php if ($messages || $page['help']): ?>
-      <div id="messages-help-wrapper">
-        <div class="container clearfix">
-          <?php print $messages; ?>
-          <?php print render($page['help']); ?>
-        </div>
-      </div>
-    <?php endif; ?>
+
 
     <?php if ($page['secondary_content']): ?>
       <div id="secondary-content-wrapper">
@@ -194,9 +145,50 @@
       </div>
     <?php endif; ?>
 
+    <?php if (!drupal_is_front_page()) { ?>
+
+        <div id="subnavigation-wrapper">
+            <div class="container clearfix">
+                <div id="subnavigation">
+                <?php	$block = module_invoke('panels_mini', 'block_view', 'subnavigation');
+                    print $block['content'];
+                            ?>
+                </div>
+            </div>
+          </div>
+   <?php  } ?>
+
+
+   <?php if (drupal_is_front_page()) { ?>
+
+       <div id="hero-wrapper">
+
+           <?php
+               $block = module_invoke('panels_mini', 'block_view', 'hero');
+                   print $block['content'];
+
+           ?>
+
+       </div>
+
+  <?php  } ?>
+
+    <div id="title-wrapper">
+      <?php if ($title): ?>
+     <div class="container">
+
+       <h1 id="page-title"><?php print $title; ?></h1>
+     </div>
+     <?php endif; ?>
+    </div>
+
     <div id="content-wrapper"><div class="container">
       <div id="columns"><div class="columns-inner clearfix">
         <div id="content-column"><div class="content-inner">
+
+
+
+
 
           <?php print render($page['highlighted']); ?>
 
@@ -229,19 +221,19 @@
 
             <?php if ($content = render($page['content'])): ?>
               <div id="content">
-              
-	  					<div id="breadcrumb-title-wrapper">            
-						    <?php if ($breadcrumb): ?>
-						      <div id="breadcrumb">
-						        <?php print $breadcrumb; ?>
-						      </div>
-						    <?php endif; ?>
-	                <?php if ($title): ?>
-	                  <h1 id="page-title"><?php print $title; ?></h1>
-	                <?php endif; ?>
-	  					</div>
 
-                <?php print $content; ?>
+
+
+                    <?php if ($messages || $page['help']): ?>
+                      <div id="messages-help-wrapper">
+                        <div class="container clearfix">
+                          <?php print $messages; ?>
+                          <?php print render($page['help']); ?>
+                        </div>
+                      </div>
+                    <?php endif; ?>
+
+                    <?php print $content; ?>
               </div>
             <?php endif; ?>
 
@@ -269,16 +261,13 @@
       </div>
     <?php endif; ?>
 
-      <div id="footer-wrapper">
-        <div class="container clearfix"> 
-          <footer<?php print $footer_attributes; ?>>
-            <?php print render($page['footer']); ?>
-            <div class="container">
-						<?php $block = module_invoke('panels_mini', 'block_view', 'footer'); print $block['content']; ?>
-						</div>
-          </footer>
-        </div>
-      </div>
+    <!-- !Footer -->
+    <?php if ($page['footer'] || $attribution): ?>
+      <footer<?php print $footer_attributes; ?>>
+        <?php print render($page['footer']); ?>
+        <?php print $attribution; ?>
+      </footer>
+    <?php endif; ?>
 
   </div>
 </div>
