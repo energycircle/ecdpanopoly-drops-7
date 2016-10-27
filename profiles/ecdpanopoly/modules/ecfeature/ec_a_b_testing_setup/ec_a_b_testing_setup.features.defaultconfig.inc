@@ -11,6 +11,7 @@ function ec_a_b_testing_setup_defaultconfig_features() {
   return array(
     'ec_a_b_testing_setup' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -42,7 +43,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -125,7 +126,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -187,6 +188,178 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-campaign_page-field_a_b_reason_for_testing'.
+  $fields['node-campaign_page-field_a_b_reason_for_testing'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_a_b_reason_for_testing',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'campaign_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Fill this out in your B Test page.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 10,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_a_b_reason_for_testing',
+      'label' => 'Reason for A/B Testing',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => 2,
+        ),
+        'type' => 'text_textarea',
+        'weight' => 5,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-campaign_page-field_a_b_reference_page'.
+  $fields['node-campaign_page-field_a_b_reference_page'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_a_b_reference_page',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'campaign_page' => 'campaign_page',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'campaign_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 11,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_a_b_reference_page',
+      'label' => 'Reference Original Content',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 4,
+      ),
+    ),
+  );
+
   // Exported field: 'node-campaign_page-field_a_b_test_page'.
   $fields['node-campaign_page-field_a_b_test_page'] = array(
     'field_config' => array(
@@ -208,7 +381,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -237,7 +410,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_a_b_test_page',
-      'label' => 'A/B Test Page',
+      'label' => 'If this is the experimental page, fill out the information below.',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -247,7 +420,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 9,
+        'weight' => 3,
       ),
     ),
   );
@@ -273,7 +446,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -356,7 +529,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -439,7 +612,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -522,7 +695,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -609,7 +782,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -697,7 +870,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -780,7 +953,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -863,7 +1036,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -946,7 +1119,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1034,7 +1207,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1123,7 +1296,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1210,7 +1383,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1297,7 +1470,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1380,7 +1553,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1463,7 +1636,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1546,7 +1719,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1629,7 +1802,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1706,7 +1879,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1789,7 +1962,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'BPage' => 'B Page',
+          'BPage' => 'Experiment Page (B Page)',
         ),
         'allowed_values_function' => '',
       ),
@@ -1854,6 +2027,33 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('A/B Test Page');
+  t('Fill this out in your B Test page.');
+  t('If this is the experimental page, fill out the information below.');
+  t('Reason for A/B Testing');
+  t('Reference Original Content');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_a_b_testing_setup_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'token_insert_node_campaign_page_field_a_b_reference_page';
+  $strongarm->value = 0;
+  $export['token_insert_node_campaign_page_field_a_b_reference_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'token_insert_node_campaign_page_field_a_b_test_page';
+  $strongarm->value = 0;
+  $export['token_insert_node_campaign_page_field_a_b_test_page'] = $strongarm;
+
+  return $export;
 }

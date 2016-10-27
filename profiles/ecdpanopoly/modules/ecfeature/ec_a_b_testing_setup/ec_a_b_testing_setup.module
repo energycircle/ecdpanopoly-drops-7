@@ -6,9 +6,41 @@
 
 include_once 'ec_a_b_testing_setup.features.inc';
 
+
+
 function ec_a_b_testing_setup_form_node_form_alter(&$form, &$form_state, $form_id) {
+
+  //  dsm($form);
+
+
+//adjust group settings
+    if(isset($form['content_experiments'])) {
+      $form['content_experiments']['#title'] = t('A/B Experiments');
+      $form['content_experiments']['#attributes']['id'] = 'a_b_testing_group';
+      $form['content_experiments']['#description'] = t('If this is the A (original) page for this test, enter the experiment key from Google Content Experiments below.');
+      $form['content_experiments']['code']['#description'] = t('The experiment key can be found in Google Analytics. Behavior > Experiments > Choose Your Experiment > Click “View Settings” beneath the experiment title.');
+      $form['#attached']['js'] = array(
+        drupal_get_path('module', 'ec_a_b_testing_setup') . '/scripts/a_b_script.js',
+      );
+    }
+
+
+//hide field_a_b_test_page field once moved.
     if(isset($form['field_a_b_test_page'])) {
-      $form['content_experiments']['field_a_b_test_page'] = $form['field_a_b_test_page'];
- 	 $form['field_a_b_test_page']['#access'] = FALSE;
-	}
+     $form['content_experiments']['field_a_b_test_page'] = $form['field_a_b_test_page'];
+    	 $form['field_a_b_test_page']['#access'] = FALSE;
+    }
+//hide field_a_b_reason_for_testing field once moved.
+    if(isset($form['field_a_b_reason_for_testing'])) {
+      $form['content_experiments']['field_a_b_reason_for_testing'] = $form['field_a_b_reason_for_testing'];
+      $form['field_a_b_reason_for_testing']['#access'] = FALSE;
+
+    }
+//hide field_a_b_reference_page field once moved.
+    if(isset($form['field_a_b_reference_page'])) {
+      $form['content_experiments']['field_a_b_reference_page'] = $form['field_a_b_reference_page'];
+      $form['field_a_b_reference_page']['#access'] = FALSE;
+
+    }
+
 }

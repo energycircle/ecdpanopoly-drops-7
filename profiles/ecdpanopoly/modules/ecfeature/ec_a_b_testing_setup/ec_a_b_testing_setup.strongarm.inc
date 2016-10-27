@@ -128,5 +128,19 @@ node/*/*';
   $strongarm->value = '0';
   $export['content_experiments_visibility'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'token_insert_node_campaign_page_field_a_b_reference_page';
+  $strongarm->value = 0;
+  $export['token_insert_node_campaign_page_field_a_b_reference_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'token_insert_node_campaign_page_field_a_b_test_page';
+  $strongarm->value = 0;
+  $export['token_insert_node_campaign_page_field_a_b_test_page'] = $strongarm;
+
   return $export;
 }

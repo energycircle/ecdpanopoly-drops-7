@@ -120,6 +120,105 @@ function ec_a_b_testing_setup_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-campaign_page-field_a_b_reason_for_testing'.
+  $field_instances['node-campaign_page-field_a_b_reason_for_testing'] = array(
+    'bundle' => 'campaign_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Fill this out in your B Test page.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_a_b_reason_for_testing',
+    'label' => 'Reason for A/B Testing',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 2,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-campaign_page-field_a_b_reference_page'.
+  $field_instances['node-campaign_page-field_a_b_reference_page'] = array(
+    'bundle' => 'campaign_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 11,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_a_b_reference_page',
+    'label' => 'Reference Original Content',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-campaign_page-field_a_b_test_page'.
   $field_instances['node-campaign_page-field_a_b_test_page'] = array(
     'bundle' => 'campaign_page',
@@ -143,7 +242,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_a_b_test_page',
-    'label' => 'A/B Test Page',
+    'label' => 'If this is the experimental page, fill out the information below.',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -153,7 +252,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 9,
+      'weight' => 3,
     ),
   );
 
@@ -1227,6 +1326,10 @@ function ec_a_b_testing_setup_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('A/B Test Page');
+  t('Fill this out in your B Test page.');
+  t('If this is the experimental page, fill out the information below.');
+  t('Reason for A/B Testing');
+  t('Reference Original Content');
 
   return $field_instances;
 }

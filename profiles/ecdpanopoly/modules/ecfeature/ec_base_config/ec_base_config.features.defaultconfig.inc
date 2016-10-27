@@ -12,6 +12,7 @@ function ec_base_config_defaultconfig_features() {
     'ec_base_config' => array(
       'field_default_fields' => 'field_default_fields',
       'strongarm' => 'strongarm',
+      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -921,4 +922,31 @@ function ec_base_config_defaultconfig_strongarm() {
   $export['site_slogan'] = $strongarm;
 
   return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_user_default_permissions().
+ */
+function ec_base_config_defaultconfig_user_default_permissions() {
+  $permissions = array();
+
+  // Exported permission: 'administer shortcuts'.
+  $permissions['administer shortcuts'] = array(
+    'name' => 'administer shortcuts',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'shortcut',
+  );
+
+  // Exported permission: 'customize shortcut links'.
+  $permissions['customize shortcut links'] = array(
+    'name' => 'customize shortcut links',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'shortcut',
+  );
+
+  return $permissions;
 }
