@@ -11,7 +11,6 @@ function ec_a_b_testing_setup_defaultconfig_features() {
   return array(
     'ec_a_b_testing_setup' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -2033,27 +2032,4 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
   t('Reference Original Content');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_a_b_testing_setup_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'token_insert_node_campaign_page_field_a_b_reference_page';
-  $strongarm->value = 0;
-  $export['token_insert_node_campaign_page_field_a_b_reference_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'token_insert_node_campaign_page_field_a_b_test_page';
-  $strongarm->value = 0;
-  $export['token_insert_node_campaign_page_field_a_b_test_page'] = $strongarm;
-
-  return $export;
 }

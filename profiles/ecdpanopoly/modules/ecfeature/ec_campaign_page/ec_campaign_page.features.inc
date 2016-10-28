@@ -166,6 +166,15 @@ function ec_campaign_page_rdf_default_mappings() {
     'field_panel_hide_footer' => array(
       'predicates' => array(),
     ),
+    'field_a_b_reason_for_testing' => array(
+      'predicates' => array(),
+    ),
+    'field_a_b_reference_page' => array(
+      'predicates' => array(),
+    ),
+    'field_a_b_reason' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

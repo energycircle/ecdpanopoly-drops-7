@@ -52,9 +52,9 @@ function ec_campaign_page_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '1',
     'children' => array(
-      0 => 'group_cta_form',
-      1 => 'group_page_design',
-      2 => 'group_general',
+      0 => 'group_general',
+      1 => 'group_cta_form',
+      2 => 'group_page_design',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(

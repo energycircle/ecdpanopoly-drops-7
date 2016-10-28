@@ -67,12 +67,13 @@ function ec_campaign_page_panelizer_defaults() {
     'delta_offset' => '0',
     'delta_reversed' => FALSE,
     'formatter_settings' => array(
-      'image_style' => '',
+      'image_style' => 'sc_1280x440_mc',
       'image_link' => '',
     ),
     'context' => array(),
     'override_title' => 1,
     'override_title_text' => '',
+    'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -372,12 +373,13 @@ function ec_campaign_page_panelizer_defaults() {
     'delta_offset' => '0',
     'delta_reversed' => FALSE,
     'formatter_settings' => array(
-      'image_style' => '',
+      'image_style' => 'sc_1280x440_mc',
       'image_link' => '',
     ),
     'context' => array(),
     'override_title' => 1,
     'override_title_text' => '',
+    'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
