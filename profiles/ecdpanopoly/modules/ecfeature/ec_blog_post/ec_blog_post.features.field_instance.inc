@@ -85,7 +85,7 @@ function ec_blog_post_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 14,
       ),
       'featured' => array(
         'label' => 'above',
@@ -162,7 +162,7 @@ function ec_blog_post_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 16,
       ),
       'featured' => array(
         'label' => 'above',
@@ -215,7 +215,7 @@ function ec_blog_post_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 5,
       ),
       'featured' => array(
         'label' => 'above',
@@ -319,7 +319,7 @@ function ec_blog_post_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 6,
       ),
       'featured' => array(
         'label' => 'above',
@@ -397,7 +397,7 @@ function ec_blog_post_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 15,
       ),
       'featured' => array(
         'label' => 'above',
@@ -474,7 +474,7 @@ function ec_blog_post_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 12,
       ),
       'featured' => array(
         'label' => 'above',

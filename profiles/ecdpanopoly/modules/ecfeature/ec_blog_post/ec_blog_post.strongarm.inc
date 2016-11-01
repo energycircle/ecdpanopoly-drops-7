@@ -184,7 +184,14 @@ function ec_blog_post_strongarm() {
           'weight' => '4',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'sharethis' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__blog_post'] = $strongarm;
@@ -359,6 +366,23 @@ function ec_blog_post_strongarm() {
   $strongarm->name = 'schemaorg_ui_type_blog_post';
   $strongarm->value = 'Blog';
   $export['schemaorg_ui_type_blog_post'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_blog_post_options';
+  $strongarm->value = array(
+    'full' => 0,
+    'teaser' => 0,
+    'rss' => 0,
+    'search_index' => 0,
+    'search_result' => 0,
+    'show_this_block' => 0,
+    'grouped_teaser' => 0,
+    'featured' => 0,
+    'token' => 0,
+  );
+  $export['sharethis_blog_post_options'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

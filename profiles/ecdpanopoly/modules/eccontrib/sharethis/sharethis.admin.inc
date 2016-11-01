@@ -67,9 +67,9 @@ function sharethis_configuration_form($form, &$form_state) {
     '#required' => TRUE,
     '#type' => 'textfield',
     '#prefix' => '<div>',
-    '#suffix' => '</div><div id="myPicker"></div><script type="text/javascript">stlib_picker.setupPicker(jQuery("#myPicker"), [' . $service_string_markup . '], drupal_st.serviceCallback);</script>',
+    '#suffix' => '</div><div id="myPicker"></div><script type="text/javascript">window.stlib_picker.setupPicker(jQuery("#myPicker"), [' . $service_string_markup . '], window.drupal_st.serviceCallback);</script>', // @see : http://stackoverflow.com/a/7048295/377342
     '#title' => t("Choose Your Services."),
-    '#default_value' => t("@service_string", array('@service_string' => $service_string)),
+    '#default_value' => $service_string,
     '#maxlength' => 1024,
   );
   $form['options']['sharethis_option_extras'] = array(

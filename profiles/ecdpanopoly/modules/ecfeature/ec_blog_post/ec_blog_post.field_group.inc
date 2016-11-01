@@ -23,8 +23,8 @@ function ec_blog_post_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '1',
     'children' => array(
-      0 => 'group_show_this_on',
-      1 => 'group_general',
+      0 => 'group_general',
+      1 => 'group_show_this_on',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(

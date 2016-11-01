@@ -11,6 +11,7 @@ function ec_blog_post_defaultconfig_features() {
   return array(
     'ec_blog_post' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -173,7 +174,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 10,
+          'weight' => 14,
         ),
         'featured' => array(
           'label' => 'above',
@@ -285,7 +286,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 12,
+          'weight' => 16,
         ),
         'featured' => array(
           'label' => 'above',
@@ -368,7 +369,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 1,
+          'weight' => 5,
         ),
         'featured' => array(
           'label' => 'above',
@@ -502,7 +503,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 2,
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'above',
@@ -610,7 +611,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 11,
+          'weight' => 15,
         ),
         'featured' => array(
           'label' => 'above',
@@ -730,7 +731,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 8,
+          'weight' => 12,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1350,4 +1351,30 @@ function ec_blog_post_defaultconfig_field_default_fields() {
   t('URL of the page to link this blog entry to.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function ec_blog_post_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_blog_post_options';
+  $strongarm->value = array(
+    'full' => 0,
+    'teaser' => 0,
+    'rss' => 0,
+    'search_index' => 0,
+    'search_result' => 0,
+    'show_this_block' => 0,
+    'grouped_teaser' => 0,
+    'featured' => 0,
+    'token' => 0,
+  );
+  $export['sharethis_blog_post_options'] = $strongarm;
+
+  return $export;
 }

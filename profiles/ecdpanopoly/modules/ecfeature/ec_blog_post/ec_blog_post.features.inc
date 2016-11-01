@@ -164,6 +164,15 @@ function ec_blog_post_rdf_default_mappings() {
     'field_content_link' => array(
       'predicates' => array(),
     ),
+    'field_migrate_previous_url' => array(
+      'predicates' => array(),
+    ),
+    'field_migrate_author' => array(
+      'predicates' => array(),
+    ),
+    'field_migrate_guid' => array(
+      'predicates' => array(),
+    ),
   );
 
   // Exported RDF mapping: blog_categories

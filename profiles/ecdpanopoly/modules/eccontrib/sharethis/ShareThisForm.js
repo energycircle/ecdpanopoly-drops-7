@@ -8,7 +8,8 @@
   // Adding use strict as function encapsulation ECMA 6.
   'use strict';
 
-  var drupal_st = {
+  // @see : http://stackoverflow.com/a/7048295/377342
+  window.drupal_st = {
     // These are handlerd for updating the widget pic class.
     multiW: function () {
       jQuery('.st_widgetPic').addClass('st_multi');

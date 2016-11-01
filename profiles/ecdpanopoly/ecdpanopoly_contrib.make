@@ -426,7 +426,7 @@ projects[node_clone][patch][1043324] = https://www.drupal.org/files/issues/12527
 projects[content_experiments][patch][2759323] = https://www.drupal.org/files/issues/content_experiments-node-type-configuration-2759323-1.patch
 projects[rdfx][patch][1176666] = https://drupal.org/files/find-arc-library-correctly-1176666-14.patch
 projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/issues/context_entity_field-context-entity-field-2307955-18.patch
-projects[sharethis][patch][2759221] = sharethis-unable_to_select_services-2759221-58-D7.patch
+projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
 
 
 ; EC CUSTOM MODS
