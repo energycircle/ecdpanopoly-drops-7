@@ -84,7 +84,6 @@ function sharethis_configuration_form($form, &$form_state) {
     ),
     '#default_value' => $current_options_array['option_extras'],
   );
-
   $form['options']['sharethis_option_extras_fbsub'] = array(
     '#type' => 'checkboxes',
     '#options' => array(
@@ -162,7 +161,6 @@ function sharethis_configuration_form($form, &$form_state) {
     '#type' => 'hidden',
     '#default_value' => $current_options_array['sharethis_callesi'],
   );
-
   $form['additional_settings'] = array(
     '#type' => 'vertical_tabs',
   );
@@ -172,7 +170,6 @@ function sharethis_configuration_form($form, &$form_state) {
     '#group' => 'additional_settings',
     '#description' => t('Configure where the ShareThis widget should appear.'),
   );
-
   $form['context']['sharethis_location'] = array(
     '#title' => t('Location'),
     '#type' => 'radios',
@@ -328,11 +325,11 @@ function sharethis_configuration_form($form, &$form_state) {
     '#type' => 'checkboxes',
     '#prefix' => '<div id="st_cns_settings">',
     '#suffix' => '</div><div class="st_cns_container">
-    <p>CopyNShare is the new ShareThis widget feature that enables you to track the shares that occur when a user copies and pastes your website\'s <u>URL</u> or <u>Content</u>. <br/>
-      <u>Site URL</u> - ShareThis adds a special #hashtag at the end of your address bar URL to keep track of where your content is being shared on the web.<br/>
-      <u>Site Content</u> - It enables the pasting of "See more: YourURL#SThashtag" after user copies-and-pastes text. When a user copies text within your site, a "See more: yourURL.com#SThashtag" will appear after the pasted text. <br/>
-      Please refer the <a href="http://support.sharethis.com/customer/portal/articles/517332-share-widget-faqs#copynshare" target="_blank">CopyNShare FAQ</a> for more details.</p>
-    </div>',
+      <p>CopyNShare is the new ShareThis widget feature that enables you to track the shares that occur when a user copies and pastes your website\'s <u>URL</u> or <u>Content</u>. <br/>
+        <u>Site URL</u> - ShareThis adds a special #hashtag at the end of your address bar URL to keep track of where your content is being shared on the web.<br/>
+        <u>Site Content</u> - It enables the pasting of "See more: YourURL#SThashtag" after user copies-and-pastes text. When a user copies text within your site, a "See more: yourURL.com#SThashtag" will appear after the pasted text. <br/>
+        Please refer the <a href="http://support.sharethis.com/customer/portal/articles/517332-share-widget-faqs#copynshare" target="_blank">CopyNShare FAQ</a> for more details.
+      </p></div>',
     '#options' => array(
       'donotcopy' => t("Measure copy & shares of your site\'s Content"),
       'hashaddress' => t("Measure copy & shares of your site\'s URLs"),
@@ -391,4 +388,26 @@ function sharethis_configuration_form_validate($form, &$form_state) {
 
   // Ensure default value for twitter recommends.
   $form_state['values']['sharethis_twitter_recommends'] = (isset($form_state['values']['sharethis_twitter_recommends'])) ? $form_state['values']['sharethis_twitter_recommends'] : '';
+}
+
+/**
+ * Form submission handler for sharethis_configuration_form().
+ */
+function sharethis_configuration_form_submit($form, &$form_state) {
+  // If the location is changing to/from 'content', clear the Field Info cache.
+  $current_location = variable_get('sharethis_location', 'content');
+  $new_location = $form_state['values']['sharethis_location'];
+  if (($current_location == 'content' || $new_location == 'content') && $current_location != $new_location) {
+    field_info_cache_clear();
+  }
+  // Markup overrides for each enabled service.
+  $enabled_services = array();
+  foreach (explode(",", $form_state['values']['sharethis_service_option']) as $string) {
+    $service = explode(":", drupal_substr($string, 0, -1));
+    $enabled_services[$service[1]] = str_replace('"', '', $service[0]);
+  }
+  foreach ($enabled_services as $key => $service) {
+    $override = $form_state['values']['override_' . $key];
+    variable_set('sharethis_override_' . $key, $override);
+  }
 }

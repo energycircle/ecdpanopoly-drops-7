@@ -7,8 +7,6 @@
 
 /**
  * Implements hook_help().
- *
- * Displays help and module information.
  */
 function sharethis_help($path, $arg) {
   switch ($path) {
@@ -48,28 +46,6 @@ function sharethis_permission() {
       'description' => t('Change the settings for how ShareThis behaves on the site.'),
     ),
   );
-}
-
-/**
- * Form submission handler for sharethis_configuration_form().
- */
-function sharethis_configuration_form_submit($form, &$form_state) {
-  // If the location is changing to/from 'content', clear the Field Info cache.
-  $current_location = variable_get('sharethis_location', 'content');
-  $new_location = $form_state['values']['sharethis_location'];
-  if (($current_location == 'content' || $new_location == 'content') && $current_location != $new_location) {
-    field_info_cache_clear();
-  }
-  // Markup overrides for each enabled service.
-  $enabled_services = array();
-  foreach (explode(",", $form_state['values']['sharethis_service_option']) as $string) {
-    $service = explode(":", drupal_substr($string, 0, -1));
-    $enabled_services[$service[1]] = str_replace('"', '', $service[0]);
-  }
-  foreach ($enabled_services as $key => $service) {
-    $override = $form_state['values']['override_' . $key];
-    variable_set('sharethis_override_' . $key, $override);
-  }
 }
 
 /**

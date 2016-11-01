@@ -325,7 +325,7 @@ projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 2.0
 
 projects[sharethis][subdir] = eccontrib
-projects[sharethis][version] = 2.13
+projects[sharethis][version] = 2.x-dev
 
 projects[smtp][subdir] = eccontrib
 projects[smtp][version] = 1.4
