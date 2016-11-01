@@ -31,7 +31,7 @@ function ec_review_sites_node_info() {
     'review_site' => array(
       'name' => t('Review Site'),
       'base' => 'node_content',
-      'description' => t('Used to display review sites'),
+      'description' => t('Used to display review sites logos and links. This is connected to the testimonial type.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

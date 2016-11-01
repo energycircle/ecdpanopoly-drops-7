@@ -34,7 +34,7 @@ function ec_gallery_node_info() {
     'gallery' => array(
       'name' => t('Gallery'),
       'base' => 'node_content',
-      'description' => t('A photo set to be displayed as a photo gallery or similar display type.'),
+      'description' => t('A set of photos to be displayed as a gallery.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

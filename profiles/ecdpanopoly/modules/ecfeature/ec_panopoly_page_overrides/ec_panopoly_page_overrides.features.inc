@@ -20,6 +20,24 @@ function ec_panopoly_page_overrides_ctools_plugin_api($module = NULL, $api = NUL
 }
 
 /**
+ * Implements hook_node_info().
+ */
+function ec_panopoly_page_overrides_node_info() {
+  $items = array(
+    'financing_option' => array(
+      'name' => t('Content Page'),
+      'base' => 'node_content',
+      'description' => t('An important, non-service page to display to users, ex. About Us, Contact Us, etc.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  drupal_alter('node_info', $items);
+  return $items;
+}
+
+/**
  * Implements hook_views_api().
  */
 function ec_panopoly_page_overrides_views_api($module = NULL, $api = NULL) {

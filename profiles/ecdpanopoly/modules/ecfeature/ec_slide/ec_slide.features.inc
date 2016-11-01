@@ -37,7 +37,7 @@ function ec_slide_node_info() {
     'slide' => array(
       'name' => t('Slide'),
       'base' => 'node_content',
-      'description' => t('A slide to include in the home page slide set or another slide set.'),
+      'description' => t('A single image and text used either in the homepage rotating hero or in another slide set.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

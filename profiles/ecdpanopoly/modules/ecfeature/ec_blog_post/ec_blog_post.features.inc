@@ -37,7 +37,7 @@ function ec_blog_post_node_info() {
     'blog_post' => array(
       'name' => t('Blog Post'),
       'base' => 'node_content',
-      'description' => t('Used to display blog posts on the site as well as pull them into other content.'),
+      'description' => t('A relatively short, informational post related to company services or a company announcement.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
