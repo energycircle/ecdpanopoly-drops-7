@@ -264,6 +264,9 @@ projects[metatag][version] = 1.14
 projects[mimemail][subdir] = eccontrib
 projects[mimemail][version] = 1.x
 
+projects[module_missing_message_fixer][subdir] = eccontrib
+projects[module_missing_message_fixer][version] = 1.x
+
 projects[module_filter][subdir] = eccontrib
 projects[module_filter][version] = 2.x-dev
 
