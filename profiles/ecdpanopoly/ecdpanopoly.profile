@@ -34,10 +34,10 @@ function ecdpanopoly_install_tasks(&$install_state) {
   drupal_add_css(drupal_get_path('profile', 'ecdpanopoly') . '/install.css');
 
   // Add a configuration task.
-  $tasks['configure_profile'] = array(
-    'display_name' => st('Configure profile'),
-    'type' => 'form',
-  );
+  //$tasks['configure_profile'] = array(
+  //  'display_name' => st('Configure profile'),
+  //  'type' => 'form',
+  //);
 
   // Add the ECDPanopoly app selection to the installation process
   $panopoly_server = array(
