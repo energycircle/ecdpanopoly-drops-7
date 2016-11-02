@@ -77,7 +77,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 13,
       ),
       'featured' => array(
         'label' => 'above',

@@ -86,9 +86,12 @@ function ec_a_b_testing_setup_strongarm() {
     'blog_post' => 0,
     'case_study' => 0,
     'distinction' => 0,
+    'distributor' => 0,
     'faq' => 0,
     'financing_option' => 0,
     'gallery' => 0,
+    'product_category' => 0,
+    'product_page' => 0,
     'review_site' => 0,
     'slide' => 0,
     'staff' => 0,
@@ -113,11 +116,11 @@ node/*/*';
   $strongarm->api_version = 1;
   $strongarm->name = 'content_experiments_roles';
   $strongarm->value = array(
+    2 => '2',
+    5 => '5',
+    3 => '3',
+    4 => '4',
     1 => 0,
-    2 => 0,
-    5 => 0,
-    3 => 0,
-    4 => 0,
   );
   $export['content_experiments_roles'] = $strongarm;
 

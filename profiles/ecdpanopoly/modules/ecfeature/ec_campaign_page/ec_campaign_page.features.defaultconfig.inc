@@ -911,7 +911,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 15,
+        'weight' => 14,
       ),
     ),
   );

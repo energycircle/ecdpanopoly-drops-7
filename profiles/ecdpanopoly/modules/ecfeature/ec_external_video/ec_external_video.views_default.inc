@@ -69,6 +69,14 @@ function ec_external_video_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'external_video' => 'external_video',
   );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
+  );
 
   /* Display: All videos */
   $handler = $view->new_display('panel_pane', 'All videos', 'panel_pane_1');

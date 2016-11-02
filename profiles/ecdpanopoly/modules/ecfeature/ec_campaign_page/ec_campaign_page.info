@@ -120,7 +120,6 @@ features[variable][] = weight_menu_campaign_page
 features[variable][] = weight_range_campaign_page
 features[variable][] = xmlsitemap_settings_entityform_campaign_form
 features[variable][] = xmlsitemap_settings_node_campaign_page
-features[views_view][] = campaign_page
 features[views_view][] = campaign_request
 features[weight][] = campaign_page
 features_exclude[dependencies][ctools] = ctools

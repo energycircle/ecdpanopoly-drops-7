@@ -95,6 +95,14 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'city_page' => 'city_page',
   );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
+  );
 
   /* Display: City Page - Description */
   $handler = $view->new_display('panel_pane', 'City Page - Description', 'panel_pane_1');
@@ -261,6 +269,14 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'blog_post' => 'blog_post',
   );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
+  );
 
   /* Display: CaseStudy Content */
   $handler = $view->new_display('panel_pane', 'CaseStudy Content', 'panel_pane_2');
@@ -324,6 +340,14 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'case_study' => 'case_study',
+  );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
   );
 
   /* Display: Testimonial Content */
@@ -447,6 +471,14 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'testimonial' => 'testimonial',
   );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
+  );
   $export['city_pages_featured_content'] = $view;
 
   $view = new view();
@@ -536,6 +568,14 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'city_page' => 'city_page',
+  );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
   );
 
   /* Display: City Page Linked Content */
@@ -757,6 +797,14 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'city_page' => 'city_page',
+  );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
   );
 
   /* Display: Service Area Map */
@@ -992,6 +1040,14 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'city_page' => 'city_page',
   );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
+  );
 
   /* Display: Citypage - Services */
   $handler = $view->new_display('panel_pane', 'Citypage - Services', 'panel_pane_1');
@@ -1046,6 +1102,14 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'service_category' => 'service_category',
+  );
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
+    'BPage' => 'BPage',
   );
   $export['city_pages_services'] = $view;
 
