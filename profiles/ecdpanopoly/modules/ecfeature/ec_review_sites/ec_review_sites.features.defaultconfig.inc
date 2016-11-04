@@ -227,10 +227,10 @@ function ec_review_sites_defaultconfig_field_default_fields() {
             'video' => 0,
           ),
           'browser_plugins' => array(
-            'media_default--media_browser_1' => 0,
+            'media_default--media_browser_1' => 'media_default--media_browser_1',
             'media_default--media_browser_my_files' => 0,
             'media_internet' => 0,
-            'upload' => 0,
+            'upload' => 'upload',
           ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,

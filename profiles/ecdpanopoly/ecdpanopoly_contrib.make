@@ -427,7 +427,7 @@ projects[content_experiments][patch][2759323] = https://www.drupal.org/files/iss
 projects[rdfx][patch][1176666] = https://drupal.org/files/find-arc-library-correctly-1176666-14.patch
 projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/issues/context_entity_field-context-entity-field-2307955-18.patch
 projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
-
+projects[node_authlink][patch][2684923] = https://www.drupal.org/files/issues/node_authlink-views-integration-2684923-3.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git

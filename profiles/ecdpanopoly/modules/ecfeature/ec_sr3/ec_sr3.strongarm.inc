@@ -392,7 +392,7 @@ function ec_sr3_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rh_node_redirect_sr3_service_review';
-  $strongarm->value = 'thank-you-your-review';
+  $strongarm->value = 'review-thank-you';
   $export['rh_node_redirect_sr3_service_review'] = $strongarm;
 
   $strongarm = new stdClass();

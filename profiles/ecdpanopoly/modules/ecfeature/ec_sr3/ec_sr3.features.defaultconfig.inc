@@ -12,7 +12,6 @@ function ec_sr3_defaultconfig_features() {
     'ec_sr3' => array(
       'feeds_importer_default' => 'feeds_importer_default',
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
       'views_default_views' => 'views_default_views',
     ),
   );
@@ -1237,36 +1236,6 @@ function ec_sr3_defaultconfig_field_default_fields() {
   t('SR3 recommendation');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_sr3_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'clear get5stars_reviews feeds'.
-  $permissions['clear get5stars_reviews feeds'] = array(
-    'name' => 'clear get5stars_reviews feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'import get5stars_reviews feeds'.
-  $permissions['import get5stars_reviews feeds'] = array(
-    'name' => 'import get5stars_reviews feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'unlock get5stars_reviews feeds'.
-  $permissions['unlock get5stars_reviews feeds'] = array(
-    'name' => 'unlock get5stars_reviews feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
-  return $permissions;
 }
 
 /**
