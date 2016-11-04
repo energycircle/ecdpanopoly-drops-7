@@ -274,7 +274,10 @@ projects[node_authlink][subdir] = eccontrib
 projects[node_authlink][version] = 1.1
 
 projects[node_clone][subdir] = eccontrib
-projects[node_clone][version] = 1.0
+projects[node_clone][version] = 1.x
+
+projects[node_buttons_edit][subdir] = eccontrib
+projects[node_buttons_edit][version] = 1.x
 
 projects[nodequeue][subdir] = eccontrib
 projects[nodequeue][version] = 2.1

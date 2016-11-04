@@ -181,7 +181,7 @@ function clone_node_prepopulate($original_node) {
       $form_state = array();
       $form_state['build_info']['args'] = array($node);
       form_load_include($form_state, 'inc', 'node', 'node.pages');
-      return drupal_build_form($node->type .'_node_form', $form_state);
+      return drupal_build_form($node->type . '_node_form', $form_state);
     }
   }
 }
@@ -245,8 +245,8 @@ function _clone_node_prepare($original_node, $prefix_title = FALSE, $account = N
   // Add an extra property as a flag.
   $node->clone_from_original_nid = $original_node->nid;
 
-  if (variable_get('clone_reset_'. $node->type, FALSE)) {
-    $node_options = variable_get('node_options_'. $node->type, array('status', 'promote'));
+  if (variable_get('clone_reset_' . $node->type, FALSE)) {
+    $node_options = variable_get('node_options_' . $node->type, array('status', 'promote'));
     // Fill in the default values.
     foreach (array('status', 'moderate', 'promote', 'sticky', 'revision') as $key) {
       // Cast to int since that's how they need to be saved to the DB.
