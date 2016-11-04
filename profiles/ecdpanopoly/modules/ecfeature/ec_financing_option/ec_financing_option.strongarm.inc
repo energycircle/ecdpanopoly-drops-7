@@ -41,23 +41,9 @@ function ec_financing_option_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_cancel_hide_warning_financing_option';
-  $strongarm->value = 0;
-  $export['content_type_extras_cancel_hide_warning_financing_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_preview_button_financing_option';
   $strongarm->value = 'Preview';
   $export['content_type_extras_preview_button_financing_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_remove_body_financing_option';
-  $strongarm->value = 0;
-  $export['content_type_extras_remove_body_financing_option'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -90,23 +76,9 @@ function ec_financing_option_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_button_financing_option';
-  $strongarm->value = 'Save';
-  $export['content_type_extras_save_button_financing_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_title_hide_financing_option';
   $strongarm->value = 0;
   $export['content_type_extras_title_hide_financing_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_top_buttons_financing_option';
-  $strongarm->value = array();
-  $export['content_type_extras_top_buttons_financing_option'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -134,71 +106,29 @@ function ec_financing_option_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__financing_option';
   $strongarm->value = array(
-    'view_modes' => array(
-      'teaser' => array(
-        'custom_settings' => TRUE,
-      ),
-      'show_this_block' => array(
-        'custom_settings' => TRUE,
-      ),
-      'grouped_teaser' => array(
-        'custom_settings' => TRUE,
-      ),
-      'featured' => array(
-        'custom_settings' => TRUE,
-      ),
-      'full' => array(
-        'custom_settings' => FALSE,
-      ),
-      'rss' => array(
-        'custom_settings' => FALSE,
-      ),
-      'search_index' => array(
-        'custom_settings' => FALSE,
-      ),
-      'search_result' => array(
-        'custom_settings' => FALSE,
-      ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
+    'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '8',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
-        ),
-        'redirect' => array(
           'weight' => '7',
         ),
-        'xmlsitemap' => array(
+        'redirect' => array(
           'weight' => '6',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '5',
         ),
       ),
       'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__financing_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'maxlength_js_financing_option';
-  $strongarm->value = '';
-  $export['maxlength_js_financing_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'maxlength_js_label_financing_option';
-  $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
-  $export['maxlength_js_label_financing_option'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -254,61 +184,40 @@ function ec_financing_option_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_financing_option';
   $strongarm->value = array(
     'status' => 1,
-    'help' => '',
     'view modes' => array(
       'page_manager' => array(
         'status' => 0,
-        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'default' => array(
         'status' => 1,
-        'substitute' => '',
         'default' => 1,
         'choice' => 0,
       ),
       'teaser' => array(
         'status' => 0,
-        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'show_this_block' => array(
         'status' => 0,
-        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'grouped_teaser' => array(
         'status' => 0,
-        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'featured' => array(
         'status' => 0,
-        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
     ),
   );
   $export['panelizer_defaults_node_financing_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:financing_option:default_selection';
-  $strongarm->value = 'node:financing_option:default:default';
-  $export['panelizer_node:financing_option:default_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_financing_option';
-  $strongarm->value = 'financing/[node:title]';
-  $export['pathauto_node_financing_option'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -323,20 +232,6 @@ function ec_financing_option_strongarm() {
   $strongarm->name = 'save_continue_financing_option';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_financing_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_draft_enabled_financing_option';
-  $strongarm->value = 1;
-  $export['save_draft_enabled_financing_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_draft_skip_required_financing_option';
-  $strongarm->value = 0;
-  $export['save_draft_skip_required_financing_option'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

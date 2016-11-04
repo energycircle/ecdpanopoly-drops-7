@@ -13,19 +13,13 @@ function ec_panopoly_page_overrides_panelizer_defaults() {
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
+  $panelizer->name = 'node:panopoly_page:home_default';
   $panelizer->title = 'Home Default';
   $panelizer->panelizer_type = 'node';
   $panelizer->panelizer_key = 'panopoly_page';
-  $panelizer->access = array();
-  $panelizer->view_mode = 'default';
-  $panelizer->name = 'node:panopoly_page:home_default';
-  $panelizer->css_id = '';
-  $panelizer->css_class = 'page-default';
-  $panelizer->css = '';
   $panelizer->no_blocks = FALSE;
-  $panelizer->title_element = 'H2';
-  $panelizer->link_to_entity = TRUE;
-  $panelizer->extra = '';
+  $panelizer->css_id = '';
+  $panelizer->css = '';
   $panelizer->pipeline = 'ipe';
   $panelizer->contexts = array(
     0 => array(
@@ -37,6 +31,12 @@ function ec_panopoly_page_overrides_panelizer_defaults() {
     ),
   );
   $panelizer->relationships = array();
+  $panelizer->access = array();
+  $panelizer->view_mode = 'default';
+  $panelizer->css_class = 'page-default';
+  $panelizer->title_element = 'H2';
+  $panelizer->link_to_entity = TRUE;
+  $panelizer->extra = '';
   $display = new panels_display();
   $display->layout = 'two_66_33';
   $display->layout_settings = array();
@@ -49,17 +49,11 @@ function ec_panopoly_page_overrides_panelizer_defaults() {
       'two_50_first' => NULL,
       'two_50_second' => NULL,
       'two_50_bottom' => NULL,
-      'two_66_33_top' => NULL,
-      'two_66_33_first' => NULL,
-      'two_66_33_second' => NULL,
-      'two_66_33_bottom' => NULL,
     ),
   );
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = '10c9e351-f69c-4629-b191-77b8b01f4f1c';
-  $display->storage_type = 'panelizer_default';
-  $display->storage_id = 'node:panopoly_page:home_default';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -160,29 +154,6 @@ function ec_panopoly_page_overrides_panelizer_defaults() {
   $pane->uuid = 'd7129c9f-b32a-4a86-a80e-891e37e2897e';
   $display->content['new-d7129c9f-b32a-4a86-a80e-891e37e2897e'] = $pane;
   $display->panels['two_66_33_second'][1] = 'new-d7129c9f-b32a-4a86-a80e-891e37e2897e';
-  $pane = new stdClass();
-  $pane->pid = 'new-8faf9cec-6b4e-49ff-82b4-7ac2fd99092e';
-  $pane->panel = 'two_66_33_second';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'testimonials-panel_pane_1';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'view_settings' => 'fields',
-    'header_type' => 'none',
-    'view_mode' => 'teaser',
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 2;
-  $pane->locks = array();
-  $pane->uuid = '8faf9cec-6b4e-49ff-82b4-7ac2fd99092e';
-  $display->content['new-8faf9cec-6b4e-49ff-82b4-7ac2fd99092e'] = $pane;
-  $display->panels['two_66_33_second'][2] = 'new-8faf9cec-6b4e-49ff-82b4-7ac2fd99092e';
   $pane = new stdClass();
   $pane->pid = 'new-e0d93093-20b4-42cd-bf23-6f2f487240a6';
   $pane->panel = 'two_66_33_top';

@@ -19,9 +19,13 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 6,
       ),
       'featured' => array(
         'label' => 'above',
@@ -82,7 +86,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'bundle' => 'panopoly_page',
     'default_value' => array(
       0 => array(
-        'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
+        'value' => '<p>[custom:phone-number]</p>',
         'format' => 'panopoly_wysiwyg_text',
       ),
     ),
@@ -92,9 +96,13 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 7,
       ),
       'featured' => array(
         'label' => 'above',
@@ -164,9 +172,13 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 12,
+        'module' => 'text',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
       ),
       'featured' => array(
         'label' => 'above',
@@ -219,7 +231,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 2,
     ),
   );
 
@@ -233,8 +245,13 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 4,
       ),
       'featured' => array(
