@@ -27,24 +27,6 @@ function ec_financing_option_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_node_info().
- */
-function ec_financing_option_node_info() {
-  $items = array(
-    'financing_option' => array(
-      'name' => t('Financing Option'),
-      'base' => 'node_content',
-      'description' => t('Used to display financial options on the site as well as pull them into other content.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-  );
-  drupal_alter('node_info', $items);
-  return $items;
-}
-
-/**
  * Implements hook_rdf_default_mappings().
  */
 function ec_financing_option_rdf_default_mappings() {
