@@ -9,136 +9,6 @@
  */
 function ec_base_content_uuid_features_default_content() {
   $nodes = array();
-
-  $nodes[] = array(
-  'title' => 403,
-  'log' => '',
-  'status' => 1,
-  'comment' => 0,
-  'promote' => 1,
-  'sticky' => 0,
-  'type' => 'panopoly_page',
-  'language' => 'und',
-  'created' => 1441986039,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '8a173786-9cf4-45e7-aebc-8def1c21123a',
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p>403</p>',
-        'summary' => '',
-        'format' => 'panopoly_wysiwyg_text',
-      ),
-    ),
-  ),
-  'field_featured_categories' => array(),
-  'field_featured_image' => array(),
-  'field_featured_status' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-  ),
-  'field_button_text' => array(),
-  'field_call_to_action' => array(),
-  'field_featured_video' => array(),
-  'field_ref_to_cta_form' => array(),
-  'field_a_b_test_page' => array(),
-  'field_ref_page_blog' => array(),
-  'field_ref_page_case_study' => array(),
-  'field_ref_page_faq' => array(),
-  'field_ref_page_testimonial' => array(),
-  'field_ref_page_promotions' => array(),
-  'rdf_mapping' => array(
-    'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
-    ),
-    'title' => array(
-      'predicates' => array(
-        0 => 'schema:name',
-      ),
-    ),
-    'created' => array(
-      'predicates' => array(
-        0 => 'dc:date',
-        1 => 'dc:created',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'changed' => array(
-      'predicates' => array(
-        0 => 'dc:modified',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'body' => array(
-      'predicates' => array(
-        0 => 'content:encoded',
-      ),
-    ),
-    'uid' => array(
-      'predicates' => array(
-        0 => 'sioc:has_creator',
-      ),
-      'type' => 'rel',
-    ),
-    'name' => array(
-      'predicates' => array(
-        0 => 'schema:name',
-      ),
-    ),
-    'comment_count' => array(
-      'predicates' => array(
-        0 => 'sioc:num_replies',
-      ),
-      'datatype' => 'xsd:integer',
-    ),
-    'last_activity' => array(
-      'predicates' => array(
-        0 => 'sioc:last_activity_date',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'field_call_to_action' => array(
-      'predicates' => array(),
-    ),
-    'field_featured_image' => array(
-      'predicates' => array(
-        0 => 'schema:primaryImageOfPage',
-        1 => 'foaf:primaryImage',
-      ),
-      'type' => 'rel',
-    ),
-    'url' => array(
-      'predicates' => array(
-        0 => 'schema:url',
-      ),
-      'type' => 'rel',
-    ),
-    'field_ref_page_testimonial' => array(
-      'predicates' => array(),
-    ),
-  ),
-  'path' => array(
-    'pathauto' => 0,
-  ),
-  'panelizer' => array(
-    'default' => array(
-      'name' => 'node:panopoly_page:default:default',
-    ),
-  ),
-  'content_experiments' => NULL,
-  'machine_name' => FALSE,
-  'pathauto_perform_alias' => FALSE,
-  'date' => '2015-09-11 11:40:39 -0400',
-  'user_uuid' => '62abf0bb-389a-413c-9ad8-5d05b476fb5b',
-);
   $nodes[] = array(
   'title' => 'Home Page',
   'log' => '',
@@ -281,7 +151,137 @@ function ec_base_content_uuid_features_default_content() {
   'pathauto_perform_alias' => FALSE,
   'date' => '2015-09-11 11:40:39 -0400',
   'user_uuid' => '62abf0bb-389a-413c-9ad8-5d05b476fb5b',
+  );
+  $nodes[] = array(
+  'title' => 403,
+  'log' => '',
+  'status' => 1,
+  'comment' => 0,
+  'promote' => 1,
+  'sticky' => 0,
+  'type' => 'panopoly_page',
+  'language' => 'und',
+  'created' => 1441986039,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '8a173786-9cf4-45e7-aebc-8def1c21123a',
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p>403</p>',
+        'summary' => '',
+        'format' => 'panopoly_wysiwyg_text',
+      ),
+    ),
+  ),
+  'field_featured_categories' => array(),
+  'field_featured_image' => array(),
+  'field_featured_status' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_button_text' => array(),
+  'field_call_to_action' => array(),
+  'field_featured_video' => array(),
+  'field_ref_to_cta_form' => array(),
+  'field_a_b_test_page' => array(),
+  'field_ref_page_blog' => array(),
+  'field_ref_page_case_study' => array(),
+  'field_ref_page_faq' => array(),
+  'field_ref_page_testimonial' => array(),
+  'field_ref_page_promotions' => array(),
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'schema:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'field_call_to_action' => array(
+      'predicates' => array(),
+    ),
+    'field_featured_image' => array(
+      'predicates' => array(
+        0 => 'schema:primaryImageOfPage',
+        1 => 'foaf:primaryImage',
+      ),
+      'type' => 'rel',
+    ),
+    'url' => array(
+      'predicates' => array(
+        0 => 'schema:url',
+      ),
+      'type' => 'rel',
+    ),
+    'field_ref_page_testimonial' => array(
+      'predicates' => array(),
+    ),
+  ),
+  'path' => array(
+    'pathauto' => 0,
+  ),
+  'panelizer' => array(
+    'default' => array(
+      'name' => 'node:panopoly_page:default:default',
+    ),
+  ),
+  'content_experiments' => NULL,
+  'machine_name' => FALSE,
+  'pathauto_perform_alias' => FALSE,
+  'date' => '2015-09-11 11:40:39 -0400',
+  'user_uuid' => '62abf0bb-389a-413c-9ad8-5d05b476fb5b',
 );
+
   $nodes[] = array(
   'title' => 404,
   'log' => '',

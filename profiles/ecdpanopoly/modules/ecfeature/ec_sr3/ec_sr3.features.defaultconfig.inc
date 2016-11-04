@@ -10,11 +10,98 @@
 function ec_sr3_defaultconfig_features() {
   return array(
     'ec_sr3' => array(
+      'feeds_importer_default' => 'feeds_importer_default',
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
+      'user_default_permissions' => 'user_default_permissions',
       'views_default_views' => 'views_default_views',
     ),
   );
+}
+
+/**
+ * Implements hook_defaultconfig_feeds_importer_default().
+ */
+function ec_sr3_defaultconfig_feeds_importer_default() {
+  $export = array();
+
+  $feeds_importer = new stdClass();
+  $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
+  $feeds_importer->api_version = 1;
+  $feeds_importer->id = 'get5stars_reviews';
+  $feeds_importer->config = array(
+    'name' => 'Get5Stars Reviews',
+    'description' => 'Import Get5Stars reviews from csv export',
+    'fetcher' => array(
+      'plugin_key' => 'FeedsFileFetcher',
+      'config' => array(
+        'allowed_extensions' => 'txt csv tsv xml opml',
+        'delete_uploaded_file' => FALSE,
+        'direct' => FALSE,
+        'directory' => 'private://feeds',
+        'allowed_schemes' => array(
+          0 => 'public',
+          1 => 'private',
+        ),
+      ),
+    ),
+    'parser' => array(
+      'plugin_key' => 'FeedsCSVParser',
+      'config' => array(
+        'delimiter' => ',',
+        'encoding' => 'UTF-8',
+        'no_headers' => 0,
+      ),
+    ),
+    'processor' => array(
+      'plugin_key' => 'FeedsNodeProcessor',
+      'config' => array(
+        'expire' => '-1',
+        'author' => 0,
+        'authorize' => 1,
+        'mappings' => array(
+          0 => array(
+            'source' => 'Name',
+            'target' => 'field_sr3_name',
+            'unique' => FALSE,
+            'language' => 'und',
+          ),
+          1 => array(
+            'source' => 'Rating',
+            'target' => 'field_sr3_rating_value',
+            'unique' => FALSE,
+            'language' => 'und',
+          ),
+          2 => array(
+            'source' => 'Feedback',
+            'target' => 'field_sr3_service_review',
+            'unique' => FALSE,
+            'language' => 'und',
+          ),
+          3 => array(
+            'source' => 'Received',
+            'target' => 'created',
+            'unique' => FALSE,
+          ),
+        ),
+        'insert_new' => '1',
+        'update_existing' => '0',
+        'update_non_existent' => 'skip',
+        'input_format' => 'plain_text',
+        'skip_hash_check' => 0,
+        'bundle' => 'sr3_service_review',
+        'language' => 'und',
+      ),
+    ),
+    'content_type' => '',
+    'update' => 0,
+    'import_period' => '-1',
+    'expire_period' => 3600,
+    'import_on_create' => 1,
+    'process_in_background' => 0,
+  );
+  $export['get5stars_reviews'] = $feeds_importer;
+
+  return $export;
 }
 
 /**
@@ -64,6 +151,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 7,
@@ -160,6 +248,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 3,
@@ -247,6 +336,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 6,
@@ -343,6 +433,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 4,
@@ -431,6 +522,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 2,
@@ -519,6 +611,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 9,
@@ -613,6 +706,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 5,
@@ -701,6 +795,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 1,
@@ -786,6 +881,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 11,
@@ -879,6 +975,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 10,
@@ -981,6 +1078,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 12,
@@ -1068,6 +1166,7 @@ function ec_sr3_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 8,
@@ -1141,117 +1240,33 @@ function ec_sr3_defaultconfig_field_default_fields() {
 }
 
 /**
- * Implements hook_defaultconfig_strongarm().
+ * Implements hook_defaultconfig_user_default_permissions().
  */
-function ec_sr3_defaultconfig_strongarm() {
-  $export = array();
+function ec_sr3_defaultconfig_user_default_permissions() {
+  $permissions = array();
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_sr3_service_review';
-  $strongarm->value = 'edit-rabbit-hole';
-  $export['additional_settings__active_tab_sr3_service_review'] = $strongarm;
+  // Exported permission: 'clear get5stars_reviews feeds'.
+  $permissions['clear get5stars_reviews feeds'] = array(
+    'name' => 'clear get5stars_reviews feeds',
+    'roles' => array(),
+    'module' => 'feeds',
+  );
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'ant_pattern_sr3_service_review';
-  $strongarm->value = 'Review [current-date:short]';
-  $export['ant_pattern_sr3_service_review'] = $strongarm;
+  // Exported permission: 'import get5stars_reviews feeds'.
+  $permissions['import get5stars_reviews feeds'] = array(
+    'name' => 'import get5stars_reviews feeds',
+    'roles' => array(),
+    'module' => 'feeds',
+  );
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'ant_php_sr3_service_review';
-  $strongarm->value = 0;
-  $export['ant_php_sr3_service_review'] = $strongarm;
+  // Exported permission: 'unlock get5stars_reviews feeds'.
+  $permissions['unlock get5stars_reviews feeds'] = array(
+    'name' => 'unlock get5stars_reviews feeds',
+    'roles' => array(),
+    'module' => 'feeds',
+  );
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'ant_sr3_service_review';
-  $strongarm->value = '1';
-  $export['ant_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'auto_menutitle_sr3_service_review';
-  $strongarm->value = 0;
-  $export['auto_menutitle_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'clear_all_sr3_service_review';
-  $strongarm->value = 0;
-  $export['clear_all_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_cancel_sr3_service_review';
-  $strongarm->value = '0';
-  $export['content_type_extras_cancel_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_preview_button_sr3_service_review';
-  $strongarm->value = 'Preview';
-  $export['content_type_extras_preview_button_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_button_sr3_service_review';
-  $strongarm->value = 'Save and Edit';
-  $export['content_type_extras_save_and_edit_button_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_edit_sr3_service_review';
-  $strongarm->value = '0';
-  $export['content_type_extras_save_and_edit_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_and_new_button_sr3_service_review';
-  $strongarm->value = 'Save and New';
-  $export['content_type_extras_save_and_new_button_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_default_sr3_service_review';
-  $strongarm->value = '0';
-  $export['weight_default_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_enabled_sr3_service_review';
-  $strongarm->value = '0';
-  $export['weight_enabled_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_menu_sr3_service_review';
-  $strongarm->value = '0';
-  $export['weight_menu_sr3_service_review'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'weight_range_sr3_service_review';
-  $strongarm->value = '20';
-  $export['weight_range_sr3_service_review'] = $strongarm;
-
-  return $export;
+  return $permissions;
 }
 
 /**
@@ -1312,7 +1327,7 @@ function ec_sr3_defaultconfig_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Node Auth link: Authkey */
   $handler->display->display_options['fields']['authkey']['id'] = 'authkey';
   $handler->display->display_options['fields']['authkey']['table'] = 'node_authlink_nodes';
   $handler->display->display_options['fields']['authkey']['field'] = 'authkey';

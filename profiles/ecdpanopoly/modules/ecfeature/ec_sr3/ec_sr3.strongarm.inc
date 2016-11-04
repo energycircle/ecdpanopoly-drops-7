@@ -55,6 +55,13 @@ function ec_sr3_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_cancel_hide_warning_sr3_service_review';
+  $strongarm->value = 0;
+  $export['content_type_extras_cancel_hide_warning_sr3_service_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_cancel_sr3_service_review';
   $strongarm->value = '0';
   $export['content_type_extras_cancel_sr3_service_review'] = $strongarm;
@@ -97,9 +104,23 @@ function ec_sr3_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_save_button_sr3_service_review';
+  $strongarm->value = 'Save';
+  $export['content_type_extras_save_button_sr3_service_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_title_hide_sr3_service_review';
   $strongarm->value = 0;
   $export['content_type_extras_title_hide_sr3_service_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_type_extras_top_buttons_sr3_service_review';
+  $strongarm->value = array();
+  $export['content_type_extras_top_buttons_sr3_service_review'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -279,38 +300,8 @@ function ec_sr3_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_sr3_service_review';
   $strongarm->value = array(
     'status' => 0,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'show_this_block' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'grouped_teaser' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-    ),
+    'help' => '',
+    'view modes' => array(),
   );
   $export['panelizer_defaults_node_sr3_service_review'] = $strongarm;
 
@@ -380,7 +371,7 @@ function ec_sr3_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rh_node_action_sr3_service_review';
-  $strongarm->value = '0';
+  $strongarm->value = '3';
   $export['rh_node_action_sr3_service_review'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -410,6 +401,20 @@ function ec_sr3_strongarm() {
   $strongarm->name = 'save_continue_sr3_service_review';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_sr3_service_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_draft_enabled_sr3_service_review';
+  $strongarm->value = 1;
+  $export['save_draft_enabled_sr3_service_review'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_draft_skip_required_sr3_service_review';
+  $strongarm->value = 0;
+  $export['save_draft_skip_required_sr3_service_review'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

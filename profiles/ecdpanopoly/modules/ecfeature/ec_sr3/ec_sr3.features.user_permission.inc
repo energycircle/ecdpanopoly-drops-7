@@ -24,6 +24,13 @@ function ec_sr3_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'clear get5stars_reviews feeds'.
+  $permissions['clear get5stars_reviews feeds'] = array(
+    'name' => 'clear get5stars_reviews feeds',
+    'roles' => array(),
+    'module' => 'feeds',
+  );
+
   // Exported permission: 'create sr3_service_review content'.
   $permissions['create sr3_service_review content'] = array(
     'name' => 'create sr3_service_review content',
@@ -78,6 +85,20 @@ function ec_sr3_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'import get5stars_reviews feeds'.
+  $permissions['import get5stars_reviews feeds'] = array(
+    'name' => 'import get5stars_reviews feeds',
+    'roles' => array(),
+    'module' => 'feeds',
+  );
+
+  // Exported permission: 'unlock get5stars_reviews feeds'.
+  $permissions['unlock get5stars_reviews feeds'] = array(
+    'name' => 'unlock get5stars_reviews feeds',
+    'roles' => array(),
+    'module' => 'feeds',
   );
 
   return $permissions;
