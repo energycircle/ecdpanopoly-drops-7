@@ -20,11 +20,7 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
     'choice' => 0,
   );
   $overrides["variable.panelizer_defaults_node_panopoly_page.value|view modes|page_manager|status"] = 0;
-  $overrides["variable.panelizer_defaults_node_panopoly_page.value|view modes|search_result"] = array(
-    'status' => 0,
-    'default' => 0,
-    'choice' => 0,
-  );
+  $overrides["variable.panelizer_defaults_node_panopoly_page.value|view modes|search_result|substitute"]["DELETED"] = TRUE;
   $overrides["variable.panelizer_defaults_node_panopoly_page.value|view modes|show_this_block"] = array(
     'status' => 0,
     'default' => 0,

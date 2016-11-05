@@ -23,6 +23,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'text_default',
         'weight' => 6,
@@ -100,6 +101,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'text_default',
         'weight' => 7,
@@ -176,6 +178,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
         ),
         'type' => 'text_default',
         'weight' => 13,
@@ -231,7 +234,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 
@@ -249,6 +252,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'settings' => array(
           'field_multiple_limit' => -1,
           'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',

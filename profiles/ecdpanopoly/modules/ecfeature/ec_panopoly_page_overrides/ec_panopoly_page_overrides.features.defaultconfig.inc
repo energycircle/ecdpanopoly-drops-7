@@ -11,6 +11,8 @@ function ec_panopoly_page_overrides_defaultconfig_features() {
   return array(
     'ec_panopoly_page_overrides' => array(
       'field_default_fields' => 'field_default_fields',
+      'field_group_info' => 'field_group_info',
+      'metatag_config_default' => 'metatag_config_default',
     ),
   );
 }
@@ -65,6 +67,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 1,
@@ -75,6 +78,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 400,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -98,6 +102,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_trimmed',
@@ -115,6 +120,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -138,7 +144,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => 7,
       ),
     ),
   );
@@ -151,6 +157,9 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_button_text',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -184,6 +193,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 6,
@@ -291,6 +301,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 7,
@@ -402,6 +413,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 3,
@@ -449,7 +461,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 2,
+        'weight' => 4,
       ),
     ),
   );
@@ -495,6 +507,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => '',
             'image_style' => 'panopoly_image_half',
           ),
@@ -507,6 +520,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 'panopoly_image_half',
           ),
@@ -531,6 +545,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 'panopoly_image_quarter',
           ),
@@ -549,6 +564,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 'panopoly_image_quarter',
           ),
@@ -593,7 +609,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => 1,
+        'weight' => 3,
       ),
     ),
   );
@@ -640,6 +656,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'list_default',
           'weight' => 2,
@@ -689,7 +706,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 3,
+        'weight' => 6,
       ),
     ),
   );
@@ -735,6 +752,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 13,
@@ -790,7 +808,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 5,
       ),
     ),
   );
@@ -803,6 +821,9 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'entityform_type' => array(
           'columns' => array(
@@ -852,6 +873,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
@@ -927,4 +949,109 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
   t('Primary Image');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_field_group_info().
+ */
+function ec_panopoly_page_overrides_defaultconfig_field_group_info() {
+  $field_groups = array();
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_edit_content|node|panopoly_page|form';
+  $field_group->group_name = 'group_edit_content';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'panopoly_page';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Edit Content',
+    'weight' => '2',
+    'children' => array(
+      0 => 'group_cta_form',
+      1 => 'group_shown_on_this_page',
+      2 => 'group_general',
+    ),
+    'format_type' => 'htabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => 'group-edit-content field-group-htabs',
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_edit_content|node|panopoly_page|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_general|node|panopoly_page|form';
+  $field_group->group_name = 'group_general';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'panopoly_page';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_edit_content';
+  $field_group->data = array(
+    'label' => 'General',
+    'weight' => '14',
+    'children' => array(
+      0 => 'body',
+      1 => 'field_featured_categories',
+      2 => 'field_featured_image',
+      3 => 'field_featured_status',
+      4 => 'field_featured_video',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-general field-group-htab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_general|node|panopoly_page|form'] = $field_group;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Edit Content');
+  t('General');
+
+  return $field_groups;
+}
+
+/**
+ * Implements hook_defaultconfig_metatag_config_default().
+ */
+function ec_panopoly_page_overrides_defaultconfig_metatag_config_default() {
+  $export = array();
+
+  $config = new stdClass();
+  $config->disabled = FALSE; /* Edit this to true to make a default config disabled initially */
+  $config->api_version = 1;
+  $config->instance = 'node';
+  $config->config = array(
+    'title' => array(
+      'value' => '[node:title] | [site:name]',
+    ),
+    'description' => array(
+      'value' => '[node:summary]',
+    ),
+    'author' => array(
+      'value' => '[node:author:field_google_url]',
+    ),
+    'og:title' => array(
+      'value' => '[node:title]',
+    ),
+    'og:description' => array(
+      'value' => '[node:summary]',
+    ),
+  );
+  $export['node'] = $config;
+
+  return $export;
 }

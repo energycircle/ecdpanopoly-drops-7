@@ -11,6 +11,7 @@ function ec_financing_option_defaultconfig_features() {
   return array(
     'ec_financing_option' => array(
       'field_default_fields' => 'field_default_fields',
+      'field_group_info' => 'field_group_info',
     ),
   );
 }
@@ -31,6 +32,9 @@ function ec_financing_option_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -62,6 +66,7 @@ function ec_financing_option_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 0,
@@ -90,6 +95,7 @@ function ec_financing_option_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -118,7 +124,292 @@ function ec_financing_option_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 2,
+        'weight' => 4,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-financing_option-field_a_b_test_page'.
+  $fields['node-financing_option-field_a_b_test_page'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 2,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_a_b_test_page',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'BPage' => 'Experiment Page (B Page)',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => 0,
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'financing_option',
+      'default_value' => NULL,
+      'default_value_label_token' => 0,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 6,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_a_b_test_page',
+      'label' => 'A/B Test Page',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => 11,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-financing_option-field_button_text'.
+  $fields['node-financing_option-field_button_text'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_button_text',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => 0,
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'financing_option',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 4,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_button_text',
+      'label' => 'Button Text',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+        'weight' => 12,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-financing_option-field_call_to_action'.
+  $fields['node-financing_option-field_call_to_action'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_call_to_action',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'financing_option',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_call_to_action',
+      'label' => 'Call to Action',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
+        'text_processing' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => 5,
+        ),
+        'type' => 'text_textarea',
+        'weight' => 10,
       ),
     ),
   );
@@ -165,6 +456,7 @@ function ec_financing_option_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'file_default',
           'weight' => 3,
@@ -212,7 +504,7 @@ function ec_financing_option_defaultconfig_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
@@ -259,6 +551,7 @@ function ec_financing_option_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'link_default',
           'weight' => 2,
@@ -325,7 +618,7 @@ function ec_financing_option_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 4,
+        'weight' => 7,
       ),
     ),
   );
@@ -371,6 +664,7 @@ function ec_financing_option_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => '',
             'image_style' => '',
           ),
@@ -452,18 +746,235 @@ function ec_financing_option_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 1,
+        'weight' => 3,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-financing_option-field_ref_to_cta_form'.
+  $fields['node-financing_option-field_ref_to_cta_form'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'entityform_type' => array(
+          'columns' => array(
+            'target_id' => 'id',
+          ),
+          'table' => 'entityform_type',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(),
+        ),
+        'target_type' => 'entityform_type',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'financing_option',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 6,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_to_cta_form',
+      'label' => 'CTA form',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 11,
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A/B Test Page');
   t('Body');
+  t('Button Text');
+  t('CTA form');
+  t('Call to Action');
   t('Enter a full url to a third-party web page. Enter the link text in the link\'s title field, such as "Visit ABC Company."');
   t('Forms');
   t('Link');
   t('Logo');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_field_group_info().
+ */
+function ec_financing_option_defaultconfig_field_group_info() {
+  $field_groups = array();
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_cta_form|node|financing_option|form';
+  $field_group->group_name = 'group_cta_form';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'financing_option';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_edit_content';
+  $field_group->data = array(
+    'label' => 'CTA Form',
+    'weight' => '8',
+    'children' => array(
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-cta-form field-group-htab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_cta_form|node|financing_option|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_edit_content|node|financing_option|form';
+  $field_group->group_name = 'group_edit_content';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'financing_option';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Edit Content',
+    'weight' => '2',
+    'children' => array(
+      0 => 'group_show_this_on',
+      1 => 'group_general',
+      2 => 'group_cta_form',
+    ),
+    'format_type' => 'htabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => 'group-edit-content field-group-htabs',
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_edit_content|node|financing_option|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_general|node|financing_option|form';
+  $field_group->group_name = 'group_general';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'financing_option';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_edit_content';
+  $field_group->data = array(
+    'label' => 'General',
+    'weight' => '7',
+    'children' => array(
+      0 => 'body',
+      1 => 'field_financing_forms',
+      2 => 'field_financing_link',
+      3 => 'field_financing_logo',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-general field-group-htab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_general|node|financing_option|form'] = $field_group;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('CTA Form');
+  t('Edit Content');
+  t('General');
+
+  return $field_groups;
 }
