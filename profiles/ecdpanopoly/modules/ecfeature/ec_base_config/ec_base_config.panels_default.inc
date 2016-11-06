@@ -121,6 +121,7 @@ function ec_base_config_default_panels_mini() {
     'body' => '<p>[social:facebook]&nbsp;[social:twitter]&nbsp;[social:google]</p>',
     'format' => 'panopoly_wysiwyg_text',
     'substitute' => TRUE,
+    'name' => 'social_media_links',
   );
   $pane->cache = array();
   $pane->style = array(

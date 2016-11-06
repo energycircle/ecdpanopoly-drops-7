@@ -20,6 +20,12 @@ projects[ec_article][type] = module
 projects[ec_article][subdir] = ecfeature
 projects[ec_article][version] = 1.x
 
+projects[ec_audience][download][type] = git
+projects[ec_audience][download][url] = https://github.com/energycircle/ec_audience.git
+projects[ec_audience][type] = module
+projects[ec_audience][subdir] = ecfeature
+projects[ec_audience][version] = 1.x
+
 #projects[ec_awards][download][type] = git
 #projects[ec_awards][download][url] = https://github.com/energycircle/ec_awards.git
 #projects[ec_awards][type] = module
