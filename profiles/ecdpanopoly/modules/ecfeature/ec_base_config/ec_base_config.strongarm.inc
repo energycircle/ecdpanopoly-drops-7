@@ -309,10 +309,6 @@ campaign-form-entityform-edit-form';
       0 => 'fieldable_panels_panes',
       1 => 'fpid',
     ),
-    'field_collection_item' => array(
-      0 => 'field_collection_item',
-      1 => 'item_id',
-    ),
     'redirect' => array(
       0 => 'redirect',
       1 => 'rid',
@@ -1260,20 +1256,6 @@ campaign-form-entityform-edit-form';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'override_sharethis';
-  $strongarm->value = '';
-  $export['override_sharethis'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'override_sharethis&quot';
-  $strongarm->value = '';
-  $export['override_sharethis&quot'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_case';
   $strongarm->value = '1';
   $export['pathauto_case'] = $strongarm;
@@ -1592,37 +1574,9 @@ campaign-form-entityform-edit-form';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_button_option';
-  $strongarm->value = 'stbc_custom';
-  $export['sharethis_button_option'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_comments';
   $strongarm->value = FALSE;
   $export['sharethis_comments'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_fastshare';
-  $strongarm->value = 1;
-  $export['sharethis_fastshare'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_late_load';
-  $strongarm->value = 1;
-  $export['sharethis_late_load'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_location';
-  $strongarm->value = 'content';
-  $export['sharethis_location'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -1635,27 +1589,6 @@ campaign-form-entityform-edit-form';
     'Facebook Send:fbsend' => 'Facebook Send:fbsend',
   );
   $export['sharethis_option_extras'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_option_servicepopup';
-  $strongarm->value = 0;
-  $export['sharethis_option_servicepopup'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_publisherID';
-  $strongarm->value = 'dr-f0233f01-447c-a019-17b5-3995136af89c';
-  $export['sharethis_publisherID'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_weight';
-  $strongarm->value = '10';
-  $export['sharethis_weight'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
