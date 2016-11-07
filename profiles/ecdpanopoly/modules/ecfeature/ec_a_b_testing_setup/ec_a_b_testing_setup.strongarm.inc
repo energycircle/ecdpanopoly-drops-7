@@ -74,6 +74,7 @@ function ec_a_b_testing_setup_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'content_experiments_node_types';
   $strongarm->value = array(
+    'audience' => 'audience',
     'campaign_page' => 'campaign_page',
     'city_page' => 'city_page',
     'external_video' => 'external_video',
@@ -81,19 +82,16 @@ function ec_a_b_testing_setup_strongarm() {
     'service' => 'service',
     'service_category' => 'service_category',
     'service_group' => 'service_group',
+    'slide' => 'slide',
     'panopoly_page' => 'panopoly_page',
     'article' => 0,
     'blog_post' => 0,
     'case_study' => 0,
     'distinction' => 0,
-    'distributor' => 0,
     'faq' => 0,
     'financing_option' => 0,
     'gallery' => 0,
-    'product_category' => 0,
-    'product_page' => 0,
     'review_site' => 0,
-    'slide' => 0,
     'staff' => 0,
     'testimonial' => 0,
     'panopoly_landing_page' => 0,
@@ -121,6 +119,7 @@ node/*/*';
     3 => '3',
     4 => '4',
     1 => 0,
+    6 => 0,
   );
   $export['content_experiments_roles'] = $strongarm;
 
