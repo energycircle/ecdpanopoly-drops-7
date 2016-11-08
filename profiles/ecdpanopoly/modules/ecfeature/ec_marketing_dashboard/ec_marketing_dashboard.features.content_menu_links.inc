@@ -10,17 +10,13 @@
 function ec_marketing_dashboard_content_menu_links_defaults() {
   $menu_links = array();
 
-  // Exported menu link: management:node/2
-  $menu_links['management:node/2'] = array(
+  // Exported menu link: management:node/1
+  $menu_links['management:node/1'] = array(
     'menu_name' => 'management',
-    'link_path' => 'node/2',
+    'link_path' => 'node/1',
     'router_path' => 'node/%',
-    'link_title' => 'Custom Dashboard',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
+    'link_title' => 'Marketing Dashboard',
+    'options' => array(),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
@@ -31,7 +27,7 @@ function ec_marketing_dashboard_content_menu_links_defaults() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Custom Dashboard');
+  t('Marketing Dashboard');
 
 
   return $menu_links;

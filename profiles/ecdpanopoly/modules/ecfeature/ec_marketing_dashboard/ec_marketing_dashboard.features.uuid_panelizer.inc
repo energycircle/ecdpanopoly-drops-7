@@ -31,7 +31,7 @@ function ec_marketing_dashboard_uuid_features_default_panelizer() {
   $display->title = '%node:title';
   $display->uuid = '5464da8b-9174-42e0-9e98-90cca0a8c98f';
   $display->storage_type = 'panelizer_entity';
-  $display->storage_id = 'node:2:page_manager';
+  $display->storage_id = 'node:1:page_manager';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();

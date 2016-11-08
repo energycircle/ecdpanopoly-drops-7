@@ -11,7 +11,7 @@ function ec_marketing_dashboard_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
-  'title' => 'Custom Dashboard',
+  'title' => 'Marketing Dashboard',
   'log' => '',
   'status' => 1,
   'comment' => 0,
@@ -23,7 +23,6 @@ function ec_marketing_dashboard_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '816df285-dd57-45b9-a2bd-08e22de6d218',
-  'field_a_b_test_page' => array(),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -80,7 +79,7 @@ function ec_marketing_dashboard_uuid_features_default_content() {
     ),
   ),
   'path' => array(
-    'pathauto' => 0,
+    'pathauto' => 1,
   ),
   'panelizer' => array(
     'page_manager' => array(
@@ -100,11 +99,10 @@ function ec_marketing_dashboard_uuid_features_default_content() {
       'did_uuid' => '5464da8b-9174-42e0-9e98-90cca0a8c98f',
     ),
   ),
-  'content_experiments' => '',
   'machine_name' => FALSE,
   'pathauto_perform_alias' => FALSE,
   'date' => '2016-11-07 12:02:33 -0500',
-  'user_uuid' => '6252500c-de30-4d0d-984d-e080ea5b0932',
+  'user_uuid' => '7cda85ad-3953-4a05-b49b-06c12af0bdc9',
 );
   return $nodes;
 }
