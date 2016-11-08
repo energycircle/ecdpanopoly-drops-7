@@ -198,6 +198,9 @@ projects[globalredirect][version] = 1.5
 projects[google_analytics][subdir] = eccontrib
 projects[google_analytics][version] = 2.3
 
+projects[google_analytics_reports][subdir] = eccontrib
+projects[google_analytics_reports][version] = 3.x
+
 projects[gmap][subdir] = eccontrib
 projects[gmap][version] = 2.11
 
