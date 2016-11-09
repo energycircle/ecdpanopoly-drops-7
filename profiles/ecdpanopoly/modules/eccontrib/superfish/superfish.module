@@ -82,6 +82,20 @@ function superfish_block_configure($delta = 0) {
   }
   $menu_default += menu_parent_options(menu_get_menus(), array('mlid' => 0));
 
+  $form['sf-menu']['superfish_menu_start_level_' . $delta] = array(
+    '#type' => 'select',
+    '#title' => t('Menu starting level'),
+    '#description' => t('The menu starting level you want to be displayed using Superfish.') . ' (' . t('Default') . ': <0>)',
+    '#default_value' => variable_get('superfish_menu_start_level_' . $delta, '0'),
+    '#options' => drupal_map_assoc(range(-1, 10)),
+  );
+  $form['sf-menu']['superfish_menu_start_level_follow_' . $delta] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Make the starting level follow the active menu item'),
+    '#description' => t('Make the starting level follow the active menu item') . ' (' . t('Default') . ': <no>)',
+    '#default_value' => variable_get('superfish_menu_start_level_follow_' . $delta, '0'),
+  );
+
   $form['superfish_name_' . $delta] = array(
     '#type' => 'textfield',
     '#title' => t('Block description'),
@@ -761,6 +775,8 @@ function superfish_block_configure($delta = 0) {
 function superfish_block_save($delta = 0, $edit = array()) {
   variable_set('superfish_name_' . $delta, $edit['superfish_name_' . $delta]);
   variable_set('superfish_menu_' . $delta, $edit['superfish_menu_' . $delta]);
+  variable_set('superfish_menu_start_level_' . $delta, $edit['superfish_menu_start_level_' . $delta]);
+  variable_set('superfish_menu_start_level_follow_' . $delta, $edit['superfish_menu_start_level_follow_' . $delta]);
   variable_set('superfish_depth_' . $delta, $edit['superfish_depth_' . $delta]);
   variable_set('superfish_type_' . $delta, $edit['superfish_type_' . $delta]);
   variable_set('superfish_style_' . $delta, $edit['superfish_style_' . $delta]);
@@ -1177,10 +1193,15 @@ function superfish_block_view($delta = 0) {
 
   list($menu_name, $mlid) = explode(':', $menu_name);
 
+  $menu_start_level = variable_get('superfish_menu_start_level_' . $delta, 0);
+  $menu_start_level_follow = variable_get('superfish_menu_start_level_follow_' . $delta, 0);
+
   $vars = array(
     'id' => $delta,
     'menu_name' => $menu_name,
     'mlid' => $mlid,
+    'menu_start_level' => $menu_start_level,
+    'menu_start_level_follow' => $menu_start_level_follow,
     'sfsettings' => $sfsettings,
   );
   if ($block = theme('superfish', $vars)) {
@@ -1764,9 +1785,38 @@ function theme_superfish($variables) {
   $id = $variables['id'];
   $menu_name = $variables['menu_name'];
   $mlid = $variables['mlid'];
+  $menu_start_level = $variables['menu_start_level'];
+  $menu_start_level_follow = $variables['menu_start_level_follow'];
   $sfsettings = $variables['sfsettings'];
 
-  $menu = menu_tree_all_data($menu_name);
+  if ($menu_start_level == 0) {
+    $menu = menu_tree_all_data($menu_name);
+  } else {
+    #ugly quick dev! not tested against module regular bahaviour
+    #get the root element according to the menu_start_level
+    if ($menu_start_level_follow == '0') {
+      $at =  menu_get_active_trail();
+      if (array_key_exists($menu_start_level, $at)){
+        $active_trail = $at[$menu_start_level];
+      } else {
+        return;
+      }
+      $menu_properties = array(
+        'min_depth' => $active_trail['depth']+1,
+              'conditions' => array('p'.$menu_start_level=>$active_trail['mlid']),
+          );
+          $menu = menu_build_tree($menu_name, $menu_properties);
+      } else {
+      $active_trail    = array_pop(menu_get_active_trail());
+      $menu_properties = array(
+        'min_depth' => $active_trail['depth']+1,
+        'conditions' => array('plid'=>$active_trail['mlid']),
+      );
+      $menu = menu_build_tree($menu_name, $menu_properties);
+    }
+
+
+  }
 
   if (function_exists('i18n_menu_localize_tree')) {
     $menu = i18n_menu_localize_tree($menu);
