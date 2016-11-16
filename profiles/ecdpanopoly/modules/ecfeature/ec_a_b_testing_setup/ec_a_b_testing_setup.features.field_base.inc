@@ -62,6 +62,7 @@ function ec_a_b_testing_setup_field_default_field_bases() {
           'campaign_page' => 'campaign_page',
           'city_page' => 'city_page',
           'external_video' => 'external_video',
+          'financing_option' => 'financing_option',
           'panopoly_page' => 'panopoly_page',
           'promotion' => 'promotion',
           'service' => 'service',
