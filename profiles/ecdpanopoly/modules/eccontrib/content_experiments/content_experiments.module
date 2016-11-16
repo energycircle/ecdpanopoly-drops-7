@@ -14,12 +14,16 @@ function content_experiments_permission() {
   return array(
     'administer content_experiments' => array(
       'title' => t('Administer Content Experiments module'),
-      'description' => t('Permission to change Content Experiments settings')
+      'description' => t('Permission to change Content Experiments settings'),
     ),
     'use PHP for content experiments visibility' => array(
       'title' => t('Use PHP for content experiments visibility'),
-      'description' => t('Permission to set PHP conditions to customize content experiments visibility on various pages')
-    )
+      'description' => t('Permission to set PHP conditions to customize content experiments visibility on various pages'),
+    ),
+    'use content experiments' => array(
+      'title' => t('Use content experiments field on node add/edit form'),
+      'description' => t('Enable editor to access the content experiments field on a node add/edit form'),
+    ),
   );
 }
 
@@ -37,7 +41,22 @@ function content_experiments_menu() {
     'page arguments' => array('content_experiments_admin_settings_form'),
     'access arguments' => array('administer content experiments'),
     'file' => 'content_experiments.admin.inc',
-    'type' => MENU_NORMAL_ITEM,
+  );
+
+  $items['admin/config/system/content-experiments/settings'] = array(
+    'title' => 'Settings',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -10,
+  );
+
+  $items['admin/config/system/content-experiments/paths'] = array(
+    'title' => 'Paths',
+    'description' => 'Configure the settings used to generate your Content Experiments code.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('content_experiments_admin_paths_form'),
+    'access arguments' => array('administer content_experiments'),
+    'file' => 'content_experiments.admin.inc',
+    'type' => MENU_LOCAL_TASK,
   );
 
   return $items;
@@ -98,9 +117,9 @@ function content_experiments_html_head_alter(&$head_elements) {
     return;
   }
 
-  $inline_code[0] = 
+  $inline_code[0] =
 "\r\n<script>function utmx_section(){}function utmx(){}(function(){var\r\n" .
-"k='" . check_plain($k) . "',d=document,l=d.location,c=d.cookie;\r\n" .
+"k='" . trim(check_plain($k)) . "',d=document,l=d.location,c=d.cookie;\r\n" .
 "if(l.search.indexOf('utm_expid='+k)>0)return;\r\n" .
 "function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.\r\n" .
 "indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.\r\n" .
@@ -123,24 +142,13 @@ function content_experiments_html_head_alter(&$head_elements) {
 }
 
 function content_experiments_code() {
-  $code = "";
 
-  $q = check_plain($_GET['q']);
-  $q = explode('/', $q);
-  if (count($q) != 2) {
-    return '';
+  $experiment = _content_experiments_get_experiment(current_path());
+  if (!empty($experiment->code)) {
+    return $experiment->code;
   }
 
-  if (array_shift($q) == 'node') {
-    $nid = intval(array_shift($q));
-  
-    $node = node_load($nid);
-    if ($node) {
-      $code = $node->content_experiments;
-    }
-  }
-
-  return $code;
+  return '';
 }
 
 /**
@@ -148,7 +156,7 @@ function content_experiments_code() {
  */
 function content_experiments_node_load($nodes, $types) {
   foreach ($nodes as $nid => $node) {
-    $code = _content_experiments_get_code($node->nid);
+    $code = _content_experiments_get_code("node/$nid");
     $node->content_experiments = $code;
   }
 }
@@ -160,10 +168,10 @@ function content_experiments_node_form_submit($form, &$form_state) {
   $experiment_id = $form_state['build_info']['args'][0]->code;
   $nid = $form_state['build_info']['args'][0]->nid;
 
-  if (!_content_experiments_experiment_exists($nid)) {
+  if (!_content_experiments_experiment_exists("node/$nid")) {
     db_insert('content_experiments')
       ->fields(array(
-        'nid' => $nid,
+        'path' => "node/$nid",
         'code' => $experiment_id,
     ))
     ->execute();
@@ -171,38 +179,74 @@ function content_experiments_node_form_submit($form, &$form_state) {
   else {
     db_update('content_experiments')
       ->fields(array('code' => $experiment_id))
-      ->condition('nid', $nid, '=')
+      ->condition('path', "node/$nid", '=')
       ->execute();
   }
 }
 
 /**
+ * Get a path and all of it possible aliases.
+ */
+function _content_experiments_path_aliases($path) {
+  $current_path = array(drupal_get_path_alias($path));
+  if ($current_path[0] != $path) {
+    $current_path[] = $path;
+  }
+  return $current_path;
+}
+
+/**
  * Check to see if a content experiment exists.
  */
-function _content_experiments_experiment_exists($nid) {
-  return _content_experiments_get_experiment($nid) != array();
+function _content_experiments_experiment_exists($path) {
+  return is_object(_content_experiments_get_experiment($path));
 }
 
 /**
  * Get content experiment.
  */
-function _content_experiments_get_experiment($nid) {
-  $result = db_select('content_experiments', 'ce')
-    ->fields('ce', array('code'))
-    ->condition('nid', $nid, '=')
+function _content_experiments_get_experiment($path) {
+  $paths = _content_experiments_path_aliases($path);
+
+  $results = db_select('content_experiments', 'ce')
+    ->fields('ce', array('code', 'path'))
     ->execute()
-    ->fetchAssoc();
-  return $result;
+    ->fetchAllAssoc('path');
+
+  foreach ($results as $experiment) {
+    foreach ($paths as $path) {
+      if (drupal_match_path($path, $experiment->path)) {
+        return $experiment;
+      }
+    }
+  }
+}
+
+/**
+ * Get all registered experiments.
+ */
+function _content_experiments_get_all_experiments() {
+  $experiments = array();
+
+  $select = db_select('content_experiments', 'ce')
+    ->fields('ce', array('path', 'code'))
+    ->execute();
+
+  while ($experiment = $select->fetch()) {
+    $experiments[] = $experiment;
+  }
+
+  return $experiments;
 }
 
 /**
  * Helper function to get the content experiment code.
  */
-function _content_experiments_get_code($nid) {
-  $code = '';
-  $result = _content_experiments_get_experiment($nid);
-  $code = $result['code'];
-  return $code;
+function _content_experiments_get_code($path) {
+  $result = _content_experiments_get_experiment($path);
+  if ($result) {
+    return $result->code;
+  }
 }
 
 /**

@@ -9,20 +9,21 @@
  */
 function content_experiments_schema() {
   $schema['content_experiments'] = array(
-    'description' => 'The content experiments code table.', 
+    'description' => 'The content experiments code table.',
     'fields' => array(
-      'nid' => array(
-        'description' => 'The primary identifier for a node.', 
-        'type' => 'serial', 
-        'unsigned' => TRUE, 
+      'path' => array(
+        'description' => 'The page path.',
+        'type' => 'varchar',
+        'length' => 255,
         'not null' => TRUE,
-      ), 
+        'default' => '',
+      ),
       'code' => array(
-        'description' => 'The title of this node, always treated as non-markup plain text.', 
-        'type' => 'text', 
+        'description' => 'The title of this node, always treated as non-markup plain text.',
+        'type' => 'text',
       ),
     ),
-    'primary key' => array('nid'),
+    'primary key' => array('path'),
   );
   return $schema;
 }
@@ -50,4 +51,61 @@ function content_experiments_install() {
 function content_experiments_uninstall() {
   variable_del('content_experiments_pages');
   variable_del('content_experiments_roles');
+}
+
+/**
+ * Create a new column for path.
+ */
+function content_experiments_update_7100() {
+  db_add_field('content_experiments', 'path',
+    array(
+      'description' => 'The page path.',
+      'type' => 'varchar',
+      'length' => 255,
+      'not null' => TRUE,
+      'default' => '',
+    )
+  );
+
+  db_drop_primary_key('content_experiments');
+  db_add_primary_key('content_experiments', 'path');
+}
+
+/**
+ * Change nid entries to node path.
+ */
+function content_experiments_update_7101(&$sandbox) {
+  if (!isset($sandbox['progress'])) {
+    $sandbox['progress'] = 0;
+    $sandbox['current_nid'] = 0;
+    $sandbox['max'] = db_query('SELECT COUNT(DISTINCT nid) FROM {content_experiments}')->fetchField();
+  }
+
+  $experiments = db_select('content_experiments', 'ce')
+    ->fields('ce', array('nid'))
+    ->condition('nid', $sandbox['current_nid'], '>')
+    ->range(0, 3)
+    ->orderBy('nid', 'ASC')
+    ->execute();
+
+  foreach ($experiments as $experiment) {
+    db_update('content_experiments')
+      ->fields(array('path' => "node/{$experiment->nid}"))
+      ->condition('nid', $experiment->nid)
+      ->execute();
+
+    $sandbox['progress']++;
+    $sandbox['current_nid'] = $experiment->nid;
+  }
+
+  $sandbox['#finished'] = empty($sandbox['max']) ? 1 : ($sandbox['progress'] / $sandbox['max']);
+
+  return t('Updated table structure for Content Experiments.');
+}
+
+/**
+ * Drop nid column.
+ */
+function content_experiments_update_7102() {
+  db_drop_field('content_experiments', 'nid');
 }

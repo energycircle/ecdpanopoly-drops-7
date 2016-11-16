@@ -434,7 +434,8 @@ projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/is
 projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
 projects[node_authlink][patch][2684923] = https://www.drupal.org/files/issues/node_authlink-views-integration-2684923-3.patch
 projects[superfish][patch][1316254] = https://www.drupal.org/files/issues/superfish-add-starting-level-1316254-15-D7.patch
-
+projects[content_experiments][patch][] = https://www.drupal.org/files/issues/2049895-more_useful_with_paths-13.patch
+projects[content_experiments][patch][] = https://www.drupal.org/files/issues/content_experiments-permissions-2564247-2.patch
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git

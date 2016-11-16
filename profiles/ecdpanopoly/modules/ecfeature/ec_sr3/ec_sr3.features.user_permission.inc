@@ -27,7 +27,9 @@ function ec_sr3_user_default_permissions() {
   // Exported permission: 'clear get5stars_reviews feeds'.
   $permissions['clear get5stars_reviews feeds'] = array(
     'name' => 'clear get5stars_reviews feeds',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'feeds',
   );
 
@@ -44,14 +46,22 @@ function ec_sr3_user_default_permissions() {
   // Exported permission: 'delete any sr3_service_review content'.
   $permissions['delete any sr3_service_review content'] = array(
     'name' => 'delete any sr3_service_review content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own sr3_service_review content'.
   $permissions['delete own sr3_service_review content'] = array(
     'name' => 'delete own sr3_service_review content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -67,14 +77,22 @@ function ec_sr3_user_default_permissions() {
   // Exported permission: 'edit any sr3_service_review content'.
   $permissions['edit any sr3_service_review content'] = array(
     'name' => 'edit any sr3_service_review content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own sr3_service_review content'.
   $permissions['edit own sr3_service_review content'] = array(
     'name' => 'edit own sr3_service_review content',
-    'roles' => array(),
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -90,14 +108,18 @@ function ec_sr3_user_default_permissions() {
   // Exported permission: 'import get5stars_reviews feeds'.
   $permissions['import get5stars_reviews feeds'] = array(
     'name' => 'import get5stars_reviews feeds',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'feeds',
   );
 
   // Exported permission: 'unlock get5stars_reviews feeds'.
   $permissions['unlock get5stars_reviews feeds'] = array(
     'name' => 'unlock get5stars_reviews feeds',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'feeds',
   );
 
