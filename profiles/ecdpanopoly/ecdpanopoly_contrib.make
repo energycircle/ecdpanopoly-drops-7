@@ -409,9 +409,9 @@ projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_ru
 projects[compact_forms][patch][2464993] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
 projects[context][patch][305289] = https://www.drupal.org/files/context_panels-305289-39.patch
 projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
-#projects[cer][patch][1] = patches/fix_duplicate_function_when_drush_make-1.patch
-projects[metatag][patch][1918738] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
-#projects[metatag][patch][1] = https://github.com/energycircle/ecdpanopoly/blob/master/patches/character_count_on_fields-1918738-9-ec.patch
+projects[cer][patch][1] = ../patches/fix_duplicate_function_when_drush_make-1.patch
+#projects[metatag][patch][1918738] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
+projects[metatag][patch][1918738] = ../patches/character_count_on_fields-1918738-9-ec.patch
 projects[maxlength][patch][1256968] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
 #projects[table_element][patch][] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
 #projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
@@ -434,8 +434,7 @@ projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/is
 projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
 projects[node_authlink][patch][2684923] = https://www.drupal.org/files/issues/node_authlink-views-integration-2684923-3.patch
 projects[superfish][patch][1316254] = https://www.drupal.org/files/issues/superfish-add-starting-level-1316254-15-D7.patch
-projects[content_experiments][patch][] = https://www.drupal.org/files/issues/2049895-more_useful_with_paths-13.patch
-projects[content_experiments][patch][] = https://www.drupal.org/files/issues/content_experiments-permissions-2564247-2.patch
+
 
 ; EC CUSTOM MODS
 projects[energycircle_apps][download][type] = git
