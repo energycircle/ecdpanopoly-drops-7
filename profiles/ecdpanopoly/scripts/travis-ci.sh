@@ -41,8 +41,7 @@ system_install() {
   # Build the current branch.
   header Building ecdpanopoly from current branch
   cd drupal
-  drush make --yes profiles/ecdpanopoly/drupal-org-core.make --prepare-install
-  drush make --yes profiles/ecdpanopoly/drupal-org.make --no-core --contrib-destination=profiles/ecdpanopoly
+  drush make --ignore-checksums --contrib-destination=profiles/ecdpanopoly profiles/ecdpanopoly/drupal-org-release.make --force-complete --concurrency=10 --strict=0 -y --only-once --no-core
   mkdir sites/default/private
   mkdir sites/default/private/files
   mkdir sites/default/private/temp
@@ -145,8 +144,8 @@ before_tests() {
 run_tests() {
   header Running tests
   # here we should execute out selenium tests
-  
-  
+
+
 
   # we execute this just to have a return
   cat /dev/null
