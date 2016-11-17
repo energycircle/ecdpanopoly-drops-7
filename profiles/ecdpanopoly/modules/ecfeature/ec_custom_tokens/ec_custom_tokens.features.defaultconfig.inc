@@ -27,8 +27,8 @@ function ec_custom_tokens_defaultconfig_strongarm() {
   $strongarm->name = 'token_custom_types';
   $strongarm->value = array(
     'custom' => (object) array(
-      'name' => 'Client Information',
-      'machine_name' => 'client-info',
+      'name' => 'Custom',
+      'machine_name' => 'custom',
       'description' => 'User created tokens types using the Custom Tokens module.',
     ),
     'social' => (object) array(

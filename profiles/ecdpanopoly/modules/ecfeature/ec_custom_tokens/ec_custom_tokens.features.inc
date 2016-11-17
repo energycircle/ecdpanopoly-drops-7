@@ -38,7 +38,7 @@ function ec_custom_tokens_token_custom_features_config_features_default_settings
       'machine_name' => 'phone-number',
       'name' => 'Phone Number',
       'description' => 'Used to constantly display the company phone number',
-      'type' => 'client-info',
+      'type' => 'custom',
       'content' => '<a href="tel:15555555555">1 (555) 555-5555</a>',
       'format' => 'panopoly_wysiwyg_text',
     ),
