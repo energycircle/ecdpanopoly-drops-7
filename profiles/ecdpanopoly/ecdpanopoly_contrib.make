@@ -357,6 +357,9 @@ projects[token_filter][version] = 1.x-dev
 projects[total_control][subdir] = eccontrib
 projects[total_control][version] = 2.x
 
+projects[total_subscription][subdir] = eccontrib
+projects[total_subscription][version] = 1.x-dev
+
 projects[username_enumeration_prevention][subdir] = eccontrib
 projects[username_enumeration_prevention][version] = 1.2
 
@@ -432,6 +435,10 @@ projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/is
 projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
 projects[node_authlink][patch][2684923] = https://www.drupal.org/files/issues/node_authlink-views-integration-2684923-3.patch
 projects[superfish][patch][1316254] = https://www.drupal.org/files/issues/superfish-add-starting-level-1316254-15-D7.patch
+projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/access_check_fails_in-2612234-8.patch
+
+
+
 
 ;local patches
 projects[metatag][patch][1918738] = ../patches/character_count_on_fields-1918738-9-ec.patch

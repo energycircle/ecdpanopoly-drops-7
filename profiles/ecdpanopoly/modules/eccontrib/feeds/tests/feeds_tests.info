@@ -5,9 +5,9 @@ version = VERSION
 core = 7.x
 hidden = TRUE
 
-; Information added by Drupal.org packaging script on 2016-11-13
-version = "7.x-2.0-beta2+39-dev"
+; Information added by Drupal.org packaging script on 2016-11-24
+version = "7.x-2.0-beta2+40-dev"
 core = "7.x"
 project = "feeds"
-datestamp = "1479046449"
+datestamp = "1479991684"
 
