@@ -37,3 +37,19 @@
         // Replace all media placeholders with their JSON macro representations.
         //
         // There are issues with using jQuery to parse the WYSIWYG content (see
+***************
+*** 95,100 ****
+        // \S\s catches any character, including a linebreak; JavaScript does not
+        // have a dotall flag.
+        regex += '|<span[^>]+' + classRegex + '[^>]*?>[\\S\\s]+?</span>';
+        var matches = content.match(RegExp(regex, 'gi'));
+        if (matches) {
+          for (i = 0; i < matches.length; i++) {
+--- 98,104 ----
+        // \S\s catches any character, including a linebreak; JavaScript does not
+        // have a dotall flag.
+        regex += '|<span[^>]+' + classRegex + '[^>]*?>[\\S\\s]+?</span>';
++ 
+        var matches = content.match(RegExp(regex, 'gi'));
+        if (matches) {
+          for (i = 0; i < matches.length; i++) {

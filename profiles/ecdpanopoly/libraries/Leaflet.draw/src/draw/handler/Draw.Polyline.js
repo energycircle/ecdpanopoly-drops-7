@@ -29,7 +29,7 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 		maxGuideLineLength: 4000,
 		shapeOptions: {
 			stroke: true,
-			color: '#f06eaa',
+			color: '#3388ff',
 			weight: 4,
 			opacity: 0.5,
 			fill: false,
@@ -64,6 +64,7 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 	},
 
 	// @method addHooks(): void
+	// Add listener hooks to this handler
 	addHooks: function () {
 		L.Draw.Feature.prototype.addHooks.call(this);
 		if (this._map) {
@@ -93,10 +94,6 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 				});
 			}
 
-			if (!L.Browser.touch) {
-				this._map.on('mouseup', this._onMouseUp, this); // Necessary for 0.7 compatibility
-			}
-
 			this._mouseMarker
 				.on('mousedown', this._onMouseDown, this)
 				.on('mouseout', this._onMouseOut, this)
@@ -108,12 +105,13 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 				.on('mouseup', this._onMouseUp, this) // Necessary for 0.7 compatibility
 				.on('mousemove', this._onMouseMove, this)
 				.on('zoomlevelschange', this._onZoomEnd, this)
-				.on('click', this._onTouch, this)
+				.on('touchstart', this._onTouch, this)
 				.on('zoomend', this._onZoomEnd, this);
 		}
 	},
 
 	// @method removeHooks(): void
+	// Remove listener hooks from this handler.
 	removeHooks: function () {
 		L.Draw.Feature.prototype.removeHooks.call(this);
 
@@ -145,10 +143,12 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 			.off('mousemove', this._onMouseMove, this)
 			.off('zoomlevelschange', this._onZoomEnd, this)
 			.off('zoomend', this._onZoomEnd, this)
+			.off('touchstart', this._onTouch, this)
 			.off('click', this._onTouch, this);
 	},
 
 	// @method deleteLastVertex(): void
+	// Remove the last vertex from the polyline, removes polyline from map if only one point exists.
 	deleteLastVertex: function () {
 		if (this._markers.length <= 1) {
 			return;
@@ -171,6 +171,7 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 	},
 
 	// @method addVertex(): void
+	// Add a vertex to the end of the polyline
 	addVertex: function (latlng) {
 		var markersLength = this._markers.length;
 
@@ -194,6 +195,7 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 	},
 
 	// @method completeShape(): void
+	// Closes the polyline between the first and last points
 	completeShape: function () {
 		if (this._markers.length <= 1) {
 			return;
@@ -223,8 +225,8 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 		}
 	},
 
-	//Called to verify the shape is valid when the user tries to finish it
-	//Return false if the shape is not valid
+	// Called to verify the shape is valid when the user tries to finish it
+	// Return false if the shape is not valid
 	_shapeIsValid: function () {
 		return true;
 	},
@@ -267,32 +269,42 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 
 	_onMouseDown: function (e) {
 		var originalEvent = e.originalEvent;
-		this._mouseDownOrigin = L.point(originalEvent.clientX, originalEvent.clientY);
+		var clientX = originalEvent.clientX;
+		var clientY = originalEvent.clientY;
+		this._startPoint.call(this, clientX, clientY);
+
+	},
+	_startPoint: function (clientX, clientY) {
+		this._mouseDownOrigin = L.point(clientX, clientY);
 	},
 
 	_onMouseUp: function (e) {
+		var originalEvent = e.originalEvent;
+		var clientX = originalEvent.clientX;
+		var clientY = originalEvent.clientY;
+		this._endPoint.call(this, clientX, clientY, e);
+	},
+	_endPoint: function (clientX, clientY, e) {
 		if (this._mouseDownOrigin) {
-			// We detect clicks within a certain tolerance, otherwise let it
-			// be interpreted as a drag by the map
-			var distance = L.point(e.originalEvent.clientX, e.originalEvent.clientY)
+			var distance = L.point(clientX, clientY)
 				.distanceTo(this._mouseDownOrigin);
 			if (Math.abs(distance) < 9 * (window.devicePixelRatio || 1)) {
 				this.addVertex(e.latlng);
 			}
-
-			this._clickHandled = true;
 		}
 		this._mouseDownOrigin = null;
 	},
 
 	_onTouch: function (e) {
-		// #TODO: use touchstart and touchend vs using click(touch start & end).
-		if (L.Browser.touch && !this._clickHandled) { // #TODO: get rid of this once leaflet fixes their click/touch.
-			this._onMouseDown(e);
-			this._onMouseUp(e);
+		var originalEvent = e.originalEvent;
+		var clientX;
+		var clientY;
+		if (originalEvent.touches && originalEvent.touches[0]) {
+			clientX = originalEvent.touches[0].clientX;
+			clientY = originalEvent.touches[0].clientY;
+			this._startPoint.call(this, clientX, clientY);
+			this._endPoint.call(this, clientX, clientY, e);
 		}
-
-		this._clickHandled = null;
 	},
 
 	_onMouseOut: function () {
