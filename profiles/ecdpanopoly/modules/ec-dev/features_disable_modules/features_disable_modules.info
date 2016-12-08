@@ -8,5 +8,9 @@ package = Features
 version = "7.x-1.0-alpha1+9-dev"
 core = "7.x"
 project = "features_disable_modules"
+<<<<<<< HEAD
 datestamp = "1481211244"
+=======
+datestamp = "1481220210"
+>>>>>>> 7.x-1.4
 
