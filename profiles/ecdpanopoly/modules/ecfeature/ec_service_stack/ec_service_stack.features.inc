@@ -79,7 +79,7 @@ function ec_service_stack_node_info() {
     'service' => array(
       'name' => t('Service'),
       'base' => 'node_content',
-      'description' => t('A single service.'),
+      'description' => t('A single service page, ex. AC Maintenance, Air Sealing, etc.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
@@ -87,7 +87,7 @@ function ec_service_stack_node_info() {
     'service_category' => array(
       'name' => t('Service Category'),
       'base' => 'node_content',
-      'description' => t('A grouping of services. '),
+      'description' => t('A group of services pages on a similar topic, ex. Home Efficiency Services, Heating & Cooling, etc.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
@@ -95,7 +95,7 @@ function ec_service_stack_node_info() {
     'service_group' => array(
       'name' => t('Service Group'),
       'base' => 'node_content',
-      'description' => t('A group of service categories.  '),
+      'description' => t('A group of service categories, useful for when another level of division is needed in service offerings.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

@@ -111,10 +111,6 @@ function ec_citypages_rdf_default_mappings() {
     'field_citypages_pin' => array(
       'predicates' => array(),
     ),
-    'field_citypages_image' => array(
-      'predicates' => array(),
-      'type' => 'rel',
-    ),
     'field_call_to_action' => array(
       'predicates' => array(),
     ),
@@ -132,6 +128,10 @@ function ec_citypages_rdf_default_mappings() {
     ),
     'field_ref_citypages_services' => array(
       'predicates' => array(),
+    ),
+    'field_citypages_image' => array(
+      'predicates' => array(),
+      'type' => 'rel',
     ),
   );
 

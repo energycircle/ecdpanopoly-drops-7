@@ -146,7 +146,6 @@ function ec_gallery_views_default_views() {
   );
   $handler->display->display_options['fields']['field_gallery_image']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_gallery_image']['delta_offset'] = '0';
-
   $export['gallery_slideshow_carousel'] = $view;
 
   return $export;

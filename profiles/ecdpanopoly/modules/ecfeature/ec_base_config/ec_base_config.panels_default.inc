@@ -40,6 +40,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '555457cf-6d82-42f4-8afa-e3413c3de894';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'footer';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -107,6 +109,32 @@ function ec_base_config_default_panels_mini() {
   $display->content['new-aa35bdc7-4725-4670-b757-6bc754e595cb'] = $pane;
   $display->panels['two_50_bottom'][1] = 'new-aa35bdc7-4725-4670-b757-6bc754e595cb';
   $pane = new stdClass();
+  $pane->pid = 'new-f863b483-24cb-4e05-a034-0672646aafc8';
+  $pane->panel = 'two_50_bottom';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => 'Social Media Links',
+    'title' => '',
+    'body' => '<p>[social:facebook]&nbsp;[social:twitter]&nbsp;[social:google]</p>',
+    'format' => 'panopoly_wysiwyg_text',
+    'substitute' => TRUE,
+    'name' => 'social_media_links',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $pane->uuid = 'f863b483-24cb-4e05-a034-0672646aafc8';
+  $display->content['new-f863b483-24cb-4e05-a034-0672646aafc8'] = $pane;
+  $display->panels['two_50_bottom'][2] = 'new-f863b483-24cb-4e05-a034-0672646aafc8';
+  $pane = new stdClass();
   $pane->pid = 'new-0b0f1304-ac9d-4046-a5d1-9d7d24f8f41a';
   $pane->panel = 'two_50_bottom';
   $pane->type = 'custom';
@@ -126,11 +154,11 @@ function ec_base_config_default_panels_mini() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 2;
+  $pane->position = 3;
   $pane->locks = array();
   $pane->uuid = '0b0f1304-ac9d-4046-a5d1-9d7d24f8f41a';
   $display->content['new-0b0f1304-ac9d-4046-a5d1-9d7d24f8f41a'] = $pane;
-  $display->panels['two_50_bottom'][2] = 'new-0b0f1304-ac9d-4046-a5d1-9d7d24f8f41a';
+  $display->panels['two_50_bottom'][3] = 'new-0b0f1304-ac9d-4046-a5d1-9d7d24f8f41a';
   $pane = new stdClass();
   $pane->pid = 'new-990d30bc-4ac2-44ee-82b1-cd9d6b7a936a';
   $pane->panel = 'two_50_top';
@@ -185,6 +213,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '05f14956-b2cf-4bbc-9bbf-4709d94029b1';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'header';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -300,6 +330,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '2d179f21-0d5f-4dd9-a991-74247a49277a';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'hero';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -352,6 +384,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '93ad03af-d6a8-40e3-8db3-4ef0c4020bda';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'main_menu_superfish';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -407,6 +441,8 @@ function ec_base_config_default_panels_mini() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '11c09654-f37d-466f-9ebf-7e98e45073d0';
+  $display->storage_type = 'panels_mini';
+  $display->storage_id = 'secondary_menu_tree';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();

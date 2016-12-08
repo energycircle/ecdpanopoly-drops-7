@@ -16,7 +16,7 @@
 	  * Implements hook_install().
 	  */
  function ecdpanopoly_install() {
-	
+
  // Enable the administration theme.
  $admin_theme = 'ec_admin';
  db_update('system')
@@ -33,7 +33,7 @@
 **   module_enable(array('distro_update'));
 ** }
  */
- 
+
  /**
   * Enable the core Block module and place the Help block.
  **function ecdpanopoly_update_7102() {
@@ -47,13 +47,13 @@
 function ecdpanopoly_features_form($form_state, $url) {
   $form = array();
   drupal_set_title(st('Choose from available EC features'));
-   
+
   // Ancillary message
   $form['message'] = array(
     '#type' => 'item',
     '#value' => st('The selected features will be enabled after the installation has completed. At any time, you can turn the available features on or off.'),
   );
- 
+
   $form['content'] = array(
     '#type' => 'checkbox',
     '#title' => st('Content types'),
@@ -72,18 +72,18 @@ function ecdpanopoly_features_form($form_state, $url) {
     '#default_value' => 1,
     '#description' => st('Some test view'),
   );
- 
+
   // Returns to installation without its abort.
   $form['url'] = array(
     '#type' => 'value',
     '#value' => $url,
   );
-   
+
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => st('Continue'),
   );
-   
+
   return $form;
 }
 
@@ -93,13 +93,13 @@ function ecdpanopoly_features_form_submit(&$form, &$form_state) {
   foreach ($form_state['values'] as $key => $value) {
     $features[] = $key;
   }
-   
+
   // forming temporary variable with chosen features.
   variable_set('ecfeatures', $features);
-   
+
   // initiating the next step of installation
   variable_set('install_task', 'install-ecdpanopoly');
-   
+
   // returning to the installation page
   drupal_goto($form_state['values']['url']);
 }

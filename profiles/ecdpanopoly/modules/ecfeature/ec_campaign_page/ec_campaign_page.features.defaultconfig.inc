@@ -49,6 +49,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'email_default',
           'weight' => 4,
@@ -118,6 +119,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 0,
@@ -193,6 +195,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 1,
@@ -259,6 +262,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'field_hidden_text_plain',
           'weight' => 5,
@@ -314,6 +318,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'phone',
           'weight' => 3,
@@ -383,13 +388,9 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 2,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
         ),
         'grouped_teaser' => array(
           'label' => 'above',
@@ -403,6 +404,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -425,7 +427,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -438,6 +440,9 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_button_text',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -469,7 +474,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 5,
+          'weight' => 9,
         ),
         'grouped_teaser' => array(
           'label' => 'above',
@@ -499,7 +504,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 108,
+        'weight' => 109,
       ),
     ),
   );
@@ -538,7 +543,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
       'bundle' => 'campaign_page',
       'default_value' => array(
         0 => array(
-          'value' => '<p>[custom:phone-number]</p>',
+          'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
           'format' => 'panopoly_wysiwyg_text',
         ),
       ),
@@ -548,13 +553,9 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 3,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
         ),
         'grouped_teaser' => array(
           'label' => 'above',
@@ -629,13 +630,9 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 1,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 3,
         ),
         'grouped_teaser' => array(
           'label' => 'above',
@@ -665,7 +662,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -707,13 +704,9 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 0,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 2,
         ),
         'grouped_teaser' => array(
           'label' => 'above',
@@ -743,7 +736,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -785,15 +778,9 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => 6,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 7,
         ),
         'grouped_teaser' => array(
           'label' => 'above',
@@ -822,7 +809,6 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 'private',
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -841,19 +827,160 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
-          'manualcrop_enable' => 0,
+          'manualcrop_enable' => 1,
           'manualcrop_inline_crop' => 0,
           'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
-          'manualcrop_keyboard' => 1,
-          'manualcrop_maximize_default_crop_area' => 0,
+          'manualcrop_keyboard' => 0,
+          'manualcrop_maximize_default_crop_area' => 1,
           'manualcrop_require_cropping' => array(),
-          'manualcrop_styles_list' => array(),
+          'manualcrop_styles_list' => array(
+            'sc_1280x440_mc' => 'sc_1280x440_mc',
+            'sc_940x470_mc' => 'sc_940x470_mc',
+          ),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 4,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-campaign_page-field_panel_hide_footer'.
+  $fields['node-campaign_page-field_panel_hide_footer'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_panel_hide_footer',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => '',
+          1 => '',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => 0,
+      'type' => 'list_boolean',
+    ),
+    'field_instance' => array(
+      'bundle' => 'campaign_page',
+      'default_value' => array(
+        0 => array(
+          'value' => 0,
+        ),
+      ),
+      'default_value_label_token' => 0,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 1,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_panel_hide_footer',
+      'label' => 'Hide Footer',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'display_label' => 1,
+        ),
+        'type' => 'options_onoff',
+        'weight' => 14,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-campaign_page-field_panel_hide_header'.
+  $fields['node-campaign_page-field_panel_hide_header'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_panel_hide_header',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => 0,
+          1 => 1,
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => 0,
+      'type' => 'list_boolean',
+    ),
+    'field_instance' => array(
+      'bundle' => 'campaign_page',
+      'default_value' => array(
+        0 => array(
+          'value' => 0,
+        ),
+      ),
+      'default_value_label_token' => 0,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_panel_hide_header',
+      'label' => 'Hide Header',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'display_label' => 1,
+        ),
+        'type' => 'options_onoff',
+        'weight' => 13,
       ),
     ),
   );
@@ -866,6 +993,9 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'entityform_type' => array(
           'columns' => array(
@@ -911,15 +1041,9 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'links' => 0,
-            'view_mode' => 'full',
-          ),
-          'type' => 'entityreference_entity_view',
-          'weight' => 4,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 6,
         ),
         'grouped_teaser' => array(
           'label' => 'above',
@@ -965,6 +1089,8 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
   t('Display subtitle');
   t('Email');
   t('First Name');
+  t('Hide Footer');
+  t('Hide Header');
   t('Image');
   t('Last Name');
   t('Page Tracking');

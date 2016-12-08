@@ -74,25 +74,32 @@ function ec_a_b_testing_setup_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'content_experiments_node_types';
   $strongarm->value = array(
+    'audience' => 'audience',
     'campaign_page' => 'campaign_page',
     'city_page' => 'city_page',
+    'external_video' => 'external_video',
+    'financing_option' => 'financing_option',
     'promotion' => 'promotion',
     'service' => 'service',
     'service_category' => 'service_category',
     'service_group' => 'service_group',
+    'slide' => 'slide',
+    'panopoly_landing_page' => 'panopoly_landing_page',
     'panopoly_page' => 'panopoly_page',
     'article' => 0,
     'blog_post' => 0,
     'case_study' => 0,
     'distinction' => 0,
     'distributor' => 0,
+    'gated_file_page' => 0,
+    'request_restricted' => 0,
     'faq' => 0,
-    'financing_option' => 0,
     'gallery' => 0,
+    'product_category' => 0,
+    'product_page' => 0,
     'review_site' => 0,
-    'slide' => 0,
+    'staff' => 0,
     'testimonial' => 0,
-    'panopoly_landing_page' => 0,
   );
   $export['content_experiments_node_types'] = $strongarm;
 
@@ -112,12 +119,12 @@ node/*/*';
   $strongarm->api_version = 1;
   $strongarm->name = 'content_experiments_roles';
   $strongarm->value = array(
+    2 => '2',
+    5 => '5',
+    3 => '3',
+    4 => '4',
     1 => 0,
-    2 => 0,
-    5 => 0,
-    3 => 0,
     6 => 0,
-    4 => 0,
   );
   $export['content_experiments_roles'] = $strongarm;
 
@@ -127,6 +134,20 @@ node/*/*';
   $strongarm->name = 'content_experiments_visibility';
   $strongarm->value = '0';
   $export['content_experiments_visibility'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'token_insert_node_campaign_page_field_a_b_reference_page';
+  $strongarm->value = 0;
+  $export['token_insert_node_campaign_page_field_a_b_reference_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'token_insert_node_campaign_page_field_a_b_test_page';
+  $strongarm->value = 0;
+  $export['token_insert_node_campaign_page_field_a_b_test_page'] = $strongarm;
 
   return $export;
 }

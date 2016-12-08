@@ -20,11 +20,17 @@ projects[ec_article][type] = module
 projects[ec_article][subdir] = ecfeature
 projects[ec_article][version] = 1.x
 
-projects[ec_awards][download][type] = git
-projects[ec_awards][download][url] = https://github.com/energycircle/ec_awards.git
-projects[ec_awards][type] = module
-projects[ec_awards][subdir] = ecfeature
-projects[ec_awards][version] = 1.x
+projects[ec_audience][download][type] = git
+projects[ec_audience][download][url] = https://github.com/energycircle/ec_audience.git
+projects[ec_audience][type] = module
+projects[ec_audience][subdir] = ecfeature
+projects[ec_audience][version] = 1.x
+
+#projects[ec_awards][download][type] = git
+#projects[ec_awards][download][url] = https://github.com/energycircle/ec_awards.git
+#projects[ec_awards][type] = module
+#projects[ec_awards][subdir] = ecfeature
+#projects[ec_awards][version] = 1.x
 
 projects[ec_base_config][download][type] = git
 projects[ec_base_config][download][url] = https://github.com/energycircle/ec_base_config.git
@@ -122,6 +128,12 @@ projects[ec_mail_settings][download][url] = https://github.com/energycircle/ec_m
 projects[ec_mail_settings][subdir] = ecfeature
 projects[ec_mail_settings][type] = module
 projects[ec_mail_settings][version] = 1.x
+
+projects[ec_marketing_dashboard][download][type] = git
+projects[ec_marketing_dashboard][download][url] = https://github.com/energycircle/ec_marketing_dashboard.git
+projects[ec_marketing_dashboard][subdir] = ecfeature
+projects[ec_marketing_dashboard][type] = module
+projects[ec_marketing_dashboard][version] = 1.x
 
 projects[ec_external_video][download][type] = git
 projects[ec_external_video][download][url] = https://github.com/energycircle/ec_external_video.git
@@ -242,3 +254,15 @@ projects[ec_testimonial][download][url] = https://github.com/energycircle/ec_tes
 projects[ec_testimonial][subdir] = ecfeature
 projects[ec_testimonial][type] = module
 projects[ec_testimonial][version] = 1.x
+
+projects[ecset-proplus][download][type] = git
+projects[ecset-proplus][download][url] = https://github.com/energycircle/ecset-proplus.git
+projects[ecset-proplus][subdir] = ecfeature-sets
+projects[ecset-proplus][type] = module
+projects[ecset-proplus][version] = 1.x
+
+projects[ec_migrate_ecpro_news_blog_import][download][type] = git
+projects[ec_migrate_ecpro_news_blog_import][download][url] = https://github.com/energycircle/ec_migrate_ecpro_news_blog_import.git
+projects[ec_migrate_ecpro_news_blog_import][subdir] = ecfeature-migrate
+projects[ec_migrate_ecpro_news_blog_import][type] = module
+projects[ec_migrate_ecpro_news_blog_import][version] = 1.x

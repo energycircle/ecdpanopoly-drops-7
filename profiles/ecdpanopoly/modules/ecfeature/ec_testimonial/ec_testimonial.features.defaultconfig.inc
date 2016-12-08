@@ -76,14 +76,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 6,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 7,
         ),
         'featured' => array(
           'label' => 'above',
@@ -103,6 +98,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
@@ -193,14 +189,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 2,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
         ),
         'featured' => array(
           'label' => 'above',
@@ -257,7 +248,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
   $fields['node-panopoly_page-field_ref_page_testimonial'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_ref_page_testimonial',
@@ -280,6 +271,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -305,14 +299,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 11,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 10,
         ),
         'featured' => array(
           'label' => 'above',
@@ -425,14 +414,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 4,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
         ),
         'featured' => array(
           'label' => 'above',
@@ -532,13 +516,8 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 9,
         ),
         'featured' => array(
@@ -647,14 +626,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 4,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
         ),
         'featured' => array(
           'label' => 'above',
@@ -762,13 +736,8 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 5,
         ),
         'featured' => array(
@@ -817,7 +786,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 16,
+        'weight' => 15,
       ),
     ),
   );
@@ -877,13 +846,8 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 4,
         ),
         'featured' => array(
@@ -932,7 +896,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 23,
+        'weight' => 22,
       ),
     ),
   );
@@ -977,13 +941,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 0,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 1,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1003,6 +963,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -1014,6 +975,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -1042,7 +1004,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 19,
+        'weight' => 17,
       ),
     ),
   );
@@ -1076,19 +1038,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'fivestar',
-          'settings' => array(
-            'expose' => TRUE,
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'style' => 'average',
-            'text' => 'average',
-            'widget' => array(
-              'fivestar_widget' => NULL,
-            ),
-          ),
-          'type' => 'fivestar_formatter_default',
-          'weight' => 17,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 15,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1136,7 +1088,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'stars',
-        'weight' => 14,
+        'weight' => 15,
       ),
     ),
   );
@@ -1175,13 +1127,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'geolocation',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'geolocation_text',
-          'weight' => 18,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 16,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1223,7 +1171,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'scrollwheel' => 0,
         ),
         'type' => 'geolocation_googlemap',
-        'weight' => 16,
+        'weight' => 17,
       ),
     ),
   );
@@ -1265,13 +1213,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 2,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1318,7 +1262,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -1360,13 +1304,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 1,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 3,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1413,7 +1353,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -1455,13 +1395,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 3,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1481,6 +1417,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_plain',
           'weight' => 2,
@@ -1512,7 +1449,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 15,
+        'weight' => 16,
       ),
     ),
   );
@@ -1554,15 +1491,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => 5,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 7,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1582,6 +1513,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => 'content',
             'image_style' => 'sc_220x110',
           ),
@@ -1646,7 +1578,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 17,
+        'weight' => 14,
       ),
     ),
   );
@@ -1707,15 +1639,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'links' => 0,
-            'view_mode' => 'default',
-          ),
-          'type' => 'entityreference_entity_view',
-          'weight' => 19,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 17,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1799,12 +1725,8 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 13,
         ),
         'featured' => array(
@@ -1825,6 +1747,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_plain',
           'weight' => 2,
@@ -1856,7 +1779,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 13,
+        'weight' => 16,
       ),
     ),
   );
@@ -1899,13 +1822,9 @@ function ec_testimonial_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'file',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'file_default',
-          'weight' => 4,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1978,7 +1897,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 18,
+        'weight' => 13,
       ),
     ),
   );

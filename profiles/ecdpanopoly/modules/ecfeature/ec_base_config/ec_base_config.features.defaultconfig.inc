@@ -12,6 +12,7 @@ function ec_base_config_defaultconfig_features() {
     'ec_base_config' => array(
       'field_default_fields' => 'field_default_fields',
       'strongarm' => 'strongarm',
+      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -50,6 +51,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'format_handlers' => array(
               0 => 'address',
             ),
@@ -64,6 +66,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'format_handlers' => array(
               0 => 'address',
             ),
@@ -78,6 +81,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'format_handlers' => array(
               0 => 'address',
             ),
@@ -92,6 +96,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'format_handlers' => array(
               0 => 'address',
             ),
@@ -178,6 +183,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 6,
@@ -249,6 +255,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'email_default',
           'weight' => 3,
@@ -259,6 +266,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'email_default',
           'weight' => 3,
@@ -269,6 +277,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'email_default',
           'weight' => 3,
@@ -279,6 +288,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'email_default',
           'weight' => 3,
@@ -348,6 +358,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 0,
@@ -358,6 +369,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 0,
@@ -368,6 +380,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 0,
@@ -378,6 +391,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 0,
@@ -453,6 +467,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 1,
@@ -463,6 +478,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 1,
@@ -473,6 +489,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 1,
@@ -483,6 +500,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 1,
@@ -544,6 +562,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'phone',
           'weight' => 2,
@@ -554,6 +573,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'phone',
           'weight' => 2,
@@ -564,6 +584,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'phone',
           'weight' => 2,
@@ -574,6 +595,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'phone',
           'weight' => 2,
@@ -642,6 +664,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 5,
@@ -652,6 +675,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 5,
@@ -662,6 +686,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 5,
@@ -672,6 +697,7 @@ function ec_base_config_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 5,
@@ -723,69 +749,6 @@ function ec_base_config_defaultconfig_field_default_fields() {
  */
 function ec_base_config_defaultconfig_strongarm() {
   $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_default_settings';
-  $strongarm->value = array(
-    'title_label' => 'Title',
-    'node_preview' => '0',
-    'content_type_extras_preview_button' => 'Preview',
-    'content_type_extras_save_and_new' => '1',
-    'content_type_extras_save_and_new_button' => 'Save and New',
-    'content_type_extras_save_and_edit' => '0',
-    'content_type_extras_save_and_edit_button' => 'Save and Edit',
-    'content_type_extras_cancel' => '0',
-    'node_options' => array(
-      'status' => 'status',
-      'promote' => 0,
-      'sticky' => 0,
-      'revision' => 0,
-    ),
-    'node_submitted' => 1,
-    'user_permissions' => array(
-      'create_roles' => array(
-        5 => '5',
-        3 => '3',
-        4 => '4',
-        1 => 0,
-        2 => 0,
-      ),
-      'edit_roles' => array(
-        5 => '5',
-        3 => '3',
-        4 => '4',
-        1 => 0,
-        2 => 0,
-      ),
-      'delete_roles' => array(
-        5 => '5',
-        3 => '3',
-        1 => 0,
-        2 => 0,
-        4 => 0,
-      ),
-    ),
-    'content_type_extras_descriptions_required' => 0,
-    'content_type_extras_remove_body' => 0,
-    'content_type_extras_title_hide' => 0,
-    'content_type_extras_title_hide_css' => 0,
-    'content_type_extras_title_hide_front' => 0,
-    'content_type_extras_top_buttons' => array(
-      'manage_fields' => 0,
-      'node_edit' => 0,
-    ),
-    'content_type_extras_excluded_node_forms' => array(
-      0 => '',
-    ),
-    'xmlsitemap_settings' => array(
-      'status' => '1',
-      'priority' => '0.5',
-    ),
-    'content_type_extras__active_tab' => 'edit-configuration',
-  );
-  $export['content_type_extras_default_settings'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -940,6 +903,62 @@ function ec_base_config_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_pattern';
+  $strongarm->value = '[term:vocabulary]/[term:name]';
+  $export['pathauto_taxonomy_term_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_option_extras_fbsub_field';
+  $strongarm->value = '';
+  $export['sharethis_option_extras_fbsub_field'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_option_neworzero';
+  $strongarm->value = 0;
+  $export['sharethis_option_neworzero'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_option_onhover';
+  $strongarm->value = 1;
+  $export['sharethis_option_onhover'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_option_shorten';
+  $strongarm->value = 1;
+  $export['sharethis_option_shorten'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_override_email&amp;quot';
+  $strongarm->value = '';
+  $export['sharethis_override_email&amp;quot'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_override_email&quot';
+  $strongarm->value = '';
+  $export['sharethis_override_email&quot'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_override_sharethis&quot';
+  $strongarm->value = '';
+  $export['sharethis_override_sharethis&quot'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
   $strongarm->value = 'digital@energycircle.com';
   $export['site_mail'] = $strongarm;
@@ -952,4 +971,20 @@ function ec_base_config_defaultconfig_strongarm() {
   $export['site_slogan'] = $strongarm;
 
   return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_user_default_permissions().
+ */
+function ec_base_config_defaultconfig_user_default_permissions() {
+  $permissions = array();
+
+  // Exported permission: 'administer sharethis'.
+  $permissions['administer sharethis'] = array(
+    'name' => 'administer sharethis',
+    'roles' => array(),
+    'module' => 'sharethis',
+  );
+
+  return $permissions;
 }

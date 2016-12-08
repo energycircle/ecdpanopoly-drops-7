@@ -10,8 +10,8 @@
 function ec_sr3_content_menu_links_defaults() {
   $menu_links = array();
 
-  // Exported menu link: navigation:node/add/sr3-service-review
-  $menu_links['navigation:node/add/sr3-service-review'] = array(
+  // Exported menu link: navigation_sr3-service-review:node/add/sr3-service-review
+  $menu_links['navigation_sr3-service-review:node/add/sr3-service-review'] = array(
     'menu_name' => 'navigation',
     'link_path' => 'node/add/sr3-service-review',
     'router_path' => 'node/add/sr3-service-review',
@@ -20,6 +20,7 @@ function ec_sr3_content_menu_links_defaults() {
       'attributes' => array(
         'title' => 'A customer\'s service review',
       ),
+      'identifier' => 'navigation_sr3-service-review:node/add/sr3-service-review',
     ),
     'module' => 'system',
     'hidden' => 0,

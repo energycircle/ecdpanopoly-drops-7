@@ -20,7 +20,6 @@ function ec_distinction_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
-    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Partner',
@@ -32,7 +31,6 @@ function ec_distinction_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
-    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Awards',
@@ -44,7 +42,6 @@ function ec_distinction_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
-    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Membership',
@@ -56,7 +53,6 @@ function ec_distinction_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 1,
     ),
-    'url_alias' => array(),
   );
   return $terms;
 }

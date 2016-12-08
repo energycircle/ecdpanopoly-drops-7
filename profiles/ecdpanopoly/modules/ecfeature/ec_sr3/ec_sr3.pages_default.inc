@@ -66,6 +66,8 @@ function ec_sr3_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = 'Leave Feedback';
   $display->uuid = '35aa7d05-b237-4b3c-a835-a64325a17b90';
+  $display->storage_type = '';
+  $display->storage_id = '';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -204,6 +206,8 @@ function ec_sr3_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = 'Post a Review';
   $display->uuid = '326ce0e4-1610-442c-917b-be84233e72cb';
+  $display->storage_type = '';
+  $display->storage_id = '';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -417,6 +421,8 @@ function ec_sr3_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = 'Leave Feedback';
   $display->uuid = '648300e9-fcb1-4e5b-93d9-3853aabf0f9a';
+  $display->storage_type = '';
+  $display->storage_id = '';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -546,6 +552,8 @@ function ec_sr3_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = 'Evaluate Our Service';
   $display->uuid = '4686d533-f7fd-4fad-b729-6e9ab1264819';
+  $display->storage_type = '';
+  $display->storage_id = '';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();

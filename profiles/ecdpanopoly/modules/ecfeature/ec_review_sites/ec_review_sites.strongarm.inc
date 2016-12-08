@@ -123,13 +123,13 @@ function ec_review_sites_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '4',
+          'weight' => '2',
         ),
         'redirect' => array(
           'weight' => '6',
         ),
         'xmlsitemap' => array(
-          'weight' => '5',
+          'weight' => '3',
         ),
       ),
       'display' => array(),

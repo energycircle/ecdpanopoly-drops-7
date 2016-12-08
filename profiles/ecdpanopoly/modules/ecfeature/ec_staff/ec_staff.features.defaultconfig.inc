@@ -11,7 +11,6 @@ function ec_staff_defaultconfig_features() {
   return array(
     'ec_staff' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -32,6 +31,9 @@ function ec_staff_defaultconfig_field_default_fields() {
         0 => 'node',
       ),
       'field_name' => 'body',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -59,12 +61,8 @@ function ec_staff_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 0,
         ),
         'featured' => array(
@@ -91,6 +89,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -119,7 +118,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 6,
+        'weight' => 11,
       ),
     ),
   );
@@ -164,12 +163,8 @@ function ec_staff_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 1,
         ),
         'featured' => array(
@@ -217,7 +212,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 7,
       ),
     ),
   );
@@ -262,12 +257,8 @@ function ec_staff_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 2,
         ),
         'featured' => array(
@@ -315,7 +306,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 8,
       ),
     ),
   );
@@ -364,12 +355,8 @@ function ec_staff_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'taxonomy',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'taxonomy_term_reference_link',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 5,
         ),
         'featured' => array(
@@ -409,7 +396,7 @@ function ec_staff_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -451,14 +438,8 @@ function ec_staff_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 3,
         ),
         'featured' => array(
@@ -536,7 +517,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 4,
+        'weight' => 10,
       ),
     ),
   );
@@ -578,12 +559,8 @@ function ec_staff_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 4,
         ),
         'featured' => array(
@@ -631,7 +608,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 9,
       ),
     ),
   );
@@ -648,20 +625,4 @@ function ec_staff_defaultconfig_field_default_fields() {
   t('Staff Title');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_staff_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__staff';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__staff'] = $strongarm;
-
-  return $export;
 }

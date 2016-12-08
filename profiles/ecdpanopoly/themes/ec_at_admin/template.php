@@ -14,10 +14,10 @@
  * powerful way to easily modify the output of any template variable.
  *
  * Preprocess and Process Functions SEE: http://drupal.org/node/254940#variables-processor
- * 1. Rename each function and instance of "ec_energycircle_admin" to match
+ * 1. Rename each function and instance of "ec_at_admin" to match
  *    your subthemes name, e.g. if your theme name is "footheme" then the function
  *    name will be "footheme_preprocess_hook". Tip - you can search/replace
- *    on "ec_energycircle_admin".
+ *    on "ec_at_admin".
  * 2. Uncomment the required function to use.
  */
 
@@ -26,7 +26,7 @@
  * Preprocess variables for the html template.
  */
 /* -- Delete this line to enable.
-function ec_energycircle_admin_preprocess_html(&$vars) {
+function ec_at_admin_preprocess_html(&$vars) {
   global $theme_key;
 
   // Two examples of adding custom classes to the body.
@@ -45,7 +45,7 @@ function ec_energycircle_admin_preprocess_html(&$vars) {
  * Process variables for the html template.
  */
 /* -- Delete this line if you want to use this function
-function ec_energycircle_admin_process_html(&$vars) {
+function ec_at_admin_process_html(&$vars) {
 }
 // */
 
@@ -54,11 +54,11 @@ function ec_energycircle_admin_process_html(&$vars) {
  * Override or insert variables for the page templates.
  */
 
-function ec_energycircle_admin_preprocess_page(&$vars) {
+function ec_at_admin_preprocess_page(&$vars) {
    $node = &$variables['node'];
 
 }
-function ec_energycircle_admin_process_page(&$vars) {
+function ec_at_admin_process_page(&$vars) {
 }
 // */
 
@@ -67,9 +67,9 @@ function ec_energycircle_admin_process_page(&$vars) {
  * Override or insert variables into the node templates.
  */
 /* -- Delete this line if you want to use these functions
-function ec_energycircle_admin_preprocess_node(&$vars) {
+function ec_at_admin_preprocess_node(&$vars) {
 }
-function ec_energycircle_admin_process_node(&$vars) {
+function ec_at_admin_process_node(&$vars) {
 }
 // */
 
@@ -78,9 +78,9 @@ function ec_energycircle_admin_process_node(&$vars) {
  * Override or insert variables into the comment templates.
  */
 /* -- Delete this line if you want to use these functions
-function ec_energycircle_admin_preprocess_comment(&$vars) {
+function ec_at_admin_preprocess_comment(&$vars) {
 }
-function ec_energycircle_admin_process_comment(&$vars) {
+function ec_at_admin_process_comment(&$vars) {
 }
 // */
 
@@ -89,21 +89,21 @@ function ec_energycircle_admin_process_comment(&$vars) {
  * Override or insert variables into the block templates.
  */
 /* -- Delete this line if you want to use these functions
-function ec_energycircle_admin_preprocess_block(&$vars) {
+function ec_at_admin_preprocess_block(&$vars) {
 }
-function ec_energycircle_admin_process_block(&$vars) {
+function ec_at_admin_process_block(&$vars) {
 }
 // */
 
 
 //***Add form_id to the following array to add Zoho Handling post-submit
-  
+
 //** field_button_text
-  
+
   /* -- Delete this line if you want to use these functions
-  
- function ec_energycircle_admin_form_alter(&$form, &$form_state, $form_id){
-	 
+
+ function ec_at_admin_form_alter(&$form, &$form_state, $form_id){
+
  $buttonLabel = array(
      'field_button_text',
   );
@@ -113,12 +113,3 @@ function ec_energycircle_admin_process_block(&$vars) {
   }
 }
  // */
- 
-
-
-
-
-
-
-
-

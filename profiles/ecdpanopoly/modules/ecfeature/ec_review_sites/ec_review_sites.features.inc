@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function ec_review_sites_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -28,7 +31,7 @@ function ec_review_sites_node_info() {
     'review_site' => array(
       'name' => t('Review Site'),
       'base' => 'node_content',
-      'description' => t('Used to display review sites'),
+      'description' => t('Used to display review sites logos and links. This is connected to the testimonial type.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

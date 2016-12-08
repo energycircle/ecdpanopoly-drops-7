@@ -131,7 +131,7 @@ function ec_testimonial_field_default_field_bases() {
   // Exported field_base: 'field_ref_page_testimonial'.
   $field_bases['field_ref_page_testimonial'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ref_page_testimonial',
@@ -146,6 +146,9 @@ function ec_testimonial_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),

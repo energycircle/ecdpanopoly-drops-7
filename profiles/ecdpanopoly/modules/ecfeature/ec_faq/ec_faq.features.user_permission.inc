@@ -19,6 +19,15 @@ function ec_faq_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node faq choice'.
+  $permissions['administer panelizer node faq choice'] = array(
+    'name' => 'administer panelizer node faq choice',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node faq content'.
   $permissions['administer panelizer node faq content'] = array(
     'name' => 'administer panelizer node faq content',

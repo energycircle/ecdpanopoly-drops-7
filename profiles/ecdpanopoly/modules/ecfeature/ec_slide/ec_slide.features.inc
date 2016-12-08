@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function ec_slide_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
   if ($module == "flexslider" && $api == "flexslider_default_preset") {
     return array("version" => "1");
   }
@@ -27,54 +30,6 @@ function ec_slide_views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_flexslider_default_presets_alter().
- */
-function ec_slide_flexslider_default_presets_alter(&$data) {
-  if (isset($data['default'])) {
-    $data['default']->options['animationLoop'] = 1; /* WAS: TRUE */
-    $data['default']->options['controlNav'] = 0; /* WAS: 1 */
-    $data['default']->options['directionNav'] = 1; /* WAS: TRUE */
-    $data['default']->options['keyboard'] = 1; /* WAS: TRUE */
-    $data['default']->options['mousewheel'] = 0; /* WAS: FALSE */
-    $data['default']->options['multipleKeyboard'] = 0; /* WAS: FALSE */
-    $data['default']->options['pauseOnAction'] = 1; /* WAS: TRUE */
-    $data['default']->options['pauseOnHover'] = 0; /* WAS: FALSE */
-    $data['default']->options['pausePlay'] = 0; /* WAS: FALSE */
-    $data['default']->options['randomize'] = 0; /* WAS: FALSE */
-    $data['default']->options['reverse'] = 0; /* WAS: FALSE */
-    $data['default']->options['slideshow'] = 1; /* WAS: TRUE */
-    $data['default']->options['smoothHeight'] = 0; /* WAS: FALSE */
-    $data['default']->options['thumbCaptions'] = 0; /* WAS: FALSE */
-    $data['default']->options['thumbCaptionsBoth'] = 0; /* WAS: FALSE */
-    $data['default']->options['touch'] = 1; /* WAS: TRUE */
-    $data['default']->options['useCSS'] = 1; /* WAS: TRUE */
-    $data['default']->options['video'] = 0; /* WAS: FALSE */
-    unset($data['default']->export_type);
-    unset($data['default']->type);
-  }
-}
-
-/**
- * Implements hook_image_styles_alter().
- */
-function ec_slide_image_styles_alter(&$data) {
-  if (isset($data['flexslider_full'])) {
-
-  if (!isset($data['flexslider_full']['storage']) || $data['flexslider_full']['storage'] == IMAGE_STORAGE_DEFAULT) {
-    $data['flexslider_full']['effects'] = array_values($data['flexslider_full']['effects']);
-    $data['flexslider_full']['label'] = 'flexslider_full';
-  }
-  }
-  if (isset($data['flexslider_thumbnail'])) {
-
-  if (!isset($data['flexslider_thumbnail']['storage']) || $data['flexslider_thumbnail']['storage'] == IMAGE_STORAGE_DEFAULT) {
-    $data['flexslider_thumbnail']['effects'] = array_values($data['flexslider_thumbnail']['effects']);
-    $data['flexslider_thumbnail']['label'] = 'flexslider_thumbnail';
-  }
-  }
-}
-
-/**
  * Implements hook_node_info().
  */
 function ec_slide_node_info() {
@@ -82,7 +37,7 @@ function ec_slide_node_info() {
     'slide' => array(
       'name' => t('Slide'),
       'base' => 'node_content',
-      'description' => t('A slide to include in the home page slide set or another slide set.'),
+      'description' => t('A single image and text used either in the homepage rotating hero or in another slide set.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
@@ -152,6 +107,9 @@ function ec_slide_rdf_default_mappings() {
       ),
       'datatype' => 'xsd:dateTime',
       'callback' => 'date_iso8601',
+    ),
+    'field_content_link' => array(
+      'predicates' => array(),
     ),
   );
 

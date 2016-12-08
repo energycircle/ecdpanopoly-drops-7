@@ -69,3 +69,32 @@ function ec_base_config_default_entityform_type() {
   }');
   return $items;
 }
+
+/**
+ * Implements hook_file_default_displays_alter().
+ */
+function ec_base_config_file_default_displays_alter(&$data) {
+  if (isset($data['video__default__file_field_file_video'])) {
+    $data['video__default__file_field_file_video']->settings['muted'] = 0; /* WAS: '' */
+    $data['video__default__file_field_file_video']->settings['preload'] = ''; /* WAS: '' */
+    $data['video__default__file_field_file_video']->weight = -40; /* WAS: 50 */
+  }
+  if (isset($data['video__default__media_vimeo_video'])) {
+    $data['video__default__media_vimeo_video']->weight = -47; /* WAS: 0 */
+  }
+  if (isset($data['video__default__media_youtube_video'])) {
+    $data['video__default__media_youtube_video']->settings['captions'] = FALSE; /* WAS: '' */
+    $data['video__default__media_youtube_video']->weight = -49; /* WAS: 0 */
+  }
+}
+
+/**
+ * Implements hook_file_default_types_alter().
+ */
+function ec_base_config_file_default_types_alter(&$data) {
+  if (isset($data['video'])) {
+    $data['video']->disabled = FALSE; /* WAS: '' */
+    $data['video']->mimetypes[1] = 'video/vimeo'; /* WAS: '' */
+    $data['video']->mimetypes[2] = 'video/youtube'; /* WAS: '' */
+  }
+}

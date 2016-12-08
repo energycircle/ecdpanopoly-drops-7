@@ -531,7 +531,8 @@ function ec_sr3_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Please rate the quality of our service */
@@ -595,6 +596,48 @@ function ec_sr3_views_default_views() {
 
   /* Display: Reviews */
   $handler = $view->new_display('panel_pane', 'Reviews', 'panel_pane_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Please rate the quality of our service */
+  $handler->display->display_options['fields']['field_sr3_rating_value']['id'] = 'field_sr3_rating_value';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['table'] = 'field_data_field_sr3_rating_value';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['field'] = 'field_sr3_rating_value';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['label'] = '';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_sr3_rating_value']['alter']['text'] = '<span class="rating-[field_sr3_rating_value-value]">[field_sr3_rating_value-value]</span>';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sr3_rating_value']['type'] = 'list_key';
+  /* Field: Content: Please leave your review */
+  $handler->display->display_options['fields']['field_sr3_service_review']['id'] = 'field_sr3_service_review';
+  $handler->display->display_options['fields']['field_sr3_service_review']['table'] = 'field_data_field_sr3_service_review';
+  $handler->display->display_options['fields']['field_sr3_service_review']['field'] = 'field_sr3_service_review';
+  $handler->display->display_options['fields']['field_sr3_service_review']['label'] = '';
+  $handler->display->display_options['fields']['field_sr3_service_review']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'panopoly_day';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'panopoly_time';
+  /* Field: Content: SR3 City */
+  $handler->display->display_options['fields']['field_sr3_city']['id'] = 'field_sr3_city';
+  $handler->display->display_options['fields']['field_sr3_city']['table'] = 'field_data_field_sr3_city';
+  $handler->display->display_options['fields']['field_sr3_city']['field'] = 'field_sr3_city';
+  $handler->display->display_options['fields']['field_sr3_city']['label'] = '';
+  $handler->display->display_options['fields']['field_sr3_city']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_sr3_city']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_sr3_city']['alter']['text'] = ', [field_sr3_city]';
+  $handler->display->display_options['fields']['field_sr3_city']['element_label_colon'] = FALSE;
+  /* Field: Content: SR3 Name */
+  $handler->display->display_options['fields']['field_sr3_name']['id'] = 'field_sr3_name';
+  $handler->display->display_options['fields']['field_sr3_name']['table'] = 'field_data_field_sr3_name';
+  $handler->display->display_options['fields']['field_sr3_name']['field'] = 'field_sr3_name';
+  $handler->display->display_options['fields']['field_sr3_name']['label'] = '';
+  $handler->display->display_options['fields']['field_sr3_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_sr3_name']['alter']['text'] = '[field_sr3_name][field_sr3_city]';
+  $handler->display->display_options['fields']['field_sr3_name']['element_label_colon'] = FALSE;
   $export['sr3_service_review'] = $view;
 
   $view = new view();
@@ -629,6 +672,10 @@ function ec_sr3_views_default_views() {
   $handler->display->display_options['fields']['field_sr3_rating_value']['alter']['text'] = '<span class="rating-[field_sr3_rating_value]">[field_sr3_rating_value]</span>';
   $handler->display->display_options['fields']['field_sr3_rating_value']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_sr3_rating_value']['type'] = 'list_key';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -646,6 +693,24 @@ function ec_sr3_views_default_views() {
 
   /* Display: Average Rating */
   $handler = $view->new_display('panel_pane', 'Average Rating', 'panel_pane_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: AVG(Content: Please rate the quality of our service) */
+  $handler->display->display_options['fields']['field_sr3_rating_value']['id'] = 'field_sr3_rating_value';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['table'] = 'field_data_field_sr3_rating_value';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['field'] = 'field_sr3_rating_value';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['group_type'] = 'avg';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['label'] = '';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_sr3_rating_value']['alter']['text'] = '<span class="rating-[field_sr3_rating_value]">[field_sr3_rating_value]</span>';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['alter']['max_length'] = '2';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['field_sr3_rating_value']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sr3_rating_value']['type'] = 'list_key';
+  $handler->display->display_options['fields']['field_sr3_rating_value']['settings'] = array(
+    'click_to_edit' => 0,
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
   $export['sr3_service_review_average'] = $view;
 
   return $export;

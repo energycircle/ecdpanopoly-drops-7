@@ -198,8 +198,7 @@ function ec_slide_views_default_views() {
     'image_style' => 's_220',
     'image_link' => '',
   );
-
-  $export['slideshow_carousel'] = $view;
+  $export['slides_home'] = $view;
 
   return $export;
 }

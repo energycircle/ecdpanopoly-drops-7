@@ -62,12 +62,8 @@ function ec_slide_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 0,
         ),
         'featured' => array(
@@ -88,6 +84,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -110,7 +107,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 9,
+        'weight' => 10,
       ),
     ),
   );
@@ -153,12 +150,8 @@ function ec_slide_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'link',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'link_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 3,
         ),
         'featured' => array(
@@ -188,34 +181,36 @@ function ec_slide_defaultconfig_field_default_fields() {
         'absolute_url' => 1,
         'attributes' => array(
           'class' => 'content-link',
-          'configurable_title' => 1,
+          'configurable_class' => 0,
+          'configurable_title' => 0,
           'rel' => '',
-          'target' => 'user',
+          'target' => 'default',
           'title' => '',
         ),
         'display' => array(
           'url_cutoff' => 80,
         ),
-        'enable_tokens' => 1,
+        'enable_tokens' => 0,
         'linkit' => array(
-          'enable' => 0,
-          'insert_plugin' => '',
+          'button_text' => 'Search',
+          'enable' => 1,
+          'profile' => 'fields',
         ),
         'rel_remove' => 'default',
-        'title' => 'optional',
-        'title_label_use_field_label' => FALSE,
+        'title' => 'none',
+        'title_label_use_field_label' => 1,
         'title_maxlength' => 128,
         'title_value' => '',
         'url' => 0,
         'user_register_form' => FALSE,
-        'validate_url' => 0,
+        'validate_url' => 1,
       ),
       'widget' => array(
         'active' => 0,
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -257,12 +252,8 @@ function ec_slide_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 2,
         ),
         'featured' => array(
@@ -303,7 +294,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -345,12 +336,8 @@ function ec_slide_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 1,
         ),
         'featured' => array(
@@ -391,7 +378,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -433,15 +420,9 @@ function ec_slide_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => 4,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
         ),
         'featured' => array(
           'label' => 'above',
@@ -512,7 +493,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -561,13 +542,9 @@ function ec_slide_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'taxonomy',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => 5,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'above',
@@ -600,7 +577,7 @@ function ec_slide_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );

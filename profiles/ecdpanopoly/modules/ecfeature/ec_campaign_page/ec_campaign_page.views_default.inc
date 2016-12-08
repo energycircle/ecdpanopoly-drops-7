@@ -11,11 +11,11 @@ function ec_campaign_page_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'campaign_page';
+  $view->name = 'campaign_request';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'entityform_type';
-  $view->human_name = 'Campaign Page';
+  $view->human_name = 'Campaign Request';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -75,10 +75,10 @@ function ec_campaign_page_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: Sidebar CTA Form */
+  $handler = $view->new_display('panel_pane', 'Sidebar CTA Form', 'panel_pane_1');
   $handler->display->display_options['pane_category']['weight'] = '0';
-  $export['campaign_page'] = $view;
+  $export['campaign_request'] = $view;
 
   return $export;
 }

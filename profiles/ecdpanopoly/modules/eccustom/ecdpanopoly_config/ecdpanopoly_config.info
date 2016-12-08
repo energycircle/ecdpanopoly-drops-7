@@ -1,0 +1,16 @@
+name = ecpanopoly_config
+description = Profile Configurations
+package = ECDistro
+
+version = 7.x-1.0-alpha1
+core = 7.x
+
+dependencies[] = panopoly_config
+
+files[] = ecpanopoly_config.module
+
+; Information added by drupal.org packaging script on 2016-010-20
+version = "7.x-1.0-rc2"
+core = "7.x"
+project = "ecpanopoly_config"
+datestamp = "1330440647"

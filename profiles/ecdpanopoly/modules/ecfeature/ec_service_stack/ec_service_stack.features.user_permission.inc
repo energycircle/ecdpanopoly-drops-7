@@ -19,6 +19,15 @@ function ec_service_stack_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node service choice'.
+  $permissions['administer panelizer node service choice'] = array(
+    'name' => 'administer panelizer node service choice',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node service content'.
   $permissions['administer panelizer node service content'] = array(
     'name' => 'administer panelizer node service content',
@@ -82,6 +91,15 @@ function ec_service_stack_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node service_category choice'.
+  $permissions['administer panelizer node service_category choice'] = array(
+    'name' => 'administer panelizer node service_category choice',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node service_category content'.
   $permissions['administer panelizer node service_category content'] = array(
     'name' => 'administer panelizer node service_category content',
@@ -139,6 +157,15 @@ function ec_service_stack_user_default_permissions() {
   // Exported permission: 'administer panelizer node service_group breadcrumbs'.
   $permissions['administer panelizer node service_group breadcrumbs'] = array(
     'name' => 'administer panelizer node service_group breadcrumbs',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node service_group choice'.
+  $permissions['administer panelizer node service_group choice'] = array(
+    'name' => 'administer panelizer node service_group choice',
     'roles' => array(
       'administrator' => 'administrator',
     ),

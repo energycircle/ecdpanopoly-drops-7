@@ -42,5 +42,21 @@ function ec_base_config_default_ctools_custom_content() {
   );
   $export['phone_number'] = $content;
 
+  $content = new stdClass();
+  $content->disabled = FALSE; /* Edit this to true to make a default content disabled initially */
+  $content->api_version = 1;
+  $content->name = 'social_media_links';
+  $content->admin_title = 'Social Media Links';
+  $content->admin_description = '';
+  $content->category = 'site-assets';
+  $content->settings = array(
+    'admin_title' => 'Social Media Links',
+    'title' => '',
+    'body' => '<p>[social:facebook]&nbsp;[social:twitter]&nbsp;[social:google]</p>',
+    'format' => 'panopoly_wysiwyg_text',
+    'substitute' => TRUE,
+  );
+  $export['social_media_links'] = $content;
+
   return $export;
 }

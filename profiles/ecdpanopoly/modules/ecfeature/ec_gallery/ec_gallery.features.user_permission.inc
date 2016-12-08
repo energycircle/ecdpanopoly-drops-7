@@ -19,6 +19,15 @@ function ec_gallery_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node gallery choice'.
+  $permissions['administer panelizer node gallery choice'] = array(
+    'name' => 'administer panelizer node gallery choice',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node gallery content'.
   $permissions['administer panelizer node gallery content'] = array(
     'name' => 'administer panelizer node gallery content',

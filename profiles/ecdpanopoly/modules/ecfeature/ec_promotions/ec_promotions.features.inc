@@ -59,9 +59,8 @@ function ec_promotions_rdf_default_mappings() {
   // Exported RDF mapping: promotion
   $schemaorg['node']['promotion'] = array(
     'rdftype' => array(
-      0 => 'schema:Offer',
-      1 => 'sioc:Item',
-      2 => 'foaf:Document',
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
     ),
     'title' => array(
       'predicates' => array(
@@ -85,8 +84,7 @@ function ec_promotions_rdf_default_mappings() {
     ),
     'body' => array(
       'predicates' => array(
-        0 => 'schema:articleBody',
-        1 => 'content:encoded',
+        0 => 'content:encoded',
       ),
     ),
     'uid' => array(
@@ -113,10 +111,11 @@ function ec_promotions_rdf_default_mappings() {
       'datatype' => 'xsd:dateTime',
       'callback' => 'date_iso8601',
     ),
-    'field_display_title' => array(
+    'field_promotion_image' => array(
       'predicates' => array(
-        0 => 'schema:itemOffered',
+        0 => 'schema:primaryImageOfPage',
       ),
+      'type' => 'rel',
     ),
     'url' => array(
       'predicates' => array(
@@ -124,54 +123,8 @@ function ec_promotions_rdf_default_mappings() {
       ),
       'type' => 'rel',
     ),
-    'field_display_subtitle' => array(
-      'predicates' => array(
-        0 => 'schema:itemOffered',
-      ),
-    ),
-    'field_promotion_link_text' => array(
-      'predicates' => array(
-        0 => 'schema:source',
-      ),
-    ),
-    'field_display_startend' => array(
-      'predicates' => array(
-        0 => 'schema:endDate',
-      ),
-    ),
-    'field_promotion_image' => array(
-      'predicates' => array(
-        0 => 'schema:primaryImageOfPage',
-      ),
-      'type' => 'rel',
-    ),
-    'field_ref_promo_article' => array(
-      'predicates' => array(
-        0 => 'schema:associatedArticle',
-      ),
-    ),
-    'field_ref_promo_serv_group' => array(
-      'predicates' => array(
-        0 => 'schema:availableService',
-      ),
-    ),
-    'field_ref_promo_serv_cat' => array(
-      'predicates' => array(
-        0 => 'schema:availableService',
-      ),
-    ),
-    'field_ref_promo_service' => array(
-      'predicates' => array(
-        0 => 'schema:availableService',
-      ),
-    ),
-    'field_a_b_test_page' => array(
+    'field_call_to_action' => array(
       'predicates' => array(),
-    ),
-    'field_promotion_price' => array(
-      'predicates' => array(
-        0 => 'schema:price',
-      ),
     ),
   );
 
@@ -183,14 +136,6 @@ function ec_promotions_rdf_default_mappings() {
  */
 function ec_promotions_weight_features_default_settings() {
   $settings = array();
-
-  $settings['promotion'] = array(
-    'enabled' => 1,
-    'range' => 20,
-    'menu_weight' => 0,
-    'default' => 0,
-    'sync_translations' => 0,
-  );
 
   return $settings;
 }

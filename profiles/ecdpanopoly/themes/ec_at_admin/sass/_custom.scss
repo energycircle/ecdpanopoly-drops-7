@@ -24,13 +24,28 @@
 //
 
 $page:         #fff;    // to match the page background, default is white
-$border:       #546e7a;    // all borders set in global.styles - tables, fieldset, primary links
-$highlight:    #c00;    // required mark, form error highlight, "new" label on comments
+$border:       #607d8b;    // all borders set in global.styles - tables, fieldset, primary links
+$highlight:    #e53935;    // required mark, form error highlight, "new" label on comments
 $ultralight:   #eceff1; // table row even, primary link inactive tabs
-$light:        #cfd8dc;    // table row odd active, primary link inactive hover
-$medium_light: #b0bec5; // table row even active
+$light:        #b0bec5;    // table row odd active, primary link inactive hover
+$medium_light: #ebebeb; // table row even active
 $medium_dark:  #90a4ae; // table thead
-$dark:         #263238;
+$contrast-dark: #b71c1c;
+$contrast-medium: #e57373;
+$contrast-light: #ffcdd2;
+$grayscale-ultralight: #fafafa;
+$grayscale-light: #f5f5f5;
+$grayscale-medium: #bdbdbd;
+$grayscale-dark: #212121;
+
+$orange:    #fb9c13;
+$blue:      #6380a4;
+$lt_blue:    #f1f4f6;
+
+$dk_gray: #2a2a2a;
+$md_gray: #dedede;
+$lt_gray: #f9f9f9;
+
 $debug:        rgba(255, 192, 203, 0.5); // Full width wrapper test
 
 $thead:          $medium_dark;
@@ -183,4 +198,893 @@ $gutter-width: 10px;
   text-align: center;
   text-transform: uppercase;
   word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+
+
+  EC MIXINS
+
+  1. colors
+  2. type
+  3. buttons
+  4. misc styles
+
+
+\*---------------------------------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+
+
+  1. COLORS
+
+
+\*---------------------------------------------------------------------------*/
+
+
+$primary: #fb9c13;
+$secondary: #6380a4;
+$tertiary: #f1f4f6;
+//$quaternary: #f8f4ec;
+
+
+$dk_gray: #2a2a2a;
+$md_gray: #dedede;
+$lt_gray: #f9f9f9;
+
+
+
+/*---------------------------------------------------------------------------*\
+
+
+  2. TYPE
+
+    a. @fontface
+    b. global styles
+
+
+\*---------------------------------------------------------------------------*/
+
+
+    /*-----------------------------------------------------------------------*\
+
+        a. @fontface
+
+    \*-----------------------------------------------------------------------*/
+
+
+    //Fontello
+    @font-face {
+
+      font-family: 'fontello';
+      src: url('../fonts/fontello.eot?1332134');
+      src: url('../fonts/fontello.eot?1332134#iefix') format('embedded-opentype'),
+           url('../fonts/fontello.woff2?1332134') format('woff2'),
+           url('../fonts/fontello.woff?1332134') format('woff'),
+           url('../fonts/fontello.ttf?1332134') format('truetype'),
+           url('../fonts/fontello.svg?1332134#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    $primary-ff: 'Rokkitt', serif;
+    $secondary-ff: 'Avenir', 'Lato', sans-serif;
+
+
+
+    /*-----------------------------------------------------------------------*\
+
+        b. global styles
+
+    \*-----------------------------------------------------------------------*/
+
+
+    //
+    // Converts font-sizes to REM with PX fallback
+    //
+
+    @mixin font-size($sizeValue: 1.6) {
+
+      font-size:     ($sizeValue * 10) + px;
+      font-size:     $sizeValue + rem;
+    }
+
+    //
+    // Converts units to REM with PX fallback
+    //
+
+    @function strip-unit($num) {
+
+      @return         $num / ($num * 0 + 1);
+    }
+
+    @mixin rem($property, $values...) {
+
+      $max:             length($values);
+      $pxValues:        '';
+      $remValues:       '';
+
+
+      @for $i from 1 through $max {
+
+        $value:         strip-unit(nth($values, $i));
+        $pxValues:      #{$pxValues + $value*10}px;
+
+        @if $i < $max {
+
+          $pxValues:    #{$pxValues + " "};
+        }
+      }
+
+
+      @for $i from 1 through $max {
+
+        $value:         strip-unit(nth($values, $i));
+        $remValues:     #{$remValues + $value}rem;
+
+        @if $i < $max {
+
+          $remValues:   #{$remValues + " "};
+        }
+      }
+
+      #{$property}:     $pxValues;
+      #{$property}:     $remValues;
+    }
+
+
+
+    @mixin link-style($hover_color: $tertiary){
+
+      a{
+        color: inherit;
+
+        &:hover{
+
+          color: $hover_color;
+          text-decoration: none;
+        }
+      }
+    }
+
+    @mixin font-size-calc($size){
+
+      $line-height:  $size * 1.25;
+      @include       font-size($size);
+      @include       rem(line-height, $line-height);
+    }
+
+
+
+    /*-----------------------------------------------------------------------*\
+
+        TITLE
+
+    \*-----------------------------------------------------------------------*/
+
+    @mixin title($size: 4.5, $color: $primary, $weight: 300){
+
+      font-family:   $primary-ff;
+      font-weight:   $weight;
+      color:         $color;
+      @include       font-size-calc($size);
+      @include       rem(margin, 0, 0, 1);
+      text-transform: none;
+      position: relative;
+
+      h1, h2{
+
+          font-size: inherit;
+          line-height: inherit;
+          margin: 0;
+          color: inherit;
+          font-weight: inherit;
+          text-align: inherit;
+
+      }
+
+      @include link-style;
+    }
+
+
+    @mixin subtitle($size: 2.3, $color: $primary, $weight: 700){
+
+      font-family:   $secondary-ff;
+      font-weight:   $weight;
+      font-style:    italic;
+      color:         $color;
+      @include       font-size-calc($size);
+      @include       rem(margin, 0, 0, 1);
+      text-transform: none;
+      position: relative;
+
+      h1, h2{
+
+          font-size: inherit;
+          line-height: inherit;
+          margin: 0;
+          color: inherit;
+          font-weight: inherit;
+          text-align: inherit;
+
+      }
+
+      @include link-style;
+    }
+
+
+
+    /*-----------------------------------------------------------------------*\
+
+        BODY
+
+    \*-----------------------------------------------------------------------*/
+
+    @mixin body-copy ($size: 1.5, $color: $dk_gray){
+
+        font-family:       'Avenir', sans-serif;
+        font-weight:       300;
+        color:             $color;
+
+        @include           rem(margin, 0, 0, 1.5);
+        @include           font-size-calc($size);
+    }
+
+
+
+/*---------------------------------------------------------------------------*\
+
+
+  3. BUTTONS
+
+
+\*---------------------------------------------------------------------------*/
+
+
+
+
+@mixin button ($color: $tertiary, $size: 1.6, $outline: 'false' ){
+
+  @include           font-size-calc($size);
+  font-family:       $secondary-ff;
+  text-transform:    none;
+  letter-spacing:    0px;
+  text-decoration:   none;
+  font-weight:       900;
+
+  @include rem(padding, 1, 2);
+  display: inline-block;
+  border-radius: 0px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  overflow: hidden;
+  position:relative;
+  border: 0;
+  @include rem(margin, 1, .2);
+
+  @if $outline == 'false'{
+    color: white;
+    background: $color;
+  }
+  @else{
+    color: $color;
+    background: none;
+    border: 1px solid $color;
+  }
+
+}
+
+
+
+/*---------------------------------------------------------------------------*\
+
+
+  4. MISC STYLES
+
+
+\*---------------------------------------------------------------------------*/
+
+$max-width: 1240px;
+
+@mixin box-style{
+
+  text-align: center;
+  border: 1px solid rgba($dk_gray, .5);
+
+  border-radius: 10px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+
+@mixin input-style{
+
+  @include font-size-calc(1.4);
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: calc(10px - 1px) 20px;
+  padding: calc(1rem - 1px) 2rem;
+  //border: 1px solid lighten($secondary, 50%);
+  border: 1px solid lighten($secondary, 40%);
+  background: white;
+  color:          $dk_gray;
+  @include        rem(border-radius, .3);
+  box-shadow: none;
+  width: 100%;
+  position: relative;
+  font-family: $secondary-ff;
+  font-weight: 300;
+}
+
+
+@mixin css-transition($type, $duration:500ms, $ease: ease-out){
+
+    -webkit-transition:         $type $duration $ease;
+    -moz-transition:            $type $duration $ease;
+    -o-transition:              $type $duration $ease;
+    transition:                 $type $duration $ease;
+
+    &:hover{
+
+        text-decoration:        none;
+        -webkit-transition:     $type 200ms $ease;
+        -moz-transition:        $type 200ms $ease;
+        -o-transition:          $type 200ms $ease;
+        transition:             $type 200ms $ease;
+
+    }
+}
+
+@mixin css-transition-none{
+
+    -webkit-transition:         none;
+    -moz-transition:            none;
+    -o-transition:              none;
+    transition:                 none;
+
+    &:hover{
+
+        text-decoration:        none;
+        -webkit-transition:     none;
+        -moz-transition:        none;
+        -o-transition:          none;
+        transition:             none;
+
+    }
+}
+
+
+
+@mixin teaser-image($width:33.333%){
+
+    width:         $width;
+    float:         left;
+    margin-bottom: 0px;
+    padding-right: 30px;
+
+    img{
+
+        width: 100%;
+    }
+
+    .block-inner{
+
+        margin: 0;
+    }
+}
+
+@mixin teaser-content($width:66.666%){
+
+    width:     $width;
+    float:     right;
+    @include rem(margin, 0, 0, 1);
+}
+
+
+@mixin teaser-block($width:33.333%, $border_color: $lt_brown){
+
+    width: calc( #{$width} - 20px);
+    width: calc( #{$width} - 2rem);
+    background: white;
+    border-top: 5px solid $border-color;
+    @include rem(margin, 1);
+    float: left;
+
+    img{
+
+        display: block;
+    }
+}
+
+
+//vertical padding
+$vp: 4.5;
+
+//dynamic negative margin
+$nm: calc( ( (1250px - 100vw) / 2) - 20px);
+
+//dynamic posative margin
+$pm: calc(((100vw - 1250px) / 2) + 20px);
+
+
+
+@mixin faux-width($color:white){
+
+    @include rem(margin, 0, -2);
+    @include rem(padding, $vp, 2);
+
+    @media only screen and (min-width: 1250px) {
+
+        margin: 0 $nm;
+        padding: ($vp*10)+px $pm;
+    }
+
+    background: $color;
+    clear: both;
+}
+
+@mixin custom-border($pos: bottom, $color: $primary){
+
+    border-#{$pos}: 10px solid $color;
+}
+
+
+@mixin limiter($width: 80%){
+
+    width: $width;
+    margin: auto;
+}
+
+
+@mixin clearfix{
+
+    content:    "";
+    display:    table;
+    clear:      both;
+}
+
+
+
+
+
+// Durations
+$fastDuration: .1s !default;
+$mediumDuration: .3s !default;
+$slowDuration: .5s !default;
+// Browser Prefixes - Which CSS prefixes should be used?
+$webkit: true !default;
+$moz: false !default;
+$ms: false !default;
+$o: false !default;
+
+// prefix declarations
+@mixin prefixed($property, $value) {
+  @if $webkit == true {
+    -webkit-#{$property}: #{$value};
+  }
+
+  @if $moz == true {
+    -moz-#{$property}: #{$value};
+  }
+
+  @if $ms == true {
+    -ms-#{$property}: #{$value};
+  }
+
+  @if $o == true {
+    -o-#{$property}: #{$value};
+  }
+
+  #{$property}: #{$value};
+}
+
+// prefix keyframes
+@mixin keyframes($name) {
+  @if $webkit == true {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @if $moz == true {
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @if $ms == true {
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @if $o == true {
+    @-o-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin hardwareAccel() {
+	// Improve performance on mobile/tablet devices
+	@include prefixed(transform, translateZ(0));
+}
+
+@mixin improveAntiAlias() {
+	// Improve aliasing on mobile/tablet devices
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+@mixin fontSmooth() {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin forceBlockLevel() {
+	// Transforms need to be block-level to work
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@mixin hacks() {
+	@include forceBlockLevel();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+	@include fontSmooth();
+}
+
+
+
+
+
+
+@mixin bounce-to-bottom($color){
+
+  @include hacks();
+
+  &:before {
+
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color;
+    @include prefixed(transform, scaleY(0));
+    @include prefixed(transform-origin, 50% 0);
+    @include prefixed(transition-property, transform);
+    @include prefixed(transition-duration, $slowDuration);
+    @include prefixed(transition-timing-function, ease-out);
+  }
+
+  &:hover{
+
+      //background: lighten($color, 10%);
+      color: white;
+      text-decoration:   none;
+      //border-radius: 10px;
+
+      &:before {
+        @include prefixed(transform, scaleY(1));
+        @include prefixed(transition-timing-function, cubic-bezier(.52,1.64,.37,.66));
+      }
+  }
+}
+
+
+@mixin bounce-to-top($color) {
+	@include hacks();
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $color;
+		@include prefixed(transform, scaleY(0));
+		@include prefixed(transform-origin, 50% 100%);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $slowDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			@include prefixed(transform, scaleY(1));
+			@include prefixed(transition-timing-function, cubic-bezier(.52,1.64,.37,.66));
+		}
+	}
+}
+
+
+@mixin bounce-to-right($color) {
+	@include hacks();
+
+  &:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $color;
+		@include prefixed(transform, scaleX(0));
+		@include prefixed(transform-origin, 0 50%);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $slowDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before {
+			@include prefixed(transform, scaleX(1));
+			@include prefixed(transition-timing-function, cubic-bezier(.52,1.64,.37,.66));
+		}
+	}
+}
+
+
+@mixin bounce-to-left($color) {
+	@include hacks();
+
+  &:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $color;
+		@include prefixed(transform, scaleX(0));
+		@include prefixed(transform-origin, 100% 50%);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $slowDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before {
+			@include prefixed(transform, scaleX(1));
+			@include prefixed(transition-timing-function, cubic-bezier(.52,1.64,.37,.66));
+		}
+	}
+}
+
+
+/* Shutter In Horizontal */
+@mixin shutter-in-horizontal ($color){
+	@include hacks();
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: $color;
+		@include prefixed(transform, scaleX(1));
+		@include prefixed(transform-origin, 50%);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before {
+			@include prefixed(transform, scaleX(0));
+		}
+	}
+}
+
+
+/* Shutter Out Horizontal */
+@mixin shutter-out-horizontal ($color) {
+	@include hacks();
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: $color;
+		@include prefixed(transform, scaleX(0));
+		@include prefixed(transform-origin, 50%);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before {
+			@include prefixed(transform, scaleX(1));
+		}
+	}
+}
+
+
+/* Shutter In Vertical */
+@mixin shutter-in-vertical ($color){
+	@include hacks();
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: $color;
+		@include prefixed(transform, scaleY(1));
+		@include prefixed(transform-origin, 50%);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before {
+			@include prefixed(transform, scaleY(0));
+		}
+	}
+}
+
+
+
+/* Shutter Out Vertical */
+@mixin shutter-out-vertical ($color){
+	@include hacks();
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: $color;
+		@include prefixed(transform, scaleY(0));
+		@include prefixed(transform-origin, 50%);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before {
+			@include prefixed(transform, scaleY(1));
+		}
+	}
+}
+
+
+/* Underline Reveal */
+@mixin underline-reveal ($color){
+	@include hacks();
+
+	position: relative;
+	overflow: hidden;
+
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $color;
+		height: 4px;
+		@include prefixed(transform, translateY(4px));
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $mediumDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&:before {
+			@include prefixed(transform, translateY(0));
+		}
+	}
+}
+
+
+
+
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+@mixin triangle($direction, $size: 6px, $color: #222){
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0; width: 0;
+  @if ($direction == 'up'){
+    border-bottom: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @else if ($direction == 'down'){
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @else if ($direction == 'left'){
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  }
+  @else if ($direction == 'right'){
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
 }

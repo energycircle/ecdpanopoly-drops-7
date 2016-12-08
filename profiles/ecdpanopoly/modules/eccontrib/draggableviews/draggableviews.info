@@ -19,9 +19,9 @@ dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = views
 
-; Information added by Drupal.org packaging script on 2015-07-11
-version = "7.x-2.1+9-dev"
+; Information added by Drupal.org packaging script on 2016-09-07
+version = "7.x-2.1+10-dev"
 core = "7.x"
 project = "draggableviews"
-datestamp = "1436650744"
+datestamp = "1473261841"
 

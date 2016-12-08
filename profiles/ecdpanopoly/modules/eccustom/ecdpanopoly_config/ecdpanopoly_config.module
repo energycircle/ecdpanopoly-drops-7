@@ -1,0 +1,253 @@
+  <?php
+
+  /**
+   * @file
+   * Hooks provided by the Panopoly Config module.
+   */
+
+  /**
+   * @defgroup panopoly_config_hooks Panopoly Config Hooks
+   * @{
+   * Functions to define and modify config for panopoly config.
+   * @}
+   */
+
+  /**
+   * Define config in a module.
+   *
+   * Provides meta-information for each config group and config variables.
+   *
+   * Though not required we can also provide some more information to be able to handle the variable in an effective
+   * way, like which type of data and form element it uses, default value, etc.. There are multiple predefined
+   * variable types ('type' attribute) that will add a predefined set of properties. Some of them are:
+   *
+   * - "string": Simple plain string variable. The form element will be a text field and it will be localizable.
+   * - "number": Simple numeric value. The form element will be a text field.
+   * - "boolean": Simple TRUE/FALSE value. It will be a checkbox.
+   * - "enable": Enabled / Disabled selector. It will display as two radio buttons.
+   * - "select": Selectable list of options. Depending on the number of options, the element will be a list of
+   *   radios or a drop down.
+   * - "options": List of options with multiple choices. It will be a list of checkboxes.
+   * ...
+   *
+   * More variable types can be defined by modules using hook_variable_type_info().
+   *
+   * Notes:
+   * - Naming convention for config group: PROFILE_NAME_config_group_GROUP_NAME.
+   *   A config group with name site_information will create a config group with the name PROFILE_NAME_config_group_site_information.
+   *
+   * - Naming convention for config varaible: PROFILE_NAME_config_CONFIG_NAME.
+   *   A config with name site_name will create a config variable with the name PROFILE_NAME_config_group_site_name.
+   */
+  function ecdpanopoly_panopoly_config_info() {
+
+    $state_options = array(
+      '' => t('--- Select ---'),
+      'AL' => t('Alabama'),
+      'AK' => t('Alaska'),
+      'AZ' => t('Arizona'),
+      'AR' => t('Arkansas'),
+      'CA' => t('California'),
+      'CO' => t('Colorado'),
+      'CT' => t('Connecticut'),
+      'DE' => t('Delaware'),
+      'DC' => t('District of Columbia'),
+      'FL' => t('Florida'),
+      'GA' => t('Georgia'),
+      'HI' => t('Hawaii'),
+      'ID' => t('Idaho'),
+      'IL' => t('Illinois'),
+      'IN' => t('Indiana'),
+      'IA' => t('Iowa'),
+      'KS' => t('Kansas'),
+      'KY' => t('Kentucky'),
+      'LA' => t('Louisiana'),
+      'ME' => t('Maine'),
+      'MD' => t('Maryland'),
+      'MA' => t('Massachusetts'),
+      'MI' => t('Michigan'),
+      'MN' => t('Minnesota'),
+      'MS' => t('Mississippi'),
+      'MO' => t('Missouri'),
+      'MY' => t('Montana'),
+      'NE' => t('Nebraska'),
+      'NV' => t('Nevada'),
+      'NH' => t('New Hampshire'),
+      'NJ' => t('New Jersey'),
+      'NM' => t('New Mexico'),
+      'NY' => t('New York'),
+      'NC' => t('North Carolina'),
+      'ND' => t('North Dakota'),
+      'OH' => t('Ohio'),
+      'OK' => t('Oklahoma'),
+      'OR' => t('Oregon'),
+      'PA' => t('Pennsylvania'),
+      'RI' => t('Rhode Island'),
+      'SC' => t('South Carolina'),
+      'SD' => t('South Dakota'),
+      'TN' => t('Tennessee'),
+      'TX' => t('Texas'),
+      'UT' => t('Utah'),
+      'VT' => t('Vermont'),
+      'VA' => t('Virginia'),
+      'WA' => t('Washington'),
+      'WV' => t('West Virginia'),
+      'WI' => t('Wisconsin'),
+      'WY' => t('Wyoming'),
+    );
+
+
+    $info = array();
+
+    $info['site_information'] = array(
+      'title' => t('Company General Information'),
+      'description' => t('General company Information.'),
+      'weight' => 10,
+      'config' => array(
+        'legal_name' => array(
+          'title' => t('Legal Name'),
+          'type' => 'string',
+          'description' => t('Company Legal Name'),
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+        'phone' => array(
+          'title' => t('Phone Number'),
+          'type' => 'string',
+          'description' => t('Company Phone number.'),
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+        'fax' => array(
+          'title' => t('FAX Number'),
+          'type' => 'string',
+          'description' => t('Company FAX number.'),
+          'show_on_install' => TRUE,
+        ),
+        'company_email' => array(
+          'title' => t('Company Email'),
+          'type' => 'string',
+          'description' => t('Company Email.'),
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+        'hours' => array(
+          'title' => t('Hours of Operations'),
+          'type' => 'string',
+          'description' => t('When the company is open'),
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+        'street_address' => array(
+          'title' => t('Street Address'),
+          'type' => 'string',
+          'description' => t('Company street address.'),
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+        'city' => array(
+          'title' => t('City'),
+          'type' => 'string',
+          'description' => t('Company City.'),
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+       'state' => array(
+          'title' => t('State'),
+          'description' => t('The state where your business is located.'),
+          'type' => 'select',
+          'options' => $state_options,
+          'default_value' => $state_options,
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+      ),
+        'zipcode' => array(
+          'title' => t('Zipcode'),
+          'type' => 'string',
+          'description' => t('Company Primary Zipcode.'),
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+      ),
+    );
+
+    $info['social'] = array(
+      'title' => t('Company Social Info'),
+      'description' => t('Company Social Links & Information.'),
+      'weight' => 20,
+      'config' => array(
+        'facebook_url' => array(
+          'title' => t('Facebook URL'),
+          'type' => 'string',
+          'description' => t('Link to FB'),
+          'default' => 'http://www.facebook.com',
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+        'tw_url' => array(
+          'title' => t('Twitter URL'),
+          'type' => 'string',
+          'description' => t('Link to Twitter'),
+          'default' => 'http://www.twitter.com',
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+        'yelp_url' => array(
+          'title' => t('Yelp URL'),
+          'type' => 'string',
+          'description' => t('Link to Yelp'),
+          'default' => 'http://www.yelp.com',
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+        'google_plus_url' => array(
+          'title' => t('G+ URL'),
+          'type' => 'string',
+          'description' => t('Link to G+'),
+          'default' => 'http://www.google.com/mybusiness',
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+      ),
+    );
+
+    $info['webinfo'] = array(
+      'title' => t('Website Info'),
+      'description' => t('Website Information & Configuration.'),
+      'weight' => 20,
+      'config' => array(
+        'site_name' => array(
+          'type' => 'string',
+          'title' => t('Site name'),
+          'default' => 'EnergyCircle',
+          'description' => t('The name of this website.'),
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+        'site_slogan' => array(
+          'type' => 'string',
+          'title' => t('Site slogan'),
+          'default' => 'This my site slogan',
+          'description' => t('The slogan or tagline of this website.'),
+          'required' => TRUE,
+        ),
+        'copyright' => array(
+          'type' => 'string',
+          'title' => t('Copyright Text'),
+          'default' => 'All Right Reserved.',
+          'description' => t('Text next to copyright at the bottom of each page.'),
+          'required' => TRUE,
+          'show_on_install' => TRUE,
+        ),
+      ),
+    );
+
+    return $info;
+  }
+
+  /**
+   * Implements hook_panopoly_config_info_alter().
+   */
+  function ecdpanopoly_panopoly_config_info_alter(&$info) {
+    // Make changes to $info here.
+  }

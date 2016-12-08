@@ -13,63 +13,49 @@ function ec_distributor_user_default_permissions() {
   // Exported permission: 'administer panelizer node distributor breadcrumbs'.
   $permissions['administer panelizer node distributor breadcrumbs'] = array(
     'name' => 'administer panelizer node distributor breadcrumbs',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distributor content'.
   $permissions['administer panelizer node distributor content'] = array(
     'name' => 'administer panelizer node distributor content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distributor context'.
   $permissions['administer panelizer node distributor context'] = array(
     'name' => 'administer panelizer node distributor context',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distributor defaults'.
   $permissions['administer panelizer node distributor defaults'] = array(
     'name' => 'administer panelizer node distributor defaults',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distributor layout'.
   $permissions['administer panelizer node distributor layout'] = array(
     'name' => 'administer panelizer node distributor layout',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distributor overview'.
   $permissions['administer panelizer node distributor overview'] = array(
     'name' => 'administer panelizer node distributor overview',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node distributor settings'.
   $permissions['administer panelizer node distributor settings'] = array(
     'name' => 'administer panelizer node distributor settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 

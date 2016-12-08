@@ -89,14 +89,6 @@ function ec_distinction_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'distinction' => 'distinction',
   );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
-    'BPage' => 'BPage',
-  );
 
   /* Display: All Distinctions - List */
   $handler = $view->new_display('panel_pane', 'All Distinctions - List', 'panel_pane_1');
@@ -120,6 +112,12 @@ function ec_distinction_views_default_views() {
     'image_style' => 'medium',
     'image_link' => 'content',
   );
+  /* Field: Content: Dynamic Seal */
+  $handler->display->display_options['fields']['field_dynamic_seal']['id'] = 'field_dynamic_seal';
+  $handler->display->display_options['fields']['field_dynamic_seal']['table'] = 'field_data_field_dynamic_seal';
+  $handler->display->display_options['fields']['field_dynamic_seal']['field'] = 'field_dynamic_seal';
+  $handler->display->display_options['fields']['field_dynamic_seal']['label'] = '';
+  $handler->display->display_options['fields']['field_dynamic_seal']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -155,6 +153,12 @@ function ec_distinction_views_default_views() {
     'image_style' => 'thumbnail',
     'image_link' => 'content',
   );
+  /* Field: Content: Dynamic Seal */
+  $handler->display->display_options['fields']['field_dynamic_seal']['id'] = 'field_dynamic_seal';
+  $handler->display->display_options['fields']['field_dynamic_seal']['table'] = 'field_data_field_dynamic_seal';
+  $handler->display->display_options['fields']['field_dynamic_seal']['field'] = 'field_dynamic_seal';
+  $handler->display->display_options['fields']['field_dynamic_seal']['label'] = '';
+  $handler->display->display_options['fields']['field_dynamic_seal']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -183,14 +187,6 @@ function ec_distinction_views_default_views() {
   );
   $handler->display->display_options['filters']['field_distinction_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_distinction_type_tid']['vocabulary'] = 'distinction_types';
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
-    'BPage' => 'BPage',
-  );
 
   /* Display: All Distinctions - Logo as link */
   $handler = $view->new_display('panel_pane', 'All Distinctions - Logo as link', 'panel_pane_3');
@@ -207,6 +203,12 @@ function ec_distinction_views_default_views() {
     'image_style' => 'ss_200x100',
     'image_link' => 'content',
   );
+  /* Field: Content: Dynamic Seal */
+  $handler->display->display_options['fields']['field_dynamic_seal']['id'] = 'field_dynamic_seal';
+  $handler->display->display_options['fields']['field_dynamic_seal']['table'] = 'field_data_field_dynamic_seal';
+  $handler->display->display_options['fields']['field_dynamic_seal']['field'] = 'field_dynamic_seal';
+  $handler->display->display_options['fields']['field_dynamic_seal']['label'] = '';
+  $handler->display->display_options['fields']['field_dynamic_seal']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -222,13 +224,6 @@ function ec_distinction_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'distinction' => 'distinction',
-  );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
-  $handler->display->display_options['filters']['field_a_b_test_page_value']['value'] = array(
-    'BPage' => 'BPage',
   );
 
   /* Display: Rearrange Distinctions */

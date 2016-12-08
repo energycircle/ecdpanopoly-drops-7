@@ -11,7 +11,6 @@ function ec_review_sites_defaultconfig_features() {
   return array(
     'ec_review_sites' => array(
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -63,6 +62,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 3,
@@ -114,7 +114,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
@@ -154,6 +154,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'review_site',
+      'default_value' => array(),
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -163,6 +164,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
             'image_link' => '',
             'image_style' => '',
           ),
@@ -211,24 +213,41 @@ function ec_review_sites_defaultconfig_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'media',
         'settings' => array(
+          'allowed_schemes' => array(
+            'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
+          ),
+          'allowed_types' => array(
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
+          ),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 'media_default--media_browser_1',
+            'media_default--media_browser_my_files' => 0,
+            'media_internet' => 0,
+            'upload' => 'upload',
+          ),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 0,
           'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => 0,
+          'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
-          'manualcrop_keyboard' => 1,
+          'manualcrop_keyboard' => 0,
           'manualcrop_maximize_default_crop_area' => 0,
           'manualcrop_require_cropping' => array(),
-          'manualcrop_styles_list' => array(),
+          'manualcrop_styles_list' => array(
+            'sc_300x250_custom_mc' => 'sc_300x250_custom_mc',
+          ),
           'manualcrop_styles_mode' => 'include',
           'manualcrop_thumblist' => 0,
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'media_generic',
         'weight' => 4,
       ),
     ),
@@ -275,6 +294,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 4,
@@ -326,7 +346,95 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 6,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-review_site-field_review_site_show'.
+  $fields['node-review_site-field_review_site_show'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_review_site_show',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => '',
+          1 => '',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => 0,
+      'type' => 'list_boolean',
+    ),
+    'field_instance' => array(
+      'bundle' => 'review_site',
+      'default_value' => NULL,
+      'default_value_label_token' => 0,
+      'deleted' => 0,
+      'description' => 'Check this to include this in the list of Review Sites shown in the Service Review feature.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'list_default',
+          'weight' => 4,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_review_site_show',
+      'label' => 'Show in SR3 Review Sites list',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'display_label' => 1,
+        ),
+        'type' => 'options_onoff',
+        'weight' => 8,
       ),
     ),
   );
@@ -379,6 +487,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 5,
@@ -420,7 +529,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 1,
+        'weight' => 7,
       ),
     ),
   );
@@ -470,6 +579,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'link_default',
           'weight' => 1,
@@ -536,7 +646,7 @@ function ec_review_sites_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 5,
+        'weight' => 7,
       ),
     ),
   );
@@ -544,83 +654,13 @@ function ec_review_sites_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Add call to action text. example: "Seen on" or "As seen on"');
+  t('Check this to include this in the list of Review Sites shown in the Service Review feature.');
   t('RMS CTA');
   t('Review CTA');
   t('Review Page Link');
   t('Review Site Logo');
   t('Review Site Tags');
+  t('Show in SR3 Review Sites list');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_review_sites_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node review_site defaults'.
-  $permissions['administer panelizer node review_site defaults'] = array(
-    'name' => 'administer panelizer node review_site defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term review_site_tags defaults'.
-  $permissions['administer panelizer taxonomy_term review_site_tags defaults'] = array(
-    'name' => 'administer panelizer taxonomy_term review_site_tags defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'create review_site content'.
-  $permissions['create review_site content'] = array(
-    'name' => 'create review_site content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any review_site content'.
-  $permissions['delete any review_site content'] = array(
-    'name' => 'delete any review_site content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own review_site content'.
-  $permissions['delete own review_site content'] = array(
-    'name' => 'delete own review_site content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete terms in review_site_tags'.
-  $permissions['delete terms in review_site_tags'] = array(
-    'name' => 'delete terms in review_site_tags',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit any review_site content'.
-  $permissions['edit any review_site content'] = array(
-    'name' => 'edit any review_site content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own review_site content'.
-  $permissions['edit own review_site content'] = array(
-    'name' => 'edit own review_site content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit terms in review_site_tags'.
-  $permissions['edit terms in review_site_tags'] = array(
-    'name' => 'edit terms in review_site_tags',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  return $permissions;
 }

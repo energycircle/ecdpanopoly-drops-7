@@ -75,14 +75,9 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 12,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 1,
         ),
         'featured' => array(
           'label' => 'above',
@@ -185,14 +180,9 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 17,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 1,
         ),
         'featured' => array(
           'label' => 'above',
@@ -281,12 +271,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 17,
         ),
         'featured' => array(
@@ -374,7 +360,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'bundle' => 'city_page',
       'default_value' => array(
         0 => array(
-          'value' => '<p>[custom:phone-number]</p>',
+          'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
           'format' => 'panopoly_wysiwyg_text',
         ),
       ),
@@ -384,12 +370,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 15,
         ),
         'featured' => array(
@@ -422,7 +404,6 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Call to Action',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
@@ -506,13 +487,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'geofield',
-          'settings' => array(
-            'data' => 'full',
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'geofield_wkt',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 14,
         ),
         'featured' => array(
@@ -607,12 +583,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 3,
         ),
         'featured' => array(
@@ -703,14 +675,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 13,
         ),
         'featured' => array(
@@ -745,7 +711,6 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'settings' => array(
         'alt_field' => 0,
         'default_image' => 0,
-        'exclude_cv' => FALSE,
         'file_directory' => 'citypages',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -759,7 +724,6 @@ function ec_citypages_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 0,
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -782,12 +746,13 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'manualcrop_inline_crop' => 0,
           'manualcrop_instant_crop' => FALSE,
           'manualcrop_instant_preview' => 1,
-          'manualcrop_keyboard' => 1,
-          'manualcrop_maximize_default_crop_area' => 0,
+          'manualcrop_keyboard' => 0,
+          'manualcrop_maximize_default_crop_area' => 1,
           'manualcrop_require_cropping' => array(
             'sc_940x470_mc' => 'sc_940x470_mc',
           ),
           'manualcrop_styles_list' => array(
+            'sc_1280x440_mc' => 'sc_1280x440_mc',
             'sc_940x470_mc' => 'sc_940x470_mc',
           ),
           'manualcrop_styles_mode' => 'include',
@@ -834,12 +799,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 2,
         ),
         'featured' => array(
@@ -928,12 +889,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 4,
         ),
         'featured' => array(
@@ -1022,12 +979,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 1,
         ),
         'featured' => array(
@@ -1116,12 +1069,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 12,
         ),
         'featured' => array(
@@ -1148,6 +1097,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'settings' => array(
             'field_multiple_limit' => -1,
             'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
           ),
           'type' => 'text_default',
           'weight' => 0,
@@ -1216,12 +1166,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 10,
         ),
         'featured' => array(
@@ -1329,13 +1275,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 6,
         ),
         'featured' => array(
@@ -1439,13 +1380,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 7,
         ),
         'featured' => array(
@@ -1554,13 +1490,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 19,
         ),
         'featured' => array(
@@ -1664,13 +1595,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 5,
         ),
         'featured' => array(
@@ -1775,13 +1701,8 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 16,
         ),
         'featured' => array(
@@ -1885,14 +1806,9 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 15,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 2,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1936,7 +1852,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 24,
+        'weight' => 23,
       ),
     ),
   );

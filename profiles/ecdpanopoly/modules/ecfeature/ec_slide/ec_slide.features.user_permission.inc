@@ -28,6 +28,15 @@ function ec_slide_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node slide choice'.
+  $permissions['administer panelizer node slide choice'] = array(
+    'name' => 'administer panelizer node slide choice',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node slide content'.
   $permissions['administer panelizer node slide content'] = array(
     'name' => 'administer panelizer node slide content',
@@ -158,7 +167,6 @@ function ec_slide_user_default_permissions() {
   $permissions['edit terms in slide_set'] = array(
     'name' => 'edit terms in slide_set',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',

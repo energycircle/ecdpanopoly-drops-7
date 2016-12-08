@@ -40,7 +40,7 @@ function ec_testimonial_node_info() {
     'testimonial' => array(
       'name' => t('Testimonial'),
       'base' => 'node_content',
-      'description' => t('A customer testimonial, including text, image, and/or video'),
+      'description' => t(' A customer testimonial, which can include text, an image, and/or a video.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
@@ -177,9 +177,6 @@ function ec_testimonial_rdf_default_mappings() {
       'predicates' => array(
         0 => 'schema:aggregateRating',
       ),
-    ),
-    'field_testimonial_source' => array(
-      'predicates' => array(),
     ),
   );
 

@@ -22,6 +22,7 @@ features[user_permission][] = administer smtp module
 features[user_permission][] = choose htmlmail_plaintext
 features[user_permission][] = edit mimemail user settings
 features[user_permission][] = send arbitrary files
+features[user_permission][] = view mimemail user settings
 features[variable][] = htmlmail_debug
 features[variable][] = htmlmail_postfilter
 features[variable][] = htmlmail_theme
