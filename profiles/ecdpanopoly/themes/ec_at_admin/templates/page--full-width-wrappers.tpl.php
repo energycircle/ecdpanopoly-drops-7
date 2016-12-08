@@ -105,10 +105,17 @@
     <div id="header-wrapper">
       <div class="container clearfix">
         <header<?php print $header_attributes; ?>>
-     	 	<?php	$block = module_invoke('panels_mini', 'block_view', 'header');
-                    print $block['content'];
+     	 	<?//php	$block = module_invoke('panels_mini', 'block_view', 'header');
+                  //  print $block['content'];
                ?>
-       		<?php print render($page['header']); ?>
+       		<?//php print render($page['header']); ?>
+
+            <div class="panel-pane pane-page-logo no-title block">
+              <div class="block-inner clearfix">
+                <div class="block-content">
+                  <a href="/" rel="home" id="logo" title="Home"><img src="/profiles/ecdpanopoly/themes/ec_at_admin/images/ec-logo.png" alt="Home"></a>    </div>
+              </div>
+            </div>
 
         </header>
 
