@@ -105,12 +105,6 @@
     <div id="header-wrapper">
       <div class="container clearfix">
         <header<?php print $header_attributes; ?>>
-<<<<<<< HEAD
-     	 	<?php	$block = module_invoke('panels_mini', 'block_view', 'header');
-                    print $block['content'];
-               ?>
-       		<?php print render($page['header']); ?>
-=======
      	 	<?//php	$block = module_invoke('panels_mini', 'block_view', 'header');
                   //  print $block['content'];
                ?>
@@ -122,7 +116,6 @@
                   <a href="/" rel="home" id="logo" title="Home"><img src="/profiles/ecdpanopoly/themes/ec_at_admin/images/ec-logo.png" alt="Home"></a>    </div>
               </div>
             </div>
->>>>>>> 7.x-1.4
 
         </header>
 
