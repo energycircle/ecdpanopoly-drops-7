@@ -5,9 +5,9 @@ package = Entityforms
 dependencies[] = session_api
 dependencies[] = entityform
 
-; Information added by Drupal.org packaging script on 2016-11-25
-version = "7.x-2.0-rc2+13-dev"
+; Information added by Drupal.org packaging script on 2016-12-13
+version = "7.x-2.0-rc2+14-dev"
 core = "7.x"
 project = "entityform"
-datestamp = "1480098783"
+datestamp = "1481671086"
 

@@ -231,16 +231,6 @@
   position: relative;
   color: $secondary;
 
-  &:after{
-
-    font-family: 'fontello';
-    //content: "\E822";
-    display: inline-block;
-    position: absolute;
-    @include rem(right, 2);
-    @include rem(bottom, 1);
-  }
-
   select{
 
      margin: 0;
@@ -251,10 +241,30 @@
      color: $secondary;
      font-family: $secondary-ff;
      @include font-size(1.6);
-     @include rem(height, 4.2);
 
   }
 }
+
+
+.form-type-select{
+
+  &:after{
+
+    // font-family: 'fontello';
+    // content: "\E822";
+    // display: inline-block;
+    // position: absolute;
+    // @include rem(right, 2);
+    // @include rem(bottom, 1);
+  }
+
+  select:not([multiple="multiple"]){
+
+    @include rem(height, 4.2);
+    background: white url(../images/select-arrows.png) 99% center no-repeat;
+  }
+}
+
 
 #node-edit .form-item-title{
 
@@ -299,6 +309,12 @@
 
     box-shadow: inset 0px -5px 0 0px;
    }
+}
+
+
+fieldset.collapsible {
+
+    @include rem(margin, 3, 0);
 }
 /* =============================================================================
  *   Wrappers
@@ -587,6 +603,18 @@ h1#page-title {
 /* =============================================================================
  *   Misc Global Styles
  * ========================================================================== */
+#panels-dnd-main .panel-pane,
+#panels-dnd-main .helperclass{
+
+  position: relative;
+}
+
+
+html.js #panels-dnd-main div.ctools-dropdown div.ctools-dropdown-container,
+html.js div.panels-display-links div.ctools-dropdown-container{
+
+  right: 0;
+}
 
 
  .node-add-item-wrapper{
@@ -682,19 +710,24 @@ h1#page-title {
    }
  }
 
+ .views-exposed-form .views-exposed-widget {
+     padding-right: 0;
+ }
 
-[id*='views-exposed-form-admin-views-'][id*='-system-1']{
+//[id*='views-exposed-form-admin-views-'][id*='-system-1']{
 
   .views-reset-button,
   .views-submit-button{
 
 
-    @include button($color: $primary, $outline: true);
+
     @include underline-reveal($primary);
-    @include rem(padding-right, 5);
-    margin-bottom: 0;
+
+
     vertical-align: bottom;
+
     input{
+
 
       margin: 0;
       padding: 0;
@@ -702,6 +735,10 @@ h1#page-title {
       color: $primary;
       border: none;
       box-shadow: none;
+
+      @include button($color: $primary, $outline: true);
+      @include rem(padding-right, 5);
+      margin: 0;
 
       &:hover{
 
@@ -711,16 +748,25 @@ h1#page-title {
     }
   }
 
-  .views-reset-button{
+  .views-reset-button,
+  .views-submit-button{
 
     &:after{
 
       font-family: 'fontello';
-      content: "\E820";
       display: inline-block;
       position: absolute;
       @include rem(right, 2);
-      @include rem(top, 1);
+      @include rem(top, 2);
+      color: $primary;
+    }
+  }
+
+  .views-reset-button{
+
+    &:after{
+
+      content: "\E820";
     }
   }
 
@@ -728,15 +774,10 @@ h1#page-title {
 
     &:after{
 
-      font-family: 'fontello';
       content: "\F0B0";
-      display: inline-block;
-      position: absolute;
-      @include rem(right, 2);
-      @include rem(top, 1);
     }
   }
-}
+//}
 
 .block-region-help{
 
@@ -2534,7 +2575,7 @@ tbody tr {
   }
   a{
 
-    color: $secondary;
+    color: $primary;
   }
 
 }
@@ -2767,9 +2808,28 @@ tr.error {
   display: inline-block;
   float: none;
   vertical-align: bottom;
+  margin-bottom: 0;
+}
+
+#views-live-preview h1.section-title{
+
+  font-family: $secondary-ff;
+}
+
+td.views-field.views-field-edit-node a {
+    margin: 0 10px;
 }
 
 
+.views-ui-filter-options-processed{
+
+  .form-checkboxes .form-item,
+  .form-radios .form-item{
+
+    margin: 0;
+    display: block;
+  }
+}
 
 #ctools-export-ui-list-form .form-submit{
 

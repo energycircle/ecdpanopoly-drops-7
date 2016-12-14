@@ -435,14 +435,16 @@ projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/is
 projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
 projects[node_authlink][patch][2684923] = https://www.drupal.org/files/issues/node_authlink-views-integration-2684923-3.patch
 projects[superfish][patch][1316254] = https://www.drupal.org/files/issues/superfish-add-starting-level-1316254-15-D7.patch
-projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/access_check_fails_in-2612234-8.patch
-
+#projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/access_check_fails_in-2612234-8.patch
+projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/views_data_export-integration-2834927-2.patch
+projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/email-verification-for-anonymous-failed-2706769-3.patch
 
 
 
 ;local patches
 projects[metatag][patch][1918738] = ../patches/character_count_on_fields-1918738-9-ec.patch
 projects[cer][patch][1] = ../patches/fix_duplicate_function_when_drush_make-1.patch
+projects[total_subscription][patch][2612234-9] = ../patches/access_check_fails_in-2612234-9.patch
 
 
 

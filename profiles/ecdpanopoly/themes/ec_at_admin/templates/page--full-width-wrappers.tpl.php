@@ -101,24 +101,16 @@
 
 <div id="page-wrapper">
   <div id="page" class="<?php print $classes; ?>">
-
     <div id="header-wrapper">
       <div class="container clearfix">
         <header<?php print $header_attributes; ?>>
-     	 	<?//php	$block = module_invoke('panels_mini', 'block_view', 'header');
-                  //  print $block['content'];
-               ?>
-       		<?//php print render($page['header']); ?>
-
             <div class="panel-pane pane-page-logo no-title block">
               <div class="block-inner clearfix">
                 <div class="block-content">
                   <a href="/" rel="home" id="logo" title="Home"><img src="/profiles/ecdpanopoly/themes/ec_at_admin/images/ec-logo.png" alt="Home"></a>    </div>
               </div>
             </div>
-
         </header>
-
       </div>
     </div>
 
@@ -130,13 +122,6 @@
       </div>
     <?php endif; ?>
 
-    <?php if ($page['menu_bar'] || $primary_navigation || $secondary_navigation): ?>
-
-
-
-    <?php endif; ?>
-
-
     <?php if ($page['secondary_content']): ?>
       <div id="secondary-content-wrapper">
         <div class="container clearfix">
@@ -144,34 +129,6 @@
         </div>
       </div>
     <?php endif; ?>
-
-    <?php if (!drupal_is_front_page()) { ?>
-
-        <div id="subnavigation-wrapper">
-            <div class="container clearfix">
-                <div id="subnavigation">
-                <?php	$block = module_invoke('panels_mini', 'block_view', 'subnavigation');
-                    print $block['content'];
-                            ?>
-                </div>
-            </div>
-          </div>
-   <?php  } ?>
-
-
-   <?php if (drupal_is_front_page()) { ?>
-
-       <div id="hero-wrapper">
-
-           <?php
-               $block = module_invoke('panels_mini', 'block_view', 'hero');
-                   print $block['content'];
-
-           ?>
-
-       </div>
-
-  <?php  } ?>
 
     <div id="title-wrapper">
       <?php if ($title): ?>
@@ -185,17 +142,9 @@
     <div id="content-wrapper"><div class="container">
       <div id="columns"><div class="columns-inner clearfix">
         <div id="content-column"><div class="content-inner">
-
-
-
-
-
           <?php print render($page['highlighted']); ?>
-
           <<?php print $tag; ?> id="main-content">
-
             <?php print render($title_prefix); ?>
-
             <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
               <header<?php print $content_header_attributes; ?>>
                 <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
@@ -212,18 +161,13 @@
                     <?php if ($action_links = render($action_links)): ?>
                       <ul class="action-links clearfix"><?php print $action_links; ?></ul>
                     <?php endif; ?>
-
                   </div>
                 <?php endif; ?>
-
               </header>
             <?php endif; ?>
 
             <?php if ($content = render($page['content'])): ?>
               <div id="content">
-
-
-
                     <?php if ($messages || $page['help']): ?>
                       <div id="messages-help-wrapper">
                         <div class="container clearfix">
@@ -236,8 +180,6 @@
                     <?php print $content; ?>
               </div>
             <?php endif; ?>
-
-            <?php print $feed_icons; ?>
 
             <?php print render($title_suffix); // Prints page level contextual links ?>
 
