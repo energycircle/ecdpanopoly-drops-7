@@ -321,6 +321,9 @@ projects[rules][version] = 2.9
 projects[schemaorg][subdir] = eccontrib
 projects[schemaorg][version] = 1.x
 
+projects[scheduler][subdir] = eccontrib
+projects[scheduler][version] = 1.x
+
 projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
