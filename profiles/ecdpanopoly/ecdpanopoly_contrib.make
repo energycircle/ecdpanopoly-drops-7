@@ -420,7 +420,6 @@ projects[maxlength][patch][1256968] = https://www.drupal.org/files/metatags_quic
 #projects[table_element][patch][] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
 #projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
 projects[entitycache][patch][2441965] = https://www.drupal.org/files/issues/entitycache_fix_upgrade_path-2441965-39.patch
-projects[deploy][patch][1604938] = https://www.drupal.org/files/deploy-1604938_1.patch
 projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/leaflet_widget-1974478-vertical-tab-refresh-12.patch
 projects[leaflet_widget][patch] = https://drupal.org/files/0001-Issue-1834446-by-mradcliffe-Use-GeoPHP-native.-GeoJSO.patch
 projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.patch

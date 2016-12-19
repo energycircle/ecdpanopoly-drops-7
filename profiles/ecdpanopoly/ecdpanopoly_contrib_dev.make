@@ -50,5 +50,6 @@ projects[deploy_services_client][subdir] = eccontrib
 projects[deploy_services_client][version] = 1.x
 
 projects[deploy][subdir] = eccontrib
-projects[deploy][version] = 3.x-dev
+projects[deploy][version] = 3.x
 projects[deploy][patch] = https://www.drupal.org/files/deploy-1520410-term_object_needs_vid_property-6.patch
+projects[deploy][patch][1604938] = https://www.drupal.org/files/deploy-1604938_1.patch
