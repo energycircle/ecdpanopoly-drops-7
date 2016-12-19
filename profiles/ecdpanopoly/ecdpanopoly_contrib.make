@@ -393,6 +393,9 @@ projects[video_filter][version] = 3.4
 projects[views_data_export][subdir] = eccontrib
 projects[views_data_export][version] = 3.x-dev
 
+projects[views_record_count][subdir] = eccontrib
+projects[views_record_count][version] = 1.x
+
 projects[views_slideshow][subdir] = eccontrib
 projects[views_slideshow][version] = 3.1
 
