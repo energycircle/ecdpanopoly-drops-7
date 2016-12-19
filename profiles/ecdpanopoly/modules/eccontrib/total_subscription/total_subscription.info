@@ -5,9 +5,9 @@ dependencies[] = ctools
 dependencies[] = token
 dependencies[] = views
 
-; Information added by Drupal.org packaging script on 2016-04-21
-version = "7.x-1.0+6-dev"
+; Information added by Drupal.org packaging script on 2016-12-17
+version = "7.x-1.0+7-dev"
 core = "7.x"
 project = "total_subscription"
-datestamp = "1461235788"
+datestamp = "1481987286"
 

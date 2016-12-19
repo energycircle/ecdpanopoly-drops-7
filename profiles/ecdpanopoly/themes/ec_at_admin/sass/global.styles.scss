@@ -68,11 +68,18 @@
      @include rem(margin, 0, 0, 1.5);
  }
 
-
+.views-admin h1.unit-title,
  h1 {
 
      @include title;
  }
+
+.views-admin h1.unit-title{
+
+  display: inline-block;
+  color: $secondary;
+  @include rem(margin-top, 2);
+}
 
 
  h2 {
@@ -316,6 +323,26 @@ fieldset.collapsible {
 
     @include rem(margin, 3, 0);
 }
+
+
+
+table.sticky-header th,
+table.sticky-enabled td {
+
+    width: calc(100% / 7) !important;
+
+    &:nth-child(1){
+
+      width: 12px !important;
+    }
+
+    &:nth-child(2){
+
+      width: calc( ((100% / 7) * 2) - 12px ) !important;
+    }
+}
+
+
 /* =============================================================================
  *   Wrappers
  * ========================================================================== */

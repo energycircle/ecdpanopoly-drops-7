@@ -1,0 +1,66 @@
+***************
+*** 47,67 ****
+    $items['admin/config/user-interface/subscription-mail/result'] = array(
+      'title' => 'Result',
+      'page callback' => array('total_subscription_taxonomy_search'),
+-     'access arguments' => array('total subscription permission'),
+      'type' => MENU_LOCAL_TASK,
+      'expanded' => TRUE,
+      'weight' => 3,
+    );
+    $items['admin/config/user-interface/subscription-mail/result/taxonomy'] = array(
+      'title' => 'Taxonomy',
+-     'access arguments' => array('total subscription permission'),
+      'type' => MENU_DEFAULT_LOCAL_TASK,
+      'weight' => 1,
+    );
+    $items['admin/config/user-interface/subscription-mail/result/nodes'] = array(
+      'title' => 'Node',
+      'page callback' => array('total_subscription_node_search'),
+-     'access arguments' => array('total subscription permission'),
+      'type' => MENU_LOCAL_TASK,
+      'weight' => 2,
+    );
+--- 47,67 ----
+    $items['admin/config/user-interface/subscription-mail/result'] = array(
+      'title' => 'Result',
+      'page callback' => array('total_subscription_taxonomy_search'),
++     'access arguments' => array('total subscription admin permission'),
+      'type' => MENU_LOCAL_TASK,
+      'expanded' => TRUE,
+      'weight' => 3,
+    );
+    $items['admin/config/user-interface/subscription-mail/result/taxonomy'] = array(
+      'title' => 'Taxonomy',
++     'access arguments' => array('total subscription admin permission'),
+      'type' => MENU_DEFAULT_LOCAL_TASK,
+      'weight' => 1,
+    );
+    $items['admin/config/user-interface/subscription-mail/result/nodes'] = array(
+      'title' => 'Node',
+      'page callback' => array('total_subscription_node_search'),
++     'access arguments' => array('total subscription admin permission'),
+      'type' => MENU_LOCAL_TASK,
+      'weight' => 2,
+    );
+***************
+*** 75,81 ****
+    return array(
+      'total subscription permission' => array(
+        'title' => t('total subscription permission'),
+-       'description' => t('Permission for Total Subscription.'),
+      ),
+      'admin settings for mail' => array(
+        'title' => t('admin settings for mail'),
+--- 75,85 ----
+    return array(
+      'total subscription permission' => array(
+        'title' => t('total subscription permission'),
++       'description' => t('Permission for Subscribing to Total Subscription.'),
++     ),
++     'total subscription admin permission' => array(
++       'title' => t('total subscription admin permission'),
++       'description' => t('Permission for Viewing Total Subscription Admin Screens.'),
+      ),
+      'admin settings for mail' => array(
+        'title' => t('admin settings for mail'),

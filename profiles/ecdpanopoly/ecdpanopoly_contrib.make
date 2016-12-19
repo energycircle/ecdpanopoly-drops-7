@@ -448,7 +448,7 @@ projects[total_subscription][patch][2612234-9] = patches/access_check_fails_in-2
 
 
 
-; EC CUSTOM MODS
+; EC CUSTOM MODS / SANDBOX
 projects[energycircle_apps][download][type] = git
 projects[energycircle_apps][download][url] = https://github.com/energycircle/energycircle_apps.git
 projects[energycircle_apps][subdir] = eccustom
