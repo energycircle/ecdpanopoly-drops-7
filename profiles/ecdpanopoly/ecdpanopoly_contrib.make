@@ -75,6 +75,9 @@ projects[context_entity_field][version] = 1.x-dev
 projects[conditional_fields][subdir] = eccontrib
 projects[conditional_fields][version] = 3.0-alpha2
 
+projects[content_access][subdir] = eccontrib
+projects[content_access][version] = 1.x
+
 projects[disable_term_node_listings][subdir] = eccontrib
 projects[disable_term_node_listings][version] = 1.2
 
@@ -395,6 +398,9 @@ projects[views_slideshow][version] = 3.1
 
 projects[views_url_path_arguments][subdir] = eccontrib
 projects[views_url_path_arguments][version] = 1.1
+
+projects[web_widgets][subdir] = eccontrib
+projects[web_widgets][version] = 1.x
 
 projects[votingapi][subdir] = eccontrib
 projects[votingapi][version] = 2.12
