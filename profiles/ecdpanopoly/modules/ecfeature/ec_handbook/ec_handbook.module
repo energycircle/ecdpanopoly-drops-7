@@ -6,23 +6,15 @@
 
 include_once 'ec_handbook.features.inc';
 
-/*
 function ec_handbook_form_node_form_alter(&$form, &$form_state, $form_id) {
-    if(module_exists('deploy_managed_ui')) {
-        $plans = deploy_manager_plan_get_options();
-        if (count($plans)) {
-            $form['deploy_managed_ui']['plans']['#default_value'] = array_keys($plans);
-        }
-    }
-    $type = $form['#node']->type;
-  // Then
-  if ($type == 'handbook') {
-   // add simple checkbox to the field set
-   $form['contact']['approve'] = array(
-     '#type' =>'checkbox',
-     '#title' => t('Contact me'),
-   );
-  }
 
+  $content_type = $form['#node']->type;
+
+  if ($content_type == 'handbook') {
+
+    $handbookhome = '105';
+
+    $form['book']['bid']['#title'] = 'Do now touch - auto picks Handbook Homepage';
+    $form['book']['bid']['#default_value'] = $handbookhome;
+  }
 }
-*/
