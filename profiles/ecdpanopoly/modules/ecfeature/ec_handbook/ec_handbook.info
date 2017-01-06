@@ -17,6 +17,7 @@ dependencies[] = panopoly_pages
 dependencies[] = rest_server
 dependencies[] = services
 dependencies[] = strongarm
+dependencies[] = rest_server
 dependencies[] = text
 dependencies[] = uuid_features
 dependencies[] = uuid_services
