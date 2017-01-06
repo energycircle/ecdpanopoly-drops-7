@@ -6,9 +6,8 @@
 // Create the drupal ShareThis object for clean code and namespacing:
 (function () {
   // Adding use strict as function encapsulation ECMA 6.
-  'use strict';
+  // 'use strict';
 
-  // @see : http://stackoverflow.com/a/7048295/377342
   window.drupal_st = {
     // These are handlerd for updating the widget pic class.
     multiW: function () {

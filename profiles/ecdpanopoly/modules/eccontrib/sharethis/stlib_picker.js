@@ -12,7 +12,6 @@
   // Adding use strict as function encapsulation ECMA 6.
   'use strict';
 
-  // @see : http://stackoverflow.com/a/7048295/377342
   window.stlib_picker = {};
   var isSecure = document.location.protocol === 'https:' ? true : false;
 
@@ -41,10 +40,10 @@
     // Append the three divs that are needed:
     jQElement.append('<div class="stp_pickerLeft"><span class="stp_header">Selected Service</span><ul class="stp_ulLeft"></ul></div>');
     jQElement.append('<div class="stp_pickerArrow">' +
-                      '<div class="stp_arrow"><img class="stp_up" src="//www.sharethis.com/images/Direction_Icons_Sprite.png" /></div>' +
-                      '<div class="stp_arrow"><img class="stp_left" src="//www.sharethis.com/images/Direction_Icons_Sprite.png" /></div>' +
-                      '<div class="stp_arrow"><img class="stp_right" src="//www.sharethis.com/images/Direction_Icons_Sprite.png" /></div>' +
-                      '<div class="stp_arrow"><img class="stp_down" src="//www.sharethis.com/images/Direction_Icons_Sprite.png" /></div>' +
+                      '<div class="stp_arrow"><img class="stp_up" src="//www.sharethis.com/images/Direction_Icons_Sprite.png"/img></div>' +
+                      '<div class="stp_arrow"><img class="stp_left" src="//www.sharethis.com/images/Direction_Icons_Sprite.png"/img></div>' +
+                      '<div class="stp_arrow"><img class="stp_right" src="//www.sharethis.com/images/Direction_Icons_Sprite.png"/img></div>' +
+                      '<div class="stp_arrow"><img class="stp_down" src="//www.sharethis.com/images/Direction_Icons_Sprite.png"/img></div>' +
                       '</div>');
     jQElement.append('<div class="stp_pickerRight"><span class="stp_header">Possible Services</span><ul class="stp_ulRight"></ul></div>');
     jQElement.append('<div class="stp_clear"></div>');
@@ -63,10 +62,10 @@
       if (jQuery.inArray(key, pickerDefaults) === -1) {
         var ul = jQElement.children('.stp_pickerRight').children('.stp_ulRight');
         if (isSecure) {
-          ul.append('<li id="st_li_' + key + '" class="stp_li"><img src="https://ws.sharethis.com/images/' + key + '_32.png"></img><span class="stp_liText">' + value.title + '</span></li>');
+          ul.append('<li id="st_li_' + key + '"class="stp_li"><img src="https://ws.sharethis.com/images/' + key + '_32.png"></img><span class="stp_liText">' + value.title + '</span></li>');
         }
         else {
-          ul.append('<li id="st_li_' + key + '" class="stp_li"><img src="http://w.sharethis.com/images/' + key + '_32.png"></img><span class="stp_liText">' + value.title + '</span></li>');
+          ul.append('<li id="st_li_' + key + '"class="stp_li"><img src="http://w.sharethis.com/images/' + key + '_32.png"></img><span class="stp_liText">' + value.title + '</span></li>');
         }
 
       }
