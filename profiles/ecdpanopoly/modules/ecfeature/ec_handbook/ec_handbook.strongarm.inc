@@ -120,6 +120,29 @@ function ec_handbook_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'entity_uuid';
+  $strongarm->value = array(
+    'node' => TRUE,
+    'taxonomy_term' => TRUE,
+    'cer' => 0,
+    'deploy_manager_entities' => TRUE,
+    'entityform' => 0,
+    'entityform_type' => 0,
+    'entity_rule_setting' => 0,
+    'fieldable_panels_pane' => TRUE,
+    'redirect' => 0,
+    'file' => TRUE,
+    'taxonomy_vocabulary' => TRUE,
+    'user' => TRUE,
+    'wysiwyg_profile' => 0,
+    'rules_config' => 0,
+    'menu_link' => TRUE,
+  );
+  $export['entity_uuid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_handbook';
   $strongarm->value = array(
     0 => 'management',
