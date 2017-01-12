@@ -176,6 +176,29 @@ function ec_blog_post_panelizer_defaults() {
   $display->content['new-51b0ebb9-27c4-4fc8-aee6-5ec05832ad97'] = $pane;
   $display->panels['two_66_33_first'][3] = 'new-51b0ebb9-27c4-4fc8-aee6-5ec05832ad97';
   $pane = new stdClass();
+  $pane->pid = 'new-3a6c9481-6624-4988-b8e3-4a1947819f81';
+  $pane->panel = 'two_66_33_second';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'service_request-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+    'view_mode' => 'full',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '3a6c9481-6624-4988-b8e3-4a1947819f81';
+  $display->content['new-3a6c9481-6624-4988-b8e3-4a1947819f81'] = $pane;
+  $display->panels['two_66_33_second'][0] = 'new-3a6c9481-6624-4988-b8e3-4a1947819f81';
+  $pane = new stdClass();
   $pane->pid = 'new-dd10018c-d753-4216-8fb0-b9aa4e519c4d';
   $pane->panel = 'two_66_33_second';
   $pane->type = 'views_panes';
@@ -193,11 +216,11 @@ function ec_blog_post_panelizer_defaults() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 0;
+  $pane->position = 1;
   $pane->locks = array();
   $pane->uuid = 'dd10018c-d753-4216-8fb0-b9aa4e519c4d';
   $display->content['new-dd10018c-d753-4216-8fb0-b9aa4e519c4d'] = $pane;
-  $display->panels['two_66_33_second'][0] = 'new-dd10018c-d753-4216-8fb0-b9aa4e519c4d';
+  $display->panels['two_66_33_second'][1] = 'new-dd10018c-d753-4216-8fb0-b9aa4e519c4d';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
@@ -368,6 +391,29 @@ function ec_blog_post_panelizer_defaults() {
   $display->content['new-51b0ebb9-27c4-4fc8-aee6-5ec05832ad97'] = $pane;
   $display->panels['one_main'][3] = 'new-51b0ebb9-27c4-4fc8-aee6-5ec05832ad97';
   $pane = new stdClass();
+  $pane->pid = 'new-9af57b87-a15a-4d9c-92aa-8f950cbf27a7';
+  $pane->panel = 'one_main';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'service_request-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+    'view_mode' => 'full',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $pane->uuid = '9af57b87-a15a-4d9c-92aa-8f950cbf27a7';
+  $display->content['new-9af57b87-a15a-4d9c-92aa-8f950cbf27a7'] = $pane;
+  $display->panels['one_main'][4] = 'new-9af57b87-a15a-4d9c-92aa-8f950cbf27a7';
+  $pane = new stdClass();
   $pane->pid = 'new-dd10018c-d753-4216-8fb0-b9aa4e519c4d';
   $pane->panel = 'one_main';
   $pane->type = 'views_panes';
@@ -385,11 +431,11 @@ function ec_blog_post_panelizer_defaults() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 4;
+  $pane->position = 5;
   $pane->locks = array();
   $pane->uuid = 'dd10018c-d753-4216-8fb0-b9aa4e519c4d';
   $display->content['new-dd10018c-d753-4216-8fb0-b9aa4e519c4d'] = $pane;
-  $display->panels['one_main'][4] = 'new-dd10018c-d753-4216-8fb0-b9aa4e519c4d';
+  $display->panels['one_main'][5] = 'new-dd10018c-d753-4216-8fb0-b9aa4e519c4d';
   $pane = new stdClass();
   $pane->pid = 'new-828cef84-eec8-4c7d-a080-7e4f5699f2fb';
   $pane->panel = 'one_main';
@@ -410,11 +456,11 @@ function ec_blog_post_panelizer_defaults() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 5;
+  $pane->position = 6;
   $pane->locks = array();
   $pane->uuid = '828cef84-eec8-4c7d-a080-7e4f5699f2fb';
   $display->content['new-828cef84-eec8-4c7d-a080-7e4f5699f2fb'] = $pane;
-  $display->panels['one_main'][5] = 'new-828cef84-eec8-4c7d-a080-7e4f5699f2fb';
+  $display->panels['one_main'][6] = 'new-828cef84-eec8-4c7d-a080-7e4f5699f2fb';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;

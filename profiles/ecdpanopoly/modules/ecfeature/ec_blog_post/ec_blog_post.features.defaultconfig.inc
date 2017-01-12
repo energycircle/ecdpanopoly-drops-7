@@ -11,7 +11,7 @@ function ec_blog_post_defaultconfig_features() {
   return array(
     'ec_blog_post' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
+      'field_group_info' => 'field_group_info',
     ),
   );
 }
@@ -463,6 +463,214 @@ function ec_blog_post_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-blog_post-field_button_text'.
+  $fields['node-blog_post-field_button_text'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_button_text',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => 0,
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'blog_post',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 19,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_button_text',
+      'label' => 'Button Text',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+        'weight' => 20,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-blog_post-field_call_to_action'.
+  $fields['node-blog_post-field_call_to_action'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_call_to_action',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'blog_post',
+      'default_value' => array(
+        0 => array(
+          'value' => '<h3>This is a CALL TO ACTION</h3><p>[custom:phone-number]</p>',
+          'format' => 'panopoly_wysiwyg_text',
+        ),
+      ),
+      'default_value_function' => 'field_default_token_default_value_function',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'text_default',
+          'weight' => 17,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_call_to_action',
+      'label' => 'Call to Action',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
+        'text_processing' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => 5,
+        ),
+        'type' => 'text_textarea',
+        'weight' => 18,
+      ),
+    ),
+  );
+
   // Exported field: 'node-blog_post-field_content_link'.
   $fields['node-blog_post-field_content_link'] = array(
     'field_config' => array(
@@ -780,6 +988,117 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         ),
         'type' => 'entityreference_autocomplete',
         'weight' => 13,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-blog_post-field_ref_to_cta_form'.
+  $fields['node-blog_post-field_ref_to_cta_form'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'entityform_type' => array(
+          'columns' => array(
+            'target_id' => 'id',
+          ),
+          'table' => 'entityform_type',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(),
+        ),
+        'target_type' => 'entityform_type',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'blog_post',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 18,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_to_cta_form',
+      'label' => 'CTA form',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 19,
       ),
     ),
   );
@@ -1339,6 +1658,9 @@ function ec_blog_post_defaultconfig_field_default_fields() {
   t('Blog');
   t('Blog Categories');
   t('Body');
+  t('Button Text');
+  t('CTA form');
+  t('Call to Action');
   t('Content Page');
   t('Display date');
   t('External Link to Content');
@@ -1354,27 +1676,43 @@ function ec_blog_post_defaultconfig_field_default_fields() {
 }
 
 /**
- * Implements hook_defaultconfig_strongarm().
+ * Implements hook_defaultconfig_field_group_info().
  */
-function ec_blog_post_defaultconfig_strongarm() {
-  $export = array();
+function ec_blog_post_defaultconfig_field_group_info() {
+  $field_groups = array();
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_blog_post_options';
-  $strongarm->value = array(
-    'full' => 0,
-    'teaser' => 0,
-    'rss' => 0,
-    'search_index' => 0,
-    'search_result' => 0,
-    'show_this_block' => 0,
-    'grouped_teaser' => 0,
-    'featured' => 0,
-    'token' => 0,
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_cta_form|node|blog_post|form';
+  $field_group->group_name = 'group_cta_form';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'blog_post';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_edit_content';
+  $field_group->data = array(
+    'label' => 'CTA Form',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_call_to_action',
+      1 => 'field_ref_to_cta_form',
+      2 => 'field_button_text',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-cta-form field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
   );
-  $export['sharethis_blog_post_options'] = $strongarm;
+  $field_groups['group_cta_form|node|blog_post|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('CTA Form');
+
+  return $field_groups;
 }
