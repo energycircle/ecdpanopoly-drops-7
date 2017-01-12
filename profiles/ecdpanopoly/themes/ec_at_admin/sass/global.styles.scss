@@ -237,6 +237,7 @@
 
   position: relative;
   color: $secondary;
+  clear: both;
 
   select{
 
@@ -333,7 +334,7 @@ table.sticky-enabled td {
 
     &:nth-child(1){
 
-      width: 12px !important;
+      //width: 12px !important;
     }
 
     &:nth-child(2){

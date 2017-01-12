@@ -5,9 +5,9 @@ core = 7.x
 dependencies[] = image
 
 
-; Information added by drush on 2017-01-06
+; Information added by drush on 2017-01-12
 version = "7.x-1.x-dev"
 core = "7.x"
 project = "image_mobile_camera"
-datestamp = "1483731345"
+datestamp = "1484237044"
 

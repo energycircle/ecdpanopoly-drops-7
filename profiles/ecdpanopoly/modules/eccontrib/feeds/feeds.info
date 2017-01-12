@@ -73,6 +73,7 @@ files[] = tests/feeds_mapper_link.test
 files[] = tests/feeds_mapper_summary.test
 files[] = tests/feeds_mapper_taxonomy.test
 files[] = tests/feeds_tokens.test
+files[] = tests/FeedsEnclosureTest.test
 files[] = tests/http_request.test
 files[] = tests/parser_csv.test
 
@@ -85,9 +86,9 @@ files[] = views/feeds_views_handler_field_source.inc
 files[] = views/feeds_views_handler_filter_severity.inc
 files[] = views/feeds_views_plugin_argument_validate_feed_nid.inc
 
-; Information added by Drupal.org packaging script on 2016-12-30
-version = "7.x-2.0-beta3+3-dev"
+; Information added by Drupal.org packaging script on 2017-01-08
+version = "7.x-2.0-beta3+5-dev"
 core = "7.x"
 project = "feeds"
-datestamp = "1483116204"
+datestamp = "1483889647"
 
