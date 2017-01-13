@@ -19,14 +19,9 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-        ),
-        'type' => 'text_default',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'featured' => array(
         'label' => 'above',
@@ -97,13 +92,8 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-        ),
-        'type' => 'text_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 7,
       ),
       'featured' => array(
@@ -174,14 +164,9 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-        ),
-        'type' => 'text_default',
-        'weight' => 13,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'featured' => array(
         'label' => 'above',
@@ -248,14 +233,8 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'featured' => array(
