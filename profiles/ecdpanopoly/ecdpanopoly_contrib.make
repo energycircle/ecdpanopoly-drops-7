@@ -437,18 +437,18 @@ projects[feeds][patch] = https://www.drupal.org/files/issues/feeds-unlock-153536
 #projects[views_slideshow][patch] = https://www.drupal.org/files/views_slideshow_cycle-hook-requirements-broken-1090052-27.patch
 #projects[metatag][patch][1880302] = https://www.drupal.org/files/metatag-1880302-2.patch
 projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
+#projects[rdfx][patch][2216603] = https://www.drupal.org/files/find-arc-library-correctly-1176666-14.patch
 projects[external][patch][1043324] = https://www.drupal.org/files/issues/external-https-links-1043324-5.patch
-projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
 projects[node_clone][patch][1043324] = https://www.drupal.org/files/issues/1252702-menu-local-task.patch
 projects[content_experiments][patch][2759323] = https://www.drupal.org/files/issues/content_experiments-node-type-configuration-2759323-1.patch
 projects[rdfx][patch][1176666] = https://drupal.org/files/find-arc-library-correctly-1176666-14.patch
 projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/issues/context_entity_field-context-entity-field-2307955-18.patch
-projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
+#projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
 projects[node_authlink][patch][2684923] = https://www.drupal.org/files/issues/node_authlink-views-integration-2684923-3.patch
 projects[superfish][patch][1316254] = https://www.drupal.org/files/issues/superfish-add-starting-level-1316254-15-D7.patch
 #projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/access_check_fails_in-2612234-8.patch
 projects[total_subscription][patch][2834927] = https://www.drupal.org/files/issues/views_data_export-integration-2834927-2.patch
-projects[total_subscription][patch][2706769] = https://www.drupal.org/files/issues/email-verification-for-anonymous-failed-2706769-3.patch
+#projects[total_subscription][patch][2706769] = https://www.drupal.org/files/issues/email-verification-for-anonymous-failed-2706769-3.patch
 
 
 

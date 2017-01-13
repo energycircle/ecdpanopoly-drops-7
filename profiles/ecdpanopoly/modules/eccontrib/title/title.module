@@ -744,6 +744,7 @@ function title_tokens_alter(array &$replacements, array $context) {
       $entity = $context['data'][$context['type']];
       list($id, $vid, $bundle) = entity_extract_ids($entity_type, $entity);
       $options = $context['options'];
+      $sanitize = !empty($options['sanitize']);
 
       // Since Title tokens are mostly used in storage contexts we default to
       // the current working language, that is the entity language. Modules
@@ -756,13 +757,10 @@ function title_tokens_alter(array &$replacements, array $context) {
           if (title_field_replacement_enabled($entity_type, $bundle, $legacy_field)) {
             if (isset($context['tokens'][$legacy_field])) {
               $langcode = field_language($entity_type, $entity, $info['field']['field_name'], $langcode);
-              $values = $info['callbacks']['sync_get']($entity_type, $entity, $legacy_field, $info, $langcode);
-              $item = $values[$legacy_field];
+              $item = $info['callbacks']['sync_get']($entity_type, $entity, $legacy_field, $info, $langcode);
               if (!empty($item)) {
-                if (is_array($item)) {
-                  $item = reset($item);
-                }
-                $replacements[$context['tokens'][$legacy_field]] = $item;
+                list($value, $format) = array_values($item);
+                $replacements[$context['tokens'][$legacy_field]] = check_markup($value, $format, $langcode);
               }
             }
           }
