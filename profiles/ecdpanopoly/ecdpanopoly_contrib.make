@@ -546,8 +546,8 @@ libraries[mailchimp][download][url] = https://bitbucket.org/mailchimp/mailchimp-
 
 libraries[arc][download][type] = get
 libraries[arc][type] = library
-libraries[arc][directory_name] = ARC2
-libraries[arc][subdir] = arc
+libraries[arc][directory_name] = arc
+libraries[arc][subdir] = ARC2
 libraries[arc][download][url] = http://github.com/semsol/arc2/tarball/master
 
 libraries[Geocomplete][download][type] = get
