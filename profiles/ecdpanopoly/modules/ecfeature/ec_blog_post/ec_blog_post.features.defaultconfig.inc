@@ -11,7 +11,6 @@ function ec_blog_post_defaultconfig_features() {
   return array(
     'ec_blog_post' => array(
       'field_default_fields' => 'field_default_fields',
-      'field_group_info' => 'field_group_info',
     ),
   );
 }
@@ -174,7 +173,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 14,
+          'weight' => 10,
         ),
         'featured' => array(
           'label' => 'above',
@@ -286,7 +285,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 16,
+          'weight' => 12,
         ),
         'featured' => array(
           'label' => 'above',
@@ -503,14 +502,9 @@ function ec_blog_post_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 19,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 1,
         ),
         'featured' => array(
           'label' => 'above',
@@ -608,14 +602,9 @@ function ec_blog_post_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-          ),
-          'type' => 'text_default',
-          'weight' => 17,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'featured' => array(
           'label' => 'above',
@@ -711,7 +700,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 6,
+          'weight' => 7,
         ),
         'featured' => array(
           'label' => 'above',
@@ -819,7 +808,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 15,
+          'weight' => 11,
         ),
         'featured' => array(
           'label' => 'above',
@@ -939,7 +928,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 12,
+          'weight' => 9,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1047,15 +1036,9 @@ function ec_blog_post_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 18,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 2,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1264,7 +1247,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 7,
+          'weight' => 9,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1673,46 +1656,4 @@ function ec_blog_post_defaultconfig_field_default_fields() {
   t('URL of the page to link this blog entry to.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_field_group_info().
- */
-function ec_blog_post_defaultconfig_field_group_info() {
-  $field_groups = array();
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_cta_form|node|blog_post|form';
-  $field_group->group_name = 'group_cta_form';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'blog_post';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
-  $field_group->data = array(
-    'label' => 'CTA Form',
-    'weight' => '3',
-    'children' => array(
-      0 => 'field_call_to_action',
-      1 => 'field_ref_to_cta_form',
-      2 => 'field_button_text',
-    ),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-cta-form field-group-tab',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $field_groups['group_cta_form|node|blog_post|form'] = $field_group;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('CTA Form');
-
-  return $field_groups;
 }

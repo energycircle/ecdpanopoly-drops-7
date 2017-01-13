@@ -187,7 +187,7 @@ function ec_blog_post_strongarm() {
       'display' => array(
         'sharethis' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => '3',
             'visible' => FALSE,
           ),
         ),
