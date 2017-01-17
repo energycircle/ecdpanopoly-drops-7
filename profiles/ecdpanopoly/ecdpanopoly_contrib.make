@@ -447,7 +447,7 @@ projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/is
 projects[node_authlink][patch][2684923] = https://www.drupal.org/files/issues/node_authlink-views-integration-2684923-3.patch
 projects[superfish][patch][1316254] = https://www.drupal.org/files/issues/superfish-add-starting-level-1316254-15-D7.patch
 #projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/access_check_fails_in-2612234-8.patch
-projects[total_subscription][patch][2834927] = https://www.drupal.org/files/issues/views_data_export-integration-2834927-2.patch
+projects[total_subscription][patch][2834927] = https://www.drupal.org/files/issues/views_data_export-integration-2834927-6.patch
 #projects[total_subscription][patch][2706769] = https://www.drupal.org/files/issues/email-verification-for-anonymous-failed-2706769-3.patch
 
 
