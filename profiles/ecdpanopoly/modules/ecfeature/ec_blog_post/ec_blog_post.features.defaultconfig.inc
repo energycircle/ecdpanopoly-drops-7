@@ -11,6 +11,7 @@ function ec_blog_post_defaultconfig_features() {
   return array(
     'ec_blog_post' => array(
       'field_default_fields' => 'field_default_fields',
+      'metatag_config_default' => 'metatag_config_default',
       'strongarm' => 'strongarm',
       'user_default_permissions' => 'user_default_permissions',
     ),
@@ -1658,6 +1659,38 @@ function ec_blog_post_defaultconfig_field_default_fields() {
   t('URL of the page to link this blog entry to.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_metatag_config_default().
+ */
+function ec_blog_post_defaultconfig_metatag_config_default() {
+  $export = array();
+
+  $config = new stdClass();
+  $config->disabled = FALSE; /* Edit this to true to make a default config disabled initially */
+  $config->api_version = 1;
+  $config->instance = 'node';
+  $config->config = array(
+    'title' => array(
+      'value' => '[node:title] | [site:name]',
+    ),
+    'description' => array(
+      'value' => '[node:summary]',
+    ),
+    'author' => array(
+      'value' => '[node:author:field_google_url]',
+    ),
+    'og:title' => array(
+      'value' => '[node:title]',
+    ),
+    'og:description' => array(
+      'value' => '[node:summary]',
+    ),
+  );
+  $export['node'] = $config;
+
+  return $export;
 }
 
 /**
