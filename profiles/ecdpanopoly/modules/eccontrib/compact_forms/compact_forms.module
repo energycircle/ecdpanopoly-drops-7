@@ -75,7 +75,7 @@ function compact_forms_pre_render($form) {
     $descriptions = variable_get('compact_forms_descriptions', 1);
   }
 
-  if (isset($form['form_id']) && (in_array($form['form_id']['#value'], $form_ids)) || (isset($form['#id']) && in_array($form['#id'], $css_ids))) {
+  if (in_array($form['form_id']['#value'], $form_ids) || (isset($form['#id']) && in_array($form['#id'], $css_ids))) {
     // If the custom #compact_forms property has been programmatically set to
     // FALSE, do not process this form.
     if (isset($form['#compact_forms']) && !$form['#compact_forms']) {
