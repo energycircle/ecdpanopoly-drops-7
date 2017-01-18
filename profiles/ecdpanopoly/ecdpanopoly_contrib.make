@@ -453,7 +453,7 @@ projects[total_subscription][patch][2834927] = https://www.drupal.org/files/issu
 
 
 ;local patches
-#projects[metatag][patch][1918738] = patches/character_count_on_fields-1918738-9-ec.patch
+projects[metatag][patch][1918738] = patches/character_count_on_fields-1918738-9-ec.patch
 #projects[cer][patch][1] = patches/fix_duplicate_function_when_drush_make-1.patch
 #projects[total_subscription][patch][2612234-9] = patches/access_check_fails_in-2612234-9.patch
 
