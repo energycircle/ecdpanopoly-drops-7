@@ -91,6 +91,12 @@ function ec_migrate_ecpro_testimonial_import_feeds_importer_default() {
             'source' => 'geolocations',
             'target' => 'field_testimonial_city',
             'unique' => FALSE,
+            'language' => 'und',
+          ),
+          9 => array(
+            'source' => 'title',
+            'target' => 'field_display_title',
+            'unique' => FALSE,
           ),
         ),
         'insert_new' => '1',

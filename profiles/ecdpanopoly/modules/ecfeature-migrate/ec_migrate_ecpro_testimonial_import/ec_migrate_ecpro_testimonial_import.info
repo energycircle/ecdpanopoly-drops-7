@@ -26,3 +26,4 @@ features[user_permission][] = import ecpro_testimonial_import feeds
 features[user_permission][] = tamper ecpro_testimonial_import
 features[user_permission][] = unlock ecpro_testimonial_import feeds
 features_exclude[dependencies][defaultconfig] = defaultconfig
+features_exclude[dependencies][ec_migrate_ecpro_news_blog_import] = ec_migrate_ecpro_news_blog_import
