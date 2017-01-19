@@ -266,3 +266,9 @@ projects[ec_migrate_ecpro_news_blog_import][download][url] = https://github.com/
 projects[ec_migrate_ecpro_news_blog_import][subdir] = ecfeature-migrate
 projects[ec_migrate_ecpro_news_blog_import][type] = module
 projects[ec_migrate_ecpro_news_blog_import][version] = 1.x
+
+projects[ec_migrate_ecpro_testimonial_import][download][type] = git
+projects[ec_migrate_ecpro_testimonial_import][download][url] = https://github.com/energycircle/ec_migrate_ecpro_testimonial_import.git
+projects[ec_migrate_ecpro_testimonial_import][subdir] = ecfeature-migrate
+projects[ec_migrate_ecpro_testimonial_import][type] = module
+projects[ec_migrate_ecpro_testimonial_import][version] = 1.x
