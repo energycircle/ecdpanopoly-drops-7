@@ -18,14 +18,14 @@ function ec_migrate_ecpro_news_blog_import_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'blog_post';
   $field_group->mode = 'form';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_edit_content';
   $field_group->data = array(
     'label' => 'Migration',
-    'weight' => '2',
+    'weight' => '4',
     'children' => array(
-      0 => 'field_migrate_previous_url',
-      1 => 'field_migrate_author',
-      2 => 'field_migrate_guid',
+      0 => 'field_migrate_author',
+      1 => 'field_migrate_guid',
+      2 => 'field_migrate_previous_url',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

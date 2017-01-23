@@ -125,6 +125,18 @@ function fivestar_field_delete($entity_type, $entity, $field, $instance, $langco
   _fivestar_field_helper($entity_type, $entity, $field, $instance, $langcode, $items, 'delete');
 }
 
+/**
+ * Implements hook_field_views_data().
+ */
+function fivestar_field_views_data($field) {
+  $data = field_views_field_default_views_data($field);
+  foreach ($data as $table_name => $table_data) {
+    // Add our handler to the rating views field.
+    $data[$table_name][$field['field_name'] . '_rating']['filter']['handler'] = 'fivestar_views_handler_filter_in_operator';
+  }
+  return $data;
+}
+
 function _fivestar_field_helper($entity_type, $entity, $field, $instance, $langcode, &$items, $op = '') {
   foreach ($items as $delta => $item) {
     if ((isset($entity->status) && !$entity->status) || $op == 'delete') {
@@ -286,10 +298,10 @@ function fivestar_field_widget_form(&$form, &$form_state, $field, $instance, $la
     }
     $element['rating'] = array(
       '#type' => 'select',
-      '#title' => isset($instance['label']) ? (($i18n) ? i18n_field_translate_property($instance, 'label') : t($instance['label'])) : FALSE,
+      '#title' => check_plain(isset($instance['label']) ? (($i18n) ? i18n_field_translate_property($instance, 'label') : t($instance['label'])) : FALSE),
       '#options' => $options,
       '#default_value' => isset($items[$delta]['rating']) ? $items[$delta]['rating'] : NULL,
-      '#description' => isset($instance['description']) ? (($i18n) ? i18n_field_translate_property($instance, 'description') : t($instance['description'])) : FALSE,
+      '#description' => check_plain(isset($instance['description']) ? (($i18n) ? i18n_field_translate_property($instance, 'description') : t($instance['description'])) : FALSE),
       '#required' => isset($instance['required']) ? $instance['required'] : FALSE,
     );
   }
@@ -319,8 +331,8 @@ function fivestar_field_widget_form(&$form, &$form_state, $field, $instance, $la
     );
 
     $element['rating'] = array(
-      '#type'=> 'fivestar',
-      '#title' => isset($instance['label']) ? (($i18n) ? i18n_field_translate_property($instance, 'label') : t($instance['label'])) : FALSE,
+      '#type' => 'fivestar',
+      '#title' => check_plain(isset($instance['label']) ? (($i18n) ? i18n_field_translate_property($instance, 'label') : t($instance['label'])) : FALSE),
       '#stars' => isset($instance['settings']['stars']) ? $instance['settings']['stars'] : 5,
       '#allow_clear' => isset($instance['settings']['allow_clear']) ? $instance['settings']['allow_clear'] : FALSE,
       '#allow_revote' => isset($instance['settings']['allow_revote']) ? $instance['settings']['allow_revote'] : FALSE,
@@ -329,7 +341,7 @@ function fivestar_field_widget_form(&$form, &$form_state, $field, $instance, $la
       '#widget' => $widget,
       '#settings' => $settings,
       '#values' => $values,
-      '#description' => isset($instance['description']) ? (($i18n) ? i18n_field_translate_property($instance, 'description') : t($instance['description'])) : FALSE,
+      '#description' => check_plain(isset($instance['description']) ? (($i18n) ? i18n_field_translate_property($instance, 'description') : t($instance['description'])) : FALSE),
       '#required' => isset($instance['required']) ? $instance['required'] : FALSE,
     );
   }
@@ -735,9 +747,9 @@ function fivestar_field_prepare_view($entity_type, $entities, $field, $instances
         $items[$id] = array($values);
       }
     }
-    if(!empty($exposed_widgets)) {
+    if (!empty($exposed_widgets)) {
       $votes = fivestar_get_votes_multiple($entity_type, $exposed_widgets, $field['settings']['axis']);
-      foreach($votes[$entity_type] as $id => $vote) {
+      foreach ($votes[$entity_type] as $id => $vote) {
         // Populating the $items[$id] array even for items with no value forces
         // the render system to output a widget.
         $values['user'] = isset($vote['user']['value']) ? $vote['user']['value'] : 0;

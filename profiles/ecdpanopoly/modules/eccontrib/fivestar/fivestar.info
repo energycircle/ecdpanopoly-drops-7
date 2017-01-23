@@ -5,12 +5,13 @@ core = 7.x
 dependencies[] = votingapi
 configure = admin/config/content/fivestar
 files[] = fivestar.migrate.inc
+files[] = includes/fivestar_views_handler_filter_in_operator.inc
 files[] = test/fivestar.base.test
 files[] = test/fivestar.field.test
 
-; Information added by Drupal.org packaging script on 2016-05-04
-version = "7.x-2.2+2-dev"
+; Information added by Drupal.org packaging script on 2017-01-22
+version = "7.x-2.2+7-dev"
 core = "7.x"
 project = "fivestar"
-datestamp = "1462351144"
+datestamp = "1485095886"
 
