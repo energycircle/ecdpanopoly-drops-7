@@ -12,7 +12,6 @@ function ec_blog_post_defaultconfig_features() {
     'ec_blog_post' => array(
       'field_default_fields' => 'field_default_fields',
       'metatag_config_default' => 'metatag_config_default',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -1690,22 +1689,4 @@ function ec_blog_post_defaultconfig_metatag_config_default() {
   $export['node'] = $config;
 
   return $export;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_blog_post_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer sharethis'.
-  $permissions['administer sharethis'] = array(
-    'name' => 'administer sharethis',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'sharethis',
-  );
-
-  return $permissions;
 }
