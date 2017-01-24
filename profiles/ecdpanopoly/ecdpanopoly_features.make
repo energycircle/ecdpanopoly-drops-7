@@ -278,3 +278,9 @@ projects[ec_migrate_ecpro_case_study_import][download][url] = https://github.com
 projects[ec_migrate_ecpro_case_study_import][subdir] = ecfeature-migrate
 projects[ec_migrate_ecpro_case_study_import][type] = module
 projects[ec_migrate_ecpro_case_study_import][version] = 1.x
+
+projects[ec_migrate_ecpro_gallery_import][download][type] = git
+projects[ec_migrate_ecpro_gallery_import][download][url] = https://github.com/energycircle/ec_migrate_ecpro_gallery_import.git
+projects[ec_migrate_ecpro_gallery_import][subdir] = ecfeature-migrate
+projects[ec_migrate_ecpro_gallery_import][type] = module
+projects[ec_migrate_ecpro_gallery_import][version] = 1.x

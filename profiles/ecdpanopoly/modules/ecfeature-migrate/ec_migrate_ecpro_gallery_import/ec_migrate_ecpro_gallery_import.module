@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC Migrate ecPRO Gallery import feature.
+ */
+
+include_once 'ec_migrate_ecpro_gallery_import.features.inc';
