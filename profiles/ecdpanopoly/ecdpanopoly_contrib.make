@@ -151,7 +151,7 @@ projects[external][version] = 1.x-dev
 projects[external][patch][1043324] = https://www.drupal.org/files/issues/external-https-links-1043324-5.patch
 
 projects[feeds][subdir] = eccontrib
-projects[feeds][version] = 2.x
+projects[feeds][version] = 2.0-beta3
 projects[feeds][patch] = https://www.drupal.org/files/issues/feeds-unlock-1535368-18.patch
 
 projects[feeds_ex][subdir] = eccontrib

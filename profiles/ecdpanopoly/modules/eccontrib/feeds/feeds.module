@@ -261,12 +261,7 @@ function feeds_permission() {
  *
  * Declare form callbacks for all known classes derived from FeedsConfigurable.
  */
-function feeds_forms($form_id, $args) {
-  // Check if the requested form is a Feeds form.
-  if (!stripos($form_id, '_feeds_form')) {
-    return;
-  }
-
+function feeds_forms() {
   $forms = array();
   $forms['FeedsImporter_feeds_form']['callback'] = 'feeds_form';
   $plugins = FeedsPlugin::all();
@@ -701,7 +696,7 @@ function feeds_form_node_form_alter(&$form, $form_state) {
     $form['#attributes']['enctype'] = 'multipart/form-data';
 
     // Build form.
-    $source = feeds_source($importer_id, empty($form['#node']->nid) ? NULL : $form['#node']->nid);
+    $source = feeds_source($importer_id, empty($form['#node']->nid) ? 0 : $form['#node']->nid);
     $form['feeds'] = array(
       '#type' => 'fieldset',
       '#title' => t('Feed'),
@@ -758,7 +753,7 @@ function feeds_features_pipe_feeds_importer_alter(&$pipe, $data, &$export) {
  * required if there are any importers using those plugins.
  */
 function feeds_system_info_alter(array &$info, $file, $type) {
-  if ($type !== 'module' || !module_exists($file->name) || !module_hook($file->name, 'feeds_plugins')) {
+  if ($type !== 'module' || !module_hook($file->name, 'feeds_plugins')) {
     return;
   }
 
