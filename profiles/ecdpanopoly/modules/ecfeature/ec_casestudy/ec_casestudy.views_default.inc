@@ -92,7 +92,7 @@ function ec_casestudy_views_default_views() {
     'case_study' => 'case_study',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -228,7 +228,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'case_study' => 'case_study',
   );
-  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -407,7 +407,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'case_study' => 'case_study',
   );
-  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -562,7 +562,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['field_feature_on_home_value']['table'] = 'field_data_field_feature_on_home';
   $handler->display->display_options['filters']['field_feature_on_home_value']['field'] = 'field_feature_on_home_value';
   $handler->display->display_options['filters']['field_feature_on_home_value']['operator'] = 'not empty';
-  /* Filter criterion: Content: Service Group (field_ref_case_study_serv_group) */
+  /* Filter criterion: : field_ref_case_study_serv_group (field_ref_case_study_serv_group) */
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['id'] = 'field_ref_case_study_serv_group_target_id';
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['table'] = 'field_data_field_ref_case_study_serv_group';
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['field'] = 'field_ref_case_study_serv_group_target_id';
@@ -594,7 +594,7 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['field_feature_on_home_value']['table'] = 'field_data_field_feature_on_home';
   $handler->display->display_options['filters']['field_feature_on_home_value']['field'] = 'field_feature_on_home_value';
   $handler->display->display_options['filters']['field_feature_on_home_value']['operator'] = 'not empty';
-  /* Filter criterion: Content: Service Group (field_ref_case_study_serv_group) */
+  /* Filter criterion: : field_ref_case_study_serv_group (field_ref_case_study_serv_group) */
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['id'] = 'field_ref_case_study_serv_group_target_id';
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['table'] = 'field_data_field_ref_case_study_serv_group';
   $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['field'] = 'field_ref_case_study_serv_group_target_id';

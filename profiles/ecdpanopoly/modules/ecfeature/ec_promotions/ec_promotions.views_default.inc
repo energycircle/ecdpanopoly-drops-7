@@ -90,7 +90,7 @@ function ec_promotions_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'promotion' => 'promotion',
   );
-  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
+  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';

@@ -688,70 +688,6 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-case_study-field_ref_case_study_serv_group'.
-  $field_instances['node-case_study-field_ref_case_study_serv_group'] = array(
-    'bundle' => 'case_study',
-    'default_value' => NULL,
-    'default_value_function' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 10,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ref_case_study_serv_group',
-    'label' => 'Service Group',
-    'required' => 0,
-    'settings' => array(
-      'behaviors' => array(
-        'current' => array(
-          'status' => 0,
-        ),
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 26,
-    ),
-  );
-
   // Exported field_instance: 'node-case_study-field_ref_case_study_service'.
   $field_instances['node-case_study-field_ref_case_study_service'] = array(
     'bundle' => 'case_study',
@@ -1701,70 +1637,6 @@ function ec_service_stack_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_ref_service_promo'.
-  $field_instances['node-service-field_ref_service_promo'] = array(
-    'bundle' => 'service',
-    'default_value' => NULL,
-    'default_value_function' => '',
-    'deleted' => 0,
-    'description' => 'Promotions displayed on this page.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ref_service_promo',
-    'label' => 'Promotion',
-    'required' => 0,
-    'settings' => array(
-      'behaviors' => array(
-        'current' => array(
-          'status' => 0,
-        ),
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 14,
-    ),
-  );
-
   // Exported field_instance: 'node-service-field_ref_service_serv_cat'.
   $field_instances['node-service-field_ref_service_serv_cat'] = array(
     'bundle' => 'service',
@@ -1832,7 +1704,11 @@ function ec_service_stack_field_default_field_instances() {
   // Exported field_instance: 'node-service-field_ref_to_cta_form'.
   $field_instances['node-service-field_ref_to_cta_form'] = array(
     'bundle' => 'service',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
@@ -2455,7 +2331,11 @@ function ec_service_stack_field_default_field_instances() {
   // Exported field_instance: 'node-service_category-field_ref_to_cta_form'.
   $field_instances['node-service_category-field_ref_to_cta_form'] = array(
     'bundle' => 'service_category',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
@@ -2892,7 +2772,11 @@ function ec_service_stack_field_default_field_instances() {
   // Exported field_instance: 'node-service_group-field_ref_to_cta_form'.
   $field_instances['node-service_group-field_ref_to_cta_form'] = array(
     'bundle' => 'service_group',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
@@ -3260,8 +3144,6 @@ function ec_service_stack_field_default_field_instances() {
   t('Name');
   t('Page Tracking');
   t('Phone');
-  t('Promotion');
-  t('Promotions displayed on this page.');
   t('Select the Service pages on which to show this promo.');
   t('Select the service categories in this service group');
   t('Select the service category pages on which to show this promo.');

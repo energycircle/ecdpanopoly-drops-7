@@ -13,72 +13,56 @@ function ec_faq_user_default_permissions() {
   // Exported permission: 'administer panelizer node faq breadcrumbs'.
   $permissions['administer panelizer node faq breadcrumbs'] = array(
     'name' => 'administer panelizer node faq breadcrumbs',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faq choice'.
   $permissions['administer panelizer node faq choice'] = array(
     'name' => 'administer panelizer node faq choice',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faq content'.
   $permissions['administer panelizer node faq content'] = array(
     'name' => 'administer panelizer node faq content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faq context'.
   $permissions['administer panelizer node faq context'] = array(
     'name' => 'administer panelizer node faq context',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faq defaults'.
   $permissions['administer panelizer node faq defaults'] = array(
     'name' => 'administer panelizer node faq defaults',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faq layout'.
   $permissions['administer panelizer node faq layout'] = array(
     'name' => 'administer panelizer node faq layout',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faq overview'.
   $permissions['administer panelizer node faq overview'] = array(
     'name' => 'administer panelizer node faq overview',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node faq settings'.
   $permissions['administer panelizer node faq settings'] = array(
     'name' => 'administer panelizer node faq settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panelizer',
   );
 

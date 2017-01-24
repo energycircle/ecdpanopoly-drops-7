@@ -1206,7 +1206,11 @@ function ec_service_stack_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
@@ -2054,7 +2058,11 @@ function ec_service_stack_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service_category',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
@@ -2706,7 +2714,11 @@ function ec_service_stack_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service_group',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
