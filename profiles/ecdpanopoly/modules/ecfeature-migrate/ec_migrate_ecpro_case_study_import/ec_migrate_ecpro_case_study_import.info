@@ -27,3 +27,5 @@ features[user_permission][] = import ecpro_casestudy_import feeds
 features[user_permission][] = tamper ecpro_casestudy_import
 features[user_permission][] = unlock ecpro_casestudy_import feeds
 features_exclude[dependencies][ec_migrate_ecpro_news_blog_import] = ec_migrate_ecpro_news_blog_import
+project path = profiles/ecdpanopoly/modules/ecfeature-migrate
+project status url = https://github.com/energycircle/ec_migrate_ecpro_case_study_import.git
