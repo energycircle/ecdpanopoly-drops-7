@@ -2,6 +2,7 @@ name = EC Migrate ecPRO Case Study import
 core = 7.x
 package = ECFeatures - Migrate
 version = 7.x-1.0-beta1
+project = ec_migrate_ecpro_case_study_import
 dependencies[] = ctools
 dependencies[] = defaultconfig
 dependencies[] = ec_casestudy

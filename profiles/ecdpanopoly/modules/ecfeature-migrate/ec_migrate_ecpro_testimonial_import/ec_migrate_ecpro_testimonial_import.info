@@ -2,6 +2,7 @@ name = EC Migrate ecPRO Testimonial import
 core = 7.x
 package = ECFeatures - Migrate
 version = 7.x-1.0-beta1
+project = ec_migrate_ecpro_testimonial_import
 dependencies[] = ctools
 dependencies[] = ec_testimonial
 dependencies[] = features

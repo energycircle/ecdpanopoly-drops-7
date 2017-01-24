@@ -26,8 +26,6 @@ function ec_migrate_ecpro_case_study_import_field_group_info() {
       0 => 'field_migrate_guid',
       1 => 'field_migrate_author',
       2 => 'field_migrate_previous_url',
-      3 => 'field_migrate_meta_page_title',
-      4 => 'field_migrate_meta_page_desc',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

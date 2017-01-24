@@ -18,10 +18,10 @@ function ec_migrate_ecpro_news_blog_import_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'blog_post';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Migration',
-    'weight' => '4',
+    'weight' => '6',
     'children' => array(
       0 => 'field_migrate_author',
       1 => 'field_migrate_guid',
