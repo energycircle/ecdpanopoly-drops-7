@@ -22,3 +22,4 @@ includes[] = ecdpanopoly_features.make
 
 projects[drupal][patch][2364343-20] = https://www.drupal.org/files/issues/2364343-20.robots.txt.patch
 projects[drupal][patch][] = https://www.drupal.org/files/issues/1551132-drupal-reinstall-schema-empty-tables-87-D7.patch
+projects[drupal][patch][] = patches/add_pantheon_local.patch

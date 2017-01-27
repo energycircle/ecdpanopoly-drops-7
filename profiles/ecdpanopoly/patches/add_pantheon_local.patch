@@ -1,0 +1,15 @@
+diff --git a/sites/default/default.settings.php b/sites/default/default.settings.php
+index 09143f5795..f2a389d187 100644
+--- a/sites/default/default.settings.php
++++ b/sites/default/default.settings.php
+@@ -637,3 +637,10 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  * @see drupal_clean_css_identifier()
+  */
+ # $conf['allow_css_double_underscores'] = TRUE;
++
++if (!defined('PANTHEON_ENVIRONMENT')) {
++        $conf_path = conf_path();
++        if (file_exists(DRUPAL_ROOT . '/' . $conf_path . '/settings.local.php')) {
++          include DRUPAL_ROOT . '/' . $conf_path . '/settings.local.php';
++        }
++}
