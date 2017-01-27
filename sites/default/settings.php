@@ -574,4 +574,3 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * the leading hash sign below.
  */
 # $conf['pressflow_smart_start'] = TRUE;
-
