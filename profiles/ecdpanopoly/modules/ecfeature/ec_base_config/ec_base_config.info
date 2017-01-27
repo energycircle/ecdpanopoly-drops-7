@@ -662,6 +662,7 @@ features[variable][] = superfish_wrapmul_1
 features[variable][] = superfish_wrapul_1
 features[variable][] = superfish_zebra_1
 features[variable][] = theme_default
+features[variable][] = theme_ec_at_admin_files_directory
 features[variable][] = token_tree_recursion_limit
 features[variable][] = transliteration_file_lowercase
 features[variable][] = transliteration_file_uploads
