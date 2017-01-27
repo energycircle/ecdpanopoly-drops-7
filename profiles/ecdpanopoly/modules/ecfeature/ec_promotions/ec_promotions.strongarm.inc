@@ -62,7 +62,14 @@ function ec_promotions_strongarm() {
           'weight' => '11',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'sharethis' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__promotion'] = $strongarm;

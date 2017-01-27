@@ -34,7 +34,7 @@ projects[auto_nodetitle][subdir] = eccontrib
 projects[auto_nodetitle][version] = 1.x
 
 projects[better_exposed_filters][subdir] = eccontrib
-projects[better_exposed_filters][version] = 3.x
+projects[better_exposed_filters][version] = 3.3
 
 projects[better_formats][subdir] = eccontrib
 projects[better_formats][version] = 1.0-beta2
@@ -93,7 +93,7 @@ projects[editablefields][subdir] = eccontrib
 projects[editablefields][version] = 1.0-alpha2
 
 projects[eck][subdir] = eccontrib
-projects[eck][version] = 2.0-rc8
+projects[eck][version] = 2.0-rc9
 
 projects[elements][subdir] = eccontrib
 projects[elements][version] = 1.x
@@ -135,7 +135,7 @@ projects[entityreference_filter][subdir] = eccontrib
 projects[entityreference_filter][version] = 1.7
 
 projects[entityreference_prepopulate][subdir] = eccontrib
-projects[entityreference_prepopulate][version] = 1.6
+projects[entityreference_prepopulate][version] = 1.7
 
 projects[entityreference_current][subdir] = eccontrib
 projects[entityreference_current][version] = 1.0-alpha2
@@ -161,7 +161,7 @@ projects[feeds_tamper][subdir] = eccontrib
 projects[feeds_tamper][version] = 1.1
 
 projects[field_collection][subdir] = eccontrib
-projects[field_collection][version] = 1.0-beta11
+projects[field_collection][version] = 1.0-beta12
 
 projects[field_default_token][subdir] = eccontrib
 projects[field_default_token][version] = 1.3
@@ -242,7 +242,7 @@ projects[job_scheduler][subdir] = eccontrib
 projects[job_scheduler][version] = 2.x
 
 projects[leaflet][subdir] = eccontrib
-projects[leaflet][version] = 1.3
+projects[leaflet][version] = 1.4
 
 projects[leaflet_widget][version] = 2.0-beta1
 projects[leaflet_widget][subdir] = contrib
@@ -250,7 +250,7 @@ projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/leaflet_wi
 projects[leaflet_widget][patch] = https://drupal.org/files/0001-Issue-1834446-by-mradcliffe-Use-GeoPHP-native.-GeoJSO.patch
 projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.patch
 
-projects[leaflet_more_maps][version] = 1.16
+projects[leaflet_more_maps][version] = 1.17
 projects[leaflet_more_maps][subdir] = contrib
 
 projects[linkit_target][subdir] = eccontrib
@@ -282,7 +282,7 @@ projects[mimemail][subdir] = eccontrib
 projects[mimemail][version] = 1.x
 
 projects[module_missing_message_fixer][subdir] = eccontrib
-projects[module_missing_message_fixer][version] = 1.x
+projects[module_missing_message_fixer][version] = 1.2
 
 projects[module_filter][subdir] = eccontrib
 projects[module_filter][version] = 2.x-dev
@@ -340,7 +340,7 @@ projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.17
+projects[services][version] = 3.18
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 2.0

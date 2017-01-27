@@ -6,7 +6,7 @@ projects[context_pantheon][subdir] = ec-dev
 
 
 ; Feature Tools
-projects[diff][version] = 3.2
+projects[diff][version] = 3.3
 projects[diff][subdir] = ec-dev
 
 projects[features_extra][version] = 1.0
