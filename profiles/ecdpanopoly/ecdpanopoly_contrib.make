@@ -351,7 +351,7 @@ projects[sharethis][subdir] = eccontrib
 projects[sharethis][version] = 2.x-dev
 
 projects[smtp][subdir] = eccontrib
-projects[smtp][version] = 1.4
+projects[smtp][version] = 1.6
 projects[smtp][patch][2753115] = https://www.drupal.org/files/issues/2753115-2-smtp-multiple-to-addresses-error.patch
 
 projects[table_element][subdir] = eccontrib
@@ -411,7 +411,7 @@ projects[views_record_count][subdir] = eccontrib
 projects[views_record_count][version] = 1.x
 
 projects[views_slideshow][subdir] = eccontrib
-projects[views_slideshow][version] = 3.1
+projects[views_slideshow][version] = 3.5
 
 projects[views_url_path_arguments][subdir] = eccontrib
 projects[views_url_path_arguments][version] = 1.1
