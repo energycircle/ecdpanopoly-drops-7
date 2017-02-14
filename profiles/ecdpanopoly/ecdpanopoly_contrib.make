@@ -34,7 +34,7 @@ projects[auto_nodetitle][subdir] = eccontrib
 projects[auto_nodetitle][version] = 1.x
 
 projects[better_exposed_filters][subdir] = eccontrib
-projects[better_exposed_filters][version] = 3.3
+projects[better_exposed_filters][version] = 3.4
 
 projects[better_formats][subdir] = eccontrib
 projects[better_formats][version] = 1.0-beta2
