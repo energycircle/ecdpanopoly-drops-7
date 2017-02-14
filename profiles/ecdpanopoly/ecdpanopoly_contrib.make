@@ -34,7 +34,7 @@ projects[auto_nodetitle][subdir] = eccontrib
 projects[auto_nodetitle][version] = 1.x
 
 projects[better_exposed_filters][subdir] = eccontrib
-projects[better_exposed_filters][version] = 3.x
+projects[better_exposed_filters][version] = 3.3
 
 projects[better_formats][subdir] = eccontrib
 projects[better_formats][version] = 1.0-beta2
@@ -44,6 +44,7 @@ projects[backup_migrate][version] = 3.1
 
 projects[cer][subdir] = eccontrib
 projects[cer][version] = 3.x-dev
+projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
 
 projects[charts][subdir] = eccontrib
 projects[charts][version] = 2.0-rc1
@@ -53,6 +54,7 @@ projects[colorbox][version] = 2.12
 
 projects[compact_forms][subdir] = eccontrib
 projects[compact_forms][version] = 1.x
+projects[context][patch][305289] = https://www.drupal.org/files/context_panels-305289-39.patch
 
 projects[computed_field][subdir] = eccontrib
 projects[computed_field][version] = 1.x
@@ -65,15 +67,21 @@ projects[content_type_extras][version] = 1.12
 
 projects[content_experiments][subdir] = eccontrib
 projects[content_experiments][version] = 1.4
+projects[content_experiments][patch][2759323] = https://www.drupal.org/files/issues/content_experiments-node-type-configuration-2759323-1.patch
 
 projects[context][subdir] = eccontrib
 projects[context][version] = 3.7
+projects[context][patch][305289] = https://www.drupal.org/files/context_panels-305289-39.patch
 
 projects[context_entity_field][subdir] = eccontrib
 projects[context_entity_field][version] = 1.x-dev
+projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/issues/context_entity_field-context-entity-field-2307955-18.patch
 
 projects[conditional_fields][subdir] = eccontrib
 projects[conditional_fields][version] = 3.0-alpha2
+
+projects[content_access][subdir] = eccontrib
+projects[content_access][version] = 1.x
 
 projects[disable_term_node_listings][subdir] = eccontrib
 projects[disable_term_node_listings][version] = 1.2
@@ -85,7 +93,7 @@ projects[editablefields][subdir] = eccontrib
 projects[editablefields][version] = 1.0-alpha2
 
 projects[eck][subdir] = eccontrib
-projects[eck][version] = 2.0-rc8
+projects[eck][version] = 2.0-rc9
 
 projects[elements][subdir] = eccontrib
 projects[elements][version] = 1.x
@@ -101,6 +109,8 @@ projects[entity_path][version] = 1.x
 
 projects[entity_rules][subdir] = eccontrib
 projects[entity_rules][version] = 1.x-dev
+projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch
+projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
 
 projects[entity_uuid][subdir] = eccontrib
 projects[entity_uuid][version] = 1.0
@@ -113,6 +123,7 @@ projects[entity2text][version] = 1.x
 
 projects[entitycache][subdir] = eccontrib
 projects[entitycache][version] = 1.5
+projects[entitycache][patch][2441965] = https://www.drupal.org/files/issues/entitycache_fix_upgrade_path-2441965-39.patch
 
 projects[entityform_block][subdir] = eccontrib
 projects[entityform_block][version] = 1.3
@@ -124,7 +135,7 @@ projects[entityreference_filter][subdir] = eccontrib
 projects[entityreference_filter][version] = 1.7
 
 projects[entityreference_prepopulate][subdir] = eccontrib
-projects[entityreference_prepopulate][version] = 1.6
+projects[entityreference_prepopulate][version] = 1.7
 
 projects[entityreference_current][subdir] = eccontrib
 projects[entityreference_current][version] = 1.0-alpha2
@@ -137,9 +148,11 @@ projects[exclude_node_title][version] = 1.9
 
 projects[external][subdir] = eccontrib
 projects[external][version] = 1.x-dev
+projects[external][patch][1043324] = https://www.drupal.org/files/issues/external-https-links-1043324-5.patch
 
 projects[feeds][subdir] = eccontrib
-projects[feeds][version] = 2.x
+projects[feeds][version] = 2.0-beta3
+projects[feeds][patch] = https://www.drupal.org/files/issues/feeds-unlock-1535368-18.patch
 
 projects[feeds_ex][subdir] = eccontrib
 projects[feeds_ex][version] = 1.x
@@ -148,7 +161,7 @@ projects[feeds_tamper][subdir] = eccontrib
 projects[feeds_tamper][version] = 1.1
 
 projects[field_collection][subdir] = eccontrib
-projects[field_collection][version] = 1.0-beta11
+projects[field_collection][version] = 1.0-beta12
 
 projects[field_default_token][subdir] = eccontrib
 projects[field_default_token][version] = 1.3
@@ -229,12 +242,15 @@ projects[job_scheduler][subdir] = eccontrib
 projects[job_scheduler][version] = 2.x
 
 projects[leaflet][subdir] = eccontrib
-projects[leaflet][version] = 1.3
+projects[leaflet][version] = 1.4
 
 projects[leaflet_widget][version] = 2.0-beta1
 projects[leaflet_widget][subdir] = contrib
+projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/leaflet_widget-1974478-vertical-tab-refresh-12.patch
+projects[leaflet_widget][patch] = https://drupal.org/files/0001-Issue-1834446-by-mradcliffe-Use-GeoPHP-native.-GeoJSO.patch
+projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.patch
 
-projects[leaflet_more_maps][version] = 1.16
+projects[leaflet_more_maps][version] = 1.17
 projects[leaflet_more_maps][subdir] = contrib
 
 projects[linkit_target][subdir] = eccontrib
@@ -254,9 +270,7 @@ projects[masquerade][version] = 1.0-rc7
 
 projects[maxlength][subdir] = eccontrib
 projects[maxlength][version] = 3.x
-
-#projects[menu_icons][subdir] = eccontrib
-#projects[menu_icons][version] = 3.x-dev
+projects[maxlength][patch][1256968] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
 
 projects[menu_attributes][subdir] = eccontrib
 projects[menu_attributes][version] = 1.x
@@ -268,16 +282,18 @@ projects[mimemail][subdir] = eccontrib
 projects[mimemail][version] = 1.x
 
 projects[module_missing_message_fixer][subdir] = eccontrib
-projects[module_missing_message_fixer][version] = 1.x
+projects[module_missing_message_fixer][version] = 1.2
 
 projects[module_filter][subdir] = eccontrib
 projects[module_filter][version] = 2.x-dev
 
 projects[node_authlink][subdir] = eccontrib
 projects[node_authlink][version] = 1.1
+projects[node_authlink][patch][2684923] = https://www.drupal.org/files/issues/node_authlink-views-integration-2684923-3.patch
 
 projects[node_clone][subdir] = eccontrib
 projects[node_clone][version] = 1.x
+projects[node_clone][patch][1043324] = https://www.drupal.org/files/issues/1252702-menu-local-task.patch
 
 projects[node_buttons_edit][subdir] = eccontrib
 projects[node_buttons_edit][version] = 1.x
@@ -299,18 +315,14 @@ projects[pps][version] = 1.x
 
 projects[rdfx][subdir] = eccontrib
 projects[rdfx][version] = 2.0-alpha4
+projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
+projects[rdfx][patch][1176666] = https://drupal.org/files/find-arc-library-correctly-1176666-14.patch
 
 projects[rabbit_hole][subdir] = eccontrib
 projects[rabbit_hole][version] = 2.23
 
 projects[redirect][subdir] = eccontrib
 projects[redirect][version] = 1.0-rc3
-
-#projects[registration][subdir] = eccontrib
-#projects[registration][version] = 1.4
-
-#projects[relation][subdir] = eccontrib
-#projects[relation][version] = 1.0-rc7
 
 projects[role_delegation][subdir] = eccontrib
 projects[role_delegation][version] = 1.1
@@ -321,20 +333,26 @@ projects[rules][version] = 2.9
 projects[schemaorg][subdir] = eccontrib
 projects[schemaorg][version] = 1.x
 
+projects[scheduler][subdir] = eccontrib
+projects[scheduler][version] = 1.x
+
 projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.17
+projects[services][version] = 3.18
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 2.0
+projects[superfish][patch][1316254] = https://www.drupal.org/files/issues/superfish-add-starting-level-1316254-15-D7.patch
+projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
 
 projects[sharethis][subdir] = eccontrib
 projects[sharethis][version] = 2.x-dev
 
 projects[smtp][subdir] = eccontrib
-projects[smtp][version] = 1.4
+projects[smtp][version] = 1.6
+projects[smtp][patch][2753115] = https://www.drupal.org/files/issues/2753115-2-smtp-multiple-to-addresses-error.patch
 
 projects[table_element][subdir] = eccontrib
 projects[table_element][version] = 1.0-beta5
@@ -347,6 +365,7 @@ projects[title][version] = 1.x
 
 projects[token_custom][subdir] = eccontrib
 projects[token_custom][version] = 2.x-dev
+projects[token_custom][patch][] = https://www.drupal.org/files/issues/export_custom_token.patch
 
 projects[token_tweaks][subdir] = eccontrib
 projects[token_tweaks][version] = 1.x
@@ -359,6 +378,7 @@ projects[total_control][version] = 2.x
 
 projects[total_subscription][subdir] = eccontrib
 projects[total_subscription][version] = 1.x-dev
+projects[total_subscription][patch][2834927] = https://www.drupal.org/files/issues/views_data_export-integration-2834927-6.patch
 
 projects[username_enumeration_prevention][subdir] = eccontrib
 projects[username_enumeration_prevention][version] = 1.2
@@ -387,11 +407,17 @@ projects[video_filter][version] = 3.4
 projects[views_data_export][subdir] = eccontrib
 projects[views_data_export][version] = 3.x-dev
 
+projects[views_record_count][subdir] = eccontrib
+projects[views_record_count][version] = 1.x
+
 projects[views_slideshow][subdir] = eccontrib
-projects[views_slideshow][version] = 3.1
+projects[views_slideshow][version] = 3.5
 
 projects[views_url_path_arguments][subdir] = eccontrib
 projects[views_url_path_arguments][version] = 1.1
+
+projects[web_widgets][subdir] = eccontrib
+projects[web_widgets][version] = 1.x
 
 projects[votingapi][subdir] = eccontrib
 projects[votingapi][version] = 2.12
@@ -403,50 +429,28 @@ projects[xmlsitemap][subdir] = eccontrib
 projects[xmlsitemap][version] = 2.3
 
 
-;PATCHES
-projects[smtp][patch][2753115] = https://www.drupal.org/files/issues/2753115-2-smtp-multiple-to-addresses-error.patch
-projects[token_custom][patch][] = https://www.drupal.org/files/issues/export_custom_token.patch
-projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
-projects[entity_rules][patch][0] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_form_entity_type_settings.patch
-projects[entity_rules][patch][1] = https://www.drupal.org/files/issues/entity_rules_entity_rules_get_type_settings.patch
-projects[compact_forms][patch][2464993] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
-projects[context][patch][305289] = https://www.drupal.org/files/context_panels-305289-39.patch
-projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
+;OLD PATCHES
 #projects[metatag][patch][1918738] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
-projects[maxlength][patch][1256968] = https://www.drupal.org/files/metatags_quick_integration-1256968-5.patch
 #projects[table_element][patch][] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
 #projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
-projects[entitycache][patch][2441965] = https://www.drupal.org/files/issues/entitycache_fix_upgrade_path-2441965-39.patch
-projects[deploy][patch][1604938] = https://www.drupal.org/files/deploy-1604938_1.patch
-projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/leaflet_widget-1974478-vertical-tab-refresh-12.patch
-projects[leaflet_widget][patch] = https://drupal.org/files/0001-Issue-1834446-by-mradcliffe-Use-GeoPHP-native.-GeoJSO.patch
-projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.patch
 #projects[schemaorg][patch][1296760] = https://www.drupal.org/files/1296760_entity_1.patch
-projects[feeds][patch] = https://www.drupal.org/files/issues/feeds-unlock-1535368-18.patch
 #projects[views_slideshow][patch] = https://www.drupal.org/files/views_slideshow_cycle-hook-requirements-broken-1090052-27.patch
 #projects[metatag][patch][1880302] = https://www.drupal.org/files/metatag-1880302-2.patch
-projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
-projects[external][patch][1043324] = https://www.drupal.org/files/issues/external-https-links-1043324-5.patch
-projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
-projects[node_clone][patch][1043324] = https://www.drupal.org/files/issues/1252702-menu-local-task.patch
-projects[content_experiments][patch][2759323] = https://www.drupal.org/files/issues/content_experiments-node-type-configuration-2759323-1.patch
-projects[rdfx][patch][1176666] = https://drupal.org/files/find-arc-library-correctly-1176666-14.patch
-projects[context_entity_field][patch][2307955] = https://www.drupal.org/files/issues/context_entity_field-context-entity-field-2307955-18.patch
-projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
-projects[node_authlink][patch][2684923] = https://www.drupal.org/files/issues/node_authlink-views-integration-2684923-3.patch
-projects[superfish][patch][1316254] = https://www.drupal.org/files/issues/superfish-add-starting-level-1316254-15-D7.patch
-projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/access_check_fails_in-2612234-8.patch
-
+#projects[rdfx][patch][2216603] = https://www.drupal.org/files/find-arc-library-correctly-1176666-14.patch
+#projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
+#projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/access_check_fails_in-2612234-8.patch
+#projects[total_subscription][patch][2706769] = https://www.drupal.org/files/issues/email-verification-for-anonymous-failed-2706769-3.patch
 
 
 
 ;local patches
-projects[metatag][patch][1918738] = ../patches/character_count_on_fields-1918738-9-ec.patch
-projects[cer][patch][1] = ../patches/fix_duplicate_function_when_drush_make-1.patch
+#projects[metatag][patch][1918738] = patches/character_count_on_fields-1918738-9-ec.patch
+#projects[cer][patch][1] = patches/fix_duplicate_function_when_drush_make-1.patch
+#projects[total_subscription][patch][2612234-9] = patches/access_check_fails_in-2612234-9.patch
 
 
 
-; EC CUSTOM MODS
+; EC CUSTOM MODS / SANDBOX
 projects[energycircle_apps][download][type] = git
 projects[energycircle_apps][download][url] = https://github.com/energycircle/energycircle_apps.git
 projects[energycircle_apps][subdir] = eccustom
@@ -533,7 +537,7 @@ libraries[mailchimp][download][url] = https://bitbucket.org/mailchimp/mailchimp-
 
 libraries[arc][download][type] = get
 libraries[arc][type] = library
-libraries[arc][directory_name] = ARC2
+libraries[arc][directory_name] = arc
 libraries[arc][download][url] = http://github.com/semsol/arc2/tarball/master
 
 libraries[Geocomplete][download][type] = get
