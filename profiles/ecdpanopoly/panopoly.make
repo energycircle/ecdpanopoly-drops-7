@@ -71,8 +71,8 @@ projects[defaultconfig][subdir] = contrib
 projects[entity][patch][1414428] = https://www.drupal.org/files/issues/entity-stop-assuming-you-may-find-array-1414428-14_0.patch
 projects[entity][subdir] = contrib
 
-#projects[media][patch][2566509] = https://www.drupal.org/files/issues/2566509-deprecate-wysiwyg-wysiwyg-allowed-view-modes-alter.patch
-#projects[media][subdir] = contrib
+projects[media][patch][2566509] = https://www.drupal.org/files/issues/2566509-deprecate-wysiwyg-wysiwyg-allowed-view-modes-alter.patch
+projects[media][subdir] = contrib
 
 projects[uuid][patch][1927474] = https://www.drupal.org/files/issues/uuid-fix-empty-uuids-1927474-9_0.patch
 projects[uuid][subdir] = contrib
@@ -89,5 +89,5 @@ projects[token][subdir] = contrib
 #projects[ctools][patch][2404077] = https://www.drupal.org/files/issues/warning_attempt_to-2404077-1.patch
 #projects[ctools][subdir] = contrib
 
-#projects[media][patch][2317519] = https://www.drupal.org/files/issues/media-multiple-blank-wysiwyg-2317519-22.patch
-#projects[media][subdir] = contrib
+projects[media][patch][2317519] = https://www.drupal.org/files/issues/media-multiple-blank-wysiwyg-2317519-22.patch
+projects[media][subdir] = contrib
