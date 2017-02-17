@@ -257,7 +257,7 @@ projects[linkit_target][subdir] = eccontrib
 projects[linkit_target][version] = 1.0
 
 projects[mailchimp][subdir] = eccontrib
-projects[mailchimp][version] = 3.6
+projects[mailchimp][version] = 4.x
 
 projects[mailsystem][subdir] = eccontrib
 projects[mailsystem][version] = 2.x-dev
@@ -533,7 +533,7 @@ libraries[geoPHP][download][url] = https://github.com/phayes/geoPHP.git
 libraries[mailchimp][download][type] = get
 libraries[mailchimp][type] = library
 libraries[mailchimp][directory_name] = mailchimp
-libraries[mailchimp][download][url] = https://bitbucket.org/mailchimp/mailchimp-api-php/get/master.zip
+libraries[mailchimp][download][url] = https://github.com/thinkshout/mailchimp-api-php/archive/v1.0.6.zip
 
 libraries[arc][download][type] = get
 libraries[arc][type] = library
