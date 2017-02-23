@@ -9,9 +9,9 @@ dependencies[] = entity
 files[] = includes/mailchimp_activity.entity.inc
 files[] = includes/mailchimp_activity.ui_controller.inc
 
-; Information added by Drupal.org packaging script on 2017-02-04
-version = "7.x-4.7+26-dev"
+; Information added by Drupal.org packaging script on 2017-02-18
+version = "7.x-4.8+1-dev"
 core = "7.x"
 project = "mailchimp"
-datestamp = "1486234987"
+datestamp = "1487390889"
 
