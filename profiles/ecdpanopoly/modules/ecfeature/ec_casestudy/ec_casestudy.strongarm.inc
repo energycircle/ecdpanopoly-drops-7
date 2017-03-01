@@ -14,7 +14,7 @@ function ec_casestudy_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_case_study';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-extras';
   $export['additional_settings__active_tab_case_study'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -77,7 +77,7 @@ function ec_casestudy_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_title_hide_case_study';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['content_type_extras_title_hide_case_study'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -177,7 +177,14 @@ function ec_casestudy_strongarm() {
           'weight' => '9',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'sharethis' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__case_study'] = $strongarm;
@@ -249,40 +256,54 @@ function ec_casestudy_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_case_study';
   $strongarm->value = array(
     'status' => 1,
+    'help' => '',
     'view modes' => array(
       'page_manager' => array(
         'status' => 0,
-        'default' => 1,
-        'choice' => 1,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
       ),
       'default' => array(
         'status' => 1,
+        'substitute' => '',
         'default' => 1,
         'choice' => 0,
       ),
       'teaser' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'show_this_block' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'grouped_teaser' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'featured' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
     ),
   );
   $export['panelizer_defaults_node_case_study'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:case_study:default_selection';
+  $strongarm->value = 'node:case_study:default:default';
+  $export['panelizer_node:case_study:default_selection'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

@@ -492,7 +492,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 17,
     ),
   );
 
@@ -556,7 +556,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 16,
     ),
   );
 
@@ -620,7 +620,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 19,
     ),
   );
 
@@ -630,7 +630,7 @@ function ec_service_stack_field_default_field_instances() {
     'default_value' => NULL,
     'default_value_function' => '',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select the service categories that were performed for this specific case',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -684,7 +684,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 27,
+      'weight' => 24,
     ),
   );
 
@@ -694,7 +694,7 @@ function ec_service_stack_field_default_field_instances() {
     'default_value' => NULL,
     'default_value_function' => '',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select the services that were performed for this specific case',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -748,7 +748,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 28,
+      'weight' => 25,
     ),
   );
 
@@ -1178,7 +1178,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 26,
+      'weight' => 24,
     ),
   );
 
@@ -1242,7 +1242,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 25,
+      'weight' => 23,
     ),
   );
 
@@ -1306,7 +1306,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 27,
+      'weight' => 25,
     ),
   );
 
@@ -1376,7 +1376,7 @@ function ec_service_stack_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -1633,7 +1633,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1697,7 +1697,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -1766,6 +1766,105 @@ function ec_service_stack_field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance: 'node-service-field_service_icon'.
+  $field_instances['node-service-field_service_icon'] = array(
+    'bundle' => 'service',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 17,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_icon',
+    'label' => 'Service Icon',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'service/icons',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'private' => 0,
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+      ),
+      'type' => 'media_generic',
+      'weight' => 3,
     ),
   );
 
@@ -1867,7 +1966,7 @@ function ec_service_stack_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -2461,6 +2560,7 @@ function ec_service_stack_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
+          'private' => 0,
           'public' => 'public',
           'vimeo' => 0,
           'youtube' => 0,
@@ -2485,10 +2585,7 @@ function ec_service_stack_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_keyboard' => 1,
         'manualcrop_maximize_default_crop_area' => 0,
-        'manualcrop_require_cropping' => array(
-          'sc_940x470_mc' => 'sc_940x470_mc',
-          'sc_1280x440_mc' => 'sc_1280x440_mc',
-        ),
+        'manualcrop_require_cropping' => array(),
         'manualcrop_styles_list' => array(
           'sc_940x470_mc' => 'sc_940x470_mc',
           'sc_1280x440_mc' => 'sc_1280x440_mc',
@@ -3146,17 +3243,20 @@ function ec_service_stack_field_default_field_instances() {
   t('Phone');
   t('Select the Service pages on which to show this promo.');
   t('Select the service categories in this service group');
+  t('Select the service categories that were performed for this specific case');
   t('Select the service category pages on which to show this promo.');
   t('Select the service category that this service is in.');
   t('Select the service group pages on which to display this promo');
   t('Select the service group(s) this service category belongs in.');
   t('Select the services in this service category.');
+  t('Select the services that were performed for this specific case');
   t('Service');
   t('Service Categories');
   t('Service Category');
   t('Service Category Image');
   t('Service Group');
   t('Service Group Image');
+  t('Service Icon');
   t('Service Image');
   t('Services');
   t('Show this blog post on these service category pages');

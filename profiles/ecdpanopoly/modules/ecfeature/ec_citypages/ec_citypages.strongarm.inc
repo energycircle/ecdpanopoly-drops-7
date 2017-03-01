@@ -153,7 +153,14 @@ function ec_citypages_strongarm() {
           'weight' => '3',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'sharethis' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__city_page'] = $strongarm;

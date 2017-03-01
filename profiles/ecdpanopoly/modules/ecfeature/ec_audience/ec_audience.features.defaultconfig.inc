@@ -11,7 +11,6 @@ function ec_audience_defaultconfig_features() {
   return array(
     'ec_audience' => array(
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -62,13 +61,8 @@ function ec_audience_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 0,
         ),
         'featured' => array(
@@ -160,15 +154,8 @@ function ec_audience_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 1,
         ),
         'featured' => array(
@@ -289,15 +276,8 @@ function ec_audience_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 7,
         ),
         'featured' => array(
@@ -421,13 +401,8 @@ function ec_audience_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 6,
         ),
         'featured' => array(
@@ -520,13 +495,8 @@ function ec_audience_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 4,
         ),
         'featured' => array(
@@ -620,13 +590,8 @@ function ec_audience_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-          ),
-          'type' => 'text_default',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 2,
         ),
         'featured' => array(
@@ -735,14 +700,8 @@ function ec_audience_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 3,
         ),
         'featured' => array(
@@ -846,14 +805,8 @@ function ec_audience_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 5,
         ),
         'featured' => array(
@@ -914,117 +867,4 @@ function ec_audience_defaultconfig_field_default_fields() {
   t('Teaser Image');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function ec_audience_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node audience breadcrumbs'.
-  $permissions['administer panelizer node audience breadcrumbs'] = array(
-    'name' => 'administer panelizer node audience breadcrumbs',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node audience content'.
-  $permissions['administer panelizer node audience content'] = array(
-    'name' => 'administer panelizer node audience content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node audience context'.
-  $permissions['administer panelizer node audience context'] = array(
-    'name' => 'administer panelizer node audience context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node audience defaults'.
-  $permissions['administer panelizer node audience defaults'] = array(
-    'name' => 'administer panelizer node audience defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node audience layout'.
-  $permissions['administer panelizer node audience layout'] = array(
-    'name' => 'administer panelizer node audience layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node audience overview'.
-  $permissions['administer panelizer node audience overview'] = array(
-    'name' => 'administer panelizer node audience overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node audience settings'.
-  $permissions['administer panelizer node audience settings'] = array(
-    'name' => 'administer panelizer node audience settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'create audience content'.
-  $permissions['create audience content'] = array(
-    'name' => 'create audience content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any audience content'.
-  $permissions['delete any audience content'] = array(
-    'name' => 'delete any audience content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own audience content'.
-  $permissions['delete own audience content'] = array(
-    'name' => 'delete own audience content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any audience content'.
-  $permissions['edit any audience content'] = array(
-    'name' => 'edit any audience content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own audience content'.
-  $permissions['edit own audience content'] = array(
-    'name' => 'edit own audience content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  return $permissions;
 }

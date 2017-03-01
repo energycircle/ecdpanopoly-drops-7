@@ -163,6 +163,9 @@ function ec_service_stack_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -198,6 +201,9 @@ function ec_service_stack_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -840,6 +846,28 @@ function ec_service_stack_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_service_group_image',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
+  // Exported field_base: 'field_service_icon'.
+  $field_bases['field_service_icon'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_service_icon',
     'indexes' => array(
       'fid' => array(
         0 => 'fid',

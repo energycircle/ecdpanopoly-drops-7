@@ -13,6 +13,130 @@ function ec_casestudy_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_case_study_after_project|node|case_study|form';
+  $field_group->group_name = 'group_case_study_after_project';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'case_study';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_casestudy_project_info';
+  $field_group->data = array(
+    'label' => 'After Project',
+    'weight' => '42',
+    'children' => array(
+      0 => 'field_ref_case_study_gallery',
+      1 => 'field_ref_case_study_testimonial',
+      2 => 'field_case_study_energy_after',
+      3 => 'field_case_study_project_outcome',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-case-study-after-project field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_case_study_after_project|node|case_study|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_case_study_before_project|node|case_study|form';
+  $field_group->group_name = 'group_case_study_before_project';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'case_study';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_casestudy_project_info';
+  $field_group->data = array(
+    'label' => 'Before Project',
+    'weight' => '40',
+    'children' => array(
+      0 => 'field_case_study_energy_before',
+      1 => 'field_case_study_issues',
+      2 => 'field_ref_case_study_galley_befo',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-case-study-before-project field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_case_study_before_project|node|case_study|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_case_study_prop_solution|node|case_study|form';
+  $field_group->group_name = 'group_case_study_prop_solution';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'case_study';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_casestudy_project_info';
+  $field_group->data = array(
+    'label' => 'Proposed Solution',
+    'weight' => '41',
+    'children' => array(
+      0 => 'field_ref_case_study_serv_cat',
+      1 => 'field_ref_case_study_service',
+      2 => 'field_case_study_diagnosis',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-case-study-prop-solution field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_case_study_prop_solution|node|case_study|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_casestudy_project_info|node|case_study|form';
+  $field_group->group_name = 'group_casestudy_project_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'case_study';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_edit_content';
+  $field_group->data = array(
+    'label' => 'Project Info',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_casestudy_location',
+      1 => 'field_case_study_year_built',
+      2 => 'field_case_study_square_footage',
+      3 => 'field_case_study_rooms',
+      4 => 'group_case_study_before_project',
+      5 => 'group_case_study_after_project',
+      6 => 'group_case_study_prop_solution',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-casestudy-project-info field-group-htab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_casestudy_project_info|node|case_study|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_cta_form|node|case_study|form';
   $field_group->group_name = 'group_cta_form';
   $field_group->entity_type = 'node';
@@ -53,9 +177,10 @@ function ec_casestudy_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'group_cta_form',
-      1 => 'group_show_this_on',
-      2 => 'group_shown_on_this_page',
-      3 => 'group_general',
+      1 => 'group_general',
+      2 => 'group_show_this_on',
+      3 => 'group_shown_on_this_page',
+      4 => 'group_casestudy_project_info',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -84,6 +209,7 @@ function ec_casestudy_field_group_info() {
       0 => 'body',
       1 => 'field_display_subtitle',
       2 => 'field_display_title',
+      3 => 'field_case_study_featured_image',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -108,10 +234,8 @@ function ec_casestudy_field_group_info() {
   $field_group->parent_name = 'group_edit_content';
   $field_group->data = array(
     'label' => 'Add this content to these pages',
-    'weight' => '4',
-    'children' => array(
-      0 => 'field_ref_case_sudy_page',
-    ),
+    'weight' => '6',
+    'children' => array(),
     'format_type' => 'tab',
     'format_settings' => array(
       'label' => 'Add this content to these pages',
@@ -136,17 +260,14 @@ function ec_casestudy_field_group_info() {
   $field_group->parent_name = 'group_edit_content';
   $field_group->data = array(
     'label' => 'Add other content to this page',
-    'weight' => '5',
+    'weight' => '7',
     'children' => array(
       0 => 'field_ref_case_study_article',
       1 => 'field_ref_case_study_blog',
-      2 => 'field_ref_case_study_gallery',
-      3 => 'field_ref_case_study_testimonial',
-      4 => 'field_ref_case_study_serv_cat',
-      5 => 'field_ref_case_study_serv_group',
-      6 => 'field_ref_case_study_service',
-      7 => 'field_ref_case_study_promo',
-      8 => 'field_ref_case_study_citypages',
+      2 => 'field_ref_case_sudy_page',
+      3 => 'field_ref_case_study_citypages',
+      4 => 'field_ref_case_study_promo',
+      5 => 'field_ref_case_study_prodpage',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -165,9 +286,13 @@ function ec_casestudy_field_group_info() {
   // Included for use with string extractors like potx.
   t('Add other content to this page');
   t('Add this content to these pages');
+  t('After Project');
+  t('Before Project');
   t('CTA Form');
   t('Edit Content');
   t('General');
+  t('Project Info');
+  t('Proposed Solution');
 
   return $field_groups;
 }

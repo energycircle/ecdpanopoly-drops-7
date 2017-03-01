@@ -23,9 +23,9 @@ function ec_blog_post_field_group_info() {
     'label' => 'CTA Form',
     'weight' => '3',
     'children' => array(
-      0 => 'field_call_to_action',
-      1 => 'field_ref_to_cta_form',
-      2 => 'field_button_text',
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -111,10 +111,13 @@ function ec_blog_post_field_group_info() {
     'label' => 'Add this content to these pages',
     'weight' => '4',
     'children' => array(
-      0 => 'field_ref_blog_page',
+      0 => 'field_ref_blog_article',
       1 => 'field_ref_blog_serv_cat',
       2 => 'field_ref_blog_serv_group',
       3 => 'field_ref_blog_service',
+      4 => 'field_ref_blog_page',
+      5 => 'field_ref_blog_case_study',
+      6 => 'field_ref_blog_citypages',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

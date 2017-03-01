@@ -546,7 +546,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 16,
+        'weight' => 14,
       ),
     ),
   );
@@ -650,7 +650,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 17,
+        'weight' => 15,
       ),
     ),
   );
@@ -754,7 +754,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 24,
+        'weight' => 22,
       ),
     ),
   );

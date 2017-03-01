@@ -23,8 +23,8 @@ function ec_gallery_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '1',
     'children' => array(
-      0 => 'group_shown_on_this_page',
-      1 => 'group_general',
+      0 => 'group_general',
+      1 => 'group_shown_on_this_page',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -52,6 +52,7 @@ function ec_gallery_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_gallery_image',
+      2 => 'field_gallery_tag',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

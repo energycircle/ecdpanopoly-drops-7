@@ -50,7 +50,7 @@ function ec_gallery_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ref_case_study_gallery',
-    'label' => 'Gallery',
+    'label' => 'Gallery (After)',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -64,7 +64,7 @@ function ec_gallery_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 24,
+      'weight' => 19,
     ),
   );
 
@@ -225,6 +225,66 @@ function ec_gallery_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-gallery-field_gallery_tag'.
+  $field_instances['node-gallery-field_gallery_tag'] = array(
+    'bundle' => 'gallery',
+    'default_value' => NULL,
+    'default_value_label_token' => 0,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
+        ),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_gallery_tag',
+    'label' => 'Gallery Tag',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 8,
     ),
   );
@@ -232,7 +292,8 @@ function ec_gallery_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Gallery');
+  t('Gallery (After)');
+  t('Gallery Tag');
   t('Gallery_image');
   t('Upload each image to be included in the gallery.');
 

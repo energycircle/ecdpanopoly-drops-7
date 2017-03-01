@@ -23,10 +23,10 @@ function ec_testimonial_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '1',
     'children' => array(
-      0 => 'group_show_this_on',
-      1 => 'group_testimonial_info',
-      2 => 'group_general',
-      3 => 'group_location_info',
+      0 => 'group_general',
+      1 => 'group_location_info',
+      2 => 'group_show_this_on',
+      3 => 'group_testimonial_info',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -109,11 +109,12 @@ function ec_testimonial_field_group_info() {
     'weight' => '8',
     'children' => array(
       0 => 'field_ref_testimonial_article',
-      1 => 'field_ref_testimonial_case_study',
-      2 => 'field_ref_testimonial_serv_cat',
-      3 => 'field_ref_testimonial_serv_group',
-      4 => 'field_ref_testimonial_service',
+      1 => 'field_ref_testimonial_serv_cat',
+      2 => 'field_ref_testimonial_serv_group',
+      3 => 'field_ref_testimonial_service',
+      4 => 'field_ref_testimonial_case_study',
       5 => 'field_ref_testimonial_citypages',
+      6 => 'field_ref_testimonial_prodpage',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

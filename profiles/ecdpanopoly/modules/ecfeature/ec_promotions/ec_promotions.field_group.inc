@@ -53,9 +53,9 @@ function ec_promotions_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'group_cta_form',
-      1 => 'group_show_this_on',
-      2 => 'group_general',
-      3 => 'group_promotion',
+      1 => 'group_general',
+      2 => 'group_promotion',
+      3 => 'group_show_this_on',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -141,10 +141,11 @@ function ec_promotions_field_group_info() {
     'weight' => '20',
     'children' => array(
       0 => 'field_ref_promo_article',
-      1 => 'field_ref_promo_case_study',
-      2 => 'field_ref_promo_serv_cat',
-      3 => 'field_ref_promo_serv_group',
-      4 => 'field_ref_promo_service',
+      1 => 'field_ref_promo_serv_cat',
+      2 => 'field_ref_promo_serv_group',
+      3 => 'field_ref_promo_service',
+      4 => 'field_ref_promo_case_study',
+      5 => 'field_ref_promotion_product',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

@@ -11,6 +11,7 @@ function ec_service_stack_defaultconfig_features() {
   return array(
     'ec_service_stack' => array(
       'field_default_fields' => 'field_default_fields',
+      'views_default_views' => 'views_default_views',
     ),
   );
 }
@@ -579,6 +580,9 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -600,7 +604,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'default_value' => NULL,
       'default_value_function' => '',
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Select the service categories that were performed for this specific case',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -654,7 +658,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 27,
+        'weight' => 24,
       ),
     ),
   );
@@ -756,7 +760,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -1152,7 +1156,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -1268,6 +1272,135 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         ),
         'type' => 'entityreference_autocomplete',
         'weight' => 17,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-service-field_service_icon'.
+  $fields['node-service-field_service_icon'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_service_icon',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => 0,
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'service',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => 17,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_service_icon',
+      'label' => 'Service Icon',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => 'service/icons',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'media',
+        'settings' => array(
+          'allowed_schemes' => array(
+            'private' => 0,
+            'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
+          ),
+          'allowed_types' => array(
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
+          ),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 0,
+            'media_default--media_browser_my_files' => 0,
+            'media_internet' => 0,
+            'upload' => 0,
+          ),
+          'manualcrop_crop_info' => 1,
+          'manualcrop_default_crop_area' => 1,
+          'manualcrop_enable' => 0,
+          'manualcrop_inline_crop' => 0,
+          'manualcrop_instant_crop' => FALSE,
+          'manualcrop_instant_preview' => 1,
+          'manualcrop_keyboard' => 1,
+          'manualcrop_maximize_default_crop_area' => 0,
+          'manualcrop_require_cropping' => array(),
+          'manualcrop_styles_list' => array(),
+          'manualcrop_styles_mode' => 'include',
+          'manualcrop_thumblist' => 0,
+        ),
+        'type' => 'media_generic',
+        'weight' => 3,
       ),
     ),
   );
@@ -1399,7 +1532,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -2217,6 +2350,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
+            'private' => 0,
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -2241,10 +2375,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
-          'manualcrop_require_cropping' => array(
-            'sc_1280x440_mc' => 'sc_1280x440_mc',
-            'sc_940x470_mc' => 'sc_940x470_mc',
-          ),
+          'manualcrop_require_cropping' => array(),
           'manualcrop_styles_list' => array(
             'sc_1280x440_mc' => 'sc_1280x440_mc',
             'sc_940x470_mc' => 'sc_940x470_mc',
@@ -2920,6 +3051,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   t('Page Tracking');
   t('Phone');
   t('Select the service categories in this service group');
+  t('Select the service categories that were performed for this specific case');
   t('Select the service category that this service is in.');
   t('Select the service group(s) this service category belongs in.');
   t('Select the services in this service category.');
@@ -2928,8 +3060,94 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   t('Service Category Image');
   t('Service Group');
   t('Service Group Image');
+  t('Service Icon');
   t('Service Image');
   t('Services');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_views_default_views().
+ */
+function ec_service_stack_defaultconfig_views_default_views() {
+  $export = array();
+
+  $view = new view();
+  $view->name = 'service_icons';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Service Icons';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_ref_case_study_service_node']['id'] = 'reverse_field_ref_case_study_service_node';
+  $handler->display->display_options['relationships']['reverse_field_ref_case_study_service_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_ref_case_study_service_node']['field'] = 'reverse_field_ref_case_study_service_node';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_class'] = 'service-title';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Service Icon */
+  $handler->display->display_options['fields']['field_service_icon']['id'] = 'field_service_icon';
+  $handler->display->display_options['fields']['field_service_icon']['table'] = 'field_data_field_service_icon';
+  $handler->display->display_options['fields']['field_service_icon']['field'] = 'field_service_icon';
+  $handler->display->display_options['fields']['field_service_icon']['label'] = '';
+  $handler->display->display_options['fields']['field_service_icon']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_service_icon']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_service_icon']['settings'] = array(
+    'image_style' => 's_220',
+    'image_link' => 'content',
+  );
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_ref_case_study_service_node';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'service' => 'service',
+  );
+
+  /* Display: Services Provided */
+  $handler = $view->new_display('panel_pane', 'Services Provided', 'panel_pane_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Services Provided';
+  $export['service_icons'] = $view;
+
+  return $export;
 }

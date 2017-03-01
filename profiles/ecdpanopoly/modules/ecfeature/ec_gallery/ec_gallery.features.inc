@@ -122,6 +122,15 @@ function ec_gallery_rdf_default_mappings() {
     'field_a_b_test_page' => array(
       'predicates' => array(),
     ),
+    'field_ref_gallery_case_study' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_gallery_case_study_bef' => array(
+      'predicates' => array(),
+    ),
+    'field_gallery_tag' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

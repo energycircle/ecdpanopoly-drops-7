@@ -127,7 +127,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 17,
+        'weight' => 16,
       ),
     ),
   );
@@ -1189,7 +1189,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 22,
+        'weight' => 20,
       ),
     ),
   );

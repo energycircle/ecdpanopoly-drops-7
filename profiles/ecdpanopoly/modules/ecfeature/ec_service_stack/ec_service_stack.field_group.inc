@@ -27,6 +27,7 @@ function ec_service_stack_field_group_info() {
       1 => 'field_ref_serv_cat_case_study',
       2 => 'field_ref_serv_cat_faq',
       3 => 'field_ref_serv_cat_testimonial',
+      4 => 'field_ref_serv_cat_prodpage',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -58,7 +59,7 @@ function ec_service_stack_field_group_info() {
       1 => 'field_ref_service_case_study',
       2 => 'field_ref_service_faq',
       3 => 'field_ref_service_testimonial',
-      4 => 'field_ref_service_promo',
+      4 => 'field_ref_service_product',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -203,8 +204,8 @@ function ec_service_stack_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'group_cta_form',
-      1 => 'group_shown_on_this_page',
-      2 => 'group_general',
+      1 => 'group_general',
+      2 => 'group_shown_on_this_page',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -324,6 +325,7 @@ function ec_service_stack_field_group_info() {
       2 => 'field_featured_video',
       3 => 'field_ref_service_serv_cat',
       4 => 'field_service_image',
+      5 => 'field_service_icon',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -354,6 +356,7 @@ function ec_service_stack_field_group_info() {
       1 => 'field_ref_serv_group_case_study',
       2 => 'field_ref_serv_group_faq',
       3 => 'field_ref_serv_group_testimonial',
+      4 => 'field_ref_serv_group_prodpage',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
