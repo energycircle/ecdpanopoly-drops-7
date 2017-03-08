@@ -46,7 +46,6 @@ features[defaultconfig][] = field_default_fields:node-service_group-field_call_t
 features[defaultconfig][] = field_default_fields:node-service_group-field_ref_serv_group_serv_cat
 features[defaultconfig][] = field_default_fields:node-service_group-field_ref_to_cta_form
 features[defaultconfig][] = field_default_fields:node-service_group-field_service_group_image
-features[defaultconfig][] = views_default_views:service_icons
 features[entityform_type][] = schedule_service
 features[features_api][] = api:2
 features[field_base][] = field_featured_video

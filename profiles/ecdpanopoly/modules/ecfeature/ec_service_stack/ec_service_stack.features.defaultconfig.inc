@@ -11,7 +11,6 @@ function ec_service_stack_defaultconfig_features() {
   return array(
     'ec_service_stack' => array(
       'field_default_fields' => 'field_default_fields',
-      'views_default_views' => 'views_default_views',
     ),
   );
 }
@@ -1313,15 +1312,8 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 17,
         ),
         'featured' => array(
@@ -3065,89 +3057,4 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   t('Services');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_views_default_views().
- */
-function ec_service_stack_defaultconfig_views_default_views() {
-  $export = array();
-
-  $view = new view();
-  $view->name = 'service_icons';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Service Icons';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Entity Reference: Referencing entity */
-  $handler->display->display_options['relationships']['reverse_field_ref_case_study_service_node']['id'] = 'reverse_field_ref_case_study_service_node';
-  $handler->display->display_options['relationships']['reverse_field_ref_case_study_service_node']['table'] = 'node';
-  $handler->display->display_options['relationships']['reverse_field_ref_case_study_service_node']['field'] = 'reverse_field_ref_case_study_service_node';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['title']['element_class'] = 'service-title';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Service Icon */
-  $handler->display->display_options['fields']['field_service_icon']['id'] = 'field_service_icon';
-  $handler->display->display_options['fields']['field_service_icon']['table'] = 'field_data_field_service_icon';
-  $handler->display->display_options['fields']['field_service_icon']['field'] = 'field_service_icon';
-  $handler->display->display_options['fields']['field_service_icon']['label'] = '';
-  $handler->display->display_options['fields']['field_service_icon']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_service_icon']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_service_icon']['settings'] = array(
-    'image_style' => 's_220',
-    'image_link' => 'content',
-  );
-  /* Contextual filter: Content: Nid */
-  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['table'] = 'node';
-  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_ref_case_study_service_node';
-  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'service' => 'service',
-  );
-
-  /* Display: Services Provided */
-  $handler = $view->new_display('panel_pane', 'Services Provided', 'panel_pane_1');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Services Provided';
-  $export['service_icons'] = $view;
-
-  return $export;
 }
