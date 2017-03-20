@@ -255,7 +255,7 @@ class geolocation_views_plugin_style_google_map extends views_plugin_style {
       ),
     ), 'setting');
 
-    $query = array('sensor' => 'false');
+    $query = array();
     if ($googlemaps_api_key = variable_get('geolocation_googlemaps_api_key')) {
       $query['key'] = $googlemaps_api_key;
     }

@@ -340,7 +340,7 @@ projects[seo_ui][subdir] = eccontrib
 projects[seo_ui][version] = 1.x
 
 projects[services][subdir] = eccontrib
-projects[services][version] = 3.18
+projects[services][version] = 3.19
 
 projects[superfish][subdir] = eccontrib
 projects[superfish][version] = 2.0
