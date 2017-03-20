@@ -591,3 +591,11 @@ if (!defined('PANTHEON_ENVIRONMENT')) {
           include DRUPAL_ROOT . '/' . $conf_path . '/settings.local.php';
         }
 }
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  # Set appropriate paths for Composer Manager
+  $conf['composer_manager_file_dir'] = 'private://composer';
+  $conf['composer_manager_vendor_dir'] = $_SERVER['HOME'] . '/code/vendor';
+  # Disable autobuild on Pantheon
+  $conf['composer_manager_autobuild_file'] = 0;
+  $conf['composer_manager_autobuild_packages'] = 0;
+}
