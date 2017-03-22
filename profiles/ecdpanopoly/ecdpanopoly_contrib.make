@@ -192,7 +192,7 @@ projects[flexslider][version] = 2.x-dev
 
 projects[geolocation][subdir] = eccontrib
 projects[geolocation][version] = 1.x
-projects[geolocation][patch] = https://www.drupal.org/files/issues/2846156-3-php-53-parse-error.patch
+projects[geolocation][patch][2846156] = https://www.drupal.org/files/issues/2846156-3-php-53-parse-error.patch
 
 projects[geolocation_views][subdir] = eccontrib
 projects[geolocation_views][version] = 1.x
