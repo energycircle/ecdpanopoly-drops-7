@@ -748,7 +748,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['administer xmlsitemap'] = array(
     'name' => 'administer xmlsitemap',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'xmlsitemap',
@@ -944,8 +943,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['create panopoly_page content'] = array(
     'name' => 'create panopoly_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1006,7 +1003,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['delete any panopoly_page content'] = array(
     'name' => 'delete any panopoly_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1076,8 +1072,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['delete own panopoly_page content'] = array(
     'name' => 'delete own panopoly_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1258,8 +1252,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit any panopoly_page content'] = array(
     'name' => 'edit any panopoly_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1355,8 +1347,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit own panopoly_page content'] = array(
     'name' => 'edit own panopoly_page content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1570,10 +1560,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
   );
@@ -1599,7 +1586,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'search',
   );
 
@@ -1721,8 +1710,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use text format panopoly_html_text'] = array(
     'name' => 'use text format panopoly_html_text',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
@@ -1732,8 +1719,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use text format panopoly_wysiwyg_text'] = array(
     'name' => 'use text format panopoly_wysiwyg_text',
     'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'filter',

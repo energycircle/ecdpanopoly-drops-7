@@ -27,20 +27,23 @@ function sharethis_configuration_form($form, &$form_state) {
   // Create the variables related to services chosen.
   $service_string = $current_options_array['services'];
   $service_string_markup = "";
-  $enabled_services = array();
-  foreach (explode(",", $service_string) as $string) {
+  foreach (explode(",", $service_string) as $name => $string) {
     $key = explode(":", drupal_substr($string, 0, -1));
     $key = $key[1];
     $service_string_markup .= "\"" . $key . "\",";
-    // Store enabled services for custom overrides.
-    $service = explode(":", drupal_substr($string, 0, -1));
-    $enabled_services[$service[1]] = str_replace('"', '', $service[0]);
   }
   $service_string_markup = drupal_substr($service_string_markup, 0, -1);
 
   // Create the variables for publisher keys.
   $publisher = $current_options_array['publisherID'];
   // Create the variables for teasers.
+  // Convert Location variable from String to Array if needed.
+  $location_places = variable_get('sharethis_location', array('content' => 'content'));
+  if (!is_array($location_places)) {
+    $location_places = array($location_places);
+    variable_set('sharethis_location', $location_places);
+  }
+
   $form = array();
   $form['options'] = array(
     '#type' => 'fieldset',
@@ -58,17 +61,17 @@ function sharethis_configuration_form($form, &$form_state) {
       'stbc_custom' => t('Custom Buttons via CSS'),
     ),
     '#default_value' => $button_choice,
-    '#title' => t("Choose a button style:"),
+    '#title' => t('Choose a button style:'),
     '#prefix' => '<div class="st_widgetContain"><div class="st_spriteCover"><img id="stb_sprite" class="st_buttonSelectSprite ' . $button_choice . '" src="' . $base_url . '/' . $my_path . '/img/preview_sprite.png"></img></div><div class="st_widgetPic"><img class="st_buttonSelectImage" src="' . $base_url . '/' . $my_path . '/img/preview_bg.png"></img></div>',
     '#suffix' => '</div>',
   );
   $form['options']['sharethis_service_option'] = array(
-    '#description' => t("<b>Add</b> a service by selecting it on the right and clicking the <i>left arrow</i>.  <b>Remove</b> it by clicking the <i>right arrow</i>.<br /><b>Change the order</b> of services under \'Selected Services\' by using the <i>up</i> and <i>down</i> arrows."),
+    '#description' => t('<b>Add</b> a service by selecting it on the right and clicking the <i>left arrow</i>.  <b>Remove</b> it by clicking the <i>right arrow</i>.<br /><b>Change the order</b> of services under \'Selected Services\' by using the <i>up</i> and <i>down</i> arrows.'),
     '#required' => TRUE,
     '#type' => 'textfield',
     '#prefix' => '<div>',
-    '#suffix' => '</div><div id="myPicker"></div><script type="text/javascript">window.stlib_picker.setupPicker(jQuery("#myPicker"), [' . $service_string_markup . '], window.drupal_st.serviceCallback);</script>', // @see : http://stackoverflow.com/a/7048295/377342
-    '#title' => t("Choose Your Services."),
+    '#suffix' => '</div><div id="myPicker"></div><script type="text/javascript">stlib_picker.setupPicker(jQuery("#myPicker"), [' . $service_string_markup . '], drupal_st.serviceCallback);</script>',
+    '#title' => t('Choose Your Services.'),
     '#default_value' => $service_string,
     '#maxlength' => 1024,
   );
@@ -92,8 +95,8 @@ function sharethis_configuration_form($form, &$form_state) {
     '#default_value' => variable_get('sharethis_option_extras_fbsub', array()),
   );
   $form['options']['sharethis_option_extras_fbsub_field'] = array(
-    '#title' => t("Insert Facebook Subscribe Username"),
-    '#description' => t("Note: This must be a valid profile name"),
+    '#title' => t('Insert Facebook Subscribe Username'),
+    '#description' => t('Note: This must be a valid profile name'),
     '#type' => 'textfield',
     '#default_value' => variable_get('sharethis_option_extras_fbsub_field', ''),
   );
@@ -105,7 +108,7 @@ function sharethis_configuration_form($form, &$form_state) {
     '#default_value' => variable_get('sharethis_option_extras_pinterestfollow', array()),
   );
   $form['options']['sharethis_option_extras_pinterestfollow_field'] = array(
-    '#title' => t("Insert Pinterest Follow Username"),
+    '#title' => t('Insert Pinterest Follow Username'),
     '#type' => 'textfield',
     '#default_value' => variable_get('sharethis_option_extras_pinterestfollow_field', ''),
   );
@@ -117,7 +120,7 @@ function sharethis_configuration_form($form, &$form_state) {
     '#default_value' => variable_get('sharethis_option_extras_twitterfollow', array()),
   );
   $form['options']['sharethis_option_extras_twitterfollow_field'] = array(
-    '#title' => t("Insert Twitter Follow Username"),
+    '#title' => t('Insert Twitter Follow Username'),
     '#type' => 'textfield',
     '#default_value' => variable_get('sharethis_option_extras_twitterfollow_field', ''),
   );
@@ -129,7 +132,7 @@ function sharethis_configuration_form($form, &$form_state) {
     '#default_value' => variable_get('sharethis_option_extras_youtube', array()),
   );
   $form['options']['sharethis_option_extras_youtube_field'] = array(
-    '#title' => t("Insert YouTube Username"),
+    '#title' => t('Insert YouTube Username'),
     '#type' => 'textfield',
     '#default_value' => variable_get('sharethis_option_extras_youtube_field', ''),
   );
@@ -141,12 +144,12 @@ function sharethis_configuration_form($form, &$form_state) {
     '#default_value' => variable_get('sharethis_option_extras_foursquarefollow', array()),
   );
   $form['options']['sharethis_option_extras_foursquarefollow_field'] = array(
-    '#title' => t("Insert Foursquare Follow Username"),
+    '#title' => t('Insert Foursquare Follow Username'),
     '#type' => 'textfield',
     '#default_value' => variable_get('sharethis_option_extras_foursquarefollow_field', ''),
   );
   $form['options']['sharethis_option_extras_foursquarefollow_field2'] = array(
-    '#title' => t("Insert Foursquare Follow Id"),
+    '#title' => t('Insert Foursquare Follow Id'),
     '#type' => 'textfield',
     '#default_value' => variable_get('sharethis_option_extras_foursquarefollow_field2', ''),
   );
@@ -172,20 +175,20 @@ function sharethis_configuration_form($form, &$form_state) {
   );
   $form['context']['sharethis_location'] = array(
     '#title' => t('Location'),
-    '#type' => 'radios',
+    '#type' => 'checkboxes',
     '#options' => array(
       'content' => t('Node content'),
       'block' => t('Block'),
       'links' => t('Links area'),
     ),
-    '#default_value' => variable_get('sharethis_location', 'content'),
+    '#default_value' => variable_get('sharethis_location', array('content' => 'content')),
   );
 
   // Add an information section for each location type, each dependent on the
   // currently selected location.
   foreach (array('links', 'content', 'block') as $location_type) {
     $form['context'][$location_type]['#type'] = 'container';
-    $form['context'][$location_type]['#states']['visible'][':input[name="sharethis_location"]'] = array('value' => $location_type);
+    $form['context'][$location_type]['#states']['visible'][':input[name="sharethis_location[' . $location_type . ']"]'] = array('checked' => TRUE);
   }
 
   // Add help text for the 'content' location.
@@ -253,7 +256,7 @@ function sharethis_configuration_form($form, &$form_state) {
     '#description' => t('The advanced settings can usually be ignored if you have no need for them.'),
   );
   $form['advanced']['sharethis_publisherID'] = array(
-    '#title' => t("Insert a publisher key (optional)."),
+    '#title' => t('Insert a publisher key (optional).'),
     '#description' => t("When you install the module, we create a random publisher key.  You can register the key with ShareThis by contacting customer support.  Otherwise, you can go to <a href='http://www.sharethis.com/account'>ShareThis</a> and create an account.<br />Your official publisher key can be found under 'My Account'.<br />It allows you to get detailed analytics about sharing done on your site."),
     '#type' => 'textfield',
     '#default_value' => $publisher,
@@ -265,14 +268,14 @@ function sharethis_configuration_form($form, &$form_state) {
     '#default_value' => variable_get('sharethis_late_load', FALSE),
   );
   $form['advanced']['sharethis_twitter_prefix'] = array(
-    '#title' => t("Twitter Prefix"),
-    '#description' => t("Optionally prepend a Twitter handle, or text, so that you get pinged when someone shares an article. Example: <em> @YourNameHere</em>"),
+    '#title' => t('Twitter Prefix'),
+    '#description' => t('Optionally prepend a Twitter handle, or text, so that you get pinged when someone shares an article. Example: <em> @YourNameHere</em>'),
     '#type' => 'textfield',
     '#default_value' => variable_get('sharethis_twitter_prefix', ''),
   );
   $form['advanced']['sharethis_twitter_suffix'] = array(
-    '#title' => t("Twitter Suffix"),
-    '#description' => t("Optionally append a Twitter handle, or text, so that you get pinged when someone shares an article. Example: <em>via @YourNameHere</em>"),
+    '#title' => t('Twitter Suffix'),
+    '#description' => t('Optionally append a Twitter handle, or text, so that you get pinged when someone shares an article. Example: <em>via @YourNameHere</em>'),
     '#type' => 'textfield',
     '#default_value' => variable_get('sharethis_twitter_suffix', ''),
   );
@@ -331,26 +334,11 @@ function sharethis_configuration_form($form, &$form_state) {
         Please refer the <a href="http://support.sharethis.com/customer/portal/articles/517332-share-widget-faqs#copynshare" target="_blank">CopyNShare FAQ</a> for more details.
       </p></div>',
     '#options' => array(
-      'donotcopy' => t("Measure copy & shares of your site\'s Content"),
-      'hashaddress' => t("Measure copy & shares of your site\'s URLs"),
+      'donotcopy' => t("Measure copy & shares of your site's Content"),
+      'hashaddress' => t("Measure copy & shares of your site's URLs"),
     ),
     '#default_value' => $current_options_array['sharethis_cns'],
   );
-  $form['overrides'] = array(
-    '#type' => 'fieldset',
-    '#title' => t('Markup overrides'),
-    '#group' => 'additional_settings',
-    '#description' => t('Override span button markup to include SVGs or other markup.'),
-  );
-  foreach ($enabled_services as $key => $service) {
-    $current_value = variable_get('sharethis_override_' . $key, '');
-    // Add each enabled service to include markup.
-    $form['overrides']['override_' . $key] = array(
-      '#title' => $service,
-      '#type' => 'textfield',
-      '#default_value' => $current_value,
-    );
-  }
 
   $form['#submit'][] = 'sharethis_configuration_form_submit';
   return system_settings_form($form);
@@ -395,19 +383,9 @@ function sharethis_configuration_form_validate($form, &$form_state) {
  */
 function sharethis_configuration_form_submit($form, &$form_state) {
   // If the location is changing to/from 'content', clear the Field Info cache.
-  $current_location = variable_get('sharethis_location', 'content');
+  $current_location = variable_get('sharethis_location', array('content' => 'content'));
   $new_location = $form_state['values']['sharethis_location'];
   if (($current_location == 'content' || $new_location == 'content') && $current_location != $new_location) {
     field_info_cache_clear();
-  }
-  // Markup overrides for each enabled service.
-  $enabled_services = array();
-  foreach (explode(",", $form_state['values']['sharethis_service_option']) as $string) {
-    $service = explode(":", drupal_substr($string, 0, -1));
-    $enabled_services[$service[1]] = str_replace('"', '', $service[0]);
-  }
-  foreach ($enabled_services as $key => $service) {
-    $override = $form_state['values']['override_' . $key];
-    variable_set('sharethis_override_' . $key, $override);
   }
 }

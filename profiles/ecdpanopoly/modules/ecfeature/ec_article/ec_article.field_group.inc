@@ -23,8 +23,8 @@ function ec_article_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '1',
     'children' => array(
-      0 => 'group_shown_on_this_page',
-      1 => 'group_general',
+      0 => 'group_general',
+      1 => 'group_shown_on_this_page',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -84,8 +84,9 @@ function ec_article_field_group_info() {
     'children' => array(
       0 => 'field_ref_article_blog',
       1 => 'field_ref_article_case_study',
-      2 => 'field_ref_article_testimonial',
-      3 => 'field_ref_article_promo',
+      2 => 'field_ref_article_promo',
+      3 => 'field_ref_article_testimonial',
+      4 => 'field_ref_article_product',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

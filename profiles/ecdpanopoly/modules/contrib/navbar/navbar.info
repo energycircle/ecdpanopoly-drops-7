@@ -6,13 +6,9 @@ dependencies[] = breakpoints
 dependencies[] = libraries
 
 
-; Information added by drush on 2016-12-08
+; Information added by drush on 2017-03-22
 version = "7.x-1.0-alpha10+8-dev"
 core = "7.x"
 project = "navbar"
-<<<<<<< HEAD
-datestamp = "1481211153"
-=======
-datestamp = "1481220121"
->>>>>>> 7.x-1.4
+datestamp = "1490191182"
 

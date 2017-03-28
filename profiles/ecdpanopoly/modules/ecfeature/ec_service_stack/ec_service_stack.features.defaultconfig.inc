@@ -579,6 +579,9 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
             'views-select-list' => array(
               'status' => 0,
             ),
@@ -600,7 +603,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'default_value' => NULL,
       'default_value_function' => '',
       'deleted' => 0,
-      'description' => '',
+      'description' => 'Select the service categories that were performed for this specific case',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -654,7 +657,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 27,
+        'weight' => 24,
       ),
     ),
   );
@@ -756,7 +759,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -1152,7 +1155,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -1206,7 +1209,11 @@ function ec_service_stack_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
@@ -1264,6 +1271,128 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         ),
         'type' => 'entityreference_autocomplete',
         'weight' => 17,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-service-field_service_icon'.
+  $fields['node-service-field_service_icon'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_service_icon',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => 0,
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'service',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 17,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_service_icon',
+      'label' => 'Service Icon',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => 'service/icons',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'media',
+        'settings' => array(
+          'allowed_schemes' => array(
+            'private' => 0,
+            'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
+          ),
+          'allowed_types' => array(
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
+          ),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 0,
+            'media_default--media_browser_my_files' => 0,
+            'media_internet' => 0,
+            'upload' => 0,
+          ),
+          'manualcrop_crop_info' => 1,
+          'manualcrop_default_crop_area' => 1,
+          'manualcrop_enable' => 0,
+          'manualcrop_inline_crop' => 0,
+          'manualcrop_instant_crop' => FALSE,
+          'manualcrop_instant_preview' => 1,
+          'manualcrop_keyboard' => 1,
+          'manualcrop_maximize_default_crop_area' => 0,
+          'manualcrop_require_cropping' => array(),
+          'manualcrop_styles_list' => array(),
+          'manualcrop_styles_mode' => 'include',
+          'manualcrop_thumblist' => 0,
+        ),
+        'type' => 'media_generic',
+        'weight' => 3,
       ),
     ),
   );
@@ -1395,7 +1524,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -2054,7 +2183,11 @@ function ec_service_stack_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service_category',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
@@ -2209,6 +2342,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
+            'private' => 0,
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -2233,10 +2367,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
-          'manualcrop_require_cropping' => array(
-            'sc_1280x440_mc' => 'sc_1280x440_mc',
-            'sc_940x470_mc' => 'sc_940x470_mc',
-          ),
+          'manualcrop_require_cropping' => array(),
           'manualcrop_styles_list' => array(
             'sc_1280x440_mc' => 'sc_1280x440_mc',
             'sc_940x470_mc' => 'sc_940x470_mc',
@@ -2706,7 +2837,11 @@ function ec_service_stack_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'service_group',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
@@ -2908,6 +3043,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   t('Page Tracking');
   t('Phone');
   t('Select the service categories in this service group');
+  t('Select the service categories that were performed for this specific case');
   t('Select the service category that this service is in.');
   t('Select the service group(s) this service category belongs in.');
   t('Select the services in this service category.');
@@ -2916,6 +3052,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   t('Service Category Image');
   t('Service Group');
   t('Service Group Image');
+  t('Service Icon');
   t('Service Image');
   t('Services');
 

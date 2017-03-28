@@ -1566,7 +1566,7 @@ campaign-form-entityform-edit-form';
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
-    'node' => TRUE,
+    'taxonomy' => TRUE,
     'user' => TRUE,
   );
   $export['path_alias_whitelist'] = $strongarm;
@@ -2114,6 +2114,13 @@ campaign-form-entityform-edit-form';
   $strongarm->name = 'theme_default';
   $strongarm->value = 'ec_distro';
   $export['theme_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'theme_ec_at_admin_files_directory';
+  $strongarm->value = 'public://adaptivetheme/ec_at_admin_files';
+  $export['theme_ec_at_admin_files_directory'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

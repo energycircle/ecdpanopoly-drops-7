@@ -118,6 +118,49 @@ function ec_casestudy_rdf_default_mappings() {
     'field_call_to_action' => array(
       'predicates' => array(),
     ),
+    'field_casestudy_location' => array(
+      'predicates' => array(),
+    ),
+    'field_case_study_year_built' => array(
+      'predicates' => array(),
+    ),
+    'field_case_study_square_footage' => array(
+      'predicates' => array(),
+    ),
+    'field_case_study_rooms' => array(
+      'predicates' => array(),
+    ),
+    'field_case_study_energy_before' => array(
+      'predicates' => array(),
+    ),
+    'field_case_study_energy_after' => array(
+      'predicates' => array(),
+    ),
+    'field_case_study_issues' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_case_study_gallery' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_case_study_galley_befo' => array(
+      'predicates' => array(),
+    ),
+    'field_case_study_project_outcome' => array(
+      'predicates' => array(),
+    ),
+    'field_case_study_diagnosis' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_case_study_serv_cat' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_case_study_service' => array(
+      'predicates' => array(),
+    ),
+    'field_case_study_featured_image' => array(
+      'predicates' => array(),
+      'type' => 'rel',
+    ),
   );
 
   return $schemaorg;

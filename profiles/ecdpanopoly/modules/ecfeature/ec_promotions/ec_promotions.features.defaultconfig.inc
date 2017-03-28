@@ -132,7 +132,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 18,
+        'weight' => 17,
       ),
     ),
   );
@@ -239,7 +239,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 25,
+        'weight' => 21,
       ),
     ),
   );

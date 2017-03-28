@@ -18,7 +18,10 @@ Drupal.behaviors.mediaElement = {
     var elements;
 
     function initMediaBrowser(selector) {
-      $context.find(selector)
+      // Finding with wildcard match as with AJAX, the form fields elements ids are
+      // updated with each call by a number, e.g. id--1, id--2 etc.
+      // Also doing a substring to remove the # in front.
+      $context.find('[id*="'+selector.substring(1)+'"]')
         .once('media-browser-launch')
         .siblings('.browse').show()
         .siblings('.upload').hide()
@@ -36,7 +39,10 @@ Drupal.behaviors.mediaElement = {
     var elements;
 
     function removeMediaBrowser(selector) {
-      $context.find(selector)
+      // Finding with wildcard match as with AJAX, the form fields elements ids are
+      // updated with each call by a number, e.g. id--1, id--2 etc.
+      // Also doing a substring to remove the # in front.
+      $context.find('[id*="'+selector.substring(1)+'"]')
         .removeOnce('media-browser-launch')
         .siblings('.browse').hide()
         .siblings('.upload').show()
@@ -94,8 +100,6 @@ Drupal.media.openBrowser = function (event) {
     var mediaFileValue;
     // Process the value based on multiselect.
     if (mediaFiles.length > 1) {
-      // Reverse array to have files in correct order
-      mediaFiles.reverse();
       // Concatenate the array into a comma separated string.
       mediaFileValue = mediaFiles.map(function(file) {
         return file.fid;

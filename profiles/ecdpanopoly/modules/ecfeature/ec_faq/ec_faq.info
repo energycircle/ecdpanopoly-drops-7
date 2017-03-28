@@ -10,6 +10,7 @@ dependencies[] = entityreference
 dependencies[] = field_group
 dependencies[] = menu
 dependencies[] = metatag
+dependencies[] = views_content
 dependencies[] = weight
 apps[screenshots][] = app/screenshot.png
 apps[logo] = app/logo.png

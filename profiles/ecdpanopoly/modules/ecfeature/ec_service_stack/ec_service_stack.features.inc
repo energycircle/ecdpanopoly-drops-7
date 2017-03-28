@@ -221,6 +221,13 @@ function ec_service_stack_rdf_default_mappings() {
     'field_call_to_action' => array(
       'predicates' => array(),
     ),
+    'field_ref_to_cta_form' => array(
+      'predicates' => array(),
+    ),
+    'field_service_icon' => array(
+      'predicates' => array(),
+      'type' => 'rel',
+    ),
   );
 
   // Exported RDF mapping: service_category
@@ -338,6 +345,9 @@ function ec_service_stack_rdf_default_mappings() {
     'field_call_to_action' => array(
       'predicates' => array(),
     ),
+    'field_ref_to_cta_form' => array(
+      'predicates' => array(),
+    ),
   );
 
   // Exported RDF mapping: service_group
@@ -443,6 +453,9 @@ function ec_service_stack_rdf_default_mappings() {
       'predicates' => array(),
     ),
     'field_call_to_action' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_to_cta_form' => array(
       'predicates' => array(),
     ),
   );

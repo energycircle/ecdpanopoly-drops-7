@@ -62,54 +62,35 @@ function ec_distributor_user_default_permissions() {
   // Exported permission: 'create distributor content'.
   $permissions['create distributor content'] = array(
     'name' => 'create distributor content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any distributor content'.
   $permissions['delete any distributor content'] = array(
     'name' => 'delete any distributor content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own distributor content'.
   $permissions['delete own distributor content'] = array(
     'name' => 'delete own distributor content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any distributor content'.
   $permissions['edit any distributor content'] = array(
     'name' => 'edit any distributor content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own distributor content'.
   $permissions['edit own distributor content'] = array(
     'name' => 'edit own distributor content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 

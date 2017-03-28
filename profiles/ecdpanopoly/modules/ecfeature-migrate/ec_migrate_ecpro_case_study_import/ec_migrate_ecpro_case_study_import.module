@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC Migrate ecPRO Case Study import feature.
+ */
+
+include_once 'ec_migrate_ecpro_case_study_import.features.inc';

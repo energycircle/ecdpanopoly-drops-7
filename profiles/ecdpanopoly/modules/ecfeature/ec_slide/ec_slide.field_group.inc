@@ -49,11 +49,12 @@ function ec_slide_field_group_info() {
     'label' => 'General',
     'weight' => '13',
     'children' => array(
-      0 => 'field_content_link',
-      1 => 'field_display_subtitle',
-      2 => 'field_display_title',
-      3 => 'field_slide_image',
-      4 => 'field_slide_set',
+      0 => 'body',
+      1 => 'field_content_link',
+      2 => 'field_display_subtitle',
+      3 => 'field_display_title',
+      4 => 'field_slide_image',
+      5 => 'field_slide_set',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
