@@ -561,13 +561,8 @@ input[type="submit"]:hover {
 .form-type-select {
   position: relative;
   color: #6380a4;
-  clear: both;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003241}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003242}}
->>>>>>> 7.x-1.5
 .form-type-select select {
   margin: 0;
   vertical-align: baseline;
@@ -580,31 +575,19 @@ input[type="submit"]:hover {
   font-size: 1.6rem;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003268}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003269}}
->>>>>>> 7.x-1.5
 .form-type-select select:not([multiple="multiple"]) {
   height: 42px;
   height: 4.2rem;
   background: white url(../images/select-arrows.png) 99% center no-repeat;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003276}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003277}}
->>>>>>> 7.x-1.5
 #node-edit .form-item-title {
   margin-top: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003284}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003285}}
->>>>>>> 7.x-1.5
 .panel-panel[class*="sidebar"] .panel-pane.block {
   padding: 30px;
   padding: 3rem;
@@ -613,20 +596,12 @@ input[type="submit"]:hover {
   margin: 0px 0px 30px;
   margin: 0rem 0rem 3rem;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003291}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003292}}
->>>>>>> 7.x-1.5
 .panel-panel[class*="sidebar"] .panel-pane.block .form-type-select select {
   width: 100%;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003299}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003300}}
->>>>>>> 7.x-1.5
 #node-edit .form-actions #edit-submit {
   font-size: 16px;
   font-size: 1.6rem;
@@ -664,20 +639,12 @@ input[type="submit"]:hover {
   -o-transition: box-shadow 200ms ease-out;
   transition: box-shadow 200ms ease-out;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003304}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003305}}
->>>>>>> 7.x-1.5
 #node-edit .form-actions #edit-submit:hover {
   box-shadow: inset 0px -5px 0 0px #6380a4;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003310}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003311}}
->>>>>>> 7.x-1.5
 #node-edit .form-actions #edit-draft {
   font-size: 16px;
   font-size: 1.6rem;
@@ -716,44 +683,28 @@ input[type="submit"]:hover {
   -o-transition: box-shadow 200ms ease-out;
   transition: box-shadow 200ms ease-out;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003315}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003316}}
->>>>>>> 7.x-1.5
 #node-edit .form-actions #edit-draft:hover {
   box-shadow: inset 0px -5px 0 0px;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003322}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003323}}
->>>>>>> 7.x-1.5
 fieldset.collapsible {
   margin: 30px 0px;
   margin: 3rem 0rem;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003329}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003330}}
->>>>>>> 7.x-1.5
 table.sticky-header th,
 table.sticky-enabled td {
   width: calc(100% / 7) !important;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003334}}
 table.sticky-header th:nth-child(1),
 table.sticky-enabled td:nth-child(1) {
   width: 12px !important;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003339}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003340}}
->>>>>>> 7.x-1.5
 table.sticky-header th:nth-child(2),
 table.sticky-enabled td:nth-child(2) {
   width: calc( ((100% / 7) * 2) - 12px ) !important;
@@ -772,11 +723,7 @@ table.sticky-enabled td:nth-child(2) {
  * style the .container class but do not add width such as border, padding,
  * margins etc.
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003368}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003369}}
->>>>>>> 7.x-1.5
 .container {
   width: 100%;
   max-width: 1240px;
@@ -799,11 +746,7 @@ table.sticky-enabled td:nth-child(2) {
  * Wraps the content region, avoid applying styles to this wrapper, its used
  * mainly for position and invisible gutters and can be problematic to style
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003405}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003406}}
->>>>>>> 7.x-1.5
 #content {
   /* margin-top: 15px; */
   padding-top: 15px;
@@ -836,29 +779,17 @@ table.sticky-enabled td:nth-child(2) {
     primary nav items
 
  \*---------------------------------------------------------------------------*/
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003453}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003454}}
->>>>>>> 7.x-1.5
 #header-wrapper {
   background: url(../images/ec-header.jpg) center no-repeat;
   min-height: 75px;
   min-height: 7.5rem;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003458}}
 #header-wrapper .pane-page-logo {
   position: relative;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003464}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003459}}
-#header-wrapper .pane-page-logo {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003465}}
->>>>>>> 7.x-1.5
 #header-wrapper #logo img {
   position: absolute;
   top: -35px;
@@ -873,22 +804,14 @@ table.sticky-enabled td:nth-child(2) {
 /*
  * Wraps breadcrumb
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003492}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003493}}
->>>>>>> 7.x-1.5
 #title-wrapper {
   background: #6380a4;
   padding: 60px 0px 15px;
   padding: 6rem 0rem 1.5rem;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003500}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003501}}
->>>>>>> 7.x-1.5
 #page-title {
   color: white;
   text-transform: uppercase;
@@ -910,11 +833,7 @@ table.sticky-enabled td:nth-child(2) {
 /*
  * Footer wrapper
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003543}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003544}}
->>>>>>> 7.x-1.5
 #footer-wrapper {
   /* Debug styles, is this working? */
   background: rgba(255, 192, 203, 0.5);
@@ -929,19 +848,11 @@ table.sticky-enabled td:nth-child(2) {
 /*
  * Logo
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003564}}
 #logo {
   padding: 10px 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003567}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003565}}
-#logo {
-  padding: 10px 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003568}}
->>>>>>> 7.x-1.5
 #logo img {
   vertical-align: bottom;
 }
@@ -952,7 +863,6 @@ table.sticky-enabled td:nth-child(2) {
 /*
  * Site name (h1)
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003582}}
 #site-name {
   margin: 0;
@@ -962,17 +872,6 @@ table.sticky-enabled td:nth-child(2) {
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003592}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003583}}
-#site-name {
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003588}}
-#site-name a:link, #site-name a:visited {
-  text-decoration: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003593}}
->>>>>>> 7.x-1.5
 #site-name a:hover, #site-name a:focus {
   text-decoration: underline;
 }
@@ -980,11 +879,7 @@ table.sticky-enabled td:nth-child(2) {
 /*
  * Site slogan (h2)
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003603}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003604}}
->>>>>>> 7.x-1.5
 #site-slogan {
   margin: 0;
 }
@@ -998,20 +893,12 @@ table.sticky-enabled td:nth-child(2) {
 /*
  * The main page title (h1)
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003621}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003622}}
->>>>>>> 7.x-1.5
 #page-title {
   margin: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003625}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003626}}
->>>>>>> 7.x-1.5
 h1#page-title {
   padding-left: 10px;
 }
@@ -1019,31 +906,19 @@ h1#page-title {
 /* =============================================================================
  *   Misc Global Styles
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003633}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003634}}
->>>>>>> 7.x-1.5
 #panels-dnd-main .panel-pane,
 #panels-dnd-main .helperclass {
   position: relative;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003640}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003641}}
->>>>>>> 7.x-1.5
 html.js #panels-dnd-main div.ctools-dropdown div.ctools-dropdown-container,
 html.js div.panels-display-links div.ctools-dropdown-container {
   right: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003647}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003648}}
->>>>>>> 7.x-1.5
 .node-add-item-wrapper {
   background: #fff;
   margin: 5px;
@@ -1054,11 +929,7 @@ html.js div.panels-display-links div.ctools-dropdown-container {
   float: left;
   height: 140px;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003658}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003659}}
->>>>>>> 7.x-1.5
 .node-add-item-wrapper dt {
   font-size: 24px;
   font-size: 2.4rem;
@@ -1067,7 +938,6 @@ html.js div.panels-display-links div.ctools-dropdown-container {
   color: black;
   margin-bottom: 12px;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003664}}
 .node-add-item-wrapper dt a {
   color: inherit;
@@ -1077,17 +947,6 @@ html.js div.panels-display-links div.ctools-dropdown-container {
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003674}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003665}}
-.node-add-item-wrapper dt a {
-  color: inherit;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003669}}
-.node-add-item-wrapper dt a:hover {
-  text-decoration: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003675}}
->>>>>>> 7.x-1.5
 .node-add-item-wrapper dt span {
   color: white;
   text-align: right;
@@ -1114,28 +973,16 @@ html.js div.panels-display-links div.ctools-dropdown-container {
   -o-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003688}}
 .node-add-item-wrapper dt span:hover {
   background: #6380a4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003696}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003689}}
-.node-add-item-wrapper dt span:hover {
-  background: #6380a4;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003697}}
->>>>>>> 7.x-1.5
 .node-add-item-wrapper dd {
   margin: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003704}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003705}}
->>>>>>> 7.x-1.5
 .form-checkboxes .form-item, .form-radios .form-item {
   margin-top: 0.4em;
   margin-bottom: 0.4em;
@@ -1143,30 +990,18 @@ html.js div.panels-display-links div.ctools-dropdown-container {
   margin: 1rem 2rem 0rem 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003711}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003712}}
->>>>>>> 7.x-1.5
 .vertical-tabs fieldset.vertical-tabs-pane {
   padding: 30px;
   padding: 3rem;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003718}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003719}}
->>>>>>> 7.x-1.5
 ul.action-links {
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003723}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003724}}
->>>>>>> 7.x-1.5
 ul.action-links a[href*="/add"] {
   font-size: 16px;
   font-size: 1.6rem;
@@ -1227,11 +1062,7 @@ ul.action-links a[href*="/add"]:hover:before, ul.action-links a[href*="/add"]:fo
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003728}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003729}}
->>>>>>> 7.x-1.5
 ul.action-links a[href*="/add"]:after {
   font-family: 'fontello';
   content: "\E81F";
@@ -1243,20 +1074,12 @@ ul.action-links a[href*="/add"]:after {
   top: 1rem;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003740}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003741}}
->>>>>>> 7.x-1.5
 .views-exposed-form .views-exposed-widget {
   padding-right: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003746}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003747}}
->>>>>>> 7.x-1.5
 .views-reset-button,
 .views-submit-button {
   display: inline-block;
@@ -1299,11 +1122,7 @@ ul.action-links a[href*="/add"]:after {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003756}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003757}}
->>>>>>> 7.x-1.5
 .views-reset-button input,
 .views-submit-button input {
   margin: 0;
@@ -1339,22 +1158,14 @@ ul.action-links a[href*="/add"]:after {
   padding-right: 5rem;
   margin: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003770}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003771}}
->>>>>>> 7.x-1.5
 .views-reset-button input:hover,
 .views-submit-button input:hover {
   background: none;
   text-indent: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003781}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003782}}
->>>>>>> 7.x-1.5
 .views-reset-button:after,
 .views-submit-button:after {
   font-family: 'fontello';
@@ -1367,95 +1178,55 @@ ul.action-links a[href*="/add"]:after {
   color: #fb9c13;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003794}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003795}}
->>>>>>> 7.x-1.5
 .views-reset-button:after {
   content: "\E820";
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003802}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003803}}
->>>>>>> 7.x-1.5
 .views-submit-button:after {
   content: "\F0B0";
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003811}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003812}}
->>>>>>> 7.x-1.5
 .block-region-help .block-inner {
   margin: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003818}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003819}}
->>>>>>> 7.x-1.5
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003823}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003824}}
->>>>>>> 7.x-1.5
 #panels-dnd-main div.panel-region .pane-add-link {
   float: right;
   margin: 2px 10px 2px 4px;
   z-index: 10;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003835}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003836}}
->>>>>>> 7.x-1.5
 #node-edit .pane-node-form-path .pane-title {
   color: #2a2a2a;
   font-style: normal;
   font-size: 15px;
   font-size: 1.5rem;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003842}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003843}}
->>>>>>> 7.x-1.5
 #node-edit .pane-node-form-path .form-item-path-alias {
   line-height: 38px;
   display: inline-block;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003848}}
 #node-edit .pane-node-form-path span.field-prefix {
   margin-right: 10px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003852}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003849}}
-#node-edit .pane-node-form-path span.field-prefix {
-  margin-right: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003853}}
->>>>>>> 7.x-1.5
 #node-edit .pane-node-form-path #edit-path-alias {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003859}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003860}}
->>>>>>> 7.x-1.5
 .pane-form {
   margin-top: 20px;
   margin-top: 2rem;
@@ -1464,7 +1235,6 @@ ul.action-links a[href*="/add"]:after {
   border-top: 1px solid #e4e9ef;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003867}}
 div.horizontal-tabs {
   border: none;
@@ -1478,21 +1248,6 @@ div.horizontal-tabs ul.horizontal-tabs-list {
   display: block;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003880}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003868}}
-div.horizontal-tabs {
-  border: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003872}}
-div.horizontal-tabs .horizontal-tabs-processed {
-  clear: both;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003877}}
-div.horizontal-tabs ul.horizontal-tabs-list {
-  display: block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003881}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs ul.horizontal-tabs-list li {
   background: none;
   border: none;
@@ -1501,11 +1256,7 @@ div.horizontal-tabs ul.horizontal-tabs-list li {
   position: relative;
   top: 1px;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003889}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003890}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs ul.horizontal-tabs-list li a {
   border: 1px solid #e4e9ef;
   border-bottom: 0;
@@ -1515,69 +1266,41 @@ div.horizontal-tabs ul.horizontal-tabs-list li a {
   margin-right: 5px;
   margin-right: 0.5rem;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003898}}
 div.horizontal-tabs ul.horizontal-tabs-list li:hover {
   background-color: transparent;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003903}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003899}}
-div.horizontal-tabs ul.horizontal-tabs-list li:hover {
-  background-color: transparent;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003904}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs ul.horizontal-tabs-list li.selected {
   background-color: transparent;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003908}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003909}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs ul.horizontal-tabs-list li.selected a {
   padding: 10px 10px 15px;
   padding: 1rem 1rem 1.5rem;
   background-color: #f8fafc;
   color: black;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003914}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003915}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs ul.horizontal-tabs-list li.selected a strong {
   color: black;
   font-weight: 900;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003930}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003931}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs ul.horizontal-tabs-list li a {
   padding-bottom: 15px;
   padding-bottom: 1.5rem;
   position: relative;
   color: #ababab;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003937}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003938}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs ul.horizontal-tabs-list li a:hover {
   background: none;
   background-color: #f8fafc;
   color: #fb9c13;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003949}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003950}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs fieldset.horizontal-tabs-pane {
   padding: 30px;
   padding: 3rem;
@@ -1585,11 +1308,7 @@ div.horizontal-tabs fieldset.horizontal-tabs-pane {
   background: rgba(255, 255, 255, 0.35);
   margin: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003956}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003957}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs fieldset.horizontal-tabs-pane .format-toggle {
   float: none;
   background: #f2f2f2;
@@ -1601,30 +1320,18 @@ div.horizontal-tabs fieldset.horizontal-tabs-pane .format-toggle {
   border-top: 0;
   text-align: right;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003967}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003968}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs fieldset.horizontal-tabs-pane .format-toggle label,
 div.horizontal-tabs fieldset.horizontal-tabs-pane .format-toggle select {
   display: inline-block;
   width: auto;
   float: none;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003976}}
 div.horizontal-tabs fieldset.horizontal-tabs-pane .text-format-wrapper .form-item {
   margin: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003981}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003977}}
-div.horizontal-tabs fieldset.horizontal-tabs-pane .text-format-wrapper .form-item {
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003982}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs fieldset.horizontal-tabs-pane .fieldset-wrapper > .form-wrapper:not(.field-type-text-with-summary) {
   padding: 20px 30px;
   padding: 2rem 3rem;
@@ -1634,22 +1341,14 @@ div.horizontal-tabs fieldset.horizontal-tabs-pane .fieldset-wrapper > .form-wrap
   margin: 0rem 0rem 3rem;
   position: relative;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003989}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003990}}
->>>>>>> 7.x-1.5
 div.horizontal-tabs fieldset.horizontal-tabs-pane .fieldset-wrapper > .form-wrapper:not(.field-type-text-with-summary) .tabledrag-toggle-weight-wrapper {
   position: absolute;
   right: 30px;
   bottom: 40px;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\00003999}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031000}}
->>>>>>> 7.x-1.5
 .no-extensions-enabled,
 div.vertical-tabs .vertical-tabs-panes fieldset fieldset {
   background: rgba(128, 128, 128, 0.1);
@@ -1659,11 +1358,7 @@ div.vertical-tabs .vertical-tabs-panes fieldset fieldset {
   padding: 1rem 3rem;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031008}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031009}}
->>>>>>> 7.x-1.5
 .media-widget,
 .form-managed-file {
   padding: 30px;
@@ -1673,11 +1368,7 @@ div.vertical-tabs .vertical-tabs-panes fieldset fieldset {
   margin: 0px;
   margin: 0rem;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031016}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031017}}
->>>>>>> 7.x-1.5
 .media-widget .button,
 .form-managed-file .button {
   -moz-appearance: none;
@@ -1686,21 +1377,13 @@ div.vertical-tabs .vertical-tabs-panes fieldset fieldset {
   text-align: center;
   display: block !important;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031024}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031025}}
->>>>>>> 7.x-1.5
 .media-widget .button:hover,
 .form-managed-file .button:hover {
   text-decoration: none;
   color: #fb9c13;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031030}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031031}}
->>>>>>> 7.x-1.5
 .media-widget .button:before,
 .form-managed-file .button:before {
   content: "\e821";
@@ -1712,34 +1395,21 @@ div.vertical-tabs .vertical-tabs-panes fieldset fieldset {
   line-height: 6.25rem;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031040}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031041}}
->>>>>>> 7.x-1.5
 div.vertical-tabs {
   border: 1px solid #e4e9ef;
   background: rgba(255, 255, 255, 0.5);
   border-left: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031046}}
 div.vertical-tabs ul.vertical-tabs-list {
   border-top: 1px solid #e4e9ef;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031050}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031047}}
-div.vertical-tabs ul.vertical-tabs-list {
-  border-top: 1px solid #e4e9ef;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031051}}
->>>>>>> 7.x-1.5
 div.vertical-tabs ul.vertical-tabs-list li {
   border: 1px solid #e4e9ef;
   border-top: none;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031055}}
 div.vertical-tabs ul.vertical-tabs-list li.selected {
   background-color: rgba(255, 255, 255, 0.5);
@@ -1753,26 +1423,10 @@ div.vertical-tabs ul.vertical-tabs-list li.selected a strong {
   color: #6380a4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031069}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031056}}
-div.vertical-tabs ul.vertical-tabs-list li.selected {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031060}}
-div.vertical-tabs ul.vertical-tabs-list li.selected a {
-  color: #6380a4;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031063}}
-div.vertical-tabs ul.vertical-tabs-list li.selected a strong {
-  color: #6380a4;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031070}}
->>>>>>> 7.x-1.5
 div.vertical-tabs ul.vertical-tabs-list li a {
   color: #ababab;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031082}}
 .cirkuitSkin table .mceIframeContainer {
   border-top: 1px solid #e4e9ef !important;
@@ -1782,36 +1436,17 @@ div.vertical-tabs ul.vertical-tabs-list li a {
   margin-left: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031091}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031083}}
-.cirkuitSkin table .mceIframeContainer {
-  border-top: 1px solid #e4e9ef !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031087}}
-.cirkuitSkin table.mceToolbar {
-  margin-left: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031092}}
->>>>>>> 7.x-1.5
 .cirkuitSkin table.mceLayout {
   border: 0;
   border-left: 1px solid #e4e9ef !important;
   border-right: 1px solid #e4e9ef !important;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031099}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031100}}
->>>>>>> 7.x-1.5
 .cirkuitSkin table.mceLayout tr.mceLast td {
   border-bottom: none;
   background: white;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031105}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031106}}
->>>>>>> 7.x-1.5
 .cirkuitSkin table.mceLayout tr.mceFirst td {
   border-top: 1px solid #e4e9ef !important;
   background-color: #f2f2f2;
@@ -1825,22 +1460,14 @@ div.vertical-tabs ul.vertical-tabs-list li a {
 /*
  * Aggregator feed source
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031127}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031128}}
->>>>>>> 7.x-1.5
 #aggregator .feed-source .feed-icon {
   display: inline;
   float: none;
   margin-right: 10px;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031134}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031135}}
->>>>>>> 7.x-1.5
 .feed-details dt,
 .feed-details dd {
   display: inline;
@@ -1853,28 +1480,16 @@ div.vertical-tabs ul.vertical-tabs-list li a {
 /*
  * Generic styles for links. See the ul.links declaration in node and comment stylesheets
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031150}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031151}}
->>>>>>> 7.x-1.5
 ul.links {
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031154}}
 ul.links.inline {
   display: block;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031158}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031155}}
-ul.links.inline {
-  display: block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031159}}
->>>>>>> 7.x-1.5
 ul.links li {
   display: inline;
   list-style: none;
@@ -1884,11 +1499,7 @@ ul.links li {
 /*
  * Search results are an ordered list so reset the margin
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031169}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031170}}
->>>>>>> 7.x-1.5
 .search-results {
   margin: 0;
   padding: 0;
@@ -1897,31 +1508,19 @@ ul.links li {
 /*
  * Attribution message and link
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031178}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031179}}
->>>>>>> 7.x-1.5
 .attribution {
   display: block;
   opacity: 0.65;
   padding: 1em 0;
   text-align: center;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031184}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031185}}
->>>>>>> 7.x-1.5
 .attribution a {
   text-decoration: none;
   color: inherit;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031188}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031189}}
->>>>>>> 7.x-1.5
 .attribution a:hover, .attribution a:focus {
   text-decoration: underline;
 }
@@ -1971,19 +1570,11 @@ ul.links li {
 /* =============================================================================
  *   Links
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031282}}
 a {
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031291}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031283}}
-a {
-  text-decoration: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031292}}
->>>>>>> 7.x-1.5
 a:hover, a:focus {
   text-decoration: underline;
 }
@@ -1991,30 +1582,18 @@ a:hover, a:focus {
 /* =============================================================================
  *   Primary, Secondary and Menu Bar region menus
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031302}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031303}}
->>>>>>> 7.x-1.5
 .nav {
   clear: both;
   margin: 10px 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031306}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031307}}
->>>>>>> 7.x-1.5
 .nav ul,
 .nav ul.menu {
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031312}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031313}}
->>>>>>> 7.x-1.5
 .nav li,
 .nav ul.menu li {
   display: inline;
@@ -2023,22 +1602,14 @@ a:hover, a:focus {
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031321}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031322}}
->>>>>>> 7.x-1.5
 .nav li a,
 .nav ul.menu li a {
   display: block;
   white-space: nowrap;
   padding: 0 10px;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031333}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031334}}
->>>>>>> 7.x-1.5
 .nav .block {
   margin-bottom: 0;
 }
@@ -2046,19 +1617,11 @@ a:hover, a:focus {
 /* =============================================================================
  *   Superfish
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031343}}
 ul.sf-menu {
   margin-bottom: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031346}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031344}}
-ul.sf-menu {
-  margin-bottom: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031347}}
->>>>>>> 7.x-1.5
 ul.sf-menu a {
   border-left: 0;
   border-top: 0;
@@ -2067,19 +1630,11 @@ ul.sf-menu a {
   height: 2.5em;
   line-height: 2.5em;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031359}}
 ul.sf-menu li:hover, ul.sf-menu li.sfHover {
   outline: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031366}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031360}}
-ul.sf-menu li:hover, ul.sf-menu li.sfHover {
-  outline: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031367}}
->>>>>>> 7.x-1.5
 ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
   outline: 0;
 }
@@ -2087,20 +1642,12 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Superfish blocks
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031382}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031383}}
->>>>>>> 7.x-1.5
 .block-superfish ul {
   margin: 0 !important;
   padding: 0 !important;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031393}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031394}}
->>>>>>> 7.x-1.5
 .block-superfish li {
   margin: 0 !important;
   padding: 0 !important;
@@ -2109,7 +1656,6 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Vertical style
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031403}}
 .sf-vertical {
   width: 100%;
@@ -2119,28 +1665,13 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
   width: 100%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031411}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031404}}
-.sf-vertical {
-  width: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031407}}
-.sf-vertical li {
-  width: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031412}}
->>>>>>> 7.x-1.5
 .sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
   left: 100%;
   top: 0;
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031419}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031420}}
->>>>>>> 7.x-1.5
 .sf-vertical li a {
   padding: 0 10px;
 }
@@ -2148,11 +1679,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Navbar style
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031429}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031430}}
->>>>>>> 7.x-1.5
 .sf-navbar {
   padding-bottom: 0 !important;
 }
@@ -2160,11 +1687,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Sensible padding for the default style
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031437}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031438}}
->>>>>>> 7.x-1.5
 .sf-menu.sf-style-default a {
   padding: 0 10px;
 }
@@ -2172,11 +1695,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /* =============================================================================
  *   Menu Toggles
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031447}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031448}}
->>>>>>> 7.x-1.5
 .at-mt .at-menu-toggle,
 .at-mt .at-menu-toggle ul,
 .at-mt .at-menu-toggle ul.menu {
@@ -2184,19 +1703,11 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
   margin-bottom: 0;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031455}}
 .at-mt .at-menu-toggle-button {
   margin: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031459}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031456}}
-.at-mt .at-menu-toggle-button {
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031460}}
->>>>>>> 7.x-1.5
 .at-mt .at-menu-toggle ul a {
   padding: 0 10px;
   white-space: nowrap;
@@ -2205,7 +1716,6 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /* =============================================================================
  *   Menus, usually blocks
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031470}}
 ul.menu {
   padding-left: 15px;
@@ -2215,27 +1725,12 @@ ul.menu ul {
   padding-left: 15px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031481}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031471}}
-ul.menu {
-  padding-left: 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031474}}
-ul.menu ul {
-  padding-left: 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031482}}
->>>>>>> 7.x-1.5
 ul.menu li {
   margin: 0;
 }
 
 /* If li.content exists it's a problem, so reset the padding */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031510}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031511}}
->>>>>>> 7.x-1.5
 .block .menu li.content {
   padding: 0;
 }
@@ -2243,21 +1738,13 @@ ul.menu li {
 /* =============================================================================
  *   Book navigation menu
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031527}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031528}}
->>>>>>> 7.x-1.5
 .book-navigation .page-up {
   /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
   min-width: 2em;
   white-space: nowrap;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031533}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031534}}
->>>>>>> 7.x-1.5
 .book-navigation .menu {
   margin-left: 0;
 }
@@ -2265,55 +1752,31 @@ ul.menu li {
 /* =============================================================================
  *   Breadcrumbs
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031543}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031544}}
->>>>>>> 7.x-1.5
 #breadcrumb {
   margin: 10px 0;
   /* If the label is set to show in theme settings the label class is added */
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031547}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031548}}
->>>>>>> 7.x-1.5
 #breadcrumb .breadcrumb-label {
   font-size: 1em;
   display: inline;
   padding-right: 10px;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031552}}
 #breadcrumb .breadcrumb-label:after {
   content: ":";
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031557}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031553}}
-#breadcrumb .breadcrumb-label:after {
-  content: ":";
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031558}}
->>>>>>> 7.x-1.5
 #breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031562}}
 #breadcrumb .with-breadcrumb-label ol {
   display: inline;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031566}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031563}}
-#breadcrumb .with-breadcrumb-label ol {
-  display: inline;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031567}}
->>>>>>> 7.x-1.5
 #breadcrumb li {
   list-style: none;
   display: inline;
@@ -2322,51 +1785,31 @@ ul.menu li {
 /* =============================================================================
  *   Pagers
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031593}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031594}}
->>>>>>> 7.x-1.5
 ul.pager {
   clear: both;
   margin: 0;
   text-align: center;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031600}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031601}}
->>>>>>> 7.x-1.5
 .item-list ul.pager li {
   margin: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031605}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031606}}
->>>>>>> 7.x-1.5
 ul.pager li {
   background-image: none;
   display: inline;
   list-style-type: none;
   padding: .5em;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031611}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031612}}
->>>>>>> 7.x-1.5
 ul.pager li.pager-current {
   font-weight: 700;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031617}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031618}}
->>>>>>> 7.x-1.5
 .block ul.pager li {
   margin: 0;
 }
@@ -2377,11 +1820,7 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Skip Navigation
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031654}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031655}}
->>>>>>> 7.x-1.5
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -2391,11 +1830,7 @@ ul.pager li.pager-current {
   width: 12em;
   z-index: 50;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031663}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031664}}
->>>>>>> 7.x-1.5
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -2406,11 +1841,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031673}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031674}}
->>>>>>> 7.x-1.5
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -2421,11 +1852,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031684}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031685}}
->>>>>>> 7.x-1.5
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
@@ -2433,20 +1860,12 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Tabs (local tasks)
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031697}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031698}}
->>>>>>> 7.x-1.5
 #tasks {
   margin-bottom: 15px;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031702}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031703}}
->>>>>>> 7.x-1.5
 ul.primary {
   border: 0;
   margin: 0px 0px 40px;
@@ -2454,21 +1873,13 @@ ul.primary {
   padding: 0px;
   padding: 0rem;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031708}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031709}}
->>>>>>> 7.x-1.5
 ul.primary li {
   display: block;
   float: left;
   margin: 0 1px -1px;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031715}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031716}}
->>>>>>> 7.x-1.5
 ul.primary li a {
   background-color: transparent;
   color: #ababab;
@@ -2482,17 +1893,12 @@ ul.primary li a {
   position: relative;
   font-weight: 900;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031730}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031731}}
->>>>>>> 7.x-1.5
 ul.primary li a:hover, ul.primary li a:focus {
   background-color: transparent;
   border: none;
   color: #2a2a2a;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031739}}
 ul.primary li:first-child a {
   padding-left: 0;
@@ -2502,17 +1908,6 @@ ul.primary li:last-child a {
   padding-right: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031752}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031740}}
-ul.primary li:first-child a {
-  padding-left: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031745}}
-ul.primary li:last-child a {
-  padding-right: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031753}}
->>>>>>> 7.x-1.5
 ul.primary li.active a,
 ul.primary li.active a:hover,
 ul.primary li.active a:focus {
@@ -2520,11 +1915,7 @@ ul.primary li.active a:focus {
   border: none;
   color: #fb9c13;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031760}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031761}}
->>>>>>> 7.x-1.5
 ul.primary li.active a:before,
 ul.primary li.active a:hover:before,
 ul.primary li.active a:focus:before {
@@ -2542,58 +1933,34 @@ ul.primary li.active a:focus:before {
   right: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031775}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031776}}
->>>>>>> 7.x-1.5
 ul.secondary {
   border-bottom: none;
   margin: 10px 0px 40px;
   margin: 1rem 0rem 4rem;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031780}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031781}}
->>>>>>> 7.x-1.5
 ul.secondary li {
   border-right: 0;
   list-style: none;
   padding: 0 10px 0 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031785}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031786}}
->>>>>>> 7.x-1.5
 ul.secondary li a {
   color: #6380a4;
   padding: 12px 10px 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031788}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031789}}
->>>>>>> 7.x-1.5
 ul.secondary li a:hover, ul.secondary li a.active {
   border-bottom: none;
   text-decoration: underline;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031795}}
 ul.secondary li:first-child a {
   padding-left: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031800}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031796}}
-ul.secondary li:first-child a {
-  padding-left: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031801}}
->>>>>>> 7.x-1.5
 ul.secondary li:last-child a {
   padding-right: 0;
 }
@@ -2601,11 +1968,7 @@ ul.secondary li:last-child a {
 /* =============================================================================
  *   Action links
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031812}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031813}}
->>>>>>> 7.x-1.5
 ul.action-links {
   margin: 20px 0 0;
   list-style: none;
@@ -2623,19 +1986,11 @@ ul.action-links {
 /*
  * When labels are set to inline in field display settings the clearfix class is automatically added
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031839}}
 .field-label-inline {
   /* Remove the margin on inline field lables to preserve vertical formatting */
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031842}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031840}}
-.field-label-inline {
-  /* Remove the margin on inline field lables to preserve vertical formatting */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031843}}
->>>>>>> 7.x-1.5
 .field-label-inline .field-label {
   margin: 0;
 }
@@ -2643,11 +1998,7 @@ ul.action-links {
 /*
  * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031850}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031851}}
->>>>>>> 7.x-1.5
 .field-label {
   font-size: 1em;
   font-weight: 700;
@@ -2665,29 +2016,17 @@ ul.action-links {
 /*
  * Taxonomy
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031879}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031880}}
->>>>>>> 7.x-1.5
 .field-type-taxonomy-term-reference {
   /* The same bottom margin as p, blockquote, ul, ol and dl */
   margin-bottom: 1.5em;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031884}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031885}}
->>>>>>> 7.x-1.5
 .field-type-taxonomy-term-reference.field-label-inline .field-items {
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031889}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000031890}}
->>>>>>> 7.x-1.5
 .field-type-taxonomy-term-reference.field-label-inline .field-item {
   display: inline;
   list-style: none;
@@ -2745,11 +2084,7 @@ ul.action-links {
 /*
  * Float left setting
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032003}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032004}}
->>>>>>> 7.x-1.5
 .ia-l .field-type-image figure,
 .iat-l .field-type-image figure {
   margin: 5px 20px 15px 0;
@@ -2758,11 +2093,7 @@ ul.action-links {
 /*
  * Centered setting
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032012}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032013}}
->>>>>>> 7.x-1.5
 .ia-c .field-type-image figure,
 .iat-c .field-type-image figure {
   margin: 5px auto 15px;
@@ -2771,11 +2102,7 @@ ul.action-links {
 /*
  * Float right setting
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032021}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032022}}
->>>>>>> 7.x-1.5
 .ia-r .field-type-image figure,
 .iat-r .field-type-image figure {
   margin: 5px 0 15px 20px;
@@ -2787,11 +2114,7 @@ ul.action-links {
 /*
  * Main wrapper for most blocks, block_system_main does not have it
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032035}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032036}}
->>>>>>> 7.x-1.5
 .block {
   margin-bottom: 20px;
 }
@@ -2814,11 +2137,7 @@ ul.action-links {
 /*
  * Block title
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032073}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032074}}
->>>>>>> 7.x-1.5
 .block-title {
   margin: 0;
 }
@@ -2829,20 +2148,12 @@ ul.action-links {
 /*
  * Match item list and block menu margin and padding
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032089}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032090}}
->>>>>>> 7.x-1.5
 .block-content ul,
 .block-content ol {
   padding: 0 0 0 15px;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032094}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032095}}
->>>>>>> 7.x-1.5
 .block-content li {
   margin: 0;
   padding: 0;
@@ -2932,19 +2243,11 @@ ul.action-links {
 /* =============================================================================
  *   Node Styling
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032267}}
 .node {
   margin-bottom: 20px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032284}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032268}}
-.node {
-  margin-bottom: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032285}}
->>>>>>> 7.x-1.5
 .node .node-title {
   margin: 0;
 }
@@ -2960,7 +2263,6 @@ ul.action-links {
 /*
  * Wrapper for the list of comments and its titles
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032342}}
 #comments {
   margin: 1.5em 0;
@@ -2970,17 +2272,6 @@ ul.action-links {
   margin: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032350}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032343}}
-#comments {
-  margin: 1.5em 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032347}}
-#comments h2.comment-title {
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032351}}
->>>>>>> 7.x-1.5
 #comments h2.comment-form {
   margin: 0;
 }
@@ -2988,11 +2279,7 @@ ul.action-links {
 /*
  * Wrapper for a single comment
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032360}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032361}}
->>>>>>> 7.x-1.5
 .comment {
   margin-bottom: 20px;
 }
@@ -3000,11 +2287,7 @@ ul.action-links {
 /*
  * Comment title
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032391}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032392}}
->>>>>>> 7.x-1.5
 .comment-title {
   margin: 0;
 }
@@ -3018,11 +2301,7 @@ ul.action-links {
 /*
  * "New" marker for comments that are new for the current user
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032423}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032424}}
->>>>>>> 7.x-1.5
 .new {
   color: #e53935;
 }
@@ -3030,11 +2309,7 @@ ul.action-links {
 /*
  * Nested comments are indented
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032431}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032432}}
->>>>>>> 7.x-1.5
 .indented {
   margin-left: 40px;
 }
@@ -3045,38 +2320,22 @@ ul.action-links {
 /*
  * Wrapper for a form element (or group of form elements) and its label
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032445}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032446}}
->>>>>>> 7.x-1.5
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #e53935;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032451}}
 .form-item label {
   font-weight: 700;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032455}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032452}}
-.form-item label {
-  font-weight: 700;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032456}}
->>>>>>> 7.x-1.5
 .form-item input + label {
   font-weight: 300;
   color: #6380a4;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032464}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032465}}
->>>>>>> 7.x-1.5
 .form-item .description {
   font-size: 0.85em;
 }
@@ -3084,11 +2343,7 @@ ul.action-links {
 /*
  * Highlight marks and form required mark
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032477}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032478}}
->>>>>>> 7.x-1.5
 .marker,
 .form-required {
   color: #e53935;
@@ -3097,11 +2352,7 @@ ul.action-links {
 /*
  * The submit button
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032491}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032492}}
->>>>>>> 7.x-1.5
 .container-inline div,
 .container-inline label {
   display: inline;
@@ -3110,11 +2361,7 @@ ul.action-links {
 /*
  * Define consistent borders
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032500}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032501}}
->>>>>>> 7.x-1.5
 fieldset {
   border: 1px solid #607d8b;
 }
@@ -3125,11 +2372,7 @@ fieldset {
 /*
  * Buttons used by contrib modules like Media
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032514}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032515}}
->>>>>>> 7.x-1.5
 a.button {
   -moz-appearance: button;
   -webkit-appearance: button;
@@ -3138,11 +2381,7 @@ a.button {
 /*
  * Password confirmation
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032522}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032523}}
->>>>>>> 7.x-1.5
 .password-parent,
 .confirm-parent {
   margin: 0;
@@ -3151,32 +2390,20 @@ a.button {
 /* =============================================================================
  *   Tables
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032532}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032533}}
->>>>>>> 7.x-1.5
 table {
   margin: 10px 0;
   padding: 0;
   width: 100%;
   border: none;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032538}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032539}}
->>>>>>> 7.x-1.5
 table.sticky-header {
   z-index: 10;
   background: rgba(255, 255, 255, 0.8);
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032545}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032546}}
->>>>>>> 7.x-1.5
 table,
 thead,
 tbody,
@@ -3186,43 +2413,27 @@ td {
   border-color: #e4e9ef;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032555}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032556}}
->>>>>>> 7.x-1.5
 table,
 td,
 th {
   vertical-align: middle;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032562}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032563}}
->>>>>>> 7.x-1.5
 caption,
 th,
 td {
   text-align: left;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032569}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032570}}
->>>>>>> 7.x-1.5
 thead tr {
   font-weight: 700;
   background-color: transparent;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032576}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032577}}
->>>>>>> 7.x-1.5
 td,
 th {
   border-bottom: 0;
@@ -3231,27 +2442,18 @@ th {
   padding: 1rem;
   color: #2a2a2a;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032583}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032584}}
->>>>>>> 7.x-1.5
 td a,
 th a {
   color: #2a2a2a;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032589}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032590}}
->>>>>>> 7.x-1.5
 tbody {
   border: 1px solid #e4e9ef;
   border-radius: 3px;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032596}}
 tbody tr {
   border: 0;
@@ -3261,26 +2463,11 @@ tbody tr td {
   color: #6380a4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032603}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032597}}
-tbody tr {
-  border: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032600}}
-tbody tr td {
-  color: #6380a4;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032604}}
->>>>>>> 7.x-1.5
 tbody tr a {
   color: #fb9c13;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032611}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032612}}
->>>>>>> 7.x-1.5
 tr {
   /* Table row striping */
   /*
@@ -3292,37 +2479,21 @@ tr {
     }
   */
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032613}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032614}}
->>>>>>> 7.x-1.5
 tr.odd {
   background: white;
   border: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032618}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032619}}
->>>>>>> 7.x-1.5
 tr.even {
   border: 0;
   background: #fafcfd;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032638}}
 tr.odd td.active {
   background-color: transparent;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032642}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032639}}
-tr.odd td.active {
-  background-color: transparent;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032643}}
->>>>>>> 7.x-1.5
 tr.even td.active {
   background-color: transparent;
 }
@@ -3331,11 +2502,7 @@ tr.even td.active {
  * Forum tables
  * Core sets white-space to nowrap, which makes no sense
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032665}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032666}}
->>>>>>> 7.x-1.5
 #forum td.created, #forum td.posts, #forum td.topics, #forum td.last-reply, #forum td.replies, #forum td.pager {
   white-space: normal;
 }
@@ -3343,20 +2510,12 @@ tr.even td.active {
 /* =============================================================================
  *   Messages
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032681}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032682}}
->>>>>>> 7.x-1.5
 div.messages {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032686}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032687}}
->>>>>>> 7.x-1.5
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -3365,11 +2524,7 @@ div.messages ul {
 /*
  * Unpublished nodes
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032727}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032728}}
->>>>>>> 7.x-1.5
 .node-unpublished p.unpublished,
 .comment-unpublished p.unpublished {
   color: pink;
@@ -3390,48 +2545,28 @@ div.messages ul {
 /* =============================================================================
  *    Maintenance pages
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032738}}
 .maintenance-page .container {
   padding: 40px 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032742}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032739}}
-.maintenance-page .container {
-  padding: 40px 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032743}}
->>>>>>> 7.x-1.5
 .maintenance-page #site-name,
 .maintenance-page #page-title {
   margin: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032750}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032751}}
->>>>>>> 7.x-1.5
 .db-offline .container {
   margin: 0 auto;
   padding: 40px 0;
   width: 100%;
   max-width: 960px;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032757}}
 .db-offline div.messages {
   margin: 20px 0 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032761}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032758}}
-.db-offline div.messages {
-  margin: 20px 0 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032762}}
->>>>>>> 7.x-1.5
 .db-offline #content {
   padding: 20px 0;
 }
@@ -3439,11 +2574,7 @@ div.messages ul {
 /* =============================================================================
  *   Misc overrides for contrib modules
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032785}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032786}}
->>>>>>> 7.x-1.5
 .page-node-5 #tasks,
 .page-node-7 #tasks,
 .page-node-1291 #tasks,
@@ -3461,11 +2592,7 @@ div.messages ul {
 /*
  * Admin menu overrides
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032794}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032795}}
->>>>>>> 7.x-1.5
 #admin-menu {
   margin: 0;
   padding: 0;
@@ -3474,11 +2601,7 @@ div.messages ul {
 /*
  * Devel Module
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032803}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032804}}
->>>>>>> 7.x-1.5
 .dev-query {
   background: #b0bec5;
   padding: 30px;
@@ -3487,19 +2610,11 @@ div.messages ul {
 /*
  * Styleguide module tweaks
  */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032812}}
 #styleguide-header {
   padding: 0 10px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032815}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032813}}
-#styleguide-header {
-  padding: 0 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032816}}
->>>>>>> 7.x-1.5
 #styleguide-header .item-list {
   font-family: inherit;
   margin: 0 20px 20px 0;
@@ -3507,11 +2622,7 @@ div.messages ul {
   width: auto;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032824}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032825}}
->>>>>>> 7.x-1.5
 #ctools-export-ui-list-form .form-item {
   display: inline-block;
   float: none;
@@ -3520,11 +2631,7 @@ div.messages ul {
   padding-top: 1.5rem;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032832}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032833}}
->>>>>>> 7.x-1.5
 .admin-views-view .form-item-operation,
 .views-exposed-form .views-exposed-widget {
   display: inline-block;
@@ -3533,40 +2640,24 @@ div.messages ul {
   margin-bottom: 0;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032841}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032842}}
->>>>>>> 7.x-1.5
 #views-live-preview h1.section-title {
   font-family: "Avenir", "Lato", sans-serif;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032846}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032847}}
->>>>>>> 7.x-1.5
 td.views-field.views-field-edit-node a {
   margin: 0 10px;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032853}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032854}}
->>>>>>> 7.x-1.5
 .views-ui-filter-options-processed .form-checkboxes .form-item,
 .views-ui-filter-options-processed .form-radios .form-item {
   margin: 0;
   display: block;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032861}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032862}}
->>>>>>> 7.x-1.5
 #ctools-export-ui-list-form .form-submit {
   margin-top: auto;
   float: none;
@@ -3577,77 +2668,45 @@ td.views-field.views-field-edit-node a {
 /* =============================================================================
  *   EC HACKS
  * ========================================================================== */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032875}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032876}}
->>>>>>> 7.x-1.5
 #admin-menu .dropdown li li {
   opacity: 1;
   background-color: rgba(69, 69, 69, 0.88);
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032881}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032882}}
->>>>>>> 7.x-1.5
 #edit-field-business2 {
   display: none;
 }
 
 /* Increase the z-index of the UI dialog so it is higher than Panels 'add content' modal */
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032889}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032890}}
->>>>>>> 7.x-1.5
 .ui-dialog.ui-front {
   z-index: 1002;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032894}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032895}}
->>>>>>> 7.x-1.5
 .crm-container .crm-accordion-body {
   background: #fff;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032901}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032902}}
->>>>>>> 7.x-1.5
 .time1 {
   color: red;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032905}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032906}}
->>>>>>> 7.x-1.5
 .highlight-Yes {
   color: green;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032913}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032914}}
->>>>>>> 7.x-1.5
 .view-id-digital_projects.view-display-id-panel_pane_2 .highlight-No,
 .view-pro-projects.view-display-id-panel_pane_2 .highlight-No,
 .view-id-billing_payment.view-display-id-panel_pane_1 .highlight-No {
   display: none;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032916}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032917}}
->>>>>>> 7.x-1.5
 .view-id-digital_projects.view-display-id-panel_pane_2 td,
 .view-id-digital_projects.view-display-id-panel_pane_2 th,
 .view-pro-projects.view-display-id-panel_pane_2 td,
@@ -3656,11 +2715,7 @@ td.views-field.views-field-edit-node a {
 .view-id-billing_payment.view-display-id-panel_pane_1 th {
   vertical-align: top;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032920}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032921}}
->>>>>>> 7.x-1.5
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-wireframes-approved-6,
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-designs-approved-7,
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-build-completed-9,
@@ -3694,21 +2749,13 @@ td.views-field.views-field-edit-node a {
   width: 10%;
   text-align: center;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032933}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032934}}
->>>>>>> 7.x-1.5
 .view-id-digital_projects.view-display-id-panel_pane_2 .views-field-current-employer,
 .view-pro-projects.view-display-id-panel_pane_2 .views-field-current-employer,
 .view-id-billing_payment.view-display-id-panel_pane_1 .views-field-current-employer {
   font-weight: bold;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032936}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032937}}
->>>>>>> 7.x-1.5
 .view-id-digital_projects.view-display-id-panel_pane_2 td.views-field-wireframes-approved-6,
 .view-id-digital_projects.view-display-id-panel_pane_2 td.views-field-designs-approved-7,
 .view-id-digital_projects.view-display-id-panel_pane_2 td.views-field-content-writing-completed-8,
@@ -3797,22 +2844,14 @@ td.views-field.views-field-edit-node a {
   border-left: 1px solid #b0bec5;
   border-right: 1px solid #b0bec5;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032968}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032969}}
->>>>>>> 7.x-1.5
 .view-id-digital_projects.view-display-id-panel_pane_2 .launch-Yes,
 .view-pro-projects.view-display-id-panel_pane_2 .launch-Yes,
 .view-id-billing_payment.view-display-id-panel_pane_1 .launch-Yes {
   background-color: #e5ffe1;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032977}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032978}}
->>>>>>> 7.x-1.5
 .view-id-digital_projects.view-display-id-panel_pane_1 td.views-field-website-price-18,
 .view-id-digital_projects.view-display-id-panel_pane_1 td.views-field-content-price-19,
 .view-id-digital_projects.view-display-id-panel_pane_1 td.views-field-monthly-rate-36,
@@ -3826,11 +2865,7 @@ td.views-field.views-field-edit-node a {
   text-align: right;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032987}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032988}}
->>>>>>> 7.x-1.5
 .key {
   background-color: #b0bec5;
   border: 1px solid #b0bec5;
@@ -3838,11 +2873,7 @@ td.views-field.views-field-edit-node a {
   padding: 10px;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032995}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000032996}}
->>>>>>> 7.x-1.5
 .field-name-field-build-old-site,
 .field-name-field-build-new-site,
 .field-name-field-build-transfer-content,
@@ -3854,29 +2885,17 @@ td.views-field.views-field-edit-node a {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033006}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033007}}
->>>>>>> 7.x-1.5
 .field-name-field-build-example-url {
   clear: both;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033010}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033011}}
->>>>>>> 7.x-1.5
 .views-field-field-build-requirement-notes {
   padding-left: 2em;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033015}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033016}}
->>>>>>> 7.x-1.5
 .page-node-1430.page-node-submission #edit-submitted-upload-your-documents-resume-upload-button,
 .page-node-1430.page-node-submission #edit-submitted-upload-your-documents-resume-remove-button,
 .page-node-1430.page-node-submission #edit-submitted-upload-your-documents-cover-letter-upload-button--2,
@@ -3886,37 +2905,21 @@ td.views-field.views-field-edit-node a {
   display: none;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033029}}
 .section-civicrm #content-wrapper .container {
   margin-top: 20px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033032}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033030}}
-.section-civicrm #content-wrapper .container {
-  margin-top: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033033}}
->>>>>>> 7.x-1.5
 .section-civicrm .ui-widget-header {
   background: #b0bec5;
   border-radius: 0 !important;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033036}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033037}}
->>>>>>> 7.x-1.5
 .section-civicrm .ui-tabs .ui-tabs-nav li.ui-state-default {
   background: #90a4ae;
   border-radius: 0;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033040}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033041}}
->>>>>>> 7.x-1.5
 .section-civicrm .crm-container .disabled,
 .section-civicrm .crm-container .cancelled,
 .section-civicrm .crm-container li.disabled a.ui-tabs-anchor,
@@ -3924,37 +2927,24 @@ td.views-field.views-field-edit-node a {
 .section-civicrm .crm-container li.crm-count-0 a.ui-tabs-anchor em {
   color: #dedede !important;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033047}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033048}}
->>>>>>> 7.x-1.5
 .section-civicrm .ui-tabs .ui-tabs-nav li.ui-state-active,
 .section-civicrm .ui-tabs .ui-tabs-nav li.ui-state-hover,
 .section-civicrm .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
   background: #fff;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033052}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033053}}
->>>>>>> 7.x-1.5
 .section-civicrm .crm-container a,
 .section-civicrm .crm-container a:link,
 .section-civicrm .crm-container a:visited {
   color: #2a2a2a;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033057}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033058}}
->>>>>>> 7.x-1.5
 .section-civicrm .crm-container a.button,
 .section-civicrm .crm-container a.button:link,
 .section-civicrm .crm-container a.button:visited {
   color: #fff;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033062}}
 .section-civicrm .ui-dialog .ui-dialog-content {
   background: #fff;
@@ -3964,17 +2954,6 @@ td.views-field.views-field-edit-node a {
   background: #f5f5f5;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033068}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033063}}
-.section-civicrm .ui-dialog .ui-dialog-content {
-  background: #fff;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033066}}
-.section-civicrm .crm-container .crm-form-block {
-  background: #f5f5f5;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033069}}
->>>>>>> 7.x-1.5
 .section-civicrm #block-civicrm-1,
 .section-civicrm #block-civicrm-2,
 .section-civicrm #block-civicrm-7 {
@@ -3982,57 +2961,33 @@ td.views-field.views-field-edit-node a {
   padding: 5px;
   border: 1px solid #bdbdbd;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033076}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033077}}
->>>>>>> 7.x-1.5
 .section-civicrm #block-civicrm-2 li {
   background: none;
   border: none;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033082}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033083}}
->>>>>>> 7.x-1.5
 .section-civicrm #crm-recently-viewed ul li.crm-recently-viewed:hover,
 .section-civicrm #crm-recently-viewed .crm-recentview-wrapper {
   background-color: #ebebeb;
   border-color: #90a4ae;
 }
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033086}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033087}}
->>>>>>> 7.x-1.5
 .section-civicrm #crm-recently-viewed ul li.crm-recently-viewed:hover .crm-recentview-wrapper,
 .section-civicrm #crm-recently-viewed .crm-recentview-wrapper .crm-recentview-wrapper {
   display: none;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033094}}
 #crm-container ul li:hover {
   padding: 1px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033097}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033095}}
-#crm-container ul li:hover {
-  padding: 1px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033098}}
->>>>>>> 7.x-1.5
 #crm-container div.crm-summary-row {
   background-color: #f5f5f5;
 }
 
-<<<<<<< HEAD
 @media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033102}}
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/www\/sites\/ec-demo\/profiles\/ecdpanopoly\/themes\/ec_at_admin\/sass\/global\.styles\.scss}line{font-family:\000033103}}
->>>>>>> 7.x-1.5
 .crm-container div.contact_panel td,
 .crm-container table.crm-info-panel td,
 .crm-container .crm-form-block {
