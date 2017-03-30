@@ -1,22 +1,13 @@
-# PHP library for v3 of the MailChimp API
+Overview
+=============================================
+A PHP 5.2+ API client for [v2 of the MailChimp API](http://apidocs.mailchimp.com/api/2.0/). Please note that we generate this client/wrapper, so while we're happy to look at any pull requests, ultimately we can't technically accept them. We will, however comment on any additions or changes made due to them before closing them.
 
-This library provides convenient wrapper functions for MailChimp's REST API.
-The API is [documented here](http://developer.mailchimp.com/documentation/mailchimp/guides/get-started-with-mailchimp-api-3/).
 
-## Requirements
+###Usage
+This can be installed via [Composer](http://getcomposer.org/) and our [packagist package](https://packagist.org/packages/mailchimp/mailchimp).
 
-- PHP 5.5.0 or greater
-- [Composer](https://getcomposer.org/)
-- [Guzzle](https://github.com/guzzle/guzzle)
+---
 
-## Installation
+A basic example app to help kickstart you which - will also automatically install this package - is over in a public [github](https://github.com/mailchimp/mcapi2-php-examples) repo.
 
-Dependencies are managed by [Composer](https://getcomposer.org/). From the library root, run:
 
-`composer install`
-
-## Testing
-
-This library includes a PHPUnit test suite. To run the tests, from the library root, run:
-
-`phpunit`

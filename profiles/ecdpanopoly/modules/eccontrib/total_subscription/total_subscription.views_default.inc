@@ -24,29 +24,18 @@ function total_subscription_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Total Subscription';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'role';
-  $handler->display->display_options['access']['role'] = array(
-    5 => '5',
-    3 => '3',
-  );
+  $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Total Subscription: Total Subscription Entity Type */
   $handler->display->display_options['fields']['entity_type']['id'] = 'entity_type';
   $handler->display->display_options['fields']['entity_type']['table'] = 'total_subscription';
   $handler->display->display_options['fields']['entity_type']['field'] = 'entity_type';
-  /* Filter criterion: Total Subscription: Total Subscription Entity Type */
-  $handler->display->display_options['filters']['entity_type']['id'] = 'entity_type';
-  $handler->display->display_options['filters']['entity_type']['table'] = 'total_subscription';
-  $handler->display->display_options['filters']['entity_type']['field'] = 'entity_type';
 
   /* Display: Total Subscription Taxonomy */
   $handler = $view->new_display('block', 'Total Subscription Taxonomy', 'block');
@@ -166,26 +155,11 @@ function total_subscription_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'counter' => 'counter',
-    'entity_id' => 'entity_id',
     'mail' => 'mail',
     'bundle' => 'bundle',
-    'tsid' => 'tsid',
   );
-  $handler->display->display_options['style_options']['default'] = 'tsid';
+  $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'counter' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'entity_id' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
     'mail' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
@@ -200,26 +174,11 @@ function total_subscription_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'tsid' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Global: View result counter */
-  $handler->display->display_options['fields']['counter']['id'] = 'counter';
-  $handler->display->display_options['fields']['counter']['table'] = 'views';
-  $handler->display->display_options['fields']['counter']['field'] = 'counter';
-  $handler->display->display_options['fields']['counter']['label'] = '';
-  $handler->display->display_options['fields']['counter']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['counter']['counter_start'] = '1';
-  $handler->display->display_options['fields']['counter']['reverse'] = 0;
   /* Field: Total Subscription: Total Subscription entity_id */
   $handler->display->display_options['fields']['entity_id']['id'] = 'entity_id';
   $handler->display->display_options['fields']['entity_id']['table'] = 'total_subscription';
@@ -236,10 +195,6 @@ function total_subscription_views_default_views() {
   $handler->display->display_options['fields']['bundle']['label'] = 'Total Subscription Category';
   $handler->display->display_options['fields']['bundle']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['bundle']['alter']['text'] = '<a href="/node/[entity_id]">[bundle]</a>';
-  /* Field: Total Subscription: Total Subscription Id */
-  $handler->display->display_options['fields']['tsid']['id'] = 'tsid';
-  $handler->display->display_options['fields']['tsid']['table'] = 'total_subscription';
-  $handler->display->display_options['fields']['tsid']['field'] = 'tsid';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Total Subscription: Total Subscription Entity Type */
@@ -305,52 +260,6 @@ function total_subscription_views_default_views() {
       'value' => '',
     ),
   );
-if (module_exists('views_data_export')) {
-  /* Display: Data export */
-  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
-  $handler->display->display_options['style_options']['provide_file'] = 1;
-  $handler->display->display_options['style_options']['parent_sort'] = 0;
-  $handler->display->display_options['style_options']['quote'] = 1;
-  $handler->display->display_options['style_options']['trim'] = 0;
-  $handler->display->display_options['style_options']['replace_newlines'] = 0;
-  $handler->display->display_options['style_options']['newline_token'] = '1';
-  $handler->display->display_options['style_options']['header'] = 1;
-  $handler->display->display_options['style_options']['keep_html'] = 0;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Total Subscription: Total Subscription Id */
-  $handler->display->display_options['fields']['tsid']['id'] = 'tsid';
-  $handler->display->display_options['fields']['tsid']['table'] = 'total_subscription';
-  $handler->display->display_options['fields']['tsid']['field'] = 'tsid';
-  $handler->display->display_options['fields']['tsid']['label'] = 'Subscription ID';
-  /* Field: Total Subscription: Total Subscription Mail */
-  $handler->display->display_options['fields']['mail']['id'] = 'mail';
-  $handler->display->display_options['fields']['mail']['table'] = 'total_subscription';
-  $handler->display->display_options['fields']['mail']['field'] = 'mail';
-  $handler->display->display_options['fields']['mail']['label'] = 'Mail';
-  /* Field: Total Subscription: Total Subscription active */
-  $handler->display->display_options['fields']['active']['id'] = 'active';
-  $handler->display->display_options['fields']['active']['table'] = 'total_subscription';
-  $handler->display->display_options['fields']['active']['field'] = 'active';
-  $handler->display->display_options['fields']['active']['label'] = 'Active';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Total Subscription: Total Subscription Entity Type */
-  $handler->display->display_options['filters']['entity_type']['id'] = 'entity_type';
-  $handler->display->display_options['filters']['entity_type']['table'] = 'total_subscription';
-  $handler->display->display_options['filters']['entity_type']['field'] = 'entity_type';
-  $handler->display->display_options['filters']['entity_type']['value'] = 'node';
-  $handler->display->display_options['path'] = 'admin/export/subscriptions';
-  $handler->display->display_options['displays'] = array(
-    'block_1' => 'block_1',
-    'default' => 0,
-    'block' => 0,
-  );
-  $handler->display->display_options['use_batch'] = 'batch';
-  $handler->display->display_options['segment_size'] = '100';
- }
   // Add view to list of views to provide.
   $views[$view->name] = $view;
   // Repeat all of the above for each view the module should provide.
