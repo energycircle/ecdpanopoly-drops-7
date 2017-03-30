@@ -284,3 +284,9 @@ projects[ec_migrate_ecpro_gallery_import][download][url] = https://github.com/en
 projects[ec_migrate_ecpro_gallery_import][subdir] = ecfeature-migrate
 projects[ec_migrate_ecpro_gallery_import][type] = module
 projects[ec_migrate_ecpro_gallery_import][version] = 1.x
+
+projects[ec_migrate_wp_xml_import_to_blog][download][type] = git
+projects[ec_migrate_wp_xml_import_to_blog][download][url] = https://github.com/energycircle/ec_migrate_wp_xml_import_to_blog.git
+projects[ec_migrate_wp_xml_import_to_blog][subdir] = ecfeature-migrate
+projects[ec_migrate_wp_xml_import_to_blog][type] = module
+projects[ec_migrate_wp_xml_import_to_blog][version] = 1.x
