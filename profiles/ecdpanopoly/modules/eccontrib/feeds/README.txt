@@ -194,21 +194,6 @@ Default:     FALSE
 Description: Flag to stop feeds from using its cURL for http requests. See
              http_request_use_curl().
 
-Name:        feeds_http_file_cache_dir
-Default:     private://feeds/cache
-Description: The location on the file system where results of HTTP requests are
-             cached.
-
-Name:        feeds_in_progress_dir
-Default:     private://feeds/in_progress
-Description: The location on the file system where temporary files are stored
-             that are in progress of being imported.
-
-Name:        feeds_sync_cache_feeds_http_interval
-Default:     21600
-Description: How often the feeds cache directory should be checked for orphaned
-             cache files.
-
 Name:        feeds_use_mbstring
 Default:     TRUE
 Description: The extension mbstring is used to convert encodings during parsing.
