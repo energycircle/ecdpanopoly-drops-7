@@ -165,11 +165,11 @@ projects[ec_gallery][subdir] = ecfeature
 projects[ec_gallery][type] = module
 projects[ec_gallery][version] = 1.x
 
-projects[ec_handbook][download][type] = git
-projects[ec_handbook][download][url] = https://github.com/energycircle/ec_handbook.git
-projects[ec_handbook][subdir] = ecfeature
-projects[ec_handbook][type] = module
-projects[ec_handbook][version] = 1.x
+projects[ec_help_documentation][download][type] = git
+projects[ec_help_documentation][download][url] = https://github.com/energycircle/ec_help_documentation.git
+projects[ec_help_documentation][subdir] = ecfeature
+projects[ec_help_documentation][type] = module
+projects[ec_help_documentation][version] = 1.x
 
 projects[ec_panopoly_page_overrides][download][type] = git
 projects[ec_panopoly_page_overrides][download][url] = https://github.com/energycircle/ec_panopoly_page_overrides.git
@@ -266,27 +266,3 @@ projects[ec_migrate_ecpro_news_blog_import][download][url] = https://github.com/
 projects[ec_migrate_ecpro_news_blog_import][subdir] = ecfeature-migrate
 projects[ec_migrate_ecpro_news_blog_import][type] = module
 projects[ec_migrate_ecpro_news_blog_import][version] = 1.x
-
-projects[ec_migrate_ecpro_testimonial_import][download][type] = git
-projects[ec_migrate_ecpro_testimonial_import][download][url] = https://github.com/energycircle/ec_migrate_ecpro_testimonial_import.git
-projects[ec_migrate_ecpro_testimonial_import][subdir] = ecfeature-migrate
-projects[ec_migrate_ecpro_testimonial_import][type] = module
-projects[ec_migrate_ecpro_testimonial_import][version] = 1.x
-
-projects[ec_migrate_ecpro_case_study_import][download][type] = git
-projects[ec_migrate_ecpro_case_study_import][download][url] = https://github.com/energycircle/ec_migrate_ecpro_case_study_import.git
-projects[ec_migrate_ecpro_case_study_import][subdir] = ecfeature-migrate
-projects[ec_migrate_ecpro_case_study_import][type] = module
-projects[ec_migrate_ecpro_case_study_import][version] = 1.x
-
-projects[ec_migrate_ecpro_gallery_import][download][type] = git
-projects[ec_migrate_ecpro_gallery_import][download][url] = https://github.com/energycircle/ec_migrate_ecpro_gallery_import.git
-projects[ec_migrate_ecpro_gallery_import][subdir] = ecfeature-migrate
-projects[ec_migrate_ecpro_gallery_import][type] = module
-projects[ec_migrate_ecpro_gallery_import][version] = 1.x
-
-projects[ec_migrate_wp_xml_import_to_blog][download][type] = git
-projects[ec_migrate_wp_xml_import_to_blog][download][url] = https://github.com/energycircle/ec_migrate_wp_xml_import_to_blog.git
-projects[ec_migrate_wp_xml_import_to_blog][subdir] = ecfeature-migrate
-projects[ec_migrate_wp_xml_import_to_blog][type] = module
-projects[ec_migrate_wp_xml_import_to_blog][version] = 1.x
