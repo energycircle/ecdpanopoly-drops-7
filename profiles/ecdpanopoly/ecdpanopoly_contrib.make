@@ -92,7 +92,7 @@ projects[draggableviews][subdir] = eccontrib
 projects[draggableviews][version] = 2.x
 
 projects[editablefields][subdir] = eccontrib
-projects[editablefields][version] = 1.0-alpha2
+projects[editablefields][version] = 1.0-alpha3
 
 projects[eck][subdir] = eccontrib
 projects[eck][version] = 2.0-rc9
@@ -224,7 +224,7 @@ projects[htmlmail][subdir] = eccontrib
 projects[htmlmail][version] = 2.65
 
 projects[hierarchical_select][subdir] = eccontrib
-projects[hierarchical_select][version] = 3.0-beta7
+projects[hierarchical_select][version] = 3.0-beta8
 
 projects[honeypot][subdir] = eccontrib
 projects[honeypot][version] = 1.22
@@ -322,7 +322,7 @@ projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-featur
 projects[rdfx][patch][1176666] = https://drupal.org/files/find-arc-library-correctly-1176666-14.patch
 
 projects[rabbit_hole][subdir] = eccontrib
-projects[rabbit_hole][version] = 2.23
+projects[rabbit_hole][version] = 2.24
 
 projects[redirect][subdir] = eccontrib
 projects[redirect][version] = 1.0-rc3
