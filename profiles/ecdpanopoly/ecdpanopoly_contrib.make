@@ -555,6 +555,11 @@ libraries[Highcharts][type] = library
 libraries[Highcharts][directory_name] = highcharts
 libraries[Highcharts][download][url] = http://code.highcharts.com/zips/Highcharts-4.2.5.zip
 
+libraries[Highcharts][download][type] = git
+libraries[Highcharts][type] = library
+libraries[Highcharts][directory_name] = Mobile_Detect
+libraries[Highcharts][download][url] = https://github.com/serbanghita/Mobile-Detect
+
 ; THEMES
 projects[adaptivetheme][version] = 3.x
 projects[adaptivetheme][type] = theme
