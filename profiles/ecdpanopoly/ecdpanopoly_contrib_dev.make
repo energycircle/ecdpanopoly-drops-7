@@ -4,6 +4,9 @@ core = 7.x
 projects[context_pantheon][version] = 1.0-alpha3
 projects[context_pantheon][subdir] = ec-dev
 
+projects[context_mobile_detect][version] = 2.0-alpha1
+projects[context_mobile_detect][subdir] = ec-dev
+
 
 ; Feature Tools
 projects[diff][version] = 3.3
