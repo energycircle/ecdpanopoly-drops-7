@@ -161,6 +161,9 @@ function ec_casestudy_rdf_default_mappings() {
       'predicates' => array(),
       'type' => 'rel',
     ),
+    'field_case_study_location' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

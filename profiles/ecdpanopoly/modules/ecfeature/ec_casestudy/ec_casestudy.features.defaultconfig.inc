@@ -11,7 +11,6 @@ function ec_casestudy_defaultconfig_features() {
   return array(
     'ec_casestudy' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -1027,6 +1026,120 @@ function ec_casestudy_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-case_study-field_case_study_location'.
+  $fields['node-case_study-field_case_study_location'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_case_study_location',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'bbox' => array(
+          0 => 'top',
+          1 => 'bottom',
+          2 => 'left',
+          3 => 'right',
+        ),
+        'bottom' => array(
+          0 => 'bottom',
+        ),
+        'centroid' => array(
+          0 => 'lat',
+          1 => 'lon',
+        ),
+        'geohash' => array(
+          0 => 'geohash',
+        ),
+        'lat' => array(
+          0 => 'lat',
+        ),
+        'left' => array(
+          0 => 'left',
+        ),
+        'lon' => array(
+          0 => 'lon',
+        ),
+        'right' => array(
+          0 => 'right',
+        ),
+        'top' => array(
+          0 => 'top',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'geofield',
+      'settings' => array(
+        'backend' => 'default',
+        'srid' => 4326,
+      ),
+      'translatable' => 0,
+      'type' => 'geofield',
+    ),
+    'field_instance' => array(
+      'bundle' => 'case_study',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'geofield',
+          'settings' => array(
+            'data' => 'full',
+            'field_multiple_limit' => -1,
+            'field_multiple_limit_offset' => 0,
+            'field_multiple_limit_order' => 0,
+          ),
+          'type' => 'geofield_wkt',
+          'weight' => 29,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_case_study_location',
+      'label' => 'Location',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'geolocation_googlemaps',
+        'settings' => array(
+          'marker_draggable' => 0,
+          'scrollwheel' => 0,
+        ),
+        'type' => 'geolocation_googlemap',
+        'weight' => 37,
+      ),
+    ),
+  );
+
   // Exported field: 'node-case_study-field_case_study_project_outcome'.
   $fields['node-case_study-field_case_study_project_outcome'] = array(
     'field_config' => array(
@@ -1189,7 +1302,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 39,
+        'weight' => 40,
       ),
     ),
   );
@@ -1263,7 +1376,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 38,
+        'weight' => 39,
       ),
     ),
   );
@@ -1337,87 +1450,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 37,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-case_study-field_casestudy_location'.
-  $fields['node-case_study-field_casestudy_location'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_casestudy_location',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'lat' => array(
-          0 => 'lat',
-        ),
-        'lng' => array(
-          0 => 'lng',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'geolocation',
-      'settings' => array(),
-      'translatable' => 0,
-      'type' => 'geolocation_latlng',
-    ),
-    'field_instance' => array(
-      'bundle' => 'case_study',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 18,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_casestudy_location',
-      'label' => 'Location',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'geolocation_googlemaps',
-        'settings' => array(
-          'marker_draggable' => 0,
-          'scrollwheel' => 0,
-        ),
-        'type' => 'geolocation_googlemap',
-        'weight' => 36,
+        'weight' => 38,
       ),
     ),
   );
@@ -2812,48 +2845,4 @@ function ec_casestudy_defaultconfig_field_default_fields() {
   t('Year Built');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_casestudy_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_cancel_hide_warning_case_study';
-  $strongarm->value = 0;
-  $export['content_type_extras_cancel_hide_warning_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_button_case_study';
-  $strongarm->value = 'Save';
-  $export['content_type_extras_save_button_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_top_buttons_case_study';
-  $strongarm->value = array();
-  $export['content_type_extras_top_buttons_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_draft_enabled_case_study';
-  $strongarm->value = 1;
-  $export['save_draft_enabled_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_draft_skip_required_case_study';
-  $strongarm->value = 0;
-  $export['save_draft_skip_required_case_study'] = $strongarm;
-
-  return $export;
 }
