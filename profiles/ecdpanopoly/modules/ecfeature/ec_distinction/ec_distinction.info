@@ -81,6 +81,7 @@ features[variable][] = node_preview_distinction
 features[variable][] = node_submitted_distinction
 features[variable][] = panelizer_defaults_node_distinction
 features[variable][] = panelizer_defaults_taxonomy_term_distinction_types
+features[variable][] = panelizer_node:distinction:default_selection
 features[variable][] = pathauto_node_distinction_pattern
 features[variable][] = pathauto_taxonomy_term_distinction_types_pattern
 features[variable][] = save_continue_distinction

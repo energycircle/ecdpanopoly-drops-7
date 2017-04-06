@@ -360,6 +360,9 @@ projects[smtp][subdir] = eccontrib
 projects[smtp][version] = 1.6
 projects[smtp][patch][2753115] = https://www.drupal.org/files/issues/2753115-2-smtp-multiple-to-addresses-error.patch
 
+projects[stage_file_proxy][subdir] = eccontrib
+projects[stage_file_proxy][version] = 1.x-dev
+
 projects[table_element][subdir] = eccontrib
 projects[table_element][version] = 1.0-beta5
 

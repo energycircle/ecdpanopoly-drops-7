@@ -52,8 +52,11 @@ function ec_testimonial_field_group_info() {
     'label' => 'General',
     'weight' => '5',
     'children' => array(
-      0 => 'field_display_subtitle',
-      1 => 'field_display_title',
+      0 => 'body',
+      1 => 'field_aggregate_rating',
+      2 => 'field_display_subtitle',
+      3 => 'field_display_title',
+      4 => 'field_tetstimonial_name',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -78,7 +81,7 @@ function ec_testimonial_field_group_info() {
   $field_group->parent_name = 'group_edit_content';
   $field_group->data = array(
     'label' => 'Location Info',
-    'weight' => '7',
+    'weight' => '6',
     'children' => array(
       0 => 'field_content_geo_data',
       1 => 'field_testimonial_city',
@@ -114,7 +117,6 @@ function ec_testimonial_field_group_info() {
       3 => 'field_ref_testimonial_service',
       4 => 'field_ref_testimonial_case_study',
       5 => 'field_ref_testimonial_citypages',
-      6 => 'field_ref_testimonial_prodpage',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -139,24 +141,22 @@ function ec_testimonial_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_edit_content';
   $field_group->data = array(
-    'label' => 'Testimonial Info',
-    'weight' => '6',
+    'label' => 'Support Info',
+    'weight' => '7',
     'children' => array(
-      0 => 'body',
-      1 => 'field_aggregate_rating',
-      2 => 'field_testimonial_image',
-      3 => 'field_testimonial_source',
-      4 => 'field_tetstimonial_name',
-      5 => 'field_video',
+      0 => 'field_testimonial_image',
+      1 => 'field_testimonial_source',
+      2 => 'field_video',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Support Info',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $field_groups['group_testimonial_info|node|testimonial|form'] = $field_group;
@@ -167,7 +167,7 @@ function ec_testimonial_field_group_info() {
   t('Edit Content');
   t('General');
   t('Location Info');
-  t('Testimonial Info');
+  t('Support Info');
 
   return $field_groups;
 }
