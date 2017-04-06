@@ -162,6 +162,9 @@ projects[feeds_ex][version] = 1.x
 projects[feeds_tamper][subdir] = eccontrib
 projects[feeds_tamper][version] = 1.1
 
+projects[feeds_xpathparser][subdir] = eccontrib
+projects[feeds_xpathparser][version] = 1.1
+
 projects[field_collection][subdir] = eccontrib
 projects[field_collection][version] = 1.0-beta12
 
