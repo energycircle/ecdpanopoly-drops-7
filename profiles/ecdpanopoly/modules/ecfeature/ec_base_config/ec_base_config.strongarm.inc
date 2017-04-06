@@ -1566,7 +1566,7 @@ campaign-form-entityform-edit-form';
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
-    'taxonomy' => TRUE,
+    'node' => TRUE,
     'user' => TRUE,
   );
   $export['path_alias_whitelist'] = $strongarm;

@@ -9,6 +9,7 @@ dependencies[] = panopoly_config
 dependencies[] = panopoly_images
 dependencies[] = panopoly_magic
 dependencies[] = panopoly_pages
+dependencies[] = views_content
 features[ctools][] = field_group:field_group:1
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
