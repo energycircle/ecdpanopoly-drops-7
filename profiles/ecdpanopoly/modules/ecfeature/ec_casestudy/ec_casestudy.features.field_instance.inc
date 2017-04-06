@@ -690,6 +690,69 @@ function ec_casestudy_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-case_study-field_case_study_location'.
+  $field_instances['node-case_study-field_case_study_location'] = array(
+    'bundle' => 'case_study',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'geofield',
+        'settings' => array(
+          'data' => 'full',
+          'field_multiple_limit' => -1,
+          'field_multiple_limit_offset' => 0,
+          'field_multiple_limit_order' => 0,
+        ),
+        'type' => 'geofield_wkt',
+        'weight' => 29,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_case_study_location',
+    'label' => 'Location',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'geolocation_googlemaps',
+      'settings' => array(
+        'marker_draggable' => 0,
+        'scrollwheel' => 0,
+      ),
+      'type' => 'geolocation_googlemap',
+      'weight' => 37,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-case_study-field_case_study_project_outcome'.
   $field_instances['node-case_study-field_case_study_project_outcome'] = array(
@@ -811,7 +874,7 @@ function ec_casestudy_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 39,
+      'weight' => 40,
     ),
   );
 
@@ -869,7 +932,7 @@ function ec_casestudy_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 38,
+      'weight' => 39,
     ),
   );
 
@@ -927,64 +990,7 @@ function ec_casestudy_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 37,
-    ),
-  );
-
-  // Exported field_instance: 'node-case_study-field_casestudy_location'.
-  $field_instances['node-case_study-field_casestudy_location'] = array(
-    'bundle' => 'case_study',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_casestudy_location',
-    'label' => 'Location',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'geolocation_googlemaps',
-      'settings' => array(
-        'marker_draggable' => 0,
-        'scrollwheel' => 0,
-      ),
-      'type' => 'geolocation_googlemap',
-      'weight' => 36,
+      'weight' => 38,
     ),
   );
 

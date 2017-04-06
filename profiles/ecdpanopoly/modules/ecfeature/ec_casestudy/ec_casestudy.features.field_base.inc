@@ -112,6 +112,56 @@ function ec_casestudy_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_case_study_location'.
+  $field_bases['field_case_study_location'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_case_study_location',
+    'indexes' => array(
+      'bbox' => array(
+        0 => 'top',
+        1 => 'bottom',
+        2 => 'left',
+        3 => 'right',
+      ),
+      'bottom' => array(
+        0 => 'bottom',
+      ),
+      'centroid' => array(
+        0 => 'lat',
+        1 => 'lon',
+      ),
+      'geohash' => array(
+        0 => 'geohash',
+      ),
+      'lat' => array(
+        0 => 'lat',
+      ),
+      'left' => array(
+        0 => 'left',
+      ),
+      'lon' => array(
+        0 => 'lon',
+      ),
+      'right' => array(
+        0 => 'right',
+      ),
+      'top' => array(
+        0 => 'top',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'geofield',
+    'settings' => array(
+      'backend' => 'default',
+      'srid' => 4326,
+    ),
+    'translatable' => 0,
+    'type' => 'geofield',
+  );
+
   // Exported field_base: 'field_case_study_project_outcome'.
   $field_bases['field_case_study_project_outcome'] = array(
     'active' => 1,
@@ -174,28 +224,6 @@ function ec_casestudy_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'number_integer',
-  );
-
-  // Exported field_base: 'field_casestudy_location'.
-  $field_bases['field_casestudy_location'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_casestudy_location',
-    'indexes' => array(
-      'lat' => array(
-        0 => 'lat',
-      ),
-      'lng' => array(
-        0 => 'lng',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'geolocation',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'geolocation_latlng',
   );
 
   // Exported field_base: 'field_ref_article_case_study'.
