@@ -11,6 +11,9 @@ function ec_service_stack_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "cer" && $api == "default_cer_presets") {
     return array("version" => "1");
   }
+  if ($module == "ctools_custom_content" && $api == "ctools_content") {
+    return array("version" => "1");
+  }
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }

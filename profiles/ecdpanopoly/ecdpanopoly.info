@@ -122,15 +122,17 @@ dependencies[] = uuid_path
 
 
 ;EC features
-dependencies[] = ec_base_config
 dependencies[] = ec_foundation_image_styles
+dependencies[] = ec_base_config
+dependencies[] = ec_base_content
+dependencies[] = ec_mobile_changes
 dependencies[] = ec_panopoly_page_overrides
-dependencies[] = energycircle_apps
 dependencies[] = ec_mail_settings
 dependencies[] = ec_custom_tokens
+dependencies[] = energycircle_apps
 
 
 ; Information added by flux423 - updated on 2016-10-5
-version = "7.x-1.6.1"
+version = "7.x-1.6.2"
 core = "7.x"
 project = "ECDPanopoly"

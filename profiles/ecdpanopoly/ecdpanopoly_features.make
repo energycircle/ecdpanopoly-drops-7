@@ -171,6 +171,12 @@ projects[ec_handbook][subdir] = ecfeature
 projects[ec_handbook][type] = module
 projects[ec_handbook][version] = 1.x
 
+projects[ec_mobile_changes][download][type] = git
+projects[ec_mobile_changes][download][url] = https://github.com/energycircle/ec_mobile_changes.git
+projects[ec_mobile_changes][subdir] = ecfeature
+projects[ec_mobile_changes][type] = module
+projects[ec_mobile_changes][version] = 1.x
+
 projects[ec_panopoly_page_overrides][download][type] = git
 projects[ec_panopoly_page_overrides][download][url] = https://github.com/energycircle/ec_panopoly_page_overrides.git
 projects[ec_panopoly_page_overrides][subdir] = ecfeature

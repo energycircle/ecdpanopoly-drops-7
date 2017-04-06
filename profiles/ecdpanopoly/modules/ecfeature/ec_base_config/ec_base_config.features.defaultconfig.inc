@@ -982,9 +982,7 @@ function ec_base_config_defaultconfig_user_default_permissions() {
   // Exported permission: 'administer sharethis'.
   $permissions['administer sharethis'] = array(
     'name' => 'administer sharethis',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'sharethis',
   );
 
