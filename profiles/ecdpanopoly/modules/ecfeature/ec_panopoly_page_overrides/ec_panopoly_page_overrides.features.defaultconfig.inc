@@ -126,7 +126,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'label' => 'Body',
       'required' => 1,
       'settings' => array(
-        'display_summary' => 0,
+        'display_summary' => 1,
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
@@ -134,6 +139,12 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_label_summary' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_summary' => '',
+          'maxlength_js_truncate_html' => 0,
           'rows' => 30,
           'summary_rows' => 5,
         ),

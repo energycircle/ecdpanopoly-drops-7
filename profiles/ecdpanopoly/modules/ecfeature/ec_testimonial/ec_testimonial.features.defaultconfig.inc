@@ -1004,7 +1004,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 17,
+        'weight' => 5,
       ),
     ),
   );
@@ -1088,7 +1088,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'stars',
-        'weight' => 15,
+        'weight' => 4,
       ),
     ),
   );
@@ -1262,7 +1262,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 7,
       ),
     ),
   );
@@ -1353,7 +1353,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 6,
       ),
     ),
   );
@@ -1578,7 +1578,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 14,
+        'weight' => 13,
       ),
     ),
   );
@@ -1779,7 +1779,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 16,
+        'weight' => 3,
       ),
     ),
   );
@@ -1897,7 +1897,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 13,
+        'weight' => 14,
       ),
     ),
   );

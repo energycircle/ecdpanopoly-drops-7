@@ -14,7 +14,7 @@ function ec_distinction_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_distinction';
-  $strongarm->value = 'edit-menu';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_distinction'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -70,7 +70,7 @@ function ec_distinction_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'content_type_extras_save_and_new_distinction';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['content_type_extras_save_and_new_distinction'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -249,29 +249,41 @@ function ec_distinction_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_distinction';
   $strongarm->value = array(
     'status' => 1,
+    'help' => '',
     'view modes' => array(
       'page_manager' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'default' => array(
         'status' => 1,
+        'substitute' => '',
         'default' => 1,
         'choice' => 1,
       ),
       'teaser' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'show_this_block' => array(
         'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'grouped_teaser' => array(
+        'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'featured' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
@@ -318,6 +330,13 @@ function ec_distinction_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:distinction:default_selection';
+  $strongarm->value = 'node:distinction:default:default';
+  $export['panelizer_node:distinction:default_selection'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_distinction_pattern';
   $strongarm->value = 'distinction/[node:title] ';
   $export['pathauto_node_distinction_pattern'] = $strongarm;
@@ -350,7 +369,9 @@ function ec_distinction_strongarm() {
   $strongarm->value = array(
     0 => 'create_roles',
     1 => 'edit_roles',
-    2 => 'delete_roles',
+    2 => 'edit_own_roles',
+    3 => 'delete_roles',
+    4 => 'delete_own_roles',
   );
   $export['user_permissions_distinction'] = $strongarm;
 
