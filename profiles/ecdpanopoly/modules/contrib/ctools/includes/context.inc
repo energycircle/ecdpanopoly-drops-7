@@ -42,7 +42,7 @@ class ctools_context {
   var $restrictions = array();
   var $empty = FALSE;
 
-  function __construct($type = 'none', $data = NULL) {
+  function ctools_context($type = 'none', $data = NULL) {
     $this->type  = $type;
     $this->data  = $data;
     $this->title = t('Unknown context');
@@ -119,7 +119,7 @@ class ctools_context_required {
    * @param ...
    *   One or more keywords to use for matching which contexts are allowed.
    */
-  function __construct($title) {
+  function ctools_context_required($title) {
     $args = func_get_args();
     $this->title = array_shift($args);
 
@@ -204,6 +204,10 @@ class ctools_context_required {
  */
 class ctools_context_optional extends ctools_context_required {
   var $required = FALSE;
+  function ctools_context_optional() {
+    $args = func_get_args();
+    call_user_func_array(array($this, 'ctools_context_required'), $args);
+  }
 
   /**
    * Add the 'empty' context which is possible for optional
@@ -676,19 +680,14 @@ function ctools_context_keyword_substitute($string, $keywords, $contexts, $conve
         }
       }
 
-      if (!isset($context_keywords[$context])) {
-        $keywords['%' . $keyword] = '%' . $keyword;
+      if (empty($context_keywords[$context]) || !empty($context_keywords[$context]->empty)) {
+        $keywords['%' . $keyword] = '';
+      }
+      else if (!empty($converter)) {
+        $keywords['%' . $keyword] = ctools_context_convert_context($context_keywords[$context], $converter, $converter_options);
       }
       else {
-        if (empty($context_keywords[$context]) || !empty($context_keywords[$context]->empty)) {
-          $keywords['%' . $keyword] = '';
-        }
-        else if (!empty($converter)) {
-          $keywords['%' . $keyword] = ctools_context_convert_context($context_keywords[$context], $converter, $converter_options);
-        }
-        else {
-          $keywords['%' . $keyword] = $context_keywords[$keyword]->title;
-        }
+        $keywords['%' . $keyword] = $context_keywords[$keyword]->title;
       }
     }
   }
@@ -1164,7 +1163,7 @@ function ctools_context_match_required_contexts($required, $contexts) {
   }
 
   foreach ($required as $r) {
-    $context = clone array_shift($contexts);
+    $context = clone(array_shift($contexts));
     $context->identifier = $r['identifier'];
     $context->page_title = isset($r['title']) ? $r['title'] : '';
     $context->keyword    = $r['keyword'];
