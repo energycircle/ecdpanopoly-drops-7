@@ -1,0 +1,37 @@
+//
+// Custom sass variables and mixins
+//
+// Variables
+// -----------------------------------------------------------------------------
+// The variables set here serve only as example of how you can use SASS variables
+// to centralize and control frequently used styles more easily. Here you will
+// find variables for colors, fonts and the global gutter width.
+//
+// Mixins
+// -----------------------------------------------------------------------------
+// To use a mixin in this file, add this line to the top of your .scss file:
+//   @import "base"; (_base.scss imports _custom.scss).
+//
+// Then to use a mixin for a particular rule, add this inside the ruleset's
+// curly brackets:
+//   @include mix-in-name;
+//
+
+//
+// Color Variables
+// Colors used in the sample global.styles. You can use these to recolor many
+// elements such as forms, tables, tabs etc.
+//
+
+
+$primary:         #641919;    // to match the page background, default is white
+$secondary:       #fff;    // all borders set in global.styles - tables, fieldset, primary links
+
+
+@mixin mobile-top($margin) {
+
+      display: inline-block;
+      width: calc(50% - #{$margin});
+      float: left;
+      margin: $margin / 2;
+}

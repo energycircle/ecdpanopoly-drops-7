@@ -4,15 +4,18 @@ core = 7.x
 projects[context_pantheon][version] = 1.0-alpha3
 projects[context_pantheon][subdir] = ec-dev
 
+projects[context_mobile_detect][version] = 2.0-alpha1
+projects[context_mobile_detect][subdir] = ec-dev
+
 
 ; Feature Tools
-projects[diff][version] = 3.2
+projects[diff][version] = 3.3
 projects[diff][subdir] = ec-dev
 
 projects[features_extra][version] = 1.0
 projects[features_extra][subdir] = ec-dev
 
-projects[uuid_features][version] = 1.x-dev
+projects[uuid_features][version] = 1.x
 projects[uuid_features][subdir] = ec-dev
 projects[uuid_features][patch] = https://www.drupal.org/files/issues/added-filter-check-on-feature-node-rebuild-2307757-4.patch
 projects[uuid_features][patch] = https://www.drupal.org/files/issues/uuid_features-fpp_panelizer_view_mode_object_array.patch
@@ -50,5 +53,6 @@ projects[deploy_services_client][subdir] = eccontrib
 projects[deploy_services_client][version] = 1.x
 
 projects[deploy][subdir] = eccontrib
-projects[deploy][version] = 3.x-dev
+projects[deploy][version] = 3.x
 projects[deploy][patch] = https://www.drupal.org/files/deploy-1520410-term_object_needs_vid_property-6.patch
+projects[deploy][patch][1604938] = https://www.drupal.org/files/deploy-1604938_1.patch

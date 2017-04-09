@@ -5,3 +5,6 @@
  */
 
 include_once 'ec_mobile_changes.features.inc';
+
+$myModulePath = drupal_get_path('module', 'ec_mobile_changes');
+drupal_add_css($myModulePath . '/theme/css/global.feature.base.css');

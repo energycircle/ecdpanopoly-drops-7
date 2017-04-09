@@ -1,0 +1,22 @@
+/* _base.scss imports _custom.scss and other partials.*/
+@import "base";
+
+.mobile {
+
+    width: 100%;
+
+    .block-inner {
+
+        margin: 0;
+    }
+
+    .button {
+
+        @include mobile-top(2px); //--Sets the distance between buttons
+
+        p {
+
+            margin: 0;
+        }
+    }
+}
