@@ -6,8 +6,8 @@ core = 7.x
 configure = admin/config/system/module-missing-message-fixer
 
 ; Information added by Drupal.org packaging script on 2016-11-18
-version = "7.x-1.2"
+version = "7.x-1.1+2-dev"
 core = "7.x"
 project = "module_missing_message_fixer"
-datestamp = "1479482948"
+datestamp = "1479482033"
 

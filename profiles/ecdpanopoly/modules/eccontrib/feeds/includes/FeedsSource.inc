@@ -415,17 +415,10 @@ class FeedsSource extends FeedsConfigurable {
     // Clean up.
     $result = $this->progressImporting();
     if ($result == FEEDS_BATCH_COMPLETE || isset($e)) {
-      $this->imported = time();
-      $this->log('import', 'Imported in @s seconds.', array('@s' => $this->imported - $this->state[FEEDS_START]), WATCHDOG_INFO);
-      $this->importer->fetcher->afterImport($this);
-      module_invoke_all('feeds_after_import', $this);
-      if (module_exists('rules')) {
-        rules_invoke_event('feeds_after_import', $this);
-      }
-      unset($this->fetcher_result, $this->state);
+      $this->finishImport();
     }
-    $this->save();
 
+    $this->save();
     $this->releaseLock();
 
     if (isset($e)) {
@@ -451,7 +444,7 @@ class FeedsSource extends FeedsConfigurable {
     }
 
     $this->acquireLock();
-    $start = time();
+    $this->state[FEEDS_START] = time();
 
     try {
       module_invoke_all('feeds_before_import', $this);
@@ -473,20 +466,33 @@ class FeedsSource extends FeedsConfigurable {
       $this->exception = $e;
     }
 
-    module_invoke_all('feeds_after_import', $this);
-
-    $this->imported = time();
-    $this->log('import', 'Imported in @s seconds.', array('@s' => $this->imported - $start), WATCHDOG_INFO);
-
-    unset($this->fetcher_result, $this->state);
+    $this->finishImport();
 
     $this->save();
-
     $this->releaseLock();
 
     if (isset($e)) {
       throw $e;
     }
+  }
+
+  /**
+   * Cleans up after an import.
+   */
+  protected function finishImport() {
+    $this->imported = time();
+    $this->log('import', 'Imported in @s seconds.', array('@s' => $this->imported - $this->state[FEEDS_START]), WATCHDOG_INFO);
+
+    // Allow fetcher to react on finishing importing.
+    $this->importer->fetcher->afterImport($this);
+
+    // Allow other modules to react upon finishing importing.
+    module_invoke_all('feeds_after_import', $this);
+    if (module_exists('rules')) {
+      rules_invoke_event('feeds_after_import', $this);
+    }
+
+    $this->clearStates();
   }
 
   /**
@@ -519,7 +525,7 @@ class FeedsSource extends FeedsConfigurable {
     $result = $this->progressClearing();
     if ($result == FEEDS_BATCH_COMPLETE || isset($e)) {
       module_invoke_all('feeds_after_clear', $this);
-      unset($this->state);
+      $this->clearStates();
     }
     $this->save();
     if (isset($e)) {
@@ -611,10 +617,27 @@ class FeedsSource extends FeedsConfigurable {
   }
 
   /**
+   * Clears states.
+   */
+  protected function clearStates() {
+    $this->state = array();
+    $this->fetcher_result = NULL;
+  }
+
+  /**
    * Count items imported by this source.
    */
   public function itemCount() {
     return $this->importer->processor->itemCount($this);
+  }
+
+  /**
+   * Unlocks a feed.
+   */
+  public function unlock() {
+    $this->clearStates();
+    $this->save();
+    $this->releaseLock();
   }
 
   /**
@@ -699,21 +722,52 @@ class FeedsSource extends FeedsConfigurable {
   }
 
   /**
+   * Checks whether or not the source configuration is valid.
+   *
+   * @return bool
+   *   True if it is valid.
+   *   False otherwise.
+   */
+  public function hasValidConfiguration() {
+    // If there is no feed nid given, there must be no content type specified.
+    $standalone = empty($this->feed_nid) && empty($this->importer->config['content_type']);
+
+    // If there is a feed nid given, there must be a content type specified.
+    $attached = !empty($this->feed_nid) && !empty($this->importer->config['content_type']);
+
+    if ($standalone || $attached) {
+      return TRUE;
+    }
+    return FALSE;
+  }
+
+  /**
+   * Overrides FeedsConfigurable::doesExist().
+   *
+   * Checks the following:
+   * - If the importer is persistent (= defined in code or DB).
+   * - If the source is persistent (= defined in DB).
+   */
+  public function doesExist() {
+    return $this->importer->doesExist() && parent::doesExist();
+  }
+
+  /**
    * Only return source if configuration is persistent and valid.
    *
    * @see FeedsConfigurable::existing().
    */
   public function existing() {
-    // If there is no feed nid given, there must be no content type specified.
-    // If there is a feed nid given, there must be a content type specified.
-    // Ensure that importer is persistent (= defined in code or DB).
-    // Ensure that source is persistent (= defined in DB).
-    if ((empty($this->feed_nid) && empty($this->importer->config['content_type'])) ||
-        (!empty($this->feed_nid) && !empty($this->importer->config['content_type']))) {
-      $this->importer->existing();
-      return parent::existing();
+    // Ensure that the source configuration is valid.
+    if (!$this->hasValidConfiguration()) {
+      throw new FeedsNotExistingException(t('Source configuration not valid.'));
     }
-    throw new FeedsNotExistingException(t('Source configuration not valid.'));
+
+    // Ensure that the importer is persistent (= defined in code or DB).
+    $this->importer->existing();
+
+    // Ensure that the source is persistent (= defined in DB).
+    return parent::existing();
   }
 
   /**

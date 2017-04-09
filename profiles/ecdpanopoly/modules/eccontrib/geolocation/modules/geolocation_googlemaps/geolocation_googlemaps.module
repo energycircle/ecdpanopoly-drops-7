@@ -273,7 +273,7 @@ function geolocation_googlemaps_field_formatter_view($entity_type, $entity, $fie
         // Attach CSS and JS files via FAPI '#attached'.
         $map_element['googlemap']['#attached']['css'][] = drupal_get_path('module', 'geolocation_googlemaps') . '/geolocation_googlemaps.css';
         $api_key = variable_get('geolocation_googlemaps_api_key', '');
-        $data = array();
+        $data = [];
         if (!empty($api_key)) {
             $data['key'] = $api_key;
         }
@@ -588,7 +588,7 @@ function geolocation_googlemaps_field_widget_form_alter(&$element, &$form_state,
 function geolocation_googlemaps_attach_google_js(&$element) {
   $js_added_already = &drupal_static(__FUNCTION__, FALSE);
   if (!$js_added_already) {
-    $data = array();
+    $data = [];
     $api_key = variable_get('geolocation_googlemaps_api_key', '');
     if (!empty($api_key)) {
       $data['key'] = $api_key;
