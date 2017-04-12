@@ -71,6 +71,12 @@ function ec_base_config_features_override_default_overrides() {
     'weight' => 0,
   );
   $overrides["filter.panopoly_html_text.filters|wysiwyg"]["DELETED"] = TRUE;
+  $overrides["filter.panopoly_wysiwyg_text.cache"] = 0;
+  $overrides["filter.panopoly_wysiwyg_text.filters|filter_tokens"] = array(
+    'settings' => array(),
+    'status' => 1,
+    'weight' => 0,
+  );
 
   // Exported overrides for: wysiwyg
   $overrides["wysiwyg.panopoly_html_text.rdf_mapping"] = array();
