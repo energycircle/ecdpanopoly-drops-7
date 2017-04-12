@@ -166,4 +166,7 @@ function ec_base_config_wysiwyg_default_profiles_alter(&$data) {
   if (isset($data['panopoly_html_text'])) {
     $data['panopoly_html_text']['rdf_mapping'] = array(); /* WAS: '' */
   }
+  if (isset($data['panopoly_wysiwyg_text'])) {
+    $data['panopoly_wysiwyg_text']['rdf_mapping'] = array(); /* WAS: '' */
+  }
 }

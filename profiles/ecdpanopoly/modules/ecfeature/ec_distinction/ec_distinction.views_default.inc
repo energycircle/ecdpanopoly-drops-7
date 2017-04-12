@@ -180,10 +180,7 @@ function ec_distinction_views_default_views() {
   $handler->display->display_options['filters']['field_distinction_type_tid']['table'] = 'field_data_field_distinction_type';
   $handler->display->display_options['filters']['field_distinction_type_tid']['field'] = 'field_distinction_type_tid';
   $handler->display->display_options['filters']['field_distinction_type_tid']['value'] = array(
-    16 => '16',
-    17 => '17',
-    19 => '19',
-    18 => '18',
+    4 => '4',
   );
   $handler->display->display_options['filters']['field_distinction_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_distinction_type_tid']['vocabulary'] = 'distinction_types';
