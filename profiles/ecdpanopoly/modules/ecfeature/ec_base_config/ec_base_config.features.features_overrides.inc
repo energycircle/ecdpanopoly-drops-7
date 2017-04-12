@@ -74,6 +74,7 @@ function ec_base_config_features_override_default_overrides() {
 
   // Exported overrides for: wysiwyg
   $overrides["wysiwyg.panopoly_html_text.rdf_mapping"] = array();
+  $overrides["wysiwyg.panopoly_wysiwyg_text.rdf_mapping"] = array();
 
  return $overrides;
 }
