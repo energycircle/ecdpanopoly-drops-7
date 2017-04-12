@@ -728,19 +728,22 @@ function ec_citypages_field_default_field_instances() {
     'label' => 'Short Description',
     'required' => 0,
     'settings' => array(
-      'exclude_cv' => FALSE,
       'linkit' => array(
         'button_text' => 'Search',
         'enable' => 0,
         'profile' => '',
       ),
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
         'rows' => 3,
       ),
       'type' => 'text_textarea',

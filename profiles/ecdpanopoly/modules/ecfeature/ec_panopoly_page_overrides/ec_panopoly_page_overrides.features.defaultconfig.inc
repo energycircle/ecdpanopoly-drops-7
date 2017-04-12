@@ -64,7 +64,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 1,
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'hidden',
@@ -106,7 +106,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 19,
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -196,7 +196,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 5,
+          'weight' => 9,
         ),
         'featured' => array(
           'label' => 'above',
@@ -220,7 +220,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 14,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -299,7 +299,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 7,
+          'weight' => 11,
         ),
         'featured' => array(
           'label' => 'above',
@@ -323,7 +323,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 15,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -361,101 +361,6 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-panopoly_page-field_featured_categories'.
-  $fields['node-panopoly_page-field_featured_categories'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_featured_categories',
-      'foreign keys' => array(
-        'tid' => array(
-          'columns' => array(
-            'tid' => 'tid',
-          ),
-          'table' => 'taxonomy_term_data',
-        ),
-      ),
-      'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'taxonomy',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'vocabulary' => 'panopoly_categories',
-            'parent' => 0,
-          ),
-        ),
-        'options_list_callback' => 'title_taxonomy_allowed_values',
-      ),
-      'translatable' => 0,
-      'type' => 'taxonomy_term_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'panopoly_page',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 3,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'search_result' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_featured_categories',
-      'label' => 'Categories',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => 4,
-      ),
-    ),
-  );
-
   // Exported field: 'node-panopoly_page-field_featured_image'.
   $fields['node-panopoly_page-field_featured_image'] = array(
     'field_config' => array(
@@ -488,6 +393,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'panopoly_page',
+      'default_value' => array(),
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -495,7 +401,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 3,
         ),
         'featured' => array(
           'label' => 'hidden',
@@ -539,7 +445,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 12,
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -572,8 +478,15 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'media',
         'settings' => array(
+          'allowed_schemes' => array(
+            'public' => 'public',
+          ),
+          'allowed_types' => array(
+            'image' => 'image',
+          ),
+          'browser_plugins' => array(),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 1,
@@ -591,7 +504,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'preview_image_style' => 'panopoly_image_full',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'media_generic',
         'weight' => 3,
       ),
     ),
@@ -637,7 +550,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 2,
+          'weight' => 7,
         ),
         'featured' => array(
           'label' => 'above',
@@ -661,7 +574,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 11,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -728,7 +641,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 6,
+          'weight' => 10,
         ),
         'featured' => array(
           'label' => 'above',
@@ -752,7 +665,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 18,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -782,6 +695,336 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
         ),
         'type' => 'text_textfield',
         'weight' => 5,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-panopoly_page-field_ref_page_service_category'.
+  $fields['node-panopoly_page-field_ref_page_service_category'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_page_service_category',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'service_category' => 'service_category',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'panopoly_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 2,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_page_service_category',
+      'label' => 'Service Category',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 17,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-panopoly_page-field_ref_page_service_group'.
+  $fields['node-panopoly_page-field_ref_page_service_group'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_page_service_group',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'service_group' => 'service_group',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'panopoly_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_page_service_group',
+      'label' => 'Service Group',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 18,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-panopoly_page-field_ref_page_services'.
+  $fields['node-panopoly_page-field_ref_page_services'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_page_services',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'service' => 'service',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'panopoly_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 1,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 1,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_page_services',
+      'label' => 'Services',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 16,
       ),
     ),
   );
@@ -844,7 +1087,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 4,
+          'weight' => 8,
         ),
         'featured' => array(
           'label' => 'above',
@@ -868,7 +1111,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 17,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -909,11 +1152,13 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
   t('Button Text');
   t('CTA form');
   t('Call to Action');
-  t('Categories');
   t('Enter the YouTube video embed path only (not the full embed code). Example: https://www.youtube.com/embed/ABCD');
   t('Feature content');
   t('Featured Video');
   t('Primary Image');
+  t('Service Category');
+  t('Service Group');
+  t('Services');
 
   return $fields;
 }

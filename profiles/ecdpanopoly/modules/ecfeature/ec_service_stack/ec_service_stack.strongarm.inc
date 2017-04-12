@@ -452,6 +452,10 @@ function ec_service_stack_strongarm() {
             'weight' => '10',
             'visible' => FALSE,
           ),
+          'show_this_block' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
@@ -516,6 +520,10 @@ function ec_service_stack_strongarm() {
             'weight' => '10',
             'visible' => FALSE,
           ),
+          'show_this_block' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
@@ -578,6 +586,10 @@ function ec_service_stack_strongarm() {
         'sharethis' => array(
           'default' => array(
             'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'show_this_block' => array(
+            'weight' => '1',
             'visible' => FALSE,
           ),
         ),

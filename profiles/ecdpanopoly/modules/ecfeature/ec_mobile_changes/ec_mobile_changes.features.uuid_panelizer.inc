@@ -29,7 +29,7 @@ function ec_mobile_changes_uuid_features_default_panelizer() {
   $display->title = '%node:title';
   $display->uuid = '10c9e351-f69c-4629-b191-77b8b01f4f1c';
   $display->storage_type = 'panelizer_entity';
-  $display->storage_id = 'node:6:default';
+  $display->storage_id = 'node:4:default';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();

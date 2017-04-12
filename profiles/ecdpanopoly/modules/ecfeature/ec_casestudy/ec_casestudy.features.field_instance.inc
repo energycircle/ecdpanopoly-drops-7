@@ -198,7 +198,7 @@ function ec_casestudy_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 12,
     ),
   );
 
@@ -620,7 +620,7 @@ function ec_casestudy_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 5,
+      'weight' => 9,
     ),
   );
 
@@ -699,14 +699,8 @@ function ec_casestudy_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'geofield',
-        'settings' => array(
-          'data' => 'full',
-          'field_multiple_limit' => -1,
-          'field_multiple_limit_offset' => 0,
-          'field_multiple_limit_order' => 0,
-        ),
-        'type' => 'geofield_wkt',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 29,
       ),
       'featured' => array(
@@ -1051,7 +1045,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 11,
     ),
   );
 
@@ -1112,7 +1106,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 10,
     ),
   );
 
@@ -1367,7 +1361,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 12,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1391,7 +1385,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1642,7 +1636,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1707,7 +1701,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1772,7 +1766,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',

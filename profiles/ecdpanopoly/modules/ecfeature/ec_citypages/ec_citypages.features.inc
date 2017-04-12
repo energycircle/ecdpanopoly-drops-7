@@ -133,6 +133,9 @@ function ec_citypages_rdf_default_mappings() {
       'predicates' => array(),
       'type' => 'rel',
     ),
+    'field_citypagesshort_description' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

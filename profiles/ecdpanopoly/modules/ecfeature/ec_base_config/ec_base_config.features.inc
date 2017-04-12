@@ -98,3 +98,27 @@ function ec_base_config_file_default_types_alter(&$data) {
     $data['video']->mimetypes[2] = 'video/youtube'; /* WAS: '' */
   }
 }
+
+/**
+ * Implements hook_filter_default_formats_alter().
+ */
+function ec_base_config_filter_default_formats_alter(&$data) {
+  if (isset($data['panopoly_html_text'])) {
+    $data['panopoly_html_text']['cache'] = 0; /* WAS: 1 */
+    $data['panopoly_html_text']['filters']['filter_tokens'] = array(
+      'settings' => array(),
+      'status' => 1,
+      'weight' => 0,
+    ); /* WAS: '' */
+    unset($data['panopoly_html_text']['filters']['wysiwyg']);
+  }
+}
+
+/**
+ * Implements hook_wysiwyg_default_profiles_alter().
+ */
+function ec_base_config_wysiwyg_default_profiles_alter(&$data) {
+  if (isset($data['panopoly_html_text'])) {
+    $data['panopoly_html_text']['rdf_mapping'] = array(); /* WAS: '' */
+  }
+}
