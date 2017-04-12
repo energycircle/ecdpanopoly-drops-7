@@ -157,6 +157,14 @@ function ec_base_config_filter_default_formats_alter(&$data) {
     ); /* WAS: '' */
     unset($data['panopoly_html_text']['filters']['wysiwyg']);
   }
+  if (isset($data['panopoly_wysiwyg_text'])) {
+    $data['panopoly_wysiwyg_text']['cache'] = 0; /* WAS: 1 */
+    $data['panopoly_wysiwyg_text']['filters']['filter_tokens'] = array(
+      'settings' => array(),
+      'status' => 1,
+      'weight' => 0,
+    ); /* WAS: '' */
+  }
 }
 
 /**

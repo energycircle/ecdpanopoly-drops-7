@@ -682,6 +682,7 @@ function ec_base_config_default_roles_permissions() {
       'delete terms in 5' => TRUE,
       'delete terms in 6' => TRUE,
       'delete terms in 7' => TRUE,
+      'diff view changes' => TRUE,
       'display drupal links' => TRUE,
       'download any audio files' => TRUE,
       'download any document files' => TRUE,
