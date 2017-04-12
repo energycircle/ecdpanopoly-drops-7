@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EC External Forms feature.
+ */
+
+include_once 'ec_external_forms.features.inc';

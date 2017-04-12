@@ -24,5 +24,17 @@ function ec_base_config_features_override_default_overrides() {
   $overrides["file_type.video.mimetypes|1"] = 'video/vimeo';
   $overrides["file_type.video.mimetypes|2"] = 'video/youtube';
 
+  // Exported overrides for: filter
+  $overrides["filter.panopoly_html_text.cache"] = 0;
+  $overrides["filter.panopoly_html_text.filters|filter_tokens"] = array(
+    'settings' => array(),
+    'status' => 1,
+    'weight' => 0,
+  );
+  $overrides["filter.panopoly_html_text.filters|wysiwyg"]["DELETED"] = TRUE;
+
+  // Exported overrides for: wysiwyg
+  $overrides["wysiwyg.panopoly_html_text.rdf_mapping"] = array();
+
  return $overrides;
 }

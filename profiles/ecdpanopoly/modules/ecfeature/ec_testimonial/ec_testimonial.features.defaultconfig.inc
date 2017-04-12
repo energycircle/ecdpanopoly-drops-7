@@ -301,7 +301,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 10,
+          'weight' => 15,
         ),
         'featured' => array(
           'label' => 'above',
@@ -325,7 +325,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 6,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -646,7 +646,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 2,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -756,7 +756,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 2,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -866,7 +866,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 2,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1172,188 +1172,6 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         ),
         'type' => 'geolocation_googlemap',
         'weight' => 17,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-testimonial-field_display_subtitle'.
-  $fields['node-testimonial-field_display_subtitle'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_display_subtitle',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 255,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'testimonial',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 4,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 4,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_display_subtitle',
-      'label' => 'Display subtitle',
-      'required' => 0,
-      'settings' => array(
-        'linkit' => array(
-          'button_text' => 'Search',
-          'enable' => 0,
-          'profile' => '',
-        ),
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-        'weight' => 7,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-testimonial-field_display_title'.
-  $fields['node-testimonial-field_display_title'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_display_title',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 255,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'testimonial',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 3,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 3,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_display_title',
-      'label' => 'Display Title',
-      'required' => 0,
-      'settings' => array(
-        'linkit' => array(
-          'button_text' => 'Search',
-          'enable' => 0,
-          'profile' => '',
-        ),
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-        'weight' => 6,
       ),
     ),
   );
@@ -1906,8 +1724,6 @@ function ec_testimonial_defaultconfig_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Aggregate Rating');
   t('Content Geo Data');
-  t('Display Title');
-  t('Display subtitle');
   t('Enter the name of the person who wrote this testimonial, as it should be displayed on the site. Example: John Smith');
   t('Review Site');
   t('Select testimonials to display on this product category page.');

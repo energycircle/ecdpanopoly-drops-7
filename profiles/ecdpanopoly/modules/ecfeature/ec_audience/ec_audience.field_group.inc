@@ -23,9 +23,9 @@ function ec_audience_field_group_info() {
     'label' => 'CTA Form',
     'weight' => '11',
     'children' => array(
-      0 => 'field_call_to_action',
-      1 => 'field_ref_to_cta_form',
-      2 => 'field_button_text',
+      0 => 'field_button_text',
+      1 => 'field_call_to_action',
+      2 => 'field_ref_to_cta_form',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -52,9 +52,9 @@ function ec_audience_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '2',
     'children' => array(
-      0 => 'group_general',
-      1 => 'group_show_on_this',
-      2 => 'group_cta_form',
+      0 => 'group_cta_form',
+      1 => 'group_general',
+      2 => 'group_show_on_this',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -82,8 +82,8 @@ function ec_audience_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_aud_featured_image',
-      2 => 'field_featured_video',
-      3 => 'field_aud_teaser_image',
+      2 => 'field_aud_teaser_image',
+      3 => 'field_featured_video',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

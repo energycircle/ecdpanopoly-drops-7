@@ -135,6 +135,12 @@ projects[ec_marketing_dashboard][subdir] = ecfeature
 projects[ec_marketing_dashboard][type] = module
 projects[ec_marketing_dashboard][version] = 1.x
 
+projects[ec_external_forms][download][type] = git
+projects[ec_external_forms][download][url] = https://github.com/energycircle/ec_external_forms.git
+projects[ec_external_forms][subdir] = ecfeature
+projects[ec_external_forms][type] = module
+projects[ec_external_forms][version] = 1.x
+
 projects[ec_external_video][download][type] = git
 projects[ec_external_video][download][url] = https://github.com/energycircle/ec_external_video.git
 projects[ec_external_video][subdir] = ecfeature

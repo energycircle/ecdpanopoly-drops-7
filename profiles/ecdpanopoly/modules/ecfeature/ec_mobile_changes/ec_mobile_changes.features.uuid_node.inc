@@ -65,14 +65,17 @@ function ec_mobile_changes_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_a_b_reason_for_testing' => array(),
-  'field_a_b_reference_page' => array(),
-  'field_a_b_test_page' => array(),
   'field_ref_page_blog' => array(),
   'field_ref_page_case_study' => array(),
   'field_ref_page_faq' => array(),
   'field_ref_page_testimonial' => array(),
   'field_ref_page_promotions' => array(),
+  'field_a_b_reason_for_testing' => array(),
+  'field_a_b_reference_page' => array(),
+  'field_a_b_test_page' => array(),
+  'field_ref_page_services' => array(),
+  'field_ref_page_service_category' => array(),
+  'field_ref_page_service_group' => array(),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -130,6 +133,15 @@ function ec_mobile_changes_uuid_features_default_content() {
     'field_call_to_action' => array(
       'predicates' => array(),
     ),
+    'field_ref_page_services' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_page_service_category' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_page_service_group' => array(
+      'predicates' => array(),
+    ),
   ),
   'path' => array(
     'pathauto' => 0,
@@ -152,11 +164,11 @@ function ec_mobile_changes_uuid_features_default_content() {
       'did_uuid' => '10c9e351-f69c-4629-b191-77b8b01f4f1c',
     ),
   ),
-  'content_experiments' => '',
+  'content_experiments' => NULL,
   'machine_name' => FALSE,
   'pathauto_perform_alias' => FALSE,
   'date' => '2017-04-05 09:54:31 -0400',
-  'user_uuid' => '2eab63da-865c-476e-b863-6010d0487c6e',
+  'user_uuid' => 'fcc1f6ae-d655-4131-851f-573b49bceb86',
 );
   return $nodes;
 }

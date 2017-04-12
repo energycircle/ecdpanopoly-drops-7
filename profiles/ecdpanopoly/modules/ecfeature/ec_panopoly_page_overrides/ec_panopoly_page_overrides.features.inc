@@ -27,29 +27,40 @@ function ec_panopoly_page_overrides_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_filter_default_formats_alter().
+ */
+function ec_panopoly_page_overrides_filter_default_formats_alter(&$data) {
+  if (isset($data['panopoly_wysiwyg_text'])) {
+    $data['panopoly_wysiwyg_text']['cache'] = 0; /* WAS: 1 */
+    $data['panopoly_wysiwyg_text']['filters']['filter_tokens'] = array(
+      'settings' => array(),
+      'status' => 1,
+      'weight' => 0,
+    ); /* WAS: '' */
+  }
+}
+
+/**
  * Implements hook_default_page_manager_handlers_alter().
  */
 function ec_panopoly_page_overrides_default_page_manager_handlers_alter(&$data) {
   if (isset($data['node_edit_panel_context'])) {
     $data['node_edit_panel_context']->conf['display']->content['new-17fa67de-e033-46f2-bdd8-a138e91da0e4']->panel = 'sidebar'; /* WAS: 'contentmain' */
     $data['node_edit_panel_context']->conf['display']->content['new-17fa67de-e033-46f2-bdd8-a138e91da0e4']->position = 0; /* WAS: 1 */
-    $data['node_edit_panel_context']->conf['display']->content['new-373bd769-1e08-4ec5-85b6-0a1d2fc759fd']->position = 1; /* WAS: 0 */
     $data['node_edit_panel_context']->conf['display']->content['new-51126c95-cf51-4ad6-a27a-11e4260d8023']->position = 2; /* WAS: 1 */
-    $data['node_edit_panel_context']->conf['display']->content['new-6e4a98d8-3738-41b9-8c33-4b4c905c6834']->position = 6; /* WAS: 5 */
-    $data['node_edit_panel_context']->conf['display']->content['new-9176b962-e64f-44a6-8ebe-e03ebf0f6c3d']->position = 5; /* WAS: 4 */
     $data['node_edit_panel_context']->conf['display']->content['new-99f6c0bd-36fd-411b-9833-c0be0fab7548']->position = 3; /* WAS: 2 */
-    $data['node_edit_panel_context']->conf['display']->content['new-c0926cca-059c-4bb1-bccd-2838ec7a93f2']->position = 7; /* WAS: 6 */
-    $data['node_edit_panel_context']->conf['display']->content['new-e38ab3a3-24d0-4ac2-900e-4ddb0248be0c']->position = 4; /* WAS: 3 */
+    $data['node_edit_panel_context']->conf['display']->content['new-e38ab3a3-24d0-4ac2-900e-4ddb0248be0c']->position = 1; /* WAS: 3 */
     $data['node_edit_panel_context']->conf['display']->content['new-fb4920fb-24fa-425e-b6fc-958b5ccd2d52']->position = 1; /* WAS: 2 */
+    $data['node_edit_panel_context']->conf['display']->panel_settings['contentmain'] = array(
+      'style' => 0,
+    ); /* WAS: '' */
+    $data['node_edit_panel_context']->conf['display']->panel_settings['sidebar']['style'] = 0; /* WAS: '' */
     $data['node_edit_panel_context']->conf['display']->panels['contentmain'][1] = 'new-fb4920fb-24fa-425e-b6fc-958b5ccd2d52'; /* WAS: 'new-17fa67de-e033-46f2-bdd8-a138e91da0e4' */
     $data['node_edit_panel_context']->conf['display']->panels['sidebar'][0] = 'new-17fa67de-e033-46f2-bdd8-a138e91da0e4'; /* WAS: 'new-373bd769-1e08-4ec5-85b6-0a1d2fc759fd' */
-    $data['node_edit_panel_context']->conf['display']->panels['sidebar'][1] = 'new-373bd769-1e08-4ec5-85b6-0a1d2fc759fd'; /* WAS: 'new-51126c95-cf51-4ad6-a27a-11e4260d8023' */
+    $data['node_edit_panel_context']->conf['display']->panels['sidebar'][1] = 'new-e38ab3a3-24d0-4ac2-900e-4ddb0248be0c'; /* WAS: 'new-51126c95-cf51-4ad6-a27a-11e4260d8023' */
     $data['node_edit_panel_context']->conf['display']->panels['sidebar'][2] = 'new-51126c95-cf51-4ad6-a27a-11e4260d8023'; /* WAS: 'new-99f6c0bd-36fd-411b-9833-c0be0fab7548' */
     $data['node_edit_panel_context']->conf['display']->panels['sidebar'][3] = 'new-99f6c0bd-36fd-411b-9833-c0be0fab7548'; /* WAS: 'new-e38ab3a3-24d0-4ac2-900e-4ddb0248be0c' */
-    $data['node_edit_panel_context']->conf['display']->panels['sidebar'][4] = 'new-e38ab3a3-24d0-4ac2-900e-4ddb0248be0c'; /* WAS: 'new-9176b962-e64f-44a6-8ebe-e03ebf0f6c3d' */
-    $data['node_edit_panel_context']->conf['display']->panels['sidebar'][5] = 'new-9176b962-e64f-44a6-8ebe-e03ebf0f6c3d'; /* WAS: 'new-6e4a98d8-3738-41b9-8c33-4b4c905c6834' */
-    $data['node_edit_panel_context']->conf['display']->panels['sidebar'][6] = 'new-6e4a98d8-3738-41b9-8c33-4b4c905c6834'; /* WAS: 'new-c0926cca-059c-4bb1-bccd-2838ec7a93f2' */
-    $data['node_edit_panel_context']->conf['display']->panels['sidebar'][7] = 'new-c0926cca-059c-4bb1-bccd-2838ec7a93f2'; /* WAS: '' */
+    unset($data['node_edit_panel_context']->conf['display']->content['new-373bd769-1e08-4ec5-85b6-0a1d2fc759fd']);
     unset($data['node_edit_panel_context']->conf['display']->panels['contentmain'][2]);
   }
 }
@@ -58,6 +69,33 @@ function ec_panopoly_page_overrides_default_page_manager_handlers_alter(&$data) 
  * Implements hook_strongarm_alter().
  */
 function ec_panopoly_page_overrides_strongarm_alter(&$data) {
+  if (isset($data['field_bundle_settings_node__panopoly_page'])) {
+    $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['display']['sharethis'] = array(
+      'default' => array(
+        'weight' => 2,
+        'visible' => FALSE,
+      ),
+      'show_this_block' => array(
+        'weight' => 3,
+        'visible' => FALSE,
+      ),
+    ); /* WAS: '' */
+    $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['metatags'] = array(
+      'weight' => 100,
+    ); /* WAS: '' */
+    $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['redirect'] = array(
+      'weight' => 30,
+    ); /* WAS: '' */
+    $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['xmlsitemap'] = array(
+      'weight' => 30,
+    ); /* WAS: '' */
+    $data['field_bundle_settings_node__panopoly_page']->value['view_modes']['grouped_teaser'] = array(
+      'custom_settings' => TRUE,
+    ); /* WAS: '' */
+    $data['field_bundle_settings_node__panopoly_page']->value['view_modes']['show_this_block'] = array(
+      'custom_settings' => TRUE,
+    ); /* WAS: '' */
+  }
   if (isset($data['panelizer_defaults_node_panopoly_page'])) {
     $data['panelizer_defaults_node_panopoly_page']->value['view modes']['default']['choice'] = 1; /* WAS: 0 */
     $data['panelizer_defaults_node_panopoly_page']->value['view modes']['featured']['status'] = 0; /* WAS: 1 */
@@ -74,6 +112,16 @@ function ec_panopoly_page_overrides_strongarm_alter(&$data) {
     ); /* WAS: '' */
     $data['panelizer_defaults_node_panopoly_page']->value['view modes']['teaser']['status'] = 0; /* WAS: 1 */
     unset($data['panelizer_defaults_node_panopoly_page']->value['view modes']['search_result']['substitute']);
+  }
+}
+
+/**
+ * Implements hook_wysiwyg_default_profiles_alter().
+ */
+function ec_panopoly_page_overrides_wysiwyg_default_profiles_alter(&$data) {
+  if (isset($data['panopoly_wysiwyg_text'])) {
+    $data['panopoly_wysiwyg_text']['rdf_mapping'] = array(); /* WAS: '' */
+    $data['panopoly_wysiwyg_text']['settings']['show_toggle'] = 1; /* WAS: 0 */
   }
 }
 
@@ -139,6 +187,15 @@ function ec_panopoly_page_overrides_rdf_default_mappings() {
       'callback' => 'date_iso8601',
     ),
     'field_call_to_action' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_page_services' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_page_service_category' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_page_service_group' => array(
       'predicates' => array(),
     ),
   );

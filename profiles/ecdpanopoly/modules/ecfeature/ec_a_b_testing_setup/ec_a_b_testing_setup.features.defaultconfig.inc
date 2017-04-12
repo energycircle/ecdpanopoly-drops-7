@@ -1599,7 +1599,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 15,
+          'weight' => 19,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1623,7 +1623,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 4,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1727,7 +1727,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 14,
+          'weight' => 18,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1751,7 +1751,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 7,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1820,7 +1820,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 13,
+          'weight' => 17,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1844,7 +1844,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 8,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2389,7 +2389,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2511,7 +2511,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 6,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2598,7 +2598,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 8,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2679,7 +2679,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2801,7 +2801,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 6,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2888,7 +2888,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 7,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2969,7 +2969,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 4,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3091,7 +3091,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3178,7 +3178,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 6,
         ),
         'teaser' => array(
           'label' => 'above',
