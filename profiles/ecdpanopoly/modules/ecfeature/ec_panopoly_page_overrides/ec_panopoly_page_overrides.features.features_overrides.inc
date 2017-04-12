@@ -11,14 +11,6 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   // This code is only used for UI in features. Exported alters hooks do the magic.
   $overrides = array();
 
-  // Exported overrides for: filter
-  $overrides["filter.panopoly_wysiwyg_text.cache"] = 0;
-  $overrides["filter.panopoly_wysiwyg_text.filters|filter_tokens"] = array(
-    'settings' => array(),
-    'status' => 1,
-    'weight' => 0,
-  );
-
   // Exported overrides for: page_manager_handlers
   $overrides["page_manager_handlers.node_edit_panel_context.conf|display|content|new-17fa67de-e033-46f2-bdd8-a138e91da0e4|panel"] = 'sidebar';
   $overrides["page_manager_handlers.node_edit_panel_context.conf|display|content|new-17fa67de-e033-46f2-bdd8-a138e91da0e4|position"] = 0;
@@ -79,10 +71,6 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
     'choice' => 0,
   );
   $overrides["variable.panelizer_defaults_node_panopoly_page.value|view modes|teaser|status"] = 0;
-
-  // Exported overrides for: wysiwyg
-  $overrides["wysiwyg.panopoly_wysiwyg_text.rdf_mapping"] = array();
-  $overrides["wysiwyg.panopoly_wysiwyg_text.settings|show_toggle"] = 1;
 
  return $overrides;
 }
