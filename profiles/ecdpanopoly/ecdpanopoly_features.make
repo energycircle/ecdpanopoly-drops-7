@@ -117,6 +117,12 @@ projects[ec_distributor][subdir] = ecfeature
 projects[ec_distributor][type] = module
 projects[ec_distributor][version] = 1.x
 
+projects[ec_dropbox][download][type] = git
+projects[ec_dropbox][download][url] = https://github.com/energycircle/ec_dropbox.git
+projects[ec_dropbox][subdir] = ecfeature
+projects[ec_dropbox][type] = module
+projects[ec_dropbox][version] = 1.x
+
 projects[ec_download_file_gate][download][type] = git
 projects[ec_download_file_gate][download][url] = https://github.com/energycircle/ec_download_file_gate.git
 projects[ec_download_file_gate][subdir] = ecfeature
