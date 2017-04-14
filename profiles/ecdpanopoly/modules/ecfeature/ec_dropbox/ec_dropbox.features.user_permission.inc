@@ -40,9 +40,7 @@ function ec_dropbox_user_default_permissions() {
   $permissions['delete any dropbox_upload content'] = array(
     'name' => 'delete any dropbox_upload content',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

@@ -53,9 +53,9 @@ function ec_product_page_lite_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'group_cta_form',
-      1 => 'group_show_this_on',
-      2 => 'group_shown_on_this_page',
-      3 => 'group_general',
+      1 => 'group_general',
+      2 => 'group_show_this_on',
+      3 => 'group_shown_on_this_page',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -115,10 +115,10 @@ function ec_product_page_lite_field_group_info() {
     'label' => 'Add this content to these pages',
     'weight' => '20',
     'children' => array(
-      0 => 'field_ref_prodpage_case_study',
-      1 => 'field_ref_prodpage_serv_cat',
-      2 => 'field_ref_prodpage_serv_group',
-      3 => 'field_ref_prodpage_service',
+      0 => 'field_ref_prodpage_serv_cat',
+      1 => 'field_ref_prodpage_serv_group',
+      2 => 'field_ref_prodpage_service',
+      3 => 'field_ref_prodpage_case_study',
       4 => 'field_ref_prodpage_article',
     ),
     'format_type' => 'tab',
@@ -147,8 +147,8 @@ function ec_product_page_lite_field_group_info() {
     'label' => 'Add other content to this page',
     'weight' => '21',
     'children' => array(
-      0 => 'field_ref_prodpage_testimonial',
-      1 => 'field_ref_prodpage_faq',
+      0 => 'field_ref_prodpage_faq',
+      1 => 'field_ref_prodpage_testimonial',
       2 => 'field_ref_prodpage_promotion',
     ),
     'format_type' => 'tab',

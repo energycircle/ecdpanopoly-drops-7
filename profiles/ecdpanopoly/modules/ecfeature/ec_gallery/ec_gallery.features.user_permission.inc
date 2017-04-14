@@ -70,6 +70,7 @@ function ec_gallery_user_default_permissions() {
   $permissions['create gallery content'] = array(
     'name' => 'create gallery content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -91,6 +92,7 @@ function ec_gallery_user_default_permissions() {
   $permissions['delete own gallery content'] = array(
     'name' => 'delete own gallery content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -102,6 +104,7 @@ function ec_gallery_user_default_permissions() {
   $permissions['edit any gallery content'] = array(
     'name' => 'edit any gallery content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -113,6 +116,7 @@ function ec_gallery_user_default_permissions() {
   $permissions['edit own gallery content'] = array(
     'name' => 'edit own gallery content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',

@@ -63,6 +63,7 @@ function ec_audience_user_default_permissions() {
   $permissions['create audience content'] = array(
     'name' => 'create audience content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -84,6 +85,7 @@ function ec_audience_user_default_permissions() {
   $permissions['delete own audience content'] = array(
     'name' => 'delete own audience content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -95,6 +97,7 @@ function ec_audience_user_default_permissions() {
   $permissions['edit any audience content'] = array(
     'name' => 'edit any audience content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -106,6 +109,7 @@ function ec_audience_user_default_permissions() {
   $permissions['edit own audience content'] = array(
     'name' => 'edit own audience content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',

@@ -1,7 +1,7 @@
 name = EC CityPages
 description = Used to make city based pages to integrate with other content
 core = 7.x
-package = ECFeatures - BETA
+package = ECFeatures - Core EXT
 version = 7.x-1.6
 project = ec_citypages
 dependencies[] = field_group

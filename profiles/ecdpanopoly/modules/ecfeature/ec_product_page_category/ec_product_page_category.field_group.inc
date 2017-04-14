@@ -53,8 +53,8 @@ function ec_product_page_category_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'group_cta_form',
-      1 => 'group_shown_on_this_page',
-      2 => 'group_general',
+      1 => 'group_general',
+      2 => 'group_shown_on_this_page',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -112,8 +112,8 @@ function ec_product_page_category_field_group_info() {
     'weight' => '16',
     'children' => array(
       0 => 'field_ref_prodcat_case_study',
-      1 => 'field_ref_prodcat_testimonial',
-      2 => 'field_ref_prodcat_faq',
+      1 => 'field_ref_prodcat_faq',
+      2 => 'field_ref_prodcat_testimonial',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

@@ -63,6 +63,7 @@ function ec_distributor_user_default_permissions() {
   $permissions['create distributor content'] = array(
     'name' => 'create distributor content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -84,6 +85,7 @@ function ec_distributor_user_default_permissions() {
   $permissions['delete own distributor content'] = array(
     'name' => 'delete own distributor content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -95,6 +97,7 @@ function ec_distributor_user_default_permissions() {
   $permissions['edit any distributor content'] = array(
     'name' => 'edit any distributor content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -106,6 +109,7 @@ function ec_distributor_user_default_permissions() {
   $permissions['edit own distributor content'] = array(
     'name' => 'edit own distributor content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',

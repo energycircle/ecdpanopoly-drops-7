@@ -625,7 +625,7 @@ function ec_promotions_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 11,
     ),
   );
 
@@ -700,7 +700,7 @@ function ec_promotions_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 10,
     ),
   );
 

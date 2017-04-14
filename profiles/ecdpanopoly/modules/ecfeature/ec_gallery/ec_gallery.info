@@ -7,7 +7,6 @@ project = ec_gallery
 dependencies[] = ec_base_config
 dependencies[] = field_group
 dependencies[] = flexslider_views
-dependencies[] = panopoly_pages
 dependencies[] = schemaorg
 dependencies[] = views_content
 dependencies[] = weight
