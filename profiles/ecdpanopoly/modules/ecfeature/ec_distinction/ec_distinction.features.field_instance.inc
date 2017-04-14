@@ -157,6 +157,7 @@ function ec_distinction_field_default_field_instances() {
   $field_instances['node-distinction-field_distinction_type'] = array(
     'bundle' => 'distinction',
     'default_value' => NULL,
+    'default_value_label_token' => 0,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -194,7 +195,7 @@ function ec_distinction_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_distinction_type',
     'label' => 'Distinction Type',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -203,7 +204,7 @@ function ec_distinction_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 7,
     ),
   );
 

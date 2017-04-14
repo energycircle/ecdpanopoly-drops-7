@@ -77,6 +77,7 @@ function ec_distinction_user_default_permissions() {
   $permissions['create distinction content'] = array(
     'name' => 'create distinction content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -98,6 +99,7 @@ function ec_distinction_user_default_permissions() {
   $permissions['delete own distinction content'] = array(
     'name' => 'delete own distinction content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -118,6 +120,7 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit any distinction content'] = array(
     'name' => 'edit any distinction content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -129,6 +132,7 @@ function ec_distinction_user_default_permissions() {
   $permissions['edit own distinction content'] = array(
     'name' => 'edit own distinction content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
