@@ -267,6 +267,7 @@ function ec_casestudy_field_group_info() {
       2 => 'field_ref_case_study_promo',
       3 => 'field_ref_case_study_article',
       4 => 'field_ref_case_study_citypages',
+      5 => 'field_ref_case_study_prodpage',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

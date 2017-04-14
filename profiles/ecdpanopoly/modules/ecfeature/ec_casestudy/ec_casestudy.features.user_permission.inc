@@ -63,6 +63,7 @@ function ec_casestudy_user_default_permissions() {
   $permissions['create case_study content'] = array(
     'name' => 'create case_study content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -85,6 +86,7 @@ function ec_casestudy_user_default_permissions() {
   $permissions['delete own case_study content'] = array(
     'name' => 'delete own case_study content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -96,6 +98,7 @@ function ec_casestudy_user_default_permissions() {
   $permissions['edit any case_study content'] = array(
     'name' => 'edit any case_study content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -107,6 +110,7 @@ function ec_casestudy_user_default_permissions() {
   $permissions['edit own case_study content'] = array(
     'name' => 'edit own case_study content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',

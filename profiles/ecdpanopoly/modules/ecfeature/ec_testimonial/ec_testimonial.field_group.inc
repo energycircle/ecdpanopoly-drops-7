@@ -54,9 +54,7 @@ function ec_testimonial_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_aggregate_rating',
-      2 => 'field_display_subtitle',
-      3 => 'field_display_title',
-      4 => 'field_tetstimonial_name',
+      2 => 'field_tetstimonial_name',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -111,12 +109,13 @@ function ec_testimonial_field_group_info() {
     'label' => 'Add this content to these pages',
     'weight' => '8',
     'children' => array(
-      0 => 'field_ref_testimonial_article',
-      1 => 'field_ref_testimonial_serv_cat',
-      2 => 'field_ref_testimonial_serv_group',
-      3 => 'field_ref_testimonial_service',
-      4 => 'field_ref_testimonial_case_study',
+      0 => 'field_ref_testimonial_serv_cat',
+      1 => 'field_ref_testimonial_serv_group',
+      2 => 'field_ref_testimonial_service',
+      3 => 'field_ref_testimonial_case_study',
+      4 => 'field_ref_testimonial_article',
       5 => 'field_ref_testimonial_citypages',
+      6 => 'field_ref_testimonial_prodpage',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

@@ -107,7 +107,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 7,
+        'weight' => 8,
       ),
     ),
   );
@@ -210,7 +210,7 @@ function ec_slide_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -294,7 +294,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 6,
       ),
     ),
   );
@@ -378,7 +378,7 @@ function ec_slide_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 5,
       ),
     ),
   );
@@ -498,90 +498,6 @@ function ec_slide_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-slide-field_slide_set'.
-  $fields['node-slide-field_slide_set'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_slide_set',
-      'foreign keys' => array(
-        'tid' => array(
-          'columns' => array(
-            'tid' => 'tid',
-          ),
-          'table' => 'taxonomy_term_data',
-        ),
-      ),
-      'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'taxonomy',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'vocabulary' => 'slide_set',
-            'parent' => 0,
-          ),
-        ),
-        'options_list_callback' => 'title_taxonomy_allowed_values',
-      ),
-      'translatable' => 0,
-      'type' => 'taxonomy_term_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'slide',
-      'default_value' => NULL,
-      'default_value_label_token' => 0,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 6,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_slide_set',
-      'label' => 'Slide Set',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => 5,
-      ),
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
@@ -589,7 +505,6 @@ function ec_slide_defaultconfig_field_default_fields() {
   t('Display Title');
   t('Display subtitle');
   t('Enter the main title to display to the user. ');
-  t('Slide Set');
   t('Slide image');
   t('The main image for the slide.');
 

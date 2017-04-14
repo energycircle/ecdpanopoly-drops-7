@@ -54,7 +54,6 @@ function ec_slide_field_group_info() {
       2 => 'field_display_subtitle',
       3 => 'field_display_title',
       4 => 'field_slide_image',
-      5 => 'field_slide_set',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

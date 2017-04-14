@@ -963,7 +963,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 11,
       ),
     ),
   );
@@ -1067,7 +1067,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 10,
       ),
     ),
   );

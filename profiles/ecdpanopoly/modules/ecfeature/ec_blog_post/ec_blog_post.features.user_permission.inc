@@ -95,6 +95,7 @@ function ec_blog_post_user_default_permissions() {
   $permissions['create blog_post content'] = array(
     'name' => 'create blog_post content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -116,6 +117,7 @@ function ec_blog_post_user_default_permissions() {
   $permissions['delete own blog_post content'] = array(
     'name' => 'delete own blog_post content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -136,6 +138,7 @@ function ec_blog_post_user_default_permissions() {
   $permissions['edit any blog_post content'] = array(
     'name' => 'edit any blog_post content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -147,6 +150,7 @@ function ec_blog_post_user_default_permissions() {
   $permissions['edit own blog_post content'] = array(
     'name' => 'edit own blog_post content',
     'roles' => array(
+      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',

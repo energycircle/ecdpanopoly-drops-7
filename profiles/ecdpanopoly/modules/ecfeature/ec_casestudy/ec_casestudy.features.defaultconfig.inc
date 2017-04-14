@@ -329,7 +329,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 12,
+        'weight' => 10,
       ),
     ),
   );
@@ -1534,7 +1534,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 11,
+        'weight' => 12,
       ),
     ),
   );
@@ -1624,7 +1624,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 10,
+        'weight' => 11,
       ),
     ),
   );

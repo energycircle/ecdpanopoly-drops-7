@@ -84,8 +84,8 @@ function ec_article_field_group_info() {
     'children' => array(
       0 => 'field_ref_article_blog',
       1 => 'field_ref_article_case_study',
-      2 => 'field_ref_article_promo',
-      3 => 'field_ref_article_testimonial',
+      2 => 'field_ref_article_testimonial',
+      3 => 'field_ref_article_promo',
       4 => 'field_ref_article_product',
     ),
     'format_type' => 'tab',
