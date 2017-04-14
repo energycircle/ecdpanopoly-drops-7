@@ -79,8 +79,8 @@ function ec_distinction_field_group_info() {
     'weight' => '15',
     'children' => array(
       0 => 'field_content_link',
-      1 => 'field_logo',
-      2 => 'field_dynamic_seal',
+      1 => 'field_dynamic_seal',
+      2 => 'field_logo',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

@@ -759,7 +759,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 7,
+        'weight' => 6,
       ),
     ),
   );
@@ -959,97 +959,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-service-field_display_subtitle'.
-  $fields['node-service-field_display_subtitle'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_display_subtitle',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 255,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'service',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 11,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 11,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_display_subtitle',
-      'label' => 'Display subtitle',
-      'required' => 0,
-      'settings' => array(
-        'linkit' => array(
-          'button_text' => 'Search',
-          'enable' => 0,
-          'profile' => '',
-        ),
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-        'weight' => 2,
-      ),
-    ),
-  );
-
   // Exported field: 'node-service-field_ref_service_serv_cat'.
   $fields['node-service-field_ref_service_serv_cat'] = array(
     'field_config' => array(
@@ -1155,7 +1064,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -1211,7 +1120,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'bundle' => 'service',
       'default_value' => array(
         0 => array(
-          'target_id' => 3,
+          'target_id' => 2,
         ),
       ),
       'default_value_function' => '',
@@ -1399,7 +1308,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 8,
       ),
     ),
   );
@@ -1497,6 +1406,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
+            'private' => 0,
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -1521,10 +1431,9 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 1,
           'manualcrop_maximize_default_crop_area' => 0,
-          'manualcrop_require_cropping' => array(
-            'sc_940x470_mc' => 'sc_940x470_mc',
-          ),
+          'manualcrop_require_cropping' => array(),
           'manualcrop_styles_list' => array(
+            'sc_1280x440_mc' => 'sc_1280x440_mc',
             'sc_940x470_mc' => 'sc_940x470_mc',
           ),
           'manualcrop_styles_mode' => 'include',
@@ -1633,7 +1542,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 8,
+        'weight' => 5,
       ),
     ),
   );
@@ -1833,97 +1742,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-service_category-field_display_subtitle'.
-  $fields['node-service_category-field_display_subtitle'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_display_subtitle',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 255,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'service_category',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 11,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 10,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_display_subtitle',
-      'label' => 'Display subtitle',
-      'required' => 0,
-      'settings' => array(
-        'linkit' => array(
-          'button_text' => 'Search',
-          'enable' => 0,
-          'profile' => '',
-        ),
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-        'weight' => 2,
-      ),
-    ),
-  );
-
   // Exported field: 'node-service_category-field_ref_serv_cat_serv_group'.
   $fields['node-service_category-field_ref_serv_cat_serv_group'] = array(
     'field_config' => array(
@@ -2026,7 +1844,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -2136,7 +1954,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -2192,7 +2010,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'bundle' => 'service_category',
       'default_value' => array(
         0 => array(
-          'target_id' => 3,
+          'target_id' => 2,
         ),
       ),
       'default_value_function' => '',
@@ -2485,7 +2303,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 31,
+        'weight' => 29,
       ),
     ),
   );
@@ -2790,7 +2608,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 29,
+        'weight' => 30,
       ),
     ),
   );
@@ -2846,7 +2664,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
       'bundle' => 'service_group',
       'default_value' => array(
         0 => array(
-          'target_id' => 3,
+          'target_id' => 2,
         ),
       ),
       'default_value_function' => '',
@@ -2996,6 +2814,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
+            'private' => 0,
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -3020,10 +2839,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'manualcrop_instant_preview' => 1,
           'manualcrop_keyboard' => 0,
           'manualcrop_maximize_default_crop_area' => 0,
-          'manualcrop_require_cropping' => array(
-            'sc_1280x440_mc' => 'sc_1280x440_mc',
-            'sc_940x470_mc' => 'sc_940x470_mc',
-          ),
+          'manualcrop_require_cropping' => array(),
           'manualcrop_styles_list' => array(
             'sc_1280x440_mc' => 'sc_1280x440_mc',
             'sc_940x470_mc' => 'sc_940x470_mc',
@@ -3043,7 +2859,6 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   t('Button Text');
   t('CTA form');
   t('Call to Action');
-  t('Display subtitle');
   t('Email');
   t('I need...');
   t('Name');

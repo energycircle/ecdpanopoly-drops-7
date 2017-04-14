@@ -27,6 +27,7 @@ function ec_service_stack_field_group_info() {
       1 => 'field_ref_serv_cat_case_study',
       2 => 'field_ref_serv_cat_faq',
       3 => 'field_ref_serv_cat_testimonial',
+      4 => 'field_ref_serv_cat_prodpage',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -58,6 +59,7 @@ function ec_service_stack_field_group_info() {
       1 => 'field_ref_service_case_study',
       2 => 'field_ref_service_faq',
       3 => 'field_ref_service_testimonial',
+      4 => 'field_ref_service_product',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -259,12 +261,11 @@ function ec_service_stack_field_group_info() {
     'weight' => '15',
     'children' => array(
       0 => 'body',
-      1 => 'field_display_subtitle',
-      2 => 'field_featured_video',
-      3 => 'field_ref_serv_cat_serv_group',
-      4 => 'field_ref_serv_cat_services',
-      5 => 'field_service_category_image',
-      6 => 'field_service_category_icon',
+      1 => 'field_featured_video',
+      2 => 'field_ref_serv_cat_serv_group',
+      3 => 'field_ref_serv_cat_services',
+      4 => 'field_service_category_image',
+      5 => 'field_service_category_icon',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -322,11 +323,10 @@ function ec_service_stack_field_group_info() {
     'weight' => '14',
     'children' => array(
       0 => 'body',
-      1 => 'field_display_subtitle',
-      2 => 'field_featured_video',
-      3 => 'field_ref_service_serv_cat',
-      4 => 'field_service_icon',
-      5 => 'field_service_image',
+      1 => 'field_featured_video',
+      2 => 'field_ref_service_serv_cat',
+      3 => 'field_service_icon',
+      4 => 'field_service_image',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -357,6 +357,7 @@ function ec_service_stack_field_group_info() {
       1 => 'field_ref_serv_group_case_study',
       2 => 'field_ref_serv_group_faq',
       3 => 'field_ref_serv_group_testimonial',
+      4 => 'field_ref_serv_group_prodpage',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
