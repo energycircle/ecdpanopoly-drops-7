@@ -45,8 +45,6 @@ projects[backup_migrate][version] = 3.1
 projects[cer][subdir] = eccontrib
 projects[cer][version] = 3.x-dev
 projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
-projects[cer][patch][] = https://www.drupal.org/files/issues/fix_duplicate_function_when_drush_make-1.patch
-
 
 projects[charts][subdir] = eccontrib
 projects[charts][version] = 2.0-rc1
