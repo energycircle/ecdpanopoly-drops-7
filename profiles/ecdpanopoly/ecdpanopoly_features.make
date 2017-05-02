@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 
-;EC Features
+#EC Features
 projects[ec_a_b_testing_setup][download][type] = git
 projects[ec_a_b_testing_setup][download][url] = https://github.com/energycircle/ec_a_b_testing_setup.git
 projects[ec_a_b_testing_setup][type] = module
@@ -25,12 +25,6 @@ projects[ec_audience][download][url] = https://github.com/energycircle/ec_audien
 projects[ec_audience][type] = module
 projects[ec_audience][subdir] = ecfeature
 projects[ec_audience][version] = 1.x
-
-#projects[ec_awards][download][type] = git
-#projects[ec_awards][download][url] = https://github.com/energycircle/ec_awards.git
-#projects[ec_awards][type] = module
-#projects[ec_awards][subdir] = ecfeature
-#projects[ec_awards][version] = 1.x
 
 projects[ec_base_config][download][type] = git
 projects[ec_base_config][download][url] = https://github.com/energycircle/ec_base_config.git
@@ -86,18 +80,6 @@ projects[ec_customer_referral][download][url] = https://github.com/energycircle/
 projects[ec_customer_referral][subdir] = ecfeature
 projects[ec_customer_referral][type] = module
 projects[ec_customer_referral][version] =  1.x
-
-#projects[ec_conference_tracks_sessions][download][type] = git
-#projects[ec_conference_tracks_sessions][download][url] = https://github.com/energycircle/ec_conference_tracks_sessions.git
-#projects[ec_conference_tracks_sessions][subdir] = ecfeature
-#projects[ec_conference_tracks_sessions][type] = module
-#projects[ec_conference_tracks_sessions][version] = 1.0-beta20
-
-#projects[ec_conferences_lte][download][type] = git
-#projects[ec_conferences_lte][download][url] = https://github.com/energycircle/ec_conferences_lte.git
-#projects[ec_conferences_lte][subdir] = ecfeature
-#projects[ec_conferences_lte][type] = module
-#projects[ec_conferences_lte][version] = 1.0-beta18
 
 projects[ec_development][download][type] = git
 projects[ec_development][download][url] = https://github.com/energycircle/ec_development.git
@@ -219,18 +201,6 @@ projects[ec_promotions][subdir] = ecfeature
 projects[ec_promotions][type] = module
 projects[ec_promotions][version] = 1.x
 
-#projects[ec_redhen][download][type] = git
-#projects[ec_redhen][download][url] = https://github.com/energycircle/ec_redhen.git
-#projects[ec_redhen][subdir] = ecfeature
-#projects[ec_redhen][type] = module
-#projects[ec_redhen][version] = 1.0-beta7
-
-#projects[ec_rms][download][type] = git
-#projects[ec_rms][download][url] = https://github.com/energycircle/ec_rms.git
-#projects[ec_rms][subdir] = ecfeature
-#projects[ec_rms][type] = module
-#projects[ec_rms][version] = 1.x
-
 projects[ec_review_sites][download][type] = git
 projects[ec_review_sites][download][url] = https://github.com/energycircle/ec_review_sites.git
 projects[ec_review_sites][subdir] = ecfeature
@@ -242,12 +212,6 @@ projects[ec_service_stack][download][url] = https://github.com/energycircle/ec_s
 projects[ec_service_stack][subdir] = ecfeature
 projects[ec_service_stack][type] = module
 projects[ec_service_stack][version] = 1.x
-
-#projects[ec_service_review_system][download][type] = git
-#projects[ec_service_review_system][download][url] = https://github.com/energycircle/ec_service_review_system.git
-#projects[ec_service_review_system][subdir] = ecfeature
-#projects[ec_service_review_system][type] = module
-#projects[ec_service_review_system][version] =  1.x
 
 projects[ec_sr3][download][type] = git
 projects[ec_sr3][download][url] = https://github.com/energycircle/ec_sr3.git
@@ -273,12 +237,16 @@ projects[ec_testimonial][subdir] = ecfeature
 projects[ec_testimonial][type] = module
 projects[ec_testimonial][version] = 1.x
 
+
+#feature sets
 projects[ecset-proplus][download][type] = git
 projects[ecset-proplus][download][url] = https://github.com/energycircle/ecset-proplus.git
 projects[ecset-proplus][subdir] = ecfeature-sets
 projects[ecset-proplus][type] = module
 projects[ecset-proplus][version] = 1.x
 
+
+#Migrations
 projects[ec_migrate_ecpro_news_blog_import][download][type] = git
 projects[ec_migrate_ecpro_news_blog_import][download][url] = https://github.com/energycircle/ec_migrate_ecpro_news_blog_import.git
 projects[ec_migrate_ecpro_news_blog_import][subdir] = ecfeature-migrate
@@ -308,3 +276,68 @@ projects[ec_migrate_wp_xml_import_to_blog][download][url] = https://github.com/e
 projects[ec_migrate_wp_xml_import_to_blog][subdir] = ecfeature-migrate
 projects[ec_migrate_wp_xml_import_to_blog][type] = module
 projects[ec_migrate_wp_xml_import_to_blog][version] = 1.x
+
+
+#SF
+projects[ec_sf_integration_base][download][type] = git
+projects[ec_sf_integration_base][download][url] = https://github.com/energycircle/ec_sf_integration_base.git
+projects[ec_sf_integration_base][subdir] = ecfeature-sf
+projects[ec_sf_integration_base][type] = module
+projects[ec_sf_integration_base][version] = 1.x
+
+projects[ec_sf_service_request_form][download][type] = git
+projects[ec_sf_service_request_form][download][url] = https://github.com/energycircle/ec_sf_service_request_form.git
+projects[ec_sf_service_request_form][subdir] = ecfeature-sf
+projects[ec_sf_service_request_form][type] = module
+projects[ec_sf_service_request_form][version] = 1.x
+
+projects[ec_sf_contact_form][download][type] = git
+projects[ec_sf_contact_form][download][url] = https://github.com/energycircle/ec_sf_contact_form.git
+projects[ec_sf_contact_form][subdir] = ecfeature-sf
+projects[ec_sf_contact_form][type] = module
+projects[ec_sf_contact_form][version] = 1.x
+
+
+
+
+#EC CUSTOM MODS / SANDBOX
+projects[energycircle_apps][download][type] = git
+projects[energycircle_apps][download][url] = https://github.com/energycircle/energycircle_apps.git
+projects[energycircle_apps][subdir] = eccustom
+projects[energycircle_apps][type] = module
+projects[energycircle_apps][version] = 1.0-rc2
+
+projects[jcarousel_skins][download][type] = git
+projects[jcarousel_skins][download][url] = https://github.com/energycircle/jcarousel_skins.git
+projects[jcarousel_skins][subdir] = eccustom
+projects[jcarousel_skins][type] = module
+projects[jcarousel_skins][version] = 2.6+2-dev
+
+projects[ec_modifications][download][type] = git
+projects[ec_modifications][download][url] = https://github.com/energycircle/ec_modifications.git
+projects[ec_modifications][subdir] = eccustom
+projects[ec_modifications][type] = module
+projects[ec_modifications][version] = 2.6+2-dev
+
+projects[superfish_hack][download][type] = git
+projects[superfish_hack][download][url] = https://github.com/energycircle/superfish_hack.git
+projects[superfish_hack][subdir] = eccustom
+projects[superfish_hack][type] = module
+
+projects[ec_restrict_dl][download][type] = git
+projects[ec_restrict_dl][download][url] = https://github.com/energycircle/ec_restrict_dl.git
+projects[ec_restrict_dl][subdir] = eccustom
+projects[ec_restrict_dl][type] = module
+projects[ec_restrict_dl][version] = 1.1
+
+projects[image_mobile_camera][download][type] = git
+projects[image_mobile_camera][download][url] = https://git.drupal.org/sandbox/cafuego/1980210.git
+projects[image_mobile_camera][subdir] = eccustom
+projects[image_mobile_camera][type] = module
+projects[image_mobile_camera][version] = 1.x
+
+projects[ecdpanopoly_config][download][type] = git
+projects[ecdpanopoly_config][download][url] = https://github.com/energycircle/ecdpanopoly_config.git
+projects[ecdpanopoly_config][subdir] = eccustom
+projects[ecdpanopoly_config][type] = module
+projects[ecdpanopoly_config][version] = 1.x

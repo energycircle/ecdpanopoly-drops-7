@@ -1,0 +1,17 @@
+name = Salesforce SOAP
+description = SOAP API client to access methods not available to the REST API.
+package = Salesforce
+core = 7.x
+php = 5.3
+
+files[] = salesforce_soap.inc
+
+dependencies[] = salesforce
+dependencies[] = libraries
+
+; Information added by Drupal.org packaging script on 2017-04-21
+version = "7.x-3.3-beta2+19-dev"
+core = "7.x"
+project = "salesforce"
+datestamp = "1492734548"
+
