@@ -336,6 +336,9 @@ projects[role_delegation][version] = 1.1
 projects[rules][subdir] = eccontrib
 projects[rules][version] = 2.9
 
+projects[salesforce][subdir] = eccontrib
+projects[salesforce][version] = 3.x-dev
+
 projects[schemaorg][subdir] = eccontrib
 projects[schemaorg][version] = 1.x
 
@@ -437,72 +440,6 @@ projects[weight][version] = 2.5
 projects[xmlsitemap][subdir] = eccontrib
 projects[xmlsitemap][version] = 2.3
 
-
-;OLD PATCHES
-#projects[metatag][patch][1918738] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
-#projects[table_element][patch][] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
-#projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
-#projects[schemaorg][patch][1296760] = https://www.drupal.org/files/1296760_entity_1.patch
-#projects[views_slideshow][patch] = https://www.drupal.org/files/views_slideshow_cycle-hook-requirements-broken-1090052-27.patch
-#projects[metatag][patch][1880302] = https://www.drupal.org/files/metatag-1880302-2.patch
-#projects[rdfx][patch][2216603] = https://www.drupal.org/files/find-arc-library-correctly-1176666-14.patch
-#projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
-#projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/access_check_fails_in-2612234-8.patch
-#projects[total_subscription][patch][2706769] = https://www.drupal.org/files/issues/email-verification-for-anonymous-failed-2706769-3.patch
-
-
-
-;local patches
-#projects[metatag][patch][1918738] = patches/character_count_on_fields-1918738-9-ec.patch
-#projects[cer][patch][1] = patches/fix_duplicate_function_when_drush_make-1.patch
-#projects[total_subscription][patch][2612234-9] = patches/access_check_fails_in-2612234-9.patch
-
-
-
-; EC CUSTOM MODS / SANDBOX
-projects[energycircle_apps][download][type] = git
-projects[energycircle_apps][download][url] = https://github.com/energycircle/energycircle_apps.git
-projects[energycircle_apps][subdir] = eccustom
-projects[energycircle_apps][type] = module
-projects[energycircle_apps][version] = 1.0-rc2
-
-projects[jcarousel_skins][download][type] = git
-projects[jcarousel_skins][download][url] = https://github.com/energycircle/jcarousel_skins.git
-projects[jcarousel_skins][subdir] = eccustom
-projects[jcarousel_skins][type] = module
-projects[jcarousel_skins][version] = 2.6+2-dev
-
-projects[ec_modifications][download][type] = git
-projects[ec_modifications][download][url] = https://github.com/energycircle/ec_modifications.git
-projects[ec_modifications][subdir] = eccustom
-projects[ec_modifications][type] = module
-projects[ec_modifications][version] = 2.6+2-dev
-
-projects[superfish_hack][download][type] = git
-projects[superfish_hack][download][url] = https://github.com/energycircle/superfish_hack.git
-projects[superfish_hack][subdir] = eccustom
-projects[superfish_hack][type] = module
-
-projects[ec_restrict_dl][download][type] = git
-projects[ec_restrict_dl][download][url] = https://github.com/energycircle/ec_restrict_dl.git
-projects[ec_restrict_dl][subdir] = eccustom
-projects[ec_restrict_dl][type] = module
-projects[ec_restrict_dl][version] = 1.1
-
-projects[image_mobile_camera][download][type] = git
-projects[image_mobile_camera][download][url] = https://git.drupal.org/sandbox/cafuego/1980210.git
-projects[image_mobile_camera][subdir] = eccustom
-projects[image_mobile_camera][type] = module
-projects[image_mobile_camera][version] = 1.x
-
-projects[ecdpanopoly_config][download][type] = git
-projects[ecdpanopoly_config][download][url] = https://github.com/energycircle/ecdpanopoly_config.git
-projects[ecdpanopoly_config][subdir] = eccustom
-projects[ecdpanopoly_config][type] = module
-projects[ecdpanopoly_config][version] = 1.x
-
-
-
 ; LIBRARIES
 libraries[superfish][download][type] = get
 libraries[superfish][type] = library
@@ -561,11 +498,7 @@ libraries[Highcharts][type] = library
 libraries[Highcharts][directory_name] = highcharts
 libraries[Highcharts][download][url] = http://code.highcharts.com/zips/Highcharts-4.2.5.zip
 
-libraries[Highcharts][download][type] = git
-libraries[Highcharts][type] = library
-libraries[Highcharts][directory_name] = Mobile_Detect
-libraries[Highcharts][download][url] = https://github.com/serbanghita/Mobile-Detect
-
-; THEMES
-projects[adaptivetheme][version] = 3.x
-projects[adaptivetheme][type] = theme
+libraries[salesforce][download][type] = git
+libraries[salesforce][type] = library
+libraries[salesforce][directory_name] = salesforce
+libraries[salesforce][download][url] = https://github.com/developerforce/Force.com-Toolkit-for-PHP
