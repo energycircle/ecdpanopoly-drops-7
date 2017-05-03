@@ -310,7 +310,7 @@ function total_subscription_verification_mail() {
       }
     }
     if ($_GET['tids']) {
-      foreach ((array)drupal_json_decode($_GET['tids']) as $tids) {
+      foreach ((array) drupal_json_decode($_GET['tids']) as $tids) {
         // Checking the hash thing.
         $result = total_subscription_get_hash('taxonomy_term', $tids, $_GET['email']);
         if (!empty($result)) {
@@ -582,7 +582,7 @@ function total_subscription_subscribe_form_submit($form, &$form_state) {
     $array_value = 0;
     // Checks for taxonomies in the node.
     if (isset($form_state['values']['node_taxonomy'])) {
-      foreach ((array)$form_state['values']['node_taxonomy'] as $values) {
+      foreach ((array) $form_state['values']['node_taxonomy'] as $values) {
         $array_value += $values;
       }
     }
@@ -832,7 +832,7 @@ function total_subscription_hash_update($hash, $email, $entity_type, $entity_id)
 function total_subscription_mail($key, &$message, $params) {
   global $base_url;
 
-  watchdog('total_subscription', 'sending email from subscription module.' . $key, array(), WATCHDOG_NOTICE, NULL);
+  watchdog('total_subscription', 'sending email from subscription module. %key', array('%key' => $key), WATCHDOG_NOTICE, NULL);
   switch ($key) {
     case 'total_subscription_message':
       $array_values = "";
@@ -976,9 +976,7 @@ function total_subscription_mail_send($form_values) {
 function total_subscription_node_presave($node) {
   if (isset($node->original)) {
     if ($node->original->status == 0 && $node->status == 1) {
-      if (node_access('view', $node, drupal_anonymous_user())) {
-        total_subscription_node_queue_mail($node);
-      }
+      total_subscription_node_queue_mail($node);
     }
   }
 }
@@ -988,9 +986,7 @@ function total_subscription_node_presave($node) {
  */
 function total_subscription_node_insert($node) {
   if ($node->status == 1) {
-    if (node_access('view', $node, drupal_anonymous_user())) {
-      total_subscription_node_queue_mail($node);
-    }
+    total_subscription_node_queue_mail($node);
   }
 }
 
@@ -1000,7 +996,7 @@ function total_subscription_node_insert($node) {
  * @param stdclass $node
  *   An array of values from the node_presave form that were submitted.
  */
-function total_subscription_node_queue_mail($node) {
+function total_subscription_node_queue_mail(stdclass $node) {
   $queue = 'total_subscription_mailing_queue';
   $queue = DrupalQueue::get($queue);
   $queue->createItem($node->nid);
@@ -1041,7 +1037,7 @@ function total_subscription_node_search() {
 
 /**
  * @file
- * bitly shorten url.
+ * Bitly shorten url.
  */
 /**
  * Implements total_subscription_bitly_shorten().
@@ -1083,78 +1079,82 @@ function total_subscription_cron_queue_info() {
  * Callback function for mailing queue.
  */
 function total_subscription_mailing_queue_callback($nid) {
-  global $base_url;
   $node = node_load($nid);
-  $mails = array();
-  $module = 'total_subscription';
-  $key_of_mail = 'total_subscription_node_message';
+  // Checks if anonymous user has node access to view the node. If yes, then
+  // proceeds to mail users.
+  if (node_access('view', $node, drupal_anonymous_user())) {
+    global $base_url;
+    $mails = array();
+    $module = 'total_subscription';
+    $key_of_mail = 'total_subscription_node_message';
 
-  if (variable_get('total_subscription_email_address', '')) {
-    $from = variable_get('total_subscription_email_address', '');
-  }
-  else {
-    $from = variable_get('site_mail', '');
-  }
-
-  $language = language_default('language');
-
-  $send = TRUE;
-  $mails = array();
-  $query = db_select('total_subscription', 'ts');
-  $query->fields('ts', array('mail'))
-    ->condition('ts.bundle', $node->type)
-    ->condition('ts.entity_type', 'node')
-    ->condition('ts.active', 1);
-  $result = $query->execute()->fetchAll();
-
-  if (!empty($result)) {
-    foreach ($result as $subscription_mail) {
-      $mails[] = $subscription_mail->mail;
+    if (variable_get('total_subscription_email_address', '')) {
+      $from = variable_get('total_subscription_email_address', '');
     }
-  }
-
-  $fields_detail = field_info_fields();
-  foreach ($fields_detail as $value) {
-    if ($value['type'] == 'taxonomy_term_reference' && in_array($node->type, $value['bundles']['node'])) {
-      $taxonomy_fields[] = $value['field_name'];
+    else {
+      $from = variable_get('site_mail', '');
     }
-  }
-  foreach ($taxonomy_fields as $tax_fields) {
-    if (!empty($node->{$tax_fields}[LANGUAGE_NONE])) {
-      foreach ($node->{$tax_fields}[LANGUAGE_NONE] as $tags) {
-        $node_related_tids[] = $tags['tid'];
+
+    $language = language_default('language');
+
+    $send = TRUE;
+    $mails = array();
+    $query = db_select('total_subscription', 'ts');
+    $query->fields('ts', array('mail'))
+      ->condition('ts.bundle', $node->type)
+      ->condition('ts.entity_type', 'node')
+      ->condition('ts.active', 1);
+    $result = $query->execute()->fetchAll();
+
+    if (!empty($result)) {
+      foreach ($result as $subscription_mail) {
+        $mails[] = $subscription_mail->mail;
       }
     }
-  }
 
-  if (!empty($node_related_tids)) {
-    foreach ($node_related_tids as $tids) {
-      $subscription_mail = db_select('total_subscription', 'ts');
-      $subscription_mail->fields('ts', array('mail'))
-                  ->condition('ts.entity_id', $tids)
-                  ->condition('ts.entity_type', 'taxonomy_term')
-                  ->condition('ts.active', 1);
-      $final_mail = $subscription_mail->execute()->fetchAll();
-      foreach ($final_mail as $subscription_mail_tids) {
-        $mails[] .= $subscription_mail_tids->mail;
+    $fields_detail = field_info_fields();
+    foreach ($fields_detail as $value) {
+      if ($value['type'] == 'taxonomy_term_reference' && in_array($node->type, $value['bundles']['node'])) {
+        $taxonomy_fields[] = $value['field_name'];
       }
     }
-  }
+    foreach ($taxonomy_fields as $tax_fields) {
+      if (!empty($node->{$tax_fields}[LANGUAGE_NONE])) {
+        foreach ($node->{$tax_fields}[LANGUAGE_NONE] as $tags) {
+          $node_related_tids[] = $tags['tid'];
+        }
+      }
+    }
 
-  if (!empty($mails)) {
-    $subject = "";
-    $body = "";
-    $subject = variable_get('total_subscription_subject_published', '');
-    $body .= token_replace(variable_get('total_subscription_email_template', ""), array('node' => $node));
-    $body .= $base_url . '/total-subscription/unsubscribe';
-    $params = array(
-      'subject' => $subject,
-      'body' => $body,
-    );
-    $sending_mail = array_unique($mails);
-    if (!empty($sending_mail)) {
-      foreach ($sending_mail as $email) {
-        $result = drupal_mail($module, $key_of_mail, $email, $language, $params, $from, $send);
+    if (!empty($node_related_tids)) {
+      foreach ($node_related_tids as $tids) {
+        $subscription_mail = db_select('total_subscription', 'ts');
+        $subscription_mail->fields('ts', array('mail'))
+                    ->condition('ts.entity_id', $tids)
+                    ->condition('ts.entity_type', 'taxonomy_term')
+                    ->condition('ts.active', 1);
+        $final_mail = $subscription_mail->execute()->fetchAll();
+        foreach ($final_mail as $subscription_mail_tids) {
+          $mails[] .= $subscription_mail_tids->mail;
+        }
+      }
+    }
+
+    if (!empty($mails)) {
+      $subject = "";
+      $body = "";
+      $subject = variable_get('total_subscription_subject_published', '');
+      $body .= token_replace(variable_get('total_subscription_email_template', ""), array('node' => $node));
+      $body .= $base_url . '/total-subscription/unsubscribe';
+      $params = array(
+        'subject' => $subject,
+        'body' => $body,
+      );
+      $sending_mail = array_unique($mails);
+      if (!empty($sending_mail)) {
+        foreach ($sending_mail as $email) {
+          $result = drupal_mail($module, $key_of_mail, $email, $language, $params, $from, $send);
+        }
       }
     }
   }
