@@ -170,6 +170,4 @@ function smtp_failure_queue_runner($message) {
   $queue = DrupalQueue::get('smtp_send_queue');
   $queue->createItem($message);
 }
-
-  return $variable;
-}
+]
