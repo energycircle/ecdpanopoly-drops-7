@@ -84,6 +84,7 @@ dependencies[] = field_validation_ui
 dependencies[] = field_hidden
 dependencies[] = flexslider
 dependencies[] = globalredirect
+dependencies[] = gauth
 dependencies[] = honeypot
 dependencies[] = image_mobile_camera
 dependencies[] = insert_view
