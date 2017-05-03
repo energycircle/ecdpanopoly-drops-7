@@ -4,6 +4,7 @@
         "behat/mink": "1.5.*@stable",
         "drush/drush": "6.2.0",
         "behat/mink-extension": "*",
-        "behat/mink-goutte-driver": "*"
+        "behat/mink-goutte-driver": "*",
+        "google/apiclient": "^2.0"
     }
 }
