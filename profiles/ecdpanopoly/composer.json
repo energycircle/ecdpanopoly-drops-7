@@ -4,6 +4,7 @@
         "behat/mink": "1.5.*@stable",
         "drush/drush": "6.2.0",
         "behat/mink-extension": "*",
+        "guzzle/guzzle": "*",
         "behat/mink-goutte-driver": "*"
     }
 }

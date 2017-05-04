@@ -90,36 +90,14 @@ abstract class FeedsConfigurable {
   }
 
   /**
-   * Determine whether this object is persistent.
-   *
-   * @return bool
-   *   True if the object is persistent.
-   *   False otherwise.
-   */
-  public function doesExist() {
-    return ($this->export_type == FEEDS_EXPORT_NONE) ? FALSE : TRUE;
-  }
-
-  /**
-   * Determine whether this object is enabled.
-   *
-   * @return bool
-   *   True if the object is enabled.
-   *   False otherwise.
-   */
-  public function isEnabled() {
-    return $this->disabled ? FALSE : TRUE;
-  }
-
-  /**
    * Determine whether this object is persistent and enabled. I. e. it is
    * defined either in code or in the database and it is enabled.
    */
   public function existing() {
-    if (!$this->doesExist()) {
+    if ($this->export_type == FEEDS_EXPORT_NONE) {
       throw new FeedsNotExistingException(t('Object is not persistent.'));
     }
-    if (!$this->isEnabled()) {
+    if ($this->disabled) {
       throw new FeedsNotExistingException(t('Object is disabled.'));
     }
     return $this;
@@ -200,16 +178,6 @@ abstract class FeedsConfigurable {
    *   values are their default values.
    */
   public function configDefaults() {
-    return array();
-  }
-
-  /**
-   * Validates the configuration.
-   *
-   * @return array
-   *   A list of errors.
-   */
-  public function validateConfig() {
     return array();
   }
 
