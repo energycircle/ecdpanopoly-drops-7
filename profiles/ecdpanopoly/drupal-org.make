@@ -7,12 +7,12 @@ base = panopoly
  projects[panopoly][download][type] = git
  projects[panopoly][download][url] = https://github.com/pantheon-systems/drops-7.git
  projects[panopoly][download][branch] = master
- 
+
 ; Pull in Custom Profile ECDPanopoly:
  projects[ecdpanopoly][type] = profile
  projects[ecdpanopoly][download][type] = git
  projects[ecdpanopoly][download][url] = https://github.com/energycircle/ecdpanopoly.git
- projects[ecdpanopoly][download][branch] = master
+ projects[ecdpanopoly][download][branch] = 7.x-1.x
 
 
 projects[drupal][patch][1973278] = http://www.drupal.org/files/issues/image-accommodate_missing_definition-1973278-16.patch
