@@ -53,7 +53,7 @@ projects[save_draft][version] = 1.x-dev
 projects[save_draft][subdir] = contrib
 
 ;override features version
-projects[features][subdir] = eccontrib
+projects[features][subdir] = contrib
 projects[features][version] = 2.x-dev
 
 

@@ -9,5 +9,5 @@ dependencies[] = image
 version = "7.x-1.x-dev"
 core = "7.x"
 project = "image_mobile_camera"
-datestamp = "1494000212"
+datestamp = "1494000753"
 
