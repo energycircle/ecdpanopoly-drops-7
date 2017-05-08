@@ -134,6 +134,6 @@ dependencies[] = energycircle_apps
 
 
 ; Information added by flux423 - updated on 2016-10-5
-version = "7.x-1.6.2"
+version = "7.x-1.6.3"
 core = "7.x"
 project = "ECDPanopoly"
