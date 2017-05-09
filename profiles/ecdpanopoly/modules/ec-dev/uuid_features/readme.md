@@ -46,8 +46,8 @@ INSTALLATION
 
 CUSTOMIZATION
 -------------
-* Customize the UUID Features Integration settings in Administration Â»
-  Structure Â» Features Â» UUID export settings.
+* Customize the UUID Features Integration settings in Administration »
+  Structure » Features » UUID export settings.
 
 
 API
