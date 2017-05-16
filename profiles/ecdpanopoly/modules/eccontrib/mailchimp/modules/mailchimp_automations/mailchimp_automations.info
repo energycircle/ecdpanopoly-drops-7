@@ -9,9 +9,9 @@ dependencies[] = entity
 files[] = includes/mailchimp_automations.entity.inc
 files[] = includes/mailchimp_automations.ui_controller.inc
 
-; Information added by Drupal.org packaging script on 2017-03-28
-version = "7.x-4.8+5-dev"
+; Information added by Drupal.org packaging script on 2017-05-10
+version = "7.x-4.8+8-dev"
 core = "7.x"
 project = "mailchimp"
-datestamp = "1490743086"
+datestamp = "1494445689"
 
