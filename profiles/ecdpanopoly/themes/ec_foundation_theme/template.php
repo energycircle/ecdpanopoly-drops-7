@@ -95,22 +95,3 @@ function ec_foundation_theme_preprocess_block(&$vars) {
 function ec_foundation_theme_process_block(&$vars) {
 }
 // */
-
-
-//***Add form_id to the following array to add Zoho Handling post-submit
-  
-//** field_button_text
-  
-  /* -- Delete this line if you want to use these functions
-  
- function ec_foundation_theme_form_alter(&$form, &$form_state, $form_id){
-	 
- $buttonLabel = array(
-     'field_button_text',
-  );
-  if (in_array($form_id,$buttonLabel))
-  {
-     $form['actions']['submit']['#value'][] = 'test';
-  }
-}
- // */
