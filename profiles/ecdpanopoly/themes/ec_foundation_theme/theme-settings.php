@@ -4,7 +4,7 @@
  * @file
  * Implimentation of hook_form_system_theme_settings_alter()
  *
- * To use replace "at_rostron" with your themeName and uncomment by
+ * To use replace "ec_foundation_theme" with your themeName and uncomment by
  * deleting the comment line to enable.
  *
  * @param $form: Nested array of form elements that comprise the form.

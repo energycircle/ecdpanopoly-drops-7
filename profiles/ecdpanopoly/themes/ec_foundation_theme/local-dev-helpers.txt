@@ -18,16 +18,11 @@ mysql.server restart
 
 terminus site clone-content [--site=<site>] [--from-env] [--to-env] [--db-only] [--files-only]
 
-<— settings.php —>
-if (!defined('PANTHEON_ENVIRONMENT')) {
-  // Database.
-  $databases['default']['default'] = array(
-    'database' => 'ec-clientname’,
-    'username' => 'root',
-    'password' => 'cRadep4A',
-    'host' => 'localhost',
-    'driver' => 'mysql',
-    'port' => '',
-    'prefix' => '',
-  );
-}
+<— Duplicate default.settings.local.php and name it settings.local.php #this will not be included when you push up —>
+
+only change the following:
+
+      'database' => 'some_db',
+      'username' => 'root',
+      'password' => 'some_pw',
+      'host' => '127.0.0.1',

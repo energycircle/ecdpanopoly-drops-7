@@ -13,20 +13,14 @@
 
 6. in SequelPro, create the name of the db
 
-7. edit the settings.php file found in sites/default on line 215 replace $databases = array(); with the following:
-  // Local development configuration.
-  if (!defined('PANTHEON_ENVIRONMENT')) {
-    // Database.
-    $databases['default']['default'] = array(
-      'database' => 'ec-energy-haus',
+7. <— Duplicate default.settings.local.php and name it settings.local.php #this will not be included when you push up —>
+
+only change the following:
+
+      'database' => 'some_db',
       'username' => 'root',
-      'password' => 'cRadep4A',
-      'host' => 'localhost',
-      'driver' => 'mysql',
-      'port' => '',
-      'prefix' => '',
-    );
-  }
+      'password' => 'some_pw',
+      'host' => '127.0.0.1',
 
 8. in your .drush directory edit your local.aliases.drushrc.php file by adding the following:
   $aliases['ec-client-name'] = array(
