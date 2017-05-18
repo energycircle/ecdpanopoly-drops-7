@@ -181,7 +181,7 @@ function ec_blog_post_strongarm() {
           'weight' => '4',
         ),
         'xmlsitemap' => array(
-          'weight' => '2',
+          'weight' => '3',
         ),
       ),
       'display' => array(

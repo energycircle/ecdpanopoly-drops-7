@@ -24,7 +24,6 @@ function ec_a_b_testing_setup_user_default_permissions() {
   $permissions['clone node'] = array(
     'name' => 'clone node',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',

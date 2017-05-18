@@ -61,7 +61,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 13,
+      'weight' => 6,
     ),
   );
 
@@ -127,7 +127,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 15,
+      'weight' => 8,
     ),
   );
 
@@ -185,7 +185,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 9,
     ),
   );
 
@@ -240,7 +240,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 13,
+      'weight' => 7,
     ),
   );
 
@@ -486,7 +486,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 13,
+      'weight' => 7,
     ),
   );
 
@@ -791,7 +791,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 16,
+      'weight' => 8,
     ),
   );
 
@@ -849,7 +849,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 7,
     ),
   );
 
@@ -904,7 +904,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 18,
+      'weight' => 9,
     ),
   );
 
@@ -1036,7 +1036,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 6,
     ),
   );
 
@@ -1100,7 +1100,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 5,
     ),
   );
 
@@ -1161,7 +1161,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -1345,7 +1345,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 5,
     ),
   );
 
@@ -1403,7 +1403,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 4,
     ),
   );
 
@@ -1458,7 +1458,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 6,
+      'weight' => 3,
     ),
   );
 
@@ -1473,7 +1473,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 15,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1524,7 +1524,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 24,
+      'weight' => 9,
     ),
   );
 
@@ -1539,7 +1539,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 14,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1582,7 +1582,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 22,
+      'weight' => 8,
     ),
   );
 
@@ -1598,7 +1598,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 12,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1637,7 +1637,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 20,
+      'weight' => 7,
     ),
   );
 
@@ -1704,7 +1704,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 21,
+      'weight' => 8,
     ),
   );
 
@@ -1762,7 +1762,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 9,
     ),
   );
 
@@ -1817,7 +1817,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 19,
+      'weight' => 7,
     ),
   );
 
@@ -1832,7 +1832,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1883,7 +1883,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 34,
+      'weight' => 9,
     ),
   );
 
@@ -1898,7 +1898,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1941,7 +1941,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 32,
+      'weight' => 8,
     ),
   );
 
@@ -1957,7 +1957,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1996,7 +1996,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 26,
+      'weight' => 7,
     ),
   );
 
@@ -2056,7 +2056,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 16,
+      'weight' => 9,
     ),
   );
 
@@ -2108,7 +2108,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 8,
     ),
   );
 
@@ -2157,7 +2157,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 7,
     ),
   );
 
@@ -2212,7 +2212,7 @@ function ec_a_b_testing_setup_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 15,
+      'weight' => 7,
     ),
   );
 

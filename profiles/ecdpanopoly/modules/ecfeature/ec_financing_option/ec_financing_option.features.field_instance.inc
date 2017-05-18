@@ -265,7 +265,7 @@ function ec_financing_option_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 5,
+      'weight' => 8,
     ),
   );
 

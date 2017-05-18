@@ -52,9 +52,9 @@ function ec_financing_option_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '2',
     'children' => array(
-      0 => 'group_show_this_on',
+      0 => 'group_cta_form',
       1 => 'group_general',
-      2 => 'group_cta_form',
+      2 => 'group_show_this_on',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -81,9 +81,7 @@ function ec_financing_option_field_group_info() {
     'weight' => '7',
     'children' => array(
       0 => 'body',
-      1 => 'field_financing_forms',
-      2 => 'field_financing_link',
-      3 => 'field_financing_logo',
+      1 => 'field_financing_logo',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -96,6 +94,34 @@ function ec_financing_option_field_group_info() {
     ),
   );
   $field_groups['group_general|node|financing_option|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|financing_option|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'financing_option';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_financing_forms',
+      1 => 'field_financing_link',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-inactive-fields field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_inactive_fields|node|financing_option|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -129,6 +155,7 @@ function ec_financing_option_field_group_info() {
   t('CTA Form');
   t('Edit Content');
   t('General');
+  t('Inactive Fields');
 
   return $field_groups;
 }

@@ -69,7 +69,10 @@ function ec_base_config_default_panels_mini() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'footer-mainmenu',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
@@ -101,7 +104,10 @@ function ec_base_config_default_panels_mini() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'footer-auxmenu',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 1;
   $pane->locks = array();
@@ -127,7 +133,10 @@ function ec_base_config_default_panels_mini() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'footer-social-links',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 2;
   $pane->locks = array();
@@ -152,7 +161,10 @@ function ec_base_config_default_panels_mini() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'copyright',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 3;
   $pane->locks = array();
@@ -175,7 +187,10 @@ function ec_base_config_default_panels_mini() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'distinction-strip',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
@@ -259,7 +274,10 @@ function ec_base_config_default_panels_mini() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'header-site-logo',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 1;
   $pane->locks = array();
@@ -283,7 +301,7 @@ function ec_base_config_default_panels_mini() {
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => '',
+    'css_id' => 'header-auxmenu',
     'css_class' => 'desktop',
   );
   $pane->extras = array();
@@ -311,7 +329,7 @@ function ec_base_config_default_panels_mini() {
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => '',
+    'css_id' => 'header-phone',
     'css_class' => 'desktop',
   );
   $pane->extras = array();
@@ -333,7 +351,7 @@ function ec_base_config_default_panels_mini() {
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => '',
+    'css_id' => 'header-slogan',
     'css_class' => 'desktop',
   );
   $pane->extras = array();

@@ -32,7 +32,6 @@ function ec_review_sites_user_default_permissions() {
   $permissions['create review_site content'] = array(
     'name' => 'create review_site content',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -54,7 +53,6 @@ function ec_review_sites_user_default_permissions() {
   $permissions['delete own review_site content'] = array(
     'name' => 'delete own review_site content',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -75,7 +73,6 @@ function ec_review_sites_user_default_permissions() {
   $permissions['edit any review_site content'] = array(
     'name' => 'edit any review_site content',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -87,7 +84,6 @@ function ec_review_sites_user_default_permissions() {
   $permissions['edit own review_site content'] = array(
     'name' => 'edit own review_site content',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',

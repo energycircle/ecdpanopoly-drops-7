@@ -14,7 +14,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['access admin theme'] = array(
     'name' => 'access admin theme',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -26,7 +25,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -38,7 +36,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -72,7 +69,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -117,7 +113,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['access media browser'] = array(
     'name' => 'access media browser',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -169,7 +164,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -603,69 +597,6 @@ function ec_base_config_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories breadcrumbs'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories breadcrumbs'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories breadcrumbs',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories content'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories content'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories context'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories context'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories context',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories defaults'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories defaults'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories defaults',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories layout'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories layout'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories layout',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories overview'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories overview'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories overview',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term panopoly_categories settings'.
-  $permissions['administer panelizer taxonomy_term panopoly_categories settings'] = array(
-    'name' => 'administer panelizer taxonomy_term panopoly_categories settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer user user breadcrumbs'.
   $permissions['administer panelizer user user breadcrumbs'] = array(
     'name' => 'administer panelizer user user breadcrumbs',
@@ -1090,7 +1021,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['create files'] = array(
     'name' => 'create files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1111,7 +1041,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'create panopoly_landing_page content'.
   $permissions['create panopoly_landing_page content'] = array(
     'name' => 'create panopoly_landing_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -1189,7 +1121,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'delete any panopoly_landing_page content'.
   $permissions['delete any panopoly_landing_page content'] = array(
     'name' => 'delete any panopoly_landing_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -1266,7 +1200,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'delete own panopoly_landing_page content'.
   $permissions['delete own panopoly_landing_page content'] = array(
     'name' => 'delete own panopoly_landing_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -1301,15 +1237,6 @@ function ec_base_config_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete terms in panopoly_categories'.
-  $permissions['delete terms in panopoly_categories'] = array(
-    'name' => 'delete terms in panopoly_categories',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
@@ -1325,7 +1252,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['download any audio files'] = array(
     'name' => 'download any audio files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1337,7 +1263,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['download any document files'] = array(
     'name' => 'download any document files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1349,7 +1274,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['download any image files'] = array(
     'name' => 'download any image files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1361,7 +1285,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['download any video files'] = array(
     'name' => 'download any video files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1373,7 +1296,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['download own audio files'] = array(
     'name' => 'download own audio files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1385,7 +1307,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['download own document files'] = array(
     'name' => 'download own document files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1397,7 +1318,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['download own image files'] = array(
     'name' => 'download own image files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1409,7 +1329,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['download own video files'] = array(
     'name' => 'download own video files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1421,7 +1340,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit any audio files'] = array(
     'name' => 'edit any audio files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1433,7 +1351,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1445,7 +1362,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit any entityform'] = array(
     'name' => 'edit any entityform',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
@@ -1456,7 +1372,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1467,7 +1382,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'edit any panopoly_landing_page content'.
   $permissions['edit any panopoly_landing_page content'] = array(
     'name' => 'edit any panopoly_landing_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -1486,7 +1403,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit any video files'] = array(
     'name' => 'edit any video files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1509,7 +1425,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit meta tags'] = array(
     'name' => 'edit meta tags',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1531,7 +1446,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit own audio files'] = array(
     'name' => 'edit own audio files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1543,7 +1457,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit own document files'] = array(
     'name' => 'edit own document files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1565,7 +1478,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit own image files'] = array(
     'name' => 'edit own image files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1576,7 +1488,9 @@ function ec_base_config_user_default_permissions() {
   // Exported permission: 'edit own panopoly_landing_page content'.
   $permissions['edit own panopoly_landing_page content'] = array(
     'name' => 'edit own panopoly_landing_page content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -1595,21 +1509,11 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit own video files'] = array(
     'name' => 'edit own video files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit terms in panopoly_categories'.
-  $permissions['edit terms in panopoly_categories'] = array(
-    'name' => 'edit terms in panopoly_categories',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'exclude any node title'.
@@ -1664,7 +1568,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1779,7 +1682,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1791,7 +1693,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['save draft'] = array(
     'name' => 'save draft',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1869,7 +1770,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use manualcrop'] = array(
     'name' => 'use manualcrop',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1943,7 +1843,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use text format iframe'] = array(
     'name' => 'use text format iframe',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1955,7 +1854,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use text format panopoly_html_text'] = array(
     'name' => 'use text format panopoly_html_text',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
@@ -1965,7 +1863,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['use text format panopoly_wysiwyg_text'] = array(
     'name' => 'use text format panopoly_wysiwyg_text',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
@@ -1975,7 +1872,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['view any entityform'] = array(
     'name' => 'view any entityform',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -1987,7 +1883,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['view files'] = array(
     'name' => 'view files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -2000,7 +1895,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['view own entityform'] = array(
     'name' => 'view own entityform',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -2012,7 +1906,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['view own files'] = array(
     'name' => 'view own files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -2025,7 +1918,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['view own private files'] = array(
     'name' => 'view own private files',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -2037,7 +1929,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -2069,7 +1960,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
@@ -2081,7 +1971,6 @@ function ec_base_config_user_default_permissions() {
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
-      'EC Contractor' => 'EC Contractor',
       'EC Platinum admin' => 'EC Platinum admin',
       'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',

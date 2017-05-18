@@ -82,8 +82,6 @@ function ec_audience_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_aud_featured_image',
-      2 => 'field_aud_teaser_image',
-      3 => 'field_featured_video',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -109,9 +107,7 @@ function ec_audience_field_group_info() {
   $field_group->data = array(
     'label' => 'Add other content to this page',
     'weight' => '10',
-    'children' => array(
-      0 => 'field_ref_services_audiences',
-    ),
+    'children' => array(),
     'format_type' => 'htab',
     'format_settings' => array(
       'label' => 'Add other content to this page',

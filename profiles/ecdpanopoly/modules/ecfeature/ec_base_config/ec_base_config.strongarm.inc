@@ -162,7 +162,7 @@ function ec_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'clean_url';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['clean_url'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -184,6 +184,7 @@ function ec_base_config_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_ids';
   $strongarm->value = 'user-login-form
+user-login
 search-form
 search-form--2
 schedule-service-entityform-edit-form
@@ -1250,38 +1251,8 @@ campaign-form-entityform-edit-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_admin_theme';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['node_admin_theme'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_taxonomy_term_panopoly_categories';
-  $strongarm->value = array(
-    'status' => 1,
-    'help' => '',
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 1,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 1,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 1,
-        'choice' => 0,
-      ),
-    ),
-  );
-  $export['panelizer_defaults_taxonomy_term_panopoly_categories'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -1906,13 +1877,6 @@ campaign-form-entityform-edit-form';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_taxonomy_term_panopoly_categories_pattern';
-  $strongarm->value = 'categories/[term:name]';
-  $export['pathauto_taxonomy_term_panopoly_categories_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_transliterate';
   $strongarm->value = 1;
   $export['pathauto_transliterate'] = $strongarm;
@@ -1972,7 +1936,7 @@ campaign-form-entityform-edit-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_publisherID';
-  $strongarm->value = 'dr-3b0d930d-e11d-c306-cb59-60d0fd37c7b9';
+  $strongarm->value = 'dr-ef082abe-5378-8ae6-e325-23ba15c499c7';
   $export['sharethis_publisherID'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2572,58 +2536,58 @@ campaign-form-entityform-edit-form';
     'smalltouch_portrait_sidebar_second' => '100',
     'smalltouch_portrait_sidebar_unit' => '%',
     'smalltouch_portrait_layout' => 'one_col_stack',
-    'bigscreen_two_brick' => 'two-brick',
     'bigscreen_two_66_33' => 'two-66-33',
-    'bigscreen_two_50' => 'two-50',
+    'bigscreen_two_brick' => 'two-brick',
     'bigscreen_two_33_66' => 'two-33-66',
-    'bigscreen_three_50_25_25' => 'three-50-25-25',
+    'bigscreen_two_50' => 'two-50',
+    'bigscreen_three_25_25_50' => 'three-25-25-50',
     'bigscreen_three_3x33' => 'three-3x33',
     'bigscreen_three_25_50_25' => 'three-25-50-25',
-    'bigscreen_three_25_25_50' => 'three-25-25-50',
-    'bigscreen_four_4x25' => 'four-4x25',
+    'bigscreen_three_50_25_25' => 'three-50-25-25',
     'bigscreen_five_5x20' => 'five-5x20-2x3-grid',
+    'bigscreen_four_4x25' => 'four-4x25',
     'bigscreen_six_6x16' => 'six-6x16-3x2-grid',
-    'bigscreen_three_inset_right' => 'three-inset-right',
     'bigscreen_three_inset_left' => 'three-inset-left',
-    'tablet_landscape_two_brick' => 'two-brick',
+    'bigscreen_three_inset_right' => 'three-inset-right',
     'tablet_landscape_two_66_33' => 'two-66-33',
-    'tablet_landscape_two_50' => 'two-50',
+    'tablet_landscape_two_brick' => 'two-brick',
     'tablet_landscape_two_33_66' => 'two-33-66',
-    'tablet_landscape_three_50_25_25' => 'three-50-25-25',
+    'tablet_landscape_two_50' => 'two-50',
+    'tablet_landscape_three_25_25_50' => 'three-25-25-50',
     'tablet_landscape_three_3x33' => 'three-3x33',
     'tablet_landscape_three_25_50_25' => 'three-25-50-25',
-    'tablet_landscape_three_25_25_50' => 'three-25-25-50',
-    'tablet_landscape_four_4x25' => 'four-4x25',
+    'tablet_landscape_three_50_25_25' => 'three-50-25-25',
     'tablet_landscape_five_5x20' => 'five-5x20',
+    'tablet_landscape_four_4x25' => 'four-4x25',
     'tablet_landscape_six_6x16' => 'six-6x16-3x2-grid',
-    'tablet_landscape_three_inset_right' => 'three-inset-right',
     'tablet_landscape_three_inset_left' => 'three-inset-left',
-    'tablet_portrait_two_brick' => 'two-brick',
+    'tablet_landscape_three_inset_right' => 'three-inset-right',
     'tablet_portrait_two_66_33' => 'two-66-33',
-    'tablet_portrait_two_50' => 'two-50',
+    'tablet_portrait_two_brick' => 'two-brick',
     'tablet_portrait_two_33_66' => 'two-33-66',
-    'tablet_portrait_three_50_25_25' => 'three-50-25-25-stack-top',
+    'tablet_portrait_two_50' => 'two-50',
+    'tablet_portrait_three_25_25_50' => 'three-25-25-50-stack-top',
     'tablet_portrait_three_3x33' => 'three-3x33-stack-top',
     'tablet_portrait_three_25_50_25' => 'three-25-50-25-stack-top',
-    'tablet_portrait_three_25_25_50' => 'three-25-25-50-stack-top',
-    'tablet_portrait_four_4x25' => 'four-4x25-2x2-grid',
+    'tablet_portrait_three_50_25_25' => 'three-50-25-25-stack-top',
     'tablet_portrait_five_5x20' => 'five-5x20-1x2x2-grid',
+    'tablet_portrait_four_4x25' => 'four-4x25-2x2-grid',
     'tablet_portrait_six_6x16' => 'six-6x16-2x3-grid',
-    'tablet_portrait_three_inset_right' => 'three-inset-right-wrap',
     'tablet_portrait_three_inset_left' => 'three-inset-left-wrap',
-    'smalltouch_landscape_two_brick' => 'two-brick-stack',
+    'tablet_portrait_three_inset_right' => 'three-inset-right-wrap',
     'smalltouch_landscape_two_66_33' => 'two-66-33-stack',
-    'smalltouch_landscape_two_50' => 'two-50-stack',
+    'smalltouch_landscape_two_brick' => 'two-brick-stack',
     'smalltouch_landscape_two_33_66' => 'two-33-66-stack',
-    'smalltouch_landscape_three_50_25_25' => 'three-50-25-25-stack',
+    'smalltouch_landscape_two_50' => 'two-50-stack',
+    'smalltouch_landscape_three_25_25_50' => 'three-25-25-50-stack',
     'smalltouch_landscape_three_3x33' => 'three-3x33-stack',
     'smalltouch_landscape_three_25_50_25' => 'three-25-50-25-stack',
-    'smalltouch_landscape_three_25_25_50' => 'three-25-25-50-stack',
-    'smalltouch_landscape_four_4x25' => 'four-4x25-stack',
+    'smalltouch_landscape_three_50_25_25' => 'three-50-25-25-stack',
     'smalltouch_landscape_five_5x20' => 'five-5x20-stack',
+    'smalltouch_landscape_four_4x25' => 'four-4x25-stack',
     'smalltouch_landscape_six_6x16' => 'six-6x16-stack',
-    'smalltouch_landscape_three_inset_right' => 'three-inset-right-stack',
     'smalltouch_landscape_three_inset_left' => 'three-inset-left-stack',
+    'smalltouch_landscape_three_inset_right' => 'three-inset-right-stack',
     'global_default_layout_toggle' => 0,
     'global_default_layout' => 'smalltouch-portrait',
     'disable_responsive_styles' => 0,

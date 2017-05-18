@@ -110,14 +110,11 @@ function ec_service_stack_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* No results behavior: Global: View (Views field view) */
+  /* No results behavior: Broken/missing handler */
   $handler->display->display_options['empty']['view_field']['id'] = 'view_field';
   $handler->display->display_options['empty']['view_field']['table'] = 'views';
   $handler->display->display_options['empty']['view_field']['field'] = 'view_field';
   $handler->display->display_options['empty']['view_field']['label'] = '';
-  $handler->display->display_options['empty']['view_field']['element_label_colon'] = FALSE;
-  $handler->display->display_options['empty']['view_field']['view'] = 'external_cta_form';
-  $handler->display->display_options['empty']['view_field']['display'] = 'panel_pane_1';
   /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_ref_to_cta_form_node']['id'] = 'reverse_field_ref_to_cta_form_node';
   $handler->display->display_options['relationships']['reverse_field_ref_to_cta_form_node']['table'] = 'entityform_type';
@@ -197,7 +194,7 @@ function ec_service_stack_views_default_views() {
   $handler->display->display_options['fields']['field_featured_video']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_featured_video']['alter']['text'] = '<iframe width="853" height="480" src="[field_featured_video]" frameborder="0" allowfullscreen></iframe>';
   $handler->display->display_options['fields']['field_featured_video']['element_label_colon'] = FALSE;
-  /* Field: Field: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';

@@ -64,7 +64,7 @@ function ec_gallery_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 35,
     ),
   );
 

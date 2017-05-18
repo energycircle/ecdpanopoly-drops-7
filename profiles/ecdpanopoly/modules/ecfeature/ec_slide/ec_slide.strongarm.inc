@@ -120,19 +120,19 @@ function ec_slide_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '11',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '8',
+          'weight' => '4',
         ),
         'xmlsitemap' => array(
-          'weight' => '7',
+          'weight' => '3',
         ),
       ),
       'display' => array(
@@ -167,6 +167,20 @@ function ec_slide_strongarm() {
   $strongarm->name = 'menu_parent_slide';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__slide';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_taxonomy_term__slide_set';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_taxonomy_term__slide_set'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

@@ -623,7 +623,7 @@ function ec_audience_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 8,
+        'weight' => 9,
       ),
     ),
   );

@@ -82,8 +82,11 @@ function ec_promotions_field_group_info() {
     'weight' => '17',
     'children' => array(
       0 => 'body',
-      1 => 'field_display_subtitle',
-      2 => 'field_display_title',
+      1 => 'field_display_startend',
+      2 => 'field_display_subtitle',
+      3 => 'field_display_title',
+      4 => 'field_promotion_image',
+      5 => 'field_promotion_link_text',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -100,6 +103,38 @@ function ec_promotions_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|promotion|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'promotion';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_promotion_price',
+      1 => 'field_ref_promo_article',
+      2 => 'field_ref_promo_case_study',
+      3 => 'field_ref_promo_serv_cat',
+      4 => 'field_ref_promo_serv_group',
+      5 => 'field_ref_promo_service',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-inactive-fields field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_inactive_fields|node|promotion|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_promotion|node|promotion|form';
   $field_group->group_name = 'group_promotion';
   $field_group->entity_type = 'node';
@@ -109,12 +144,7 @@ function ec_promotions_field_group_info() {
   $field_group->data = array(
     'label' => 'Promotion',
     'weight' => '18',
-    'children' => array(
-      0 => 'field_display_startend',
-      1 => 'field_promotion_image',
-      2 => 'field_promotion_link_text',
-      3 => 'field_promotion_price',
-    ),
+    'children' => array(),
     'format_type' => 'htab',
     'format_settings' => array(
       'formatter' => 'closed',
@@ -139,14 +169,7 @@ function ec_promotions_field_group_info() {
   $field_group->data = array(
     'label' => 'Add this content to these pages',
     'weight' => '20',
-    'children' => array(
-      0 => 'field_ref_promo_serv_cat',
-      1 => 'field_ref_promo_serv_group',
-      2 => 'field_ref_promo_service',
-      3 => 'field_ref_promo_case_study',
-      4 => 'field_ref_promo_article',
-      5 => 'field_ref_promotion_product',
-    ),
+    'children' => array(),
     'format_type' => 'htab',
     'format_settings' => array(
       'label' => 'Add this content to these pages',
@@ -166,6 +189,7 @@ function ec_promotions_field_group_info() {
   t('CTA Form');
   t('Edit Content');
   t('General');
+  t('Inactive Fields');
   t('Promotion');
 
   return $field_groups;
