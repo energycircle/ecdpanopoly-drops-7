@@ -1,2 +1,2 @@
-# ec_base_content
-Base content for EC Distro - home, 404, 403
+# ec_base_config
+EC Base Config and contributing settings
