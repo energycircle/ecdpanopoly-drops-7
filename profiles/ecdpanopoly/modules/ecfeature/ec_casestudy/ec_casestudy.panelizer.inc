@@ -411,7 +411,10 @@ function ec_casestudy_panelizer_defaults() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'primary-cta-form',
+    'css_class' => 'cta-form',
+  );
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();

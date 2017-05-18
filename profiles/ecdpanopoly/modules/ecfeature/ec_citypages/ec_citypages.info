@@ -253,5 +253,7 @@ features_exclude[features_overrides][panelizer_defaults.node:city_page:default:d
 features_exclude[features_overrides][panelizer_defaults.node:city_page:default:default.display|content|new-198063bb-6f2c-4db0-b888-4e781aa5ecec] = panelizer_defaults.node:city_page:default:default.display|content|new-198063bb-6f2c-4db0-b888-4e781aa5ecec
 features_exclude[features_overrides][panelizer_defaults.node:city_page:default:default.display|content|new-82510549-346d-415c-b28f-f42b981fc8a3] = panelizer_defaults.node:city_page:default:default.display|content|new-82510549-346d-415c-b28f-f42b981fc8a3
 features_exclude[field_group][group_citypages_photoset|node|city_page|form] = group_citypages_photoset|node|city_page|form
+features_exclude[field_group][group_inactive_fields|node|case_study|form] = group_inactive_fields|node|case_study|form
+features_exclude[field_group][group_inactive_fields|node|testimonial|form] = group_inactive_fields|node|testimonial|form
 features_exclude[field_instance][node-city_page-field_a_b_test_page] = node-city_page-field_a_b_test_page
 project status url = https://github.com/energycircle/ec_citypages

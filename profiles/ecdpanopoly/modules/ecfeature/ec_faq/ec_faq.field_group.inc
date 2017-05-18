@@ -23,8 +23,8 @@ function ec_faq_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '1',
     'children' => array(
-      0 => 'group_shown_on_this_page',
-      1 => 'group_general',
+      0 => 'group_general',
+      1 => 'group_shown_on_this_page',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -67,6 +67,36 @@ function ec_faq_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|faq|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faq';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_ref_faq_content_page',
+      1 => 'field_ref_faq_serv',
+      2 => 'field_ref_faq_servcat',
+      3 => 'field_ref_faq_servgroup',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-inactive-fields field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_inactive_fields|node|faq|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_shown_on_this_page|node|faq|form';
   $field_group->group_name = 'group_shown_on_this_page';
   $field_group->entity_type = 'node';
@@ -76,12 +106,7 @@ function ec_faq_field_group_info() {
   $field_group->data = array(
     'label' => 'Add this content to these pages',
     'weight' => '4',
-    'children' => array(
-      0 => 'field_ref_faq_content_page',
-      1 => 'field_ref_faq_serv',
-      2 => 'field_ref_faq_servcat',
-      3 => 'field_ref_faq_servgroup',
-    ),
+    'children' => array(),
     'format_type' => 'tab',
     'format_settings' => array(
       'label' => 'Add this content to these pages',
@@ -100,6 +125,7 @@ function ec_faq_field_group_info() {
   t('Add this content to these pages');
   t('Edit Content');
   t('General');
+  t('Inactive Fields');
 
   return $field_groups;
 }

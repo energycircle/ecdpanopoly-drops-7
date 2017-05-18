@@ -28,6 +28,7 @@ features[field_base][] = field_gallery_tag
 features[field_base][] = field_ref_case_study_gallery
 features[field_group][] = group_edit_content|node|gallery|form
 features[field_group][] = group_general|node|gallery|form
+features[field_group][] = group_inactive_fields|node|case_study|form
 features[field_group][] = group_shown_on_this_page|node|gallery|form
 features[field_instance][] = node-case_study-field_ref_case_study_gallery
 features[field_instance][] = node-gallery-body

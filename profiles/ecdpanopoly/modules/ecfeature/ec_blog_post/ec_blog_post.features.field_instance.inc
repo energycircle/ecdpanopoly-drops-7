@@ -70,7 +70,7 @@ function ec_blog_post_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 18,
     ),
   );
 
@@ -201,7 +201,7 @@ function ec_blog_post_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 6,
+      'weight' => 27,
     ),
   );
 
@@ -519,7 +519,7 @@ function ec_blog_post_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 7,
+      'weight' => 26,
     ),
   );
 
@@ -658,7 +658,7 @@ function ec_blog_post_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 25,
     ),
   );
 
@@ -667,7 +667,7 @@ function ec_blog_post_field_default_field_instances() {
     'bundle' => 'blog_post',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This is help text.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -780,7 +780,7 @@ function ec_blog_post_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 20,
+      'weight' => 41,
     ),
   );
 
@@ -850,7 +850,7 @@ function ec_blog_post_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 35,
     ),
   );
 
@@ -866,7 +866,7 @@ function ec_blog_post_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'featured' => array(
         'label' => 'above',
@@ -914,7 +914,7 @@ function ec_blog_post_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 13,
     ),
   );
 
@@ -978,7 +978,7 @@ function ec_blog_post_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -1042,7 +1042,7 @@ function ec_blog_post_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 25,
     ),
   );
 
@@ -1063,6 +1063,7 @@ function ec_blog_post_field_default_field_instances() {
   t('Select the blog posts to display on this service group page.');
   t('Select the blog posts to display on this service page.');
   t('The display date for this blog post.');
+  t('This is help text.');
   t('URL of the page to link this blog entry to.');
 
   return $field_instances;

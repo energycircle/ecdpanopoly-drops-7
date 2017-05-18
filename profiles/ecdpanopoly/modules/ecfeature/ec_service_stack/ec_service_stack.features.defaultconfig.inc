@@ -657,7 +657,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 24,
+        'weight' => 33,
       ),
     ),
   );
@@ -806,7 +806,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 9,
+          'weight' => 8,
         ),
         'featured' => array(
           'label' => 'above',
@@ -903,7 +903,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 7,
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1131,7 +1131,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 8,
+          'weight' => 7,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1223,7 +1223,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 17,
+          'weight' => 16,
         ),
         'featured' => array(
           'label' => 'above',
@@ -2396,7 +2396,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 18,
+        'weight' => 34,
       ),
     ),
   );
@@ -2498,7 +2498,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 16,
+        'weight' => 32,
       ),
     ),
   );
@@ -2723,7 +2723,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 17,
+        'weight' => 33,
       ),
     ),
   );

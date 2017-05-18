@@ -181,11 +181,7 @@ function ec_service_stack_user_default_permissions() {
   // Exported permission: 'create service content'.
   $permissions['create service content'] = array(
     'name' => 'create service content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -214,10 +210,7 @@ function ec_service_stack_user_default_permissions() {
   // Exported permission: 'delete any service content'.
   $permissions['delete any service content'] = array(
     'name' => 'delete any service content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -244,11 +237,7 @@ function ec_service_stack_user_default_permissions() {
   // Exported permission: 'delete own service content'.
   $permissions['delete own service content'] = array(
     'name' => 'delete own service content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -277,11 +266,7 @@ function ec_service_stack_user_default_permissions() {
   // Exported permission: 'edit any service content'.
   $permissions['edit any service content'] = array(
     'name' => 'edit any service content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -310,11 +295,7 @@ function ec_service_stack_user_default_permissions() {
   // Exported permission: 'edit own service content'.
   $permissions['edit own service content'] = array(
     'name' => 'edit own service content',
-    'roles' => array(
-      'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 

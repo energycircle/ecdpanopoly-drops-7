@@ -431,19 +431,19 @@ function ec_service_stack_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '12',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '10',
+          'weight' => '4',
         ),
         'xmlsitemap' => array(
-          'weight' => '9',
+          'weight' => '3',
         ),
       ),
       'display' => array(
@@ -499,25 +499,25 @@ function ec_service_stack_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '13',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '12',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '11',
+          'weight' => '4',
         ),
         'xmlsitemap' => array(
-          'weight' => '10',
+          'weight' => '3',
         ),
       ),
       'display' => array(
         'sharethis' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '11',
             'visible' => FALSE,
           ),
           'show_this_block' => array(
@@ -567,25 +567,25 @@ function ec_service_stack_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '10',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '8',
+          'weight' => '4',
         ),
         'xmlsitemap' => array(
-          'weight' => '7',
+          'weight' => '3',
         ),
       ),
       'display' => array(
         'sharethis' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '11',
             'visible' => FALSE,
           ),
           'show_this_block' => array(

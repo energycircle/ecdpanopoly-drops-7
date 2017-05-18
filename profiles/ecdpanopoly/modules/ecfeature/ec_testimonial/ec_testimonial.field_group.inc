@@ -53,8 +53,7 @@ function ec_testimonial_field_group_info() {
     'weight' => '5',
     'children' => array(
       0 => 'body',
-      1 => 'field_aggregate_rating',
-      2 => 'field_tetstimonial_name',
+      1 => 'field_tetstimonial_name',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -67,6 +66,42 @@ function ec_testimonial_field_group_info() {
     ),
   );
   $field_groups['group_general|node|testimonial|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|testimonial|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'testimonial';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_aggregate_rating',
+      1 => 'field_testimonial_image',
+      2 => 'field_testimonial_source',
+      3 => 'field_video',
+      4 => 'field_ref_testimonial_article',
+      5 => 'field_ref_testimonial_case_study',
+      6 => 'field_ref_testimonial_citypages',
+      7 => 'field_ref_testimonial_serv_cat',
+      8 => 'field_ref_testimonial_serv_group',
+      9 => 'field_ref_testimonial_service',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-inactive-fields field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_inactive_fields|node|testimonial|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -108,15 +143,7 @@ function ec_testimonial_field_group_info() {
   $field_group->data = array(
     'label' => 'Add this content to these pages',
     'weight' => '8',
-    'children' => array(
-      0 => 'field_ref_testimonial_serv_cat',
-      1 => 'field_ref_testimonial_serv_group',
-      2 => 'field_ref_testimonial_service',
-      3 => 'field_ref_testimonial_case_study',
-      4 => 'field_ref_testimonial_article',
-      5 => 'field_ref_testimonial_citypages',
-      6 => 'field_ref_testimonial_prodpage',
-    ),
+    'children' => array(),
     'format_type' => 'htab',
     'format_settings' => array(
       'label' => 'Add this content to these pages',
@@ -142,11 +169,7 @@ function ec_testimonial_field_group_info() {
   $field_group->data = array(
     'label' => 'Support Info',
     'weight' => '7',
-    'children' => array(
-      0 => 'field_testimonial_image',
-      1 => 'field_testimonial_source',
-      2 => 'field_video',
-    ),
+    'children' => array(),
     'format_type' => 'htab',
     'format_settings' => array(
       'label' => 'Support Info',
@@ -165,6 +188,7 @@ function ec_testimonial_field_group_info() {
   t('Add this content to these pages');
   t('Edit Content');
   t('General');
+  t('Inactive Fields');
   t('Location Info');
   t('Support Info');
 

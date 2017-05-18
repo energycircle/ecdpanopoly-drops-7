@@ -11,6 +11,7 @@ function ec_promotions_defaultconfig_features() {
   return array(
     'ec_promotions' => array(
       'field_default_fields' => 'field_default_fields',
+      'field_group_info' => 'field_group_info',
     ),
   );
 }
@@ -239,7 +240,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 21,
+        'weight' => 40,
       ),
     ),
   );
@@ -352,7 +353,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 13,
+        'weight' => 33,
       ),
     ),
   );
@@ -561,7 +562,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 9,
+        'weight' => 11,
       ),
     ),
   );
@@ -859,7 +860,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => 11,
+        'weight' => 13,
       ),
     ),
   );
@@ -963,7 +964,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 11,
+        'weight' => 10,
       ),
     ),
   );
@@ -1067,7 +1068,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 10,
+        'weight' => 9,
       ),
     ),
   );
@@ -1295,7 +1296,212 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 10,
+        'weight' => 12,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-promotion-field_promotion_price'.
+  $fields['node-promotion-field_promotion_price'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_promotion_price',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => 0,
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'promotion',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 16,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_promotion_price',
+      'label' => 'Price',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'button_text' => 'Search',
+          'enable' => 0,
+          'profile' => '',
+        ),
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+        'weight' => 9,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-promotion-field_ref_to_cta_form'.
+  $fields['node-promotion-field_ref_to_cta_form'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_to_cta_form',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'entityform_type' => array(
+          'columns' => array(
+            'target_id' => 'id',
+          ),
+          'table' => 'entityform_type',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(),
+        ),
+        'target_type' => 'entityform_type',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'promotion',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 13,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 8,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_to_cta_form',
+      'label' => 'CTA form',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 29,
       ),
     ),
   );
@@ -1304,12 +1510,14 @@ function ec_promotions_defaultconfig_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Button Text');
+  t('CTA form');
   t('Call to Action');
   t('Display Start-End');
   t('Display Title');
   t('Display subtitle');
   t('Enter the dates on which to start and end the display of this promotion in feature blocks.');
   t('Enter the text for the CTA form submit button');
+  t('Price');
   t('Promo link text');
   t('Promotion');
   t('Promotion image');
@@ -1319,4 +1527,49 @@ function ec_promotions_defaultconfig_field_default_fields() {
   t('Select the promotions to display on this product page.');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_field_group_info().
+ */
+function ec_promotions_defaultconfig_field_group_info() {
+  $field_groups = array();
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|promotion|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'promotion';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_promotion_price',
+      1 => 'field_ref_promo_article',
+      2 => 'field_ref_promo_case_study',
+      3 => 'field_ref_promo_serv_cat',
+      4 => 'field_ref_promo_serv_group',
+      5 => 'field_ref_promo_service',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-inactive-fields field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_inactive_fields|node|promotion|form'] = $field_group;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Inactive Fields');
+
+  return $field_groups;
 }

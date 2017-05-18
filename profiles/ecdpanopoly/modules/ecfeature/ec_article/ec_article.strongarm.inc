@@ -169,19 +169,19 @@ function ec_article_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '12',
+          'weight' => '5',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '4',
         ),
         'redirect' => array(
-          'weight' => '10',
+          'weight' => '3',
         ),
         'xmlsitemap' => array(
-          'weight' => '9',
+          'weight' => '2',
         ),
       ),
       'display' => array(),

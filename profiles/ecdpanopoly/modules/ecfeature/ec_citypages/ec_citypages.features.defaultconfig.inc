@@ -121,7 +121,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 15,
+        'weight' => 23,
       ),
     ),
   );
@@ -226,7 +226,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 23,
+        'weight' => 39,
       ),
     ),
   );
@@ -1855,7 +1855,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 23,
+        'weight' => 9,
       ),
     ),
   );

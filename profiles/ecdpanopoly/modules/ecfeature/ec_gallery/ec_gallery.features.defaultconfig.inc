@@ -120,7 +120,7 @@ function ec_gallery_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 19,
+        'weight' => 35,
       ),
     ),
   );

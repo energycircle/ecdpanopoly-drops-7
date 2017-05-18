@@ -138,7 +138,7 @@ function ec_financing_option_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
@@ -147,10 +147,10 @@ function ec_financing_option_strongarm() {
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '8',
+          'weight' => '5',
         ),
         'xmlsitemap' => array(
-          'weight' => '7',
+          'weight' => '4',
         ),
       ),
       'display' => array(

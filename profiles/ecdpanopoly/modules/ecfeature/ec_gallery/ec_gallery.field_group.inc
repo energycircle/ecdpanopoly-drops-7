@@ -69,6 +69,52 @@ function ec_gallery_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|case_study|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'case_study';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_ref_case_study_testimonial',
+      1 => 'field_ref_case_study_promo',
+      2 => 'field_ref_case_study_article',
+      3 => 'field_ref_case_study_blog',
+      4 => 'field_ref_case_study_gallery',
+      5 => 'field_case_study_diagnosis',
+      6 => 'field_case_study_energy_after',
+      7 => 'field_case_study_energy_before',
+      8 => 'field_case_study_issues',
+      9 => 'field_case_study_project_outcome',
+      10 => 'field_case_study_rooms',
+      11 => 'field_case_study_square_footage',
+      12 => 'field_case_study_year_built',
+      13 => 'field_display_subtitle',
+      14 => 'field_display_title',
+      15 => 'field_ref_case_study_galley_befo',
+      16 => 'field_ref_case_sudy_page',
+      17 => 'field_ref_case_study_citypages',
+      18 => 'field_ref_case_study_serv_cat',
+      19 => 'field_ref_case_study_service',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-inactive-fields field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_inactive_fields|node|case_study|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_shown_on_this_page|node|gallery|form';
   $field_group->group_name = 'group_shown_on_this_page';
   $field_group->entity_type = 'node';
@@ -99,6 +145,7 @@ function ec_gallery_field_group_info() {
   t('Add this content to these pages');
   t('Edit Content');
   t('General');
+  t('Inactive Fields');
 
   return $field_groups;
 }

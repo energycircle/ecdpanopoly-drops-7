@@ -49,11 +49,10 @@ function ec_slide_field_group_info() {
     'label' => 'General',
     'weight' => '13',
     'children' => array(
-      0 => 'body',
-      1 => 'field_content_link',
-      2 => 'field_display_subtitle',
-      3 => 'field_display_title',
-      4 => 'field_slide_image',
+      0 => 'field_content_link',
+      1 => 'field_display_subtitle',
+      2 => 'field_display_title',
+      3 => 'field_slide_image',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -67,10 +66,38 @@ function ec_slide_field_group_info() {
   );
   $field_groups['group_general|node|slide|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|slide|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'slide';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '2',
+    'children' => array(
+      0 => 'body',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-inactive-fields field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_inactive_fields|node|slide|form'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Edit Content');
   t('General');
+  t('Inactive Fields');
 
   return $field_groups;
 }
