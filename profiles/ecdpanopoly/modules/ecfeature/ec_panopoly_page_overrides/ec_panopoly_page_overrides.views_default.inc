@@ -43,7 +43,7 @@ function ec_panopoly_page_overrides_views_default_views() {
   $handler->display->display_options['fields']['field_featured_video']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_featured_video']['alter']['text'] = '<iframe width="853" height="480" src="[field_featured_video]" frameborder="0" allowfullscreen></iframe>';
   $handler->display->display_options['fields']['field_featured_video']['element_label_colon'] = FALSE;
-  /* Field: Content: Primary Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
@@ -102,7 +102,7 @@ function ec_panopoly_page_overrides_views_default_views() {
   $handler->display->display_options['fields']['field_featured_video']['alter']['text'] = '<iframe width="853" height="480" src="[field_featured_video]" frameborder="0" allowfullscreen></iframe>';
   $handler->display->display_options['fields']['field_featured_video']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_video']['hide_empty'] = TRUE;
-  /* Field: Content: Primary Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
