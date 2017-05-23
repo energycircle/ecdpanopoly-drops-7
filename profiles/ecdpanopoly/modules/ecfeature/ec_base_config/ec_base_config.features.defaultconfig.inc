@@ -753,6 +753,17 @@ function ec_base_config_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'globalredirect_settings';
+  $strongarm->value = array(
+    'menu_check' => 1,
+    'canonical' => 1,
+    'content_location_header' => 1,
+  );
+  $export['globalredirect_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'googleanalytics_debug';
   $strongarm->value = 0;
   $export['googleanalytics_debug'] = $strongarm;

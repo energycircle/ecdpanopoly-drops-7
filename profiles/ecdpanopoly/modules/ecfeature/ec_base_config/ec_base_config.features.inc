@@ -71,6 +71,24 @@ function ec_base_config_default_entityform_type() {
 }
 
 /**
+ * Implements hook_field_default_field_instances_alter().
+ */
+function ec_base_config_field_default_field_instances_alter(&$data) {
+  if (isset($data['user-user-field_user_about'])) {
+    $data['user-user-field_user_about']['display']['default']['type'] = 'hidden'; /* WAS: 'text_default' */
+    $data['user-user-field_user_about']['display']['default']['weight'] = 0; /* WAS: 1 */
+    unset($data['user-user-field_user_about']['display']['default']['module']);
+  }
+  if (isset($data['user-user-field_user_picture'])) {
+    $data['user-user-field_user_picture']['display']['default']['type'] = 'hidden'; /* WAS: 'image' */
+    $data['user-user-field_user_picture']['display']['default']['weight'] = 1; /* WAS: 2 */
+    unset($data['user-user-field_user_picture']['display']['default']['module']);
+    unset($data['user-user-field_user_picture']['display']['default']['settings']['image_link']);
+    unset($data['user-user-field_user_picture']['display']['default']['settings']['image_style']);
+  }
+}
+
+/**
  * Implements hook_file_default_displays_alter().
  */
 function ec_base_config_file_default_displays_alter(&$data) {

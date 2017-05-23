@@ -11,6 +11,16 @@ function ec_base_config_features_override_default_overrides() {
   // This code is only used for UI in features. Exported alters hooks do the magic.
   $overrides = array();
 
+  // Exported overrides for: field_instance
+  $overrides["field_instance.user-user-field_user_about.display|default|module"]["DELETED"] = TRUE;
+  $overrides["field_instance.user-user-field_user_about.display|default|type"] = 'hidden';
+  $overrides["field_instance.user-user-field_user_about.display|default|weight"] = 0;
+  $overrides["field_instance.user-user-field_user_picture.display|default|module"]["DELETED"] = TRUE;
+  $overrides["field_instance.user-user-field_user_picture.display|default|settings|image_link"]["DELETED"] = TRUE;
+  $overrides["field_instance.user-user-field_user_picture.display|default|settings|image_style"]["DELETED"] = TRUE;
+  $overrides["field_instance.user-user-field_user_picture.display|default|type"] = 'hidden';
+  $overrides["field_instance.user-user-field_user_picture.display|default|weight"] = 1;
+
   // Exported overrides for: file_display
   $overrides["file_display.video__default__file_field_file_video.settings|muted"] = 0;
   $overrides["file_display.video__default__file_field_file_video.settings|preload"] = '';
