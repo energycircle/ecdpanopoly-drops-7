@@ -50,6 +50,31 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   $overrides["field_instance.node-panopoly_page-body.widget|settings|maxlength_js_truncate_html"] = 0;
   $overrides["field_instance.node-panopoly_page-body.widget|weight"] = 7;
   $overrides["field_instance.node-panopoly_page-field_featured_categories.node-panopoly_page-field_featured_categories"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.default_value"] = array();
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|field_multiple_limit"] = -1;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|field_multiple_limit_offset"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|field_multiple_limit_order"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|featured|settings|field_multiple_limit"] = -1;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|featured|settings|field_multiple_limit_offset"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|featured|settings|field_multiple_limit_order"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|grouped_teaser"] = array(
+    'label' => 'above',
+    'settings' => array(),
+    'type' => 'hidden',
+    'weight' => 0,
+  );
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|search_result|settings|field_multiple_limit"] = -1;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|search_result|settings|field_multiple_limit_offset"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|search_result|settings|field_multiple_limit_order"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|show_this_block"] = array(
+    'label' => 'above',
+    'settings' => array(),
+    'type' => 'hidden',
+    'weight' => 0,
+  );
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|teaser|settings|field_multiple_limit"] = -1;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|teaser|settings|field_multiple_limit_offset"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|teaser|settings|field_multiple_limit_order"] = 0;
   $overrides["field_instance.node-panopoly_page-field_featured_status.display|default|module"]["DELETED"] = TRUE;
   $overrides["field_instance.node-panopoly_page-field_featured_status.display|default|type"] = 'hidden';
   $overrides["field_instance.node-panopoly_page-field_featured_status.display|default|weight"] = 7;

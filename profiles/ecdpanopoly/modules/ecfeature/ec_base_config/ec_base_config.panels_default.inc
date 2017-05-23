@@ -476,7 +476,7 @@ function ec_base_config_default_panels_mini() {
   $pane->panel = 'one_main';
   $pane->type = 'block';
   $pane->subtype = 'system-main-menu';
-  $pane->shown = TRUE;
+  $pane->shown = FALSE;
   $pane->access = array();
   $pane->configuration = array(
     'override_title' => 1,

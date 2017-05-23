@@ -4,7 +4,7 @@ core = 7.x
 ; Drupal
 projects[drupal][type] = core
 projects[drupal][download][type] = git
-projects[drupal][download][url] = git://github.com/energycircle/ecdpanopoly-drops-7.git
+projects[drupal][download][url] = git://github.com/energycircle/ecdpanopoly-drops7.git
 projects[drupal][download][branch] = master
 
 ; EDPanopoly
