@@ -11,7 +11,6 @@ function ec_article_defaultconfig_features() {
   return array(
     'ec_article' => array(
       'field_default_fields' => 'field_default_fields',
-      'field_group_info' => 'field_group_info',
     ),
   );
 }
@@ -220,7 +219,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 23,
+        'weight' => 9,
       ),
     ),
   );
@@ -467,7 +466,7 @@ function ec_article_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 22,
+        'weight' => 8,
       ),
     ),
   );
@@ -562,7 +561,7 @@ function ec_article_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 21,
+        'weight' => 7,
       ),
     ),
   );
@@ -777,7 +776,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 20,
+        'weight' => 6,
       ),
     ),
   );
@@ -884,7 +883,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 42,
+        'weight' => 21,
       ),
     ),
   );
@@ -1101,7 +1100,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 14,
+        'weight' => 26,
       ),
     ),
   );
@@ -1208,7 +1207,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 8,
+        'weight' => 13,
       ),
     ),
   );
@@ -1230,51 +1229,4 @@ function ec_article_defaultconfig_field_default_fields() {
   t('Selected article pages on which to show this testimonial.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_field_group_info().
- */
-function ec_article_defaultconfig_field_group_info() {
-  $field_groups = array();
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_inactive_fields|node|article|form';
-  $field_group->group_name = 'group_inactive_fields';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'article';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Inactive Fields',
-    'weight' => '7',
-    'children' => array(
-      0 => 'field_ref_article_testimonial',
-      1 => 'field_ref_article_promo',
-      2 => 'field_article_author',
-      3 => 'field_article_source',
-      4 => 'field_article_type',
-      5 => 'field_ref_article_blog',
-      6 => 'field_ref_article_case_study',
-    ),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'label' => 'Inactive Fields',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'classes' => 'group-inactive-fields field-group-tab',
-        'description' => '',
-      ),
-      'formatter' => 'closed',
-    ),
-  );
-  $field_groups['group_inactive_fields|node|article|form'] = $field_group;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Inactive Fields');
-
-  return $field_groups;
 }

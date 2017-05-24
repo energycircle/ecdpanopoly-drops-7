@@ -24,7 +24,6 @@ function ec_distinction_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'group_general',
-      1 => 'group_logo',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -52,7 +51,8 @@ function ec_distinction_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_distinction_type',
-      2 => 'field_logo',
+      2 => 'field_dynamic_seal',
+      3 => 'field_logo',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -80,16 +80,26 @@ function ec_distinction_field_group_info() {
     'weight' => '2',
     'children' => array(
       0 => 'field_content_link',
-      1 => 'field_dynamic_seal',
+      1 => 'metatags',
+      2 => 'path',
+      3 => 'redirect',
+      4 => 'xmlsitemap',
+      5 => 'group_logo',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Inactive Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_inactive_fields|node|distinction|form'] = $field_group;
@@ -102,7 +112,7 @@ function ec_distinction_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'distinction';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Logo',
     'weight' => '15',

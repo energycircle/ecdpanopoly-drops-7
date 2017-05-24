@@ -126,7 +126,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 20,
+        'weight' => 19,
       ),
     ),
   );
@@ -233,7 +233,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 24,
+        'weight' => 10,
       ),
     ),
   );
@@ -620,7 +620,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 34,
+        'weight' => 36,
       ),
     ),
   );
@@ -713,7 +713,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 36,
+        'weight' => 27,
       ),
     ),
   );
@@ -806,7 +806,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 44,
+        'weight' => 37,
       ),
     ),
   );
@@ -1021,7 +1021,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 45,
+        'weight' => 38,
       ),
     ),
   );
@@ -1222,7 +1222,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 38,
+        'weight' => 25,
       ),
     ),
   );
@@ -1296,7 +1296,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 46,
+        'weight' => 30,
       ),
     ),
   );
@@ -1370,7 +1370,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 47,
+        'weight' => 29,
       ),
     ),
   );
@@ -1444,7 +1444,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 48,
+        'weight' => 31,
       ),
     ),
   );
@@ -1534,7 +1534,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 50,
+        'weight' => 23,
       ),
     ),
   );
@@ -1624,7 +1624,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 51,
+        'weight' => 24,
       ),
     ),
   );
@@ -1728,7 +1728,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 49,
+        'weight' => 33,
       ),
     ),
   );
@@ -1835,7 +1835,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 37,
+        'weight' => 28,
       ),
     ),
   );
@@ -1889,7 +1889,11 @@ function ec_casestudy_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'case_study',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -2157,7 +2161,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 34,
+        'weight' => 24,
       ),
     ),
   );
@@ -2475,7 +2479,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 13,
+        'weight' => 25,
       ),
     ),
   );
@@ -2582,7 +2586,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 12,
+        'weight' => 21,
       ),
     ),
   );
@@ -2692,7 +2696,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 12,
+        'weight' => 21,
       ),
     ),
   );
@@ -2802,7 +2806,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 24,
+        'weight' => 32,
       ),
     ),
   );
@@ -2909,7 +2913,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 10,
+        'weight' => 15,
       ),
     ),
   );

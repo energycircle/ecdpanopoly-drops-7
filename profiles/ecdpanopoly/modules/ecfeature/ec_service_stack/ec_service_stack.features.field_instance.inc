@@ -492,7 +492,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 21,
+      'weight' => 7,
     ),
   );
 
@@ -556,7 +556,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 22,
+      'weight' => 8,
     ),
   );
 
@@ -620,7 +620,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 5,
     ),
   );
 
@@ -684,7 +684,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 33,
+      'weight' => 28,
     ),
   );
 
@@ -748,7 +748,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 32,
+      'weight' => 27,
     ),
   );
 
@@ -806,7 +806,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 105,
+      'weight' => 6,
     ),
   );
 
@@ -864,7 +864,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 106,
+      'weight' => 7,
     ),
   );
 
@@ -922,7 +922,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 107,
+      'weight' => 8,
     ),
   );
 
@@ -1178,7 +1178,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 23,
     ),
   );
 
@@ -1242,7 +1242,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 24,
     ),
   );
 
@@ -1306,7 +1306,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 10,
+      'weight' => 22,
     ),
   );
 
@@ -1571,7 +1571,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 18,
     ),
   );
 
@@ -1860,7 +1860,7 @@ function ec_service_stack_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 8,
+      'weight' => 17,
     ),
   );
 
@@ -2032,7 +2032,7 @@ function ec_service_stack_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -2227,7 +2227,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 18,
     ),
   );
 
@@ -2292,7 +2292,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -2357,7 +2357,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -2366,7 +2366,7 @@ function ec_service_stack_field_default_field_instances() {
     'bundle' => 'service_category',
     'default_value' => array(
       0 => array(
-        'target_id' => 2,
+        'target_id' => 3,
       ),
     ),
     'default_value_function' => '',
@@ -2524,7 +2524,7 @@ function ec_service_stack_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -3220,7 +3220,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 18,
     ),
   );
 
@@ -3285,7 +3285,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 17,
     ),
   );
 
@@ -3349,7 +3349,7 @@ function ec_service_stack_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 16,
     ),
   );
 

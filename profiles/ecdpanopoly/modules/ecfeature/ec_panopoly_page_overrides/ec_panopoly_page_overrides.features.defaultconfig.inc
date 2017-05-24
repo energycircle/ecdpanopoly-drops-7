@@ -64,7 +64,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 6,
+          'weight' => 5,
         ),
         'featured' => array(
           'label' => 'hidden',
@@ -399,15 +399,8 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'field_multiple_limit' => -1,
-            'field_multiple_limit_offset' => 0,
-            'field_multiple_limit_order' => 0,
-            'image_link' => '',
-            'image_style' => 'panopoly_image_half',
-          ),
-          'type' => 'image',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 0,
         ),
         'featured' => array(
@@ -550,7 +543,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 7,
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'above',
@@ -694,7 +687,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 27,
+        'weight' => 17,
       ),
     ),
   );
@@ -804,7 +797,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 29,
+        'weight' => 19,
       ),
     ),
   );
@@ -914,7 +907,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 28,
+        'weight' => 18,
       ),
     ),
   );
@@ -1024,7 +1017,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 30,
+        'weight' => 20,
       ),
     ),
   );
@@ -1078,7 +1071,11 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'panopoly_page',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',

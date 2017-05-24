@@ -18,7 +18,6 @@ features[defaultconfig][] = field_default_fields:node-distinction-field_content_
 features[defaultconfig][] = field_default_fields:node-distinction-field_distinction_type
 features[defaultconfig][] = field_default_fields:node-distinction-field_dynamic_seal
 features[defaultconfig][] = field_default_fields:node-distinction-field_logo
-features[defaultconfig][] = field_group_info:group_inactive_fields|node|distinction|form
 features[features_api][] = api:2
 features[field_base][] = field_distinction_type
 features[field_base][] = field_dynamic_seal

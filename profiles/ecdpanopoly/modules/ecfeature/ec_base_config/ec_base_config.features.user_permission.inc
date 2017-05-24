@@ -1042,6 +1042,8 @@ function ec_base_config_user_default_permissions() {
   $permissions['create panopoly_landing_page content'] = array(
     'name' => 'create panopoly_landing_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1122,6 +1124,7 @@ function ec_base_config_user_default_permissions() {
   $permissions['delete any panopoly_landing_page content'] = array(
     'name' => 'delete any panopoly_landing_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1201,6 +1204,8 @@ function ec_base_config_user_default_permissions() {
   $permissions['delete own panopoly_landing_page content'] = array(
     'name' => 'delete own panopoly_landing_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1232,6 +1237,7 @@ function ec_base_config_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1383,6 +1389,8 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit any panopoly_landing_page content'] = array(
     'name' => 'edit any panopoly_landing_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1489,6 +1497,8 @@ function ec_base_config_user_default_permissions() {
   $permissions['edit own panopoly_landing_page content'] = array(
     'name' => 'edit own panopoly_landing_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

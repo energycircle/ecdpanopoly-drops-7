@@ -22,7 +22,6 @@ features[defaultconfig][] = field_default_fields:node-staff-field_last_name
 features[defaultconfig][] = field_default_fields:node-staff-field_staff_department
 features[defaultconfig][] = field_default_fields:node-staff-field_staff_photo
 features[defaultconfig][] = field_default_fields:node-staff-field_staff_title
-features[defaultconfig][] = field_group_info:group_inactive_fields|node|staff|form
 features[entityform_type][] = join_our_team
 features[features_api][] = api:2
 features[field_base][] = field_field_applicant_resume

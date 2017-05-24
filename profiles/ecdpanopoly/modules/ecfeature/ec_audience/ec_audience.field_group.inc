@@ -54,7 +54,6 @@ function ec_audience_field_group_info() {
     'children' => array(
       0 => 'group_cta_form',
       1 => 'group_general',
-      2 => 'group_show_on_this',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -103,10 +102,10 @@ function ec_audience_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'audience';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Add other content to this page',
-    'weight' => '10',
+    'weight' => '8',
     'children' => array(),
     'format_type' => 'htab',
     'format_settings' => array(

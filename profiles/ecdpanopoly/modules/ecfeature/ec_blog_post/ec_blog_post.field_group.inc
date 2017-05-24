@@ -54,7 +54,6 @@ function ec_blog_post_field_group_info() {
     'children' => array(
       0 => 'group_cta_form',
       1 => 'group_general',
-      2 => 'group_show_this_on',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -109,24 +108,29 @@ function ec_blog_post_field_group_info() {
     'label' => 'Inactive Fields',
     'weight' => '2',
     'children' => array(
-      0 => 'field_ref_blog_article',
-      1 => 'field_blog_category',
-      2 => 'field_content_link',
-      3 => 'field_ref_blog_page',
-      4 => 'field_ref_blog_case_study',
-      5 => 'field_ref_blog_citypages',
-      6 => 'field_ref_blog_serv_cat',
-      7 => 'field_ref_blog_serv_group',
-      8 => 'field_ref_blog_service',
+      0 => 'field_blog_category',
+      1 => 'field_content_link',
+      2 => 'field_a_b_test_page',
+      3 => 'metatags',
+      4 => 'path',
+      5 => 'redirect',
+      6 => 'xmlsitemap',
+      7 => 'group_show_this_on',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Inactive Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_inactive_fields|node|blog_post|form'] = $field_group;
@@ -139,11 +143,19 @@ function ec_blog_post_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'blog_post';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Add this content to these pages',
-    'weight' => '4',
-    'children' => array(),
+    'weight' => '14',
+    'children' => array(
+      0 => 'field_ref_blog_article',
+      1 => 'field_ref_blog_page',
+      2 => 'field_ref_blog_case_study',
+      3 => 'field_ref_blog_citypages',
+      4 => 'field_ref_blog_serv_cat',
+      5 => 'field_ref_blog_serv_group',
+      6 => 'field_ref_blog_service',
+    ),
     'format_type' => 'htab',
     'format_settings' => array(
       'label' => 'Add this content to these pages',

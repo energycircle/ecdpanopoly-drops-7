@@ -54,7 +54,6 @@ function ec_financing_option_field_group_info() {
     'children' => array(
       0 => 'group_cta_form',
       1 => 'group_general',
-      2 => 'group_show_this_on',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -108,17 +107,30 @@ function ec_financing_option_field_group_info() {
     'label' => 'Inactive Fields',
     'weight' => '3',
     'children' => array(
-      0 => 'field_financing_forms',
-      1 => 'field_financing_link',
+      0 => 'field_a_b_reason_for_testing',
+      1 => 'field_a_b_reference_page',
+      2 => 'field_a_b_test_page',
+      3 => 'field_financing_forms',
+      4 => 'field_financing_link',
+      5 => 'metatags',
+      6 => 'redirect',
+      7 => 'xmlsitemap',
+      8 => 'group_show_this_on',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Inactive Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_inactive_fields|node|financing_option|form'] = $field_group;
@@ -131,7 +143,7 @@ function ec_financing_option_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'financing_option';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Add this content to these pages',
     'weight' => '9',

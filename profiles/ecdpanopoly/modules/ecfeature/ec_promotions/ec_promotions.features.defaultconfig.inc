@@ -11,7 +11,6 @@ function ec_promotions_defaultconfig_features() {
   return array(
     'ec_promotions' => array(
       'field_default_fields' => 'field_default_fields',
-      'field_group_info' => 'field_group_info',
     ),
   );
 }
@@ -133,7 +132,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 17,
+        'weight' => 16,
       ),
     ),
   );
@@ -240,7 +239,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 40,
+        'weight' => 19,
       ),
     ),
   );
@@ -353,7 +352,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 33,
+        'weight' => 23,
       ),
     ),
   );
@@ -1390,7 +1389,7 @@ function ec_promotions_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 9,
+        'weight' => 21,
       ),
     ),
   );
@@ -1444,7 +1443,11 @@ function ec_promotions_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'promotion',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
@@ -1527,49 +1530,4 @@ function ec_promotions_defaultconfig_field_default_fields() {
   t('Select the promotions to display on this product page.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_field_group_info().
- */
-function ec_promotions_defaultconfig_field_group_info() {
-  $field_groups = array();
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_inactive_fields|node|promotion|form';
-  $field_group->group_name = 'group_inactive_fields';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'promotion';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Inactive Fields',
-    'weight' => '2',
-    'children' => array(
-      0 => 'field_promotion_price',
-      1 => 'field_ref_promo_article',
-      2 => 'field_ref_promo_case_study',
-      3 => 'field_ref_promo_serv_cat',
-      4 => 'field_ref_promo_serv_group',
-      5 => 'field_ref_promo_service',
-    ),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $field_groups['group_inactive_fields|node|promotion|form'] = $field_group;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Inactive Fields');
-
-  return $field_groups;
 }
