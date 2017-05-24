@@ -395,6 +395,10 @@ projects[variable][version] = 2.5
 projects[variable_email][subdir] = eccontrib
 projects[variable_email][version] = 1.0-alpha1
 
+projects[vertical_tabs_config][subdir] = eccontrib
+projects[vertical_tabs_config][version] = 1.2
+
+
 projects[views_accordion][subdir] = eccontrib
 projects[views_accordion][version] = 1.x
 
