@@ -76,7 +76,7 @@ function ec_promotions_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 16,
     ),
   );
 
@@ -140,7 +140,7 @@ function ec_promotions_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 40,
+      'weight' => 19,
     ),
   );
 
@@ -210,7 +210,7 @@ function ec_promotions_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 33,
+      'weight' => 23,
     ),
   );
 
@@ -931,14 +931,18 @@ function ec_promotions_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 21,
     ),
   );
 
   // Exported field_instance: 'node-promotion-field_ref_to_cta_form'.
   $field_instances['node-promotion-field_ref_to_cta_form'] = array(
     'bundle' => 'promotion',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'default_value_function' => '',
     'deleted' => 0,
     'description' => '',

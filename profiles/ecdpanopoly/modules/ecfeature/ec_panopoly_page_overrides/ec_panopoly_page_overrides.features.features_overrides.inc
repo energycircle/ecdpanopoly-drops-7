@@ -14,7 +14,7 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   // Exported overrides for: field_instance
   $overrides["field_instance.node-panopoly_page-body.display|default|module"]["DELETED"] = TRUE;
   $overrides["field_instance.node-panopoly_page-body.display|default|type"] = 'hidden';
-  $overrides["field_instance.node-panopoly_page-body.display|default|weight"] = 6;
+  $overrides["field_instance.node-panopoly_page-body.display|default|weight"] = 5;
   $overrides["field_instance.node-panopoly_page-body.display|featured|settings|field_multiple_limit"] = -1;
   $overrides["field_instance.node-panopoly_page-body.display|featured|settings|field_multiple_limit_offset"] = 0;
   $overrides["field_instance.node-panopoly_page-body.display|featured|settings|field_multiple_limit_order"] = 0;
@@ -51,9 +51,10 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   $overrides["field_instance.node-panopoly_page-body.widget|weight"] = 7;
   $overrides["field_instance.node-panopoly_page-field_featured_categories.node-panopoly_page-field_featured_categories"]["DELETED"] = TRUE;
   $overrides["field_instance.node-panopoly_page-field_featured_image.default_value"] = array();
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|field_multiple_limit"] = -1;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|field_multiple_limit_offset"] = 0;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|field_multiple_limit_order"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|module"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|image_link"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|image_style"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|type"] = 'hidden';
   $overrides["field_instance.node-panopoly_page-field_featured_image.display|featured|settings|field_multiple_limit"] = -1;
   $overrides["field_instance.node-panopoly_page-field_featured_image.display|featured|settings|field_multiple_limit_offset"] = 0;
   $overrides["field_instance.node-panopoly_page-field_featured_image.display|featured|settings|field_multiple_limit_order"] = 0;
@@ -77,7 +78,7 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   $overrides["field_instance.node-panopoly_page-field_featured_image.display|teaser|settings|field_multiple_limit_order"] = 0;
   $overrides["field_instance.node-panopoly_page-field_featured_status.display|default|module"]["DELETED"] = TRUE;
   $overrides["field_instance.node-panopoly_page-field_featured_status.display|default|type"] = 'hidden';
-  $overrides["field_instance.node-panopoly_page-field_featured_status.display|default|weight"] = 7;
+  $overrides["field_instance.node-panopoly_page-field_featured_status.display|default|weight"] = 6;
   $overrides["field_instance.node-panopoly_page-field_featured_status.display|grouped_teaser"] = array(
     'label' => 'above',
     'settings' => array(),
@@ -120,14 +121,14 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
     ),
   );
   $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|metatags"] = array(
-    'weight' => 9,
+    'weight' => 32,
   );
-  $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|path|weight"] = 3;
+  $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|path|weight"] = 26;
   $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|redirect"] = array(
-    'weight' => 7,
+    'weight' => 30,
   );
   $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|xmlsitemap"] = array(
-    'weight' => 8,
+    'weight' => 31,
   );
   $overrides["variable.field_bundle_settings_node__panopoly_page.value|view_modes|grouped_teaser"] = array(
     'custom_settings' => TRUE,

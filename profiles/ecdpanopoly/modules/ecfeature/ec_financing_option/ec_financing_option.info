@@ -23,7 +23,6 @@ features[defaultconfig][] = field_default_fields:node-financing_option-field_fin
 features[defaultconfig][] = field_default_fields:node-financing_option-field_financing_link
 features[defaultconfig][] = field_default_fields:node-financing_option-field_financing_logo
 features[defaultconfig][] = field_default_fields:node-financing_option-field_ref_to_cta_form
-features[defaultconfig][] = field_group_info:group_inactive_fields|node|financing_option|form
 features[features_api][] = api:2
 features[field_base][] = field_financing_forms
 features[field_base][] = field_financing_link

@@ -127,6 +127,9 @@ function ec_financing_option_rdf_default_mappings() {
     'field_a_b_test_page' => array(
       'predicates' => array(),
     ),
+    'field_ref_to_cta_form' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

@@ -18,10 +18,10 @@ function ec_service_stack_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'service_category';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Add other content to this page',
-    'weight' => '17',
+    'weight' => '16',
     'children' => array(),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -44,7 +44,7 @@ function ec_service_stack_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'service';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Add other content to this page',
     'weight' => '16',
@@ -165,9 +165,8 @@ function ec_service_stack_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '1',
     'children' => array(
-      0 => 'group__shown_on_this_page',
-      1 => 'group_cta_form',
-      2 => 'group_general',
+      0 => 'group_cta_form',
+      1 => 'group_general',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -195,7 +194,6 @@ function ec_service_stack_field_group_info() {
     'children' => array(
       0 => 'group_cta_form',
       1 => 'group_general',
-      2 => 'group_shown_on_this_page',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -221,9 +219,8 @@ function ec_service_stack_field_group_info() {
     'label' => 'Edit Content',
     'weight' => '1',
     'children' => array(
-      0 => 'group__shown_on_this_page',
-      1 => 'group_cta_form',
-      2 => 'group_general',
+      0 => 'group_cta_form',
+      1 => 'group_general',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -252,7 +249,8 @@ function ec_service_stack_field_group_info() {
       0 => 'body',
       1 => 'field_ref_serv_cat_serv_group',
       2 => 'field_ref_serv_cat_services',
-      3 => 'field_service_category_image',
+      3 => 'field_service_category_icon',
+      4 => 'field_service_category_image',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -339,19 +337,32 @@ function ec_service_stack_field_group_info() {
     'children' => array(
       0 => 'field_ref_serv_cat_testimonial',
       1 => 'field_ref_serv_cat_blog',
-      2 => 'field_ref_serv_cat_case_study',
-      3 => 'field_ref_serv_cat_faq',
-      4 => 'field_featured_video',
-      5 => 'field_service_category_icon',
+      2 => 'field_a_b_reason_for_testing',
+      3 => 'field_a_b_reference_page',
+      4 => 'field_a_b_test_page',
+      5 => 'field_ref_serv_cat_case_study',
+      6 => 'field_ref_serv_cat_faq',
+      7 => 'field_featured_video',
+      8 => 'metatags',
+      9 => 'path',
+      10 => 'redirect',
+      11 => 'xmlsitemap',
+      12 => 'group__shown_on_this_page',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Inactive Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_inactive_fields|node|service_category|form'] = $field_group;
@@ -371,17 +382,31 @@ function ec_service_stack_field_group_info() {
     'children' => array(
       0 => 'field_ref_serv_group_testimonial',
       1 => 'field_ref_serv_group_blog',
-      2 => 'field_ref_serv_group_case_study',
-      3 => 'field_ref_serv_group_faq',
+      2 => 'field_a_b_reason_for_testing',
+      3 => 'field_a_b_reference_page',
+      4 => 'field_a_b_test_page',
+      5 => 'field_ref_serv_group_case_study',
+      6 => 'field_ref_serv_group_faq',
+      7 => 'metatags',
+      8 => 'path',
+      9 => 'redirect',
+      10 => 'xmlsitemap',
+      11 => 'group_shown_on_this_page',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Inactive Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_inactive_fields|node|service_group|form'] = $field_group;
@@ -401,19 +426,33 @@ function ec_service_stack_field_group_info() {
     'children' => array(
       0 => 'field_ref_service_testimonial',
       1 => 'field_ref_service_blog',
-      2 => 'field_ref_service_case_study',
-      3 => 'field_ref_service_faq',
-      4 => 'field_featured_video',
-      5 => 'field_service_icon',
+      2 => 'field_a_b_reason_for_testing',
+      3 => 'field_a_b_reference_page',
+      4 => 'field_a_b_test_page',
+      5 => 'field_ref_service_case_study',
+      6 => 'field_ref_service_faq',
+      7 => 'field_featured_video',
+      8 => 'field_service_icon',
+      9 => 'metatags',
+      10 => 'path',
+      11 => 'redirect',
+      12 => 'xmlsitemap',
+      13 => 'group__shown_on_this_page',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Inactive Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_inactive_fields|node|service|form'] = $field_group;
@@ -426,7 +465,7 @@ function ec_service_stack_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'service_group';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Add other content to this page',
     'weight' => '29',

@@ -431,19 +431,19 @@ function ec_service_stack_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '6',
+          'weight' => '26',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '25',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '24',
         ),
         'xmlsitemap' => array(
-          'weight' => '3',
+          'weight' => '23',
         ),
       ),
       'display' => array(
@@ -499,19 +499,19 @@ function ec_service_stack_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '6',
+          'weight' => '26',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '25',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '24',
         ),
         'xmlsitemap' => array(
-          'weight' => '3',
+          'weight' => '23',
         ),
       ),
       'display' => array(
@@ -567,19 +567,19 @@ function ec_service_stack_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '6',
+          'weight' => '37',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '36',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '35',
         ),
         'xmlsitemap' => array(
-          'weight' => '3',
+          'weight' => '34',
         ),
       ),
       'display' => array(

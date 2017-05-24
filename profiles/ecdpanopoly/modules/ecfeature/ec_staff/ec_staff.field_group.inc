@@ -81,15 +81,25 @@ function ec_staff_field_group_info() {
     'weight' => '2',
     'children' => array(
       0 => 'field_staff_department',
+      1 => 'metatags',
+      2 => 'path',
+      3 => 'redirect',
+      4 => 'xmlsitemap',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Inactive Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_inactive_fields|node|staff|form'] = $field_group;

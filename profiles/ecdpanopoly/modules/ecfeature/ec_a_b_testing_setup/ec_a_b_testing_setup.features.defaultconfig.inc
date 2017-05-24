@@ -192,7 +192,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'rows' => 3,
         ),
         'type' => 'text_textarea',
-        'weight' => 8,
+        'weight' => 6,
       ),
     ),
   );
@@ -306,7 +306,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 9,
+        'weight' => 7,
       ),
     ),
   );
@@ -389,7 +389,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 7,
+        'weight' => 5,
       ),
     ),
   );
@@ -472,7 +472,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 7,
+        'weight' => 19,
       ),
     ),
   );
@@ -895,7 +895,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'rows' => 3,
         ),
         'type' => 'text_textarea',
-        'weight' => 33,
+        'weight' => 3,
       ),
     ),
   );
@@ -1009,7 +1009,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 31,
+        'weight' => 4,
       ),
     ),
   );
@@ -1272,7 +1272,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 8,
+        'weight' => 16,
       ),
     ),
   );
@@ -1386,7 +1386,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 7,
+        'weight' => 15,
       ),
     ),
   );
@@ -1469,7 +1469,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 9,
+        'weight' => 17,
       ),
     ),
   );
@@ -1656,7 +1656,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'rows' => 3,
         ),
         'type' => 'text_textarea',
-        'weight' => 6,
+        'weight' => 29,
       ),
     ),
   );
@@ -1776,7 +1776,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 5,
+        'weight' => 28,
       ),
     ),
   );
@@ -1865,7 +1865,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 4,
+        'weight' => 27,
       ),
     ),
   );
@@ -2132,7 +2132,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 5,
+        'weight' => 29,
       ),
     ),
   );
@@ -2246,7 +2246,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 4,
+        'weight' => 28,
       ),
     ),
   );
@@ -2329,7 +2329,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 3,
+        'weight' => 27,
       ),
     ),
   );
@@ -2422,7 +2422,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 9,
+        'weight' => 29,
       ),
     ),
   );
@@ -2536,7 +2536,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 8,
+        'weight' => 28,
       ),
     ),
   );
@@ -2619,7 +2619,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 7,
+        'weight' => 27,
       ),
     ),
   );
@@ -2712,7 +2712,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'rows' => 3,
         ),
         'type' => 'text_textarea',
-        'weight' => 8,
+        'weight' => 28,
       ),
     ),
   );
@@ -2826,7 +2826,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 9,
+        'weight' => 29,
       ),
     ),
   );
@@ -2909,7 +2909,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 7,
+        'weight' => 27,
       ),
     ),
   );
@@ -3002,7 +3002,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 9,
+        'weight' => 40,
       ),
     ),
   );
@@ -3116,7 +3116,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 8,
+        'weight' => 39,
       ),
     ),
   );
@@ -3199,7 +3199,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 7,
+        'weight' => 38,
       ),
     ),
   );
@@ -3286,7 +3286,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 9,
+        'weight' => 15,
       ),
     ),
   );
@@ -3394,7 +3394,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 8,
+        'weight' => 14,
       ),
     ),
   );
@@ -3471,7 +3471,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 7,
+        'weight' => 13,
       ),
     ),
   );
@@ -3554,7 +3554,7 @@ function ec_a_b_testing_setup_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 7,
+        'weight' => 23,
       ),
     ),
   );

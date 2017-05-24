@@ -70,7 +70,7 @@ function ec_audience_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 10,
+      'weight' => 3,
     ),
   );
 
@@ -162,7 +162,7 @@ function ec_audience_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 7,
+      'weight' => 2,
     ),
   );
 
@@ -356,7 +356,7 @@ function ec_audience_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -414,14 +414,18 @@ function ec_audience_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
   // Exported field_instance: 'node-audience-field_ref_to_cta_form'.
   $field_instances['node-audience-field_ref_to_cta_form'] = array(
     'bundle' => 'audience',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(

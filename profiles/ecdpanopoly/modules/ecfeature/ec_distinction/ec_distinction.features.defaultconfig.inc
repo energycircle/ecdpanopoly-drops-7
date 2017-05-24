@@ -11,7 +11,6 @@ function ec_distinction_defaultconfig_features() {
   return array(
     'ec_distinction' => array(
       'field_default_fields' => 'field_default_fields',
-      'field_group_info' => 'field_group_info',
     ),
   );
 }
@@ -113,7 +112,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -222,7 +221,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 7,
+        'weight' => 17,
       ),
     ),
   );
@@ -312,7 +311,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -405,7 +404,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
           'rows' => 3,
         ),
         'type' => 'text_textarea',
-        'weight' => 6,
+        'weight' => 5,
       ),
     ),
   );
@@ -544,45 +543,4 @@ function ec_distinction_defaultconfig_field_default_fields() {
   t('Url of the page to link this item to.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_field_group_info().
- */
-function ec_distinction_defaultconfig_field_group_info() {
-  $field_groups = array();
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_inactive_fields|node|distinction|form';
-  $field_group->group_name = 'group_inactive_fields';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'distinction';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Inactive Fields',
-    'weight' => '2',
-    'children' => array(
-      0 => 'field_content_link',
-      1 => 'field_dynamic_seal',
-    ),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $field_groups['group_inactive_fields|node|distinction|form'] = $field_group;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Inactive Fields');
-
-  return $field_groups;
 }

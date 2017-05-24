@@ -112,7 +112,7 @@ function ec_audience_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 10,
+        'weight' => 3,
       ),
     ),
   );
@@ -234,7 +234,7 @@ function ec_audience_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 7,
+        'weight' => 2,
       ),
     ),
   );
@@ -519,7 +519,7 @@ function ec_audience_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 8,
+        'weight' => 9,
       ),
     ),
   );
@@ -623,7 +623,7 @@ function ec_audience_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 9,
+        'weight' => 10,
       ),
     ),
   );
@@ -677,7 +677,11 @@ function ec_audience_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'audience',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'deleted' => 0,
       'description' => '',
       'display' => array(

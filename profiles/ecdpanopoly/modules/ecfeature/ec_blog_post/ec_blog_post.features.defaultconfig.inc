@@ -11,7 +11,6 @@ function ec_blog_post_defaultconfig_features() {
   return array(
     'ec_blog_post' => array(
       'field_default_fields' => 'field_default_fields',
-      'field_group_info' => 'field_group_info',
       'metatag_config_default' => 'metatag_config_default',
     ),
   );
@@ -128,7 +127,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 18,
+        'weight' => 17,
       ),
     ),
   );
@@ -326,7 +325,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 27,
+        'weight' => 13,
       ),
     ),
   );
@@ -766,7 +765,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 26,
+        'weight' => 12,
       ),
     ),
   );
@@ -978,7 +977,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 25,
+        'weight' => 11,
       ),
     ),
   );
@@ -1032,7 +1031,11 @@ function ec_blog_post_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'blog_post',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'deleted' => 0,
       'description' => 'This is help text.',
       'display' => array(
@@ -1190,7 +1193,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 41,
+        'weight' => 20,
       ),
     ),
   );
@@ -1303,7 +1306,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 35,
+        'weight' => 25,
       ),
     ),
   );
@@ -1413,7 +1416,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 13,
+        'weight' => 22,
       ),
     ),
   );
@@ -1523,7 +1526,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 13,
+        'weight' => 22,
       ),
     ),
   );
@@ -1633,7 +1636,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 25,
+        'weight' => 33,
       ),
     ),
   );
@@ -1659,54 +1662,6 @@ function ec_blog_post_defaultconfig_field_default_fields() {
   t('URL of the page to link this blog entry to.');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_field_group_info().
- */
-function ec_blog_post_defaultconfig_field_group_info() {
-  $field_groups = array();
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_inactive_fields|node|blog_post|form';
-  $field_group->group_name = 'group_inactive_fields';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'blog_post';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Inactive Fields',
-    'weight' => '2',
-    'children' => array(
-      0 => 'field_ref_blog_article',
-      1 => 'field_blog_category',
-      2 => 'field_content_link',
-      3 => 'field_ref_blog_page',
-      4 => 'field_ref_blog_case_study',
-      5 => 'field_ref_blog_citypages',
-      6 => 'field_ref_blog_serv_cat',
-      7 => 'field_ref_blog_serv_group',
-      8 => 'field_ref_blog_service',
-    ),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $field_groups['group_inactive_fields|node|blog_post|form'] = $field_group;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Inactive Fields');
-
-  return $field_groups;
 }
 
 /**

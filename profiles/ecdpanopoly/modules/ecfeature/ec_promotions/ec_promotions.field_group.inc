@@ -55,7 +55,6 @@ function ec_promotions_field_group_info() {
       0 => 'group_cta_form',
       1 => 'group_general',
       2 => 'group_promotion',
-      3 => 'group_show_this_on',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -115,19 +114,33 @@ function ec_promotions_field_group_info() {
     'children' => array(
       0 => 'field_promotion_price',
       1 => 'field_ref_promo_article',
-      2 => 'field_ref_promo_case_study',
-      3 => 'field_ref_promo_serv_cat',
-      4 => 'field_ref_promo_serv_group',
-      5 => 'field_ref_promo_service',
+      2 => 'field_a_b_reason_for_testing',
+      3 => 'field_a_b_reference_page',
+      4 => 'field_a_b_test_page',
+      5 => 'field_ref_promo_case_study',
+      6 => 'field_ref_promo_serv_cat',
+      7 => 'field_ref_promo_serv_group',
+      8 => 'field_ref_promo_service',
+      9 => 'metatags',
+      10 => 'path',
+      11 => 'redirect',
+      12 => 'xmlsitemap',
+      13 => 'group_show_this_on',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Inactive Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_inactive_fields|node|promotion|form'] = $field_group;
@@ -165,7 +178,7 @@ function ec_promotions_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'promotion';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Add this content to these pages',
     'weight' => '20',

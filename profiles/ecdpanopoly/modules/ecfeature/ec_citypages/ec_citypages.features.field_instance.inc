@@ -65,7 +65,7 @@ function ec_citypages_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 9,
     ),
   );
 
@@ -124,7 +124,7 @@ function ec_citypages_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 39,
+      'weight' => 26,
     ),
   );
 
@@ -1053,7 +1053,11 @@ function ec_citypages_field_default_field_instances() {
   // Exported field_instance: 'node-city_page-field_ref_to_cta_form'.
   $field_instances['node-city_page-field_ref_to_cta_form'] = array(
     'bundle' => 'city_page',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -1165,7 +1169,7 @@ function ec_citypages_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 9,
+      'weight' => 14,
     ),
   );
 
