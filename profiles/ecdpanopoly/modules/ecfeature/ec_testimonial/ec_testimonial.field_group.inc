@@ -25,8 +25,6 @@ function ec_testimonial_field_group_info() {
     'children' => array(
       0 => 'group_general',
       1 => 'group_location_info',
-      2 => 'group_show_this_on',
-      3 => 'group_testimonial_info',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -85,20 +83,33 @@ function ec_testimonial_field_group_info() {
       2 => 'field_testimonial_source',
       3 => 'field_video',
       4 => 'field_ref_testimonial_article',
-      5 => 'field_ref_testimonial_case_study',
-      6 => 'field_ref_testimonial_citypages',
-      7 => 'field_ref_testimonial_serv_cat',
-      8 => 'field_ref_testimonial_serv_group',
-      9 => 'field_ref_testimonial_service',
+      5 => 'field_a_b_test_page',
+      6 => 'field_ref_testimonial_case_study',
+      7 => 'field_ref_testimonial_citypages',
+      8 => 'field_ref_testimonial_serv_cat',
+      9 => 'field_ref_testimonial_serv_group',
+      10 => 'field_ref_testimonial_service',
+      11 => 'metatags',
+      12 => 'path',
+      13 => 'redirect',
+      14 => 'xmlsitemap',
+      15 => 'group_show_this_on',
+      16 => 'group_testimonial_info',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Inactive Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-inactive-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_inactive_fields|node|testimonial|form'] = $field_group;
@@ -139,7 +150,7 @@ function ec_testimonial_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'testimonial';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Add this content to these pages',
     'weight' => '8',
@@ -165,7 +176,7 @@ function ec_testimonial_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'testimonial';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Support Info',
     'weight' => '7',

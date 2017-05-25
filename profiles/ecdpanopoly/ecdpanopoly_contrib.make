@@ -46,7 +46,7 @@ projects[charts][subdir] = eccontrib
 projects[charts][version] = 2.0-rc1
 
 projects[colorbox][subdir] = eccontrib
-projects[colorbox][version] = 2.12
+projects[colorbox][version] = 2.13
 
 projects[compact_forms][subdir] = eccontrib
 projects[compact_forms][version] = 1.x
@@ -187,7 +187,7 @@ projects[fivestar][subdir] = eccontrib
 projects[fivestar][version] = 2.x
 
 projects[flexslider][subdir] = eccontrib
-projects[flexslider][version] = 2.x-dev
+projects[flexslider][version] = 2.x
 
 projects[gauth][subdir] = eccontrib
 projects[gauth][version] = 1.x
@@ -328,7 +328,7 @@ projects[role_delegation][subdir] = eccontrib
 projects[role_delegation][version] = 1.1
 
 projects[rules][subdir] = eccontrib
-projects[rules][version] = 2.9
+projects[rules][version] = 2.10
 
 projects[salesforce][subdir] = eccontrib
 projects[salesforce][version] = 3.x-dev
@@ -414,13 +414,13 @@ projects[video_filter][subdir] = eccontrib
 projects[video_filter][version] = 3.4
 
 projects[views_data_export][subdir] = eccontrib
-projects[views_data_export][version] = 3.x-dev
+projects[views_data_export][version] = 3.x
 
 projects[views_record_count][subdir] = eccontrib
 projects[views_record_count][version] = 1.x
 
 projects[views_slideshow][subdir] = eccontrib
-projects[views_slideshow][version] = 3.5
+projects[views_slideshow][version] = 3.8
 
 projects[views_url_path_arguments][subdir] = eccontrib
 projects[views_url_path_arguments][version] = 1.1

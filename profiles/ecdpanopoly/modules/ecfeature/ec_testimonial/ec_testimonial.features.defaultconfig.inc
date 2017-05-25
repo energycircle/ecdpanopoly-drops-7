@@ -132,7 +132,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 19,
+        'weight' => 18,
       ),
     ),
   );
@@ -248,7 +248,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 32,
+        'weight' => 22,
       ),
     ),
   );
@@ -569,7 +569,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 11,
+        'weight' => 20,
       ),
     ),
   );
@@ -679,7 +679,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 11,
+        'weight' => 20,
       ),
     ),
   );
@@ -789,7 +789,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 23,
+        'weight' => 31,
       ),
     ),
   );
@@ -981,7 +981,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'stars',
-        'weight' => 4,
+        'weight' => 9,
       ),
     ),
   );
@@ -1289,7 +1289,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 6,
+        'weight' => 11,
       ),
     ),
   );
@@ -1391,7 +1391,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => 7,
+        'weight' => 12,
       ),
     ),
   );
@@ -1608,7 +1608,7 @@ function ec_testimonial_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 5,
+        'weight' => 10,
       ),
     ),
   );
