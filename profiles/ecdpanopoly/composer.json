@@ -1,11 +1,10 @@
 {
     "require": {
-       "drupal-composer/drupal-scaffold": "^2.0.0",
         "behat/behat": "2.5.*@stable",
         "behat/mink": "1.5.*@stable",
         "drush/drush": "6.2.0",
         "behat/mink-extension": "*",
-        "guzzlehttp/guzzle": "^6.2",
+        "guzzle/guzzle": "*",
         "behat/mink-goutte-driver": "*"
-      }
+    }
 }
