@@ -190,7 +190,7 @@ projects[flexslider][subdir] = eccontrib
 projects[flexslider][version] = 2.x
 
 projects[gauth][subdir] = eccontrib
-projects[gauth][version] = 1.x
+projects[gauth][version] = 1.9
 
 projects[geolocation][subdir] = eccontrib
 projects[geolocation][version] = 1.x
@@ -414,7 +414,7 @@ projects[video_filter][subdir] = eccontrib
 projects[video_filter][version] = 3.4
 
 projects[views_data_export][subdir] = eccontrib
-projects[views_data_export][version] = 3.x
+projects[views_data_export][version] = 3.2
 
 projects[views_record_count][subdir] = eccontrib
 projects[views_record_count][version] = 1.x

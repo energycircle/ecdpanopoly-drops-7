@@ -6,8 +6,8 @@ package = Google Api
 configure = admin/config/services/gauth_user
 
 ; Information added by Drupal.org packaging script on 2016-11-29
-version = "7.x-1.8+6-dev"
+version = "7.x-1.9"
 core = "7.x"
 project = "gauth"
-datestamp = "1480401485"
+datestamp = "1480402089"
 
