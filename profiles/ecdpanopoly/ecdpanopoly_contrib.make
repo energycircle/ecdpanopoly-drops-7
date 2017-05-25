@@ -187,7 +187,7 @@ projects[fivestar][subdir] = eccontrib
 projects[fivestar][version] = 2.x
 
 projects[flexslider][subdir] = eccontrib
-projects[flexslider][version] = 2.x
+projects[flexslider][version] = 2.0-rc2
 
 projects[gauth][subdir] = eccontrib
 projects[gauth][version] = 1.9
