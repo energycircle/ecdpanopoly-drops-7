@@ -47,19 +47,19 @@ function ec_promotions_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '14',
+          'weight' => '33',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '13',
+          'weight' => '32',
         ),
         'redirect' => array(
-          'weight' => '12',
+          'weight' => '31',
         ),
         'xmlsitemap' => array(
-          'weight' => '11',
+          'weight' => '30',
         ),
       ),
       'display' => array(

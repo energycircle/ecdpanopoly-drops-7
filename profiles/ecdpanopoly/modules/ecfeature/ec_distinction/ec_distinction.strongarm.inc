@@ -169,19 +169,19 @@ function ec_distinction_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '10',
+          'weight' => '21',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '20',
         ),
         'redirect' => array(
-          'weight' => '8',
+          'weight' => '19',
         ),
         'xmlsitemap' => array(
-          'weight' => '7',
+          'weight' => '18',
         ),
       ),
       'display' => array(),

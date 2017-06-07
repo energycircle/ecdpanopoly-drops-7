@@ -52,9 +52,8 @@ function ec_staff_field_group_info() {
       0 => 'body',
       1 => 'field_first_name',
       2 => 'field_last_name',
-      3 => 'field_staff_department',
-      4 => 'field_staff_photo',
-      5 => 'field_staff_title',
+      3 => 'field_staff_photo',
+      4 => 'field_staff_title',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -68,10 +67,48 @@ function ec_staff_field_group_info() {
   );
   $field_groups['group_general|node|staff|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|staff|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'staff';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_staff_department',
+      1 => 'metatags',
+      2 => 'path',
+      3 => 'redirect',
+      4 => 'xmlsitemap',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Inactive Fields',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_inactive_fields|node|staff|form'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Edit Content');
   t('General');
+  t('Inactive Fields');
 
   return $field_groups;
 }

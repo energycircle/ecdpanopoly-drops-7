@@ -15,7 +15,10 @@ $databases = array (
   ),
 );
 
+
 // Other stuff useful during development
+$conf['composer_manager_file_dir'] = "files/composer";
+ini_set('memory_limit', '512M');
 
 // Disable cache
 $conf['cache'] = 0;

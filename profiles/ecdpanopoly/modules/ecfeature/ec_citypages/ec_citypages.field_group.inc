@@ -173,18 +173,30 @@ function ec_citypages_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Unused Fields',
-    'weight' => '2',
+    'weight' => '5',
     'children' => array(
-      0 => 'field_citypages_pin',
+      0 => 'field_a_b_reason_for_testing',
+      1 => 'field_a_b_reference_page',
+      2 => 'field_a_b_test_page',
+      3 => 'metatags',
+      4 => 'path',
+      5 => 'redirect',
+      6 => 'xmlsitemap',
     ),
-    'format_type' => 'tab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Unused Fields',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-unused-fields field-group-tab',
         'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_unused_fields|node|city_page|form'] = $field_group;

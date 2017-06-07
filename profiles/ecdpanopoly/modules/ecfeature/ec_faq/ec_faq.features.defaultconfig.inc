@@ -234,7 +234,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 15,
+        'weight' => 21,
       ),
     ),
   );
@@ -503,7 +503,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 12,
+          'weight' => 11,
         ),
         'featured' => array(
           'label' => 'above',
@@ -546,7 +546,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 14,
+        'weight' => 19,
       ),
     ),
   );
@@ -650,7 +650,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 15,
+        'weight' => 19,
       ),
     ),
   );
@@ -754,7 +754,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 22,
+        'weight' => 30,
       ),
     ),
   );

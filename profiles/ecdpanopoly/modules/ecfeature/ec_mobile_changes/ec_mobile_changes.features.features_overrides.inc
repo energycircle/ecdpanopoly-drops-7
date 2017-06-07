@@ -18,7 +18,7 @@ function ec_mobile_changes_features_override_default_overrides() {
       'panel' => 'three_25_25_50_top',
       'type' => 'custom',
       'subtype' => 'mobile_header_buttons',
-      'shown' => TRUE,
+      'shown' => FALSE,
       'access' => array(),
       'configuration' => array(
         'admin_title' => '',

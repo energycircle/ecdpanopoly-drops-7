@@ -162,7 +162,7 @@ function ec_base_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'clean_url';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['clean_url'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -184,6 +184,7 @@ function ec_base_config_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_ids';
   $strongarm->value = 'user-login-form
+user-login
 search-form
 search-form--2
 schedule-service-entityform-edit-form
@@ -1250,38 +1251,8 @@ campaign-form-entityform-edit-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_admin_theme';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['node_admin_theme'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_taxonomy_term_panopoly_categories';
-  $strongarm->value = array(
-    'status' => 1,
-    'help' => '',
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 1,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 1,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 1,
-        'choice' => 0,
-      ),
-    ),
-  );
-  $export['panelizer_defaults_taxonomy_term_panopoly_categories'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -1906,13 +1877,6 @@ campaign-form-entityform-edit-form';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_taxonomy_term_panopoly_categories_pattern';
-  $strongarm->value = 'categories/[term:name]';
-  $export['pathauto_taxonomy_term_panopoly_categories_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_transliterate';
   $strongarm->value = 1;
   $export['pathauto_transliterate'] = $strongarm;
@@ -1972,7 +1936,7 @@ campaign-form-entityform-edit-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_publisherID';
-  $strongarm->value = 'dr-3b0d930d-e11d-c306-cb59-60d0fd37c7b9';
+  $strongarm->value = 'dr-ef082abe-5378-8ae6-e325-23ba15c499c7';
   $export['sharethis_publisherID'] = $strongarm;
 
   $strongarm = new stdClass();

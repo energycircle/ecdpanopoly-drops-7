@@ -74,44 +74,17 @@ function ec_base_config_default_entityform_type() {
  * Implements hook_field_default_field_instances_alter().
  */
 function ec_base_config_field_default_field_instances_alter(&$data) {
-  if (isset($data['node-panopoly_page-field_featured_image'])) {
-    $data['node-panopoly_page-field_featured_image']['default_value'] = array(); /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['default']['type'] = 'hidden'; /* WAS: 'image' */
-    $data['node-panopoly_page-field_featured_image']['display']['default']['weight'] = 3; /* WAS: 0 */
-    $data['node-panopoly_page-field_featured_image']['display']['featured']['settings']['field_multiple_limit'] = -1; /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['featured']['settings']['field_multiple_limit_offset'] = 0; /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['featured']['settings']['field_multiple_limit_order'] = 0; /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['grouped_teaser'] = array(
-      'label' => 'above',
-      'settings' => array(),
-      'type' => 'hidden',
-      'weight' => 0,
-    ); /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['search_result']['settings']['field_multiple_limit'] = -1; /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['search_result']['settings']['field_multiple_limit_offset'] = 0; /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['search_result']['settings']['field_multiple_limit_order'] = 0; /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['show_this_block'] = array(
-      'label' => 'above',
-      'settings' => array(),
-      'type' => 'hidden',
-      'weight' => 12,
-    ); /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['teaser']['settings']['field_multiple_limit'] = -1; /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['teaser']['settings']['field_multiple_limit_offset'] = 0; /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['display']['teaser']['settings']['field_multiple_limit_order'] = 0; /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['widget']['module'] = 'media'; /* WAS: 'image' */
-    $data['node-panopoly_page-field_featured_image']['widget']['settings']['allowed_schemes'] = array(
-      'public' => 'public',
-    ); /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['widget']['settings']['allowed_types'] = array(
-      'image' => 'image',
-    ); /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['widget']['settings']['browser_plugins'] = array(); /* WAS: '' */
-    $data['node-panopoly_page-field_featured_image']['widget']['type'] = 'media_generic'; /* WAS: 'image_image' */
-    $data['node-panopoly_page-field_featured_image']['widget']['weight'] = 3; /* WAS: 1 */
-    unset($data['node-panopoly_page-field_featured_image']['display']['default']['module']);
-    unset($data['node-panopoly_page-field_featured_image']['display']['default']['settings']['image_link']);
-    unset($data['node-panopoly_page-field_featured_image']['display']['default']['settings']['image_style']);
+  if (isset($data['user-user-field_user_about'])) {
+    $data['user-user-field_user_about']['display']['default']['type'] = 'hidden'; /* WAS: 'text_default' */
+    $data['user-user-field_user_about']['display']['default']['weight'] = 0; /* WAS: 1 */
+    unset($data['user-user-field_user_about']['display']['default']['module']);
+  }
+  if (isset($data['user-user-field_user_picture'])) {
+    $data['user-user-field_user_picture']['display']['default']['type'] = 'hidden'; /* WAS: 'image' */
+    $data['user-user-field_user_picture']['display']['default']['weight'] = 1; /* WAS: 2 */
+    unset($data['user-user-field_user_picture']['display']['default']['module']);
+    unset($data['user-user-field_user_picture']['display']['default']['settings']['image_link']);
+    unset($data['user-user-field_user_picture']['display']['default']['settings']['image_style']);
   }
 }
 

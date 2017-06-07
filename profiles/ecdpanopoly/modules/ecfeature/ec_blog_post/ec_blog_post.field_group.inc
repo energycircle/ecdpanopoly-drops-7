@@ -54,7 +54,6 @@ function ec_blog_post_field_group_info() {
     'children' => array(
       0 => 'group_cta_form',
       1 => 'group_general',
-      2 => 'group_show_this_on',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -81,10 +80,8 @@ function ec_blog_post_field_group_info() {
     'weight' => '2',
     'children' => array(
       0 => 'body',
-      1 => 'field_blog_category',
-      2 => 'field_blog_image',
-      3 => 'field_content_link',
-      4 => 'field_display_date',
+      1 => 'field_blog_image',
+      2 => 'field_display_date',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -101,23 +98,63 @@ function ec_blog_post_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|blog_post|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'blog_post';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_blog_category',
+      1 => 'field_content_link',
+      2 => 'field_a_b_test_page',
+      3 => 'metatags',
+      4 => 'path',
+      5 => 'redirect',
+      6 => 'xmlsitemap',
+      7 => 'group_show_this_on',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Inactive Fields',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_inactive_fields|node|blog_post|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_show_this_on|node|blog_post|form';
   $field_group->group_name = 'group_show_this_on';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'blog_post';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_edit_content';
+  $field_group->parent_name = 'group_inactive_fields';
   $field_group->data = array(
     'label' => 'Add this content to these pages',
-    'weight' => '4',
+    'weight' => '14',
     'children' => array(
-      0 => 'field_ref_blog_serv_cat',
-      1 => 'field_ref_blog_serv_group',
-      2 => 'field_ref_blog_service',
-      3 => 'field_ref_blog_page',
-      4 => 'field_ref_blog_case_study',
-      5 => 'field_ref_blog_article',
-      6 => 'field_ref_blog_citypages',
+      0 => 'field_ref_blog_article',
+      1 => 'field_ref_blog_page',
+      2 => 'field_ref_blog_case_study',
+      3 => 'field_ref_blog_citypages',
+      4 => 'field_ref_blog_serv_cat',
+      5 => 'field_ref_blog_serv_group',
+      6 => 'field_ref_blog_service',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -138,6 +175,7 @@ function ec_blog_post_field_group_info() {
   t('CTA Form');
   t('Edit Content');
   t('General');
+  t('Inactive Fields');
 
   return $field_groups;
 }

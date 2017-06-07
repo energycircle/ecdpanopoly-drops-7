@@ -76,72 +76,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-case_study-field_ref_case_study_testimonial'.
-  $field_instances['node-case_study-field_ref_case_study_testimonial'] = array(
-    'bundle' => 'case_study',
-    'default_value' => NULL,
-    'default_value_function' => '',
-    'deleted' => 0,
-    'description' => 'Testimonials shown on this page.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ref_case_study_testimonial',
-    'label' => 'Testimonial',
-    'required' => 0,
-    'settings' => array(
-      'behaviors' => array(
-        'current' => array(
-          'status' => 0,
-        ),
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 21,
+      'weight' => 18,
     ),
   );
 
@@ -211,7 +146,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 22,
     ),
   );
 
@@ -351,7 +286,7 @@ function ec_testimonial_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -399,7 +334,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 20,
     ),
   );
 
@@ -464,7 +399,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 20,
     ),
   );
 
@@ -529,7 +464,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 21,
+      'weight' => 31,
     ),
   );
 
@@ -668,7 +603,7 @@ function ec_testimonial_field_default_field_instances() {
         ),
       ),
       'type' => 'stars',
-      'weight' => 4,
+      'weight' => 9,
     ),
   );
 
@@ -891,7 +826,7 @@ function ec_testimonial_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 13,
+      'weight' => 11,
     ),
   );
 
@@ -1099,7 +1034,7 @@ function ec_testimonial_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 14,
+      'weight' => 10,
     ),
   );
 
@@ -1167,7 +1102,7 @@ function ec_testimonial_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -5,
+      'weight' => 0,
     ),
   );
 
@@ -1188,7 +1123,6 @@ function ec_testimonial_field_default_field_instances() {
   t('Testimonials');
   t('Testimonials displayed on this page.');
   t('Testimonials shown on this page');
-  t('Testimonials shown on this page.');
   t('Video');
 
   return $field_instances;

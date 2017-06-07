@@ -221,7 +221,7 @@ function ec_distinction_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 6,
+        'weight' => 17,
       ),
     ),
   );

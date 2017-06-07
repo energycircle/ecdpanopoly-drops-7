@@ -64,7 +64,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 6,
+          'weight' => 5,
         ),
         'featured' => array(
           'label' => 'hidden',
@@ -401,7 +401,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 3,
+          'weight' => 0,
         ),
         'featured' => array(
           'label' => 'hidden',
@@ -445,7 +445,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 12,
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -478,15 +478,8 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'media',
+        'module' => 'image',
         'settings' => array(
-          'allowed_schemes' => array(
-            'public' => 'public',
-          ),
-          'allowed_types' => array(
-            'image' => 'image',
-          ),
-          'browser_plugins' => array(),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 1,
@@ -504,8 +497,8 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'preview_image_style' => 'panopoly_image_full',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'media_generic',
-        'weight' => 3,
+        'type' => 'image_image',
+        'weight' => 1,
       ),
     ),
   );
@@ -550,7 +543,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 7,
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'above',
@@ -694,7 +687,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 5,
+        'weight' => 17,
       ),
     ),
   );
@@ -804,7 +797,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 17,
+        'weight' => 19,
       ),
     ),
   );
@@ -1024,7 +1017,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 16,
+        'weight' => 20,
       ),
     ),
   );
@@ -1078,7 +1071,11 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'panopoly_page',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',

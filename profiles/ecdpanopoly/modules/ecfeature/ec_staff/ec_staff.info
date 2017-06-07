@@ -30,6 +30,7 @@ features[field_base][] = field_staff_photo
 features[field_base][] = field_staff_title
 features[field_group][] = group_edit_content|node|staff|form
 features[field_group][] = group_general|node|staff|form
+features[field_group][] = group_inactive_fields|node|staff|form
 features[field_instance][] = entityform-join_our_team-field_email
 features[field_instance][] = entityform-join_our_team-field_field_applicant_resume
 features[field_instance][] = entityform-join_our_team-field_first_name

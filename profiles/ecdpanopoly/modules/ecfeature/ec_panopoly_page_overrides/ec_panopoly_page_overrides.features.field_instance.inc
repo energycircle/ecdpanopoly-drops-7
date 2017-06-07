@@ -219,7 +219,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 17,
     ),
   );
 
@@ -284,7 +284,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 19,
     ),
   );
 
@@ -412,14 +412,18 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 20,
     ),
   );
 
   // Exported field_instance: 'node-panopoly_page-field_ref_to_cta_form'.
   $field_instances['node-panopoly_page-field_ref_to_cta_form'] = array(
     'bundle' => 'panopoly_page',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'default_value_function' => '',
     'deleted' => 0,
     'description' => '',

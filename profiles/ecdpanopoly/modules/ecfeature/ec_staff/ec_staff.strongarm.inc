@@ -162,19 +162,19 @@ function ec_staff_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '11',
+          'weight' => '19',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '18',
         ),
         'redirect' => array(
-          'weight' => '9',
+          'weight' => '17',
         ),
         'xmlsitemap' => array(
-          'weight' => '8',
+          'weight' => '16',
         ),
       ),
       'display' => array(),

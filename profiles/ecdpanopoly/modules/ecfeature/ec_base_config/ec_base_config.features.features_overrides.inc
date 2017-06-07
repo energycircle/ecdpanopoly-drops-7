@@ -12,43 +12,14 @@ function ec_base_config_features_override_default_overrides() {
   $overrides = array();
 
   // Exported overrides for: field_instance
-  $overrides["field_instance.node-panopoly_page-field_featured_image.default_value"] = array();
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|module"]["DELETED"] = TRUE;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|image_link"]["DELETED"] = TRUE;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|settings|image_style"]["DELETED"] = TRUE;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|type"] = 'hidden';
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|default|weight"] = 3;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|featured|settings|field_multiple_limit"] = -1;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|featured|settings|field_multiple_limit_offset"] = 0;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|featured|settings|field_multiple_limit_order"] = 0;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|grouped_teaser"] = array(
-    'label' => 'above',
-    'settings' => array(),
-    'type' => 'hidden',
-    'weight' => 0,
-  );
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|search_result|settings|field_multiple_limit"] = -1;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|search_result|settings|field_multiple_limit_offset"] = 0;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|search_result|settings|field_multiple_limit_order"] = 0;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|show_this_block"] = array(
-    'label' => 'above',
-    'settings' => array(),
-    'type' => 'hidden',
-    'weight' => 12,
-  );
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|teaser|settings|field_multiple_limit"] = -1;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|teaser|settings|field_multiple_limit_offset"] = 0;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.display|teaser|settings|field_multiple_limit_order"] = 0;
-  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|module"] = 'media';
-  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|settings|allowed_schemes"] = array(
-    'public' => 'public',
-  );
-  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|settings|allowed_types"] = array(
-    'image' => 'image',
-  );
-  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|settings|browser_plugins"] = array();
-  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|type"] = 'media_generic';
-  $overrides["field_instance.node-panopoly_page-field_featured_image.widget|weight"] = 3;
+  $overrides["field_instance.user-user-field_user_about.display|default|module"]["DELETED"] = TRUE;
+  $overrides["field_instance.user-user-field_user_about.display|default|type"] = 'hidden';
+  $overrides["field_instance.user-user-field_user_about.display|default|weight"] = 0;
+  $overrides["field_instance.user-user-field_user_picture.display|default|module"]["DELETED"] = TRUE;
+  $overrides["field_instance.user-user-field_user_picture.display|default|settings|image_link"]["DELETED"] = TRUE;
+  $overrides["field_instance.user-user-field_user_picture.display|default|settings|image_style"]["DELETED"] = TRUE;
+  $overrides["field_instance.user-user-field_user_picture.display|default|type"] = 'hidden';
+  $overrides["field_instance.user-user-field_user_picture.display|default|weight"] = 1;
 
   // Exported overrides for: file_display
   $overrides["file_display.video__default__file_field_file_video.settings|muted"] = 0;

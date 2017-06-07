@@ -10,15 +10,15 @@
     screenshot  = screenshot.png
 
 
-  ;----------// Stylesheets
-
     ; See each stylesheet for extensive documentation and help.
-    stylesheets[screen][] = css/global.base.css
-    stylesheets[screen][] = css/global.styles.css
+      stylesheets[screen][] = css/global.base.css
+      stylesheets[screen][] = css/global.styles.css
 
     ; Print - uncomment to load basic print styles.
     ; stylesheets[print][] = css/print.css
 
+  	scripts[] = scripts/custom.js
+    scripts[] = scripts/scrollreveal.min.js
 
     ; Internet Explorer Stylesheets
     ;
@@ -35,7 +35,7 @@
     ; "less than IE9" but "not IEMobile 7".
     ; Uncomment the following to use the included IE styleseet:
 
-     ie_stylesheets[screen][(lt IE 9)&(!IEMobile 7)][] = css/lt-ie9.css
+    ie_stylesheets[screen][(lt IE 9)&(!IEMobile 7)][] = css/lt-ie9.css
 
 
     ; Unset Module CSS or other Stylesheets
@@ -57,8 +57,6 @@
 
 
   ;----------// Scripts
-
-  	scripts[] = scripts/custom.js
 
     ; Internet Explorer Scripts
     ;
@@ -147,6 +145,10 @@
 
   ;----------// Theme Settings
 
+  ;custom
+    settings['combine_css_files'] = 1;
+    settings['combine_js_files'] = 1;
+
     ; Layout settings - Standard layout
     settings[bigscreen_layout]         = 'three_col_grail'
     settings[bigscreen_page_unit]      = '%'
@@ -201,6 +203,7 @@
 
 
     ; Responsive Panels - Standard layout
+    settings[bigscreen_max_width]         = 1280
     settings[bigscreen_two_50]            = 'two-50'
     settings[bigscreen_two_33_66]         = 'two-33-66'
     settings[bigscreen_two_66_33]         = 'two-66-33'
@@ -275,9 +278,9 @@
     ; Polyfills
     settings[load_html5js]       = 1
     settings[load_respondjs]     = 0
-    settings[load_ltie8css]      = 0
-    settings[load_scalefixjs]    = 0
-
+    settings[load_ltie8css]      = 1
+    settings[load_scalefixjs]    = 1
+    settings[load_matchmediajs]  = 1
 
     ; Debug
     settings[expose_regions]              = 0
@@ -289,7 +292,7 @@
 
     ; Enable extensions
     settings[enable_extensions]          = 1
-    settings[enable_font_settings]       = 0
+    settings[enable_font_settings]       = 1
     settings[enable_heading_settings]    = 0
     settings[enable_image_settings]      = 0
     settings[enable_apple_touch_icons]   = 0
@@ -399,7 +402,7 @@
     ; Login block options
     settings[horizontal_login_block_enable] = 'on'
     settings[horizontal_login_block]    = 0
-    settings[login_block_remove_links]  = 0
+    settings[login_block_remove_links]  = 1
     settings[login_block_remove_openid] = 0
 
 
@@ -411,7 +414,7 @@
     settings[global_gutter_width]           = ''
     settings[page_full_width_wrappers]      = 1
     settings[page_content_type_suggestions] = 1
-    settings[menu_item_span_elements]       = 0
+    settings[menu_item_span_elements]       = 1
 
 
     ; Extra CSS classes
@@ -436,10 +439,11 @@
 
 
     ; SEO
-    settings[rel_author] = 0
+    settings[rel_author] = 1
 
 
     ; Mobile metu toggle
+    settings[enable_menu_toggle] = 0
     settings[menu_toggle_tablet_portrait]  = 1
     settings[menu_toggle_tablet_landscape] = 0
     settings[menu_toggle_main_menu]        = 1
@@ -458,7 +462,7 @@
     settings[adaptivetheme_meta_handheldfriendly] = 'true'
     settings[adaptivetheme_meta_apple_mobile_web_app_capable] = 'yes'
     settings[adaptivetheme_meta_ie_document_mode] = ''
-    settings[adaptivetheme_meta_clear_type]       = 0
+    settings[adaptivetheme_meta_clear_type]       = 1
 
 
     ; Touch icons
@@ -473,8 +477,8 @@
     ; Custom CSS
     settings[custom_css] = ''
 
-  ; Information added by Drupal.org packaging script on 2016-12-01
-  version = "7.x-3.4+1-dev"
-  core = "7.x"
-  project = "adaptivetheme"
-  datestamp = "1480634594"
+    ; Information added by Drupal.org packaging script on 2014-04-29
+    version = "7.x-3.3.1-dev"
+    core = "7.x"
+    project = "adaptivetheme"
+    datestamp = "1398731028"
