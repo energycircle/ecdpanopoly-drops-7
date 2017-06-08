@@ -64,7 +64,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 5,
+          'weight' => 6,
         ),
         'featured' => array(
           'label' => 'hidden',
@@ -401,7 +401,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 3,
         ),
         'featured' => array(
           'label' => 'hidden',
@@ -445,7 +445,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 12,
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -478,8 +478,15 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'media',
         'settings' => array(
+          'allowed_schemes' => array(
+            'public' => 'public',
+          ),
+          'allowed_types' => array(
+            'image' => 'image',
+          ),
+          'browser_plugins' => array(),
           'manualcrop_crop_info' => 1,
           'manualcrop_default_crop_area' => 1,
           'manualcrop_enable' => 1,
@@ -497,8 +504,8 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'preview_image_style' => 'panopoly_image_full',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
-        'weight' => 1,
+        'type' => 'media_generic',
+        'weight' => 3,
       ),
     ),
   );
@@ -543,7 +550,7 @@ function ec_panopoly_page_overrides_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 6,
+          'weight' => 7,
         ),
         'featured' => array(
           'label' => 'above',
