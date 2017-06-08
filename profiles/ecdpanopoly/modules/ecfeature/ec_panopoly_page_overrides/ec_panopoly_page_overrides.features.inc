@@ -32,7 +32,7 @@ function ec_panopoly_page_overrides_views_api($module = NULL, $api = NULL) {
 function ec_panopoly_page_overrides_field_default_field_instances_alter(&$data) {
   if (isset($data['node-panopoly_page-body'])) {
     $data['node-panopoly_page-body']['display']['default']['type'] = 'hidden'; /* WAS: 'text_default' */
-    $data['node-panopoly_page-body']['display']['default']['weight'] = 5; /* WAS: 1 */
+    $data['node-panopoly_page-body']['display']['default']['weight'] = 6; /* WAS: 1 */
     $data['node-panopoly_page-body']['display']['featured']['settings']['field_multiple_limit'] = -1; /* WAS: '' */
     $data['node-panopoly_page-body']['display']['featured']['settings']['field_multiple_limit_offset'] = 0; /* WAS: '' */
     $data['node-panopoly_page-body']['display']['featured']['settings']['field_multiple_limit_order'] = 0; /* WAS: '' */
@@ -70,11 +70,26 @@ function ec_panopoly_page_overrides_field_default_field_instances_alter(&$data) 
     unset($data['node-panopoly_page-body']['display']['default']['module']);
   }
   if (isset($data['node-panopoly_page-field_featured_categories'])) {
-    unset($data['node-panopoly_page-field_featured_categories']);
+    $data['node-panopoly_page-field_featured_categories']['display']['default']['type'] = 'hidden'; /* WAS: 'taxonomy_term_reference_link' */
+    $data['node-panopoly_page-field_featured_categories']['display']['default']['weight'] = 0; /* WAS: 3 */
+    $data['node-panopoly_page-field_featured_categories']['display']['grouped_teaser'] = array(
+      'label' => 'above',
+      'settings' => array(),
+      'type' => 'hidden',
+      'weight' => 0,
+    ); /* WAS: '' */
+    $data['node-panopoly_page-field_featured_categories']['display']['show_this_block'] = array(
+      'label' => 'above',
+      'settings' => array(),
+      'type' => 'hidden',
+      'weight' => 0,
+    ); /* WAS: '' */
+    unset($data['node-panopoly_page-field_featured_categories']['display']['default']['module']);
   }
   if (isset($data['node-panopoly_page-field_featured_image'])) {
     $data['node-panopoly_page-field_featured_image']['default_value'] = array(); /* WAS: '' */
     $data['node-panopoly_page-field_featured_image']['display']['default']['type'] = 'hidden'; /* WAS: 'image' */
+    $data['node-panopoly_page-field_featured_image']['display']['default']['weight'] = 3; /* WAS: 0 */
     $data['node-panopoly_page-field_featured_image']['display']['featured']['settings']['field_multiple_limit'] = -1; /* WAS: '' */
     $data['node-panopoly_page-field_featured_image']['display']['featured']['settings']['field_multiple_limit_offset'] = 0; /* WAS: '' */
     $data['node-panopoly_page-field_featured_image']['display']['featured']['settings']['field_multiple_limit_order'] = 0; /* WAS: '' */
@@ -91,18 +106,28 @@ function ec_panopoly_page_overrides_field_default_field_instances_alter(&$data) 
       'label' => 'above',
       'settings' => array(),
       'type' => 'hidden',
-      'weight' => 0,
+      'weight' => 12,
     ); /* WAS: '' */
     $data['node-panopoly_page-field_featured_image']['display']['teaser']['settings']['field_multiple_limit'] = -1; /* WAS: '' */
     $data['node-panopoly_page-field_featured_image']['display']['teaser']['settings']['field_multiple_limit_offset'] = 0; /* WAS: '' */
     $data['node-panopoly_page-field_featured_image']['display']['teaser']['settings']['field_multiple_limit_order'] = 0; /* WAS: '' */
+    $data['node-panopoly_page-field_featured_image']['widget']['module'] = 'media'; /* WAS: 'image' */
+    $data['node-panopoly_page-field_featured_image']['widget']['settings']['allowed_schemes'] = array(
+      'public' => 'public',
+    ); /* WAS: '' */
+    $data['node-panopoly_page-field_featured_image']['widget']['settings']['allowed_types'] = array(
+      'image' => 'image',
+    ); /* WAS: '' */
+    $data['node-panopoly_page-field_featured_image']['widget']['settings']['browser_plugins'] = array(); /* WAS: '' */
+    $data['node-panopoly_page-field_featured_image']['widget']['type'] = 'media_generic'; /* WAS: 'image_image' */
+    $data['node-panopoly_page-field_featured_image']['widget']['weight'] = 3; /* WAS: 1 */
     unset($data['node-panopoly_page-field_featured_image']['display']['default']['module']);
     unset($data['node-panopoly_page-field_featured_image']['display']['default']['settings']['image_link']);
     unset($data['node-panopoly_page-field_featured_image']['display']['default']['settings']['image_style']);
   }
   if (isset($data['node-panopoly_page-field_featured_status'])) {
     $data['node-panopoly_page-field_featured_status']['display']['default']['type'] = 'hidden'; /* WAS: 'list_default' */
-    $data['node-panopoly_page-field_featured_status']['display']['default']['weight'] = 6; /* WAS: 2 */
+    $data['node-panopoly_page-field_featured_status']['display']['default']['weight'] = 7; /* WAS: 2 */
     $data['node-panopoly_page-field_featured_status']['display']['grouped_teaser'] = array(
       'label' => 'above',
       'settings' => array(),
@@ -158,14 +183,14 @@ function ec_panopoly_page_overrides_strongarm_alter(&$data) {
       ),
     ); /* WAS: '' */
     $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['metatags'] = array(
-      'weight' => 32,
+      'weight' => 9,
     ); /* WAS: '' */
-    $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['path']['weight'] = 26; /* WAS: 5 */
+    $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['path']['weight'] = 3; /* WAS: 5 */
     $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['redirect'] = array(
-      'weight' => 30,
+      'weight' => 7,
     ); /* WAS: '' */
     $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['xmlsitemap'] = array(
-      'weight' => 31,
+      'weight' => 8,
     ); /* WAS: '' */
     $data['field_bundle_settings_node__panopoly_page']->value['view_modes']['grouped_teaser'] = array(
       'custom_settings' => TRUE,
