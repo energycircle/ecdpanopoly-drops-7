@@ -9,9 +9,9 @@ files[] = includes/fivestar_views_handler_filter_in_operator.inc
 files[] = test/fivestar.base.test
 files[] = test/fivestar.field.test
 
-; Information added by Drupal.org packaging script on 2017-02-23
-version = "7.x-2.2+9-dev"
+; Information added by Drupal.org packaging script on 2017-06-08
+version = "7.x-2.2+10-dev"
 core = "7.x"
 project = "fivestar"
-datestamp = "1487884086"
+datestamp = "1496926527"
 
