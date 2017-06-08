@@ -67,3 +67,8 @@ libraries[google-api-php-client][download][type] = get
 libraries[google-api-php-client][type] = library
 libraries[google-api-php-client][directory_name] = google-api-php-client
 libraries[google-api-php-client][download][url] = https://github.com/google/google-api-php-client/releases/download/v2.1.3/google-api-php-client-2.1.3.zip
+
+libraries[geoPHP][download][type] = get
+libraries[geoPHP][type] = library
+libraries[geoPHP][directory_name] = geoPHP
+libraries[geoPHP][download][url] = https://github.com/phayes/geoPHP/zipball/master
