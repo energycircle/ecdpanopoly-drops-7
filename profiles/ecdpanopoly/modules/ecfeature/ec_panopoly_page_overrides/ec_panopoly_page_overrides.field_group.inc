@@ -37,7 +37,7 @@ function ec_panopoly_page_overrides_field_group_info() {
       ),
     ),
   );
-  $field_groups['group_cta_form|node|panopoly_page|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -54,6 +54,7 @@ function ec_panopoly_page_overrides_field_group_info() {
     'children' => array(
       0 => 'group_cta_form',
       1 => 'group_general',
+      2 => 'group_shown_on_this_page',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -64,7 +65,7 @@ function ec_panopoly_page_overrides_field_group_info() {
       ),
     ),
   );
-  $field_groups['group_edit_content|node|panopoly_page|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -80,8 +81,9 @@ function ec_panopoly_page_overrides_field_group_info() {
     'weight' => '14',
     'children' => array(
       0 => 'body',
-      1 => 'field_featured_image',
-      2 => 'field_featured_status',
+      1 => 'field_featured_categories',
+      2 => 'field_featured_image',
+      3 => 'field_featured_status',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -93,7 +95,7 @@ function ec_panopoly_page_overrides_field_group_info() {
       ),
     ),
   );
-  $field_groups['group_general|node|panopoly_page|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -110,32 +112,18 @@ function ec_panopoly_page_overrides_field_group_info() {
     'children' => array(
       0 => 'field_featured_video',
       1 => 'field_ref_services_audiences',
-      2 => 'field_a_b_reason_for_testing',
-      3 => 'field_a_b_reference_page',
-      4 => 'field_a_b_test_page',
-      5 => 'metatags',
-      6 => 'path',
-      7 => 'redirect',
-      8 => 'xmlsitemap',
-      9 => 'group_show_on_this',
     ),
-    'format_type' => 'div',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Inactive Fields',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'element-hidden',
         'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
+        'classes' => 'group-inactive-fields field-group-tab',
+        'required_fields' => 1,
       ),
-      'formatter' => 'open',
     ),
   );
-  $field_groups['group_inactive_fields|node|audience|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -157,34 +145,20 @@ function ec_panopoly_page_overrides_field_group_info() {
       4 => 'field_ref_page_testimonial',
       5 => 'field_ref_page_promotions',
       6 => 'field_ref_page_blog',
-      7 => 'field_a_b_reason_for_testing',
-      8 => 'field_a_b_reference_page',
-      9 => 'field_a_b_test_page',
-      10 => 'field_ref_page_case_study',
-      11 => 'field_ref_page_faq',
-      12 => 'metatags',
-      13 => 'path',
-      14 => 'redirect',
-      15 => 'xmlsitemap',
-      16 => 'group_shown_on_this_page',
+      7 => 'field_ref_page_case_study',
+      8 => 'field_ref_page_faq',
     ),
-    'format_type' => 'div',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'label' => 'Inactive Fields',
+      'formatter' => 'closed',
       'instance_settings' => array(
-        'required_fields' => 1,
-        'id' => '',
-        'classes' => 'element-hidden',
         'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
+        'classes' => 'group-inactive-fields field-group-tab',
+        'required_fields' => 1,
       ),
-      'formatter' => 'open',
     ),
   );
-  $field_groups['group_inactive_fields|node|panopoly_page|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -194,7 +168,7 @@ function ec_panopoly_page_overrides_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'panopoly_page';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_inactive_fields';
+  $field_group->parent_name = 'group_edit_content';
   $field_group->data = array(
     'label' => 'Add other content to this page',
     'weight' => '16',
@@ -210,7 +184,7 @@ function ec_panopoly_page_overrides_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $field_groups['group_shown_on_this_page|node|panopoly_page|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   // Translatables
   // Included for use with string extractors like potx.
