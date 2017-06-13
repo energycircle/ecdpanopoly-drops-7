@@ -23,7 +23,6 @@ dependencies[] = draggableviews
 dependencies[] = ec_custom_tokens
 dependencies[] = ec_foundation_image_styles
 dependencies[] = ec_mail_settings
-dependencies[] = ec_mobile_changes
 dependencies[] = ec_panopoly_page_overrides
 dependencies[] = ec_slide
 dependencies[] = email
