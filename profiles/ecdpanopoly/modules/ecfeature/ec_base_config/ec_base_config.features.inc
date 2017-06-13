@@ -71,6 +71,24 @@ function ec_base_config_default_entityform_type() {
 }
 
 /**
+ * Implements hook_field_default_field_instances_alter().
+ */
+function ec_base_config_field_default_field_instances_alter(&$data) {
+  if (isset($data['user-user-field_user_about'])) {
+    $data['user-user-field_user_about']['display']['default']['type'] = 'hidden'; /* WAS: 'text_default' */
+    $data['user-user-field_user_about']['display']['default']['weight'] = 0; /* WAS: 1 */
+    unset($data['user-user-field_user_about']['display']['default']['module']);
+  }
+  if (isset($data['user-user-field_user_picture'])) {
+    $data['user-user-field_user_picture']['display']['default']['type'] = 'hidden'; /* WAS: 'image' */
+    $data['user-user-field_user_picture']['display']['default']['weight'] = 1; /* WAS: 2 */
+    unset($data['user-user-field_user_picture']['display']['default']['module']);
+    unset($data['user-user-field_user_picture']['display']['default']['settings']['image_link']);
+    unset($data['user-user-field_user_picture']['display']['default']['settings']['image_style']);
+  }
+}
+
+/**
  * Implements hook_file_default_displays_alter().
  */
 function ec_base_config_file_default_displays_alter(&$data) {
@@ -96,5 +114,40 @@ function ec_base_config_file_default_types_alter(&$data) {
     $data['video']->disabled = FALSE; /* WAS: '' */
     $data['video']->mimetypes[1] = 'video/vimeo'; /* WAS: '' */
     $data['video']->mimetypes[2] = 'video/youtube'; /* WAS: '' */
+  }
+}
+
+/**
+ * Implements hook_filter_default_formats_alter().
+ */
+function ec_base_config_filter_default_formats_alter(&$data) {
+  if (isset($data['panopoly_html_text'])) {
+    $data['panopoly_html_text']['cache'] = 0; /* WAS: 1 */
+    $data['panopoly_html_text']['filters']['filter_tokens'] = array(
+      'settings' => array(),
+      'status' => 1,
+      'weight' => 0,
+    ); /* WAS: '' */
+    unset($data['panopoly_html_text']['filters']['wysiwyg']);
+  }
+  if (isset($data['panopoly_wysiwyg_text'])) {
+    $data['panopoly_wysiwyg_text']['cache'] = 0; /* WAS: 1 */
+    $data['panopoly_wysiwyg_text']['filters']['filter_tokens'] = array(
+      'settings' => array(),
+      'status' => 1,
+      'weight' => 0,
+    ); /* WAS: '' */
+  }
+}
+
+/**
+ * Implements hook_wysiwyg_default_profiles_alter().
+ */
+function ec_base_config_wysiwyg_default_profiles_alter(&$data) {
+  if (isset($data['panopoly_html_text'])) {
+    $data['panopoly_html_text']['rdf_mapping'] = array(); /* WAS: '' */
+  }
+  if (isset($data['panopoly_wysiwyg_text'])) {
+    $data['panopoly_wysiwyg_text']['rdf_mapping'] = array(); /* WAS: '' */
   }
 }

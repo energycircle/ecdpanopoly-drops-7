@@ -14,7 +14,7 @@ function ec_audience_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_audience';
-  $strongarm->value = 'edit-save-draft';
+  $strongarm->value = 'edit-panelizer';
   $export['additional_settings__active_tab_audience'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -159,7 +159,7 @@ function ec_audience_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '6',
+          'weight' => '4',
         ),
         'title' => array(
           'weight' => '0',
@@ -168,10 +168,10 @@ function ec_audience_strongarm() {
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '2',
         ),
         'xmlsitemap' => array(
-          'weight' => '5',
+          'weight' => '3',
         ),
       ),
       'display' => array(
@@ -298,6 +298,13 @@ function ec_audience_strongarm() {
     ),
   );
   $export['panelizer_defaults_node_audience'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:audience:default_selection';
+  $strongarm->value = 'node:audience:default:default';
+  $export['panelizer_node:audience:default_selection'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

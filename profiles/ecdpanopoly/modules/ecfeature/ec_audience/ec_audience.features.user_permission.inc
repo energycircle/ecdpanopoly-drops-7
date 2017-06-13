@@ -75,7 +75,6 @@ function ec_audience_user_default_permissions() {
     'name' => 'delete any audience content',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
-      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

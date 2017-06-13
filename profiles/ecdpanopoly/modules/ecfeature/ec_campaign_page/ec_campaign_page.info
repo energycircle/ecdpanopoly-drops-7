@@ -8,7 +8,6 @@ dependencies[] = context_entity_field
 dependencies[] = ec_a_b_testing_setup
 dependencies[] = ec_base_config
 dependencies[] = field_group
-dependencies[] = panopoly_pages
 dependencies[] = schemaorg
 dependencies[] = views_content
 apps[screenshots][] = app/screenshot.png

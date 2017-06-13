@@ -1,6 +1,6 @@
 [![npm](https://img.shields.io/npm/v/matchmedia-polyfill.svg)](https://npmjs.com/package/matchmedia-polyfill)
 
-#matchMedia() polyfill
+# matchMedia() polyfill
 
 ## test whether a CSS media type or media query applies
 
@@ -17,20 +17,25 @@ His code: https://github.com/fofr/matchMedia.js -- though currently it doesnt su
 ## Usage
 
 #### test 'tv' media type
-    if (matchMedia('tv').matches) {
-      // tv media type supported
-    }
+```js
+if (matchMedia('tv').matches) {
+  // tv media type supported
+}
+```
 
 ### test a mobile device media query
-    if (matchMedia('only screen and (max-width: 480px)').matches) {
-      // smartphone/iphone... maybe run some small-screen related dom scripting?
-    }
-    
-#### test landscape orientation
-    if (matchMedia('all and (orientation:landscape)').matches) {
-      // probably tablet in widescreen view
-    }
+```js
+if (matchMedia('only screen and (max-width: 480px)').matches) {
+  // smartphone/iphone... maybe run some small-screen related dom scripting?
+}
+```
 
+#### test landscape orientation
+```js
+if (matchMedia('all and (orientation:landscape)').matches) {
+  // probably tablet in widescreen view
+}
+```
 
 ## Used in: 
 

@@ -70,7 +70,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 19,
     ),
   );
 
@@ -134,7 +134,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 10,
     ),
   );
 
@@ -198,7 +198,7 @@ function ec_casestudy_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 10,
     ),
   );
 
@@ -400,7 +400,7 @@ function ec_casestudy_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 23,
+      'weight' => 36,
     ),
   );
 
@@ -464,7 +464,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 20,
+      'weight' => 27,
     ),
   );
 
@@ -528,7 +528,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 42,
+      'weight' => 37,
     ),
   );
 
@@ -620,7 +620,7 @@ function ec_casestudy_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 5,
+      'weight' => 9,
     ),
   );
 
@@ -686,7 +686,64 @@ function ec_casestudy_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 40,
+      'weight' => 38,
+    ),
+  );
+
+  // Exported field_instance: 'node-case_study-field_case_study_location'.
+  $field_instances['node-case_study-field_case_study_location'] = array(
+    'bundle' => 'case_study',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 29,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_case_study_location',
+    'label' => 'Location',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'geolocation_googlemaps',
+      'settings' => array(
+        'marker_draggable' => 0,
+        'scrollwheel' => 0,
+      ),
+      'type' => 'geolocation_googlemap',
+      'weight' => 11,
     ),
   );
 
@@ -753,7 +810,7 @@ function ec_casestudy_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 22,
+      'weight' => 25,
     ),
   );
 
@@ -811,7 +868,7 @@ function ec_casestudy_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 39,
+      'weight' => 30,
     ),
   );
 
@@ -869,7 +926,7 @@ function ec_casestudy_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 38,
+      'weight' => 29,
     ),
   );
 
@@ -927,64 +984,7 @@ function ec_casestudy_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 37,
-    ),
-  );
-
-  // Exported field_instance: 'node-case_study-field_casestudy_location'.
-  $field_instances['node-case_study-field_casestudy_location'] = array(
-    'bundle' => 'case_study',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_casestudy_location',
-    'label' => 'Location',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'geolocation_googlemaps',
-      'settings' => array(
-        'marker_draggable' => 0,
-        'scrollwheel' => 0,
-      ),
-      'type' => 'geolocation_googlemap',
-      'weight' => 36,
+      'weight' => 31,
     ),
   );
 
@@ -1045,7 +1045,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 23,
     ),
   );
 
@@ -1106,7 +1106,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 24,
     ),
   );
 
@@ -1165,7 +1165,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 41,
+      'weight' => 33,
     ),
   );
 
@@ -1229,14 +1229,18 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 22,
     ),
   );
 
   // Exported field_instance: 'node-case_study-field_ref_to_cta_form'.
   $field_instances['node-case_study-field_ref_to_cta_form'] = array(
     'bundle' => 'case_study',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -1361,7 +1365,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 12,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1385,7 +1389,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1415,7 +1419,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 24,
     ),
   );
 
@@ -1602,7 +1606,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 22,
+      'weight' => 25,
     ),
   );
 
@@ -1618,7 +1622,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1636,7 +1640,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1666,7 +1670,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 21,
     ),
   );
 
@@ -1701,7 +1705,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1731,7 +1735,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 21,
     ),
   );
 
@@ -1766,7 +1770,7 @@ function ec_casestudy_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1796,7 +1800,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 20,
+      'weight' => 32,
     ),
   );
 
@@ -1861,7 +1865,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 22,
+      'weight' => 15,
     ),
   );
 

@@ -13,6 +13,9 @@ includes[] = ecdpanopoly_theme.make
 ; Drupal DEV Contrib Mods
 includes[] = ecdpanopoly_contrib_dev.make
 
+; Drupal libraries
+includes[] = ecdpanopoly_libraries.make
+
 ; Features
 includes[] = ecdpanopoly_features.make
 

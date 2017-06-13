@@ -9,9 +9,6 @@ projects[addressfield_tokens][version] = 1.5
 projects[addressfield][subdir] = eccontrib
 projects[addressfield][version] = 1.2
 
-#projects[addthis][subdir] = eccontrib
-#projects[addthis][version] = 4.0-alpha6
-
 projects[admin_theme][subdir] = eccontrib
 projects[admin_theme][version] = 1.x
 
@@ -44,13 +41,12 @@ projects[backup_migrate][version] = 3.1
 
 projects[cer][subdir] = eccontrib
 projects[cer][version] = 3.x-dev
-projects[cer][patch][2382365] = https://www.drupal.org/files/issues/cer-features-iterator-2382365-15.patch
 
 projects[charts][subdir] = eccontrib
 projects[charts][version] = 2.0-rc1
 
 projects[colorbox][subdir] = eccontrib
-projects[colorbox][version] = 2.12
+projects[colorbox][version] = 2.13
 
 projects[compact_forms][subdir] = eccontrib
 projects[compact_forms][version] = 1.x
@@ -90,7 +86,7 @@ projects[draggableviews][subdir] = eccontrib
 projects[draggableviews][version] = 2.x
 
 projects[editablefields][subdir] = eccontrib
-projects[editablefields][version] = 1.0-alpha2
+projects[editablefields][version] = 1.0-alpha3
 
 projects[eck][subdir] = eccontrib
 projects[eck][version] = 2.0-rc9
@@ -160,6 +156,9 @@ projects[feeds_ex][version] = 1.x
 projects[feeds_tamper][subdir] = eccontrib
 projects[feeds_tamper][version] = 1.1
 
+projects[feeds_xpathparser][subdir] = eccontrib
+projects[feeds_xpathparser][version] = 1.x-dev
+
 projects[field_collection][subdir] = eccontrib
 projects[field_collection][version] = 1.0-beta12
 
@@ -188,7 +187,10 @@ projects[fivestar][subdir] = eccontrib
 projects[fivestar][version] = 2.x
 
 projects[flexslider][subdir] = eccontrib
-projects[flexslider][version] = 2.x-dev
+projects[flexslider][version] = 2.0-rc2
+
+projects[gauth][subdir] = eccontrib
+projects[gauth][version] = 1.9
 
 projects[geolocation][subdir] = eccontrib
 projects[geolocation][version] = 1.x
@@ -198,13 +200,13 @@ projects[geolocation_views][subdir] = eccontrib
 projects[geolocation_views][version] = 1.x
 
 projects[geofield][version] = 2.3
-projects[geofield][subdir] = contrib
+projects[geofield][subdir] = eccontrib
 
 projects[geophp][version] = 1.x-dev
-projects[geophp][subdir] = contrib
+projects[geophp][subdir] = eccontrib
 
 projects[geofield_proximity_polygon][version] = 1.0-beta1
-projects[geofield_proximity_polygon][subdir] = contrib
+projects[geofield_proximity_polygon][subdir] = eccontrib
 
 projects[globalredirect][subdir] = eccontrib
 projects[globalredirect][version] = 1.5
@@ -222,7 +224,7 @@ projects[htmlmail][subdir] = eccontrib
 projects[htmlmail][version] = 2.65
 
 projects[hierarchical_select][subdir] = eccontrib
-projects[hierarchical_select][version] = 3.0-beta7
+projects[hierarchical_select][version] = 3.0-beta8
 
 projects[honeypot][subdir] = eccontrib
 projects[honeypot][version] = 1.22
@@ -246,13 +248,13 @@ projects[leaflet][subdir] = eccontrib
 projects[leaflet][version] = 1.4
 
 projects[leaflet_widget][version] = 2.0-beta1
-projects[leaflet_widget][subdir] = contrib
+projects[leaflet_widget][subdir] = eccontrib
 projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/leaflet_widget-1974478-vertical-tab-refresh-12.patch
 projects[leaflet_widget][patch] = https://drupal.org/files/0001-Issue-1834446-by-mradcliffe-Use-GeoPHP-native.-GeoJSO.patch
 projects[leaflet_widget][patch] = https://www.drupal.org/files/issues/2122275.patch
 
 projects[leaflet_more_maps][version] = 1.17
-projects[leaflet_more_maps][subdir] = contrib
+projects[leaflet_more_maps][subdir] = eccontrib
 
 projects[linkit_target][subdir] = eccontrib
 projects[linkit_target][version] = 1.0
@@ -311,16 +313,13 @@ projects[phone][version] = 1.x-dev
 projects[pps][subdir] = eccontrib
 projects[pps][version] = 1.x
 
-#projects[redhen][subdir] = eccontrib
-#projects[redhen][version] = 1.9
-
 projects[rdfx][subdir] = eccontrib
 projects[rdfx][version] = 2.0-alpha4
 projects[rdfx][patch][2216603] = https://www.drupal.org/files/issues/rdfx-features-no-bundle-2216603-1.patch
 projects[rdfx][patch][1176666] = https://drupal.org/files/find-arc-library-correctly-1176666-14.patch
 
 projects[rabbit_hole][subdir] = eccontrib
-projects[rabbit_hole][version] = 2.23
+projects[rabbit_hole][version] = 2.24
 
 projects[redirect][subdir] = eccontrib
 projects[redirect][version] = 1.0-rc3
@@ -329,7 +328,10 @@ projects[role_delegation][subdir] = eccontrib
 projects[role_delegation][version] = 1.1
 
 projects[rules][subdir] = eccontrib
-projects[rules][version] = 2.9
+projects[rules][version] = 2.10
+
+projects[salesforce][subdir] = eccontrib
+projects[salesforce][version] = 3.x-dev
 
 projects[schemaorg][subdir] = eccontrib
 projects[schemaorg][version] = 1.x
@@ -354,6 +356,9 @@ projects[sharethis][version] = 2.x-dev
 projects[smtp][subdir] = eccontrib
 projects[smtp][version] = 1.6
 projects[smtp][patch][2753115] = https://www.drupal.org/files/issues/2753115-2-smtp-multiple-to-addresses-error.patch
+
+projects[stage_file_proxy][subdir] = eccontrib
+projects[stage_file_proxy][version] = 1.x-dev
 
 projects[table_element][subdir] = eccontrib
 projects[table_element][version] = 1.0-beta5
@@ -390,6 +395,9 @@ projects[variable][version] = 2.5
 projects[variable_email][subdir] = eccontrib
 projects[variable_email][version] = 1.0-alpha1
 
+projects[vertical_tabs_config][subdir] = eccontrib
+projects[vertical_tabs_config][version] = 1.2
+
 projects[views_accordion][subdir] = eccontrib
 projects[views_accordion][version] = 1.x
 
@@ -406,13 +414,13 @@ projects[video_filter][subdir] = eccontrib
 projects[video_filter][version] = 3.4
 
 projects[views_data_export][subdir] = eccontrib
-projects[views_data_export][version] = 3.x-dev
+projects[views_data_export][version] = 3.2
 
 projects[views_record_count][subdir] = eccontrib
 projects[views_record_count][version] = 1.x
 
 projects[views_slideshow][subdir] = eccontrib
-projects[views_slideshow][version] = 3.5
+projects[views_slideshow][version] = 3.8
 
 projects[views_url_path_arguments][subdir] = eccontrib
 projects[views_url_path_arguments][version] = 1.1
@@ -428,129 +436,3 @@ projects[weight][version] = 2.5
 
 projects[xmlsitemap][subdir] = eccontrib
 projects[xmlsitemap][version] = 2.3
-
-
-;OLD PATCHES
-#projects[metatag][patch][1918738] = https://www.drupal.org/files/issues/character_count_on_fields-1918738-9.patch
-#projects[table_element][patch][] = https://www.drupal.org/files/issues/table-element_strict-typing-fatal-error.patch
-#projects[title][patch][] = https://www.drupal.org/files/issues/undefined_safe_index_replaced_by_index-2040055-6.patch
-#projects[schemaorg][patch][1296760] = https://www.drupal.org/files/1296760_entity_1.patch
-#projects[views_slideshow][patch] = https://www.drupal.org/files/views_slideshow_cycle-hook-requirements-broken-1090052-27.patch
-#projects[metatag][patch][1880302] = https://www.drupal.org/files/metatag-1880302-2.patch
-#projects[rdfx][patch][2216603] = https://www.drupal.org/files/find-arc-library-correctly-1176666-14.patch
-#projects[sharethis][patch][2759221] = https://www.drupal.org/files/issues/sharethis-unable_to_select_services-2759221-58-D7.patch
-#projects[total_subscription][patch][2612234] = https://www.drupal.org/files/issues/access_check_fails_in-2612234-8.patch
-#projects[total_subscription][patch][2706769] = https://www.drupal.org/files/issues/email-verification-for-anonymous-failed-2706769-3.patch
-
-
-
-;local patches
-#projects[metatag][patch][1918738] = patches/character_count_on_fields-1918738-9-ec.patch
-#projects[cer][patch][1] = patches/fix_duplicate_function_when_drush_make-1.patch
-#projects[total_subscription][patch][2612234-9] = patches/access_check_fails_in-2612234-9.patch
-
-
-
-; EC CUSTOM MODS / SANDBOX
-projects[energycircle_apps][download][type] = git
-projects[energycircle_apps][download][url] = https://github.com/energycircle/energycircle_apps.git
-projects[energycircle_apps][subdir] = eccustom
-projects[energycircle_apps][type] = module
-projects[energycircle_apps][version] = 1.0-rc2
-
-projects[jcarousel_skins][download][type] = git
-projects[jcarousel_skins][download][url] = https://github.com/energycircle/jcarousel_skins.git
-projects[jcarousel_skins][subdir] = eccustom
-projects[jcarousel_skins][type] = module
-projects[jcarousel_skins][version] = 2.6+2-dev
-
-projects[ec_modifications][download][type] = git
-projects[ec_modifications][download][url] = https://github.com/energycircle/ec_modifications.git
-projects[ec_modifications][subdir] = eccustom
-projects[ec_modifications][type] = module
-projects[ec_modifications][version] = 2.6+2-dev
-
-projects[superfish_hack][download][type] = git
-projects[superfish_hack][download][url] = https://github.com/energycircle/superfish_hack.git
-projects[superfish_hack][subdir] = eccustom
-projects[superfish_hack][type] = module
-
-projects[ec_restrict_dl][download][type] = git
-projects[ec_restrict_dl][download][url] = https://github.com/energycircle/ec_restrict_dl.git
-projects[ec_restrict_dl][subdir] = eccustom
-projects[ec_restrict_dl][type] = module
-projects[ec_restrict_dl][version] = 1.1
-
-projects[image_mobile_camera][download][type] = git
-projects[image_mobile_camera][download][url] = https://git.drupal.org/sandbox/cafuego/1980210.git
-projects[image_mobile_camera][subdir] = eccustom
-projects[image_mobile_camera][type] = module
-projects[image_mobile_camera][version] = 1.x
-
-projects[ecdpanopoly_config][download][type] = git
-projects[ecdpanopoly_config][download][url] = https://github.com/energycircle/ecdpanopoly_config.git
-projects[ecdpanopoly_config][subdir] = eccustom
-projects[ecdpanopoly_config][type] = module
-projects[ecdpanopoly_config][version] = 1.x
-
-
-
-; LIBRARIES
-libraries[superfish][download][type] = get
-libraries[superfish][type] = library
-libraries[superfish][directory_name] = superfish
-libraries[superfish][download][url] = https://github.com/mehrpadin/Superfish-for-Drupal/archive/1.x.zip
-
-libraries[flexslider][download][type] = get
-libraries[flexslider][type] = library
-libraries[flexslider][directory_name] = flexslider
-libraries[flexslider][download][url] = https://api.github.com/repos/woothemes/FlexSlider/zipball/version/2.2.2
-
-libraries[matchMedia][download][type] = git
-libraries[matchMedia][type] = library
-libraries[matchMedia][directory_name] = matchMedia
-libraries[matchMedia][download][url] = https://github.com/paulirish/matchMedia.js.git
-
-libraries[leaflet][download][type] = get
-libraries[leaflet][type] = library
-libraries[leaflet][directory_name] = leaflet
-libraries[leaflet][download][url] = http://cdn.leafletjs.com/downloads/leaflet-0.7.3.zip
-
-libraries[leaflet.widget][download][type] = get
-libraries[leaflet.widget][type] = library
-libraries[leaflet.widget][directory_name] = Leaflet.widget
-libraries[leaflet.widget][download][url] = https://github.com/tnightingale/Leaflet.widget/archive/master.zip
-
-libraries[leaflet.draw][download][type] = get
-libraries[leaflet.draw][type] = library
-libraries[leaflet.draw][directory_name] = Leaflet.draw
-libraries[leaflet.draw][download][url] = https://github.com/Leaflet/Leaflet.draw/archive/master.zip
-
-libraries[geoPHP][download][type] = git
-libraries[geoPHP][type] = library
-libraries[geoPHP][directory_name] = geoPHP
-libraries[geoPHP][download][url] = https://github.com/phayes/geoPHP.git
-
-libraries[mailchimp][download][type] = get
-libraries[mailchimp][type] = library
-libraries[mailchimp][directory_name] = mailchimp
-libraries[mailchimp][download][url] = https://github.com/thinkshout/mailchimp-api-php/archive/v1.0.6.zip
-
-libraries[arc][download][type] = get
-libraries[arc][type] = library
-libraries[arc][directory_name] = arc
-libraries[arc][download][url] = http://github.com/semsol/arc2/tarball/master
-
-libraries[Geocomplete][download][type] = get
-libraries[Geocomplete][type] = library
-libraries[Geocomplete][directory_name] = geocomplete
-libraries[Geocomplete][download][url] = https://github.com/ubilabs/geocomplete/zipball/master
-
-libraries[Highcharts][download][type] = get
-libraries[Highcharts][type] = library
-libraries[Highcharts][directory_name] = highcharts
-libraries[Highcharts][download][url] = http://code.highcharts.com/zips/Highcharts-4.2.5.zip
-
-; THEMES
-projects[adaptivetheme][version] = 3.x
-projects[adaptivetheme][type] = theme

@@ -5,7 +5,7 @@ base = panopoly
 ; Use Panopoly instead of Drupal core:
  projects[panopoly][type] = core
  projects[panopoly][download][type] = git
- projects[panopoly][download][url] = git://github.com/energycircle/ecdpanopoly-drops-7.git
+ projects[panopoly][download][url] = git://github.com/energycircle/ecdpanopoly-drops7.git
  projects[panopoly][download][branch] = master
 
 ; Bug with image styles on database update

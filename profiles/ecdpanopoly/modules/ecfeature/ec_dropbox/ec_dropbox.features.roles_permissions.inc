@@ -1,0 +1,103 @@
+<?php
+/**
+ * @file
+ * ec_dropbox.features.roles_permissions.inc
+ */
+
+/**
+ * Implements hook_default_roles_permissions().
+ */
+function ec_dropbox_default_roles_permissions() {
+  $roles = array();
+
+  // Exported role: EC Contractor
+  $roles['EC Contractor'] = array(
+    'name' => 'EC Contractor',
+    'weight' => 5,
+    'permissions' => array(
+      'access admin theme' => TRUE,
+      'access administration menu' => TRUE,
+      'access administration pages' => TRUE,
+      'access content overview' => TRUE,
+      'access media browser' => TRUE,
+      'add media from remote sources' => TRUE,
+      'clone node' => TRUE,
+      'create article content' => TRUE,
+      'create audience content' => TRUE,
+      'create blog_post content' => TRUE,
+      'create case_study content' => TRUE,
+      'create distinction content' => TRUE,
+      'create distributor content' => TRUE,
+      'create dropbox_upload content' => TRUE,
+      'create faq content' => TRUE,
+      'create files' => TRUE,
+      'create gallery content' => TRUE,
+      'create review_site content' => TRUE,
+      'delete own article content' => TRUE,
+      'delete own audience content' => TRUE,
+      'delete own blog_post content' => TRUE,
+      'delete own case_study content' => TRUE,
+      'delete own distinction content' => TRUE,
+      'delete own distributor content' => TRUE,
+      'delete own dropbox_upload content' => TRUE,
+      'delete own faq content' => TRUE,
+      'delete own gallery content' => TRUE,
+      'delete own review_site content' => TRUE,
+      'download any audio files' => TRUE,
+      'download any document files' => TRUE,
+      'download any image files' => TRUE,
+      'download any video files' => TRUE,
+      'download own audio files' => TRUE,
+      'download own document files' => TRUE,
+      'download own image files' => TRUE,
+      'download own video files' => TRUE,
+      'edit any article content' => TRUE,
+      'edit any audience content' => TRUE,
+      'edit any audio files' => TRUE,
+      'edit any blog_post content' => TRUE,
+      'edit any case_study content' => TRUE,
+      'edit any distinction content' => TRUE,
+      'edit any distributor content' => TRUE,
+      'edit any document files' => TRUE,
+      'edit any dropbox_upload content' => TRUE,
+      'edit any entityform' => TRUE,
+      'edit any faq content' => TRUE,
+      'edit any gallery content' => TRUE,
+      'edit any image files' => TRUE,
+      'edit any review_site content' => TRUE,
+      'edit any video files' => TRUE,
+      'edit meta tags' => TRUE,
+      'edit own article content' => TRUE,
+      'edit own audience content' => TRUE,
+      'edit own audio files' => TRUE,
+      'edit own blog_post content' => TRUE,
+      'edit own case_study content' => TRUE,
+      'edit own distinction content' => TRUE,
+      'edit own distributor content' => TRUE,
+      'edit own document files' => TRUE,
+      'edit own dropbox_upload content' => TRUE,
+      'edit own faq content' => TRUE,
+      'edit own gallery content' => TRUE,
+      'edit own image files' => TRUE,
+      'edit own review_site content' => TRUE,
+      'edit own video files' => TRUE,
+      'flush caches' => TRUE,
+      'revert revisions' => TRUE,
+      'save draft' => TRUE,
+      'use manualcrop' => TRUE,
+      'use text format iframe' => TRUE,
+      'use text format panopoly_html_text' => TRUE,
+      'use text format panopoly_wysiwyg_text' => TRUE,
+      'view any entityform' => TRUE,
+      'view files' => TRUE,
+      'view own entityform' => TRUE,
+      'view own files' => TRUE,
+      'view own private files' => TRUE,
+      'view own unpublished content' => TRUE,
+      'view revisions' => TRUE,
+      'view the administration theme' => TRUE,
+    ),
+  );
+
+  return $roles;
+}

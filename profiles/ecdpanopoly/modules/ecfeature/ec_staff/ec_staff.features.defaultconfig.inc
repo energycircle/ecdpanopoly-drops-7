@@ -118,7 +118,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 11,
+        'weight' => 14,
       ),
     ),
   );
@@ -212,7 +212,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 7,
+        'weight' => 11,
       ),
     ),
   );
@@ -306,7 +306,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 8,
+        'weight' => 12,
       ),
     ),
   );
@@ -396,7 +396,7 @@ function ec_staff_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 6,
+        'weight' => 15,
       ),
     ),
   );
@@ -608,7 +608,7 @@ function ec_staff_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 9,
+        'weight' => 13,
       ),
     ),
   );

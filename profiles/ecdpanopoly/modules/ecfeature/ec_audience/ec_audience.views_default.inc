@@ -38,15 +38,15 @@ function ec_audience_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Teaser Image */
-  $handler->display->display_options['fields']['field_aud_teaser_image']['id'] = 'field_aud_teaser_image';
-  $handler->display->display_options['fields']['field_aud_teaser_image']['table'] = 'field_data_field_aud_teaser_image';
-  $handler->display->display_options['fields']['field_aud_teaser_image']['field'] = 'field_aud_teaser_image';
-  $handler->display->display_options['fields']['field_aud_teaser_image']['label'] = '';
-  $handler->display->display_options['fields']['field_aud_teaser_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_aud_teaser_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_aud_teaser_image']['settings'] = array(
-    'image_style' => 'sc_300x225',
+  /* Field: Content: Featured Image */
+  $handler->display->display_options['fields']['field_aud_featured_image']['id'] = 'field_aud_featured_image';
+  $handler->display->display_options['fields']['field_aud_featured_image']['table'] = 'field_data_field_aud_featured_image';
+  $handler->display->display_options['fields']['field_aud_featured_image']['field'] = 'field_aud_featured_image';
+  $handler->display->display_options['fields']['field_aud_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_aud_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_aud_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_aud_featured_image']['settings'] = array(
+    'image_style' => 's_300',
     'image_link' => 'content',
   );
   /* Sort criterion: Content: Post date */

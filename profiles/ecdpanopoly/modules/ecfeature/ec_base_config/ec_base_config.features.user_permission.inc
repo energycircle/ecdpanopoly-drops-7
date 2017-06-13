@@ -534,6 +534,69 @@ function ec_base_config_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node panopoly_landing_page breadcrumbs'.
+  $permissions['administer panelizer node panopoly_landing_page breadcrumbs'] = array(
+    'name' => 'administer panelizer node panopoly_landing_page breadcrumbs',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_landing_page content'.
+  $permissions['administer panelizer node panopoly_landing_page content'] = array(
+    'name' => 'administer panelizer node panopoly_landing_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_landing_page context'.
+  $permissions['administer panelizer node panopoly_landing_page context'] = array(
+    'name' => 'administer panelizer node panopoly_landing_page context',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_landing_page defaults'.
+  $permissions['administer panelizer node panopoly_landing_page defaults'] = array(
+    'name' => 'administer panelizer node panopoly_landing_page defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_landing_page layout'.
+  $permissions['administer panelizer node panopoly_landing_page layout'] = array(
+    'name' => 'administer panelizer node panopoly_landing_page layout',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_landing_page overview'.
+  $permissions['administer panelizer node panopoly_landing_page overview'] = array(
+    'name' => 'administer panelizer node panopoly_landing_page overview',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node panopoly_landing_page settings'.
+  $permissions['administer panelizer node panopoly_landing_page settings'] = array(
+    'name' => 'administer panelizer node panopoly_landing_page settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer user user breadcrumbs'.
   $permissions['administer panelizer user user breadcrumbs'] = array(
     'name' => 'administer panelizer user user breadcrumbs',
@@ -597,9 +660,36 @@ function ec_base_config_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panels display styles'.
+  $permissions['administer panels display styles'] = array(
+    'name' => 'administer panels display styles',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels',
+  );
+
   // Exported permission: 'administer panels layouts'.
   $permissions['administer panels layouts'] = array(
     'name' => 'administer panels layouts',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels',
+  );
+
+  // Exported permission: 'administer panels pane styles'.
+  $permissions['administer panels pane styles'] = array(
+    'name' => 'administer panels pane styles',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels',
+  );
+
+  // Exported permission: 'administer panels region styles'.
+  $permissions['administer panels region styles'] = array(
+    'name' => 'administer panels region styles',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -660,6 +750,15 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: 'administer shortcuts'.
+  $permissions['administer shortcuts'] = array(
+    'name' => 'administer shortcuts',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'shortcut',
   );
 
   // Exported permission: 'administer site configuration'.
@@ -939,10 +1038,23 @@ function ec_base_config_user_default_permissions() {
     'module' => 'panels_mini',
   );
 
+  // Exported permission: 'create panopoly_landing_page content'.
+  $permissions['create panopoly_landing_page content'] = array(
+    'name' => 'create panopoly_landing_page content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create panopoly_page content'.
   $permissions['create panopoly_page content'] = array(
     'name' => 'create panopoly_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -957,6 +1069,15 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: 'customize shortcut links'.
+  $permissions['customize shortcut links'] = array(
+    'name' => 'customize shortcut links',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'shortcut',
   );
 
   // Exported permission: 'delete any audio files'.
@@ -999,10 +1120,21 @@ function ec_base_config_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any panopoly_landing_page content'.
+  $permissions['delete any panopoly_landing_page content'] = array(
+    'name' => 'delete any panopoly_landing_page content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any panopoly_page content'.
   $permissions['delete any panopoly_page content'] = array(
     'name' => 'delete any panopoly_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1068,10 +1200,23 @@ function ec_base_config_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete own panopoly_landing_page content'.
+  $permissions['delete own panopoly_landing_page content'] = array(
+    'name' => 'delete own panopoly_landing_page content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own panopoly_page content'.
   $permissions['delete own panopoly_page content'] = array(
     'name' => 'delete own panopoly_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1092,18 +1237,10 @@ function ec_base_config_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'delete terms in panopoly_categories'.
-  $permissions['delete terms in panopoly_categories'] = array(
-    'name' => 'delete terms in panopoly_categories',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'display drupal links'.
@@ -1248,10 +1385,23 @@ function ec_base_config_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any panopoly_landing_page content'.
+  $permissions['edit any panopoly_landing_page content'] = array(
+    'name' => 'edit any panopoly_landing_page content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any panopoly_page content'.
   $permissions['edit any panopoly_page content'] = array(
     'name' => 'edit any panopoly_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1343,10 +1493,23 @@ function ec_base_config_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit own panopoly_landing_page content'.
+  $permissions['edit own panopoly_landing_page content'] = array(
+    'name' => 'edit own panopoly_landing_page content',
+    'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own panopoly_page content'.
   $permissions['edit own panopoly_page content'] = array(
     'name' => 'edit own panopoly_page content',
     'roles' => array(
+      'EC Platinum admin' => 'EC Platinum admin',
+      'EC Platinum editor' => 'EC Platinum editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1361,15 +1524,6 @@ function ec_base_config_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit terms in panopoly_categories'.
-  $permissions['edit terms in panopoly_categories'] = array(
-    'name' => 'edit terms in panopoly_categories',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'exclude any node title'.

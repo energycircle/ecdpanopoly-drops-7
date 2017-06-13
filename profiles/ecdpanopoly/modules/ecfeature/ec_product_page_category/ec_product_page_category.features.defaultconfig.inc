@@ -400,7 +400,7 @@ function ec_product_page_category_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 8,
       ),
     ),
   );
@@ -491,7 +491,7 @@ function ec_product_page_category_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 7,
       ),
     ),
   );
@@ -821,7 +821,7 @@ function ec_product_page_category_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 4,
+        'weight' => 6,
       ),
     ),
   );

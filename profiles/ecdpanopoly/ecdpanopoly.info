@@ -84,6 +84,7 @@ dependencies[] = field_validation_ui
 dependencies[] = field_hidden
 dependencies[] = flexslider
 dependencies[] = globalredirect
+dependencies[] = gauth_login
 dependencies[] = honeypot
 dependencies[] = image_mobile_camera
 dependencies[] = insert_view
@@ -122,15 +123,23 @@ dependencies[] = uuid_path
 
 
 ;EC features
-dependencies[] = ec_base_config
 dependencies[] = ec_foundation_image_styles
-dependencies[] = ec_panopoly_page_overrides
-dependencies[] = energycircle_apps
-dependencies[] = ec_mail_settings
+dependencies[] = ec_base_config
+dependencies[] = ec_base_content
 dependencies[] = ec_custom_tokens
+dependencies[] = ec_distinction
+dependencies[] = energycircle_apps
+dependencies[] = ec_gallery
+dependencies[] = ec_mobile_changes
+dependencies[] = ec_mail_settings
+dependencies[] = ec_panopoly_page_overrides
+dependencies[] = ec_review_sites
+dependencies[] = ec_service_stack
+dependencies[] = ec_slide
+dependencies[] = ec_testimonial
 
 
-; Information added by flux423 - updated on 2016-10-5
-version = "7.x-1.5.1"
+; Information added by flux423 - updated on 2017-6-10
+version = "7.x-1.6.5"
 core = "7.x"
 project = "ECDPanopoly"

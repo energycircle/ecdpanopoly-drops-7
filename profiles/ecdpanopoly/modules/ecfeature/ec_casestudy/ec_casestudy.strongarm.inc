@@ -14,14 +14,14 @@ function ec_casestudy_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_case_study';
-  $strongarm->value = 'edit-extras';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_case_study'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_menutitle_case_study';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['auto_menutitle_case_study'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -162,19 +162,19 @@ function ec_casestudy_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '12',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '10',
+          'weight' => '4',
         ),
         'xmlsitemap' => array(
-          'weight' => '9',
+          'weight' => '3',
         ),
       ),
       'display' => array(
@@ -208,7 +208,8 @@ function ec_casestudy_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_case_study';
   $strongarm->value = array(
-    0 => 'main-menu',
+    0 => 'menu-auxiliary-menu',
+    1 => 'main-menu',
   );
   $export['menu_options_case_study'] = $strongarm;
 

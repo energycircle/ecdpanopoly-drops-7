@@ -11,7 +11,6 @@ function ec_casestudy_defaultconfig_features() {
   return array(
     'ec_casestudy' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -127,7 +126,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 14,
+        'weight' => 19,
       ),
     ),
   );
@@ -234,7 +233,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 14,
+        'weight' => 10,
       ),
     ),
   );
@@ -330,7 +329,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 6,
+        'weight' => 10,
       ),
     ),
   );
@@ -621,7 +620,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 23,
+        'weight' => 36,
       ),
     ),
   );
@@ -714,7 +713,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 20,
+        'weight' => 27,
       ),
     ),
   );
@@ -807,7 +806,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 42,
+        'weight' => 37,
       ),
     ),
   );
@@ -929,7 +928,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 5,
+        'weight' => 9,
       ),
     ),
   );
@@ -1022,7 +1021,115 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 40,
+        'weight' => 38,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-case_study-field_case_study_location'.
+  $fields['node-case_study-field_case_study_location'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_case_study_location',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'bbox' => array(
+          0 => 'top',
+          1 => 'bottom',
+          2 => 'left',
+          3 => 'right',
+        ),
+        'bottom' => array(
+          0 => 'bottom',
+        ),
+        'centroid' => array(
+          0 => 'lat',
+          1 => 'lon',
+        ),
+        'geohash' => array(
+          0 => 'geohash',
+        ),
+        'lat' => array(
+          0 => 'lat',
+        ),
+        'left' => array(
+          0 => 'left',
+        ),
+        'lon' => array(
+          0 => 'lon',
+        ),
+        'right' => array(
+          0 => 'right',
+        ),
+        'top' => array(
+          0 => 'top',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'geofield',
+      'settings' => array(
+        'backend' => 'default',
+        'srid' => 4326,
+      ),
+      'translatable' => 0,
+      'type' => 'geofield',
+    ),
+    'field_instance' => array(
+      'bundle' => 'case_study',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 29,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_case_study_location',
+      'label' => 'Location',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'geolocation_googlemaps',
+        'settings' => array(
+          'marker_draggable' => 0,
+          'scrollwheel' => 0,
+        ),
+        'type' => 'geolocation_googlemap',
+        'weight' => 11,
       ),
     ),
   );
@@ -1115,7 +1222,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 22,
+        'weight' => 25,
       ),
     ),
   );
@@ -1189,7 +1296,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 39,
+        'weight' => 30,
       ),
     ),
   );
@@ -1263,7 +1370,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 38,
+        'weight' => 29,
       ),
     ),
   );
@@ -1337,87 +1444,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 37,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-case_study-field_casestudy_location'.
-  $fields['node-case_study-field_casestudy_location'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_casestudy_location',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'lat' => array(
-          0 => 'lat',
-        ),
-        'lng' => array(
-          0 => 'lng',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'geolocation',
-      'settings' => array(),
-      'translatable' => 0,
-      'type' => 'geolocation_latlng',
-    ),
-    'field_instance' => array(
-      'bundle' => 'case_study',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 18,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'grouped_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'show_this_block' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_casestudy_location',
-      'label' => 'Location',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'geolocation_googlemaps',
-        'settings' => array(
-          'marker_draggable' => 0,
-          'scrollwheel' => 0,
-        ),
-        'type' => 'geolocation_googlemap',
-        'weight' => 36,
+        'weight' => 31,
       ),
     ),
   );
@@ -1507,7 +1534,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 4,
+        'weight' => 23,
       ),
     ),
   );
@@ -1597,7 +1624,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 24,
       ),
     ),
   );
@@ -1701,7 +1728,114 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 41,
+        'weight' => 33,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-case_study-field_ref_case_study_testimonial'.
+  $fields['node-case_study-field_ref_case_study_testimonial'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_case_study_testimonial',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'testimonial' => 'testimonial',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'case_study',
+      'default_value' => NULL,
+      'default_value_function' => '',
+      'deleted' => 0,
+      'description' => 'Testimonials shown on this page.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_case_study_testimonial',
+      'label' => 'Testimonial',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'current' => array(
+            'status' => 0,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 28,
       ),
     ),
   );
@@ -1755,7 +1889,11 @@ function ec_casestudy_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'case_study',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -1969,7 +2107,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 8,
+          'weight' => 12,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1993,7 +2131,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 10,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2023,7 +2161,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 12,
+        'weight' => 24,
       ),
     ),
   );
@@ -2341,7 +2479,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 22,
+        'weight' => 25,
       ),
     ),
   );
@@ -2400,7 +2538,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 10,
+          'weight' => 9,
         ),
         'featured' => array(
           'label' => 'above',
@@ -2418,7 +2556,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 4,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2448,7 +2586,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 12,
+        'weight' => 21,
       ),
     ),
   );
@@ -2528,7 +2666,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 4,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2558,7 +2696,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 13,
+        'weight' => 21,
       ),
     ),
   );
@@ -2638,7 +2776,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 7,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2668,7 +2806,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 20,
+        'weight' => 32,
       ),
     ),
   );
@@ -2775,7 +2913,7 @@ function ec_casestudy_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 22,
+        'weight' => 15,
       ),
     ),
   );
@@ -2808,52 +2946,10 @@ function ec_casestudy_defaultconfig_field_default_fields() {
   t('Show this blog post on these case studies.');
   t('Show this product on these case study pages.');
   t('Square Footage');
+  t('Testimonial');
+  t('Testimonials shown on this page.');
   t('What was the issue this customer was facing?');
   t('Year Built');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function ec_casestudy_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_cancel_hide_warning_case_study';
-  $strongarm->value = 0;
-  $export['content_type_extras_cancel_hide_warning_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_save_button_case_study';
-  $strongarm->value = 'Save';
-  $export['content_type_extras_save_button_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'content_type_extras_top_buttons_case_study';
-  $strongarm->value = array();
-  $export['content_type_extras_top_buttons_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_draft_enabled_case_study';
-  $strongarm->value = 1;
-  $export['save_draft_enabled_case_study'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_draft_skip_required_case_study';
-  $strongarm->value = 0;
-  $export['save_draft_skip_required_case_study'] = $strongarm;
-
-  return $export;
 }

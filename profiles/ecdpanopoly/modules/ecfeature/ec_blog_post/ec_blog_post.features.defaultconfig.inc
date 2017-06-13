@@ -127,7 +127,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 16,
+        'weight' => 17,
       ),
     ),
   );
@@ -325,7 +325,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 3,
+        'weight' => 13,
       ),
     ),
   );
@@ -458,7 +458,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'manualcrop_thumblist' => 0,
         ),
         'type' => 'media_generic',
-        'weight' => 4,
+        'weight' => 3,
       ),
     ),
   );
@@ -765,7 +765,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 6,
+        'weight' => 12,
       ),
     ),
   );
@@ -870,7 +870,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => 2,
+        'weight' => 4,
       ),
     ),
   );
@@ -977,7 +977,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 13,
+        'weight' => 11,
       ),
     ),
   );
@@ -1031,9 +1031,13 @@ function ec_blog_post_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'blog_post',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'deleted' => 0,
-      'description' => '',
+      'description' => 'This is help text.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -1248,7 +1252,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 9,
+          'weight' => 14,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1272,7 +1276,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 16,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1302,7 +1306,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 11,
+        'weight' => 25,
       ),
     ),
   );
@@ -1364,7 +1368,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 6,
+          'weight' => 5,
         ),
         'featured' => array(
           'label' => 'above',
@@ -1382,7 +1386,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 9,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1412,7 +1416,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 11,
+        'weight' => 22,
       ),
     ),
   );
@@ -1492,7 +1496,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 8,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1522,7 +1526,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 12,
+        'weight' => 22,
       ),
     ),
   );
@@ -1602,7 +1606,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => 8,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1632,7 +1636,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 19,
+        'weight' => 33,
       ),
     ),
   );
@@ -1654,6 +1658,7 @@ function ec_blog_post_defaultconfig_field_default_fields() {
   t('Select the blog posts to display on this service group page.');
   t('Select the blog posts to display on this service page.');
   t('The display date for this blog post.');
+  t('This is help text.');
   t('URL of the page to link this blog entry to.');
 
   return $fields;

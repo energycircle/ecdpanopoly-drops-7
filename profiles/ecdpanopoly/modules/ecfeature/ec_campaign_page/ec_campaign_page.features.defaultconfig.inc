@@ -662,7 +662,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => 7,
       ),
     ),
   );
@@ -736,7 +736,7 @@ function ec_campaign_page_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 6,
       ),
     ),
   );

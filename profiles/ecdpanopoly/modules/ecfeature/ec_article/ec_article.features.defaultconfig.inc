@@ -219,7 +219,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 8,
+        'weight' => 9,
       ),
     ),
   );
@@ -466,7 +466,7 @@ function ec_article_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 10,
+        'weight' => 8,
       ),
     ),
   );
@@ -552,7 +552,7 @@ function ec_article_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_article_type',
       'label' => 'Article Type',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -561,7 +561,7 @@ function ec_article_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -666,7 +666,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => 9,
+        'weight' => 6,
       ),
     ),
   );
@@ -776,7 +776,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 18,
+        'weight' => 6,
       ),
     ),
   );
@@ -883,7 +883,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 19,
+        'weight' => 21,
       ),
     ),
   );
@@ -1100,7 +1100,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 21,
+        'weight' => 26,
       ),
     ),
   );
@@ -1207,7 +1207,7 @@ function ec_article_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 25,
+        'weight' => 13,
       ),
     ),
   );

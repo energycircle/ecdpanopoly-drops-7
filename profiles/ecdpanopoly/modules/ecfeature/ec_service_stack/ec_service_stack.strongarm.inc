@@ -431,25 +431,29 @@ function ec_service_stack_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '12',
+          'weight' => '26',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '25',
         ),
         'redirect' => array(
-          'weight' => '10',
+          'weight' => '24',
         ),
         'xmlsitemap' => array(
-          'weight' => '9',
+          'weight' => '23',
         ),
       ),
       'display' => array(
         'sharethis' => array(
           'default' => array(
             'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'show_this_block' => array(
+            'weight' => '1',
             'visible' => FALSE,
           ),
         ),
@@ -495,25 +499,29 @@ function ec_service_stack_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '13',
+          'weight' => '26',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '12',
+          'weight' => '25',
         ),
         'redirect' => array(
-          'weight' => '11',
+          'weight' => '24',
         ),
         'xmlsitemap' => array(
-          'weight' => '10',
+          'weight' => '23',
         ),
       ),
       'display' => array(
         'sharethis' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '11',
+            'visible' => FALSE,
+          ),
+          'show_this_block' => array(
+            'weight' => '1',
             'visible' => FALSE,
           ),
         ),
@@ -559,25 +567,29 @@ function ec_service_stack_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '10',
+          'weight' => '37',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '36',
         ),
         'redirect' => array(
-          'weight' => '8',
+          'weight' => '35',
         ),
         'xmlsitemap' => array(
-          'weight' => '7',
+          'weight' => '34',
         ),
       ),
       'display' => array(
         'sharethis' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '11',
+            'visible' => FALSE,
+          ),
+          'show_this_block' => array(
+            'weight' => '1',
             'visible' => FALSE,
           ),
         ),

@@ -161,6 +161,12 @@ function ec_casestudy_rdf_default_mappings() {
       'predicates' => array(),
       'type' => 'rel',
     ),
+    'field_case_study_location' => array(
+      'predicates' => array(),
+    ),
+    'field_ref_to_cta_form' => array(
+      'predicates' => array(),
+    ),
   );
 
   return $schemaorg;

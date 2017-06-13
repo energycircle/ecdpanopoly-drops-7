@@ -18,7 +18,7 @@
  function ecdpanopoly_install() {
 
  // Enable the administration theme.
- $admin_theme = 'ec_admin';
+ $admin_theme = 'ec_at_admin';
  db_update('system')
    ->fields(array('status' => 1))
    ->condition('type', 'theme')

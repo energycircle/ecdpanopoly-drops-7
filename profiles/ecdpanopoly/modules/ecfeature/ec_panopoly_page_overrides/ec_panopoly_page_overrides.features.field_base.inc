@@ -10,13 +10,13 @@
 function ec_panopoly_page_overrides_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ref_faq_content_page'
-  $field_bases['field_ref_faq_content_page'] = array(
+  // Exported field_base: 'field_ref_page_service_category'.
+  $field_bases['field_ref_page_service_category'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_faq_content_page',
+    'field_name' => 'field_ref_page_service_category',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -39,7 +39,7 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'panopoly_page' => 'panopoly_page',
+          'service_category' => 'service_category',
         ),
       ),
       'target_type' => 'node',
@@ -48,13 +48,13 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_promo_page'
-  $field_bases['field_ref_promo_page'] = array(
+  // Exported field_base: 'field_ref_page_service_group'.
+  $field_bases['field_ref_page_service_group'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_promo_page',
+    'field_name' => 'field_ref_page_service_group',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -66,6 +66,9 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -74,7 +77,7 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'panopoly_page' => 'panopoly_page',
+          'service_group' => 'service_group',
         ),
       ),
       'target_type' => 'node',
@@ -83,13 +86,13 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_testimonial_page'
-  $field_bases['field_ref_testimonial_page'] = array(
+  // Exported field_base: 'field_ref_page_services'.
+  $field_bases['field_ref_page_services'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_testimonial_page',
+    'field_name' => 'field_ref_page_services',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -101,6 +104,9 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -109,7 +115,7 @@ function ec_panopoly_page_overrides_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'panopoly_page' => 'panopoly_page',
+          'service' => 'service',
         ),
       ),
       'target_type' => 'node',

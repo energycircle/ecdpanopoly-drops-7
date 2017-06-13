@@ -14,14 +14,14 @@ function ec_testimonial_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_testimonial';
-  $strongarm->value = 'edit-schemaorg-ui';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_testimonial'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_menutitle_testimonial';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['auto_menutitle_testimonial'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -104,6 +104,27 @@ function ec_testimonial_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_testimonial';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_testimonial'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_testimonial';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_testimonial'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_testimonial';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_testimonial'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'exclude_node_title_content_type_modes_testimonial';
   $strongarm->value = array(
     'full' => 'full',
@@ -162,19 +183,19 @@ function ec_testimonial_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '22',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '21',
         ),
         'redirect' => array(
-          'weight' => '7',
+          'weight' => '20',
         ),
         'xmlsitemap' => array(
-          'weight' => '6',
+          'weight' => '19',
         ),
       ),
       'display' => array(),
@@ -200,9 +221,7 @@ function ec_testimonial_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_testimonial';
-  $strongarm->value = array(
-    0 => 'menu-auxiliary-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_testimonial'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -249,40 +268,54 @@ function ec_testimonial_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_testimonial';
   $strongarm->value = array(
     'status' => 1,
+    'help' => '',
     'view modes' => array(
       'page_manager' => array(
         'status' => 0,
-        'default' => 1,
-        'choice' => 1,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
       ),
       'default' => array(
         'status' => 1,
+        'substitute' => '',
         'default' => 1,
         'choice' => 1,
       ),
       'teaser' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'show_this_block' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'grouped_teaser' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'featured' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
     ),
   );
   $export['panelizer_defaults_node_testimonial'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:testimonial:default_selection';
+  $strongarm->value = 'node:testimonial:default:default';
+  $export['panelizer_node:testimonial:default_selection'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

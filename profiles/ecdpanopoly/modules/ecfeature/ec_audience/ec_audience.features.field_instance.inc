@@ -70,7 +70,7 @@ function ec_audience_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 3,
     ),
   );
 
@@ -162,99 +162,7 @@ function ec_audience_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-audience-field_aud_teaser_image'.
-  $field_instances['node-audience-field_aud_teaser_image'] = array(
-    'bundle' => 'audience',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'grouped_teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'show_this_block' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_aud_teaser_image',
-    'label' => 'Teaser Image',
-    'required' => 1,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => 'audience',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'private' => 0,
-          'public' => 'public',
-          'vimeo' => 0,
-          'youtube' => 0,
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 'upload',
-        ),
-        'manualcrop_crop_info' => 1,
-        'manualcrop_default_crop_area' => 1,
-        'manualcrop_enable' => 0,
-        'manualcrop_inline_crop' => 0,
-        'manualcrop_instant_crop' => FALSE,
-        'manualcrop_instant_preview' => 1,
-        'manualcrop_keyboard' => 1,
-        'manualcrop_maximize_default_crop_area' => 0,
-        'manualcrop_require_cropping' => array(),
-        'manualcrop_styles_list' => array(),
-        'manualcrop_styles_mode' => 'include',
-        'manualcrop_thumblist' => 0,
-      ),
-      'type' => 'media_generic',
-      'weight' => 9,
+      'weight' => 2,
     ),
   );
 
@@ -393,7 +301,7 @@ function ec_audience_field_default_field_instances() {
     'bundle' => 'audience',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'When adding a video to this field, it will override the image above and display the video only.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -448,7 +356,7 @@ function ec_audience_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -506,14 +414,18 @@ function ec_audience_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
   // Exported field_instance: 'node-audience-field_ref_to_cta_form'.
   $field_instances['node-audience-field_ref_to_cta_form'] = array(
     'bundle' => 'audience',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -577,7 +489,7 @@ function ec_audience_field_default_field_instances() {
   t('Featured Image');
   t('Featured Video');
   t('Services');
-  t('Teaser Image');
+  t('When adding a video to this field, it will override the image above and display the video only.');
 
   return $field_instances;
 }

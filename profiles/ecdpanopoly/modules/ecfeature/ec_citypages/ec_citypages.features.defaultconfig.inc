@@ -121,7 +121,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 15,
+        'weight' => 9,
       ),
     ),
   );
@@ -226,7 +226,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 22,
+        'weight' => 26,
       ),
     ),
   );
@@ -1108,19 +1108,22 @@ function ec_citypages_defaultconfig_field_default_fields() {
       'label' => 'Short Description',
       'required' => 0,
       'settings' => array(
-        'exclude_cv' => FALSE,
         'linkit' => array(
           'button_text' => 'Search',
           'enable' => 0,
           'profile' => '',
         ),
-        'text_processing' => 0,
+        'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => 3,
         ),
         'type' => 'text_textarea',
@@ -1695,7 +1698,11 @@ function ec_citypages_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'city_page',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'target_id' => 3,
+        ),
+      ),
       'deleted' => 0,
       'description' => '',
       'display' => array(
@@ -1852,7 +1859,7 @@ function ec_citypages_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 23,
+        'weight' => 14,
       ),
     ),
   );

@@ -3,10 +3,8 @@ description = This module extends features to allow automated disabling of unnec
 core = 7.x
 package = Features
 
-
-; Information added by drush on 2017-03-22
-version = "7.x-1.0-alpha1+9-dev"
-core = "7.x"
+dependencies[] = features
+; Information added by drush on 2017-05-12
+version = "7.x-1.0-alpha1+10-dev"
 project = "features_disable_modules"
-datestamp = "1490191341"
-
+datestamp = "1494594468"

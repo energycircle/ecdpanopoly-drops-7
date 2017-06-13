@@ -265,7 +265,7 @@ function ec_financing_option_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 5,
+      'weight' => 11,
     ),
   );
 
@@ -344,7 +344,7 @@ function ec_financing_option_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 7,
+      'weight' => 10,
     ),
   );
 
@@ -442,7 +442,11 @@ function ec_financing_option_field_default_field_instances() {
   // Exported field_instance: 'node-financing_option-field_ref_to_cta_form'.
   $field_instances['node-financing_option-field_ref_to_cta_form'] = array(
     'bundle' => 'financing_option',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'target_id' => 3,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
