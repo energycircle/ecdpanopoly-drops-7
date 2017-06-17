@@ -23,15 +23,19 @@ function ec_service_stack_field_group_info() {
     'label' => 'Add other content to this page',
     'weight' => '16',
     'children' => array(),
-    'format_type' => 'htab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Add other content to this page',
+      'formatter' => 'open',
       'instance_settings' => array(
-        'required_fields' => 1,
-        'classes' => '',
         'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => '',
+        'required_fields' => 1,
+        'id' => '',
       ),
-      'formatter' => 'closed',
     ),
   );
   $field_groups['group__shown_on_this_page|node|service_category|form'] = $field_group;
@@ -49,15 +53,19 @@ function ec_service_stack_field_group_info() {
     'label' => 'Add other content to this page',
     'weight' => '16',
     'children' => array(),
-    'format_type' => 'htab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Add other content to this page',
+      'formatter' => 'open',
       'instance_settings' => array(
-        'required_fields' => 1,
-        'classes' => '',
         'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => '',
+        'required_fields' => 1,
+        'id' => '',
       ),
-      'formatter' => 'closed',
     ),
   );
   $field_groups['group__shown_on_this_page|node|service|form'] = $field_group;
@@ -470,15 +478,19 @@ function ec_service_stack_field_group_info() {
     'label' => 'Add other content to this page',
     'weight' => '29',
     'children' => array(),
-    'format_type' => 'htab',
+    'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Add other content to this page',
+      'formatter' => 'open',
       'instance_settings' => array(
-        'required_fields' => 1,
-        'classes' => '',
         'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => '',
+        'required_fields' => 1,
+        'id' => '',
       ),
-      'formatter' => 'closed',
     ),
   );
   $field_groups['group_shown_on_this_page|node|service_group|form'] = $field_group;
