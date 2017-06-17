@@ -185,24 +185,24 @@ function ec_service_stack_panelizer_defaults()
     $pane->style = array(
     'settings' => null,
   );
-    $pane->css = array(
+  $pane->css = array(
     'css_id' => 'primary-cta-form',
     'css_class' => 'cta-form',
   );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '8cd389e8-5945-46fb-a991-fb1c8fcef539';
-    $display->content['new-8cd389e8-5945-46fb-a991-fb1c8fcef539'] = $pane;
-    $display->panels['two_66_33_second'][0] = 'new-8cd389e8-5945-46fb-a991-fb1c8fcef539';
-    $pane = new stdClass();
-    $pane->pid = 'new-0acfb0c6-6117-4a92-9fde-3a5c514a7705';
-    $pane->panel = 'two_66_33_second';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ref_service_promo';
-    $pane->shown = true;
-    $pane->access = array();
-    $pane->configuration = array(
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '8cd389e8-5945-46fb-a991-fb1c8fcef539';
+  $display->content['new-8cd389e8-5945-46fb-a991-fb1c8fcef539'] = $pane;
+  $display->panels['two_66_33_second'][0] = 'new-8cd389e8-5945-46fb-a991-fb1c8fcef539';
+  $pane = new stdClass();
+  $pane->pid = 'new-0acfb0c6-6117-4a92-9fde-3a5c514a7705';
+  $pane->panel = 'two_66_33_second';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_ref_service_promo';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
     'label' => 'hidden',
     'formatter' => 'entityreference_entity_view',
     'delta_limit' => '3',
@@ -1155,24 +1155,24 @@ function ec_service_stack_panelizer_defaults()
     $pane->style = array(
     'settings' => null,
   );
-    $pane->css = array(
+  $pane->css = array(
     'css_id' => 'primary-cta-form',
     'css_class' => 'cta-form',
   );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'df94c7ed-1fe9-429b-9e71-c76497b59c10';
-    $display->content['new-df94c7ed-1fe9-429b-9e71-c76497b59c10'] = $pane;
-    $display->panels['two_66_33_second'][0] = 'new-df94c7ed-1fe9-429b-9e71-c76497b59c10';
-    $pane = new stdClass();
-    $pane->pid = 'new-30c9b0f7-ea8f-4740-87fb-78416629b679';
-    $pane->panel = 'two_66_33_second';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ref_serv_group_promo';
-    $pane->shown = true;
-    $pane->access = array();
-    $pane->configuration = array(
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'df94c7ed-1fe9-429b-9e71-c76497b59c10';
+  $display->content['new-df94c7ed-1fe9-429b-9e71-c76497b59c10'] = $pane;
+  $display->panels['two_66_33_second'][0] = 'new-df94c7ed-1fe9-429b-9e71-c76497b59c10';
+  $pane = new stdClass();
+  $pane->pid = 'new-30c9b0f7-ea8f-4740-87fb-78416629b679';
+  $pane->panel = 'two_66_33_second';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_ref_serv_group_promo';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
     'label' => 'hidden',
     'formatter' => 'entityreference_entity_view',
     'delta_limit' => '0',
@@ -1305,16 +1305,16 @@ function ec_service_stack_panelizer_defaults()
     'css_id' => 'show-this-product',
     'css_class' => 'product',
   );
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $pane->uuid = '9a45da33-6da1-443b-bf00-006165f49042';
-    $display->content['new-9a45da33-6da1-443b-bf00-006165f49042'] = $pane;
-    $display->panels['two_66_33_second'][4] = 'new-9a45da33-6da1-443b-bf00-006165f49042';
-    $display->hide_title = PANELS_TITLE_NONE;
-    $display->title_pane = '0';
-    $panelizer->display = $display;
-    $export['node:service_group:default:default'] = $panelizer;
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $pane->uuid = '9a45da33-6da1-443b-bf00-006165f49042';
+  $display->content['new-9a45da33-6da1-443b-bf00-006165f49042'] = $pane;
+  $display->panels['two_66_33_second'][4] = 'new-9a45da33-6da1-443b-bf00-006165f49042';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = '0';
+  $panelizer->display = $display;
+  $export['node:service_group:default:default'] = $panelizer;
 
     return $export;
 }
