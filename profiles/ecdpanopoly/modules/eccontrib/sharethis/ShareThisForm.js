@@ -6,9 +6,9 @@
 // Create the drupal ShareThis object for clean code and namespacing:
 (function () {
   // Adding use strict as function encapsulation ECMA 6.
-  // 'use strict';
+  'use strict';
 
-  window.drupal_st = {
+  var drupal_st = {
     // These are handlerd for updating the widget pic class.
     multiW: function () {
       jQuery('.st_widgetPic').addClass('st_multi');
@@ -66,6 +66,9 @@
       if (jQuery('input[name=sharethis_callesi]').val() === 1) {
         drupal_st.getGlobalCNSConfig();
       }
+      else {
+        // alert('settings found');.
+      }
     },
     odjs: function (scriptSrc, callBack) {
       this.head = document.getElementsByTagName('head')[0];
@@ -96,18 +99,20 @@
     addEvents: function () {
       jQuery('#edit-sharethis-widget-option-st-multi').click(drupal_st.multiW);
       jQuery('#edit-sharethis-widget-option-st-direct').click(drupal_st.classicW);
+
       jQuery('#edit-sharethis-button-option-stbc-').click(drupal_st.smallChicklet);
       jQuery('#edit-sharethis-button-option-stbc-large').click(drupal_st.largeChicklet);
       jQuery('#edit-sharethis-button-option-stbc-hcount').click(drupal_st.hcount);
       jQuery('#edit-sharethis-button-option-stbc-vcount').click(drupal_st.vcount);
       jQuery('#edit-sharethis-button-option-stbc-button').click(drupal_st.button);
+
       jQuery('.st_formButtonSave').click(drupal_st.updateOptions);
+
       jQuery('#st_cns_settings').find('input').live('click', drupal_st.updateDoNotHash);
     },
     serviceCallback: function () {
       var services = stlib_picker.getServices('myPicker');
       var outputString = '';
-      var i;
       for (i = 0; i < services.length; i++) {
         outputString += '\"' + _all_services[services[i]].title + ':';
         outputString += services[i] + '\",';
