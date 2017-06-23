@@ -146,14 +146,14 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
     ),
   );
   $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|metatags"] = array(
-    'weight' => 5,
+    'weight' => 32,
   );
-  $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|path|weight"] = 3;
+  $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|path|weight"] = 26;
   $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|redirect"] = array(
-    'weight' => 2,
+    'weight' => 30,
   );
   $overrides["variable.field_bundle_settings_node__panopoly_page.value|extra_fields|form|xmlsitemap"] = array(
-    'weight' => 4,
+    'weight' => 31,
   );
   $overrides["variable.field_bundle_settings_node__panopoly_page.value|view_modes|grouped_teaser"] = array(
     'custom_settings' => TRUE,

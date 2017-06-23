@@ -50,7 +50,7 @@ projects[colorbox][version] = 2.13
 
 projects[compact_forms][subdir] = eccontrib
 projects[compact_forms][version] = 1.x
-projects[context][patch][305289] = https://www.drupal.org/files/context_panels-305289-39.patch
+projects[compact_forms][patch][2464993-1] = https://www.drupal.org/files/issues/compact_forms_undefined_index_2464993-1-D7.patch
 
 projects[computed_field][subdir] = eccontrib
 projects[computed_field][version] = 1.x

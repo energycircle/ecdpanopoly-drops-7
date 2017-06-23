@@ -219,7 +219,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -284,7 +284,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -348,7 +348,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -412,7 +412,7 @@ function ec_panopoly_page_overrides_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 

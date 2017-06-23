@@ -854,7 +854,7 @@ function ec_blog_post_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 25,
+      'weight' => 14,
     ),
   );
 

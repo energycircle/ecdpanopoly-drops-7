@@ -234,7 +234,7 @@ function ec_faq_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 21,
+        'weight' => 12,
       ),
     ),
   );

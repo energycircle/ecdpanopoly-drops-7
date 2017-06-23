@@ -1419,7 +1419,7 @@ function ec_casestudy_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 24,
+      'weight' => 13,
     ),
   );
 

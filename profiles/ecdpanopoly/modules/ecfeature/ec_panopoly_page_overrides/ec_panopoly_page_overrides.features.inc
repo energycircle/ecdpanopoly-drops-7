@@ -183,14 +183,14 @@ function ec_panopoly_page_overrides_strongarm_alter(&$data) {
       ),
     ); /* WAS: '' */
     $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['metatags'] = array(
-      'weight' => 5,
+      'weight' => 32,
     ); /* WAS: '' */
-    $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['path']['weight'] = 3; /* WAS: 5 */
+    $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['path']['weight'] = 26; /* WAS: 5 */
     $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['redirect'] = array(
-      'weight' => 2,
+      'weight' => 30,
     ); /* WAS: '' */
     $data['field_bundle_settings_node__panopoly_page']->value['extra_fields']['form']['xmlsitemap'] = array(
-      'weight' => 4,
+      'weight' => 31,
     ); /* WAS: '' */
     $data['field_bundle_settings_node__panopoly_page']->value['view_modes']['grouped_teaser'] = array(
       'custom_settings' => TRUE,
