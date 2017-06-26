@@ -463,7 +463,7 @@ function ec_base_config_default_panels_mini() {
   );
   $pane->css = array(
     'css_id' => 'primary-menu',
-    'css_class' => 'primary desktop',
+    'css_class' => 'primary',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -471,32 +471,6 @@ function ec_base_config_default_panels_mini() {
   $pane->uuid = 'ef7c012b-70d2-4690-a7ce-bc681dd3a114';
   $display->content['new-ef7c012b-70d2-4690-a7ce-bc681dd3a114'] = $pane;
   $display->panels['one_main'][0] = 'new-ef7c012b-70d2-4690-a7ce-bc681dd3a114';
-  $pane = new stdClass();
-  $pane->pid = 'new-f4c5b0d5-938f-4b89-a28a-d66c8f62222f';
-  $pane->panel = 'one_main';
-  $pane->type = 'block';
-  $pane->subtype = 'system-main-menu';
-  $pane->shown = FALSE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'override_title' => 1,
-    'override_title_text' => '',
-    'override_title_heading' => 'h2',
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array(
-    'css_id' => '',
-    'css_class' => 'mobile',
-  );
-  $pane->extras = array();
-  $pane->position = 1;
-  $pane->locks = array();
-  $pane->uuid = 'f4c5b0d5-938f-4b89-a28a-d66c8f62222f';
-  $display->content['new-f4c5b0d5-938f-4b89-a28a-d66c8f62222f'] = $pane;
-  $display->panels['one_main'][1] = 'new-f4c5b0d5-938f-4b89-a28a-d66c8f62222f';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
