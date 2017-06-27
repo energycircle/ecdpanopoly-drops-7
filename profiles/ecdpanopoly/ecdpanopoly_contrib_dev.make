@@ -15,7 +15,7 @@ projects[diff][subdir] = ec-dev
 projects[features_extra][version] = 1.0
 projects[features_extra][subdir] = ec-dev
 
-projects[uuid_features][version] = 1.x
+projects[uuid_features][version] = 1.0-rc1
 projects[uuid_features][subdir] = ec-dev
 projects[uuid_features][patch] = https://www.drupal.org/files/issues/added-filter-check-on-feature-node-rebuild-2307757-4.patch
 projects[uuid_features][patch] = https://www.drupal.org/files/issues/uuid_features-fpp_panelizer_view_mode_object_array.patch

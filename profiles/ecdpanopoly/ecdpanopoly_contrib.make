@@ -420,7 +420,7 @@ projects[views_record_count][subdir] = eccontrib
 projects[views_record_count][version] = 1.x
 
 projects[views_slideshow][subdir] = eccontrib
-projects[views_slideshow][version] = 3.8
+projects[views_slideshow][version] = 3.9
 
 projects[views_url_path_arguments][subdir] = eccontrib
 projects[views_url_path_arguments][version] = 1.1
