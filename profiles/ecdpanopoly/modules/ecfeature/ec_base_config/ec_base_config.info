@@ -22,7 +22,6 @@ dependencies[] = defaultconfig
 dependencies[] = defaultcontent
 dependencies[] = draggableviews
 dependencies[] = ec_custom_tokens
-dependencies[] = ec_fieldbases
 dependencies[] = ec_foundation_image_styles
 dependencies[] = ec_mail_settings
 dependencies[] = ec_panopoly_page_overrides
