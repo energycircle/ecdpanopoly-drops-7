@@ -27,6 +27,15 @@ function ecdpanopoly_configure() {
  * Implements hook_install_tasks()
  */
 function ecdpanopoly_install_tasks(&$install_state) {
+  // Increase maximum function nesting level to prevent install errors.
+  $max_nesting_level = ini_get('xdebug.max_nesting_level');
+  if ($max_nesting_level > 0 && $max_nesting_level <= '200') {
+    ini_set('xdebug.max_nesting_level', 200);
+  }
+
+  // Hide some messages from various modules that are just too chatty.
+  drupal_get_messages('status');
+  drupal_get_messages('warning');
 
   $tasks = array();
 
@@ -73,6 +82,10 @@ function ecdpanopoly_install_tasks(&$install_state) {
  */
 function ecdpanopoly_install_tasks_alter(&$tasks, $install_state) {
 
+  // Hide some messages from various modules that are just too chatty.
+  drupal_get_messages('status');
+  drupal_get_messages('warning');
+
   // Magically go one level deeper in solving years of dependency problems
   require_once(drupal_get_path('module', 'panopoly_core') . '/panopoly_core.profile.inc');
   $tasks['install_load_profile']['function'] = 'panopoly_core_install_load_profile';
@@ -113,6 +126,10 @@ function ecdpanopoly_form_install_configure_form_alter(&$form, $form_state) {
  */
 function ecdpanopoly_form_apps_profile_apps_select_form_alter(&$form, $form_state) {
 
+  // Hide some messages from various modules that are just too chatty.
+  drupal_get_messages('status');
+  drupal_get_messages('warning');
+
   // For some things there are no need
   $form['apps_message']['#access'] = FALSE;
   $form['apps_fieldset']['apps']['#title'] = NULL;
@@ -152,6 +169,12 @@ function ecdpanopoly_form_apps_profile_apps_select_form_alter(&$form, $form_stat
     //   }
     // }
     //
+
+    // Hide some messages from various modules that are just too chatty.
+    drupal_get_messages('status');
+    drupal_get_messages('warning');
+
+
     // This workaround assumes a pattern MYMODULE_demo.
     $files = system_rebuild_module_data();
     foreach($modules as $module) {
