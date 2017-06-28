@@ -140,6 +140,6 @@ dependencies[] = ec_testimonial
 
 
 ; Information added by flux423 - updated on 2017-6-10
-version = "7.x-1.6.5"
+version = "7.x-1.7.1"
 core = "7.x"
 project = "ECDPanopoly"
