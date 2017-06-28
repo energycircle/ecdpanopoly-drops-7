@@ -351,7 +351,8 @@ projects[superfish][patch][1316254] = https://www.drupal.org/files/issues/superf
 projects[superfish][patch][2163545] = https://drupal.org/files/issues/superfish-drush_make_master-2163545-2.patch
 
 projects[sharethis][subdir] = eccontrib
-projects[sharethis][version] = 2.x-dev
+projects[sharethis][version] = 2.x
+projects[superfish][patch][2846151] = https://www.drupal.org/files/issues/fix_php_warnings_caused-2846151-4.patch
 
 projects[smtp][subdir] = eccontrib
 projects[smtp][version] = 1.6
