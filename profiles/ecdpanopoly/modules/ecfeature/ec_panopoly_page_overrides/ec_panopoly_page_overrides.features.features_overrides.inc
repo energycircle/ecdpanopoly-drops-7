@@ -49,9 +49,9 @@ function ec_panopoly_page_overrides_features_override_default_overrides() {
   $overrides["field_instance.node-panopoly_page-body.widget|settings|maxlength_js_summary"] = '';
   $overrides["field_instance.node-panopoly_page-body.widget|settings|maxlength_js_truncate_html"] = 0;
   $overrides["field_instance.node-panopoly_page-body.widget|weight"] = 5;
-  $overrides["field_instance.node-panopoly_page-field_featured_categories.display|default|settings|field_multiple_limit"] = -1;
-  $overrides["field_instance.node-panopoly_page-field_featured_categories.display|default|settings|field_multiple_limit_offset"] = 0;
-  $overrides["field_instance.node-panopoly_page-field_featured_categories.display|default|settings|field_multiple_limit_order"] = 0;
+  $overrides["field_instance.node-panopoly_page-field_featured_categories.display|default|module"]["DELETED"] = TRUE;
+  $overrides["field_instance.node-panopoly_page-field_featured_categories.display|default|type"] = 'hidden';
+  $overrides["field_instance.node-panopoly_page-field_featured_categories.display|default|weight"] = 0;
   $overrides["field_instance.node-panopoly_page-field_featured_categories.display|grouped_teaser"] = array(
     'label' => 'above',
     'settings' => array(),

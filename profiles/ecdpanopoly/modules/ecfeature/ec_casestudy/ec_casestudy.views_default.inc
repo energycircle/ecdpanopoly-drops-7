@@ -495,10 +495,6 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_ref_case_study_serv_group_target_id']['id'] = 'field_ref_case_study_serv_group_target_id';
-  $handler->display->display_options['relationships']['field_ref_case_study_serv_group_target_id']['table'] = 'field_data_field_ref_case_study_serv_group';
-  $handler->display->display_options['relationships']['field_ref_case_study_serv_group_target_id']['field'] = 'field_ref_case_study_serv_group_target_id';
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
@@ -506,12 +502,6 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_case_study_image']['id'] = 'field_case_study_image';
-  $handler->display->display_options['fields']['field_case_study_image']['table'] = 'field_data_field_case_study_image';
-  $handler->display->display_options['fields']['field_case_study_image']['field'] = 'field_case_study_image';
-  $handler->display->display_options['fields']['field_case_study_image']['label'] = '';
-  $handler->display->display_options['fields']['field_case_study_image']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
@@ -557,48 +547,9 @@ function ec_casestudy_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'case_study' => 'case_study',
   );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_feature_on_home_value']['id'] = 'field_feature_on_home_value';
-  $handler->display->display_options['filters']['field_feature_on_home_value']['table'] = 'field_data_field_feature_on_home';
-  $handler->display->display_options['filters']['field_feature_on_home_value']['field'] = 'field_feature_on_home_value';
-  $handler->display->display_options['filters']['field_feature_on_home_value']['operator'] = 'not empty';
-  /* Filter criterion: : field_ref_case_study_serv_group (field_ref_case_study_serv_group) */
-  $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['id'] = 'field_ref_case_study_serv_group_target_id';
-  $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['table'] = 'field_data_field_ref_case_study_serv_group';
-  $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['field'] = 'field_ref_case_study_serv_group_target_id';
-  $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['value']['value'] = '2';
 
   /* Display: Case Studies - Home Performance */
   $handler = $view->new_display('panel_pane', 'Case Studies - Home Performance', 'panel_pane_1');
-
-  /* Display: Case Studies - Contracting and Renovations */
-  $handler = $view->new_display('panel_pane', 'Case Studies - Contracting and Renovations', 'panel_pane_2');
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'case_study' => 'case_study',
-  );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_feature_on_home_value']['id'] = 'field_feature_on_home_value';
-  $handler->display->display_options['filters']['field_feature_on_home_value']['table'] = 'field_data_field_feature_on_home';
-  $handler->display->display_options['filters']['field_feature_on_home_value']['field'] = 'field_feature_on_home_value';
-  $handler->display->display_options['filters']['field_feature_on_home_value']['operator'] = 'not empty';
-  /* Filter criterion: : field_ref_case_study_serv_group (field_ref_case_study_serv_group) */
-  $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['id'] = 'field_ref_case_study_serv_group_target_id';
-  $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['table'] = 'field_data_field_ref_case_study_serv_group';
-  $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['field'] = 'field_ref_case_study_serv_group_target_id';
-  $handler->display->display_options['filters']['field_ref_case_study_serv_group_target_id']['value']['value'] = '3';
   $export['home_case_studies'] = $view;
 
   return $export;

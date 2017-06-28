@@ -97,13 +97,13 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_blog_page'.
-  $field_bases['field_ref_blog_page'] = array(
+  // Exported field_base: 'field_ref_case_study_blog'.
+  $field_bases['field_ref_case_study_blog'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_blog_page',
+    'field_name' => 'field_ref_case_study_blog',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -123,7 +123,7 @@ function ec_blog_post_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'panopoly_page' => 'panopoly_page',
+          'blog_post' => 'blog_post',
         ),
       ),
       'target_type' => 'node',
@@ -132,13 +132,13 @@ function ec_blog_post_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_ref_case_study_blog'.
-  $field_bases['field_ref_case_study_blog'] = array(
+  // Exported field_base: 'field_ref_citypages_blog'.
+  $field_bases['field_ref_citypages_blog'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ref_case_study_blog',
+    'field_name' => 'field_ref_citypages_blog',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -150,6 +150,9 @@ function ec_blog_post_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),

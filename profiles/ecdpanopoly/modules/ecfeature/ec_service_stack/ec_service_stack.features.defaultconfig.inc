@@ -110,7 +110,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'email_textfield',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
   );
@@ -220,7 +220,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'options_buttons',
-        'weight' => 7,
+        'weight' => 3,
       ),
     ),
   );
@@ -336,7 +336,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 0,
       ),
     ),
   );
@@ -432,7 +432,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'field_hidden',
-        'weight' => 6,
+        'weight' => 4,
       ),
     ),
   );
@@ -547,7 +547,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'phone_textfield',
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
   );
@@ -658,6 +658,116 @@ function ec_service_stack_defaultconfig_field_default_fields() {
         ),
         'type' => 'entityreference_autocomplete',
         'weight' => 28,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-city_page-field_ref_citypages_services'.
+  $fields['node-city_page-field_ref_citypages_services'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_ref_citypages_services',
+      'field_permissions' => array(
+        'type' => 0,
+      ),
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'field_default_token' => array(
+              'status' => TRUE,
+            ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'service' => 'service',
+            'service_category' => 'service_category',
+            'service_group' => 'service_group',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => 0,
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'city_page',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'The selected items will also be used to compile the page title.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 19,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'grouped_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'show_this_block' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ref_citypages_services',
+      'label' => 'Primary Services',
+      'required' => 0,
+      'settings' => array(
+        'exclude_cv' => FALSE,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => 26,
       ),
     ),
   );
@@ -2864,6 +2974,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   t('Name');
   t('Page Tracking');
   t('Phone');
+  t('Primary Services');
   t('Select the service categories in this service group');
   t('Select the service categories that were performed for this specific case');
   t('Select the service category that this service is in.');
@@ -2877,6 +2988,7 @@ function ec_service_stack_defaultconfig_field_default_fields() {
   t('Service Icon');
   t('Service Image');
   t('Services');
+  t('The selected items will also be used to compile the page title.');
 
   return $fields;
 }

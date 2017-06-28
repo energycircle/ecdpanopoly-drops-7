@@ -188,6 +188,7 @@ user-login
 search-form
 search-form--2
 schedule-service-entityform-edit-form
+schedule-service-w-address-entityform-edit-form
 promotion-entityform-edit-form
 contact-us-entityform-edit-form
 join-our-team-entityform-edit-form
@@ -1217,6 +1218,17 @@ campaign-form-entityform-edit-form';
   $strongarm->name = 'ftools_disable_features_page_js';
   $strongarm->value = 0;
   $export['ftools_disable_features_page_js'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'globalredirect_settings';
+  $strongarm->value = array(
+    'menu_check' => 1,
+    'canonical' => 1,
+    'content_location_header' => 1,
+  );
+  $export['globalredirect_settings'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

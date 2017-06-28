@@ -143,4 +143,5 @@ features_exclude[field_base][field_type_of_work_desired] = field_type_of_work_de
 features_exclude[field_base][field_days_and_hours_available] = field_days_and_hours_available
 features_exclude[field_base][field_education] = field_education
 features_exclude[field_base][field_relevant_experience] = field_relevant_experience
+features_exclude[field_base][body] = body
 project status url = https://github.com/energycircle/ec_staff.git

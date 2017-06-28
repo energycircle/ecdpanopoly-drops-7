@@ -10,55 +10,6 @@
 function ec_product_page_category_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer panelizer node product_category breadcrumbs'.
-  $permissions['administer panelizer node product_category breadcrumbs'] = array(
-    'name' => 'administer panelizer node product_category breadcrumbs',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node product_category content'.
-  $permissions['administer panelizer node product_category content'] = array(
-    'name' => 'administer panelizer node product_category content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node product_category context'.
-  $permissions['administer panelizer node product_category context'] = array(
-    'name' => 'administer panelizer node product_category context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node product_category defaults'.
-  $permissions['administer panelizer node product_category defaults'] = array(
-    'name' => 'administer panelizer node product_category defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node product_category layout'.
-  $permissions['administer panelizer node product_category layout'] = array(
-    'name' => 'administer panelizer node product_category layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node product_category overview'.
-  $permissions['administer panelizer node product_category overview'] = array(
-    'name' => 'administer panelizer node product_category overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node product_category settings'.
-  $permissions['administer panelizer node product_category settings'] = array(
-    'name' => 'administer panelizer node product_category settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'create product_category content'.
   $permissions['create product_category content'] = array(
     'name' => 'create product_category content',

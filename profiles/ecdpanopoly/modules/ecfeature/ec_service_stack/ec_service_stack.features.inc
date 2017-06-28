@@ -71,6 +71,37 @@ function ec_service_stack_default_entityform_type() {
     "rdf_mapping" : [],
     "paths" : []
   }');
+  $items['schedule_service_w_address'] = entity_import('entityform_type', '{
+    "type" : "schedule_service_w_address",
+    "label" : "Schedule Service w\\/Address",
+    "data" : {
+      "draftable" : 0,
+      "draft_redirect_path" : "",
+      "draft_button_text" : "",
+      "draft_save_text" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
+      "submit_button_text" : "ButtonText",
+      "submit_confirm_msg" : "",
+      "your_submissions" : "",
+      "disallow_resubmit_msg" : "",
+      "delete_confirm_msg" : "",
+      "page_title_view" : "",
+      "preview_page" : 0,
+      "submission_page_title" : "\\u003Cnone\\u003E",
+      "submission_text" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
+      "submission_show_submitted" : 0,
+      "submissions_view" : "default",
+      "user_submissions_view" : "default",
+      "form_status" : "ENTITYFORM_OPEN",
+      "roles" : { "1" : "1", "2" : "2", "3" : "3", "5" : "5", "6" : 0 },
+      "resubmit_action" : "new",
+      "redirect_path" : "",
+      "instruction_pre" : { "value" : "", "format" : "panopoly_wysiwyg_text" },
+      "enable_block" : 0
+    },
+    "weight" : "0",
+    "rdf_mapping" : [],
+    "paths" : []
+  }');
   return $items;
 }
 
@@ -113,6 +144,28 @@ function ec_service_stack_node_info() {
  */
 function ec_service_stack_rdf_default_mappings() {
   $schemaorg = array();
+
+  // Exported RDF mapping: schedule_service_w_address
+  $schemaorg['entityform']['schedule_service_w_address'] = array(
+    'field_name' => array(
+      'predicates' => array(),
+    ),
+    'field_phone' => array(
+      'predicates' => array(),
+    ),
+    'field_email' => array(
+      'predicates' => array(),
+    ),
+    'field_address' => array(
+      'predicates' => array(),
+    ),
+    'field_page_tracking' => array(
+      'predicates' => array(),
+    ),
+    'field_i_need' => array(
+      'predicates' => array(),
+    ),
+  );
 
   // Exported RDF mapping: service
   $schemaorg['node']['service'] = array(

@@ -95,7 +95,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'city_page' => 'city_page',
   );
-  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -269,7 +269,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'blog_post' => 'blog_post',
   );
-  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -341,7 +341,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'case_study' => 'case_study',
   );
-  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -471,7 +471,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'testimonial' => 'testimonial',
   );
-  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -569,7 +569,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'city_page' => 'city_page',
   );
-  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -798,7 +798,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'city_page' => 'city_page',
   );
-  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -1040,7 +1040,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'city_page' => 'city_page',
   );
-  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';
@@ -1103,7 +1103,7 @@ function ec_citypages_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'service_category' => 'service_category',
   );
-  /* Filter criterion: Content: If this is the experimental page, fill out the information below. (field_a_b_test_page) */
+  /* Filter criterion: Content: A/B Test Page (field_a_b_test_page) */
   $handler->display->display_options['filters']['field_a_b_test_page_value']['id'] = 'field_a_b_test_page_value';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['table'] = 'field_data_field_a_b_test_page';
   $handler->display->display_options['filters']['field_a_b_test_page_value']['field'] = 'field_a_b_test_page_value';

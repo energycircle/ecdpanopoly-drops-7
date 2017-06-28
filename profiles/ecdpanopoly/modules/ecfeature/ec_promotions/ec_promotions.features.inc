@@ -133,12 +133,3 @@ function ec_promotions_rdf_default_mappings() {
 
   return $schemaorg;
 }
-
-/**
- * Implements hook_weight_features_default_settings().
- */
-function ec_promotions_weight_features_default_settings() {
-  $settings = array();
-
-  return $settings;
-}

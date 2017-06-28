@@ -110,4 +110,5 @@ features_exclude[features_overrides][user_permission.edit terms in distinction_t
 features_exclude[features_overrides][user_permission.edit terms in distinction_types.roles|EC Platinum editor] = user_permission.edit terms in distinction_types.roles|EC Platinum editor
 features_exclude[field_base][field_content_link] = field_content_link
 features_exclude[field_base][field_logo] = field_logo
+features_exclude[field_base][body] = body
 project status url = https://github.com/energycircle/ec_distinction.git

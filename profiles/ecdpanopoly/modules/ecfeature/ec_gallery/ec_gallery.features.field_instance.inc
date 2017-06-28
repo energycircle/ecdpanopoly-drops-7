@@ -68,6 +68,65 @@ function ec_gallery_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-case_study-field_ref_case_study_galley_befo'.
+  $field_instances['node-case_study-field_ref_case_study_galley_befo'] = array(
+    'bundle' => 'case_study',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 25,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'grouped_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'show_this_block' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ref_case_study_galley_befo',
+    'label' => 'Gallery (Before)',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 33,
+    ),
+  );
+
   // Exported field_instance: 'node-gallery-body'.
   $field_instances['node-gallery-body'] = array(
     'bundle' => 'gallery',
@@ -288,6 +347,7 @@ function ec_gallery_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Gallery (After)');
+  t('Gallery (Before)');
   t('Gallery Tag');
   t('Gallery_image');
   t('Upload each image to be included in the gallery.');

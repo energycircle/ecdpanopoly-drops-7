@@ -580,12 +580,13 @@ function ec_base_config_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'addressfield',
+      'module' => 'addressfield_autocomplete',
       'settings' => array(
         'available_countries' => array(
           'US' => 'US',
         ),
         'default_country' => 'US',
+        'draggable' => 1,
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
@@ -596,8 +597,17 @@ function ec_base_config_field_default_field_instances() {
           'name-oneline' => 0,
           'address-optional' => 0,
         ),
+        'geolocation' => TRUE,
+        'html5_geocode' => 1,
+        'manual_text' => 'Enter one manually',
+        'map' => 1,
+        'restrict_country' => array(),
+        'reveal' => 1,
+        'reverse_geocode' => 1,
+        'types' => 'geocode',
+        'visible_markers' => 1,
       ),
-      'type' => 'addressfield_standard',
+      'type' => 'addressfield_autocomplete',
       'weight' => 6,
     ),
   );

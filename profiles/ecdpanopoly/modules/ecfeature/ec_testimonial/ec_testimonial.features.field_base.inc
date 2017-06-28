@@ -30,31 +30,6 @@ function ec_testimonial_field_default_field_bases() {
     'type' => 'fivestar',
   );
 
-  // Exported field_base: 'field_content_geo_data'.
-  $field_bases['field_content_geo_data'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_content_geo_data',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'lat' => array(
-        0 => 'lat',
-      ),
-      'lng' => array(
-        0 => 'lng',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'geolocation',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'geolocation_latlng',
-  );
-
   // Exported field_base: 'field_ref_article_testimonial'.
   $field_bases['field_ref_article_testimonial'] = array(
     'active' => 1,
@@ -111,6 +86,44 @@ function ec_testimonial_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'testimonial' => 'testimonial',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_ref_citypages_testimonials'.
+  $field_bases['field_ref_citypages_testimonials'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ref_citypages_testimonials',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'field_default_token' => array(
+            'status' => TRUE,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -457,27 +470,6 @@ function ec_testimonial_field_default_field_bases() {
       'max_length' => 255,
     ),
     'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'title_field'.
-  $field_bases['title_field'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'title_field',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 1,
     'type' => 'text',
   );
 

@@ -105,8 +105,37 @@ function ec_panopoly_page_overrides_field_group_info() {
   );
   $field_groups['group_inactive_fields|node|panopoly_page|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_shown_on_this_page|node|panopoly_page|form';
+  $field_group->group_name = 'group_shown_on_this_page';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'panopoly_page';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_inactive_fields';
+  $field_group->data = array(
+    'label' => 'Add other content to this page',
+    'weight' => '6',
+    'children' => array(
+      0 => 'field_ref_page_testimonial',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'label' => 'Add other content to this page',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'closed',
+    ),
+  );
+  $field_groups['group_shown_on_this_page|node|panopoly_page|form'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add other content to this page');
   t('CTA Form');
   t('Edit Content');
   t('Inactive Fields');

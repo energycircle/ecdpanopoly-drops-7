@@ -97,6 +97,48 @@ function ec_audience_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_inactive_fields|node|audience|form';
+  $field_group->group_name = 'group_inactive_fields';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'audience';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Inactive Fields',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_featured_video',
+      1 => 'field_ref_services_audiences',
+      2 => 'field_a_b_reason_for_testing',
+      3 => 'field_a_b_reference_page',
+      4 => 'field_a_b_test_page',
+      5 => 'metatags',
+      6 => 'path',
+      7 => 'redirect',
+      8 => 'xmlsitemap',
+      9 => 'group_show_on_this',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Inactive Fields',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'element-hidden',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_inactive_fields|node|audience|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_show_on_this|node|audience|form';
   $field_group->group_name = 'group_show_on_this';
   $field_group->entity_type = 'node';
@@ -126,6 +168,7 @@ function ec_audience_field_group_info() {
   t('CTA Form');
   t('Edit Content');
   t('General');
+  t('Inactive Fields');
 
   return $field_groups;
 }
