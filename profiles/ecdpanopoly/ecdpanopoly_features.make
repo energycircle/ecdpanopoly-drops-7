@@ -159,11 +159,11 @@ projects[ec_gallery][subdir] = ecfeature
 projects[ec_gallery][type] = module
 projects[ec_gallery][version] = 1.x
 
-projects[ec_handbook][download][type] = git
-projects[ec_handbook][download][url] = https://github.com/energycircle/ec_handbook.git
-projects[ec_handbook][subdir] = ecfeature
-projects[ec_handbook][type] = module
-projects[ec_handbook][version] = 1.x
+#projects[ec_handbook][download][type] = git
+#projects[ec_handbook][download][url] = https://github.com/energycircle/ec_handbook.git
+#projects[ec_handbook][subdir] = ecfeature
+#projects[ec_handbook][type] = module
+#projects[ec_handbook][version] = 1.x
 
 projects[ec_mobile_changes][download][type] = git
 projects[ec_mobile_changes][download][url] = https://github.com/energycircle/ec_mobile_changes.git
