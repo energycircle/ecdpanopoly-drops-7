@@ -696,7 +696,7 @@ function drupal_environment_initialize() {
   // The .htaccess file contains settings that cannot be changed at runtime.
 
   // Don't escape quotes when reading files from the database, disk, etc.
-  ini_set('magic_quotes_runtime', '0');
+  // magic_quotes_runtime was removed in PHP 5.4; ini_set call removed.
   // Use session cookies, not transparent sessions that puts the session id in
   // the query string.
   ini_set('session.use_cookies', '1');

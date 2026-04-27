@@ -18,7 +18,7 @@
  *  - $to: The recipient subscriber email address.
  *  - $subject: The message subject line.
  *  - $body: The formatted message body.
- *  - $language: The language object for this message.
+ *  - $language: The language code for this message.
  *  - $params: An array containing the following keys:
  *    - context:  An array containing the following keys:
  *      - account: The recipient subscriber account object, which contains
@@ -51,7 +51,7 @@
  *  - $theme_url: The absolute url to the Email theme directory.
  */
   $template_name = basename(__FILE__);
-  $current_path = realpath(NULL);
+  $current_path = __DIR__;
   $current_len = strlen($current_path);
   $template_path = realpath(dirname(__FILE__));
   if (!strncmp($template_path, $current_path, $current_len)) {
@@ -62,7 +62,7 @@
 <?php if ($key == 'node' || $key == 'test'): ?>
 <div class="htmlmail-simplenews-link">
   <a href="<?php echo url('node/' . $params['simplenews_source']->getNode()->nid, array('absolute' => TRUE)); ?>">
-    Click here to view this message on the web.
+    <?php echo t('Click here to view this message on the web.'); ?>
   </a>
 </div>
 <?php endif; ?>
@@ -133,7 +133,7 @@ endif; ?><p>
   </p></li><li><p>
     If you think your customizations would be of use to others,
     please contribute your file as a feature request in the
-    <a href="http://drupal.org/node/add/project-issue/htmlmail">issue queue</a>.
+    <a href="https://www.drupal.org/node/add/project-issue/htmlmail">issue queue</a>.
   </p></li></ol></dd><dt><p>
     The simplenews module sets the <u><code>$params</code></u> variable.
     For this message,

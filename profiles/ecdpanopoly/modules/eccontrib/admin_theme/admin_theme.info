@@ -4,9 +4,8 @@ core = 7.x
 package = Administration
 configure = admin/appearance
 
-; Information added by Drupal.org packaging script on 2014-05-28
-version = "7.x-1.0+4-dev"
+; Information added by Drupal.org packaging script on 2020-01-17
+version = "7.x-1.1"
 core = "7.x"
 project = "admin_theme"
-datestamp = "1401254330"
-
+datestamp = "1579273090"

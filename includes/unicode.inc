@@ -241,11 +241,8 @@ function drupal_convert_to_utf8($data, $encoding) {
   elseif (function_exists('mb_convert_encoding')) {
     $out = @mb_convert_encoding($data, 'utf-8', $encoding);
   }
-  elseif (function_exists('recode_string')) {
-    $out = @recode_string($encoding . '..utf-8', $data);
-  }
   else {
-    watchdog('php', 'Unsupported encoding %s. Please install iconv, GNU recode or mbstring for PHP.', array('%s' => $encoding), WATCHDOG_ERROR);
+    watchdog('php', 'Unsupported encoding %s. Please install iconv or mbstring for PHP.', array('%s' => $encoding), WATCHDOG_ERROR);
     return FALSE;
   }
 

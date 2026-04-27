@@ -382,9 +382,20 @@ class Salesforce {
    *
    * @return array
    *   Returns FALSE is no identity has been stored.
+   *
+   * @throws SalesforceException
    */
   public function getIdentity() {
-    return variable_get('salesforce_identity', FALSE);
+    $identity = variable_get('salesforce_identity', FALSE);
+    if ($identity) {
+      $id_url_scheme = parse_url($identity['id']);
+      $allowed_endpoint = variable_get('salesforce_endpoint', NULL);
+      $allowed_endpoint_url_scheme = parse_url($allowed_endpoint);
+      if ($id_url_scheme['host'] != $allowed_endpoint_url_scheme['host']) {
+        throw new SalesforceException(t('Salesforce identity does not match salesforce endpoint: you need to re-authenticate.'));
+      }
+    }
+    return $identity;
   }
 
   /**
@@ -519,6 +530,24 @@ class Salesforce {
     drupal_alter('salesforce_query', $query);
     // Casting $query as a string calls SalesforceSelectQuery::__toString().
     $result = $this->apiCall('query?q=' . (string) $query);
+    return $result;
+  }
+
+  /**
+   * Same as ::query() but also returns deleted or archived records.
+   *
+   * @param SalesforceSelectQuery $query
+   *   The constructed SOQL query.
+   *
+   * @return array
+   *   Array of Salesforce objects that match the query.
+   *
+   * @addtogroup salesforce_apicalls
+   */
+  public function queryAll(SalesforceSelectQuery $query) {
+    drupal_alter('salesforce_query', $query);
+    // Casting $query as a string calls SalesforceSelectQuery::__toString().
+    $result = $this->apiCall('queryAll?q=' . (string) $query);
     return $result;
   }
 
