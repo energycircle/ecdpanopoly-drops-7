@@ -759,7 +759,7 @@ function features_tar_create($name, $contents) {
 function features_var_export($var, $prefix = '', $init = TRUE, $count = 0) {
   if ($count > 50) {
     watchdog('features', 'Recursion depth reached in features_var_export', array());
-    return '';
+	  return 'NULL';
   }
 
   if (is_object($var)) {
