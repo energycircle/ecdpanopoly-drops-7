@@ -13,6 +13,7 @@
  * MigrateSourceSQL for an example.
  */
 abstract class MigrateSource implements Iterator {
+
   /**
    * The current row from the quey
    *
@@ -26,6 +27,7 @@ abstract class MigrateSource implements Iterator {
    * @var array
    */
   protected $currentKey;
+
   public function getCurrentKey() {
     return $this->currentKey;
   }
@@ -50,6 +52,7 @@ abstract class MigrateSource implements Iterator {
    * @var int
    */
   protected $numIgnored = 0;
+
   public function getIgnored() {
     return $this->numIgnored;
   }
@@ -60,6 +63,7 @@ abstract class MigrateSource implements Iterator {
    * @var int
    */
   protected $numProcessed = 0;
+
   public function getProcessed() {
     return $this->numProcessed;
   }
@@ -160,7 +164,7 @@ abstract class MigrateSource implements Iterator {
     }
 
     if (!isset($this->cacheKey)) {
-      $this->cacheKey = md5((string)$this);
+      $this->cacheKey = md5((string) $this);
     }
 
     // If a refresh is requested, or we're not caching counts, ask the derived
@@ -222,23 +226,27 @@ abstract class MigrateSource implements Iterator {
    * Implementation of Iterator::current() - called when entering a loop
    * iteration, returning the current row
    */
+  #[\ReturnTypeWillChange]
   public function current() {
     return $this->currentRow;
   }
 
   /**
-   * Implementation of Iterator::key - called when entering a loop iteration, returning
-   * the key of the current row. It must be a scalar - we will serialize
-   * to fulfill the requirement, but using getCurrentKey() is preferable.
+   * Implementation of Iterator::key - called when entering a loop iteration,
+   * returning the key of the current row. It must be a scalar - we will
+   * serialize to fulfill the requirement, but using getCurrentKey() is
+   * preferable.
    */
+  #[\ReturnTypeWillChange]
   public function key() {
     return serialize($this->currentKey);
   }
 
   /**
-   * Implementation of Iterator::valid() - called at the top of the loop, returning
-   * TRUE to process the loop and FALSE to terminate it
+   * Implementation of Iterator::valid() - called at the top of the loop,
+   * returning TRUE to process the loop and FALSE to terminate it
    */
+  #[\ReturnTypeWillChange]
   public function valid() {
     return !is_null($this->currentRow);
   }
@@ -248,6 +256,7 @@ abstract class MigrateSource implements Iterator {
    * implement performRewind() to do any class-specific setup for iterating
    * source records.
    */
+  #[\ReturnTypeWillChange]
   public function rewind() {
     $this->activeMigration = Migration::currentMigration();
     $this->activeMap = $this->activeMigration->getMap();
@@ -273,6 +282,7 @@ abstract class MigrateSource implements Iterator {
    * Implementation of Iterator::next() - subclasses of MigrateSource should
    * implement getNextRow() to retrieve the next valid source rocord to process.
    */
+  #[\ReturnTypeWillChange]
   public function next() {
     $this->currentKey = NULL;
     $this->currentRow = NULL;
@@ -292,7 +302,7 @@ abstract class MigrateSource implements Iterator {
         if ($map_row) {
           foreach ($map_row as $field => $value) {
             $field = 'migrate_map_' . $field;
-            $row->$field = $value;
+            $row->{$field} = $value;
           }
         }
       }
@@ -422,12 +432,12 @@ abstract class MigrateSource implements Iterator {
       // so we need to provide them with the necessary information (before and
       // after hashes).
       if ($this->trackChanges) {
-        $unhashed_row = clone ($row);
+        $unhashed_row = clone $row;
         // Remove all map data, otherwise we'll have a false positive on the
         // second import (attempt) on a row.
         foreach ($unhashed_row as $field => $data) {
           if (strpos($field, 'migrate_map_') === 0) {
-            unset($unhashed_row->$field);
+            unset($unhashed_row->{$field});
           }
         }
         $row->migrate_map_original_hash = isset($row->migrate_map_hash) ?
