@@ -11,6 +11,10 @@
 /sites/default/**/private
 /sites/default/settings.local.php
 
+# Avoid accidental modification of pantheon.upstream.yml in sites
+# created from this upstream
+pantheon.upstream.yml
+
 # Packages #
 ############
 *.7z
@@ -28,12 +32,12 @@
 ######################
 *.log
 *.sql
+!**/tests/**/*.sql
 
 # OS generated files #
 ######################
 .DS_Store*
 ehthumbs.db
-Icon
 Thumbs.db
 ._*
 

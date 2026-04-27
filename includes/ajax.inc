@@ -294,6 +294,7 @@ function ajax_render($commands = array()) {
 
   // Now add a command to merge changes and additions to Drupal.settings.
   $scripts = drupal_add_js();
+  drupal_alter('js', $scripts);
   if (!empty($scripts['settings'])) {
     $settings = $scripts['settings'];
     array_unshift($commands, ajax_command_settings(drupal_array_merge_deep_array($settings['data']), TRUE));
@@ -322,7 +323,7 @@ function ajax_render($commands = array()) {
 function ajax_get_form() {
   $form_state = form_state_defaults();
 
-  $form_build_id = $_POST['form_build_id'];
+  $form_build_id = (isset($_POST['form_build_id']) ? $_POST['form_build_id'] : '');
 
   // Get the form from the cache.
   $form = form_get_cache($form_build_id, $form_state);

@@ -26,13 +26,16 @@ function drupal_error_levels() {
     E_USER_ERROR => array('User error', WATCHDOG_ERROR),
     E_USER_WARNING => array('User warning', WATCHDOG_WARNING),
     E_USER_NOTICE => array('User notice', WATCHDOG_NOTICE),
-    E_STRICT => array('Strict warning', WATCHDOG_DEBUG),
     E_RECOVERABLE_ERROR => array('Recoverable fatal error', WATCHDOG_ERROR),
   );
   // E_DEPRECATED and E_USER_DEPRECATED were added in PHP 5.3.0.
   if (defined('E_DEPRECATED')) {
     $types[E_DEPRECATED] = array('Deprecated function', WATCHDOG_DEBUG);
     $types[E_USER_DEPRECATED] = array('User deprecated function', WATCHDOG_DEBUG);
+  }
+  // E_STRICT is deprecated in PHP 8.4.
+  if (PHP_VERSION_ID < 80400) {
+    $types[E_STRICT] = array('Strict warning', WATCHDOG_DEBUG);
   }
   return $types;
 }
@@ -48,11 +51,8 @@ function drupal_error_levels() {
  *   The filename that the error was raised in.
  * @param $line
  *   The line number the error was raised at.
- * @param $context
- *   An array that points to the active symbol table at the point the error
- *   occurred.
  */
-function _drupal_error_handler_real($error_level, $message, $filename, $line, $context) {
+function _drupal_error_handler_real($error_level, $message, $filename, $line) {
   if ($error_level & error_reporting()) {
     $types = drupal_error_levels();
     list($severity_msg, $severity_level) = $types[$error_level];
@@ -62,17 +62,18 @@ function _drupal_error_handler_real($error_level, $message, $filename, $line, $c
       require_once DRUPAL_ROOT . '/includes/common.inc';
     }
 
-    // We treat recoverable errors as fatal.
+    // We treat recoverable errors as fatal, and also allow fatal errors to be
+    // explicitly triggered by drupal_trigger_fatal_error().
     _drupal_log_error(array(
       '%type' => isset($types[$error_level]) ? $severity_msg : 'Unknown error',
       // The standard PHP error handler considers that the error messages
-      // are HTML. We mimick this behavior here.
+      // are HTML. We mimic this behavior here.
       '!message' => filter_xss_admin($message),
       '%function' => $caller['function'],
       '%file' => $caller['file'],
       '%line' => $caller['line'],
       'severity_level' => $severity_level,
-    ), $error_level == E_RECOVERABLE_ERROR);
+    ), $error_level == E_RECOVERABLE_ERROR || drupal_static('drupal_trigger_fatal_error'));
   }
 }
 
@@ -105,8 +106,8 @@ function _drupal_decode_exception($exception) {
       // We remove that call.
       array_shift($backtrace);
     }
-    if (isset($exception->query_string, $exception->args)) {
-      $message .= ": " . $exception->query_string . "; " . print_r($exception->args, TRUE);
+    if (isset($exception->errorInfo['query_string'], $exception->errorInfo['args'])) {
+      $message .= ": " . $exception->errorInfo['query_string'] . "; " . print_r($exception->errorInfo['args'], TRUE);
     }
   }
   $caller = _drupal_get_last_caller($backtrace);
@@ -114,7 +115,7 @@ function _drupal_decode_exception($exception) {
   return array(
     '%type' => get_class($exception),
     // The standard PHP exception handler considers that the exception message
-    // is plain-text. We mimick this behavior here.
+    // is plain-text. We mimic this behavior here.
     '!message' => check_plain($message),
     '%function' => $caller['function'],
     '%file' => $caller['file'],
@@ -218,7 +219,7 @@ function _drupal_log_error($error, $fatal = FALSE) {
     if ($fatal) {
       // When called from CLI, simply output a plain text message.
       print html_entity_decode(strip_tags(t('%type: !message in %function (line %line of %file).', $error))). "\n";
-      exit;
+      exit(1);
     }
   }
 
@@ -226,14 +227,14 @@ function _drupal_log_error($error, $fatal = FALSE) {
     if ($fatal) {
       if (error_displayable($error)) {
         // When called from JavaScript, simply output the error message.
-        print t('%type: !message in %function (line %line of %file).', $error);
+        print t('%type: !message in %function (line %line of %file).', _drupal_strip_error_file_path($error));
       }
       exit;
     }
   }
   else {
     // Display the message if the current error reporting level allows this type
-    // of message to be displayed, and unconditionnaly in update.php.
+    // of message to be displayed, and unconditionally in update.php.
     if (error_displayable($error)) {
       $class = 'error';
 
@@ -244,7 +245,7 @@ function _drupal_log_error($error, $fatal = FALSE) {
         $class = 'status';
       }
 
-      drupal_set_message(t('%type: !message in %function (line %line of %file).', $error), $class);
+      drupal_set_message(t('%type: !message in %function (line %line of %file).', _drupal_strip_error_file_path($error)), $class);
     }
 
     if ($fatal) {
@@ -269,7 +270,7 @@ function _drupal_log_error($error, $fatal = FALSE) {
 function _drupal_get_last_caller($backtrace) {
   // Errors that occur inside PHP internal functions do not generate
   // information about file and line. Ignore black listed functions.
-  $blacklist = array('debug', '_drupal_error_handler', '_drupal_exception_handler');
+  $blacklist = array('debug', '_drupal_error_handler', '_drupal_exception_handler', 'drupal_trigger_fatal_error');
   while (($backtrace && !isset($backtrace[0]['line'])) ||
          (isset($backtrace[1]['function']) && in_array($backtrace[1]['function'], $blacklist))) {
     array_shift($backtrace);
@@ -292,4 +293,29 @@ function _drupal_get_last_caller($backtrace) {
     $call['function'] = 'main()';
   }
   return $call;
+}
+
+/**
+ * Strip full path information from error details.
+ *
+ * @param $error
+ *   An array with the following keys: %type, !message, %function, %file, %line
+ *   and severity_level.
+ *
+ * @return
+ *   An array with the same keys as the $error param but with full paths
+ *   stripped from the %file element
+ */
+function _drupal_strip_error_file_path($error) {
+  if (!empty($error['%file'])) {
+    if (($drupal_root_position = strpos($error['%file'], DRUPAL_ROOT)) === 0) {
+      $root_length = strlen(DRUPAL_ROOT);
+      $error['%file'] = substr($error['%file'], $root_length + 1);
+    }
+    elseif ($drupal_root_position !== FALSE) {
+      // As a fallback, make sure DRUPAL_ROOT's value is not in the path.
+      $error['%file'] = str_replace(DRUPAL_ROOT, 'DRUPAL_ROOT', $error['%file']);
+    }
+  }
+  return $error;
 }
